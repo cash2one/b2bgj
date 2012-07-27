@@ -1,0 +1,253 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-cpdd mo-ddgl">
+            <div class="block block1">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        出票订单 
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table cellspacing="0" class="table1-cpdd table-b3">
+                        <tr>
+                            <th>日期范围</th>
+                            <td>
+                                <input type="text" class="text datepicker" value="" name="" />
+                                至
+                                <input type="text" class="text datepicker" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>锁单状态</th>
+                            <td>
+                                <select name="">
+                                    <option value="">全部订单</option>
+                                    <option value="">全部订单</option>
+                                    <option value="">全部订单</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>查询方式</th>
+                            <td>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    票号
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    PNR编号
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    乘客姓名
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    订单编号
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                PNR记录编号 
+                            </th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="center">
+                        <input type="button" class="button button2" value="查询全部订单" name="" />
+                    </p>
+                </div>
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button1" value="取消订单" name="" />
+                <input type="button" class="button button1" value="出票" name="" />
+                <input type="button" class="button button1" value="申请改签" name="" />
+                <input type="button" class="button button1" value="申请退票" name="" />
+                <input type="button" class="button button1" value="申请退款" name="" />
+            </div>
+
+            <div class="block block2">
+                <div class="block-head">
+                    <ul>
+                        <li class="current">
+                        <span>全部订单</span>
+                        </li>
+                        <li>
+                        <span>审核中</span>
+                        </li>
+                        <li>
+                        <span>审核退回</span>
+                        </li>
+                        <li>
+                            <span>取消订单</span>
+                        </li>
+                        <li>
+                            <span>待支付</span>
+                        </li>
+                        <li>
+                            <span>出票中</span>
+                        </li>
+                        <li>
+                            <span>出票完成</span>
+                        </li>
+                        <li>
+                            <span>当日订单</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-body">
+                    <table frame="void" cellspacing="0" class="table2-cpdd table-b2">
+                        <tr class="thead">
+                            <td>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                            </td>
+                            <td>订单编号</td>
+                            <td>订单状态</td>
+                            <td>乘机人</td>
+                            <td>PNR</td>
+                            <td>票号</td>
+                            <td>行程</td>
+                            <td>航班日期</td>
+                            <td>总金额</td>
+                            <td>税金</td>
+                            <td>返点返款</td>
+                            <td>预订时间</td>
+                            <td>备注</td>
+                        </tr>
+                        {% for x in range(10) %}
+                        {% if x%2==0 %}
+                        <tr class="odd">
+                        {% else  %}
+                        <tr class="even">
+                        {% end %}
+                            <td>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                            </td>
+                            <td><a href="审核中的订单详情.html">32132132</a></td>
+                            <td>审核中</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                        </tr>
+                        {% end %}
+                    </table>
+
+                </div>
+            </div>
+
+                    {% include 'partial/pagination.html' %}
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="lightbox lightbox-1">
+    <div class="lightbox-head">
+        <h3>出票</h3>
+    </div>
+    <div class="lightbox-body">
+        <p>
+            订单信息<br> 
+            2012年7月6日上海到香港东方航空123132航班
+        </p>
+        <p>
+        乘客信息<br> 
+        姓名 成人（儿童） 护照号码 机票款 税金
+        </p>
+        <p>
+            票款全部费用123123131元（包含票款，税金等） 
+        </p>
+    </div>
+</div>
+
+<div class="lightbox lightbox-2">
+    <div class="lightbox-head">
+        <h3>申请改签</h3>
+    </div>
+    <p> 你要改的是**，订单号：××××，2130-231-321 你要改的是**，订单号：××××，2130-231-321</p>
+    <p>
+    <table cellspacing="0">
+        <tr>
+            <th>改签票号</th>
+            <td>
+                <input type="text" class="text" value="" name="" />
+            </td>
+        </tr>
+        <tr>
+            <th>航班类型</th>
+            <td>
+                <label>
+                    <input type="radio" class="radio" value="" name="" />
+                    单程
+                </label>
+                <label>
+                    <input type="radio" class="radio" value="" name="" />
+                    返程
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                出发日期 
+            </th>
+            <td>
+                <input type="text" class="text" value="" name="" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                返回日期 
+            </th>
+            <td>
+                <input type="text" class="text" value="" name="" />
+            </td>
+        </tr>
+        <tr>
+            <th>航班号</th>
+            <td>
+                <input type="text" class="text" value="" name="" />
+            </td>
+        </tr>
+        <tr>
+            <th>舱位</th>
+            <td>
+                <input type="text" class="text" value="" name="" />
+            </td>
+        </tr>
+        <tr>
+            <th>航程</th>
+            <td>
+                <input type="text" class="text" value="" name="" />
+            </td>
+        </tr>
+        <tr>
+            <th>改签信息</th>
+            <td>
+                <textarea name=""></textarea>
+            </td>
+        </tr>
+    </table>
+    </p>
+    <p class="center">
+        <input type="button" class="button button1" value="申请改签" name="" />
+        <input type="button" class="button button1" value="取消" name="" />
+    </p>
+</div>
+{% include '../partial/footer.html' %}

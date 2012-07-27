@@ -1,0 +1,121 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-tkdd mo-ddgl">
+            <div class="block block1">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        退款订单 
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table cellspacing="0" class="table1-tkdd table-b3">
+                        <tr>
+                            <th>查询方式</th>
+                            <td>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    票号
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    PNR编号
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    乘客姓名
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    订单编号
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                PNR记录编号 
+                            </th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="center">
+                        <input type="button" class="button button2" value="立即查询" name="" />
+                    </p>
+                </div>
+            </div>
+
+            <div class="block block2">
+                <div class="block-head">
+                    <ul>
+                        <li class="current">
+                        <span>全部订单</span>
+                        </li>
+                        <li>
+                        <span>
+                            退款中 
+                        </span>
+                        </li>
+                        <li>
+                        <span>
+                            退款完成 
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-body">
+                    <table frame="void" cellspacing="0" class="table2-tkdd table-b2">
+                        <tr class="thead">
+                            <td>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                            </td>
+                            <td>订单编号</td>
+                            <td>订单状态</td>
+                            <td>乘机人</td>
+                            <td>PNR</td>
+                            <td>票号</td>
+                            <td>行程</td>
+                            <td>航班日期</td>
+                            <td>总金额</td>
+                            <td>税金</td>
+                            <td>返点返款</td>
+                            <td>预订时间</td>
+                            <td>备注</td>
+                        </tr>
+                        {% for x in range(10) %}
+                        {% if x%2==0 %}
+                        <tr class="odd">
+                        {% else  %}
+                        <tr class="even">
+                        {% end %}
+                            <td>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                            </td>
+                            <td><a href="审核中的订单详情.html">32132132</a></td>
+                            <td>审核中</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                        </tr>
+                        {% end %}
+                    </table>
+                </div>
+            
+            </div>
+
+                    {% include 'partial/pagination.html' %}
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}
