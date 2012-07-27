@@ -2,15 +2,16 @@
 
 module=$1
 
-dst=~/Desktop/$module
+dst=~/www/$module
 
 echo 'save to ${dst}\n'
 
 mkdir $dst
+mkdir $dst/static
 
-cp -r static/css/ $dst
-cp -r static/js/ $dst
-cp -r static/img/ $dst
+cp -r static/css/ $dst/static
+cp -r static/js/ $dst/static
+cp -r static/img/ $dst/static
 
 cd templates/$module/
 

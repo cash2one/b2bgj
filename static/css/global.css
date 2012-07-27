@@ -9,7 +9,7 @@
 .clearfix {
   *zoom: 1; }
 
-.red {
+.red, .pagination .current {
   color: red; }
 
 .blue, .gray-title ul .current, .mo-ddgl .block2 .block-head ul .current {
@@ -21,7 +21,7 @@ body {
   min-width: 1100px; }
 
 .gray-title, .mo-ddgl .block2 .block-head {
-  background: url(/static/img/gray-title.png) repeat-x; }
+  background: url(../img/gray-title.png) repeat-x; }
   .gray-title ul, .mo-ddgl .block2 .block-head ul {
     overflow: hidden;
     padding: 0;
@@ -79,7 +79,7 @@ body {
   float: left; }
 
 .head {
-  background: #3a6ea5 url(/static/img/head.jpg) 100% 100% no-repeat;
+  background: #3a6ea5 url(../img/head.jpg) 100% 100% no-repeat;
   height: 95px;
   min-width: 960px; }
 
@@ -93,11 +93,11 @@ body {
   margin: 0;
   width: 170px;
   text-align: center;
-  background: url(/static/img/logo-border.png) 100% 50% no-repeat; }
+  background: url(../img/logo-border.png) 100% 50% no-repeat; }
   .logo span {
     display: none; }
   .logo a {
-    background: url(/static/img/logo.png) no-repeat;
+    background: url(../img/logo.png) no-repeat;
     display: block;
     margin: 0 auto;
     width: 114px;
@@ -130,12 +130,12 @@ body {
     display: block;
     color: white;
     font-size: 14px;
-    background: url(/static/img/menu-main.png) no-repeat; }
+    background: url(../img/menu-main.png) no-repeat; }
     .menu-main a:hover {
       text-decoration: none; }
   .menu-main .current a {
     color: #3366cc;
-    background: url(/static/img/menu-main-h.png) no-repeat; }
+    background: url(../img/menu-main-h.png) no-repeat; }
 
 a {
   text-decoration: none; }
@@ -203,13 +203,13 @@ a {
   margin-left: 0; }
 
 i.arrow1 {
-  background: url(/static/img/arrow1.png) no-repeat;
+  background: url(../img/arrow1.png) no-repeat;
   display: block;
   width: 13px;
   height: 7px; }
 
 i.arrow5 {
-  background: url(/static/img/arrow5.png) no-repeat;
+  background: url(../img/arrow5.png) no-repeat;
   display: block;
   width: 9px;
   height: 5px;
@@ -219,10 +219,10 @@ i.arrow5 {
 
 i.arrow5h {
   top: 2px;
-  background: url(/static/img/arrow5h.png) no-repeat; }
+  background: url(../img/arrow5h.png) no-repeat; }
 
 i.arrow4 {
-  background: url(/static/img/arrow4.png) no-repeat;
+  background: url(../img/arrow4.png) no-repeat;
   display: block;
   width: 5px;
   height: 9px;
@@ -232,19 +232,19 @@ i.arrow4 {
 
 i.arrow4h {
   left: 5px;
-  background: url(/static/img/arrow4h.png) no-repeat; }
+  background: url(../img/arrow4h.png) no-repeat; }
 
 i.icon1 {
   padding: 1px 10px;
-  background: url(/static/img/icon1.png) no-repeat 50% 50%; }
+  background: url(../img/icon1.png) no-repeat 50% 50%; }
 
 i.icon2 {
   padding: 1px 10px;
-  background: url(/static/img/icon2.png) no-repeat 50% 50%; }
+  background: url(../img/icon2.png) no-repeat 50% 50%; }
 
 i.icon3 {
   padding: 1px 10px;
-  background: url(/static/img/icon3.png) no-repeat 50% 50%; }
+  background: url(../img/icon3.png) no-repeat 50% 50%; }
 
 i {
   cursor: pointer;
@@ -347,6 +347,11 @@ p {
   margin-top: 20px;
   padding: 10px;
   text-align: center; }
+  .pagination a {
+    padding: 0 5px;
+    color: #666666; }
+  .pagination .current {
+    font-weight: bold; }
 
 .table-buttons {
   margin-top: 40px;
@@ -376,13 +381,12 @@ p {
   .table-b3 td, .table-b3 th {
     vertical-align: baseline;
     padding: 10px;
-    border-top: 1px solid #cecece;
-    border-bottom: 1px solid #cecece; }
+    border: 1px solid #cecece; }
   .table-b3 th {
     vertical-align: baseline;
     width: 100px;
     background-color: #f6f6f6;
-    border-right: 1px solid #cecece; }
+    border: 1px solid #cecece; }
 
 h3.gray-title, .mo-ddgl .block2 h3.block-head {
   line-height: 34px;
@@ -481,6 +485,9 @@ tr.even {
   .mo-ddgl .block2 .block-head {
     margin-bottom: 10px;
     border-bottom: 1px solid #cecece; }
+.mo-ddgl .table-b3 {
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece; }
 
 .mo-tjdd .block {
   margin-bottom: 15px; }

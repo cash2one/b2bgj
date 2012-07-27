@@ -2,14 +2,14 @@ body {
   background-color: #e2e9ea; }
 
 .head {
-  background: #339966 url(/static/img/g/head.jpg) 100% 100% no-repeat; }
+  background: #339966 url(../img/g/head.jpg) 100% 100% no-repeat; }
 
 .logo {
-  background: url(/static/img/g/logo-border.png) 100% 50% no-repeat; }
+  background: url(../img/g/logo-border.png) 100% 50% no-repeat; }
   .logo a {
-    background-image: url(/static/img/g/logo.png); }
+    background-image: url(../img/g/logo.png); }
 
 .menu-main a {
-  background: url(/static/img/g/menu-main.png) no-repeat; }
+  background: url(../img/g/menu-main.png) no-repeat; }
 .menu-main .current a {
-  background: url(/static/img/g/menu-main-h.png) no-repeat; }
+  background: url(../img/g/menu-main-h.png) no-repeat; }

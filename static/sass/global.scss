@@ -424,6 +424,14 @@ p{
     margin-top:20px;
     padding:10px;
     text-align:center;
+    a{
+        padding:0 5px;
+        color:$c12; 
+    }
+    .current{
+        @extend .red; 
+        font-weight:bold;
+    }
 }
 
 .table-buttons{
@@ -461,14 +469,13 @@ p{
     td{
         vertical-align:baseline;
         padding:10px;
-        border-top:1px solid $c44; 
-        border-bottom:1px solid $c44; 
+        border:1px solid $c44; 
     }
     th{
         vertical-align:baseline;
         width:100px;
         background-color:$c43;
-        border-right:1px solid $c44; 
+        border:1px solid $c44; 
     }
 }
 
@@ -639,6 +646,10 @@ tr.even{
             border-bottom:1px solid $c44; 
         }
     }
+    .table-b3{
+        border-top:1px solid $c44; 
+        border-bottom:1px solid $c44; 
+    }
 }
 
 
@@ -712,6 +723,7 @@ tr.even{
         font-family:monospace;
     }
 }
+
 
 ////////////////////
 .mo-fpxxcx{

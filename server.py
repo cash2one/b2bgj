@@ -14,6 +14,7 @@ class Application(tornado.web.Application):
             (r"/guoji/(.+)\.html", GuojiHandler),
         ]
         settings = dict(
+            static_url_prefix='/static/',
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
             #cookie_secret="43oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
@@ -21,6 +22,7 @@ class Application(tornado.web.Application):
             #xsrf_cookies=True,
             #autoescape="xhtml_escape",
         )
+
         tornado.web.Application.__init__(self, handlers, **settings)
 
 
