@@ -2,7 +2,7 @@
 
 module=$1
 
-dst=~/www/$module
+dst=~/www/BYCWORK/$module
 
 echo 'save to ${dst}\n'
 
