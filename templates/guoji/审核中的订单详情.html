@@ -4,31 +4,29 @@
     {% include 'partial/breadcrumb.html' %}
     <div class="content area">
         <div class="mo-ddxq">
-            <div class="block block1">
-                <div class="block-head">
+                <div class="xblock">
                     <p align="right">
-                    <span class="blue">航班及舱位查询</span>
-                    <i class="icon4"></i> 
+                    <span>航班及舱位查询</span>
+                    <i class="icon4">&nbsp;</i> 
                     <span>预订提交信息</span>
-                    <i class="icon4"></i> 
-                    <span>审核中</span>
-                    <i class="icon4"></i>
+                    <i class="icon4">&nbsp;</i> 
+                    <span class="blue">审核中</span>
+                    <i class="icon4">&nbsp;</i> 
                     <span>在线支付</span>
-                    <i class="icon4"></i>
+                    <i class="icon4">&nbsp;</i> 
                     <span>供票商出票</span>
-                    <i class="icon4"></i>
+                    <i class="icon4">&nbsp;</i> 
                     <span>出票完成</span>
                     </p>
                     <p>
                     <i class="icon5"></i>
-                    <span class="blue f14">国际机票预输单</span>
+                    <strong class="blue f14">国际机票预定单</strong>
                     <span class="red">订单号：[120421412]</span>
                     </p>
                 </div>
-                <div class="block-body">
-                    <div class="block-i block-i1">
+                    <div class="block block1">
                         <h3 class="gray-title">航班信息</h3>
-                        <table cellspacing="0" class="table1-txdd table-b2">
+                        <table frame=void cellspacing="0" class="table1-ddxq table-b2">
                             <tr class="thead">
                                 <td>航班日期</td>
                                 <td>出发地</td>
@@ -52,33 +50,37 @@
                         </table>
                     </div>
 
-                    <div class="block-i block-i2">
+                    <div class="block block2">
                         <h3 class="gray-title">费用明细</h3>
-                        <table cellspacing="0" class="table2-txdd table-b2">
+                        <table frame=void cellspacing="0" class="table2-ddxq table-b2">
                             <tr class="thead">
-                                <td>人数</td>
-                                <td>单张运价</td>
-                                <td>代理费（%）</td>
-                                <td>奖励（%）</td>
-                                <td>供应商开票费</td>
-                                <td>单张票结算价</td>
-                                <td>税费</td>
-                                <td>单张机票小计</td>
+                                <td>运价</td>
+                                <td>代理费用（%）</td>
+                                <td>奖励扣率（%）</td>
+                                <td>奖励金额</td>
+                                <td>税收金额</td>
+                                <td>保险金额</td>
+                                <td>交易手续费</td>
+                                <td>单张结算价</td>
+                                <td>其他费用</td>
+                                <td>运价来源</td>
                             </tr>
                             <tr>
+                                <td>2</td>
                                 <td>2</td>
                                 <td>111</td>
-                                <td>2</td>
+                                <td class="red">2</td>
                                 <td>0</td>
                                 <td>0</td>
-                                <td>11421</td>
+                                <td class="redb">11421</td>
                                 <td>512</td>
                                 <td>21421</td>
+                                <td>DEP</td>
                             </tr>
                             <tr>
-                                <td>
+                                <th>
                                     订单总金额 
-                                </td>
+                                </th>
                                 <td colspan=7>
                                     审核中  
                                 </td>
@@ -86,101 +88,65 @@
                         </table>
                     </div>
 
-                    <div class="block-i block-i3">
+                    <div class="block block3">
                         <h3 class="gray-title">乘机人信息</h3>
                         <p>
-                        <span class="red">人数</span>
-                        <span>1人</span>
-                        <span>
-                            <label>
-                                <input type="checkbox" class="checkbox" value="" name="" />增加乘客
-                            </label>
-                        </span>
+                            PNR记录编号 WWWW01 <span class="blue">大编：MSKJFK</span> 审核中
                         </p>
-                        <table cellspacing="0" class="yellow-bg">
+                        <p>
+                            <strong>客票使用条件</strong><br>
+                            退票：不允许<br>
+                            改签：去程不得该<br>
+                            特别说明：以上XXXXXXXXXXXXXXXX
+                        </p>
+                        <p>
+                            <strong>温馨提示</strong>
+                            供票工作时间
+                            <span class="red">
+                                8:00 - 22:00 （非票请在21:30前提交） 
+                            </span>
+                        </p>
+                        <div class="lightblue-bg">
+                        <table frame=void cellspacing="0" class="table3-ddxq">
                             <tr>
-                                <th>
-                                    英文姓名：
-                                </th>
-                                <td>
-                                    <input type="text" class="text" value="" name="" />
-                                </td>
+                                <th>英文姓名：</th>
+                                <td>HEPING</td>
                                 <th>乘客类型：</th>
-                                <td>
-                                    <select name="">
-                                        <option value="">成人</option>
-                                        <option value="">儿童</option>
-                                    </select>
-                                </td>
+                                <td>成人</td>
                                 <th>性别：</th>
-                                <td>
-                                    <select name="">
-                                        <option value="">男</option>
-                                        <option value="">女</option>
-                                    </select>
-                                </td>
-                                <td rowspan=3>
-                                    <label>
-                                        <input type="checkbox" class="checkbox" value="" name="" />加为常旅客
-                                    </label><br>
-                                    <label>
-                                        <input type="checkbox" class="checkbox" value="" name="" />购买平安航空险（8元/份）
-                                    </label><br>
-                                    <span class="blue">
-                                        阅读规则 
-                                    </span>
-                                </td>
+                                <td>男</td>
                             </tr>
                             <tr>
-                                <th>
-                                    证件类型：  
-                                </th>
-                                <td>
-                                    <select name="">
-                                        <option value="">护照</option>
-                                    </select>
-                                </td>
-                                <th>
-                                    证件有效期： 
-                                </th>
-                                <td>
-                                    <input type="text" class="text" value="" name="" />
-                                </td>
-                                <th>出生日期</th>
-                                <td>
-                                    <input type="text" class="text" value="" name="" />
-                                </td>
+                                <th>证件类型：</th>
+                                <td>护照</td>
+                                <th>证件有效期：</th>
+                                <td>2012-10-14</td>
+                                <th>出生日期：</th>
+                                <td>1990-10-10</td>
                             </tr>
                             <tr>
                                 <th>国籍：</th>
-                                <td>
-                                    <select name="">
-                                        <option value="">中国</option>
-                                    </select>
-                                </td>
+                                <td>中国</td>
                                 <th>证件号码：</th>
-                                <td>
-                                    <input type="text" class="text" value="" name="" />
-                                </td>
-                                <th></th>
-                                <td></td>
+                                <td>123132</td>
+                                <th>乘客类别：</th>
+                                <td>xxx</td>
                             </tr>
                         </table>
+                        </div>
                     </div>
 
-                    <div class="block-i block-i3">
-                        <p class="yellow-bg">
+                    <div class="block block4">
+                        <h3 class="gray-title">联系人信息</h3>
+                        <p class="lightblue-bg">
                         <label>
-                            姓名 
-                            <input type="text" class="text" value="" name="" />
+                            姓名：啊飞
                         </label>
                         <label>
-                            联系电话 
-                            <input type="text" class="text" value="" name="" />
+                            联系电话：1231421421 
                         </label>
                         <label>
-                            联系地址 
-                            <input type="text" class="text" value="" name="" />
+                            联系地址：上海上海上海 
                         </label>
                         </p>
                         <p>
@@ -189,79 +155,83 @@
                             是否需要发票（点击需要发票，下方展开后续发票填写信息）
                         </label>
                         </p>
-                        <p>
-                        <span>
-                            <u>发票金额</u>
-                            <input type="text" class="text" value="" name="" />
+                        <table frame=void cellspacing="0" class="table4-ddxq">
+                            <tr>
+                        <td>
+                            <strong>发票金额：</strong>
+                            111
                             元
-                        </span>
-                        <span>
-                            <u>发票抬头</u> 
-                            <input type="text" class="text" value="" name="" />
-                        </span>
-                        </p>
-                        <p>
-                        <u>发票派送方式</u>
-                        <label>
-                            <input type="radio" class="radio" value="" name="" />
+                        </td>
+                        <td>
+                            <strong>发票抬头：</strong> 
+                            上海不也成
+                        </td>
+                        <td>
+                        <strong>发票派送方式：</strong>
                             自取
-                        </label>
-                        <label>
-                            <input type="radio" class="radio" value="" name="" />
-                            到付（点击到付显示派送地址）
-                        </label>
-                        </p>
-                        <p>
-                        <span>
-                            <u>联系人</u>
-                            <input type="text" class="text" value="" name="" />
-                        </span>
-                        <span>
-                            <u>联系方式</u>
-                            <input type="text" class="text" value="" name="" />
-                        </span>
-                        </p>
-                        <p>
-                        <u>联系地址</u>
-                        <input type="text" class="text" value="" name="" />
-                        </p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <strong>联系人：</strong>
+                            啊飞
+                        </td>
+                        <td>
+                            <strong>联系方式：</strong>
+                            21313213
+                        </td>
+                        <td>
+                        <strong>联系地址：</strong>
+                        上海上海上海
+                        </td>
+                        </tr></table>
                     </div>
 
-                    <div class="block-i block-i4">
+                    <div class="block block5">
                         <h3 class="gray-title">支付信息</h3>
-                        <table cellspacing="0" class="table-b2">
-                            <tr class="thead">
-                                <td>机票价格</td>
+                        <table frame=void cellspacing="0" class="table-b3 table5-ddxq">
+                            <tr>
+                                <th>机票价格</td>
                                 <td>2173/张</td>
-                                <td>乘机人数</td>
+                                <th>乘机人数</td>
                                 <td>1人</td>
-                                <td>保险费用</td>
+                                <th>保险费用</td>
                                 <td>8元/份</td>
-                                <td>购买保险人数</td>
+                                <th>购买保险人数</td>
                                 <td>0人</td>
                             </tr>
                         </table>
                         <p>
                         订单总金额
-                        <span class="red">2173元</span>
+                        <span class="redb">2173元</span>
                         订单总金额计算方式：订单人数×单张机票价格+购买保险人数×保险费用
-                        </p>
-                        <p>
-                        <u>退改签规定</u>
-                        <textarea name=""></textarea>
                         </p>
                     </div>
 
-                    <div class="block-i block-i5">
+                    <div class="block block6">
+                        <h3 class="gray-title">
+                            订单处理状态
+                        </h3>
+                        <p>
+                            订单状态：审核中 
+                        </p>
+                        <p>
+                            预订时间：2012-05-15 10:00 
+                        </p>
+                        </div>
+                        
+                        <div class="block block7">
                         <h3 class="gray-title">
                             备注信息 
                         </h3>
                         <p>
-                        <span class="red">注：</span>
-                        字数限制最大200，输入时注意输入信息的长度
+                            备注信息：请尽快处理反对说法
                         </p>
                         <p>
-                        <textarea name=""></textarea>
+                            时间：2012-09-09  19:11
+                        </p>
+                        <p>
+                            操作员：小名 
                         </p>
                     </div>
 
@@ -270,8 +240,6 @@
                         <input type="button" class="button button2" value="加入购物车" name="" />
                     </div>
 
-                </div>
-            </div>
 
 
         </div>

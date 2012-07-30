@@ -22,8 +22,15 @@ $bc1:#bec6c7;
 .red{
     color:$c61;
 }
+.redb{
+    @extend .red;
+    font-weight:bold;
+}
 .blue{
     color:$c22;
+}
+.lightblue-bg{
+    background-color:$c25;
 }
 
 body{
@@ -248,6 +255,61 @@ a{
     }
 }
 
+///////////////////
+.lightbox table{height:100%;width:100%}
+.lightbox td{vertical-align:middle}
+.lightbox-content{
+    background-color:$c0;
+    width:400px;
+    margin:0 auto;
+    padding:1px;
+}
+
+.lightbox-body{
+    border:1px solid $c44;
+    border-top:0;
+    padding:10px 30px 30px 30px;
+}
+
+.lightbox-head{
+    border:1px solid $c44;
+    border-bottom:0;
+    background-color:$c42; 
+    h3{
+        @extend .f14;
+        line-height:30px;
+        padding-left:20px;
+        margin:0; 
+    }
+}
+.lightbox2{
+    .lightblue-bg{
+        border-left:1px solid $c44;
+        border-right:1px solid $c44;
+        padding:10px 30px; 
+    }
+    th{
+        text-align:right; 
+    }
+    td{
+        padding:5px; 
+    }
+}
+.lightbox{
+    display:none;
+    line-height:20px;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999999999;
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+    zoom: 1;
+    _position: absolute;
+}
 i.arrow1{
     background:url(#{$skin_folder}/arrow1.png) no-repeat;
     display:block;
@@ -285,7 +347,7 @@ i.arrow4h{
     background:url(#{$skin_folder}/arrow4h.png) no-repeat;
 }
 
-@for $i from 1 through 3{
+@for $i from 1 through 5{
     i.icon#{$i}{
         padding:1px 10px;
         background:url(#{$skin_folder}/icon#{$i}.png) $center;
@@ -293,7 +355,6 @@ i.arrow4h{
 }
 
 i{
-    cursor:pointer; 
     zoom:1;
     @extend b;
 }
@@ -353,6 +414,7 @@ input.text,textarea,select{
 }
 
 input.text{
+    background-color:$c0;
     padding:2px;
 }
 
@@ -446,7 +508,6 @@ p{
 }
 
 .table-b2{
-    border-top:1px solid $c44;
     width:100%;
     .thead{
         background-color:$c43; 
@@ -478,6 +539,50 @@ p{
         border:1px solid $c44; 
     }
 }
+
+.table-b4{
+    @extend .table-b3;
+}
+
+.table-b5{
+    img{
+        vertical-align:middle; 
+        margin-bottom:5px;
+    }
+    td{
+        padding:5px 10px; 
+    }
+    width:100%;
+    border-top:1px solid $c44; 
+    .thead{
+        @extend .gray-title;
+        td{
+            line-height:30px;
+            padding:0 0 0 10px;
+            border:1px solid $c44; 
+            font-weight:bold;
+        }
+    }
+    .info-row td{
+        padding:0; 
+    }
+    .info{
+        span{
+            padding-right:20px; 
+        }
+        padding:0 20px;
+        margin-bottom:20px;
+        border-bottom:2px solid $c26;
+        background-color:$c43;
+        line-height:40px;
+        .btn{
+            float:right; 
+            height:20px;
+        }
+    }
+}
+
+
 
 h3.gray-title{
     @extend .f12;
@@ -628,9 +733,14 @@ tr.even{
     text-align:center;
 }
 
+
 ////////////////////
 .mo-ddgl{
+    .table-b2{
+        border-top:1px solid $c44; 
+    }
     .block1{
+        margin-bottom:20px;
         .center{
             padding:10px;
         } 
@@ -639,7 +749,6 @@ tr.even{
         margin:10px; 
     }
     .block2{
-        margin-top:20px;
         .block-head{
             @extend .gray-title;
             margin-bottom:10px;
@@ -669,13 +778,17 @@ tr.even{
 
 
 ////////////////////
-.mo-pnrcjdd{
-.metas{
-    padding:5px;
-    .col2{
-        float:right; 
-    }
+.table1-pnrcjdd{
+    border-top:1px solid $c44;
+    border-bottom:1px solid $c44;
 }
+.mo-pnrcjdd{
+    .metas{
+        padding:5px;
+        .col2{
+            float:right; 
+        }
+    }
     .block1{
         margin-bottom:15px;
         padding:2px;
@@ -724,6 +837,13 @@ tr.even{
     }
 }
 
+////////////////////
+.mo-jptj .block2{
+    border-top:0;
+}
+.mo-jptj .xblock{
+    margin-bottom:10px;
+}
 
 ////////////////////
 .mo-fpxxcx{
@@ -732,5 +852,122 @@ tr.even{
     }
     p{
         padding:10px; 
+    }
+}
+
+//////////////////
+.mo-tjdd{
+    @extend .mo-ddxq;
+    .table5-tjdd{
+
+    }
+    textarea{
+        width:400px;
+        height:100px;
+        margin-bottom:10px;
+    }
+}
+.table3-tjdd{
+    th{
+        text-align:right; 
+    }
+    td{
+        line-height:18px;
+        vertical-align:baseline;
+        padding:5px;
+    }
+}
+.table4-tjdd{
+    border-bottom:1px solid $c44;
+}
+
+//////////////////
+.mo-ddxq{
+    .xblock p{
+        padding-bottom:10px; 
+    }
+
+    .block{
+        margin-bottom:10px; 
+        p{
+            line-height:20px;
+            padding:5px 20px;
+        } 
+    }
+    .gray-title{
+        border-bottom:1px solid $c44;
+    }
+
+    .block3{
+        .lightblue-bg{
+            border-top:1px solid $c44; 
+        } 
+    }
+    .block4{
+        .lightblue-bg{
+            label{
+                padding-right:40px; 
+            }
+            border-bottom:1px solid $c44; 
+        } 
+    }
+
+}
+.table2-ddxq{
+    th{
+        background-color:$c43;
+        border-right:1px solid $c44; 
+    }
+}
+.table4-ddxq{
+    margin-left:30px;
+    margin-bottom:10px;
+    width:500px;
+    td{
+        padding:5px; 
+    } 
+}
+.table5-ddxq{
+    border-bottom:1px solid $c44; 
+}
+.table3-ddxq{
+    width:600px;
+    th{
+        text-align:right; 
+    }
+    th,td{
+        padding:10px; 
+    }
+}
+
+
+/////////////////
+.mo-hbcx{
+    .block1{
+        margin-bottom:20px; 
+    }
+    .block2{
+        border:none; 
+    }
+    .table-b4{
+        border-top:1px solid $c44; 
+        border-bottom:1px solid $c44; 
+    }
+    .block1 .center{
+        padding:10px; 
+    }
+}
+
+////////////////
+.mo-xxzc {
+    .table-b4{
+        border-top:1px solid $c44;
+        border-bottom:1px solid $c44;
+    }
+    .block1{
+        .center{
+            margin:10px 0; 
+        }
+        margin-bottom:20px; 
     }
 }
