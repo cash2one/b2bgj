@@ -63,11 +63,13 @@
                                 <td>单张机票小计</td>
                             </tr>
                             <tr>
-                                <td>111</td>
+                                <td>
+                                   <input type="radio" class="radio" value="" name="" />
+                                    111</td>
                                 <td>2</td>
                                 <td>0</td>
                                 <td>0</td>
-                                <td>11421</td>
+                                <td class="redb">11421</td>
                                 <td>512</td>
                                 <td>21421</td>
                             </tr>
@@ -109,10 +111,12 @@
                                 </td>
                                 <td rowspan=3>
                                     <label>
-                                        <input type="checkbox" class="checkbox" value="" name="" />加为常旅客
+                                        <input type="checkbox" class="checkbox" value="" name="" />
+                                        加为常旅客
                                     </label><br>
                                     <label>
-                                        <input type="checkbox" class="checkbox" value="" name="" />购买平安航空险（8元/份）
+                                        <input type="checkbox" class="checkbox" value="" name="" />
+                                        购买平安航空险（8元/份）
                                     </label><br>
                                     <span class="blue">
                                         阅读规则 
@@ -132,11 +136,11 @@
                                     证件有效期： 
                                 </th>
                                 <td>
-                                    <input type="text" class="text" value="" name="" />
+                                    <input type="text" class="text datepicker" value="" name="" />
                                 </td>
                                 <th>出生日期</th>
                                 <td>
-                                    <input type="text" class="text" value="" name="" />
+                                    <input type="text" class="text datepicker" value="" name="" />
                                 </td>
                             </tr>
                             <tr>
@@ -157,6 +161,9 @@
                     </div>
 
                     <div class="block block4">
+                        <h3 class="gray-title">
+                        联系人信息
+                        </h3>
                         <p class="lightblue-bg">
                             <label>
                                 姓名 
@@ -183,9 +190,10 @@
                                 <input type="text" class="text" value="" name="" />
                                 元
                             </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <span>
                                 <u>发票抬头</u> 
-                                <input type="text" class="text" value="" name="" />
+                                <input type="text" class="text text2" value="" name="" />
                             </span>
                         </p>
                         <p>
@@ -201,17 +209,19 @@
                         </p>
                         <p>
                             <span>
-                                <u>联系人</u>
+                                <u>联 系 人</u>
                                 <input type="text" class="text" value="" name="" />
+                                &nbsp;&nbsp;
                             </span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <span>
                                 <u>联系方式</u>
-                                <input type="text" class="text" value="" name="" />
+                                <input type="text" class="text text2" value="" name="" />
                             </span>
                         </p>
                         <p>
                             <u>联系地址</u>
-                            <input type="text" class="text" value="" name="" />
+                            <input type="text" class="text text3" value="" name="" />
                         </p>
                     </div>
 
@@ -254,14 +264,55 @@
                     </div>
 
                     <div class="center">
-                        <input type="button" class="button button2" value="确认无误，下订单" name="" />
-                        <input type="button" class="button button2" value="加入购物车" name="" />
+                        <input type="button" class="button button3 show-lightbox" value="确认无误，下订单" name="" data-lightboxid="CPQR" />
                     </div>
-
 
 
         </div>
 
     </div>
 </div>
+
+<div class="lightbox lightbox-1" data-lightboxid="CPQR">
+    <table cellspacing="0">
+        <tr>
+            <td>
+                <div class="lightbox-content">
+                    <i class="close" rel="close">×</i> 
+    <div class="lightbox-head">
+        <h3>出票确认</h3>
+    </div>
+    <div class="lightbox-body">
+        <p>
+            <strong>
+                订单信息
+            </strong>
+            <br> 
+            2012年7月6日上海到香港东方航空123132航班
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <strong>
+                乘客信息
+            </strong>
+            <br> 
+        姓名 成人（儿童） 护照号码 机票款 税金
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            票款全部费用<b class="red">123123131</b>元（包含票款，税金等） 
+        </p>
+        <p>&nbsp;</p>
+        <p class="center">
+            <input type="button" class="button button1" value="确定" name="" />
+            <input type="button" class="button button1" value="取消" name="" rel="close" />
+        </p>
+    </div>
+                </div>
+            
+            </td>
+        </tr>
+    </table>
+</div>
+
 {% include '../partial/footer.html' %}

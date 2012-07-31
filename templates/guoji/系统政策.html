@@ -71,17 +71,16 @@
                 <div class="block-body">
                     <table frame="void" cellspacing="0" class="table-b2">
                         <tr class="thead">
-                            <td>订单编号</td>
-                            <td>订单状态</td>
-                            <td>乘机人</td>
-                            <td>PNR</td>
-                            <td>票号</td>
-                            <td>行程</td>
-                            <td>航班日期</td>
-                            <td>总金额</td>
-                            <td>税金</td>
-                            <td>返点返款</td>
-                            <td>预订时间</td>
+                            <td>政策编号</td>
+                            <td>政策返点类型</td>
+                            <td>航班号</td>
+                            <td>航线</td>
+                            <td>舱位</td>
+                            <td>代理费</td>
+                            <td>奖励扣率</td>
+                            <td>奖励金额</td>
+                            <td>政策有效期</td>
+                            <td>出票有效期</td>
                             <td>备注</td>
                         </tr>
                         {% for x in range(10) %}
@@ -90,8 +89,7 @@
                         {% else  %}
                         <tr class="even">
                         {% end %}
-                            <td><a href="审核中的订单详情.html">32132132</a></td>
-                            <td>审核中</td>
+                            <td><a href="javascript:;" data-num="323122">32132132</a></td>
                             <td>xx</td>
                             <td>xx</td>
                             <td>xx</td>
@@ -101,7 +99,7 @@
                             <td>xx</td>
                             <td>xx</td>
                             <td>xx</td>
-                            <td>xxxxxxxx</td>
+                            <td class="blue">xxxxxxxx</td>
                         </tr>
                         {% end %}
                     </table>

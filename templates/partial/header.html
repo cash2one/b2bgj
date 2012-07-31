@@ -7,6 +7,16 @@
 <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
 <!-- <link href="{{ static_url('css/reset.css') }}" rel="stylesheet" /> -->
 <link href="{{ static_url('css/global.css') }}" rel="stylesheet" />
+   <script type="text/javascript" src="{{ static_url('js/jquery-1.7.2.min.js') }}"></script>
+   <link href="{{ static_url('kendoUI/styles/kendo.common.min.css')  }}" rel="stylesheet" />
+   <link href="{{ static_url('kendoUI/styles/kendo.default.min.css')  }}" rel="stylesheet" />
+   <script src="{{ static_url('kendoUI/js/kendo.all.min.js')  }}"></script>
+   <script type="text/javascript" src="{{ static_url('js/common.js') }}"></script>
+   <script type="text/javascript">
+       $(function(){
+           $(".datepicker").kendoDatePicker(); 
+       })
+   </script>
 </head>
 <body>
 <div class="head clearfix">
@@ -16,7 +26,7 @@
     <div class="nav-top">
         <div class="menu-quick">
             欢迎您！Admin 
-            [<a href="#">供应商</a>] | 
+            [<a href="#">{{ data['usergroup'] }}</a>] | 
             [<a href="#">退出</a>] | 
             <a href="#">站点首页</a> |
             <a href="#">个人设置</a> |
