@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="UTF-8">
+<title>提交PNR订单</title>
+<link href="static/css/normalize.css?v=19248" rel="stylesheet" />
+<!-- <link href="static/css/reset.css?v=19aac" rel="stylesheet" /> -->
+<link href="static/css/global.css?v=cba54" rel="stylesheet" />
+<script type="text/javascript" src="static/js/jquery-1.7.2.min.js?v=b8d64"></script>
+<link href="static/kendoUI/styles/kendo.common.min.css?v=2edd0" rel="stylesheet" />
+<link href="static/kendoUI/styles/kendo.default.min.css?v=34b00" rel="stylesheet" />
+<script src="static/kendoUI/js/kendo.all.min.js?v=3c72d"></script>
+<script type="text/javascript" src="static/js/common.js?v=69aec"></script>
+</head>
+<body>
+<div class="head clearfix">
+<h1 class="logo">
+<a href="#"><span>天地行B2B交易平台</span></a>
+</h1>
+<div class="nav-top">
+<div class="menu-quick">
+欢迎您！Admin
+[<a href="#">供应商</a>] |
+[<a href="#">退出</a>] |
+<a href="#">站点首页</a> |
+<a href="#">个人设置</a> |
+<a href="#">帮助中心</a>
+</div>
+<div class="menu-main clearfix">
+<ul>
+<li>
+<a href="#">国内机票</a>
+</li>
+<li class="current">
+<a href="#">国际机票</a>
+</li>
+<li>
+<a href="#">酒 店</a>
+</li>
+<li>
+<a href="#">保 险</a>
+</li>
+<li>
+<a href="#">政策管理</a>
+</li>
+<li>
+<a href="#">财务管理</a>
+</li>
+<li>
+<a href="#">统计报表</a>
+</li>
+<li>
+<a href="#">系统管理</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="clearfix skins">
+<b data-color="default" class="change-style"></b>
+<b data-color="lightblue" class="change-style"></b>
+<b data-color="green" class="change-style"></b>
+<b data-color="lightgreen" class="change-style"></b>
+</div>
+</div>
+
+<div class="body clearfix">
+ <div class="sidebar area">
+<div class="menu-sidebar">
+
+<dl>
+<dt>国际订单管理
+<i class="arrow1"></i>
+</dt>
+
+
+<dd>
+<a 
+href="出票订单.html">出票订单</a>
+</dd>
+
+<dd>
+<a 
+href="审核订单.html">审核订单</a>
+</dd>
+
+<dd>
+<a 
+href="退票订单.html">退票订单</a>
+</dd>
+
+<dd>
+<a 
+href="废票订单.html">废票订单</a>
+</dd>
+
+
+</dl>
+
+<dl>
+<dt>政策管理
+<i class="arrow1"></i>
+</dt>
+
+
+<dd>
+<a 
+href="国际返点管理.html">国际返点管理</a>
+</dd>
+
+
+</dl>
+
+<dl>
+<dt>财务管理
+<i class="arrow1"></i>
+</dt>
+
+
+<dd>
+<a 
+href="退款订单.html">退款订单</a>
+</dd>
+
+<dd>
+<a 
+href="机票统计.html">机票统计</a>
+</dd>
+
+
+</dl>
+
+<dl>
+<dt>基础数据维护
+<i class="arrow1"></i>
+</dt>
+
+
+<dd>
+<a 
+href="基础数据维护.html">基础数据维护</a>
+</dd>
+
+
+</dl>
+
+</div>
+<div class="links">
+<span><i class="icon1"></i><a href="投诉与建议.html">投诉与建议</a> </span>
+<span><i class="icon2"></i><a href="在线客服.html">在线客服</a> </span>
+</div>
+</div>
+
+ <div class="breadcrumb">
+<span>
+<i class="icon3"></i>
+当前位置：
+<span>国际机票</span> &gt;
+<span>提交PNR订单</span>
+</span>
+</div>
+
+<div class="content area">
+<div class="mo-tjdd">
+<div class="xblock">
+<p align="right">
+<span>航班及舱位查询</span>
+<i class="icon4">&nbsp;</i>
+<span>预订提交信息</span>
+<i class="icon4">&nbsp;</i>
+<span class="blue">审核中</span>
+<i class="icon4">&nbsp;</i>
+<span>在线支付</span>
+<i class="icon4">&nbsp;</i>
+<span>供票商出票</span>
+<i class="icon4">&nbsp;</i>
+<span>出票完成</span>
+</p>
+<p>
+<i class="icon5"></i>
+<strong class="blue f14">国际机票预定单</strong>
+<span class="red">订单号：[120421412]</span>
+</p>
+</div>
+<div class="block block1">
+<h3 class="gray-title">航班信息</h3>
+<table frame=void cellspacing="0" class="table1-tjdd table-b2">
+<tr class="thead">
+<td>航班日期</td>
+<td>出发地</td>
+<td>到达地</td>
+<td>航空公司</td>
+<td>航班号</td>
+<td>起飞时间</td>
+<td>到达时间</td>
+<td>舱位</td>
+</tr>
+<tr>
+<td>2012-12-11</td>
+<td>上海浦东</td>
+<td>香港</td>
+<td>东方航空</td>
+<td>MU555</td>
+<td>17:00</td>
+<td>19:22</td>
+<td>R</td>
+</tr>
+</table>
+</div>
+<div class="block block2">
+<h3 class="gray-title">费用明细</h3>
+<table frame=void cellspacing="0" class="table2-tjdd table-b2">
+<tr class="thead">
+<td>单张运价</td>
+<td>代理费（%）</td>
+<td>奖励（%）</td>
+<td>供应商开票费</td>
+<td>单张票结算价</td>
+<td>税费</td>
+<td>单张机票小计</td>
+</tr>
+<tr>
+<td>
+<input type="radio" class="radio" value="" name="" />
+111</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td class="redb">11421</td>
+<td>512</td>
+<td>21421</td>
+</tr>
+</table>
+</div>
+<div class="block block3">
+<h3 class="gray-title">乘机人信息</h3>
+<p>
+<span class="red">人数</span>
+<span>1人</span>
+<span>
+<label>
+<input type="checkbox" class="checkbox" value="" name="" />增加乘客
+</label>
+</span>
+</p>
+<table frame=void cellspacing="0" class="table3-tjdd lightblue-bg">
+<tr>
+<th>
+英文姓名：
+</th>
+<td>
+<input type="text" class="text" value="" name="" />
+</td>
+<th>乘客类型：</th>
+<td>
+<select name="">
+<option value="">成人</option>
+<option value="">儿童</option>
+</select>
+</td>
+<th>性别：</th>
+<td>
+<select name="">
+<option value="">男</option>
+<option value="">女</option>
+</select>
+</td>
+<td rowspan=3>
+<label>
+<input type="checkbox" class="checkbox" value="" name="" />
+加为常旅客
+</label><br>
+<label>
+<input type="checkbox" class="checkbox" value="" name="" />
+购买平安航空险（8元/份）
+</label><br>
+<span class="blue">
+阅读规则
+</span>
+</td>
+</tr>
+<tr>
+<th>
+证件类型：
+</th>
+<td>
+<select name="">
+<option value="">护照</option>
+</select>
+</td>
+<th>
+证件有效期：
+</th>
+<td>
+<input type="text" class="text datepicker" value="" name="" />
+</td>
+<th>出生日期</th>
+<td>
+<input type="text" class="text datepicker" value="" name="" />
+</td>
+</tr>
+<tr>
+<th>国籍：</th>
+<td>
+<select name="">
+<option value="">中国</option>
+</select>
+</td>
+<th>证件号码：</th>
+<td>
+<input type="text" class="text" value="" name="" />
+</td>
+<th></th>
+<td></td>
+</tr>
+</table>
+</div>
+<div class="block block4">
+<h3 class="gray-title">
+联系人信息
+</h3>
+<p class="lightblue-bg">
+<label>
+姓名
+<input type="text" class="text" value="" name="" />
+</label>
+<label>
+联系电话
+<input type="text" class="text" value="" name="" />
+</label>
+<label>
+联系地址
+<input type="text" class="text" value="" name="" />
+</label>
+</p>
+<p>
+<label>
+<input type="checkbox" class="checkbox" value="" name="" />
+是否需要发票（点击需要发票，下方展开后续发票填写信息）
+</label>
+</p>
+<p>
+<span>
+<u>发票金额</u>
+<input type="text" class="text" value="" name="" />
+元
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>
+<u>发票抬头</u>
+<input type="text" class="text text2" value="" name="" />
+</span>
+</p>
+<p>
+<u>发票派送方式</u>
+<label>
+<input type="radio" class="radio" value="" name="" />
+自取
+</label>
+<label>
+<input type="radio" class="radio" value="" name="" />
+到付（点击到付显示派送地址）
+</label>
+</p>
+<p>
+<span>
+<u>联 系 人</u>
+<input type="text" class="text" value="" name="" />
+&nbsp;&nbsp;
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span>
+<u>联系方式</u>
+<input type="text" class="text text2" value="" name="" />
+</span>
+</p>
+<p>
+<u>联系地址</u>
+<input type="text" class="text text3" value="" name="" />
+</p>
+</div>
+<div class="block block4">
+<h3 class="gray-title">支付信息</h3>
+<table frame=void cellspacing="0" class="table4-tjdd table-b3">
+<tr class="thead">
+<td>机票价格</td>
+<td>2173/张</td>
+<td>乘机人数</td>
+<td>1人</td>
+<td>保险费用</td>
+<td>8元/份</td>
+<td>购买保险人数</td>
+<td>0人</td>
+</tr>
+</table>
+<p>
+订单总金额
+<span class="red">2173元</span>
+订单总金额计算方式：订单人数×单张机票价格+购买保险人数×保险费用
+</p>
+<p>
+<u>退改签规定</u>
+<textarea name=""></textarea>
+</p>
+</div>
+<div class="block block5">
+<h3 class="gray-title">
+备注信息
+</h3>
+<p>
+<span class="red">注：</span>
+字数限制最大200，输入时注意输入信息的长度
+</p>
+<p>
+<textarea name=""></textarea>
+</p>
+</div>
+<div class="center">
+<input type="button" class="button button3 show-lightbox" value="确认无误，下订单" name="" data-lightboxid="CPQR" />
+</div>
+</div>
+</div>
+</div>
+<div class="lightbox lightbox-1" data-lightboxid="CPQR">
+<table cellspacing="0">
+<tr>
+<td>
+<div class="lightbox-content">
+<i class="close" rel="close">×</i>
+<div class="lightbox-head">
+<h3>出票确认</h3>
+</div>
+<div class="lightbox-body">
+<p>
+<strong>
+订单信息
+</strong>
+<br>
+2012年7月6日上海到香港东方航空123132航班
+</p>
+<p>&nbsp;</p>
+<p>
+<strong>
+乘客信息
+</strong>
+<br>
+姓名 成人（儿童） 护照号码 机票款 税金
+</p>
+<p>&nbsp;</p>
+<p>
+票款全部费用<b class="red">123123131</b>元（包含票款，税金等）
+</p>
+<p>&nbsp;</p>
+<p class="center">
+<input type="button" class="button button1" value="确定" name="" />
+<input type="button" class="button button1" value="取消" name="" rel="close" />
+</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+ <i class="toggle-arrow arrow4"></i>
+<i class="toggle-arrow arrow5"></i>
+</body>
+</html>
+

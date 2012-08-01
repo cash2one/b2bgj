@@ -1,0 +1,15 @@
+body {
+  background-color: #f5f5f5; }
+
+.head {
+  background: #669933 url(../img/lg/head.jpg) 100% 100% no-repeat; }
+
+.logo {
+  background: url(../img/lg/logo-border.png) 100% 50% no-repeat; }
+  .logo a {
+    background-image: url(../img/lg/logo.png); }
+
+.menu-main a {
+  background: url(../img/lg/menu-main.png) no-repeat; }
+.menu-main .current a {
+  background: url(../img/lg/menu-main-h.png) no-repeat; }
