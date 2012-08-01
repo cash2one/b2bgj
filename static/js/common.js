@@ -14,8 +14,8 @@ jQuery(function($){
         $('body').toggleClass('hide-sidebar');
     });
 
-    function changeStyle(name){
-        var href='/static/css/skin-'+name+'.css';
+    function changeStyle(name,filepath){
+        var href=filepath;
 
         if(name==="default"){
             $('#skins').remove();
@@ -30,9 +30,10 @@ jQuery(function($){
     } 
 
     $('.change-style').on('click',function(){
+        var path = $(this).data('filepath');
         var that = $(this);
         var color = that.data('color');
-        changeStyle(color);
+        changeStyle(color,path);
     })
 
     $('.lightbox').find('[rel=close]').click(function(){
@@ -64,6 +65,7 @@ jQuery(function($){
             }); 
         }else{
            container.find(".dacheng-ajax-wrapper").remove();
+           container.find(".wangfan-ajax-wrapper").remove();
            container.removeClass("loaded");
                 that.removeClass("more-h");
         }
