@@ -12,19 +12,22 @@
 .red, .redb, .pagination .current {
   color: red; }
 
+.gray {
+  color: #999999; }
+
 .redb {
   font-weight: bold; }
 
 .blue, .gray-title ul .current, .table-b5 .thead ul .current, .mo-ddgl .block2 .block-head ul .current {
   color: #3366cc; }
 
-.lightblue-bg {
+.lightblue-bg, .lightbox-ckzc .lightbox-content .table2 th, .mo-jptj .box {
   background-color: #ebf8fe; }
 
 body {
   font-size: 12px;
   background-color: #e2e9ea;
-  min-width: 1100px; }
+  min-width: 1200px; }
 
 .gray-title, .table-b5 .thead, .mo-ddgl .block2 .block-head {
   background: url(../img/gray-title.png) repeat-x; }
@@ -236,7 +239,7 @@ a {
     padding-left: 20px;
     margin: 0; }
 
-.lightbox2 .lightblue-bg {
+.lightbox2 .lightblue-bg, .lightbox2 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .lightbox2 th, .lightbox2 .mo-jptj .box, .mo-jptj .lightbox2 .box {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
   padding: 10px 30px; }
@@ -244,6 +247,23 @@ a {
   text-align: right; }
 .lightbox2 td, .lightbox2 th {
   padding: 5px; }
+
+.lightbox-ckzc .lightbox-content {
+  width: 660px; }
+  .lightbox-ckzc .lightbox-content .table1 {
+    border: 1px solid #cecece;
+    margin-bottom: 10px; }
+    .lightbox-ckzc .lightbox-content .table1 td, .lightbox-ckzc .lightbox-content .table1 th {
+      padding: 5px 10px; }
+  .lightbox-ckzc .lightbox-content .table2 {
+    margin-bottom: 10px; }
+    .lightbox-ckzc .lightbox-content .table2 th {
+      width: 100px;
+      text-align: right; }
+    .lightbox-ckzc .lightbox-content .table2 td, .lightbox-ckzc .lightbox-content .table2 th {
+      width: 200px;
+      padding: 5px 10px;
+      border: 1px solid #cecece; }
 
 .lightbox {
   display: none;
@@ -495,20 +515,33 @@ p {
     .table-b5 .info .btn {
       float: right;
       height: 20px; }
-  .table-b5 .dacheng-ajax-wrapper {
-    background-color: #ebf8fe;
-    text-align: right;
-    line-height: 40px;
-    border: 2px solid #377ac0;
-    border-bottom: 3px solid #377ac0;
-    margin-bottom: 20px; }
-    .table-b5 .dacheng-ajax-wrapper span {
-      padding-right: 20px; }
   .table-b5 .loaded .info {
     display: none; }
 
-.dancheng-ajax-info {
+.dacheng-ajax-wrapper {
+  background-color: #ebf8fe;
+  text-align: right;
+  line-height: 40px;
+  border: 2px solid #377ac0;
+  border-bottom: 3px solid #377ac0;
+  margin-bottom: 20px; }
+  .dacheng-ajax-wrapper span {
+    padding-right: 20px; }
+
+.dancheng-ajax-info, .wangfan-ajax-info {
   border-bottom: 1px dashed #377ac0; }
+
+.wangfan-ajax-wrapper {
+  float: right;
+  width: 400px;
+  background-color: #ebf8fe;
+  text-align: right;
+  line-height: 40px;
+  border: 2px solid #377ac0;
+  border-bottom: 3px solid #377ac0;
+  margin-bottom: 20px; }
+  .wangfan-ajax-wrapper span {
+    padding-right: 45px; }
 
 h3.gray-title, .table-b5 h3.thead, .mo-ddgl .block2 h3.block-head {
   line-height: 34px;
@@ -587,11 +620,12 @@ i.close {
   .table1-pnrmyd a {
     color: #333333; }
 
-.mo-pnrmyd .block1 center {
-  margin: 30px 0; }
+.mo-pnrmyd .block1 {
+  margin-bottom: 15px; }
+  .mo-pnrmyd .block1 center {
+    margin: 30px 0; }
 .mo-pnrmyd .block2 {
-  border-bottom: 0;
-  margin-top: 15px; }
+  border-bottom: 0; }
   .mo-pnrmyd .block2 .block-head {
     position: relative;
     border-bottom: 1px solid #cecece; }
@@ -687,6 +721,21 @@ i.close {
 
 .mo-jptj select {
   width: 130px; }
+.mo-jptj .dropdown {
+  float: right;
+  position: relative;
+  height: 20px; }
+.mo-jptj .box {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  overflow-y: scroll;
+  top: 20px;
+  right: 0;
+  display: none;
+  line-height: 26px;
+  padding: 0 10px;
+  border: 1px solid #cecece; }
 
 .mo-fpxxcx .gray-title, .mo-fpxxcx .table-b5 .thead, .table-b5 .mo-fpxxcx .thead, .mo-fpxxcx .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-fpxxcx .block-head {
   border-bottom: 1px solid #cecece; }
@@ -719,11 +768,11 @@ i.close {
     padding: 5px 20px; }
 .mo-ddxq .gray-title, .mo-tjdd .gray-title, .mo-ddxq .table-b5 .thead, .table-b5 .mo-ddxq .thead, .mo-tjdd .table-b5 .thead, .table-b5 .mo-tjdd .thead, .mo-ddxq .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-ddxq .block-head, .mo-tjdd .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-tjdd .block-head {
   border-bottom: 1px solid #cecece; }
-.mo-ddxq .block3 .lightblue-bg, .mo-tjdd .block3 .lightblue-bg {
+.mo-ddxq .block3 .lightblue-bg, .mo-tjdd .block3 .lightblue-bg, .mo-ddxq .block3 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .mo-ddxq .block3 th, .mo-tjdd .block3 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .mo-tjdd .block3 th, .mo-ddxq .block3 .mo-jptj .box, .mo-jptj .mo-ddxq .block3 .box, .mo-tjdd .block3 .mo-jptj .box, .mo-jptj .mo-tjdd .block3 .box {
   border-top: 1px solid #cecece; }
-.mo-ddxq .block4 .lightblue-bg, .mo-tjdd .block4 .lightblue-bg {
+.mo-ddxq .block4 .lightblue-bg, .mo-tjdd .block4 .lightblue-bg, .mo-ddxq .block4 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .mo-ddxq .block4 th, .mo-tjdd .block4 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .mo-tjdd .block4 th, .mo-ddxq .block4 .mo-jptj .box, .mo-jptj .mo-ddxq .block4 .box, .mo-tjdd .block4 .mo-jptj .box, .mo-jptj .mo-tjdd .block4 .box {
   border-bottom: 1px solid #cecece; }
-  .mo-ddxq .block4 .lightblue-bg label, .mo-tjdd .block4 .lightblue-bg label {
+  .mo-ddxq .block4 .lightblue-bg label, .mo-tjdd .block4 .lightblue-bg label, .mo-ddxq .block4 .lightbox-ckzc .lightbox-content .table2 th label, .lightbox-ckzc .lightbox-content .table2 .mo-ddxq .block4 th label, .mo-tjdd .block4 .lightbox-ckzc .lightbox-content .table2 th label, .lightbox-ckzc .lightbox-content .table2 .mo-tjdd .block4 th label, .mo-ddxq .block4 .mo-jptj .box label, .mo-jptj .mo-ddxq .block4 .box label, .mo-tjdd .block4 .mo-jptj .box label, .mo-jptj .mo-tjdd .block4 .box label {
     padding-right: 40px; }
 
 .table2-ddxq th {
@@ -766,7 +815,7 @@ i.close {
   border-bottom: 0;
   text-align: center;
   width: 130px;
-  height: 27px;
+  height: 28px;
   line-height: 30px; }
 
 .mo-xxzc .table-b4 {
@@ -776,3 +825,40 @@ i.close {
   margin-bottom: 20px; }
   .mo-xxzc .block1 .center {
     margin: 10px 0; }
+
+.mo-fdgl .block2 {
+  border-top: 0; }
+.mo-fdgl .xblock {
+  margin-bottom: 10px; }
+  .mo-fdgl .xblock .button {
+    padding: 2px 8px;
+    border: 1px solid #336699;
+    background-color: #cfe6fd; }
+
+.mo-zctj .gray-title, .mo-zctj .table-b5 .thead, .table-b5 .mo-zctj .thead, .mo-zctj .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-zctj .block-head {
+  border-bottom: 1px solid #cecece; }
+.mo-zctj .block-i {
+  padding: 5px 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #cecece; }
+.mo-zctj table th {
+  white-space: nowrap;
+  text-align: right; }
+.mo-zctj table td, .mo-zctj table th {
+  padding: 5px;
+  vertical-align: baseline; }
+.mo-zctj .block-i1 p {
+  padding-left: 40px;
+  padding-top: 10px; }
+.mo-zctj .block-i2 .text {
+  width: 100px; }
+.mo-zctj .block-i2 td, .mo-zctj .block-i2 th {
+  white-space: nowrap; }
+.mo-zctj .block-i3 {
+  border: none; }
+.mo-zctj textarea {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 5px; }
+.mo-zctj .center {
+  margin: 15px 0; }

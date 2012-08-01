@@ -4,6 +4,7 @@
     {% include 'partial/breadcrumb.html' %}
     <div class="content area">
         <div class="mo-pnrmyd">
+            {%  if data['usergroup-id']!='gys'  %}
             <div class="block block1">
                 <!-- <p class="user-info"> -->
                 <!--     <span class="red"> -->
@@ -27,6 +28,7 @@
                     <a href="国际航班查询.html" class="button3 button">航班查询及预订</a>
                 </center>
             </div>
+            {% end %}
 
             <div class="block block2">
                 <div class="block-head gray-title">

@@ -1,4 +1,8 @@
 jQuery(function($){
+
+    $(".datepicker").kendoDatePicker(); 
+    $(".timepicker").kendoTimePicker();
+
     $('.arrow5').on('click',function(){
         $('.head').toggle(); 
         $(this).toggleClass('arrow5h');
@@ -35,7 +39,7 @@ jQuery(function($){
         $(this).parents('.lightbox').hide(); 
     });
 
-    $(".show-lightbox").click(function(){
+    $("body").on("click",".show-lightbox",function(){
         var lightboxID = $(this).data("lightboxid"); 
         $(".lightbox").each(function(){
             if($(this).data("lightboxid") == lightboxID ){
@@ -43,19 +47,25 @@ jQuery(function($){
             }        
         })
     });
+
+    $(".mo-jptj .dropdown").hover(function(){
+        $(this).find(".box").toggle(); 
+    })
     
     $(".mo-hbcx .more").click(function(){
+    var that = $(this);
         var ajaxurl=$(this).data("ajaxurl");
-        $(this).toggleClass("more-h");
         var container = $(this).parents("tr").next().find("td");
         if(!container.hasClass("loaded")){
             $.get(ajaxurl,function(d){
                 container.prepend(d); 
                 container.addClass("loaded");
+                that.addClass("more-h");
             }); 
         }else{
            container.find(".dacheng-ajax-wrapper").remove();
            container.removeClass("loaded");
+                that.removeClass("more-h");
         }
     });
 

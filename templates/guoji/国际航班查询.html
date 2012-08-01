@@ -101,7 +101,7 @@
                         <tr class="info-row">
                             <td colspan=9>
                                 <div class="info">
-                                <span class="blue">
+                                <span class="blue show-lightbox" data-lightboxid="TSXX">
                                     退改签 
                                 </span>
                                 <span>
@@ -132,7 +132,7 @@
                                     </b>
                                 </span>
                                 <span class="btn">
-                                    <input type="button" class="button button1" value="预订" name="" />
+                                    <input type="button" class="button button1 show-lightbox" data-lightboxid="TSXX" value="预订" name="" />
                                 </span>
                             
                                 </div>
@@ -150,4 +150,42 @@
 
     </div>
 </div>
-{% include '../partial/footer.html' %}
+
+<div class="lightbox lightbox-1" data-lightboxid="TSXX">
+    <table cellspacing="0">
+        <tr>
+            <td>
+                <div class="lightbox-content">
+                    <i class="close" rel="close">×</i> 
+    <div class="lightbox-head">
+        <h3>提示信息</h3>
+    </div>
+    <div class="lightbox-body">
+        <p>
+            退票：
+            <span class="red">不允许</span>
+        </p>
+        <p>
+            改签：
+            <span class="red">去程不得改签，DKF</span>
+        </p>
+        <p>
+            最短停留期：
+            <span class="red">2-7天</span>
+        </p>
+        <p>&nbsp;</p>
+        <p class="gray">
+            以上退改签规定以航空公司为准，或致电退改热线咨询 
+        </p>
+        <p>&nbsp;</p>
+        <p class="center">
+            <input type="button" class="button button1" value="确定" name="" />
+            <input type="button" class="button button1" value="取消" name="" rel="close" />
+        </p>
+    </div>
+                </div>
+            
+            </td>
+        </tr>
+    </table>
+</div>{% include '../partial/footer.html' %}

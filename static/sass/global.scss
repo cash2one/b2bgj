@@ -22,6 +22,9 @@ $bc1:#bec6c7;
 .red{
     color:$c61;
 }
+.gray{
+    color:$c13;
+}
 .redb{
     @extend .red;
     font-weight:bold;
@@ -36,7 +39,7 @@ $bc1:#bec6c7;
 body{
     font-size:12px;
     background-color:$cbg;
-    min-width:1100px;
+    min-width:1200px;
 }
 
 .gray-title{
@@ -294,6 +297,29 @@ a{
     }
     td{
         padding:5px; 
+    }
+}
+.lightbox-ckzc .lightbox-content{
+    width:660px;
+    .table1{
+        td{
+            padding:5px 10px; 
+        }
+        border:1px solid $c44; 
+        margin-bottom:10px;
+    }
+    .table2{
+        margin-bottom:10px;
+        th{
+            width:100px; 
+            text-align:right;
+            @extend .lightblue-bg;
+        }
+        td{
+            width:200px;
+            padding:5px 10px; 
+            border:1px solid $c44; 
+        }
     }
 }
 .lightbox{
@@ -596,25 +622,42 @@ p{
             height:20px;
         }
     }
-    .dacheng-ajax-wrapper{
-        background-color:$c25;
-        text-align:right;
-        span{
-            padding-right:20px; 
-        }
-        line-height:40px;
-        border:2px solid $c26;
-        border-bottom:3px solid $c26;
-        margin-bottom:20px;
-    }
     .loaded .info{
         display:none; 
     }
+}
+.dacheng-ajax-wrapper{
+    background-color:$c25;
+    text-align:right;
+    span{
+        padding-right:20px; 
+    }
+    line-height:40px;
+    border:2px solid $c26;
+    border-bottom:3px solid $c26;
+    margin-bottom:20px;
 }
 .dancheng-ajax-info{
     border-bottom:1px dashed $c26;
 }
 
+.wangfan-ajax-info{
+    @extend .dancheng-ajax-info;
+}
+
+.wangfan-ajax-wrapper{
+    float:right;
+    width:400px;
+    background-color:$c25;
+    text-align:right;
+    span{
+        padding-right:45px; 
+    }
+    line-height:40px;
+    border:2px solid $c26;
+    border-bottom:3px solid $c26;
+    margin-bottom:20px;
+}
 
 
 h3.gray-title{
@@ -748,16 +791,15 @@ i.close{
 }
 
 
-
 .mo-pnrmyd{
     .block1{
         center{
             margin:30px 0; 
         }
+        margin-bottom:15px;
     }
     .block2{
         border-bottom:0;
-        margin-top:15px;
         .block-head{
             position:relative;
             .time{
@@ -783,7 +825,7 @@ i.close{
 .mo-tjzc{
     .gray-title{
         border-bottom:1px solid $c44; 
-     }
+    }
 }
 
 ////////////////////
@@ -908,6 +950,25 @@ i.close{
 .mo-jptj{
     select{
         width:130px; 
+    }
+
+    .dropdown{
+        float:right; 
+        position:relative;
+        height:20px;
+    }
+    .box{
+        position:absolute;
+        width:100px;
+        height:200px;
+        overflow-y:scroll;
+        top:20px;
+        right:0;
+        display:none;
+        line-height:26px;
+        padding:0 10px;
+        border:1px solid $c44;
+        @extend .lightblue-bg;
     }
 }
 
@@ -1036,7 +1097,7 @@ i.close{
         border-bottom:0;
         text-align:center;
         width: 130px;
-        height: 27px;
+        height: 28px;
         line-height: 30px;
     }
 }
@@ -1052,5 +1113,72 @@ i.close{
             margin:10px 0; 
         }
         margin-bottom:20px; 
+    }
+
+
+}
+
+/////////////////
+.mo-fdgl{
+    .block2{
+        border-top:0; 
+    }
+    .xblock{
+        margin-bottom:10px;
+        .button{
+            padding:2px 8px; 
+            border:1px solid $c21;
+            background-color:$c24;
+        } 
+    }
+}
+
+//////////////////////
+.mo-zctj{
+    .gray-title{
+        border-bottom:1px solid $c44; 
+    }
+    .block-i{
+        padding:5px 10px; 
+        padding-bottom:20px;
+        border-bottom:1px dotted $c44;
+    }
+    table{
+        th{
+            white-space:nowrap;
+            text-align:right;  
+        } 
+        td{
+            padding:5px;
+            vertical-align:baseline; 
+        }
+    }
+    .table1{
+    }
+    .block-i1{
+        p{
+            padding-left:40px; 
+            padding-top:10px;
+        } 
+    }
+    .block-i2{
+        .text{
+            width:100px; 
+        }
+        td{
+            white-space:nowrap; 
+        }
+    }
+    .block-i3{
+        border:none; 
+    }
+    textarea{
+        width:400px;
+        height:50px;
+        margin-bottom:5px;
+    }
+
+    .center{
+        margin:15px 0; 
     }
 }
