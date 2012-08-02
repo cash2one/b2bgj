@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf8 -*- 
+# -*- coding: utf8 -*-
 import tornado.ioloop
 import tornado.web
 import tornado.escape
@@ -13,6 +13,8 @@ class Application(tornado.web.Application):
             (r"/", MainHandler),
             (r"/guoji/(?<!ajax)([^/]+).html", GuojiHandler),
             (r"/guoji/ajax/(.+)", GuojiAjaxHandler),
+            (r"/guonei/(?<!ajax)([^/]+).html", GuoneiHandler),
+            (r"/guonei/ajax/(.+)", GuoneiAjaxHandler),
         ]
         settings = dict(
             debug='yes',
@@ -35,6 +37,89 @@ class MainHandler(tornado.web.RequestHandler):
         }
         self.write('首页')
 
+
+class GuoneiHandler(tornado.web.RequestHandler):
+    def get(self, pagename = 'index'):
+        usergroup = self.get_argument('usergroup',default='cgs')
+        if(usergroup=='yys'):
+            data = {
+                'usergroup':'运营商',
+                'usergroup-id':'yys',
+                'sidebar':[
+                    [u'机票采购',
+                     [u'PNR预订',u'白屏预订']
+                    ],
+                    [u'国际订单管理',
+                     [u'出票订单',u'改签订单',u'退票订单',u'废票订单',u'退款订单']
+                    ],
+                    [u'发票信息管理',[
+                        u'发票信息查询',
+                        u'入库信息管理',
+                    ]],
+                    [u'基础数据维护',[
+                        u'基础数据维护',
+                    ]],
+                ],
+            }
+
+        if (usergroup=='gys'):
+            data = {
+                'usergroup':'供应商',
+                'usergroup-id':'gys',
+                'sidebar':[
+                    [u'国际订单管理',
+                     [u'出票订单',u'审核订单',u'退票订单',u'废票订单']
+                    ],
+                    [u'政策管理',
+                     [u'国际返点管理']
+                    ],
+                    [u'财务管理',
+                     [u'退款订单',u'机票统计']
+                    ],
+                    [u'基础数据维护',[
+                        u'基础数据维护',
+                    ]],
+                ],
+            }
+
+        if (usergroup=='cgs'):
+            data = {
+                'usergroup':'采购商',
+                'usergroup-id':'cgs',
+                'sidebar':[
+                    [u'查询预订',
+                     [u'国内PNR导入',u'国内航班查询','团队票申请']
+                    ],
+                    [u'国内机票订单',
+                     [u'订单管理',u'改签订单',u'退废票订单',u'询价订单',u'查询所有订单',u'已购电子保险',u'航班延误证明']
+                    ],
+                    [u'行程单管理',
+                     [u'我的行程单',u'行程单使用明细',u'设置邮寄地址']
+                    ],
+                    [u'保险服务',[
+                        u'购买保险',u'保险订单',u'保险单管理',u'服务产品'
+                    ]],
+                    [u'基础信息查询',[
+                        u'查询三字码',u'查询代理费',u'退改签公告',u'查询航班动态',u'行程单细则'
+                    ]],
+                ],
+            }
+
+        data['parent_title']='国内机票'
+        data['title']=pagename
+
+        template = 'guonei/'+pagename.encode('utf-8')+'.html'
+        self.render(template, data = data, usergroup = usergroup)
+
+
+class GuoneiAjaxHandler(GuoneiHandler):
+    def get(self, pagename = 'index'):
+        template = 'guonei/ajax/'+pagename.encode('utf-8')
+        self.render(template)
+
+
+#GUOJI
+#######################
 class GuojiHandler(tornado.web.RequestHandler):
     def get(self, pagename = 'index'):
         usergroup = self.get_argument('usergroup',default='cgs')
@@ -46,17 +131,17 @@ class GuojiHandler(tornado.web.RequestHandler):
                 'title':pagename,
                 'sidebar':[
                     [u'机票采购',
-                     [u'PNR预订',u'白屏预订'] 
+                     [u'PNR预订',u'白屏预订']
                     ],
                     [u'国际订单管理',
-                     [u'出票订单',u'改签订单',u'退票订单',u'废票订单',u'退款订单'] 
+                     [u'出票订单',u'改签订单',u'退票订单',u'废票订单',u'退款订单']
                     ],
                     [u'发票信息管理',[
-                        u'发票信息查询', 
-                        u'入库信息管理', 
+                        u'发票信息查询',
+                        u'入库信息管理',
                     ]],
                     [u'基础数据维护',[
-                        u'基础数据维护', 
+                        u'基础数据维护',
                     ]],
                 ],
             }
@@ -69,16 +154,16 @@ class GuojiHandler(tornado.web.RequestHandler):
                 'title':pagename,
                 'sidebar':[
                     [u'国际订单管理',
-                     [u'出票订单',u'审核订单',u'退票订单',u'废票订单'] 
+                     [u'出票订单',u'审核订单',u'退票订单',u'废票订单']
                     ],
                     [u'政策管理',
-                     [u'国际返点管理'] 
+                     [u'国际返点管理']
                     ],
                     [u'财务管理',
-                     [u'退款订单',u'机票统计'] 
+                     [u'退款订单',u'机票统计']
                     ],
                     [u'基础数据维护',[
-                        u'基础数据维护', 
+                        u'基础数据维护',
                     ]],
                 ],
             }
@@ -91,29 +176,30 @@ class GuojiHandler(tornado.web.RequestHandler):
                 'title':pagename,
                 'sidebar':[
                     [u'机票采购',
-                     [u'PNR预订',u'白屏预订'] 
+                     [u'PNR预订',u'白屏预订']
                     ],
                     [u'国际订单管理',
-                     [u'出票订单',u'改签订单',u'退票订单',u'废票订单',u'退款订单'] 
+                     [u'出票订单',u'改签订单',u'退票订单',u'废票订单',u'退款订单']
                     ],
                     [u'政策管理',
-                     [u'系统政策',u'特价政策',u'普通政策'] 
+                     [u'系统政策',u'特价政策',u'普通政策']
                     ],
                     [u'机票统计',[
-                        u'机票统计', 
+                        u'机票统计',
                     ]],
                     [u'发票信息管理',[
-                        u'发票信息查询', 
+                        u'发票信息查询',
                     ]],
                 ],
             }
 
         template = 'guoji/'+pagename.encode('utf-8')+'.html'
-        self.render(template, data = data)
+        self.render(template, data = data, usergroup = usergroup)
 
     #def post(self):
-    #    self.set_header("Content-Type", "text/plain")
-    #    self.write("You wrote " + self.get_argument("message"))
+        #    self.set_header("Content-Type", "text/plain")
+        #    self.write("You wrote " + self.get_argument("message"))
+
 
 class GuojiAjaxHandler(GuojiHandler):
     def get(self, pagename = 'index'):

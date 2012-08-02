@@ -5,7 +5,6 @@
     <div class="content area">
         <div class="mo-ddxq">
                 <div class="xblock">
-                    {% if data['title']!=u'改签处理'  %}
                     <p align="right">
                     <span>航班及舱位查询</span>
                     <i class="icon4">&nbsp;</i> 
@@ -19,21 +18,6 @@
                     <i class="icon4">&nbsp;</i> 
                     <span>出票完成</span>
                     </p>
-                    {% end %}
-
-                    {% if data['title']==u'改签处理'  %}
-                    <p align="right">
-                    <span>改签申请</span>
-                    <i class="icon4">&nbsp;</i> 
-                    <span>改签审核中</span>
-                    <i class="icon4">&nbsp;</i> 
-                    <span>支付</span>
-                    <i class="icon4">&nbsp;</i> 
-                    <span class="blue">改签中</span>
-                    <i class="icon4">&nbsp;</i> 
-                    <span>改签成功</span>
-                    </p>
-                    {% end %}
                     <p>
                     <i class="icon5"></i>
                     <strong class="blue f14">国际机票预定单</strong>
@@ -115,7 +99,7 @@
                         </span>
                         </h3>
                         <p>
-                            PNR记录编号 WWWW01 <span class="blue">大编：MSKJFK</span> 改签中
+                            PNR记录编号 WWWW01 <span class="blue">大编：MSKJFK</span> 审核中
                         </p>
                         <p>
                             客票使用条件
@@ -225,56 +209,6 @@
                         </p>
                     </div>
 
-                    {% if data['title']==u'改签处理' %}
-                    <div class="block block8">
-                        <h3 class="gray-title">
-                           改签航班信息 
-                        </h3>
-                        <table frame=void cellspacing="0" class="table-b2">
-                            <tr class="thead">
-                                <td>航班日期</td>
-                                <td>出发地</td>
-                                <td>到达地</td>
-                                <td>航空公司</td>
-                                <td>航班号</td>
-                                <td>起飞时间</td>
-                                <td>到达时间</td>
-                                <td>舱位</td>
-                            </tr>
-                            <tr>
-                                <td>xx</td>
-                                <td>xx</td>
-                                <td>xx</td>
-                                <td>xx</td>
-                                <td>xx</td>
-                                <td>xx</td>
-                                <td>xx</td>
-                                <td>xx</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="block block9">
-                        <h3 class="gray-title">
-                           改签航班信息 
-                        </h3>
-                        <table frame=void cellspacing="0" class="table-b4">
-                            <tr>
-                                <th>改签订单编号</th>
-                                <td>1111</td>
-                                <th>改签补款</th>
-                                <td>192元（包含xxx）</td>
-                                <th>改签票号（提取票号）
-                                    <b class="red">*</b>
-                                </th>
-                                <td>
-                                    11111111 
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    {% end %}
-
                     <div class="block block6">
                         <h3 class="gray-title">
                             订单处理状态
@@ -289,30 +223,17 @@
                         
                         <div class="block block7">
                         <h3 class="gray-title">
-                            订单备注 
+                            备注信息 
                         </h3>
-                        <table frame=void cellspacing="0">
-                            <colgroup>
-                                <col class="tcol1"></col>
-                                <col class="tcol2"></col>
-                                <col class="tcol3"></col>
-                            </colgroup>
-                            <tr>
-                                <th>备注信息</th>
-                                <th>时间</th>
-                                <th>操作员</th>
-                            </tr>
-                            <tr>
-                                <td>请尽快说法</td>
-                                <td>2012-09-09  19:11</td>
-                                <td>小名 </td>
-                            </tr>
-                            <tr>
-                                <td>请尽快说法</td>
-                                <td>2012-09-09  19:11</td>
-                                <td>小名 </td>
-                            </tr>
-                        </table>
+                        <p>
+                            备注信息：请尽快处理反对说法
+                        </p>
+                        <p>
+                            时间：2012-09-09  19:11
+                        </p>
+                        <p>
+                            操作员：小名 
+                        </p>
                     </div>
 
                     <div class="center">

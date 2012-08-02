@@ -1,0 +1,46 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-tjzc mo-xxzc">
+            <div class="block block1">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        特价政策 
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table frame="void" cellspacing="0" class="table-b2">
+                        <tr class="thead">
+                            <td>航空公司</td>
+                            <td>航线</td>
+                            <td>使用条件</td>
+                            <td>代理费</td>
+                            <td>奖励</td>
+                            <td>有效期</td>
+                        </tr>
+                        {% for x in range(10) %}
+                        {% if x%2==0 %}
+                        <tr class="odd">
+                        {% else  %}
+                        <tr class="even">
+                        {% end %}
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                        </tr>
+                        {% end %}
+                    </table>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}

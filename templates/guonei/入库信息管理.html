@@ -1,0 +1,110 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-cpdd mo-ddgl">
+            <div class="block block1">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        入库信息管理 
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table frame=void cellspacing="0" class="table1-cpdd table-b3">
+                        <tr>
+                            <th>起始票号</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                            <th>
+                                发放出处
+                            </th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="center">
+                        <input type="button" class="button button2" value="查看" name="" />
+                    </p>
+                </div>
+            </div>
+
+            <div class="xblock" align=right>
+                <input type="button" class="button button1 show-lightbox" data-lightboxid="TJRK" value="添加入库" name="" />
+                <input type="button" class="button button1" value="发票发放" name="" />
+            </div>
+
+            <div class="block block2">
+                <div class="block-body">
+                    <table frame="void" style="border-top:0;" cellspacing="0" class="table2-cpdd table-b2">
+                        <tr class="thead">
+                            <td>发票册</td>
+                            <td>初始票号</td>
+                            <td>入库时间</td>
+                            <td>发放时间</td>
+                            <td>发放出处</td>
+                            <td>状态</td>
+                        </tr>
+                        {% for x in range(10) %}
+                        {% if x%2==0 %}
+                        <tr class="odd">
+                        {% else  %}
+                        <tr class="even">
+                        {% end %}
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                        </tr>
+                        {% end %}
+                    </table>
+
+                </div>
+            </div>
+
+                    {% include 'partial/pagination.html' %}
+
+
+        </div>
+
+    </div>
+</div>
+<div class="lightbox lightbox-1" data-lightboxid="TJRK">
+    <table cellspacing="0">
+        <tr>
+            <td>
+                <div class="lightbox-content">
+                    <i class="close" rel="close">×</i> 
+    <div class="lightbox-head">
+        <h3>出票确认</h3>
+    </div>
+    <div class="lightbox-body">
+        <p>
+           起始发票号
+           <input type="text" class="text" value="" name="" />
+           至末尾发票号
+           <input type="text" class="text" value="" name="" />
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          发票册 
+           <input type="text" class="text" value="" name="" />
+           本（1本50张）
+        </p>
+        <p>&nbsp;</p>
+        <p class="center">
+            <input type="button" class="button button1" value="入库" name="" />
+            <input type="button" class="button button1" value="取消" name="" rel="close" />
+        </p>
+    </div>
+                </div>
+            
+            </td>
+        </tr>
+    </table>
+</div>
+{% include '../partial/footer.html' %}

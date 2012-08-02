@@ -1,0 +1,25 @@
+    <div class="sidebar area">
+        <div class="menu-sidebar">
+            {% for x in data['sidebar'] %}
+            <dl>
+                <dt>{{x[0]}} 
+                <i class="arrow1"></i>
+                </dt>
+                {% if len(x) > 1 %}
+                {% for x in x[1] %}
+                <dd>
+                <a {% if data['title']==x %}
+                        class="current" 
+                    {% end %} 
+                    href="{{x}}.html">{{x}}</a>
+                </dd>
+                {% end %}
+                {% end %}
+            </dl>
+            {% end %}
+        </div>
+        <div class="links">
+            <span><i class="icon1"></i><a href="投诉与建议.html">投诉与建议</a> </span>
+            <span><i class="icon2"></i><a href="在线客服.html">在线客服</a> </span>
+        </div>
+    </div>

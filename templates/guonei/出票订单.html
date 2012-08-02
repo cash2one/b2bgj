@@ -110,9 +110,6 @@
                             <td>返点返款</td>
                             <td>预订时间</td>
                             <td>备注</td>
-                            {% if usergroup=="gys"  %}
-                            <td>操作</td>
-                            {% end %}
                         </tr>
                         {% for x in range(10) %}
                         {% if x%2==0 %}
@@ -120,7 +117,6 @@
                         {% else  %}
                         <tr class="even">
                         {% end %}
-                            {% if usergroup!="gys"  %}
                             <td><a target="_blank" href="订单详情.html">32132132</a></td>
                             <td>审核中</td>
                             <td>xx</td>
@@ -133,23 +129,6 @@
                             <td>xx</td>
                             <td>xx</td>
                             <td>xxxxxxxx</td>
-                            {% else %}
-                            <td><a target="_blank" href="改签处理.html">32132132</a></td>
-                            <td>审核中</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td class="red">xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xxxxxxxx</td>
-                            <td width=80>
-                                <input type="button" class="button button1" value="锁定" name="" />
-                            </td>
-                            {% end %}
                         </tr>
                         {% end %}
                     </table>

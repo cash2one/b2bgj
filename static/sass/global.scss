@@ -575,6 +575,7 @@ p{
         border:1px solid $c44; 
     }
     th{
+        white-space:nowrap;
         vertical-align:baseline;
         width:100px;
         background-color:$c43;
@@ -1013,6 +1014,33 @@ i.close{
 
 //////////////////
 .mo-ddxq{
+    .block7{
+        .tcol1{
+        
+        }
+        .tcol2{
+            width:200px; 
+        }
+        .tcol3{
+            width:200px; 
+        }
+        table{
+            width:100%;
+            td{
+                padding:10px;
+                border:1px solid $c44;
+            }
+            th{
+                font-weight:bold; 
+                background-color:$c43;
+            }
+        } 
+    }
+    .block9{
+        table{
+            width:800px; 
+        } 
+    }
     .xblock p{
         padding-bottom:10px; 
     }

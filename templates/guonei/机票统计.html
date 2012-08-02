@@ -1,0 +1,209 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-jptj mo-ddgl">
+            <div class="block block1">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        机票统计 
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table frame=void cellspacing="0" class="table-b4">
+                        <tr>
+                            <th>
+                                日期类型
+                            </th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxxx</option>
+                                </select>
+                            </td>
+                            <th>日期</th>
+                            <td colspan=3>
+                                从
+                                <input type="text" class="text datepicker" value="" name="" />
+                                至
+                                <input type="text" class="text datepicker" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>机票状态</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                            <th>付款状态</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                            <th>机票类型</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>客户名称</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                            <th>出发城市</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                            <th>目标城市</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>操作人</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                            <th>航空公司</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                            <th>舱位</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>支付方式</th>
+                            <td>
+                                <select name="">
+                                    <option value="">xxx</option>
+                                </select>
+                            </td>
+                            <td colspan=4></td>
+                        </tr>
+                    </table>
+                    <p class="center">
+                        <input type="button" class="button button2" value="搜索" name="" />
+                    </p>
+                </div>
+            </div>
+
+            <div class="xblock clearfix">
+                <div class="dropdown">
+                    <span class="blue">列表项设置
+                        <i class="icon6"></i>
+                    </span>
+                    <div class="box">
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                金额
+                            </label>
+                        </p>
+                        <p class="center">
+                            <input type="button" class="button button1" value="确定" name="" />
+                        </p>
+                    </div>
+                </div>
+               <span> 出票城市：北京  </span><span> 人数：31人</span>    
+               <input type="button" class="button button5" value="详情下载" name="" />
+            </div>
+
+            <div class="block block2">
+                <div class="block-body">
+                    <table frame="void" cellspacing="0" class="table-b2">
+                        <tr class="thead">
+                            <td>出票城市</td>
+                            <td>人数</td>
+                            <td>开票时间</td>
+                            <td>操作人</td>
+                            <td>操作时间</td>
+                            <td>支付方式</td>
+                            <td>支付形式</td>
+                            <td>订单金额</td>
+                            <td>操作</td>
+                        </tr>
+                        {% for x in range(10) %}
+                        {% if x%2==0 %}
+                        <tr class="odd">
+                        {% else  %}
+                        <tr class="even">
+                        {% end %}
+                            <td><a href="审核中的订单详情.html">32132132</a></td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                        </tr>
+                        {% end %}
+                    </table>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}

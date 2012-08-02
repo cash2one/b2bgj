@@ -484,6 +484,7 @@ p {
     padding: 10px;
     border: 1px solid #cecece; }
   .table-b3 th, .table-b4 th {
+    white-space: nowrap;
     vertical-align: baseline;
     width: 100px;
     background-color: #f6f6f6;
@@ -759,6 +760,20 @@ i.close {
 .table4-tjdd {
   border-bottom: 1px solid #cecece; }
 
+.mo-ddxq .block7 .tcol2, .mo-tjdd .block7 .tcol2 {
+  width: 200px; }
+.mo-ddxq .block7 .tcol3, .mo-tjdd .block7 .tcol3 {
+  width: 200px; }
+.mo-ddxq .block7 table, .mo-tjdd .block7 table {
+  width: 100%; }
+  .mo-ddxq .block7 table td, .mo-tjdd .block7 table td, .mo-ddxq .block7 table th, .mo-tjdd .block7 table th {
+    padding: 10px;
+    border: 1px solid #cecece; }
+  .mo-ddxq .block7 table th, .mo-tjdd .block7 table th {
+    font-weight: bold;
+    background-color: #f6f6f6; }
+.mo-ddxq .block9 table, .mo-tjdd .block9 table {
+  width: 800px; }
 .mo-ddxq .xblock p, .mo-tjdd .xblock p {
   padding-bottom: 10px; }
 .mo-ddxq .block, .mo-tjdd .block {
