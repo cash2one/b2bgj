@@ -1,0 +1,79 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-pnrdr">
+            <div class="block">
+                <div class="block-head">
+                    <ul>
+                        <li class="current">
+                            <span><a href="国内PNR导入.html">成人</a></span>
+                        </li>
+                        <li>
+                            <span>儿童</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block-body">
+                    <div class="block-i block-i1">
+                        <p>
+                            <i class="icon6"></i>
+                            方式一：输入儿童PNR编码<input type="text" class="text" value="" name="" />
+                        </p>
+                        <p>
+                            输入成人PNR编码
+                            <input type="text" class="text" value="" name="" />
+                            <span class="gray">
+                            （如果在本平台出过成人票，请选择成人PNR编码生成订单）
+                            </span>
+                        </p>
+                        <p>
+                            <input type="button" class="button button2" value="创建订单" name="" />
+                        </p>
+                    </div>
+                    <div class="block-i block-i2">
+                        <p>
+                            <i class="icon6"></i>
+                            方式二：根据PNR内容创建儿童订单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成人PNR编码
+                            <input type="text" class="text" value="" name="" />
+                        </p>
+                        <p class="warn">
+                            <i class="icon7"></i>
+                            操作说明：复制RT,PAT 结果快速创建订单(从RT编码开始复制到 PAT：/航空公司 如：PAT:MU),结果的所有内容
+                        </p>
+                        <div class="clearfix">
+                            <div class="console-screen col col1">
+                                <form action="#" method="post">
+                                    <textarea name="">FDKLJFKJLF&lt;br&gt;
+                                        KFJDKLJ CKJLFDKJL&lt;br&gt;
+                                        &lt;span class="red"&gt;KJ@KJL$K&lt;/span&gt;
+                                    </textarea>
+                                    <p>
+                                        <input type="submit" class="submit button button2" value="解析创建订单" name="">
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="col col2">
+                                <img src="{{ static_url('img/example.jpg') }}" alt="" />
+                            </div>
+                        </div>
+                        <p>
+                            <span class="red">
+                                注意事项：
+                            </span>
+                            ·根据“PNR编码”生成订单信息。<br>
+                            ·生成儿童票必须同一供应商，请提供平台中成人订单编号，若成人订单未在平台中生成请提供成人PNR号，适用儿童生成订单通道生成订单。<br>
+                            ·根据输入的PNR内容，生成订单信息。<br>
+                            ·请确保PNR姓名组正确·请确保航段组正确。<br>
+                            ·请确保每个乘客均有真实的有效信息。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}

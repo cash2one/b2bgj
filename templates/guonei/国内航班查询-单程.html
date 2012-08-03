@@ -1,0 +1,177 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-hbcx">
+            <div class="xblock">
+                <p>
+                    <span>机票流程：</span>
+                    <span class="greenb">选择航班</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>填写订单</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>核对支付</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>等待出票</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>出票完成</span>
+                </p>
+            </div>
+
+            <div class="block">
+                <div class="block-head">
+                    <h3 class="gray-title">国内航班查询</h3>
+                </div>
+                <div class="block-body">
+                    <table frame=void cellspacing="0" class="table-b6">
+                        <tr>
+                            <th>航班类型</th>
+                            <td colspan=5>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    单程
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    往返
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发城市</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                            <th>到达城市</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                            <th>航空公司</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发日期</th>
+                            <td>
+                                <input type="text" class="text datepicker" value="" name="" />
+                            </td>
+                            <th>返回日期</th>
+                            <td colspan=3>
+                                <input type="text" class="text datepicker" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>AVH</th>
+                            <td>
+                                <input type="text" class="text text3" value="指令查询框 格式：AVH/PEKSHA/+(23JUB)/CA(D)/(D)" name="" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-head">
+                    <h3 class="gray-title">选择航班</h3>
+                </div>
+                <div class="block-body">
+                    <div class="warn block-i">
+                        <p>
+                            <strong class="f14">上海——北京</strong>
+                            <strong>（单程）</strong>
+                            出发日期：2012-07-05  当前共有
+                            <strong> 40 </strong>
+                            条航班，最低价
+                            <span class="red f14">
+                                <dfn class="f12">￥</dfn>
+                                809</span>
+                        </p>
+                        <p>
+                            <i class="icon8"></i>
+                            <span class="orange">
+                                温馨提示：结算价以订座成功PAT数据支付页面为准（注：结算价均不含机建费、燃油费和保险费）
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="search-list block-i">
+                        <div class="block-i-head">
+                            <ul>
+                                <li class="current">
+                                    <a href="#">
+                                        <span class="gray">2012-07-02</span>
+                                        <span class="orange">周一</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="gray">2012-07-03</span>
+                                        <span class="orange">周二</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="gray">2012-07-04</span>
+                                        <span class="orange">周三</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="gray">2012-07-05</span>
+                                        <span class="orange">周四</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="gray">2012-07-06</span>
+                                        <span class="orange">周五</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="gray">2012-07-07</span>
+                                        <span class="orange">周六</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="gray">2012-07-08</span>
+                                        <span class="orange">周日</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="block-i-body">
+                            <table frame=void rules=all cellspacing="0">
+                                <tr class="thead">
+                                    <td>航班号</td>
+                                    <td>起降时间
+                                        <i class="icon9"></i>
+                                    </td>
+                                    <td>航班号</td>
+                                    <td>起降时间</td>
+                                    <td>起降机场</td>
+                                    <td>经停</td>
+                                    <td>机建/燃油</td>
+                                    <td>舱位/票面价
+                                        <i class="icon9"></i>
+                                    </td>
+                                    <td>余位</td>
+                                    <td>退改签</td>
+                                    <td>返点</td>
+                                    <td>结算价</td>  
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}

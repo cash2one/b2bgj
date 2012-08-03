@@ -1,0 +1,85 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-hbcx">
+            <div class="xblock">
+                <p>
+                    <span>机票流程：</span>
+                    <span class="greenb">选择航班</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>填写订单</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>核对支付</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>等待出票</span>
+                    <i class="icon4">&nbsp;</i>
+                    <span>出票完成</span>
+                </p>
+            </div>
+
+            <div class="block">
+                <div class="block-head">
+                    <h3 class="gray-title">国内航班查询</h3>
+                </div>
+                <div class="block-body">
+                <table frame=void cellspacing="0" class="table-b6">
+                        <tr>
+                            <th>航班类型</th>
+                            <td colspan=5>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    单程
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio" value="" name="" />
+                                    往返
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发城市</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                            <th>到达城市</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                            <th>航空公司</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发日期</th>
+                            <td>
+                                <input type="text" class="text datepicker" value="" name="" />
+                            </td>
+                            <th>返回日期</th>
+                            <td colspan=3>
+                                <input type="text" class="text datepicker" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>AVH</th>
+                            <td>
+                                <input type="text" class="text text3" value="指令查询框 格式：AVH/PEKSHA/+(23JUB)/CA(D)/(D)" name="" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="block">
+                <div style="background:#d7d7d7;font-size:40px;color:#bbb;height:170px;line-height:170px;text-align:center;">
+                    广告位(默认无查询结果时显示) 
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}
