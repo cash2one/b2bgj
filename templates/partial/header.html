@@ -6,15 +6,14 @@
 <title>{{ data['title'] }}</title>
 <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
 <!-- <link href="{{ static_url('css/reset.css') }}" rel="stylesheet" /> -->
-<link href="{{ static_url('css/global.css') }}" rel="stylesheet" />
+{% module Template(data['section']+'/partial/external-css.html') %}
 <script type="text/javascript" src="{{ static_url('js/jquery-1.7.2.min.js') }}"></script>
-
 <link href="{{ static_url('kendoUI/styles/kendo.common.min.css')  }}" rel="stylesheet" />
 <link href="{{ static_url('kendoUI/styles/kendo.default.min.css')  }}" rel="stylesheet" />
 <script src="{{ static_url('kendoUI/js/kendo.all.min.js')  }}"></script>
-
+<script src="{{ static_url('kendoUI/js/cultures/kendo.culture.zh-CHS.min.js')  }}"></script>
 <script type="text/javascript" src="{{ static_url('js/common.js') }}"></script>
-{% module Template(data['section']+'/partial/externals.html') %}
+{% module Template(data['section']+'/partial/external-js.html') %}
 </head>
 <body>
 <div class="head clearfix">
