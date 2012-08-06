@@ -5,15 +5,14 @@
 <meta charset="UTF-8">
 <title>{{ data['title'] }}</title>
 <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
-<!-- <link href="{{ static_url('css/reset.css') }}" rel="stylesheet" /> -->
 {% module Template(data['section']+'/partial/external-css.html') %}
-<script type="text/javascript" src="{{ static_url('js/jquery-1.7.2.min.js') }}"></script>
-<link href="{{ static_url('kendoUI/styles/kendo.common.min.css')  }}" rel="stylesheet" />
-<link href="{{ static_url('kendoUI/styles/kendo.default.min.css')  }}" rel="stylesheet" />
-<script src="{{ static_url('kendoUI/js/kendo.all.min.js')  }}"></script>
-<script src="{{ static_url('kendoUI/js/cultures/kendo.culture.zh-CHS.min.js')  }}"></script>
-<script type="text/javascript" src="{{ static_url('js/common.js') }}"></script>
-<link href="http://wres.mangocity.com/css/w/module/cityselecter_noreset.css" rel="stylesheet" />
+<link href="{{ static_url('css/b2b-modules.css') }}" rel="stylesheet" />
+<!-- <script type="text/javascript" src="{{ static_url('js/jquery-1.7.2.min.js') }}"></script> -->
+<script type="text/javascript" src="{{ static_url('js/yui.js') }}"></script>
+<script type="text/javascript" src="{{ static_url('js/yui_loader.js') }}"></script>
+<script type="text/javascript" src="{{ static_url('js/b2b_modules_debug.js') }}"></script>
+<script type="text/javascript" src="{{ static_url('js/b2b_common.js') }}"></script>
+<script src="/static/js/livereload.js?host=192.168.56.101"></script>
 {% module Template(data['section']+'/partial/external-js.html') %}
 </head>
 <body>
