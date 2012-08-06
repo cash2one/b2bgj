@@ -44,7 +44,6 @@ class GuoneiHandler(tornado.web.RequestHandler):
         if(usergroup=='yys'):
             data = {
                 'usergroup':'运营商',
-                'usergroup-id':'yys',
                 'sidebar':[
                     [u'机票采购',
                      [u'PNR预订',u'白屏预订']
@@ -65,7 +64,6 @@ class GuoneiHandler(tornado.web.RequestHandler):
         if (usergroup=='gys'):
             data = {
                 'usergroup':'供应商',
-                'usergroup-id':'gys',
                 'sidebar':[
                     [u'国际订单管理',
                      [u'出票订单',u'审核订单',u'退票订单',u'废票订单']
@@ -85,7 +83,6 @@ class GuoneiHandler(tornado.web.RequestHandler):
         if (usergroup=='cgs'):
             data = {
                 'usergroup':'采购商',
-                'usergroup-id':'cgs',
                 'sidebar':[
                     [u'查询预订',
                      [u'国内PNR导入',u'国内航班查询','团队票申请']
@@ -127,7 +124,6 @@ class GuojiHandler(tornado.web.RequestHandler):
         if(usergroup=='yys'):
             data = {
                 'usergroup':'运营商',
-                'usergroup-id':'yys',
                 'sidebar':[
                     [u'机票采购', [
                         u'PNR预订',u'白屏预订']
@@ -153,7 +149,6 @@ class GuojiHandler(tornado.web.RequestHandler):
         if (usergroup=='gys'):
             data = {
                 'usergroup':'供应商',
-                'usergroup-id':'gys',
                 'sidebar':[
                     [u'国际订单管理',
                      [u'出票订单',u'审核订单',u'退票订单',u'废票订单']
@@ -173,7 +168,6 @@ class GuojiHandler(tornado.web.RequestHandler):
         if (usergroup=='cgs'):
             data = {
                 'usergroup':'采购商',
-                'usergroup-id':'cgs',
                 'sidebar':[
                     [u'机票采购',
                      [u'PNR预订',u'白屏预订']

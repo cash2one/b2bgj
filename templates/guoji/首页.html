@@ -1,0 +1,74 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-pnrmyd">
+            {%  if usergroup!='gys'  %}
+            <div class="block block1">
+                <!-- <p class="user-info"> -->
+                <!--     <span class="red"> -->
+                <!--         尊敬的用户：buyechengguojibu  -->
+                <!--     </span> -->
+                <!--     &nbsp;&nbsp;这是您今天的第 -->
+                <!--     <span class="red"> -->
+                <!--         1 -->
+                <!--     </span> -->
+                <!--     次登录，上次登录地址 -->
+                <!--     <span class="red"> -->
+                <!--         上海市/222.68.172.121  -->
+                <!--     </span> -->
+                <!--     &nbsp;&nbsp;登录时间 -->
+                <!--     <span class="red"> -->
+                <!--         2012/6/12 9：03：24 -->
+                <!--     </span> -->
+                <!-- </p> -->
+                <center>
+                    <a href="PNR预订.html" class="button3 button">PNR创建订单</a>
+                    <a href="国际航班查询.html" class="button3 button">航班查询及预订</a>
+                </center>
+            </div>
+            {% end %}
+
+            <div class="block block2">
+                <div class="block-head gray-title">
+                    <ul>
+                        <li class="current">
+                            <span>公告分类1</span>
+                        </li>
+                        <li>
+                            <span>公告分类2</span>
+                        </li>
+                        <li>
+                            <span>公告分类3</span>
+                        </li>
+                    </ul>
+                    <span class="time">发布时间</span>
+                </div>
+                <div class="block-body">
+                    <table cellspacing="0" class="table1-pnrmyd">
+                        <colgroup>
+                            <col class="tcol1"></col>
+                            <col class="tcol2"></col>
+                        </colgroup>
+                        {% for x in range(5) %}
+                        {% if x%2==0 %}
+                        <tr class="odd">
+                        {% else %}
+                        <tr class="even">
+                        {% end %}
+                        <td>
+                            <a href="#" target="_blank">关于吗行机票在退票情况下的税金处理规定</a></td>
+                            <td>2012/6/20 9:08:37</td>
+                        </tr>
+                        {% end %}
+                    </table>
+                </div>
+            </div>
+
+{% include 'partial/pagination.html' %}
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}
