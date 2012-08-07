@@ -1,5 +1,7 @@
-YUI.Env.JSONP={
-    getHotCityData: function (o){backHotCityData=o;}
+YUI.Env.JSONP = {
+	getHotCityData: function(o) {
+		backHotCityData = o;
+	}
 }
 
 /**
@@ -8,51 +10,109 @@ YUI.Env.JSONP={
  * @author: zining@taobao.com
  * @data: 2012/04/13
  */
-YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-box','jsonp','event', 'trip-mustache','imageloader', function(Y){
-	
+YUI().use('trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache', 'imageloader', function(Y) {
+
 	/*iframe高度自定义,解决跨域问题*/
 	var getDomain = function() {
-			  var arr = location.hostname.split('.'),
-			  len = arr.length;
-			  return arr.slice(len - 2).join('.');
-			};
+		var arr = location.hostname.split('.'),
+		len = arr.length;
+		return arr.slice(len - 2).join('.');
+	};
 	document.domain = getDomain();
-	
+
 	/* added by shaobo 提前初始化搜索 */
-	var	_toCity = null,
-		_searchKeyword = null,
-		_searchForm = null,
-		_submitInnSearch = function(){
-			 // 针对不支持placeholder的浏览器，需要在提交表单前判断是否有用户输入
-			if (_toCity._node.value === _toCity.getAttribute('placeholder')) {_toCity.set('value', '')};
-			if (_searchKeyword._node.value === _searchKeyword.getAttribute('placeholder')) {_searchKeyword.set('value', '')};
-			_searchForm.submit();
+	var _toCity = null,
+	_searchKeyword = null,
+	_searchForm = null,
+	_submitInnSearch = function() {
+		// 针对不支持placeholder的浏览器，需要在提交表单前判断是否有用户输入
+		if (_toCity._node.value === _toCity.getAttribute('placeholder')) {
+			_toCity.set('value', '')
 		};
-		
-	
-	Y.on('domready', function(){
+		if (_searchKeyword._node.value === _searchKeyword.getAttribute('placeholder')) {
+			_searchKeyword.set('value', '')
+		};
+		_searchForm.submit();
+	};
+
+	Y.on('domready', function() {
+
+    Y.one("body").delegate("click", function(e) {
+        var lightboxID = this.getAttribute("data-lightboxid");
+
+        Y.all(".lightbox").each(function(i) {
+            if (i.getAttribute("data-lightboxid") == lightboxID) {
+                i.setStyle('display','block');
+            }
+        })
+
+    },".show-lightbox");
+
+    Y.all('.lightbox [rel=close]').on("click",function(e) {
+        e.currentTarget.ancestor('.lightbox').hide();
+    });
+
+		function changeStyle(name, filepath) {
+			var href = filepath;
+			if (name === "default") {
+				Y.one('#skins').remove();
+				return;
+			}
+
+			if (Y.one('#skins')==null) {
+				Y.one('head').append('<link id="skins" rel="stylesheet" href="' + href + '"  />');
+			} else {
+				Y.one('#skins').set("href", href);
+			}
+		}
+
+		Y.all('.change-style').on('click', function(e) {
+			var that = e.currentTarget;
+			// var path = that.getData('filepath');
+			// var color = that.getData('color');
+            var path = that.getAttribute('data-filepath')
+            var color = that.getAttribute('data-color')
+			changeStyle(color, path);
+		});
+
+		Y.one('.arrow5').on('click', function() {
+			Y.one('.head').toggleView();
+			this.toggleClass('arrow5h');
+		});
+
+		Y.one('.arrow4').on('click', function() {
+			Y.one('.sidebar').toggleView();
+			this.toggleClass('arrow4h');
+			Y.one('body').toggleClass('hide-sidebar');
+		});
+
+		Y.all(".mo-jptj .dropdown").on("hover", function(i) {
+			Y.one(".box").setStyle("display", "block");
+		},function(i) {
+			Y.one(".box").setStyle("display", "none");
+		})
 		// 酒店搜索模块日历和placeholder控件初始化							
-		var	hotelDate = new Y.TripCalendar({
-				beginNode: '#beginNode',
-				endNode: '#J_kezhan_endDateBox',							
-				limitBeginDate: new Date(),
-				limitDays:28,
-				isWeek: false,
-                isFestival: false,
-				titleTips: "酒店预订时间不能超过90天"
-			}),
-			depCity = new Y.TripAutoComplete({
-				inputNode : '.depcity',
-				codeInputNode : '#J_ToCityCode',
-				source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-				hotSource: '/static/js/b2b_hotcity'
-			}),
-			toCity = new Y.TripAutoComplete({
-				inputNode : '.tocity',
-				codeInputNode : '#J_ToCityCode',
-				source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-				hotSource: '/static/js/b2b_hotcity'
-			});
+		var hotelDate = new Y.TripCalendar({
+			beginNode: '#beginNode',
+			endNode: '#endNode',
+			limitBeginDate: new Date(),
+			limitDays: 28,
+			isWeek: false,
+			isFestival: false,
+			titleTips: "XXXXXXXXXXXX"
+		}),
+		depCity = new Y.TripAutoComplete({
+			inputNode: '.depcity',
+			codeInputNode: '#J_ToCityCode',
+			source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
+			hotSource: '/static/js/b2b_hotcity'
+		}),
+		toCity = new Y.TripAutoComplete({
+			inputNode: '.tocity',
+			codeInputNode: '#J_ToCityCode',
+			source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
+			hotSource: '/static/js/b2b_hotcity'
+		});
 		//全局保存城市，关键字element
 		// _toCity = Y.all('.endcity');
 		// _searchKeyword = Y.one('#J_search_keyword');
@@ -63,12 +123,12 @@ YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-
 		// new Y.SearchForm({node:'#J_kezhan_form', 'storage':false, 'afterValidate':function(){
 		// 	_submitInnSearch();
 		// }});
-	}, '.adImgBox');
-	
-			
-	Y.on('domready',function(){
-		/*jsonp异步获取数据*/													
-        /*
+	},
+	'body');
+
+	Y.on('domready', function() {
+		/*jsonp异步获取数据*/
+		/*
          * 客栈
 		function showList(k){
 			//变量初始化
@@ -107,9 +167,9 @@ YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-
 					}																																				
 		};
 		showList(0);
-	*/	
+	*/
 		//屏幕滚动，延时加载		
-       /*
+		/*
 	   var sImg = function(index){
 		   var ImageLazyloader, 
 			   rendered = false;
@@ -142,15 +202,15 @@ YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-
 
 		};
 		sImg(0);	
-	*/	
-		
+	*/
+
 		// //tab切换
 		// var TabClick = new Y.Slide('J_tablist',{
 		// 	autoSlide:false,
 		// 	eventype:'click'
 		// });
 		//点击tab获得索引值执行showList;
-        /*
+		/*
 		TabClick.on('switch',function(data){		
 					var index = parseInt(data.index);						
 						
@@ -160,10 +220,10 @@ YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-
 						sImg(index);												
 					},10);
 		});				
-		*/			
+		*/
 
-		/*顶部图片hover效果*/		
-        /*
+		/*顶部图片hover效果*/
+		/*
 		Y.one('.adImgBox table').delegate('hover', function(e){
 			var tar = e.currentTarget;		
 			var spanInMe = tar.one('.J_spanbox');		
@@ -175,9 +235,9 @@ YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-
 		}, '.J_hoverA');
         */
 		/*顶部图片hover效果 end*/
-		
+
 		/*分享收藏*/
-        /*
+		/*
 		Y.on('click',function(e){
 			e.halt();
 			if(!e.target.getAttribute('data-url')) return;
@@ -242,83 +302,15 @@ YUI().use('trip-search-form', 'trip-autocomplete' ,'trip-calendar','node','trip-
 		// 	}
 		// }
 		// gotop();
-		
 		/*回到顶部 end*/
-		
-	 });
+
+	});
 })
 
 /*
 jQuery(function($) {
-    $(".suggest").kendoAutoComplete({
-        minLength: 1,
-        dataField: "citycode",
-        dataSource: {
-            serverFiltering: true,
-            // serverPaging: true,
-            // pageSize: 2,
-            transport: {
-                read: "ajax/citylist"
-            }
-        },
-        // filter: "startswith",
-        placeholder: "中文/拼音"
-    });
 
-    kendo.culture("zh-CHS");
 
-    $(".datepicker").kendoDatePicker();
-    $(".timepicker").kendoTimePicker();
-
-    $('.arrow5').on('click', function() {
-        $('.head').toggle();
-        $(this).toggleClass('arrow5h');
-    });
-
-    $('.arrow4').on('click', function() {
-        $('.sidebar').toggle();
-        $(this).toggleClass('arrow4h');
-        $('body').toggleClass('hide-sidebar');
-    });
-
-    function changeStyle(name, filepath) {
-        var href = filepath;
-
-        if (name === "default") {
-            $('#skins').remove();
-            return;
-        }
-
-        if ($('#skins').length !== 1) {
-            $('head').append('<link id="skins" rel="stylesheet" href="' + href + '"  />');
-        } else {
-            $('#skins').attr("href", href);
-        }
-    }
-
-    $('.change-style').on('click', function() {
-        var path = $(this).data('filepath');
-        var that = $(this);
-        var color = that.data('color');
-        changeStyle(color, path);
-    })
-
-    $('.lightbox').find('[rel=close]').click(function() {
-        $(this).parents('.lightbox').hide();
-    });
-
-    $("body").on("click", ".show-lightbox", function() {
-        var lightboxID = $(this).data("lightboxid");
-        $(".lightbox").each(function() {
-            if ($(this).data("lightboxid") == lightboxID) {
-                $(this).show();
-            }
-        })
-    });
-
-    $(".mo-jptj .dropdown").hover(function() {
-        $(this).find(".box").toggle();
-    })
 
     $(".mo-hbcx .more").click(function() {
         var that = $(this);
@@ -343,3 +335,4 @@ jQuery(function($) {
 
 
 */
+

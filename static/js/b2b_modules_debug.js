@@ -25872,7 +25872,6 @@ YUI.add('trip-calendar',function(Y) {
                 '2017-01-01':'元旦',
                 '2017-01-27':'除夕',
                 '2017-01-28':'春节',
-
                 '2017-04-04':'清明节',
                 '2017-05-01':'劳动节',
                 '2017-05-30':'端午节',
@@ -25935,7 +25934,7 @@ YUI.add('trip-calendar',function(Y) {
                 }
 
             }
-            inputNode.get('parentNode').one("span").set("innerHTML", dayInfo);
+            // inputNode.get('parentNode').one("span").set("innerHTML", dayInfo);
         },
 
         ieTimeout: function(){

@@ -327,12 +327,204 @@
                 </table>
             </div>
 
+            {% if usergroup!='gys' %}
             <div class="center">
                 <input type="button" class="button button2 show-lightbox" data-lightboxid="SQTFP" value="申请退废票" name="" />
                 <input type="button" class="button button2 show-lightbox" data-lightboxid="SQGQ" value="申请改签" name="" />
                 <input type="button" class="button button2" value="取消订单" name="" />
                 <input type="button" class="button button2" value="关闭" name="" />
             </div>
+            {% elif data['title']==u'改签处理' %}
+            <div class="center">
+                <input type="button" class="button button2" value="确认改签" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+            {% elif data['title']==u'出票处理' %}
+
+            <div class="block11 block">
+                <h3 class="gray-title">备注</h3>
+                <table cellspacing="0" class="table-b6">
+                    <tr>
+                        <th>备注</th>
+                        <td>
+                            <textarea name="" style="width:400px;height:50px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <input type="button" class="button button2" value="出票失败" name="" />
+                <input type="button" class="button button2" value="确认出票" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+            {% elif data['title']==u'预定审核' %}
+
+            <div class="block11 block">
+                <h3 class="gray-title">预订审核</h3>
+                <table cellspacing="0" class="table-b6">
+                    <tr>
+                        <th>收费项目</th>
+                        <td>
+                            <select name="">
+                                <option value="">婴儿票</option>
+                                <option value="">其他</option>
+                            </select>
+                        </td>
+                        <th>收费金额</th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>回复</th>
+                        <td>
+                            <select name="">
+                                <option value="">pnr信息错误</option>
+                                <option value="">儿童票价出问题</option>
+                                <option value="">座位已满</option>
+                                <option value="">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>备注</th>
+                        <td>
+                            <textarea name="" style="width:400px;height:50px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <input type="button" class="button button2" value="审核退回" name="" />
+                <input type="button" class="button button2" value="审核通过" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            {% elif data['title']==u'改签审核' %}
+
+            <div class="block11 block">
+                <h3 class="gray-title">改签审核</h3>
+                <table cellspacing="0" class="table-b6">
+                    <tr>
+                        <th>改签补款</th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>回复</th>
+                        <td>
+                            <select name="">
+                                <option value="">pnr信息错误</option>
+                                <option value="">儿童票价出问题</option>
+                                <option value="">座位已满</option>
+                                <option value="">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>备注</th>
+                        <td>
+                            <textarea name="" style="width:400px;height:50px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <input type="button" class="button button2" value="审核退回" name="" />
+                <input type="button" class="button button2" value="审核通过" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+            {% elif data['title']==u'退票审核' %}
+
+            <div class="block11 block">
+                <h3 class="gray-title">退票审核</h3>
+                <table cellspacing="0" class="table-b6">
+                    <tr>
+                        <th>扣款金额</th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>回复</th>
+                        <td>
+                            <select name="">
+                                <option value="">pnr信息错误</option>
+                                <option value="">儿童票价出问题</option>
+                                <option value="">座位已满</option>
+                                <option value="">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>退回原因</th>
+                        <td>
+                            <textarea name="" style="width:400px;height:50px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <input type="button" class="button button2" value="审核退回" name="" />
+                <input type="button" class="button button2" value="审核通过" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            {% elif data['title']==u'退票处理' %}
+            <div class="block11 block">
+                <h3 class="gray-title">退票处理</h3>
+                <table cellspacing="0" class="table-b6">
+                    <tr>
+                        <th>回复</th>
+                        <td>
+                            <select name="">
+                                <option value="">pnr信息错误</option>
+                                <option value="">儿童票价出问题</option>
+                                <option value="">座位已满</option>
+                                <option value="">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>退回原因</th>
+                        <td>
+                            <textarea name="" style="width:400px;height:50px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <input type="button" class="button button2" value="订单退回" name="" />
+                <input type="button" class="button button2" value="提交财务退款" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            {% elif data['title']==u'废票处理' %}
+            <div class="block11 block">
+                <h3 class="gray-title">废票处理</h3>
+                <table cellspacing="0" class="table-b6">
+                    <tr>
+                        <th>废票手续费</th>
+                        <td>20/张
+                            <a href="#" class="button">修改废票手续费</a>
+                            <!-- <input type="button" class="button button2" value="修改废票手续费" name="" /> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>备注</th>
+                        <td>
+                            <textarea name="" style="width:400px;height:50px;"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="center">
+                <input type="button" class="button button2" value="订单退回" name="" />
+                <input type="button" class="button button2" value="提交财务退款" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+            {% end %}
 
         </div>
 

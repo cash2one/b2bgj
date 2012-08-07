@@ -18,7 +18,7 @@
 .redb {
   font-weight: bold; }
 
-.blue, .gray-title ul .current, .table-b5 .thead ul .current {
+.blue, .gray-title ul .current, .table-b5 .thead ul .current, .table-b6 .thead ul .current {
   color: #3366cc; }
 
 .lightblue-bg {
@@ -29,9 +29,9 @@ body {
   background-color: #e2e9ea;
   min-width: 1200px; }
 
-.gray-title, .table-b5 .thead {
+.gray-title, .table-b5 .thead, .table-b6 .thead {
   background: url(../img/gray-title.png) repeat-x; }
-  .gray-title ul, .table-b5 .thead ul {
+  .gray-title ul, .table-b5 .thead ul, .table-b6 .thead ul {
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -40,18 +40,18 @@ body {
     padding-left: 20px;
     font-weight: bold;
     padding-top: 3px; }
-    .gray-title ul li, .table-b5 .thead ul li {
+    .gray-title ul li, .table-b5 .thead ul li, .table-b6 .thead ul li {
       line-height: 30px;
       margin: 0;
       float: left;
       cursor: pointer;
       padding: 0 20px; }
-    .gray-title ul .current, .table-b5 .thead ul .current {
+    .gray-title ul .current, .table-b5 .thead ul .current, .table-b6 .thead ul .current {
       border: 1px solid #cecece;
       border-bottom: 0;
       background-color: #fff; }
 
-.f12, h2.title, h3.gray-title, .table-b5 h3.thead {
+.f12, h2.title, h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
   font-size: 12px; }
 
 .f14, .menu-sidebar dt, .lightbox-head h3, .button2, h1.title {
@@ -464,34 +464,40 @@ p {
     background-color: #f6f6f6;
     border: 1px solid #cecece; }
 
-.table-b5 {
+.table-b5, .table-b6 {
   width: 100%;
   border-top: 1px solid #cecece; }
-  .table-b5 img {
+  .table-b5 img, .table-b6 img {
     vertical-align: middle;
     margin-bottom: 5px; }
-  .table-b5 td, .table-b5 th {
+  .table-b5 td, .table-b6 td, .table-b5 th, .table-b6 th {
     padding: 5px 10px; }
-  .table-b5 .thead td, .table-b5 .thead th {
+  .table-b5 .thead td, .table-b6 .thead td, .table-b5 .thead th, .table-b6 .thead th {
     line-height: 30px;
     padding: 0 0 0 10px;
     border: 1px solid #cecece;
     font-weight: bold; }
-  .table-b5 .info-row td, .table-b5 .info-row th {
+  .table-b5 .info-row td, .table-b6 .info-row td, .table-b5 .info-row th, .table-b6 .info-row th {
     padding: 0; }
-  .table-b5 .info {
+  .table-b5 .info, .table-b6 .info {
     padding: 0 20px;
     margin-bottom: 20px;
     border-bottom: 3px solid #377ac0;
     background-color: #f6f6f6;
     line-height: 40px; }
-    .table-b5 .info span {
+    .table-b5 .info span, .table-b6 .info span {
       padding-right: 20px; }
-    .table-b5 .info .btn {
+    .table-b5 .info .btn, .table-b6 .info .btn {
       float: right;
       height: 20px; }
-  .table-b5 .loaded .info {
+  .table-b5 .loaded .info, .table-b6 .loaded .info {
     display: none; }
+
+.table-b6 {
+  border-top: none; }
+  .table-b6 th {
+    text-align: right;
+    width: 70px; }
 
 i.close {
   cursor: pointer;
@@ -502,7 +508,7 @@ i.close {
 .center {
   text-align: center; }
 
-h3.gray-title, .table-b5 h3.thead {
+h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
   line-height: 34px;
   padding-left: 20px;
   margin: 0; }
@@ -528,3 +534,10 @@ tr.even {
     height: 240px;
     background-color: black;
     font-family: monospace; }
+
+ul, dl, ol, h5, h6, li {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }

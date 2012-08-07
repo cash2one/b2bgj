@@ -7,61 +7,66 @@
             <div class="block block1">
                 <div class="block-head">
                     <h3 class="gray-title">
-                        出票订单 
+                        {{data['title']}}
                     </h3>
                 </div>
                 <div class="block-body">
                     <table frame=void cellspacing="0" class="table1-cpdd table-b3">
                         <tr>
-                            <th>日期范围</th>
-                            <td>
-                                <input type="text" class="text datepicker" value="" name="" />
-                                至
-                                <input type="text" class="text datepicker" value="" name="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>锁单状态</th>
-                            <td>
-                                <select name="">
-                                    <option value="">全部订单</option>
-                                    <option value="">全部订单</option>
-                                    <option value="">全部订单</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>查询方式</th>
-                            <td>
+                            <th>查询类型</th>
+                            <td colspan=3>
                                 <label>
-                                    <input type="radio" class="radio" value="" name="" />
                                     票号
+                                    <input type="text" class="text" value="" name="" />
                                 </label>
                                 <label>
-                                    <input type="radio" class="radio" value="" name="" />
                                     PNR编号
+                                    <input type="text" class="text" value="" name="" />
                                 </label>
                                 <label>
-                                    <input type="radio" class="radio" value="" name="" />
                                     乘客姓名
+                                    <input type="text" class="text" value="" name="" />
                                 </label>
                                 <label>
-                                    <input type="radio" class="radio" value="" name="" />
                                     订单编号
+                                    <input type="text" class="text" value="" name="" />
                                 </label>
                             </td>
                         </tr>
                         <tr>
                             <th>
-                                PNR记录编号 
+                                锁单筛选
                             </th>
                             <td>
-                                <input type="text" class="text" value="" name="" />
+                                <label>
+                                <input type="radio" class="radio" value="" name="" />
+                                所有订单
+                                </label>
+                                <label>
+                                <input type="radio" class="radio" value="" name="" />
+                                锁定订单
+                                </label>
+                                <label>
+                                <input type="radio" class="radio" value="" name="" />
+                                未锁定订单
+                                </label>
                             </td>
+                            {% if usergroup!='gys' %}
+                            <th>日期范围</th>
+                            <td>
+                                <span id="beginNode">
+                                <input type="text" class="text datepicker" value="" name="" />
+                                </span>
+                                至
+                                <span id="endNode">
+                                <input type="text" class="text datepicker" value="" name="" />
+                                </span>
+                            </td>
+                            {% end %}
                         </tr>
                     </table>
                     <p class="center">
-                        <input type="button" class="button button2" value="查询全部订单" name="" />
+                        <input type="button" class="button button2" value="立即查询" name="" />
                     </p>
                 </div>
             </div>
@@ -94,6 +99,9 @@
                         <li>
                             <span>当日订单</span>
                         </li>
+                        <li>
+                            <span>暂不能出票</span>
+                        </li>
                     </ul>
                 </div>
                 {% end %}
@@ -116,15 +124,9 @@
                             <td>操作</td>
                             {% end %}
                         </tr>
-                        {% for x in range(10) %}
-                        {% if x%2==0 %}
                         <tr class="odd">
-                        {% else  %}
-                        <tr class="even">
-                        {% end %}
-                            {% if usergroup!="gys"  %}
                             <td><a target="_blank" href="订单详情.html">32132132</a></td>
-                            <td>审核中</td>
+                            <td>订单详情</td>
                             <td>xx</td>
                             <td>xx</td>
                             <td>xx</td>
@@ -135,9 +137,15 @@
                             <td>xx</td>
                             <td>xx</td>
                             <td>xxxxxxxx</td>
-                            {% else %}
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
+                        <tr class="even">
                             <td><a target="_blank" href="改签处理.html">32132132</a></td>
-                            <td>审核中</td>
+                            <td>改签处理</td>
                             <td>xx</td>
                             <td>xx</td>
                             <td>xx</td>
@@ -148,12 +156,126 @@
                             <td>xx</td>
                             <td>xx</td>
                             <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
                             <td width=80>
                                 <input type="button" class="button button1" value="锁定" name="" />
                             </td>
                             {% end %}
                         </tr>
-                        {% end %}
+                        <tr class="odd">
+                            <td><a target="_blank" href="出票处理.html">32132132</a></td>
+                            <td>出票处理</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
+                            <tr class="even">
+                            <td><a target="_blank" href="预定审核.html">32132132</a></td>
+                            <td>预订审核</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
+                            <tr class="odd">
+                            <td><a target="_blank" href="改签审核.html">32132132</a></td>
+                            <td>改签审核</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
+                            <tr class="even">
+                            <td><a target="_blank" href="退票审核.html">32132132</a></td>
+                            <td>退票审核</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
+                            <tr class="odd">
+                            <td><a target="_blank" href="退票处理.html">32132132</a></td>
+                            <td>退票处理</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
+                            <tr class="even">
+                            <td><a target="_blank" href="废票处理.html">32132132</a></td>
+                            <td>废票处理</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td class="red">xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xx</td>
+                            <td>xxxxxxxx</td>
+                            {% if usergroup=="gys"  %}
+                            <td width=80>
+                                <input type="button" class="button button1" value="锁定" name="" />
+                            </td>
+                            {% end %}
+                            </tr>
                     </table>
 
                 </div>

@@ -12,7 +12,7 @@
                     <table frame=void cellspacing="0" class="table-b4">
                         <tr>
                             <th>航班类型</th>
-                            <td colspan=5>
+                            <td>
                                 <label>
                                     <input type="radio" class="radio" value="" name="" />
                                     单程
@@ -21,27 +21,6 @@
                                     <input type="radio" class="radio" value="" name="" />
                                     往返
                                 </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>出发城市</th>
-                            <td>
-                                <input type="text" class="text suggest depcity suggest-city" value="" name="" />
-                            </td>
-                            <th>到达城市</th>
-                            <td>
-                                <input type="text" class="text suggest tocity suggest-city" value="" name="" />
-                            </td>
-                            <th>出发日期</th>
-                            <td id="beginNode">
-                                <input type="text" class="text datepicker" value="" name="" />
-<span class="date-icon date-icon-e e"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>航空公司</th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
                             </td>
                             <th>乘客类型</th>
                             <td>
@@ -54,6 +33,34 @@
                                 <select name="">
                                     <option value="">不限</option>
                                 </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发城市</th>
+                            <td>
+                                <input type="text" class="text suggest depcity suggest-city" value="" name="" />
+                            </td>
+                            <th>到达城市</th>
+                            <td>
+                                <input type="text" class="text suggest tocity suggest-city" value="" name="" />
+                            </td>
+                            <th>航空公司</th>
+                            <td>
+                                <input type="text" class="text" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发日期</th>
+                            <td>
+                                <span id="beginNode">
+                                <input type="text" class="text datepicker" value="" name="" />
+                                </span>
+                            </td>
+                            <th>到达日期</th>
+                            <td colspan=3>
+                                <span id="endNode">
+                                <input type="text" class="text datepicker" value="" name="" />
+                                </span>
                             </td>
                         </tr>
                     </table>

@@ -66,7 +66,7 @@ class GuoneiHandler(tornado.web.RequestHandler):
                 'usergroup':'供应商',
                 'sidebar':[
                     [u'国际订单管理',
-                     [u'出票订单',u'审核订单',u'退票订单',u'废票订单']
+                     [u'已支付订单',u'待审核订单',u'退票订单',u'废票订单']
                     ],
                     [u'政策管理',
                      [u'国际返点管理']
@@ -151,7 +151,7 @@ class GuojiHandler(tornado.web.RequestHandler):
                 'usergroup':'供应商',
                 'sidebar':[
                     [u'国际订单管理',
-                     [u'出票订单',u'审核订单',u'退票订单',u'废票订单']
+                     [u'已支付订单',u'待审核订单',u'退票订单',u'废票订单']
                     ],
                     [u'政策管理',
                      [u'国际返点管理']

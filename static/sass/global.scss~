@@ -552,7 +552,6 @@ p{
     @extend .table-b3;
 }
 
-
 .table-b5{
     img{
         vertical-align:middle; 
@@ -592,15 +591,6 @@ p{
     .loaded .info{
         display:none; 
     }
-}
-
-.table-b6{
-    th{
-        text-align:right;
-        width:70px;
-    }
-    @extend .table-b5;
-    border-top:none;
 }
 
 i.close{
@@ -649,10 +639,12 @@ tr.even{
     }
 }
 
-ul,dl,ol,h5,h6,li{
-    padding:0;
+.calendar,.yui3-widget{
+   ul,h5,h6,li{
     margin:0;
-}
-li{
-    list-style:none; 
+    padding:0;
+    }
+    li{
+        list-style:none; 
+    }
 }
