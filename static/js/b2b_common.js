@@ -13,12 +13,14 @@ YUI.Env.JSONP = {
 YUI().use('trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache', 'imageloader', function(Y) {
 
 	/*iframe高度自定义,解决跨域问题*/
+    /*
 	var getDomain = function() {
 		var arr = location.hostname.split('.'),
 		len = arr.length;
 		return arr.slice(len - 2).join('.');
 	};
 	document.domain = getDomain();
+    */
 
 	/* added by shaobo 提前初始化搜索 */
 	var _toCity = null,
