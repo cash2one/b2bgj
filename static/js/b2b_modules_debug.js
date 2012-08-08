@@ -24687,7 +24687,7 @@ YUI.add('trip-autocomplete',function(Y){
 					return this ;
 				}
 				Y.Get.script( urlStr ,{
-					charset : 'gbk',
+					charset : 'utf-8',
 					onSuccess: function(o){
 						var data = o.data ;
 						if (typeof backHotCityData === 'object') {

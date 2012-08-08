@@ -157,8 +157,10 @@
                         <td>
                             <input type="text" class="text" value="" name="" />
                         </td>
-                        <th></th>
-                        <td></td>
+                        <th>上传签证</th>
+                        <td>
+                            <input type="file" class="file" value="" name="" />
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -187,7 +189,7 @@
                         是否需要发票（点击需要发票，下方展开后续发票填写信息）
                     </label>
                 </p>
-                <p>
+                <p class="fp-row" data-rownum=0>
                     <span>
                         <u>发票金额</u>
                         <input type="text" class="text" value="" name="" />
@@ -198,6 +200,8 @@
                         <u>发票抬头</u> 
                         <input type="text" class="text text2" value="" name="" />
                     </span>
+                    <a class="fp-row-add" href="javascript:;">增加</a>
+                    <a class="fp-row-remove" href="javascript:;">删除</a>
                 </p>
                 <p>
                     <u>发票派送方式</u>

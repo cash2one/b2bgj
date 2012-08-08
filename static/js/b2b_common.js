@@ -105,13 +105,13 @@ YUI().use('trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'tri
 			inputNode: '.depcity',
 			codeInputNode: '#J_ToCityCode',
 			source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-			hotSource: '/static/js/b2b_hotcity'
+			hotSource: '/static/js/b2b_hotcity.js'
 		}),
 		toCity = new Y.TripAutoComplete({
 			inputNode: '.tocity',
 			codeInputNode: '#J_ToCityCode',
 			source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-			hotSource: '/static/js/b2b_hotcity'
+			hotSource: '/static/js/b2b_hotcity.js'
 		});
 		//全局保存城市，关键字element
 		// _toCity = Y.all('.endcity');

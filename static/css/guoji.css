@@ -876,6 +876,11 @@ li {
     background-color: black;
     font-family: monospace; }
 
+.mo-zcdr .gray-title, .mo-zcdr .table-b5 .thead, .table-b5 .mo-zcdr .thead, .mo-zcdr .table-b6 .thead, .table-b6 .mo-zcdr .thead, .mo-zcdr .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-zcdr .block-head {
+  border-bottom: 1px solid #cecece; }
+.mo-zcdr p {
+  padding: 20px; }
+
 .mo-zctj .gray-title, .mo-zctj .table-b5 .thead, .table-b5 .mo-zctj .thead, .mo-zctj .table-b6 .thead, .table-b6 .mo-zctj .thead, .mo-zctj .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-zctj .block-head {
   border-bottom: 1px solid #cecece; }
 .mo-zctj .block-i {
