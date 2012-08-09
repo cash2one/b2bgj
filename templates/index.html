@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title></title>
 <script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
+<script src="/static/js/livereload.js?host=192.168.56.101"></script>
 </head>
 <body>
 <div class="example yui3-skin-sam">
@@ -11,6 +12,7 @@
     <div id="labels"></div>
 </div>
 <script type="text/javascript">
+
     YUI().use('node','datasource','datatable',function(Y){
 
         var data = [
@@ -30,11 +32,9 @@
 
         /* myDataSource = new Y.DataSource.Local({source:data}); */
 
-        myDataSource = new Y.DataSource.Get(
-            {
-            source: "http://192.168.139.13:8888/jsonp/test?"
-            } 
-        )
+        myDataSource = new Y.DataSource.Get({
+            source: "http://192.168.56.101:8888/jsonp/test?"
+        });
 
         myDataSource.plug(Y.Plugin.DataSourceJSONSchema, {
             schema: {
@@ -50,51 +50,26 @@
             caption: "Example table with simple columns"
         });
 
-    simple.plug(Y.Plugin.DataTableDataSource, { datasource: myDataSource});
+        simple.plug(Y.Plugin.DataTableDataSource, { datasource: myDataSource});
 
         simple.render("#simple");
         simple.datasource.load();
 
+        Y.one('body').on('click',function(){
+            simple.datasource.load({
+                callback:{
+                    success:function(e){
+                        simple.datasource.onDataReturnInitializeTable(e);
+                    } 
+                } 
+            });
 
-    Y.one('body').on('click',function(){
-    /* simple.datasource.load({ */
-    /*     callback:{ */
-    /*         success:function(e){ */
-    /*             simple.onDataReturnInitializeTable(); */
-    /*         }  */
-    /*     }  */
-    /* }); */
-        simple.datasource.load();
+            /* myDataSource.sendRequest({callback:{ */
+            /*     success:function(){ */
+            /*     }  */
+            /* }}); */
+        })
 
-simple._afterDataChange(function(){
-    console.log(123)
-})
-
-        /* myDataSource.sendRequest({callback:{ */
-        /*     success:function(){ */
-        /*     }  */
-        /* }}); */
-    })
-
-        // Data with less user friendly field names
-
-        // Column definitions that use configured header labels, abbrs.
-        // Use "key" to identify which data field has its content.
-        /* var columnDef = [ */
-        /* { */
-        /*     key  : "Title", */
-        /* }, */
-        /* { */
-        /*     key  : "Phone", */
-        /* } */
-        /* ]; */
-
-        /* var withColumnLabels = new Y.DataTable({ */
-        /*     columns: columnDef, */
-        /*     data   : data, */
-        /*     summary: "Price sheet for inventory parts", */
-        /*     caption: "These columns have labels and abbrs" */
-        /* }).render('#labels'); */
     })  
 </script>
 </body>
