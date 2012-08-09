@@ -4,8 +4,9 @@ module=guoji
 usergroup=$1
 
 dst=~/www/BYCWORK/$module-$usergroup
+projdst=~/www/BYCWORK/byc_supper/InternationalFlights/InternationalFlights.WebUI
 
-echo "save to ${dst}\n"
+echo "save to ${dst}"
 
 mkdir $dst
 mkdir $dst/static
@@ -15,6 +16,10 @@ cp -r static/js/ $dst/static
 cp -r static/img/ $dst/static
 # cp -r static/kendoUI/ $dst/static
 cp -r templates/$module/ajax $dst/ajax
+
+cp -r static/css/* $projdst/CSS
+cp -r static/js/* $projdst/JS
+cp -r static/img/* $projdst/IMG
 
 cd templates/$module/
 

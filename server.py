@@ -4,6 +4,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.escape
 import os.path
+import time
 
 url_escape = tornado.escape.url_escape
 
@@ -11,6 +12,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r"/", MainHandler),
+            (r"/jsonp/[^/]+", jsonpHandler),
             (r"/(guoji)/(?<!ajax)([^/]+).html", GuojiHandler),
             (r"/(guoji)/ajax/(.+)", GuojiAjaxHandler),
             (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),
@@ -30,12 +32,20 @@ class Application(tornado.web.Application):
         tornado.web.Application.__init__(self, handlers, **settings)
 
 
+class jsonpHandler(tornado.web.RequestHandler):
+    def get(self):
+        callback = self.get_argument('callback',default='null')
+        currenttime = time.ctime()
+        data = '''({"query":{"count":10,"created":"xxx","lang":"en-US","results":{"Result":[{"id":"21341983","Phone":"%s","Title":"Giovanni's Pizzaria","Address":"1127 N Lawrence Expy","City":"Sunnyvale"}]}}})'''%(currenttime)
+        self.write(callback+data)
+
+
 class MainHandler(tornado.web.RequestHandler):
-    def get(self, section, pagename = 'index'):
+    def get(self, pagename = 'index'):
         data = {
             'title':pagename,
         }
-        self.write('首页')
+        self.render('index.html')
 
 
 class GuoneiHandler(tornado.web.RequestHandler):

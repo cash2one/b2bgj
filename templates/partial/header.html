@@ -7,11 +7,11 @@
 <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
 {% module Template(data['section']+'/partial/external-css.html') %}
 <link href="{{ static_url('css/b2b-modules.css') }}" rel="stylesheet" />
-<script type="text/javascript" src="{{ static_url('js/yui.js') }}"></script>
+<script type="text/javascript" src="{{ static_url('js/yui.min.js') }}"></script>
 <script type="text/javascript" src="{{ static_url('js/yui_loader.js') }}"></script>
 <script type="text/javascript" src="{{ static_url('js/b2b_modules_debug.js') }}"></script>
 <script type="text/javascript" src="{{ static_url('js/b2b_common.js') }}"></script>
-<script src="/static/js/livereload.js?host=192.168.56.101"></script>
+<script src="/static/js/livereload.js?host=192.168.139.13"></script>
 {% module Template(data['section']+'/partial/external-js.html') %}
 </head>
 <body>
@@ -21,7 +21,7 @@
     </h1>
     <div class="nav-top">
         <div class="menu-quick">
-            欢迎您！Admin 
+            欢迎您！Admin
             [<a href="#">{{ data['usergroup'] }}</a>] | 
             [<a href="#">退出</a>] | 
             <a href="#">站点首页</a> |
