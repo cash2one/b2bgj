@@ -1,0 +1,77 @@
+<table frame="void" cellspacing="0" class="table-b5">
+    <tr class="thead">
+        <td>航空公司</td>
+        <td>航班</td>
+        <td>机型</td>
+        <td>起降机场</td>
+        <td>起降时间</td>
+        <td>飞行时间</td>
+        <td>舱位</td>
+        <td>剩余座位</td>
+        <td>操作</td>
+    </tr>
+    {% for x in range(6) %}
+    {% if x%2==0 %}
+    <tr>
+        <td>
+            <img src="{{static_url('img/flights/')}}dongfang.png" alt="" />
+            东方航空
+        </td>
+        <td>KA858</td>
+        <td>空客kj</td>
+        <td>上海-香港</td>
+        <td>07:00-09:20</td>
+        <td>2小时</td>
+        <td>经济</td>
+        <td>2</td>
+        <td style="position:relative;width:100px;text-align:center;">
+            <span class="more" data-ajaxurl="ajax/搜索单程.html">
+                更多舱位
+            </span>
+            <i class="arrow6"></i>
+        </td>
+    </tr>
+    {% else  %}
+    <tr class="info-row">
+        <td colspan=9>
+            <div class="info">
+                <span class="blue show-lightbox" data-lightboxid="TSXX">
+                    退改签 
+                </span>
+                <span>
+                    票面价：
+                    <b class="red">1400</b>
+                </span>
+                <span>
+                    代理费：
+                    0%
+                </span>
+                <span>
+                    奖励：
+                    0.0%+120
+                </span>
+                <span>
+                    佣金：
+                    <b class="red">
+                        120 
+                    </b>
+                </span>
+                <span>
+                    税金：599 
+                </span>
+                <span>
+                    结算价：
+                    <b class="redb">
+                        1180 
+                    </b>
+                </span>
+                <span class="btn">
+                    <input type="button" class="button button1 show-lightbox" data-lightboxid="TSXX" value="预订" name="" />
+                </span>
+
+            </div>
+        </td>
+    </tr>
+    {% end %}
+    {% end %}
+</table>

@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title></title>
 <script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
-<script src="/static/js/livereload.js?host=192.168.56.101"></script>
+<!-- <script src="/static/js/livereload.js?host=192.168.56.101"></script> -->
+<script src="/static/js/livereload.js?host=192.168.139.13"></script>
 </head>
 <body>
 <div class="example yui3-skin-sam">
@@ -14,7 +15,6 @@
 <script type="text/javascript">
 
     YUI().use('node','datasource','datatable',function(Y){
-
         var data = [
         {
             Title : "ga_3475",
@@ -33,7 +33,8 @@
         /* myDataSource = new Y.DataSource.Local({source:data}); */
 
         myDataSource = new Y.DataSource.Get({
-            source: "http://192.168.56.101:8888/jsonp/test?"
+            // source: "http://192.168.56.101:8888/jsonp/test?"
+            // source: "jsonp/test?"
         });
 
         myDataSource.plug(Y.Plugin.DataSourceJSONSchema, {
@@ -63,7 +64,6 @@
                     } 
                 } 
             });
-
             /* myDataSource.sendRequest({callback:{ */
             /*     success:function(){ */
             /*     }  */
