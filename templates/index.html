@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title></title>
 <script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
-<!-- <script src="/static/js/livereload.js?host=192.168.56.101"></script> -->
-<script src="/static/js/livereload.js?host=192.168.139.13"></script>
+<script src="/static/js/livereload.js?host=192.168.56.101"></script>
+<!-- <script src="/static/js/livereload.js?host=192.168.139.13"></script> -->
 </head>
 <body>
 <div class="example yui3-skin-sam">
@@ -33,8 +33,8 @@
         /* myDataSource = new Y.DataSource.Local({source:data}); */
 
         myDataSource = new Y.DataSource.Get({
-            // source: "http://192.168.56.101:8888/jsonp/test?"
-            // source: "jsonp/test?"
+            //source: "http://192.168.56.101:8888/jsonp/test?"
+            source: "jsonp/test?"
         });
 
         myDataSource.plug(Y.Plugin.DataSourceJSONSchema, {
@@ -69,6 +69,17 @@
             /*     }  */
             /* }}); */
         })
+
+        function node_extend_testNS(){}
+
+        node_extend_testNS.NS = 'testNS'
+
+        node_extend_testNS.prototype.hello = function(){
+            console.log('hello')
+        }
+
+        Y.one('body').plug(node_extend_testNS).testNS.hello();
+
 
     })  
 </script>

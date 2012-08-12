@@ -10,7 +10,9 @@ YUI.Env.JSONP = {
 * @author: zining@taobao.com
 * @data: 2012/04/13
 */
-YUI().use('io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache', 'imageloader', function(Y) {
+YUI().use('gallery-form-values','io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache','autocomplete','autocomplete-filters','autocomplete-highlighters', 'imageloader', function(Y) {
+    
+    Y.one('body').addClass('yui3-skin-sam');
 
     /*iframe高度自定义,解决跨域问题*/
     /*
@@ -48,7 +50,7 @@ YUI().use('io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node',
         },".show-lightbox");
 
         Y.all('.lightbox [rel=close]').on("click",function(e) {
-            e.currentTarget.ancestor('.lightbox').hide();
+            e.target.ancestor('.lightbox').hide();
         });
 
         function changeStyle(name, filepath) {
@@ -103,13 +105,14 @@ YUI().use('io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node',
         }),
         depCity = new Y.TripAutoComplete({
             inputNode: '.depcity',
-            codeInputNode: '#J_ToCityCode',
+            codeInputNode: '.depcity_hidden',
             source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
+            // source: 'ajax/citysearch.js?&callback={callback}&q=',
             hotSource: 'ajax/hotcity.js'
         }),
         toCity = new Y.TripAutoComplete({
             inputNode: '.arrcity',
-            codeInputNode: '#J_ToCityCode',
+            codeInputNode: '.arrcity_hidden',
             source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
             hotSource: 'ajax/hotcity.js'
         });
@@ -302,9 +305,10 @@ YUI().use('io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node',
         Y.one(".J_Hbcx_Search").on('click',function(e){
             e.preventDefault();
             var url=this.getAttribute('data-url');
+            if(!url)return;
             Y.io(url,{
                 form:{
-                    id: 'aspnetForm' 
+                    id:"aspnetForm" 
                 },
                 on:{
                     start:function(){
@@ -352,12 +356,51 @@ YUI().use('io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node',
     /*航班查询 end*/
 
     YY=Y
-     Y.one('.airlines').plug(Y.Plugin.AutoComplete, {
-        resultHighlighter: 'phraseMatch',
-        source:'ajax/airlines.js?q={query}&callback={callback}' 
-      });
+
+    /*航空公司自动补全*/
+    var airlineslist=['不限'
+        ,'Z-中国国航-CA'
+        ,'N-南方航空-CZ'
+        ,'D-东方航空-MU'
+        ,'A-奥凯航空公司-BK'
+        ,'B-北京首都航空有限公司-JD'
+        ,'C-成都航空有限公司-EU'
+        ,'D-大新华航空公司-CN'
+        ,'H-河北航空公司-NS'
+        ,'H-海南航空公司-HU'
+        ,'H-河南航空有限公司-VD'
+        ,'H-华夏航空公司-G5'
+        ,'J-吉祥航空公司-HO'
+        ,'K-昆明航空有限公司-KY'
+        ,'S-四川航空公司-3U'
+        ,'S-山东航空公司-SC'
+        ,'S-深圳航空公司-ZH'
+        ,'S-上海航空公司-FM'
+        ,'T-天津航空有限责任公司-GS'
+        ,'X-西部航空公司-PN'
+        ,'X-幸福航空有限责任公司-JR'
+        ,'X-厦门航空有限公司-MF'
+        ,'X-祥鹏航空公司-8L'
+    ,'Z-中国联合航空公司-KN'];
+
+    Y.one('.airlines').plug(Y.Plugin.AutoComplete, {
+        // resultHighlighter: 'phraseMatch',
+        resultFilters: ['charMatch', 'wordMatch'],
+        source:airlineslist,
+        on:{
+            select:function(e){
+                var arr = e.result.display.split('-');
+                var input = this._inputNode.next();
+                input.setAttribute('value',arr[2]);
+            }
+        },
+        activateFirstItem:true
+    });
+    /*航空公司自动补全 end*/
+
 
     })
+
 
 })
 

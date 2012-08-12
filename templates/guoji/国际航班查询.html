@@ -39,15 +39,18 @@
                         <tr>
                             <th>出发城市</th>
                             <td>
-                                <input type="text" class="text suggest depcity suggest-city" value="" name="DEPCITY" />
+                                <input type="text" class="text suggest depcity suggest-city" value="" />
+                                <input type="hidden" class='depcity_hidden' value=""  name="DEPCITY" />
                             </td>
                             <th>到达城市</th>
                             <td>
-                                <input type="text" class="text suggest arrcity suggest-city" value="" name="ARRCITY" />
+                                <input type="text" class="text suggest arrcity suggest-city" value="" />
+                                <input type="hidden" class='arrcity_hidden' value=""  name="ARRCITY" />
                             </td>
                             <th>航空公司</th>
                             <td>
-                                <input type="text" class="text suggest airlines" value="" name="AIRLINES" />
+                                <input type="text" class="text suggest airlines" value="" />
+                                <input type="hidden" class='airlines_hidden' value="" name="AIRLINES" />
                             </td>
                         </tr>
                         <tr>
@@ -66,7 +69,7 @@
                         </tr>
                     </table>
                     <p class="center">
-                        <input type="button" class="button button2 J_Hbcx_Search" value="搜索" name="" />
+                        <input type="button" data-url='ajax/J_Hbcx_DataTable.html' class="button button2 J_Hbcx_Search" value="搜索" name="" />
                     </p>
                 </form>
                 </div>

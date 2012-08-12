@@ -1,9 +1,0 @@
-var _pseuCityList = { 'PEK': ['PEK', 'PEK', '北京'], 'PEK': ['PEK', 'PEK', '北京'], 'SHA': ['SHA', 'SHA', '上海'], 'SHA': ['SHA', 'SHA', '上海'] };
-var cityTabList = [
- { "title": '热门', "begin": '', "end": '', "cityListHTML": '' },
- { "title": 'ABCDEF', "begin": 'A', "end": 'F', "cityListHTML": '' },
- { "title": 'GHIJ', "begin": 'G', "end": 'J', "cityListHTML": '' },
- { "title": 'KLMN', "begin": 'K', "end": 'N', "cityListHTML": '' },
- { "title": 'PQRSTUVW', "begin": 'P', "end": 'W', "cityListHTML": '' },
- { "title": 'XYZ', "begin": 'X', "end": 'Z', "cityListHTML": '' }
- ];

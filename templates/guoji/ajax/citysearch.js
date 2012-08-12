@@ -1,4 +1,4 @@
-YUI.Env.JSONP.yui_3_3_0_1_1344262512080782({
+{{callback}}({
 	"result": [{
 		"spy": "ALSM",
 		"py": "alashanmeng",
@@ -541,6 +541,5 @@ YUI.Env.JSONP.yui_3_3_0_1_1344262512080782({
 		"cCode": 653001,
 		"stateCode": "1"
 	}],
-	"userInput": "a"
+	"userInput":"{{query}}" 
 })
-

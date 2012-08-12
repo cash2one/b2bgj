@@ -212,8 +212,9 @@ class GuojiHandler(tornado.web.RequestHandler):
 class GuojiAjaxHandler(GuojiHandler):
     def get(self, section, pagename = 'index'):
         callback = self.get_argument('callback',default='null')
+        query = self.get_argument('q',default='null')
         template = 'guoji/ajax/'+pagename.encode('utf-8')
-        self.render(template,callback=callback)
+        self.render(template,callback=callback,query=query)
 
 #application = tornado.web.Application([
 #    (r"/", MainHandler),
