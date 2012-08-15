@@ -1,4 +1,4 @@
-{{callback}}({
+{{args['callback'][0]}}({
 	'result': [{
 		"cityCode": "AKU",
 		"cityName": "阿克苏",
@@ -1175,5 +1175,5 @@
 		"py": "ZUNYI",
 		"spy": "ZY"
 	}],
-    'userInput':'a'
+    'userInput':{{args['q'][0]}}
 })

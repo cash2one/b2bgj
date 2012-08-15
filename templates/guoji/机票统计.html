@@ -18,7 +18,7 @@
                             </th>
                             <td>
                                 <select name="">
-                                    <option value="">xxxx</option>
+                                <option value=开票日>开票日</option> <option value=乘机日>乘机日</option> <option selected value=全部>全部</option>
                                 </select>
                             </td>
                             <th>日期</th>
@@ -33,19 +33,19 @@
                             <th>机票状态</th>
                             <td>
                                 <select name="">
-                                    <option value="">xxx</option>
+ <option value=已出票>已出票</option> <option value=已退票>已退票</option> <option selected value=已废票>已废票</option> <option value=已退款>已退款</option> <option value=全部>全部</option> <option value=已改签>已改签</option>
                                 </select>
                             </td>
                             <th>付款状态</th>
                             <td>
                                 <select name="">
-                                    <option value="">xxx</option>
+ <option value=已付款>已付款</option> <option selected value=未付款>未付款</option> <option value=全部>全部</option>
                                 </select>
                             </td>
                             <th>机票类型</th>
                             <td>
                                 <select name="">
-                                    <option value="">xxx</option>
+ <option selected value=散客机票>散客机票</option> <option value=特价机票>特价机票</option> <option value=团队机票>团队机票</option> <option value=k位机票>k位机票</option> <option value=全部>全部</option>
                                 </select>
                             </td>
                         </tr>
@@ -56,15 +56,13 @@
                             </td>
                             <th>出发城市</th>
                             <td>
-                                <select name="">
-                                    <option value="">xxx</option>
-                                </select>
+                                <input type="text" class="text suggest depcity suggest-city" value="" />
+                                <input type="hidden" class='depcity_hidden' value=""  name="DEPCITY" />
                             </td>
-                            <th>目标城市</th>
+                            <th>到达城市</th>
                             <td>
-                                <select name="">
-                                    <option value="">xxx</option>
-                                </select>
+                                <input type="text" class="text suggest arrcity suggest-city" value="" />
+                                <input type="hidden" class='arrcity_hidden' value=""  name="ARRCITY" />
                             </td>
                         </tr>
                         <tr>
@@ -76,22 +74,19 @@
                             </td>
                             <th>航空公司</th>
                             <td>
-                                <select name="">
-                                    <option value="">xxx</option>
-                                </select>
+                                <input type="text" class="text suggest airlines" value="" />
+                                <input type="hidden" class='airlines_hidden' value="" name="AIRLINES" />
                             </td>
                             <th>舱位</th>
                             <td>
-                                <select name="">
-                                    <option value="">xxx</option>
-                                </select>
+                                <input type="text" class="text" value="" name="" />
                             </td>
                         </tr>
                         <tr>
                             <th>支付方式</th>
                             <td>
                                 <select name="">
-                                    <option value="">xxx</option>
+ <option selected value=支付宝>支付宝</option> <option value=财付通>财付通</option> <option value=网银>网银</option> <option value=汇付天下>汇付天下</option> <option value=招商银行>招商银行</option> <option value=全部>全部</option>
                                 </select>
                             </td>
                             <td colspan=4></td>
@@ -112,49 +107,62 @@
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                总金额
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                订单个数
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                出票张数
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                佣金
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                废票张数
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                退票张数
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                改签张数
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
-                                金额
+                                积分
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                在线支付金额
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                账户余额支付金额
                             </label>
                         </p>
                         <p class="center">
@@ -182,27 +190,27 @@
                         {% for x in range(10) %}
                         {% if x%2==0 %}
                         <tr class="odd">
-                        {% else  %}
-                        <tr class="even">
-                        {% end %}
-                            <td>上海</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xxxxxxxx</td>
-                        </tr>
-                        {% end %}
-                    </table>
+                            {% else  %}
+                            <tr class="even">
+                                {% end %}
+                                <td>上海</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xxxxxxxx</td>
+                            </tr>
+                            {% end %}
+                        </table>
+                    </div>
+
                 </div>
-            
+
             </div>
 
         </div>
-
     </div>
-</div>
-{% include '../partial/footer.html' %}
+    {% include '../partial/footer.html' %}

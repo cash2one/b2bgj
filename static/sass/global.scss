@@ -416,6 +416,7 @@ input.text,textarea,select{
     background:none;
 }
 
+
 select,input.text{
     background-color:$c0;
     padding:2px;
@@ -423,6 +424,11 @@ select,input.text{
 
 input.checkbox,input.radio{
     vertical-align:text-bottom;
+}
+
+input.disabled{
+    background-color:$c44;
+    border:1px solid $c13;
 }
 
 .title{

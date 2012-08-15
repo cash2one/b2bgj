@@ -10,9 +10,7 @@ YUI.Env.JSONP = {
 * @author: zining@taobao.com
 * @data: 2012/04/13
 */
-YUI().use('gallery-form-values','io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache','autocomplete','autocomplete-filters','autocomplete-highlighters', 'imageloader', function(Y) {
-    
-    Y.one('body').addClass('yui3-skin-sam');
+YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache','autocomplete','autocomplete-filters', 'imageloader', function(Y) {
 
     /*iframe高度自定义,解决跨域问题*/
     /*
@@ -23,36 +21,59 @@ YUI().use('gallery-form-values','io','trip-search-form', 'trip-autocomplete', 't
     };
     document.domain = getDomain();
     */
-
-    /* added by shaobo 提前初始化搜索 */
-    var _toCity = null,
-    _searchKeyword = null,
-    _searchForm = null,
-    _submitInnSearch = function() {
-        // 针对不支持placeholder的浏览器，需要在提交表单前判断是否有用户输入
-        if (_toCity._node.value === _toCity.getAttribute('placeholder')) {
-            _toCity.set('value', '')
-        };
-        if (_searchKeyword._node.value === _searchKeyword.getAttribute('placeholder')) {
-            _searchKeyword.set('value', '')
-        };
-        _searchForm.submit();
-    };
+    Y.sget = function(url,success){
+        var time = 'time='+new Date().getTime();
+        Y.io(url,{
+            data:time,
+            on:{
+                success:success
+            }
+        }); 
+    } 
 
     Y.on('domready',function(){
-        Y.one("body").delegate("click", function(e) {
-            var lightboxID = this.getAttribute("data-lightboxid");
-            Y.all(".lightbox").each(function(i) {
-                if (i.getAttribute("data-lightboxid") == lightboxID) {
-                    i.setStyle('display','block');
-                }
-            })
-        },".show-lightbox");
 
-        Y.all('.lightbox [rel=close]').on("click",function(e) {
-            e.target.ancestor('.lightbox').hide();
+        /* 调用yui默认组件皮肤 */
+        Y.one('body').addClass('yui3-skin-sam');
+
+        /*弹出窗overlay*/
+        function lightbox(){
+            Y.one("body").delegate("click", function(e) {
+                var lightboxID = this.getAttribute("data-lightboxid");
+                var url = this.getAttribute("data-url");
+
+                var show = function(){
+                    Y.all(".lightbox").each(function(i) {
+                        if (i.getAttribute("data-lightboxid") == lightboxID) {
+                            i.setStyle('display','block');
+                        }
+                    })
+                    Y.all('.lightbox [rel=close]').on("click",function(e) {
+                        e.target.ancestor('.lightbox').hide();
+                    });
+                }
+
+                if(url){
+                    Y.sget(url,function(i,res){
+                        Y.one('body').append(res.response);
+                        show()
+                    });
+                }else{
+                    show(); 
+                }
+
+            },".show-lightbox");
+
+        }
+        lightbox();
+        /*弹出窗overlay end*/
+
+        /*  绑定全局日历组件 */
+        Y.all('.datepicker').wrap('<span>').get('parentNode').each(function(i){
+            new Y.TripCalendar({ beginNode: i })
         });
 
+        /* 换肤 */
         function changeStyle(name, filepath) {
             var href = filepath;
             if (name === "default") {
@@ -75,47 +96,220 @@ YUI().use('gallery-form-values','io','trip-search-form', 'trip-autocomplete', 't
             var color = that.getAttribute('data-color')
             changeStyle(color, path);
         });
+        /* 换肤 end */
 
+        /* 隐藏头部菜单 */
         Y.one('.arrow5').on('click', function() {
             Y.one('.head').toggleView();
             this.toggleClass('arrow5h');
         });
 
+        /* 隐藏左侧菜单 */
         Y.one('.arrow4').on('click', function() {
             Y.one('.sidebar').toggleView();
             this.toggleClass('arrow4h');
             Y.one('body').toggleClass('hide-sidebar');
         });
 
-        Y.all(".mo-jptj .dropdown").on("hover", function(i) {
-            Y.one(".box").setStyle("display", "block");
-        },function(i) {
-            Y.one(".box").setStyle("display", "none");
-        });
 
-        // 酒店搜索模块日历和placeholder控件初始化							
-        var hotelDate = new Y.TripCalendar({
-            beginNode: '#depDateNode',
-            endNode: '#arrDateNode',
-            limitBeginDate: new Date(),
-            limitDays: 28,
-            isWeek: false,
-            isFestival: false,
-            titleTips: "XXXXXXXXXXXX"
-        }),
-        depCity = new Y.TripAutoComplete({
-            inputNode: '.depcity',
-            codeInputNode: '.depcity_hidden',
-            source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-            // source: 'ajax/citysearch.js?&callback={callback}&q=',
-            hotSource: 'ajax/hotcity.js'
-        }),
-        toCity = new Y.TripAutoComplete({
-            inputNode: '.arrcity',
-            codeInputNode: '.arrcity_hidden',
-            source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-            hotSource: 'ajax/hotcity.js'
-        });
+        /*机票统计页面*/
+        Y.on('available',function(){
+            Y.all(".dropdown").on("hover", function(i) {
+                Y.one(".box").setStyle("display", "block");
+            },function(i) {
+                Y.one(".box").setStyle("display", "none");
+            });
+        },'.mo-jptj');
+
+        /*航班查询页面*/
+        Y.on('available',function(){
+            var submitedData;
+            /*表单验证*/
+            var form = new Y.Validator({
+                            form:'aspnetForm',
+                            // defaultIndicatorDomType:'DIV',
+                            defaultIncorrectIndicatorCss:'validator',
+                            defaultCorrectIndicatorCss:'indicator',
+                            createCorrectIndicator:true,
+                            createIncorrectIndicator:true,
+                            correctIndicatorText:'<span class="indicator blue f14"> &#10004;</span>',
+                            incorrectIndicatorText:'<span class="validator red f14">&#10006; </span>',
+                            fieldJSON:[
+                                {
+                                    type:Y.TextBaseField,
+                                    atts:{ inputDOM:'DEPDATE' }
+                                }
+                            ]
+                        }
+                    );
+
+                function form_hbcx(){
+                    /*城市搜索建议*/
+                    citySuggest();
+
+                    /*航空公司自动补全*/
+                    var airlines=['不限'
+                        ,'Z-中国国航-CA'
+                        ,'N-南方航空-CZ'
+                        ,'D-东方航空-MU'
+                        ,'A-奥凯航空公司-BK'
+                        ,'B-北京首都航空有限公司-JD'
+                        ,'C-成都航空有限公司-EU'
+                        ,'D-大新华航空公司-CN'
+                        ,'H-河北航空公司-NS'
+                        ,'H-海南航空公司-HU'
+                        ,'H-河南航空有限公司-VD'
+                        ,'H-华夏航空公司-G5'
+                        ,'J-吉祥航空公司-HO'
+                        ,'K-昆明航空有限公司-KY'
+                        ,'S-四川航空公司-3U'
+                        ,'S-山东航空公司-SC'
+                        ,'S-深圳航空公司-ZH'
+                        ,'S-上海航空公司-FM'
+                        ,'T-天津航空有限责任公司-GS'
+                        ,'X-西部航空公司-PN'
+                        ,'X-幸福航空有限责任公司-JR'
+                        ,'X-厦门航空有限公司-MF'
+                        ,'X-祥鹏航空公司-8L'
+                    ,'Z-中国联合航空公司-KN'];
+                    var airlineNode = Y.one('.airlines');
+                    airlineNode.plug(Y.Plugin.AutoComplete, {
+                        resultFilters: ['charMatch', 'wordMatch'],
+                        // source:'ajax/airlines.js?callback={callback}',
+                        source:airlines,
+                        on:{
+                            select:function(e){
+                                var arr = e.result.display.split('-');
+                                var input = this._inputNode.next();
+                                input.setAttribute('value',arr[2]);
+                            }
+                        },
+                        activateFirstItem:true
+                    });
+
+                    airlineNode.on('focus',function(e){
+                        if(e.target.get('value').trim()==''){
+                            e.target.ac.sendRequest('');
+                        }
+                    })
+
+                    airlineNode.on('keyup',function(e){
+                        if(e.target.get('value').trim()==''){
+                            e.target.ac.sendRequest('');
+                        }
+                    })
+
+                    /*航空公司自动补全 end*/
+
+
+                    /* 切换显示返程输入框 */
+                    Y.all('.radio_is_single').on('click',function(e){
+                        var that = e.target;
+                        var arrDate =  Y.one('[name=ARRDATE]');
+                        if(that.hasClass('is_double')){
+                            arrDate.removeAttribute('disabled').removeClass('disabled'); 
+                        }else{
+                            arrDate.set('disabled','disabled').addClass('disabled');
+                        }
+                    });
+
+                    /* 提交航班查询表单 */
+                    var spin_wrap = Y.Node.create('<div style="display:none" class="loading">');
+                    spin_wrap.setContent('<span>数据加载中...<span>');
+                    Y.one(".block2").prepend(spin_wrap);
+                    Y.one(".J_Hbcx_Search").on('click',function(e){
+                        e.preventDefault();
+                        // if (!f.validateForm()) return;
+
+                        var url=this.getAttribute('data-url');
+                        var time = new Date().getTime();
+                        var data = Y.io._serialize(Y.one('#aspnetForm')._node);
+
+                        /*
+                        var schema = {
+                        resultDelimiter: "&",
+                        fieldDelimiter: "=",
+                        resultFields: [ 'name', 'value' ]
+                        };
+
+                        submitedData = Y.DataSchema.Text.apply(schema, data).results;
+                        */
+                        submitedData = data;
+
+                        if(url){
+                            Y.io(url,{
+                                data:data+'&time='+time,
+                                on:{
+                                    start:function(){
+                                        spin_wrap.show(); 
+                                    },
+                                    error:function(){},
+                                    success:function(i,res){
+                                        spin_wrap.hide(); 
+                                        Y.one('#J_Hbcx_DataTable').setContent(res.responseText);
+                                        more_hbcx();
+                                    } 
+                                } 
+                            }); 
+
+                        }
+                    });
+                    /* 提交航班查询表单 end */
+                }
+
+                function more_hbcx(){
+                    Y.all(".mo-hbcx .more").on('click',function(e) {
+                        var that = e.currentTarget;
+                        var url = that.getAttribute("data-url");
+                        var container = that.ancestor("tr").next().one("td");
+
+                        if (container.hasClass("loaded")) {
+                            container.removeClass("loaded");
+                            that.removeClass("more-h");
+                            container.all(".dancheng-ajax-wrapper").remove();
+                        } else {
+                            var FlightNo = '&FlightNo='+that.getAttribute('data-flightno');
+                            submitedData = submitedData.replace(/(FlightAllBerth)=(\d+)/i,'$1=1');
+                            var time = '&time'+new Date().getTime();
+
+                            Y.io(url,{
+                                data:submitedData+FlightNo+time,
+                                on:{
+                                    success: function(st,s) {
+                                        container.addClass("loaded");
+                                        d = s.response;
+                                        container.prepend(d);
+                                        that.addClass("more-h");
+                                    }
+                                } 
+                            });
+                        }
+
+                    });
+                }
+
+                function citySuggest(){
+                    var depCity = new Y.TripAutoComplete({
+                        inputNode: '.depcity',
+                        codeInputNode: '.depcity_hidden',
+                        source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=2&count=20&callback={callback}&q=',
+                        // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
+                        // source: 'ajax/citysearch.js?&callback={callback}&q=',
+                        hotSource: 'ajax/hotcity.js'
+                    });
+
+                    var toCity = new Y.TripAutoComplete({
+                        inputNode: '.arrcity',
+                        codeInputNode: '.arrcity_hidden',
+                        // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
+                        source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=4&count=20&callback={callback}&q=',
+                        hotSource: 'ajax/hotcity_international.js'
+                    });
+                }
+
+                form_hbcx();
+
+        },'.mo-hbcx')
         //全局保存城市，关键字element
         // _toCity = Y.all('.endcity');
         // _searchKeyword = Y.one('#J_search_keyword');
@@ -297,107 +491,7 @@ YUI().use('gallery-form-values','io','trip-search-form', 'trip-autocomplete', 't
     //   gotop();
     /*回到顶部 end*/
 
-    /*航班查询*/
-    function init_hbcx(){
-        var spin_wrap = Y.Node.create('<div style="display:none" class="loading">');
-        spin_wrap.setContent('<span>数据加载中...<span>');
-        Y.one(".mo-hbcx .block2").prepend(spin_wrap);
-        Y.one(".J_Hbcx_Search").on('click',function(e){
-            e.preventDefault();
-            var url=this.getAttribute('data-url');
-            if(!url)return;
-            Y.io(url,{
-                form:{
-                    id:"aspnetForm" 
-                },
-                on:{
-                    start:function(){
-                        spin_wrap.show(); 
-                    },
-                    error:function(){},
-                    success:function(i,res){
-                        spin_wrap.hide(); 
-                        Y.one('#J_Hbcx_DataTable').setContent(res.responseText);
-                        more_hbcx();
-                    } 
-                } 
-            }); 
-        });
-    }
-
-    function more_hbcx(){
-        Y.all(".mo-hbcx .more").on('click',function(e) {
-            var that = e.currentTarget;
-            var ajaxurl = that.getAttribute("data-ajaxurl");
-            var container = that.ancestor("tr").next().one("td");
-
-            if (container.hasClass("loaded")) {
-                container.removeClass("loaded");
-                that.removeClass("more-h");
-                container.all(".dancheng-ajax-wrapper").remove();
-            } else {
-                Y.io(ajaxurl,{
-                    on:{
-                        start:function(){},
-                        error:function(){},
-                        success: function(st,s) {
-                            container.addClass("loaded");
-                            d = s.response;
-                            container.prepend(d);
-                            that.addClass("more-h");
-                        }
-                    } 
-                });
-            }
-
-        });
-    }
-    init_hbcx();
-    /*航班查询 end*/
-
     YY=Y
-
-    /*航空公司自动补全*/
-    var airlineslist=['不限'
-        ,'Z-中国国航-CA'
-        ,'N-南方航空-CZ'
-        ,'D-东方航空-MU'
-        ,'A-奥凯航空公司-BK'
-        ,'B-北京首都航空有限公司-JD'
-        ,'C-成都航空有限公司-EU'
-        ,'D-大新华航空公司-CN'
-        ,'H-河北航空公司-NS'
-        ,'H-海南航空公司-HU'
-        ,'H-河南航空有限公司-VD'
-        ,'H-华夏航空公司-G5'
-        ,'J-吉祥航空公司-HO'
-        ,'K-昆明航空有限公司-KY'
-        ,'S-四川航空公司-3U'
-        ,'S-山东航空公司-SC'
-        ,'S-深圳航空公司-ZH'
-        ,'S-上海航空公司-FM'
-        ,'T-天津航空有限责任公司-GS'
-        ,'X-西部航空公司-PN'
-        ,'X-幸福航空有限责任公司-JR'
-        ,'X-厦门航空有限公司-MF'
-        ,'X-祥鹏航空公司-8L'
-    ,'Z-中国联合航空公司-KN'];
-
-    Y.one('.airlines').plug(Y.Plugin.AutoComplete, {
-        // resultHighlighter: 'phraseMatch',
-        resultFilters: ['charMatch', 'wordMatch'],
-        source:airlineslist,
-        on:{
-            select:function(e){
-                var arr = e.result.display.split('-');
-                var input = this._inputNode.next();
-                input.setAttribute('value',arr[2]);
-            }
-        },
-        activateFirstItem:true
-    });
-    /*航空公司自动补全 end*/
-
 
     })
 

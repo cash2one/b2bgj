@@ -14,7 +14,7 @@ cp -r static/css/ $dst/static
 cp -r static/js/ $dst/static
 cp -r static/img/ $dst/static
 # cp -r static/kendoUI/ $dst/static
-cp -r templates/$module/ajax $dst/ajax
+cp -r templates/$module/ajax $dst/
 
 cd templates/$module/
 

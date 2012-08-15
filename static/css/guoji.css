@@ -374,6 +374,10 @@ select, input.text {
 input.checkbox, input.radio {
   vertical-align: text-bottom; }
 
+input.disabled {
+  background-color: #cecece;
+  border: 1px solid #999999; }
+
 .title {
   margin: 0;
   color: #333333;

@@ -1,4 +1,4 @@
-{{callback}}({
+{{args['callback'][0]}}({
 	"result": [{
 		"spy": "ALSM",
 		"py": "alashanmeng",

@@ -6,20 +6,20 @@
         <div class="mo-hbcx">
             <div class="block block1">
                 <div class="block-head">
-                    <h3 class="gray-title">国际航班查询</h3>
+                    <h3 class="gray-title">{{data['title']}}</h3>
                 </div>
                 <div class="block-body">
-                    <form action="/" id="aspnetForm" method="post">
+                    <form action="/" id="aspnetForm" name="aspnetForm" method="post">
                     <table frame=void cellspacing="0" class="table-b4">
                         <tr>
                             <th>航班类型</th>
                             <td>
                                 <label>
-                                    <input type="radio" class="radio" value="1" checked name="IS_SINGLE" />
+                                    <input type="radio" class="radio radio_is_single is_single" value="1" checked name="IS_SINGLE" />
                                     单程
                                 </label>
                                 <label>
-                                    <input type="radio" class="radio" value="0" name="IS_SINGLE" />
+                                    <input type="radio" class="radio radio_is_single is_double" value="0" name="IS_SINGLE" />
                                     往返
                                 </label>
                             </td>
@@ -56,15 +56,11 @@
                         <tr>
                             <th>出发日期</th>
                             <td>
-                                <span id="depDateNode">
-                                <input type="text" class="text datepicker" value="" name="DEPDATE" />
-                                </span>
+                                <input type="text" class="text datepicker yiv-required" value="" id="DEPDATE" name="DEPDATE" />
                             </td>
-                            <th>到达日期</th>
+                            <th>返程日期</th>
                             <td colspan=3>
-                                <span id="arrDateNode">
-                                <input type="text" class="text datepicker" value="" name="ARRDATE" />
-                                </span>
+                                <input type="text" class="text datepicker disabled" disabled value="" name="ARRDATE" />
                             </td>
                         </tr>
                     </table>
@@ -88,41 +84,4 @@
     </div>
 </div>
 
-<div class="lightbox lightbox-1" data-lightboxid="TSXX">
-    <table cellspacing="0">
-        <tr>
-            <td>
-                <div class="lightbox-content">
-                    <i class="close" rel="close">×</i> 
-    <div class="lightbox-head">
-        <h3>提示信息</h3>
-    </div>
-    <div class="lightbox-body">
-        <p>
-            退票：
-            <span class="red">不允许</span>
-        </p>
-        <p>
-            改签：
-            <span class="red">去程不得改签，DKF</span>
-        </p>
-        <p>
-            最短停留期：
-            <span class="red">2-7天</span>
-        </p>
-        <p>&nbsp;</p>
-        <p class="gray">
-            以上退改签规定以航空公司为准，或致电退改热线咨询 
-        </p>
-        <p>&nbsp;</p>
-        <p class="center">
-            <input type="button" class="button button1" value="确定" name="" />
-            <input type="button" class="button button1" value="取消" name="" rel="close" />
-        </p>
-    </div>
-                </div>
-            
-            </td>
-        </tr>
-    </table>
-</div>{% include '../partial/footer.html' %}
+{% include '../partial/footer.html' %}

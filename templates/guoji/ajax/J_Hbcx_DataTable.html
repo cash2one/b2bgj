@@ -14,8 +14,7 @@
     {% if x%2==0 %}
     <tr>
         <td>
-            <img src="{{static_url('img/flights/')}}dongfang.png" alt="" />
-            东方航空
+            <span class="pubFlights_fe">东方航空</span>
         </td>
         <td>KA858</td>
         <td>空客kj</td>
@@ -25,7 +24,7 @@
         <td>经济</td>
         <td>2</td>
         <td style="position:relative;width:100px;text-align:center;">
-            <span class="more" data-ajaxurl="ajax/搜索单程.html">
+            <span class="more" data-url="ajax/搜索单程.html" data-flightno='123'>
                 更多舱位
             </span>
             <i class="arrow6"></i>
@@ -35,7 +34,7 @@
     <tr class="info-row">
         <td colspan=9>
             <div class="info">
-                <span class="blue show-lightbox" data-lightboxid="TSXX">
+                <span class="blue show-lightbox" data-url="ajax/lightbox_hbcx.html" data-lightboxid="TSXX">
                     退改签 
                 </span>
                 <span>

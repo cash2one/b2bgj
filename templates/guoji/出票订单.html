@@ -54,13 +54,9 @@
                             {% if usergroup!='gys' %}
                             <th>日期范围</th>
                             <td>
-                                <span id="beginNode">
                                 <input type="text" class="text datepicker" value="" name="" />
-                                </span>
                                 至
-                                <span id="endNode">
                                 <input type="text" class="text datepicker" value="" name="" />
-                                </span>
                             </td>
                             {% end %}
                         </tr>
@@ -101,6 +97,23 @@
                         </li>
                         <li>
                             <span>暂不能出票</span>
+                        </li>
+                    </ul>
+                </div>
+                {% else %}
+                <div class="block-head">
+                    <ul>
+                        <li class="current">
+                        <span>全部订单</span>
+                        </li>
+                        <li>
+                        <span>预订审核</span>
+                        </li>
+                        <li>
+                        <span>改签审核</span>
+                        </li>
+                        <li>
+                            <span>退票审核</span>
                         </li>
                     </ul>
                 </div>
@@ -234,7 +247,7 @@
                             <td>xxxxxxxx</td>
                             {% if usergroup=="gys"  %}
                             <td width=80>
-                                <input type="button" class="button button1" value="锁定" name="" />
+                                <input type="button" class="button button1" value="受理" name="" />
                             </td>
                             {% end %}
                             </tr>
