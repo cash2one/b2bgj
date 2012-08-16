@@ -662,3 +662,6 @@ ul,dl,ol,h5,h6,li{
 li{
     list-style:none; 
 }
+.validator{
+    @extend .red;
+}

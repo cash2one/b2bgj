@@ -9,7 +9,7 @@
 .clearfix {
   *zoom: 1; }
 
-.red, .redb, .pagination .current {
+.red, .redb, .pagination .current, .validator {
   color: red; }
 
 .gray {
