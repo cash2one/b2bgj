@@ -350,11 +350,11 @@ YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-au
                         container.all(".dancheng-ajax-wrapper").remove();
                     } else {
                         var FlightNo = '&FlightNo='+that.getAttribute('data-flightno');
-                        submitedData = submitedData.replace(/(FlightAllBerth)=(\d+)/i,'$1=1');
+                        var data = submitedData.replace(/(FlightAllBerth)=(\d+)/i,'$1=1');
                         var time = '&time'+new Date().getTime();
 
                         Y.io(url,{
-                            data:submitedData+FlightNo+time,
+                            data:data+FlightNo+time,
                             on:{
                                 success: function(st,s) {
                                     container.addClass("loaded");
