@@ -339,7 +339,7 @@ i.arrow4h{
     background:url(#{$skin_folder}/arrow4h.png) no-repeat;
 }
 
-@for $i from 1 through 5{
+@for $i from 1 through 10{
     i.icon#{$i}{
         padding:1px 10px;
         background:url(#{$skin_folder}/icon#{$i}.png) $center;
@@ -664,4 +664,15 @@ li{
 }
 .validator{
     @extend .red;
+}
+.cart{
+    position:absolute;
+    top:25px;
+    right:20px;
+    a{
+        color:$c0; 
+    }
+    i{
+        padding:5px 10px; 
+    }
 }

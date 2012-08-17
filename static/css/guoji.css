@@ -306,6 +306,26 @@ i.icon5 {
   padding: 1px 10px;
   background: url(../img/icon5.png) no-repeat 50% 50%; }
 
+i.icon6 {
+  padding: 1px 10px;
+  background: url(../img/icon6.png) no-repeat 50% 50%; }
+
+i.icon7 {
+  padding: 1px 10px;
+  background: url(../img/icon7.png) no-repeat 50% 50%; }
+
+i.icon8 {
+  padding: 1px 10px;
+  background: url(../img/icon8.png) no-repeat 50% 50%; }
+
+i.icon9 {
+  padding: 1px 10px;
+  background: url(../img/icon9.png) no-repeat 50% 50%; }
+
+i.icon10 {
+  padding: 1px 10px;
+  background: url(../img/icon10.png) no-repeat 50% 50%; }
+
 i {
   font-style: normal;
   zoom: 1; }
@@ -545,6 +565,15 @@ ul, dl, ol, h5, h6, li {
 
 li {
   list-style: none; }
+
+.cart {
+  position: absolute;
+  top: 25px;
+  right: 20px; }
+  .cart a {
+    color: white; }
+  .cart i {
+    padding: 5px 10px; }
 
 .lightbox2 .lightblue-bg, .lightbox2 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .lightbox2 th, .lightbox2 .mo-jptj .box, .mo-jptj .lightbox2 .box {
   border-left: 1px solid #cecece;
