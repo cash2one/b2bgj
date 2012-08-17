@@ -55,7 +55,7 @@ YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-au
                     })
                     Y.all('.lightbox [rel=close]').on("click",function(e) {
                         if(buy && e.target.hasClass('submit')){
-                            var data = submitedData.replace(/__VIEWSTATE[^&]+&/,'').replace(/(FlightAllBerth)=(\d+)/i,'$1=2');
+                            var data = submitedData.replace(/__VIEWSTATE[^&]+&/,'')+'&ListorOrder=1';
                             location.href = buy + "?" + data;
                         }else{
                             e.target.ancestor('.lightbox').hide();
