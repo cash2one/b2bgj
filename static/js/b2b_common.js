@@ -11,7 +11,7 @@ YUI.Env.JSONP = {
 * @data: 2012/04/13
 */
 YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-autocomplete', 'trip-calendar', 'node', 'trip-box', 'jsonp', 'event', 'trip-mustache','autocomplete','autocomplete-filters', 'imageloader', function(Y) {
-
+    var submitedData;
     /*iframe高度自定义,解决跨域问题*/
     /*
     var getDomain = function() {
@@ -55,7 +55,8 @@ YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-au
                     })
                     Y.all('.lightbox [rel=close]').on("click",function(e) {
                         if(buy && e.target.hasClass('submit')){
-                            location.href=buy  
+                            var data = submitedData.replace(/__VIEWSTATE[^&]+&/,'').replace(/(FlightAllBerth)=(\d+)/i,'$1=2');
+                            location.href = buy + "?" + data;
                         }else{
                             e.target.ancestor('.lightbox').hide();
                         }
@@ -122,8 +123,8 @@ YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-au
         /*弹出窗overlay end*/
 
         /*  绑定全局日历组件 */
-        Y.all('.datepicker').wrap('<span>').get('parentNode').each(function(i){
-            new Y.TripCalendar({ beginNode: i })
+       Y.all('.datepicker').wrap('<span>').get('parentNode').each(function(i){
+           new Y.TripCalendar({ beginNode: i })
         });
 
         /* 换肤 */
@@ -176,8 +177,9 @@ YUI().use('gallery-formvalidator','dataschema','io','trip-search-form', 'trip-au
 
         /*航班查询页面*/
         Y.on('available',function(){
-            var submitedData;
+
             /*表单验证*/
+            // 参考api：http://murdog05.github.com/yui3-gallery/docs/validator.Validator.html
             var form = new Y.Validator({
                 form:'aspnetForm',
                 // defaultIndicatorDomType:'DIV',
