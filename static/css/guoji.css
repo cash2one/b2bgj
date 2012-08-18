@@ -535,7 +535,8 @@ i.close {
 h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead, .mo-ddgl .block2 h3.block-head {
   line-height: 34px;
   padding-left: 20px;
-  margin: 0; }
+  margin: 0;
+  border-bottom: 1px solid #cecece; }
 
 tr.even {
   background-color: #ebf8fe; }
@@ -693,7 +694,6 @@ li {
   margin-bottom: 10px;
   border-bottom: 1px solid #cecece; }
 .mo-ddgl .table-b3, .mo-ddgl .table-b4 {
-  border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece; }
 
 .mo-tjdd .block {
@@ -837,7 +837,6 @@ li {
 .mo-hbcx .block2 {
   border: none; }
 .mo-hbcx .table-b4 {
-  border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece; }
 .mo-hbcx .block1 .center {
   padding: 10px; }
