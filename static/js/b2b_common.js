@@ -34,6 +34,9 @@ YUI().use('gallery-formvalidator', 'io', 'node', 'jsonp', 'event', 'autocomplete
 				var lightboxID = this.getAttribute("data-lightboxid") + uid;
 				var url = this.getAttribute("data-url");
 				var buy = this.getAttribute("data-buy");
+                var FlightNo = '&FlightNo=' + this.getAttribute('data-flightno');
+                var Price = '&Price=' + this.getAttribute('data-price');
+
 				var show = function() {
 					Y.all(".lightbox").each(function(i) {
 						if (i.getAttribute("data-lightboxid") + uid == lightboxID) {
@@ -43,8 +46,8 @@ YUI().use('gallery-formvalidator', 'io', 'node', 'jsonp', 'event', 'autocomplete
 					})
 					Y.all('.lightbox [rel=close]').on("click", function(e) {
 						if (buy && e.target.hasClass('submit')) {
-							var data = submitedData.replace(/__VIEWSTATE[^&]+&/, '') + '&ListorOrder=1';
-							location.href = buy + "?" + data;
+							var data = submitedData.replace(/__VIEWSTATE[^&]+&/, '');
+							location.href = buy + "?" + data + FlightNo + Price;
 						} else {
 							e.target.ancestor('.lightbox').hide();
 						}
@@ -245,7 +248,7 @@ YUI().use('gallery-formvalidator', 'io', 'node', 'jsonp', 'event', 'autocomplete
 
 					var url = this.getAttribute('data-url');
 					var time = new Date().getTime();
-					var data = Y.IO._serialize(Y.one('#aspnetForm')._node);
+					var data = Y.io._serialize(Y.one('#aspnetForm')._node);
 
 					/* 需要加载datashema模块
                     var schema = {
