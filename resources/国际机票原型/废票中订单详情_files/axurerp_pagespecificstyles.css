@@ -1,0 +1,2949 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../废票中订单详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:563px;
+    top:25px;
+    width:91px;
+    height:27px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:27px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../废票中订单详情_files/u0_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:665px;
+    top:26px;
+    width:91px;
+    height:27px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:27px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../废票中订单详情_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:17px;
+    top:729px;
+    width:1128px;
+    height:98px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1128px;
+    height:98px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../废票中订单详情_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:17px;
+    top:841px;
+    width:1069px;
+    height:98px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1069px;
+    height:98px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1065px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../废票中订单详情_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:8px;
+    top:63px;
+    width:1119px;
+    height:195px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1119px;
+    height:195px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1115px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../废票中订单详情_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:2px;
+    top:258px;
+    width:1123px;
+    height:352px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1123px;
+    height:352px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:168px;
+    width:1119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../废票中订单详情_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:704px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../废票中订单详情_files/u12_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:810px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../废票中订单详情_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:735px;
+    top:491px;
+    width:37px;
+    height:76px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:37px;
+    height:76px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:33px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:733px;
+    top:499px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:752px;
+    top:534px;
+    width:26px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../废票中订单详情_files/u12_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:891px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../废票中订单详情_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:922px;
+    top:491px;
+    width:167px;
+    height:76px;
+}
+
+#u22_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:167px;
+    height:76px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../废票中订单详情_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:907px;
+    top:492px;
+    width:83px;
+    height:68px;
+}
+
+#u24_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:83px;
+    height:68px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:1040px;
+    top:499px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../废票中订单详情_files/u12_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:1002px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u27_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../废票中订单详情_files/u29_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:630px;
+    top:68px;
+    width:80px;
+    height:29px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:35px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../废票中订单详情_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:238px;
+    top:299px;
+    width:137px;
+    height:29px;
+}
+
+#u31_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../废票中订单详情_files/u31_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:410px;
+    top:299px;
+    width:137px;
+    height:29px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../废票中订单详情_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:312px;
+    top:299px;
+    width:98px;
+    height:24px;
+}
+
+#u35_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:98px;
+    height:24px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../废票中订单详情_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:8px;
+    top:1080px;
+    width:1129px;
+    height:62px;
+}
+
+#u37_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1129px;
+    height:62px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:1125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../废票中订单详情_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:937px;
+    top:374px;
+    width:81px;
+    height:77px;
+}
+
+#u39_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:81px;
+    height:77px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:77px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../废票中订单详情_files/u41_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:842px;
+    top:374px;
+    width:95px;
+    height:77px;
+}
+
+#u41_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:95px;
+    height:77px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:91px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../废票中订单详情_files/u43_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:950px;
+    top:377px;
+    width:66px;
+    height:29px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../废票中订单详情_files/u43_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:950px;
+    top:416px;
+    width:66px;
+    height:29px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../废票中订单详情_files/u43_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:857px;
+    top:373px;
+    width:66px;
+    height:29px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../废票中订单详情_files/u43_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:857px;
+    top:415px;
+    width:66px;
+    height:29px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../废票中订单详情_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:410px;
+    top:299px;
+    width:100px;
+    height:29px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:35px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../废票中订单详情_files/u53_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:8px;
+    top:1154px;
+    width:298px;
+    height:34px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../废票中订单详情_files/u55_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:237px;
+    top:881px;
+    width:136px;
+    height:23px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../废票中订单详情_files/u43_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:1036px;
+    top:378px;
+    width:66px;
+    height:29px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../废票中订单详情_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:1023px;
+    top:418px;
+    width:98px;
+    height:29px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:35px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../废票中订单详情_files/u61_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:358px;
+    top:572px;
+    width:166px;
+    height:33px;
+}
+
+#u61_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:166px;
+    height:33px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../废票中订单详情_files/u63_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:306px;
+    top:1120px;
+    width:342px;
+    height:34px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../废票中订单详情_files/u63_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:306px;
+    top:1154px;
+    width:342px;
+    height:34px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../废票中订单详情_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:648px;
+    top:1120px;
+    width:443px;
+    height:34px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../废票中订单详情_files/u67_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:648px;
+    top:1154px;
+    width:443px;
+    height:34px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../废票中订单详情_files/u53_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:8px;
+    top:1120px;
+    width:298px;
+    height:34px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../废票中订单详情_files/u73_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:71px;
+    top:997px;
+    width:160px;
+    height:34px;
+}
+
+#u73_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:40px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../废票中订单详情_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:231px;
+    top:997px;
+    width:819px;
+    height:34px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../废票中订单详情_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:754px;
+    top:68px;
+    width:195px;
+    height:29px;
+}
+
+#u77_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:195px;
+    height:29px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../废票中订单详情_files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:19px;
+    top:939px;
+    width:1031px;
+    height:58px;
+}
+
+#u79_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1031px;
+    height:58px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:21px;
+    width:1027px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../废票中订单详情_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:221px;
+    top:575px;
+    width:132px;
+    height:30px;
+}
+
+#u81_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:132px;
+    height:30px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:128px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../废票中订单详情_files/u0_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:467px;
+    top:26px;
+    width:91px;
+    height:27px;
+}
+
+#u83_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:27px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../废票中订单详情_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:506px;
+    top:7px;
+    width:88px;
+    height:15px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:94px;
+    height:21px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:84px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../废票中订单详情_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:619px;
+    top:25px;
+    width:29px;
+    height:32px;
+}
+
+#u87_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:29px;
+    height:32px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:25px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../废票中订单详情_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:695px;
+    top:7px;
+    width:91px;
+    height:15px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:97px;
+    height:21px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../废票中订单详情_files/u91_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:427px;
+    top:25px;
+    width:30px;
+    height:28px;
+}
+
+#u91_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:30px;
+    height:28px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_normal {
+    background-image: url('../废票中订单详情_files/u93_normal.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:413px;
+    top:7px;
+    width:73px;
+    height:15px;
+}
+
+#u93_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:79px;
+    height:21px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_normal {
+    background-image: url('../废票中订单详情_files/u95_normal.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:594px;
+    top:5px;
+    width:86px;
+    height:15px;
+}
+
+#u95_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:92px;
+    height:21px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_normal {
+    background-image: url('../废票中订单详情_files/u55_normal.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:25px;
+    top:796px;
+    width:136px;
+    height:23px;
+}
+
+#u97_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99_normal {
+    background-image: url('../废票中订单详情_files/u99_normal.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:513px;
+    top:796px;
+    width:98px;
+    height:23px;
+}
+
+#u99_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:29px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101 {
+    position:absolute;
+    left:418px;
+    top:1245px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u102_line {
+    background-image: url('../废票中订单详情_files/u102_line.png');
+}
+
+.u102_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:61px;
+}
+
+.u102 {
+    position:absolute;
+    left:898px;
+    top:764px;
+    width:10px;
+    height:61px;
+    
+}
+
+.u103_normal {
+    background-image: url('../废票中订单详情_files/u103_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:906px;
+    top:767px;
+    width:73px;
+    height:23px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:79px;
+    height:29px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../废票中订单详情_files/u105_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:908px;
+    top:800px;
+    width:63px;
+    height:23px;
+}
+
+#u105_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:29px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107_normal {
+    background-image: url('../废票中订单详情_files/u107_normal.png');
+}
+
+.u107_container {
+    position:absolute;
+    left:35px;
+    top:738px;
+    width:13px;
+    height:20px;
+}
+
+#u107_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:19px;
+    height:26px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:9px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109_normal {
+    background-image: url('../废票中订单详情_files/u109_normal.png');
+}
+
+.u109_container {
+    position:absolute;
+    left:533px;
+    top:799px;
+    width:86px;
+    height:20px;
+}
+
+#u109_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:92px;
+    height:26px;
+}
+
+.u110 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:82px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111_normal {
+    background-image: url('../废票中订单详情_files/u53_normal.png');
+}
+
+.u111_container {
+    position:absolute;
+    left:8px;
+    top:1188px;
+    width:298px;
+    height:34px;
+}
+
+#u111_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u112 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113_normal {
+    background-image: url('../废票中订单详情_files/u63_normal.png');
+}
+
+.u113_container {
+    position:absolute;
+    left:306px;
+    top:1188px;
+    width:342px;
+    height:34px;
+}
+
+#u113_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u114 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115_normal {
+    background-image: url('../废票中订单详情_files/u67_normal.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:648px;
+    top:1188px;
+    width:443px;
+    height:34px;
+}
+
+#u115_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117_normal {
+    background-image: url('../废票中订单详情_files/u73_normal.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:71px;
+    top:1031px;
+    width:160px;
+    height:34px;
+}
+
+#u117_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:40px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119_normal {
+    background-image: url('../废票中订单详情_files/u75_normal.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:231px;
+    top:1031px;
+    width:819px;
+    height:34px;
+}
+
+#u119_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121_normal {
+    background-image: url('../废票中订单详情_files/u121_normal.png');
+}
+
+.u121_container {
+    position:absolute;
+    left:351px;
+    top:1031px;
+    width:90px;
+    height:34px;
+}
+
+#u121_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:40px;
+}
+
+.u122 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:86px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123_normal {
+    background-image: url('../废票中订单详情_files/u123_normal.png');
+}
+
+.u123_container {
+    position:absolute;
+    left:442px;
+    top:1036px;
+    width:160px;
+    height:24px;
+}
+
+#u123_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:30px;
+}
+
+.u124 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125_normal {
+    background-image: url('../废票中订单详情_files/u125_normal.png');
+}
+
+.u125_container {
+    position:absolute;
+    left:821px;
+    top:797px;
+    width:77px;
+    height:23px;
+}
+
+#u125_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:83px;
+    height:29px;
+}
+
+.u126 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:73px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127_normal {
+    background-image: url('../废票中订单详情_files/u105_normal.png');
+}
+
+.u127_container {
+    position:absolute;
+    left:1001px;
+    top:797px;
+    width:63px;
+    height:23px;
+}
+
+#u127_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:29px;
+}
+
+.u128 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129_normal {
+    background-image: url('../废票中订单详情_files/u129_normal.png');
+}
+
+.u129_container {
+    position:absolute;
+    left:6px;
+    top:652px;
+    width:1066px;
+    height:31px;
+}
+
+#u129_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1066px;
+    height:31px;
+}
+
+.u130 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:1062px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131_normal {
+    background-image: url('../废票中订单详情_files/u131_normal.png');
+}
+
+.u131_container {
+    position:absolute;
+    left:5px;
+    top:657px;
+    width:108px;
+    height:21px;
+}
+
+#u131_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:27px;
+}
+
+.u132 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133_normal {
+    background-image: url('../废票中订单详情_files/u133_normal.png');
+}
+
+.u133_container {
+    position:absolute;
+    left:11px;
+    top:681px;
+    width:151px;
+    height:42px;
+}
+
+#u133_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u134 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u135_container {
+    position:absolute;
+    left:42px;
+    top:688px;
+    width:110px;
+    height:31px;
+}
+
+#u135_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u136 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137_normal {
+    background-image: url('../废票中订单详情_files/u133_normal.png');
+}
+
+.u137_container {
+    position:absolute;
+    left:267px;
+    top:681px;
+    width:151px;
+    height:42px;
+}
+
+#u137_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u138 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u139_container {
+    position:absolute;
+    left:298px;
+    top:688px;
+    width:110px;
+    height:31px;
+}
+
+#u139_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u140 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141 {
+    position:absolute;
+    left:194px;
+    top:695px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142_normal {
+    background-image: url('../废票中订单详情_files/u133_normal.png');
+}
+
+.u142_container {
+    position:absolute;
+    left:501px;
+    top:683px;
+    width:151px;
+    height:42px;
+}
+
+#u142_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u143 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u144_container {
+    position:absolute;
+    left:532px;
+    top:690px;
+    width:110px;
+    height:31px;
+}
+
+#u144_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u145 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146 {
+    position:absolute;
+    left:428px;
+    top:700px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147 {
+    position:absolute;
+    left:674px;
+    top:697px;
+    width:248px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148_normal {
+    background-image: url('../废票中订单详情_files/u148_normal.png');
+}
+
+.u148_container {
+    position:absolute;
+    left:509px;
+    top:498px;
+    width:61px;
+    height:18px;
+}
+
+#u148_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:67px;
+    height:24px;
+}
+
+.u149 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150_normal {
+    background-image: url('../废票中订单详情_files/u150_normal.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:403px;
+    top:498px;
+    width:98px;
+    height:18px;
+}
+
+#u150_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:24px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152_normal {
+    background-image: url('../废票中订单详情_files/u152_normal.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:519px;
+    top:537px;
+    width:41px;
+    height:18px;
+}
+
+#u152_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:47px;
+    height:24px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:37px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154_normal {
+    background-image: url('../废票中订单详情_files/u154_normal.png');
+}
+
+.u154_container {
+    position:absolute;
+    left:502px;
+    top:488px;
+    width:7px;
+    height:80px;
+}
+
+#u154_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:80px;
+}
+
+.u155 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156 {
+    position:absolute;
+    left:1025px;
+    top:536px;
+    width:100px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157_normal {
+    background-image: url('../废票中订单详情_files/u157_normal.png');
+}
+
+.u157_container {
+    position:absolute;
+    left:1102px;
+    top:374px;
+    width:7px;
+    height:79px;
+}
+
+#u157_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u158 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159_normal {
+    background-image: url('../废票中订单详情_files/u159_normal.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:1109px;
+    top:386px;
+    width:66px;
+    height:14px;
+}
+
+#u159_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161_normal {
+    background-image: url('../废票中订单详情_files/u159_normal.png');
+}
+
+.u161_container {
+    position:absolute;
+    left:1109px;
+    top:428px;
+    width:66px;
+    height:14px;
+}
+
+#u161_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u162 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163_normal {
+    background-image: url('../废票中订单详情_files/u157_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:1175px;
+    top:374px;
+    width:7px;
+    height:79px;
+}
+
+#u163_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../废票中订单详情_files/u159_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:1196px;
+    top:385px;
+    width:66px;
+    height:14px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_normal {
+    background-image: url('../废票中订单详情_files/u159_normal.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:1196px;
+    top:427px;
+    width:66px;
+    height:14px;
+}
+
+#u167_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169_normal {
+    background-image: url('../废票中订单详情_files/u169_normal.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:5px;
+    top:455px;
+    width:1121px;
+    height:197px;
+}
+
+#u169_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1121px;
+    height:197px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1117px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171_normal {
+    background-image: url('../废票中订单详情_files/u171_normal.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:738px;
+    top:618px;
+    width:180px;
+    height:27px;
+}
+
+#u171_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

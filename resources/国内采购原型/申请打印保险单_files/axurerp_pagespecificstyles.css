@@ -1,0 +1,2862 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_original {
+    background-image: url('../申请打印保险单_files/u0_original.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:710px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:806px;
+    height:716px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:347px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:710px
+}
+
+.u2_original {
+    background-image: url('../申请打印保险单_files/u2_original.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:780px;
+    height:40px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:786px;
+    height:46px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:776px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:780px;
+    height:40px
+}
+
+.u4 {
+    position:absolute;
+    left:250px;
+    top:21px;
+    width:400px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_original {
+    background-image: url('../申请打印保险单_files/u5_original.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:10px;
+    top:60px;
+    width:780px;
+    height:190px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:786px;
+    height:196px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:87px;
+    width:776px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5 {
+    position:absolute;
+    left:10px;
+    top:60px;
+    width:780px;
+    height:190px
+}
+
+.u7 {
+    position:absolute;
+    left:20px;
+    top:70px;
+    width:70px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u8 {
+    position:absolute;
+    left:40px;
+    top:100px;
+    width:336px;
+    height:143px
+}
+
+.u8_table {
+    background-image: url('../申请打印保险单_files/u8_table.png');
+}
+
+.u8_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:340px;
+    height:147px;
+}
+
+.u9_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:23px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:23px
+}
+
+.u11_original {
+    background-image: url('../申请打印保险单_files/u11_original.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:35px;
+    top:0px;
+    width:140px;
+    height:23px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:136px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:35px;
+    top:0px;
+    width:140px;
+    height:23px
+}
+
+.u13_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:175px;
+    top:0px;
+    width:45px;
+    height:23px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:175px;
+    top:0px;
+    width:45px;
+    height:23px
+}
+
+.u15_original {
+    background-image: url('../申请打印保险单_files/u15_original.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:220px;
+    top:0px;
+    width:76px;
+    height:23px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:72px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:220px;
+    top:0px;
+    width:76px;
+    height:23px
+}
+
+.u17_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:296px;
+    top:0px;
+    width:35px;
+    height:23px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:296px;
+    top:0px;
+    width:35px;
+    height:23px
+}
+
+.u19_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:35px;
+    height:23px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:35px;
+    height:23px
+}
+
+.u21_original {
+    background-image: url('../申请打印保险单_files/u11_original.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:35px;
+    top:23px;
+    width:140px;
+    height:23px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:136px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:35px;
+    top:23px;
+    width:140px;
+    height:23px
+}
+
+.u23_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:175px;
+    top:23px;
+    width:45px;
+    height:23px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:175px;
+    top:23px;
+    width:45px;
+    height:23px
+}
+
+.u25_original {
+    background-image: url('../申请打印保险单_files/u15_original.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:220px;
+    top:23px;
+    width:76px;
+    height:23px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:220px;
+    top:23px;
+    width:76px;
+    height:23px
+}
+
+.u27_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:296px;
+    top:23px;
+    width:35px;
+    height:23px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:296px;
+    top:23px;
+    width:35px;
+    height:23px
+}
+
+.u29_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:35px;
+    height:23px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29 {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:35px;
+    height:23px
+}
+
+.u31_original {
+    background-image: url('../申请打印保险单_files/u11_original.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:35px;
+    top:46px;
+    width:140px;
+    height:23px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:136px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31 {
+    position:absolute;
+    left:35px;
+    top:46px;
+    width:140px;
+    height:23px
+}
+
+.u33_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:175px;
+    top:46px;
+    width:45px;
+    height:23px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:175px;
+    top:46px;
+    width:45px;
+    height:23px
+}
+
+.u35_original {
+    background-image: url('../申请打印保险单_files/u15_original.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:220px;
+    top:46px;
+    width:76px;
+    height:23px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35 {
+    position:absolute;
+    left:220px;
+    top:46px;
+    width:76px;
+    height:23px
+}
+
+.u37_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:296px;
+    top:46px;
+    width:35px;
+    height:23px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37 {
+    position:absolute;
+    left:296px;
+    top:46px;
+    width:35px;
+    height:23px
+}
+
+.u39_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:0px;
+    top:69px;
+    width:35px;
+    height:23px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39 {
+    position:absolute;
+    left:0px;
+    top:69px;
+    width:35px;
+    height:23px
+}
+
+.u41_original {
+    background-image: url('../申请打印保险单_files/u11_original.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:35px;
+    top:69px;
+    width:140px;
+    height:23px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:136px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41 {
+    position:absolute;
+    left:35px;
+    top:69px;
+    width:140px;
+    height:23px
+}
+
+.u43_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:175px;
+    top:69px;
+    width:45px;
+    height:23px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:175px;
+    top:69px;
+    width:45px;
+    height:23px
+}
+
+.u45_original {
+    background-image: url('../申请打印保险单_files/u15_original.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:220px;
+    top:69px;
+    width:76px;
+    height:23px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:220px;
+    top:69px;
+    width:76px;
+    height:23px
+}
+
+.u47_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:296px;
+    top:69px;
+    width:35px;
+    height:23px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47 {
+    position:absolute;
+    left:296px;
+    top:69px;
+    width:35px;
+    height:23px
+}
+
+.u49_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:35px;
+    height:23px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49 {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:35px;
+    height:23px
+}
+
+.u51_original {
+    background-image: url('../申请打印保险单_files/u11_original.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:35px;
+    top:92px;
+    width:140px;
+    height:23px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:136px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51 {
+    position:absolute;
+    left:35px;
+    top:92px;
+    width:140px;
+    height:23px
+}
+
+.u53_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:175px;
+    top:92px;
+    width:45px;
+    height:23px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:175px;
+    top:92px;
+    width:45px;
+    height:23px
+}
+
+.u55_original {
+    background-image: url('../申请打印保险单_files/u15_original.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:220px;
+    top:92px;
+    width:76px;
+    height:23px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55 {
+    position:absolute;
+    left:220px;
+    top:92px;
+    width:76px;
+    height:23px
+}
+
+.u57_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:296px;
+    top:92px;
+    width:35px;
+    height:23px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57 {
+    position:absolute;
+    left:296px;
+    top:92px;
+    width:35px;
+    height:23px
+}
+
+.u59_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:0px;
+    top:115px;
+    width:35px;
+    height:23px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59 {
+    position:absolute;
+    left:0px;
+    top:115px;
+    width:35px;
+    height:23px
+}
+
+.u61_original {
+    background-image: url('../申请打印保险单_files/u11_original.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:35px;
+    top:115px;
+    width:140px;
+    height:23px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:136px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61 {
+    position:absolute;
+    left:35px;
+    top:115px;
+    width:140px;
+    height:23px
+}
+
+.u63_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:175px;
+    top:115px;
+    width:45px;
+    height:23px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:175px;
+    top:115px;
+    width:45px;
+    height:23px
+}
+
+.u65_original {
+    background-image: url('../申请打印保险单_files/u15_original.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:220px;
+    top:115px;
+    width:76px;
+    height:23px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65 {
+    position:absolute;
+    left:220px;
+    top:115px;
+    width:76px;
+    height:23px
+}
+
+.u67_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:296px;
+    top:115px;
+    width:35px;
+    height:23px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67 {
+    position:absolute;
+    left:296px;
+    top:115px;
+    width:35px;
+    height:23px
+}
+
+#u69 {
+    position:absolute;
+    left:400px;
+    top:100px;
+    width:333px;
+    height:143px
+}
+
+.u69_table {
+    background-image: url('../申请打印保险单_files/u69_table.png');
+}
+
+.u69_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:337px;
+    height:147px;
+}
+
+.u70_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u70_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:23px;
+}
+
+.u71 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u70 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:35px;
+    height:23px
+}
+
+.u72_original {
+    background-image: url('../申请打印保险单_files/u72_original.png');
+}
+
+.u72_container {
+    position:absolute;
+    left:35px;
+    top:0px;
+    width:148px;
+    height:23px;
+}
+
+.u73 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:144px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u72 {
+    position:absolute;
+    left:35px;
+    top:0px;
+    width:148px;
+    height:23px
+}
+
+.u74_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u74_container {
+    position:absolute;
+    left:183px;
+    top:0px;
+    width:45px;
+    height:23px;
+}
+
+.u75 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74 {
+    position:absolute;
+    left:183px;
+    top:0px;
+    width:45px;
+    height:23px
+}
+
+.u76_original {
+    background-image: url('../申请打印保险单_files/u76_original.png');
+}
+
+.u76_container {
+    position:absolute;
+    left:228px;
+    top:0px;
+    width:65px;
+    height:23px;
+}
+
+.u77 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:61px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u76 {
+    position:absolute;
+    left:228px;
+    top:0px;
+    width:65px;
+    height:23px
+}
+
+.u78_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:293px;
+    top:0px;
+    width:35px;
+    height:23px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78 {
+    position:absolute;
+    left:293px;
+    top:0px;
+    width:35px;
+    height:23px
+}
+
+.u80_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:35px;
+    height:23px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80 {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:35px;
+    height:23px
+}
+
+.u82_original {
+    background-image: url('../申请打印保险单_files/u72_original.png');
+}
+
+.u82_container {
+    position:absolute;
+    left:35px;
+    top:23px;
+    width:148px;
+    height:23px;
+}
+
+.u83 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:144px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82 {
+    position:absolute;
+    left:35px;
+    top:23px;
+    width:148px;
+    height:23px
+}
+
+.u84_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u84_container {
+    position:absolute;
+    left:183px;
+    top:23px;
+    width:45px;
+    height:23px;
+}
+
+.u85 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u84 {
+    position:absolute;
+    left:183px;
+    top:23px;
+    width:45px;
+    height:23px
+}
+
+.u86_original {
+    background-image: url('../申请打印保险单_files/u76_original.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:228px;
+    top:23px;
+    width:65px;
+    height:23px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86 {
+    position:absolute;
+    left:228px;
+    top:23px;
+    width:65px;
+    height:23px
+}
+
+.u88_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u88_container {
+    position:absolute;
+    left:293px;
+    top:23px;
+    width:35px;
+    height:23px;
+}
+
+.u89 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u88 {
+    position:absolute;
+    left:293px;
+    top:23px;
+    width:35px;
+    height:23px
+}
+
+.u90_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u90_container {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:35px;
+    height:23px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90 {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:35px;
+    height:23px
+}
+
+.u92_original {
+    background-image: url('../申请打印保险单_files/u72_original.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:35px;
+    top:46px;
+    width:148px;
+    height:23px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:144px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92 {
+    position:absolute;
+    left:35px;
+    top:46px;
+    width:148px;
+    height:23px
+}
+
+.u94_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:183px;
+    top:46px;
+    width:45px;
+    height:23px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94 {
+    position:absolute;
+    left:183px;
+    top:46px;
+    width:45px;
+    height:23px
+}
+
+.u96_original {
+    background-image: url('../申请打印保险单_files/u76_original.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:228px;
+    top:46px;
+    width:65px;
+    height:23px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96 {
+    position:absolute;
+    left:228px;
+    top:46px;
+    width:65px;
+    height:23px
+}
+
+.u98_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u98_container {
+    position:absolute;
+    left:293px;
+    top:46px;
+    width:35px;
+    height:23px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98 {
+    position:absolute;
+    left:293px;
+    top:46px;
+    width:35px;
+    height:23px
+}
+
+.u100_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:0px;
+    top:69px;
+    width:35px;
+    height:23px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100 {
+    position:absolute;
+    left:0px;
+    top:69px;
+    width:35px;
+    height:23px
+}
+
+.u102_original {
+    background-image: url('../申请打印保险单_files/u72_original.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:35px;
+    top:69px;
+    width:148px;
+    height:23px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:144px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:35px;
+    top:69px;
+    width:148px;
+    height:23px
+}
+
+.u104_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:183px;
+    top:69px;
+    width:45px;
+    height:23px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104 {
+    position:absolute;
+    left:183px;
+    top:69px;
+    width:45px;
+    height:23px
+}
+
+.u106_original {
+    background-image: url('../申请打印保险单_files/u76_original.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:228px;
+    top:69px;
+    width:65px;
+    height:23px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106 {
+    position:absolute;
+    left:228px;
+    top:69px;
+    width:65px;
+    height:23px
+}
+
+.u108_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:293px;
+    top:69px;
+    width:35px;
+    height:23px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:293px;
+    top:69px;
+    width:35px;
+    height:23px
+}
+
+.u110_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:35px;
+    height:23px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110 {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:35px;
+    height:23px
+}
+
+.u112_original {
+    background-image: url('../申请打印保险单_files/u72_original.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:35px;
+    top:92px;
+    width:148px;
+    height:23px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:144px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:35px;
+    top:92px;
+    width:148px;
+    height:23px
+}
+
+.u114_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:183px;
+    top:92px;
+    width:45px;
+    height:23px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114 {
+    position:absolute;
+    left:183px;
+    top:92px;
+    width:45px;
+    height:23px
+}
+
+.u116_original {
+    background-image: url('../申请打印保险单_files/u76_original.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:228px;
+    top:92px;
+    width:65px;
+    height:23px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116 {
+    position:absolute;
+    left:228px;
+    top:92px;
+    width:65px;
+    height:23px
+}
+
+.u118_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:293px;
+    top:92px;
+    width:35px;
+    height:23px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:293px;
+    top:92px;
+    width:35px;
+    height:23px
+}
+
+.u120_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:0px;
+    top:115px;
+    width:35px;
+    height:23px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120 {
+    position:absolute;
+    left:0px;
+    top:115px;
+    width:35px;
+    height:23px
+}
+
+.u122_original {
+    background-image: url('../申请打印保险单_files/u72_original.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:35px;
+    top:115px;
+    width:148px;
+    height:23px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:144px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122 {
+    position:absolute;
+    left:35px;
+    top:115px;
+    width:148px;
+    height:23px
+}
+
+.u124_original {
+    background-image: url('../申请打印保险单_files/u13_original.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:183px;
+    top:115px;
+    width:45px;
+    height:23px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124 {
+    position:absolute;
+    left:183px;
+    top:115px;
+    width:45px;
+    height:23px
+}
+
+.u126_original {
+    background-image: url('../申请打印保险单_files/u76_original.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:228px;
+    top:115px;
+    width:65px;
+    height:23px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126 {
+    position:absolute;
+    left:228px;
+    top:115px;
+    width:65px;
+    height:23px
+}
+
+.u128_original {
+    background-image: url('../申请打印保险单_files/u9_original.png');
+}
+
+.u128_container {
+    position:absolute;
+    left:293px;
+    top:115px;
+    width:35px;
+    height:23px;
+}
+
+.u129 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:31px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128 {
+    position:absolute;
+    left:293px;
+    top:115px;
+    width:35px;
+    height:23px
+}
+
+.u130_original {
+    background-image: url('../申请打印保险单_files/u130_original.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:10px;
+    top:260px;
+    width:780px;
+    height:400px;
+}
+
+#u130_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:786px;
+    height:406px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:192px;
+    width:776px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130 {
+    position:absolute;
+    left:10px;
+    top:260px;
+    width:780px;
+    height:400px
+}
+
+.u132 {
+    position:absolute;
+    left:20px;
+    top:270px;
+    width:150px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u134 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:40px;
+    top:300px;
+    width:710px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138 {
+    position:absolute;
+    left:40px;
+    top:331px;
+    width:340px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139 {
+    position:absolute;
+    left:40px;
+    top:361px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140_original {
+    background-image: url('../申请打印保险单_files/u140_original.png');
+}
+
+.u140_container {
+    position:absolute;
+    left:110px;
+    top:390px;
+    width:660px;
+    height:150px;
+}
+
+#u140_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:666px;
+    height:156px;
+}
+
+.u141 {
+    position:absolute;
+    left:2px;
+    top:67px;
+    width:656px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:110px;
+    top:390px;
+    width:660px;
+    height:150px
+}
+
+.u142 {
+    position:absolute;
+    left:120px;
+    top:401px;
+    width:190px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:400px;
+    top:400px;
+    width:190px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144 {
+    position:absolute;
+    left:120px;
+    top:430px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145 {
+    position:absolute;
+    left:204px;
+    top:430px;
+    width:167px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u145_text_sketch {
+    font-family: '应用字体';
+}
+
+.u146 {
+    position:absolute;
+    left:400px;
+    top:430px;
+    width:80px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147 {
+    position:absolute;
+    left:480px;
+    top:428px;
+    width:167px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u147_text_sketch {
+    font-family: '应用字体';
+}
+
+.u148 {
+    position:absolute;
+    left:120px;
+    top:460px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149 {
+    position:absolute;
+    left:205px;
+    top:460px;
+    width:60px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u149_text_sketch {
+    font-family: '应用字体';
+}
+
+.u150 {
+    position:absolute;
+    left:285px;
+    top:460px;
+    width:60px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u150_text_sketch {
+    font-family: '应用字体';
+}
+
+.u151 {
+    position:absolute;
+    left:360px;
+    top:460px;
+    width:80px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u151_text_sketch {
+    font-family: '应用字体';
+}
+
+.u152 {
+    position:absolute;
+    left:460px;
+    top:460px;
+    width:300px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u152_text_sketch {
+    font-family: '应用字体';
+}
+
+.u153 {
+    position:absolute;
+    left:120px;
+    top:490px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154 {
+    position:absolute;
+    left:620px;
+    top:400px;
+    width:60px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u155 {
+    position:absolute;
+    left:690px;
+    top:400px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156 {
+    position:absolute;
+    left:210px;
+    top:493px;
+    width:550px;
+    height:37px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u156_text_sketch {
+    font-family: '应用字体';
+}
+
+.u157 {
+    position:absolute;
+    left:395px;
+    top:547px;
+    width:375px;
+    height:57px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158 {
+    position:absolute;
+    left:480px;
+    top:670px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u158_text_sketch {
+    font-family: '应用字体';
+}
+
+.u159 {
+    position:absolute;
+    left:310px;
+    top:270px;
+    width:470px;
+    height:95px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160 {
+    position:absolute;
+    left:590px;
+    top:670px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u160_text_sketch {
+    font-family: '应用字体';
+}
+
+.u161 {
+    position:absolute;
+    left:40px;
+    top:561px;
+    width:150px;
+    height:27px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:82px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u172 {
+    position:absolute;
+    left:36px;
+    top:621px;
+    width:94px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

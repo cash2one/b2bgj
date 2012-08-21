@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <title>客户组维护</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+</head>
+<body>
+<div class="head clearfix">
+    <h1 class="logo">
+        <a href="#"><span>天地行B2B交易平台</span><img src="img/logo.png" alt="" /></a>
+    </h1>
+    <div class="nav-top">
+        <div class="menu-quick">
+            欢迎您！Admin 
+            [<a href="#">供应商</a>] | 
+            [<a href="#">退出</a>] | 
+            <a href="#">站点首页</a> |
+            <a href="#">个人设置</a> |
+            <a href="#">帮助中心</a>
+        </div>
+        <div class="menu-main clearfix">
+            <ul>
+                <li>
+                    <a href="#">国内机票</a>
+                </li>
+                <li>
+                    <a href="#">国际机票</a>
+                </li>
+                <li>
+                    <a href="#">酒  店</a>
+                </li>
+                <li>
+                    <a href="#">保  险</a>
+                </li>
+                <li class="current">
+                    <a href="#">政策管理</a>
+                </li>
+                <li>
+                    <a href="#">财务管理</a>
+                </li>
+                <li>
+                    <a href="#">统计报表</a>
+                </li>
+                <li>
+                    <a href="#">系统管理</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </a>
+</div>
+   <div class="body clearfix">
+       <div class="sidebar area">
+           <div class="menu-sidebar">
+               <dl>
+                   <dt class="current">政策管理
+                    <i class="arrow1"></i>
+                   </dt>
+                    <dd>
+                        <a href="政策查看.html">政策查看</a>
+                    </dd>
+                    <dd>
+                        <a class="current" href="政策发布.html">政策发布</a>
+                    </dd>
+                    <dd>
+                        <a href="预期后返.html">预期后返</a>
+                    </dd>
+                    <dd>
+                        <a href="政策开关.html">政策开关</a>
+                    </dd>
+                    <dd>
+                        <a href="政策路由管理.html">政策路由管理</a>
+                    </dd>
+               </dl>
+               <dl>
+                   <dt>退废改签维护
+                    <i class="arrow1"></i>
+                   </dt>
+                   <dd>
+                       <a href="退改签规定.html">退改签规定</a>
+                   </dd>
+                   <dd>
+                       <a href="退废规定公告.html">退废规定公告</a>
+                   </dd>
+               </dl>
+               <dl>
+                   <dt>政策发放
+                    <i class="arrow1"></i>
+                   </dt>
+                   <dd>
+                       <a href="客户组维护.html">客户组维护</a>
+                   </dd>
+                   <dd>
+                       <a href="客户组客户维护.html">客户组客户维护</a>
+                   </dd>
+                   <dd>
+                       <a href="客户组政策维护.html">客户组政策维护</a>
+                   </dd>
+                   <dd>
+                       <a href="客户组政策外放.html">客户组政策外放</a>
+                   </dd>
+               </dl>
+           </div>
+           <div class="links">
+               <span><i class="icon1"></i><a href="投诉与建议.html">投诉与建议</a> </span>
+               <span><i class="icon2"></i><a href="在线客服.html">在线客服</a> </span>
+           </div>
+       </div>
+       <div class="breadcrumb">
+           <span>
+            <i class="icon3"></i>
+            当前位置：
+            <a href="政策管理.html">政策管理</a> &gt; 
+            <a href="政策发放.html">政策发放</a>
+           </span>
+       </div>
+       <div class="content area">
+           <h1 class="title">客户组维护</h1>
+               <div class="mo-khzwh">
+                   <form action="#" method="post">
+                       <div class="block">
+                       
+    <link rel="stylesheet" href="css/main.css" />
+    <style type="text/css">
+        body{font-family:tahoma}
+        .tr-border{border-top:solid #eeeeee 1px;border-bottom:solid #eeeeee 1px}
+        .td-padding{padding:6px 0}
+        .title{font-weight:bold;font-size:14px;margin:8px 0}
+        input[type="text"]{width:125px}
+        input[type="checkbox"],input[type="radio"]{margin:0 2px;vertical-align:-2px}
+        label{vertical-align:middle;}
+        thead td{border:1px solid #e7e7e7;background:url("images/thead_bg.jpg") repeat-x bottom;text-align:center}
+        .tr-even{background-color:#f5f5f5}
+    </style>
+<div class="title">查询条件</div>
+<div>
+    <table cellpadding="0" cellspacing="0">
+        <tr class="tr-border">
+            <td width="65" class="td-padding">分组代码</td>
+            <td width="160"><input type="text" /></td>
+            <td width="65">分组名称</td>
+            <td width="160"><input type="text" /></td>
+            <td width="65">最低返点</td>
+            <td width="160"><input type="text" /></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">儿童返点</td>
+            <td><input type="text" /></td>
+            <td>儿童浮点</td>
+            <td><input type="text" /></td>
+            <td>最高返点</td>
+            <td><input type="text" /></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">成人返点</td>
+            <td><input type="text" /></td>
+            <td>成人浮点</td>
+            <td><input type="text" /></td>
+            <td colspan="2">是否适用异地政策
+                <label><input type="radio" name="ydzc" />是</label>
+                <label><input type="radio" name="ydzc" />否</label>
+            </td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">统一返点</td>
+            <td><input type="text" /></td>
+            <td>统一浮点</td>
+            <td><input type="text" /></td>
+            <td colspan="2">支付方式
+                <label><input type="checkbox" />单笔支付</label>
+                <label><input type="checkbox" />预存扣款</label>
+            </td>
+        </tr>
+        <tr class="tr-border">
+            <td colspan="4" class="td-padding">结款方式
+                <label><input type="checkbox" />不限</label>
+                <label><input type="checkbox" />周结</label>
+                <label><input type="checkbox" />月结</label>
+                <label><input type="checkbox" />其他</label>
+            </td>
+            <td colspan="2"><input type="submit" value="查询"></td>
+        </tr>
+    </table>
+</div>
+<div style="margin:8px 0">
+    <input type="button" value="添加分组">
+    <input type="button" value="维护组客户">
+    <input type="button" value="维护组策略">
+    <input type="button" value="批量修改客户组">
+    <input type="button" value="政策外放">
+    <input type="button" value="复制客户组">
+</div>
+<div>
+    <table class="border-all">
+        <thead>
+            <tr class="tr-border">
+                <td class="td-padding"><input type="checkbox" /></td>
+                <td>分组代码</td>
+                <td>分组名称</td>
+                <td>儿童返点</td>
+                <td>儿童浮点</td>
+                <td>成人返点</td>
+                <td>成人浮点</td>
+                <td>统一返点</td>
+                <td>统一浮点</td>
+                <td>最高返点</td>
+                <td>异地支持</td>
+                <td>支付方式</td>
+                <td>结款方式</td>
+                <td>备注</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td-padding"><input type="checkbox" /></td>
+                <td>byc</td>
+                <td>商务部网上</td>
+                <td>3.00</td>
+                <td></td>
+                <td>0.00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>是</td>
+                <td>单笔支付</td>
+                <td>不限</td>
+                <td></td>
+                <td>预览 修改 删除</td>
+            </tr>
+            <tr class="tr-even">
+                <td class="td-padding"><input type="checkbox" /></td>
+                <td>002</td>
+                <td>同行普通客户</td>
+                <td>3.00</td>
+                <td></td>
+                <td>0.00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>否</td>
+                <td>预存扣款</td>
+                <td>周结</td>
+                <td></td>
+                <td>预览 修改 删除</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="title">添加客户分组</div>
+<div>
+    <table>
+        <tr class="tr-border">
+            <td class="td-padding">分组代码</td>
+            <td colspan="2"><input type="text"></td>
+            <td>分组名称</td>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td width="65" class="td-padding">儿童返点</td>
+            <td width="160"><input type="text"></td>
+            <td width="65">浮点</td>
+            <td width="160"><input type="text"></td>
+            <td width="65">返钱</td>
+            <td width="160"><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">成人返点</td>
+            <td><input type="text"></td>
+            <td>浮点</td>
+            <td><input type="text"></td>
+            <td>返钱</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">统一返点</td>
+            <td><input type="text"></td>
+            <td>浮点</td>
+            <td><input type="text"></td>
+            <td>返钱</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">最低返点</td>
+            <td><input type="text"></td>
+            <td>浮点</td>
+            <td><input type="text"></td>
+            <td>返钱</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">最高返点</td>
+            <td><input type="text"></td>
+            <td>浮点</td>
+            <td><input type="text"></td>
+            <td>返钱</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">儿童返点</td>
+            <td><input type="text"></td>
+            <td>浮点</td>
+            <td><input type="text"></td>
+            <td>返钱</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">复制组客户</td>
+            <td colspan="2">
+                <select>
+                    <option>选择客户组</option>
+                </select>
+            </td>
+            <td>复制组策略</td>
+            <td colspan="2">
+                <select>
+                    <option>选择客户组</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding" colspan="3">是否适用异地政策
+                <label><input type="radio" name="ydzc" />是</label>
+                <label><input type="radio" name="ydzc" />否</label>
+            </td>
+            <td colspan="3">支付方式
+                <label><input type="checkbox" />单笔支付</label>
+                <label><input type="checkbox" />预存扣款</label>
+            </td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding" colspan="6">结款方式
+                <label><input type="checkbox" />不限</label>
+                <label><input type="checkbox" />周结</label>
+                <label><input type="checkbox" />月结</label>
+                <label><input type="checkbox" />季度</label>
+                <label><input type="checkbox" />半年</label>
+                <label><input type="checkbox" />一年</label>
+            </td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding">备注</td>
+            <td colspan="5"><textarea rows="5" style="width:575px"></textarea> </td>
+        </tr>
+        <tr class="tr-border">
+            <td class="td-padding" colspan="3" style="text-align:right;padding-right:10px"><input type="submit" value="提交" /> </td>
+            <td colspan="3" style="text-align:left;padding-left:10px"><input type="reset" value="取消" /></td>
+        </tr>
+    </table>
+</div>
+                       </div>
+
+
+                   </form>
+                     
+               </div>
+             
+       </div>
+   </div>
+</body>
+</html>

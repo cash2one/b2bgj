@@ -1,0 +1,378 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0 {
+    position:absolute;
+    left:72px;
+    top:16px;
+    width:590px;
+    height:88px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u1_normal {
+    background-image: url('../发票信息管理_1_files/u1_normal.png');
+}
+
+.u1_container {
+    position:absolute;
+    left:716px;
+    top:61px;
+    width:47px;
+    height:38px;
+}
+
+#u1_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:47px;
+    height:38px;
+}
+
+.u2 {
+    position:absolute;
+    left:2px;
+    top:11px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_normal {
+    background-image: url('../发票信息管理_1_files/u3_normal.png');
+}
+
+.u3_container {
+    position:absolute;
+    left:112px;
+    top:65px;
+    width:170px;
+    height:30px;
+}
+
+#u3_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:176px;
+    height:36px;
+}
+
+.u4 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:166px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u5_normal {
+    background-image: url('../发票信息管理_1_files/u5_normal.png');
+}
+
+.u5_container {
+    position:absolute;
+    left:332px;
+    top:65px;
+    width:160px;
+    height:30px;
+}
+
+#u5_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:36px;
+}
+
+.u6 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u7_normal {
+    background-image: url('../发票信息管理_1_files/u7_normal.png');
+}
+
+.u7_container {
+    position:absolute;
+    left:20px;
+    top:393px;
+    width:1035px;
+    height:35px;
+}
+
+#u7_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1035px;
+    height:35px;
+}
+
+.u8 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:1031px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9_normal {
+    background-image: url('../发票信息管理_1_files/u9_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:563px;
+    top:65px;
+    width:136px;
+    height:30px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:36px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_normal {
+    background-image: url('../发票信息管理_1_files/u11_normal.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:510px;
+    top:65px;
+    width:50px;
+    height:30px;
+}
+
+#u11_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:56px;
+    height:36px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13_normal {
+    background-image: url('../发票信息管理_1_files/u13_normal.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:20px;
+    top:114px;
+    width:946px;
+    height:279px;
+}
+
+#u13_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:946px;
+    height:279px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:132px;
+    width:942px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15_normal {
+    background-image: url('../发票信息管理_1_files/u15_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:120px;
+    top:105px;
+    width:20px;
+    height:30px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:36px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_normal {
+    background-image: url('../发票信息管理_1_files/u15_normal.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:230px;
+    top:105px;
+    width:20px;
+    height:30px;
+}
+
+#u17_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:36px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19_normal {
+    background-image: url('../发票信息管理_1_files/u15_normal.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:340px;
+    top:105px;
+    width:20px;
+    height:30px;
+}
+
+#u19_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:36px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

@@ -1,0 +1,1874 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:61px;
+    width:1124px;
+    height:277px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1124px;
+    height:277px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:130px;
+    width:1120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:0px;
+    top:338px;
+    width:1123px;
+    height:352px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1123px;
+    height:352px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:168px;
+    width:1119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:4px;
+    top:812px;
+    width:1124px;
+    height:240px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1124px;
+    height:240px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:112px;
+    width:1120px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:702px;
+    top:569px;
+    width:6px;
+    height:78px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u6_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:808px;
+    top:569px;
+    width:6px;
+    height:78px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:733px;
+    top:571px;
+    width:37px;
+    height:76px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:37px;
+    height:76px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:33px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:731px;
+    top:579px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:750px;
+    top:614px;
+    width:26px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u6_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:889px;
+    top:569px;
+    width:6px;
+    height:78px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:920px;
+    top:571px;
+    width:167px;
+    height:76px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:167px;
+    height:76px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:905px;
+    top:572px;
+    width:83px;
+    height:68px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:83px;
+    height:68px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:1038px;
+    top:579px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u6_normal.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:1000px;
+    top:569px;
+    width:6px;
+    height:78px;
+}
+
+#u21_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:1038px;
+    top:616px;
+    width:65px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:3px;
+    top:218px;
+    width:1117px;
+    height:111px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1123px;
+    height:117px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:48px;
+    width:1113px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u26_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:643px;
+    top:66px;
+    width:82px;
+    height:29px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:88px;
+    height:35px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:840px;
+    top:451px;
+    width:280px;
+    height:79px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:286px;
+    height:85px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:276px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:236px;
+    top:379px;
+    width:137px;
+    height:29px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u30_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:383px;
+    top:379px;
+    width:137px;
+    height:29px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:236px;
+    top:990px;
+    width:100px;
+    height:26px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:32px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u36_normal.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:296px;
+    top:11px;
+    width:445px;
+    height:50px;
+}
+
+#u36_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:445px;
+    height:50px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:441px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:520px;
+    top:31px;
+    width:29px;
+    height:32px;
+}
+
+#u38_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:29px;
+    height:32px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:25px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:594px;
+    top:11px;
+    width:251px;
+    height:50px;
+}
+
+#u40_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:251px;
+    height:50px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:247px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u42_normal.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:508px;
+    top:16px;
+    width:52px;
+    height:14px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:20px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u44_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:402px;
+    top:16px;
+    width:88px;
+    height:14px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:94px;
+    height:20px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:84px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u46_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:6px;
+    top:735px;
+    width:1066px;
+    height:31px;
+}
+
+#u46_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1066px;
+    height:31px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:1062px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u48_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:5px;
+    top:740px;
+    width:108px;
+    height:21px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:27px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u50_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:11px;
+    top:764px;
+    width:151px;
+    height:42px;
+}
+
+#u50_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u52_container {
+    position:absolute;
+    left:42px;
+    top:771px;
+    width:110px;
+    height:31px;
+}
+
+#u52_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u50_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:267px;
+    top:764px;
+    width:151px;
+    height:42px;
+}
+
+#u54_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u56_container {
+    position:absolute;
+    left:298px;
+    top:771px;
+    width:110px;
+    height:31px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u57 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58 {
+    position:absolute;
+    left:194px;
+    top:778px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u50_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:501px;
+    top:766px;
+    width:151px;
+    height:42px;
+}
+
+#u59_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u61_container {
+    position:absolute;
+    left:532px;
+    top:773px;
+    width:110px;
+    height:31px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:428px;
+    top:783px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64 {
+    position:absolute;
+    left:674px;
+    top:780px;
+    width:248px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:2px;
+    top:217px;
+    width:1121px;
+    height:42px;
+}
+
+#u65_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1121px;
+    height:42px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:1117px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:422px;
+    top:190px;
+    width:53px;
+    height:18px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:59px;
+    height:24px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:49px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:422px;
+    top:230px;
+    width:49px;
+    height:18px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:55px;
+    height:24px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u69_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:240px;
+    top:230px;
+    width:49px;
+    height:18px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:55px;
+    height:24px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73 {
+    position:absolute;
+    left:422px;
+    top:1062px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u74_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u74_normal.png');
+}
+
+.u74_container {
+    position:absolute;
+    left:93px;
+    top:348px;
+    width:67px;
+    height:22px;
+}
+
+#u74_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:73px;
+    height:28px;
+}
+
+.u75 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:63px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u76_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u76_normal.png');
+}
+
+.u76_container {
+    position:absolute;
+    left:508px;
+    top:578px;
+    width:61px;
+    height:18px;
+}
+
+#u76_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:67px;
+    height:24px;
+}
+
+.u77 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u78_normal.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:402px;
+    top:578px;
+    width:98px;
+    height:18px;
+}
+
+#u78_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:24px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u80_normal.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:518px;
+    top:617px;
+    width:41px;
+    height:18px;
+}
+
+#u80_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:47px;
+    height:24px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:37px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u82_normal.png');
+}
+
+.u82_container {
+    position:absolute;
+    left:501px;
+    top:568px;
+    width:7px;
+    height:80px;
+}
+
+#u82_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:80px;
+}
+
+.u83 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u84_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u84_normal.png');
+}
+
+.u84_container {
+    position:absolute;
+    left:1021px;
+    top:612px;
+    width:66px;
+    height:27px;
+}
+
+#u84_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:66px;
+    height:27px;
+}
+
+.u85 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u86_normal.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:840px;
+    top:452px;
+    width:7px;
+    height:79px;
+}
+
+#u86_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u88_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u88_normal.png');
+}
+
+.u88_container {
+    position:absolute;
+    left:861px;
+    top:464px;
+    width:66px;
+    height:14px;
+}
+
+#u88_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u89 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u88_normal.png');
+}
+
+.u90_container {
+    position:absolute;
+    left:861px;
+    top:506px;
+    width:66px;
+    height:14px;
+}
+
+#u90_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u86_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:936px;
+    top:452px;
+    width:7px;
+    height:79px;
+}
+
+#u92_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u88_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:958px;
+    top:463px;
+    width:66px;
+    height:14px;
+}
+
+#u94_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u88_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:958px;
+    top:505px;
+    width:66px;
+    height:14px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u98_normal.png');
+}
+
+.u98_container {
+    position:absolute;
+    left:0px;
+    top:541px;
+    width:1132px;
+    height:194px;
+}
+
+#u98_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1132px;
+    height:194px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1128px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u100_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:738px;
+    top:698px;
+    width:166px;
+    height:33px;
+}
+
+#u100_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:166px;
+    height:33px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u102_normal.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:819px;
+    top:578px;
+    width:65px;
+    height:31px;
+}
+
+#u102_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:71px;
+    height:37px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u104_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:5px;
+    top:538px;
+    width:1121px;
+    height:197px;
+}
+
+#u104_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1121px;
+    height:197px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1117px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u106_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:2px;
+    top:138px;
+    width:1118px;
+    height:157px;
+}
+
+#u106_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1118px;
+    height:157px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:70px;
+    width:1114px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../多程预订提交完成信息详情_files/u108_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:742px;
+    top:698px;
+    width:180px;
+    height:27px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

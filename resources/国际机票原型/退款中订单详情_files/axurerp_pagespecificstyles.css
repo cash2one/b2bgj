@@ -1,0 +1,3101 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../退款中订单详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:3px;
+    top:742px;
+    width:1128px;
+    height:98px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1128px;
+    height:98px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../退款中订单详情_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:11px;
+    top:850px;
+    width:1069px;
+    height:98px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1069px;
+    height:98px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1065px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../退款中订单详情_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:6px;
+    top:63px;
+    width:1119px;
+    height:195px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1119px;
+    height:195px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1115px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../退款中订单详情_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:2px;
+    top:258px;
+    width:1123px;
+    height:352px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1123px;
+    height:352px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:168px;
+    width:1119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../退款中订单详情_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:704px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../退款中订单详情_files/u8_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:810px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../退款中订单详情_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:735px;
+    top:491px;
+    width:37px;
+    height:76px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:37px;
+    height:76px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:33px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:733px;
+    top:499px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:752px;
+    top:534px;
+    width:26px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../退款中订单详情_files/u8_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:891px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../退款中订单详情_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:922px;
+    top:491px;
+    width:167px;
+    height:76px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:167px;
+    height:76px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../退款中订单详情_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:907px;
+    top:492px;
+    width:83px;
+    height:68px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:83px;
+    height:68px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:1040px;
+    top:499px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../退款中订单详情_files/u8_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:1002px;
+    top:489px;
+    width:6px;
+    height:78px;
+}
+
+#u23_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../退款中订单详情_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:630px;
+    top:68px;
+    width:80px;
+    height:29px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:35px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../退款中订单详情_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:238px;
+    top:299px;
+    width:137px;
+    height:29px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../退款中订单详情_files/u27_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:410px;
+    top:299px;
+    width:137px;
+    height:29px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../退款中订单详情_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:312px;
+    top:299px;
+    width:98px;
+    height:24px;
+}
+
+#u31_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:98px;
+    height:24px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../退款中订单详情_files/u33_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:13px;
+    top:1124px;
+    width:1129px;
+    height:62px;
+}
+
+#u33_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1129px;
+    height:62px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:1125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../退款中订单详情_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:937px;
+    top:374px;
+    width:81px;
+    height:77px;
+}
+
+#u35_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:81px;
+    height:77px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:77px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../退款中订单详情_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:842px;
+    top:374px;
+    width:95px;
+    height:77px;
+}
+
+#u37_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:95px;
+    height:77px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:91px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../退款中订单详情_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:950px;
+    top:377px;
+    width:66px;
+    height:29px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../退款中订单详情_files/u39_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:950px;
+    top:416px;
+    width:66px;
+    height:29px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../退款中订单详情_files/u39_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:857px;
+    top:373px;
+    width:66px;
+    height:29px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../退款中订单详情_files/u39_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:857px;
+    top:415px;
+    width:66px;
+    height:29px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../退款中订单详情_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:410px;
+    top:299px;
+    width:100px;
+    height:29px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:35px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../退款中订单详情_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:13px;
+    top:1198px;
+    width:298px;
+    height:34px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../退款中订单详情_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:231px;
+    top:890px;
+    width:136px;
+    height:23px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../退款中订单详情_files/u39_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:1036px;
+    top:378px;
+    width:66px;
+    height:29px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../退款中订单详情_files/u55_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:1023px;
+    top:418px;
+    width:98px;
+    height:29px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:35px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../退款中订单详情_files/u57_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:358px;
+    top:572px;
+    width:166px;
+    height:33px;
+}
+
+#u57_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:166px;
+    height:33px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../退款中订单详情_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:311px;
+    top:1164px;
+    width:342px;
+    height:34px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../退款中订单详情_files/u59_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:311px;
+    top:1198px;
+    width:342px;
+    height:34px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../退款中订单详情_files/u63_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:653px;
+    top:1164px;
+    width:443px;
+    height:34px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../退款中订单详情_files/u63_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:653px;
+    top:1198px;
+    width:443px;
+    height:34px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../退款中订单详情_files/u49_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:13px;
+    top:1164px;
+    width:298px;
+    height:34px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../退款中订单详情_files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:13px;
+    top:1006px;
+    width:212px;
+    height:34px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:218px;
+    height:40px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:208px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../退款中订单详情_files/u71_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:225px;
+    top:1006px;
+    width:819px;
+    height:34px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../退款中订单详情_files/u73_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:754px;
+    top:68px;
+    width:195px;
+    height:29px;
+}
+
+#u73_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:195px;
+    height:29px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../退款中订单详情_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:13px;
+    top:948px;
+    width:1031px;
+    height:58px;
+}
+
+#u75_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1031px;
+    height:58px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:21px;
+    width:1027px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../退款中订单详情_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:221px;
+    top:575px;
+    width:132px;
+    height:30px;
+}
+
+#u77_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:132px;
+    height:30px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:128px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79 {
+    position:absolute;
+    left:549px;
+    top:1287px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u80_normal {
+    background-image: url('../退款中订单详情_files/u69_normal.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:13px;
+    top:1040px;
+    width:212px;
+    height:34px;
+}
+
+#u80_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:218px;
+    height:40px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:208px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82_normal {
+    background-image: url('../退款中订单详情_files/u71_normal.png');
+}
+
+.u82_container {
+    position:absolute;
+    left:225px;
+    top:1040px;
+    width:819px;
+    height:34px;
+}
+
+#u82_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u83 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u84_normal {
+    background-image: url('../退款中订单详情_files/u84_normal.png');
+}
+
+.u84_container {
+    position:absolute;
+    left:345px;
+    top:1040px;
+    width:90px;
+    height:34px;
+}
+
+#u84_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:40px;
+}
+
+.u85 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:86px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u86_normal {
+    background-image: url('../退款中订单详情_files/u86_normal.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:437px;
+    top:1045px;
+    width:49px;
+    height:24px;
+}
+
+#u86_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:55px;
+    height:30px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:45px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u88_normal {
+    background-image: url('../退款中订单详情_files/u88_normal.png');
+}
+
+.u88_container {
+    position:absolute;
+    left:890px;
+    top:810px;
+    width:77px;
+    height:23px;
+}
+
+#u88_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:83px;
+    height:29px;
+}
+
+.u89 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:73px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u90_normal {
+    background-image: url('../退款中订单详情_files/u49_normal.png');
+}
+
+.u90_container {
+    position:absolute;
+    left:13px;
+    top:1232px;
+    width:298px;
+    height:34px;
+}
+
+#u90_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_normal {
+    background-image: url('../退款中订单详情_files/u59_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:311px;
+    top:1232px;
+    width:342px;
+    height:34px;
+}
+
+#u92_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../退款中订单详情_files/u63_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:653px;
+    top:1232px;
+    width:443px;
+    height:34px;
+}
+
+#u94_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../退款中订单详情_files/u51_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:11px;
+    top:809px;
+    width:136px;
+    height:23px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_normal {
+    background-image: url('../退款中订单详情_files/u98_normal.png');
+}
+
+.u98_container {
+    position:absolute;
+    left:563px;
+    top:809px;
+    width:78px;
+    height:23px;
+}
+
+#u98_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:84px;
+    height:29px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:74px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../退款中订单详情_files/u100_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:999px;
+    top:814px;
+    width:47px;
+    height:14px;
+}
+
+#u100_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:53px;
+    height:20px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:43px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102_normal {
+    background-image: url('../退款中订单详情_files/u102_normal.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:737px;
+    top:780px;
+    width:63px;
+    height:23px;
+}
+
+#u102_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:29px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../退款中订单详情_files/u102_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:737px;
+    top:813px;
+    width:63px;
+    height:23px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:29px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../退款中订单详情_files/u51_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:11px;
+    top:748px;
+    width:136px;
+    height:23px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:132px;
+    height:17px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../退款中订单详情_files/u98_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:563px;
+    top:780px;
+    width:78px;
+    height:23px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:84px;
+    height:29px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:74px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_normal {
+    background-image: url('../退款中订单详情_files/u110_normal.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:647px;
+    top:782px;
+    width:80px;
+    height:23px;
+}
+
+#u110_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:29px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112_normal {
+    background-image: url('../退款中订单详情_files/u112_normal.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:647px;
+    top:809px;
+    width:90px;
+    height:27px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:96px;
+    height:33px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:86px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_line {
+    background-image: url('../退款中订单详情_files/u114_line.png');
+}
+
+.u114_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:61px;
+}
+
+.u114 {
+    position:absolute;
+    left:967px;
+    top:775px;
+    width:10px;
+    height:61px;
+    
+}
+
+.u115_normal {
+    background-image: url('../退款中订单详情_files/u115_normal.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:987px;
+    top:780px;
+    width:133px;
+    height:23px;
+}
+
+#u115_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:29px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117_line {
+    background-image: url('../退款中订单详情_files/u117_line.png');
+}
+
+.u117_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:61px;
+}
+
+.u117 {
+    position:absolute;
+    left:417px;
+    top:780px;
+    width:10px;
+    height:61px;
+    
+}
+
+.u118_line {
+    background-image: url('../退款中订单详情_files/u118_line.png');
+}
+
+.u118_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:61px;
+}
+
+.u118 {
+    position:absolute;
+    left:562px;
+    top:778px;
+    width:10px;
+    height:61px;
+    
+}
+
+.u119_normal {
+    background-image: url('../退款中订单详情_files/u119_normal.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:437px;
+    top:812px;
+    width:126px;
+    height:23px;
+}
+
+#u119_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:29px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121_normal {
+    background-image: url('../退款中订单详情_files/u119_normal.png');
+}
+
+.u121_container {
+    position:absolute;
+    left:437px;
+    top:782px;
+    width:126px;
+    height:23px;
+}
+
+#u121_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:132px;
+    height:29px;
+}
+
+.u122 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:122px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123_line {
+    background-image: url('../退款中订单详情_files/u123_line.png');
+}
+
+.u123_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:61px;
+}
+
+.u123 {
+    position:absolute;
+    left:727px;
+    top:780px;
+    width:10px;
+    height:61px;
+    
+}
+
+.u124_normal {
+    background-image: url('../退款中订单详情_files/u102_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:817px;
+    top:780px;
+    width:63px;
+    height:23px;
+}
+
+#u124_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:29px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126_normal {
+    background-image: url('../退款中订单详情_files/u102_normal.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:817px;
+    top:813px;
+    width:63px;
+    height:23px;
+}
+
+#u126_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:69px;
+    height:29px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128_line {
+    background-image: url('../退款中订单详情_files/u128_line.png');
+}
+
+.u128_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:61px;
+}
+
+.u128 {
+    position:absolute;
+    left:880px;
+    top:780px;
+    width:10px;
+    height:61px;
+    
+}
+
+.u129_normal {
+    background-image: url('../退款中订单详情_files/u88_normal.png');
+}
+
+.u129_container {
+    position:absolute;
+    left:890px;
+    top:778px;
+    width:77px;
+    height:23px;
+}
+
+#u129_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:83px;
+    height:29px;
+}
+
+.u130 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:73px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131_normal {
+    background-image: url('../退款中订单详情_files/u131_normal.png');
+}
+
+.u131_container {
+    position:absolute;
+    left:1px;
+    top:661px;
+    width:1066px;
+    height:31px;
+}
+
+#u131_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1066px;
+    height:31px;
+}
+
+.u132 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:1062px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133_normal {
+    background-image: url('../退款中订单详情_files/u133_normal.png');
+}
+
+.u133_container {
+    position:absolute;
+    left:0px;
+    top:666px;
+    width:108px;
+    height:21px;
+}
+
+#u133_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:27px;
+}
+
+.u134 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135_normal {
+    background-image: url('../退款中订单详情_files/u135_normal.png');
+}
+
+.u135_container {
+    position:absolute;
+    left:6px;
+    top:690px;
+    width:151px;
+    height:42px;
+}
+
+#u135_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u136 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u137_container {
+    position:absolute;
+    left:37px;
+    top:697px;
+    width:110px;
+    height:31px;
+}
+
+#u137_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u138 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139_normal {
+    background-image: url('../退款中订单详情_files/u135_normal.png');
+}
+
+.u139_container {
+    position:absolute;
+    left:262px;
+    top:690px;
+    width:151px;
+    height:42px;
+}
+
+#u139_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u140 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u141_container {
+    position:absolute;
+    left:293px;
+    top:697px;
+    width:110px;
+    height:31px;
+}
+
+#u141_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:189px;
+    top:704px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144_normal {
+    background-image: url('../退款中订单详情_files/u135_normal.png');
+}
+
+.u144_container {
+    position:absolute;
+    left:496px;
+    top:692px;
+    width:151px;
+    height:42px;
+}
+
+#u144_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u145 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u146_container {
+    position:absolute;
+    left:527px;
+    top:699px;
+    width:110px;
+    height:31px;
+}
+
+#u146_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u147 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148 {
+    position:absolute;
+    left:423px;
+    top:709px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149 {
+    position:absolute;
+    left:669px;
+    top:706px;
+    width:248px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150_normal {
+    background-image: url('../退款中订单详情_files/u69_normal.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:13px;
+    top:1074px;
+    width:212px;
+    height:34px;
+}
+
+#u150_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:218px;
+    height:40px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:208px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152_normal {
+    background-image: url('../退款中订单详情_files/u71_normal.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:225px;
+    top:1074px;
+    width:819px;
+    height:34px;
+}
+
+#u152_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u154_container {
+    position:absolute;
+    left:124px;
+    top:982px;
+    width:113px;
+    height:24px;
+}
+
+#u154_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:119px;
+    height:30px;
+}
+
+.u155 {
+    position:absolute;
+    left:2px;
+    top:-4px;
+    width:109px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156_normal {
+    background-image: url('../退款中订单详情_files/u156_normal.png');
+}
+
+.u156_container {
+    position:absolute;
+    left:508px;
+    top:498px;
+    width:61px;
+    height:18px;
+}
+
+#u156_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:67px;
+    height:24px;
+}
+
+.u157 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158_normal {
+    background-image: url('../退款中订单详情_files/u158_normal.png');
+}
+
+.u158_container {
+    position:absolute;
+    left:402px;
+    top:498px;
+    width:98px;
+    height:18px;
+}
+
+#u158_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:24px;
+}
+
+.u159 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u160_normal {
+    background-image: url('../退款中订单详情_files/u160_normal.png');
+}
+
+.u160_container {
+    position:absolute;
+    left:518px;
+    top:537px;
+    width:41px;
+    height:18px;
+}
+
+#u160_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:47px;
+    height:24px;
+}
+
+.u161 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:37px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u162_normal {
+    background-image: url('../退款中订单详情_files/u162_normal.png');
+}
+
+.u162_container {
+    position:absolute;
+    left:500px;
+    top:488px;
+    width:7px;
+    height:80px;
+}
+
+#u162_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:80px;
+}
+
+.u163 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u164 {
+    position:absolute;
+    left:1025px;
+    top:536px;
+    width:100px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../退款中订单详情_files/u165_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:1112px;
+    top:374px;
+    width:7px;
+    height:79px;
+}
+
+#u165_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_normal {
+    background-image: url('../退款中订单详情_files/u167_normal.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:1119px;
+    top:386px;
+    width:66px;
+    height:14px;
+}
+
+#u167_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169_normal {
+    background-image: url('../退款中订单详情_files/u167_normal.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:1119px;
+    top:428px;
+    width:66px;
+    height:14px;
+}
+
+#u169_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171_normal {
+    background-image: url('../退款中订单详情_files/u165_normal.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:1180px;
+    top:378px;
+    width:7px;
+    height:79px;
+}
+
+#u171_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173_normal {
+    background-image: url('../退款中订单详情_files/u167_normal.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:1201px;
+    top:389px;
+    width:66px;
+    height:14px;
+}
+
+#u173_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175_normal {
+    background-image: url('../退款中订单详情_files/u167_normal.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:1201px;
+    top:431px;
+    width:66px;
+    height:14px;
+}
+
+#u175_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177_normal {
+    background-image: url('../退款中订单详情_files/u177_normal.png');
+}
+
+.u177_container {
+    position:absolute;
+    left:3px;
+    top:454px;
+    width:1121px;
+    height:197px;
+}
+
+#u177_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1121px;
+    height:197px;
+}
+
+.u178 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1117px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u179_normal {
+    background-image: url('../退款中订单详情_files/u179_normal.png');
+}
+
+.u179_container {
+    position:absolute;
+    left:738px;
+    top:618px;
+    width:180px;
+    height:27px;
+}
+
+#u179_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u180 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

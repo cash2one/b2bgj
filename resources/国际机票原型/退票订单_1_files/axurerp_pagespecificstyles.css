@@ -1,0 +1,2002 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../退票订单_1_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:10px;
+    top:8px;
+    width:1131px;
+    height:261px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1131px;
+    height:261px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:122px;
+    width:1127px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../退票订单_1_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:12px;
+    top:346px;
+    width:1125px;
+    height:35px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1125px;
+    height:35px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:1121px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../退票订单_1_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:1130px;
+    top:190px;
+    width:91px;
+    height:156px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:156px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:70px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../退票订单_1_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:1139px;
+    top:195px;
+    width:60px;
+    height:22px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:28px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../退票订单_1_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:286px;
+    top:190px;
+    width:40px;
+    height:27px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:40px;
+    height:27px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:36px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../退票订单_1_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:336px;
+    top:191px;
+    width:60px;
+    height:26px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:60px;
+    height:26px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:350px;
+    top:196px;
+    width:38px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:1136px;
+    top:276px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../退票订单_1_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:29px;
+    top:15px;
+    width:201px;
+    height:25px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:207px;
+    height:31px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:197px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../退票订单_1_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:1139px;
+    top:225px;
+    width:60px;
+    height:20px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:26px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../退票订单_1_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:336px;
+    top:226px;
+    width:60px;
+    height:34px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:40px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../退票订单_1_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:132px;
+    top:113px;
+    width:48px;
+    height:20px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:48px;
+    height:20px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:44px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../退票订单_1_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:180px;
+    top:113px;
+    width:272px;
+    height:20px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:278px;
+    height:26px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:268px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../退票订单_1_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:190px;
+    top:106px;
+    width:232px;
+    height:27px;
+}
+
+#u24_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:232px;
+    height:27px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:228px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../退票订单_1_files/u26_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:630px;
+    top:143px;
+    width:260px;
+    height:31px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:266px;
+    height:37px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:256px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../退票订单_1_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:510px;
+    top:108px;
+    width:460px;
+    height:27px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:466px;
+    height:33px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:456px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../退票订单_1_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:890px;
+    top:75px;
+    width:233px;
+    height:23px;
+}
+
+#u30_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:233px;
+    height:23px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:229px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_normal {
+    background-image: url('../退票订单_1_files/u32_normal.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:960px;
+    top:195px;
+    width:80px;
+    height:17px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:23px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34_normal {
+    background-image: url('../退票订单_1_files/u34_normal.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:20px;
+    top:241px;
+    width:80px;
+    height:14px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:20px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36_normal {
+    background-image: url('../退票订单_1_files/u36_normal.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:274px;
+    top:227px;
+    width:52px;
+    height:26px;
+}
+
+#u36_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:52px;
+    height:26px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38_normal {
+    background-image: url('../退票订单_1_files/u38_normal.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:265px;
+    top:190px;
+    width:9px;
+    height:73px;
+}
+
+#u38_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:9px;
+    height:73px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:28px;
+    width:5px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40_normal {
+    background-image: url('../退票订单_1_files/u40_normal.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:547px;
+    top:144px;
+    width:73px;
+    height:31px;
+}
+
+#u40_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:79px;
+    height:37px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_normal {
+    background-image: url('../退票订单_1_files/u48_normal.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:12px;
+    top:262px;
+    width:1120px;
+    height:43px;
+}
+
+#u48_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1120px;
+    height:43px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:1116px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u50_normal {
+    background-image: url('../退票订单_1_files/u50_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:1044px;
+    top:282px;
+    width:60px;
+    height:15px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:21px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_normal {
+    background-image: url('../退票订单_1_files/u52_normal.png');
+}
+
+.u52_container {
+    position:absolute;
+    left:432px;
+    top:106px;
+    width:285px;
+    height:30px;
+}
+
+#u52_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:285px;
+    height:30px;
+}
+
+.u53 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:281px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u54_normal {
+    background-image: url('../退票订单_1_files/u54_normal.png');
+}
+
+.u54_container {
+    position:absolute;
+    left:706px;
+    top:103px;
+    width:361px;
+    height:35px;
+}
+
+#u54_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:361px;
+    height:35px;
+}
+
+.u55 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:357px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u56_normal {
+    background-image: url('../退票订单_1_files/u56_normal.png');
+}
+
+.u56_container {
+    position:absolute;
+    left:8px;
+    top:8px;
+    width:1133px;
+    height:95px;
+}
+
+#u56_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1139px;
+    height:101px;
+}
+
+.u57 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:1129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u58 {
+    position:absolute;
+    left:1139px;
+    top:316px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../退票订单_1_files/u48_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:12px;
+    top:303px;
+    width:1120px;
+    height:43px;
+}
+
+#u59_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1120px;
+    height:43px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:1116px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../退票订单_1_files/u50_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:1044px;
+    top:323px;
+    width:60px;
+    height:15px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:21px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:1142px;
+    top:332px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+#u64 {
+    position:absolute;
+    left:1044px;
+    top:190px;
+    width:430px;
+    height:192px
+}
+
+.u65_normal {
+    background-image: url('../退票订单_1_files/u65_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:96px;
+    height:37px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:102px;
+    height:43px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:92px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../退票订单_1_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:96px;
+    top:0px;
+    width:100px;
+    height:37px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:43px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../退票订单_1_files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:196px;
+    top:0px;
+    width:229px;
+    height:37px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:235px;
+    height:43px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:225px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../退票订单_1_files/u71_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:0px;
+    top:37px;
+    width:96px;
+    height:68px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:102px;
+    height:74px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:92px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../退票订单_1_files/u73_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:96px;
+    top:37px;
+    width:100px;
+    height:68px;
+}
+
+#u73_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:74px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../退票订单_1_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:196px;
+    top:37px;
+    width:229px;
+    height:68px;
+}
+
+#u75_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:235px;
+    height:74px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:225px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../退票订单_1_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:0px;
+    top:105px;
+    width:96px;
+    height:42px;
+}
+
+#u77_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:102px;
+    height:48px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:92px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../退票订单_1_files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:96px;
+    top:105px;
+    width:100px;
+    height:42px;
+}
+
+#u79_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:48px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../退票订单_1_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:196px;
+    top:105px;
+    width:229px;
+    height:42px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:235px;
+    height:48px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:225px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../退票订单_1_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:0px;
+    top:147px;
+    width:96px;
+    height:40px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:102px;
+    height:46px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:92px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../退票订单_1_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:96px;
+    top:147px;
+    width:100px;
+    height:40px;
+}
+
+#u85_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:46px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../退票订单_1_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:196px;
+    top:147px;
+    width:229px;
+    height:40px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:235px;
+    height:46px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:225px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../退票订单_1_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:29px;
+    top:26px;
+    width:221px;
+    height:28px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:227px;
+    height:34px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:217px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../退票订单_1_files/u91_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:637px;
+    top:144px;
+    width:253px;
+    height:28px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:259px;
+    height:34px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:249px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:52px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:41px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_normal {
+    background-image: url('../退票订单_1_files/u103_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:12px;
+    top:143px;
+    width:1125px;
+    height:37px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:1131px;
+    height:43px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:1121px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../退票订单_1_files/u105_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:28px;
+    top:143px;
+    width:346px;
+    height:34px;
+}
+
+#u105_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:346px;
+    height:34px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:342px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107_normal {
+    background-image: url('../退票订单_1_files/u107_normal.png');
+}
+
+.u107_container {
+    position:absolute;
+    left:12px;
+    top:147px;
+    width:130px;
+    height:30px;
+}
+
+#u107_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:136px;
+    height:36px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:126px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109_normal {
+    background-image: url('../退票订单_1_files/u109_normal.png');
+}
+
+.u109_container {
+    position:absolute;
+    left:152px;
+    top:147px;
+    width:20px;
+    height:30px;
+}
+
+#u109_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:36px;
+}
+
+.u110 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111_normal {
+    background-image: url('../退票订单_1_files/u109_normal.png');
+}
+
+.u111_container {
+    position:absolute;
+    left:221px;
+    top:147px;
+    width:20px;
+    height:30px;
+}
+
+#u111_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:36px;
+}
+
+.u112 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113_normal {
+    background-image: url('../退票订单_1_files/u109_normal.png');
+}
+
+.u113_container {
+    position:absolute;
+    left:288px;
+    top:147px;
+    width:20px;
+    height:30px;
+}
+
+#u113_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:26px;
+    height:36px;
+}
+
+.u114 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:16px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115_normal {
+    background-image: url('../退票订单_1_files/u115_normal.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:880px;
+    top:188px;
+    width:60px;
+    height:31px;
+}
+
+#u115_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:66px;
+    height:37px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:56px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117_normal {
+    background-image: url('../退票订单_1_files/u117_normal.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:882px;
+    top:227px;
+    width:57px;
+    height:28px;
+}
+
+#u117_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:63px;
+    height:34px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:-2px;
+    width:53px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119_normal {
+    background-image: url('../退票订单_1_files/u119_normal.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:890px;
+    top:268px;
+    width:49px;
+    height:30px;
+}
+
+#u119_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:55px;
+    height:36px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:45px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121_normal {
+    background-image: url('../退票订单_1_files/u121_normal.png');
+}
+
+.u121_container {
+    position:absolute;
+    left:886px;
+    top:307px;
+    width:57px;
+    height:37px;
+}
+
+#u121_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:63px;
+    height:43px;
+}
+
+.u122 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:53px;
+    height:32px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123_normal {
+    background-image: url('../退票订单_1_files/u123_normal.png');
+}
+
+.u123_container {
+    position:absolute;
+    left:15px;
+    top:54px;
+    width:1071px;
+    height:83px;
+}
+
+#u123_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1071px;
+    height:83px;
+}
+
+.u124 {
+    position:absolute;
+    left:2px;
+    top:34px;
+    width:1067px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125_normal {
+    background-image: url('../退票订单_1_files/u125_normal.png');
+}
+
+.u125_container {
+    position:absolute;
+    left:21px;
+    top:186px;
+    width:1023px;
+    height:193px;
+}
+
+#u125_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1023px;
+    height:193px;
+}
+
+.u126 {
+    position:absolute;
+    left:2px;
+    top:88px;
+    width:1019px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

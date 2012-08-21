@@ -1,0 +1,5622 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_original {
+    background-image: url('../行程单管理_1_files/u0_original.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:900px;
+    height:800px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:906px;
+    height:806px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:392px;
+    width:896px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:900px;
+    height:800px
+}
+
+.u2_original {
+    background-image: url('../行程单管理_1_files/u2_original.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:20px;
+    top:135px;
+    width:100px;
+    height:25px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:20px;
+    top:135px;
+    width:100px;
+    height:25px
+}
+
+.u4_original {
+    background-image: url('../行程单管理_1_files/u2_original.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:130px;
+    top:135px;
+    width:100px;
+    height:25px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:130px;
+    top:135px;
+    width:100px;
+    height:25px
+}
+
+.u6_original {
+    background-image: url('../行程单管理_1_files/u2_original.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:240px;
+    top:135px;
+    width:100px;
+    height:25px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:31px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:3px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:240px;
+    top:135px;
+    width:100px;
+    height:25px
+}
+
+#u8 {
+    position:absolute;
+    left:10px;
+    top:160px;
+    width:777px;
+    height:258px
+}
+
+.u8_table {
+    background-image: url('../行程单管理_1_files/u8_table.png');
+}
+
+.u8_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:781px;
+    height:262px;
+}
+
+.u9_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:33px;
+    height:23px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u9 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:33px;
+    height:23px
+}
+
+.u11_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u11_container {
+    position:absolute;
+    left:33px;
+    top:0px;
+    width:95px;
+    height:23px;
+}
+
+.u12 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11 {
+    position:absolute;
+    left:33px;
+    top:0px;
+    width:95px;
+    height:23px
+}
+
+.u13_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u13_container {
+    position:absolute;
+    left:128px;
+    top:0px;
+    width:60px;
+    height:23px;
+}
+
+.u14 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u13 {
+    position:absolute;
+    left:128px;
+    top:0px;
+    width:60px;
+    height:23px
+}
+
+.u15_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:188px;
+    top:0px;
+    width:60px;
+    height:23px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:188px;
+    top:0px;
+    width:60px;
+    height:23px
+}
+
+.u17_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u17_container {
+    position:absolute;
+    left:249px;
+    top:0px;
+    width:50px;
+    height:23px;
+}
+
+.u18 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17 {
+    position:absolute;
+    left:249px;
+    top:0px;
+    width:50px;
+    height:23px
+}
+
+.u19_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u19_container {
+    position:absolute;
+    left:299px;
+    top:0px;
+    width:50px;
+    height:23px;
+}
+
+.u20 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u19 {
+    position:absolute;
+    left:299px;
+    top:0px;
+    width:50px;
+    height:23px
+}
+
+.u21_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u21_container {
+    position:absolute;
+    left:349px;
+    top:0px;
+    width:134px;
+    height:23px;
+}
+
+.u22 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u21 {
+    position:absolute;
+    left:349px;
+    top:0px;
+    width:134px;
+    height:23px
+}
+
+.u23_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:483px;
+    top:0px;
+    width:89px;
+    height:23px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23 {
+    position:absolute;
+    left:483px;
+    top:0px;
+    width:89px;
+    height:23px
+}
+
+.u25_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:572px;
+    top:0px;
+    width:61px;
+    height:23px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:572px;
+    top:0px;
+    width:61px;
+    height:23px
+}
+
+.u27_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:633px;
+    top:0px;
+    width:82px;
+    height:23px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27 {
+    position:absolute;
+    left:633px;
+    top:0px;
+    width:82px;
+    height:23px
+}
+
+.u29_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:715px;
+    top:0px;
+    width:58px;
+    height:23px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29 {
+    position:absolute;
+    left:715px;
+    top:0px;
+    width:58px;
+    height:23px
+}
+
+.u31_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:33px;
+    height:23px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31 {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:33px;
+    height:23px
+}
+
+.u33_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:33px;
+    top:23px;
+    width:95px;
+    height:23px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33 {
+    position:absolute;
+    left:33px;
+    top:23px;
+    width:95px;
+    height:23px
+}
+
+.u35_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:128px;
+    top:23px;
+    width:60px;
+    height:23px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35 {
+    position:absolute;
+    left:128px;
+    top:23px;
+    width:60px;
+    height:23px
+}
+
+.u37_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:188px;
+    top:23px;
+    width:60px;
+    height:23px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37 {
+    position:absolute;
+    left:188px;
+    top:23px;
+    width:60px;
+    height:23px
+}
+
+.u39_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:249px;
+    top:23px;
+    width:50px;
+    height:23px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39 {
+    position:absolute;
+    left:249px;
+    top:23px;
+    width:50px;
+    height:23px
+}
+
+.u41_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:299px;
+    top:23px;
+    width:50px;
+    height:23px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41 {
+    position:absolute;
+    left:299px;
+    top:23px;
+    width:50px;
+    height:23px
+}
+
+.u43_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:349px;
+    top:23px;
+    width:134px;
+    height:23px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43 {
+    position:absolute;
+    left:349px;
+    top:23px;
+    width:134px;
+    height:23px
+}
+
+.u45_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:483px;
+    top:23px;
+    width:89px;
+    height:23px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45 {
+    position:absolute;
+    left:483px;
+    top:23px;
+    width:89px;
+    height:23px
+}
+
+.u47_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:572px;
+    top:23px;
+    width:61px;
+    height:23px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47 {
+    position:absolute;
+    left:572px;
+    top:23px;
+    width:61px;
+    height:23px
+}
+
+.u49_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:633px;
+    top:23px;
+    width:82px;
+    height:23px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49 {
+    position:absolute;
+    left:633px;
+    top:23px;
+    width:82px;
+    height:23px
+}
+
+.u51_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:715px;
+    top:23px;
+    width:58px;
+    height:23px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51 {
+    position:absolute;
+    left:715px;
+    top:23px;
+    width:58px;
+    height:23px
+}
+
+.u53_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:33px;
+    height:23px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:0px;
+    top:46px;
+    width:33px;
+    height:23px
+}
+
+.u55_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:33px;
+    top:46px;
+    width:95px;
+    height:23px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55 {
+    position:absolute;
+    left:33px;
+    top:46px;
+    width:95px;
+    height:23px
+}
+
+.u57_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:128px;
+    top:46px;
+    width:60px;
+    height:23px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57 {
+    position:absolute;
+    left:128px;
+    top:46px;
+    width:60px;
+    height:23px
+}
+
+.u59_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:188px;
+    top:46px;
+    width:60px;
+    height:23px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59 {
+    position:absolute;
+    left:188px;
+    top:46px;
+    width:60px;
+    height:23px
+}
+
+.u61_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:249px;
+    top:46px;
+    width:50px;
+    height:23px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61 {
+    position:absolute;
+    left:249px;
+    top:46px;
+    width:50px;
+    height:23px
+}
+
+.u63_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:299px;
+    top:46px;
+    width:50px;
+    height:23px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:299px;
+    top:46px;
+    width:50px;
+    height:23px
+}
+
+.u65_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:349px;
+    top:46px;
+    width:134px;
+    height:23px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65 {
+    position:absolute;
+    left:349px;
+    top:46px;
+    width:134px;
+    height:23px
+}
+
+.u67_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:483px;
+    top:46px;
+    width:89px;
+    height:23px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67 {
+    position:absolute;
+    left:483px;
+    top:46px;
+    width:89px;
+    height:23px
+}
+
+.u69_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:572px;
+    top:46px;
+    width:61px;
+    height:23px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69 {
+    position:absolute;
+    left:572px;
+    top:46px;
+    width:61px;
+    height:23px
+}
+
+.u71_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:633px;
+    top:46px;
+    width:82px;
+    height:23px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71 {
+    position:absolute;
+    left:633px;
+    top:46px;
+    width:82px;
+    height:23px
+}
+
+.u73_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:715px;
+    top:46px;
+    width:58px;
+    height:23px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73 {
+    position:absolute;
+    left:715px;
+    top:46px;
+    width:58px;
+    height:23px
+}
+
+.u75_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:0px;
+    top:69px;
+    width:33px;
+    height:23px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75 {
+    position:absolute;
+    left:0px;
+    top:69px;
+    width:33px;
+    height:23px
+}
+
+.u77_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:33px;
+    top:69px;
+    width:95px;
+    height:23px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77 {
+    position:absolute;
+    left:33px;
+    top:69px;
+    width:95px;
+    height:23px
+}
+
+.u79_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:128px;
+    top:69px;
+    width:60px;
+    height:23px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79 {
+    position:absolute;
+    left:128px;
+    top:69px;
+    width:60px;
+    height:23px
+}
+
+.u81_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:188px;
+    top:69px;
+    width:60px;
+    height:23px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81 {
+    position:absolute;
+    left:188px;
+    top:69px;
+    width:60px;
+    height:23px
+}
+
+.u83_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:249px;
+    top:69px;
+    width:50px;
+    height:23px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83 {
+    position:absolute;
+    left:249px;
+    top:69px;
+    width:50px;
+    height:23px
+}
+
+.u85_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:299px;
+    top:69px;
+    width:50px;
+    height:23px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85 {
+    position:absolute;
+    left:299px;
+    top:69px;
+    width:50px;
+    height:23px
+}
+
+.u87_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:349px;
+    top:69px;
+    width:134px;
+    height:23px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87 {
+    position:absolute;
+    left:349px;
+    top:69px;
+    width:134px;
+    height:23px
+}
+
+.u89_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:483px;
+    top:69px;
+    width:89px;
+    height:23px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:483px;
+    top:69px;
+    width:89px;
+    height:23px
+}
+
+.u91_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:572px;
+    top:69px;
+    width:61px;
+    height:23px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91 {
+    position:absolute;
+    left:572px;
+    top:69px;
+    width:61px;
+    height:23px
+}
+
+.u93_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:633px;
+    top:69px;
+    width:82px;
+    height:23px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93 {
+    position:absolute;
+    left:633px;
+    top:69px;
+    width:82px;
+    height:23px
+}
+
+.u95_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:715px;
+    top:69px;
+    width:58px;
+    height:23px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95 {
+    position:absolute;
+    left:715px;
+    top:69px;
+    width:58px;
+    height:23px
+}
+
+.u97_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:33px;
+    height:23px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97 {
+    position:absolute;
+    left:0px;
+    top:92px;
+    width:33px;
+    height:23px
+}
+
+.u99_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:33px;
+    top:92px;
+    width:95px;
+    height:23px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:33px;
+    top:92px;
+    width:95px;
+    height:23px
+}
+
+.u101_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:128px;
+    top:92px;
+    width:60px;
+    height:23px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101 {
+    position:absolute;
+    left:128px;
+    top:92px;
+    width:60px;
+    height:23px
+}
+
+.u103_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:188px;
+    top:92px;
+    width:60px;
+    height:23px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103 {
+    position:absolute;
+    left:188px;
+    top:92px;
+    width:60px;
+    height:23px
+}
+
+.u105_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:249px;
+    top:92px;
+    width:50px;
+    height:23px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105 {
+    position:absolute;
+    left:249px;
+    top:92px;
+    width:50px;
+    height:23px
+}
+
+.u107_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u107_container {
+    position:absolute;
+    left:299px;
+    top:92px;
+    width:50px;
+    height:23px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107 {
+    position:absolute;
+    left:299px;
+    top:92px;
+    width:50px;
+    height:23px
+}
+
+.u109_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u109_container {
+    position:absolute;
+    left:349px;
+    top:92px;
+    width:134px;
+    height:23px;
+}
+
+.u110 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109 {
+    position:absolute;
+    left:349px;
+    top:92px;
+    width:134px;
+    height:23px
+}
+
+.u111_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u111_container {
+    position:absolute;
+    left:483px;
+    top:92px;
+    width:89px;
+    height:23px;
+}
+
+.u112 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111 {
+    position:absolute;
+    left:483px;
+    top:92px;
+    width:89px;
+    height:23px
+}
+
+.u113_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u113_container {
+    position:absolute;
+    left:572px;
+    top:92px;
+    width:61px;
+    height:23px;
+}
+
+.u114 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:572px;
+    top:92px;
+    width:61px;
+    height:23px
+}
+
+.u115_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u115_container {
+    position:absolute;
+    left:633px;
+    top:92px;
+    width:82px;
+    height:23px;
+}
+
+.u116 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115 {
+    position:absolute;
+    left:633px;
+    top:92px;
+    width:82px;
+    height:23px
+}
+
+.u117_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:715px;
+    top:92px;
+    width:58px;
+    height:23px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u117 {
+    position:absolute;
+    left:715px;
+    top:92px;
+    width:58px;
+    height:23px
+}
+
+.u119_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u119_container {
+    position:absolute;
+    left:0px;
+    top:115px;
+    width:33px;
+    height:23px;
+}
+
+.u120 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119 {
+    position:absolute;
+    left:0px;
+    top:115px;
+    width:33px;
+    height:23px
+}
+
+.u121_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u121_container {
+    position:absolute;
+    left:33px;
+    top:115px;
+    width:95px;
+    height:23px;
+}
+
+.u122 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u121 {
+    position:absolute;
+    left:33px;
+    top:115px;
+    width:95px;
+    height:23px
+}
+
+.u123_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u123_container {
+    position:absolute;
+    left:128px;
+    top:115px;
+    width:60px;
+    height:23px;
+}
+
+.u124 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u123 {
+    position:absolute;
+    left:128px;
+    top:115px;
+    width:60px;
+    height:23px
+}
+
+.u125_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u125_container {
+    position:absolute;
+    left:188px;
+    top:115px;
+    width:60px;
+    height:23px;
+}
+
+.u126 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125 {
+    position:absolute;
+    left:188px;
+    top:115px;
+    width:60px;
+    height:23px
+}
+
+.u127_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u127_container {
+    position:absolute;
+    left:249px;
+    top:115px;
+    width:50px;
+    height:23px;
+}
+
+.u128 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127 {
+    position:absolute;
+    left:249px;
+    top:115px;
+    width:50px;
+    height:23px
+}
+
+.u129_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u129_container {
+    position:absolute;
+    left:299px;
+    top:115px;
+    width:50px;
+    height:23px;
+}
+
+.u130 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:299px;
+    top:115px;
+    width:50px;
+    height:23px
+}
+
+.u131_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u131_container {
+    position:absolute;
+    left:349px;
+    top:115px;
+    width:134px;
+    height:23px;
+}
+
+.u132 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131 {
+    position:absolute;
+    left:349px;
+    top:115px;
+    width:134px;
+    height:23px
+}
+
+.u133_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u133_container {
+    position:absolute;
+    left:483px;
+    top:115px;
+    width:89px;
+    height:23px;
+}
+
+.u134 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133 {
+    position:absolute;
+    left:483px;
+    top:115px;
+    width:89px;
+    height:23px
+}
+
+.u135_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u135_container {
+    position:absolute;
+    left:572px;
+    top:115px;
+    width:61px;
+    height:23px;
+}
+
+.u136 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135 {
+    position:absolute;
+    left:572px;
+    top:115px;
+    width:61px;
+    height:23px
+}
+
+.u137_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u137_container {
+    position:absolute;
+    left:633px;
+    top:115px;
+    width:82px;
+    height:23px;
+}
+
+.u138 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:633px;
+    top:115px;
+    width:82px;
+    height:23px
+}
+
+.u139_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u139_container {
+    position:absolute;
+    left:715px;
+    top:115px;
+    width:58px;
+    height:23px;
+}
+
+.u140 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139 {
+    position:absolute;
+    left:715px;
+    top:115px;
+    width:58px;
+    height:23px
+}
+
+.u141_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u141_container {
+    position:absolute;
+    left:0px;
+    top:138px;
+    width:33px;
+    height:23px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141 {
+    position:absolute;
+    left:0px;
+    top:138px;
+    width:33px;
+    height:23px
+}
+
+.u143_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u143_container {
+    position:absolute;
+    left:33px;
+    top:138px;
+    width:95px;
+    height:23px;
+}
+
+.u144 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143 {
+    position:absolute;
+    left:33px;
+    top:138px;
+    width:95px;
+    height:23px
+}
+
+.u145_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u145_container {
+    position:absolute;
+    left:128px;
+    top:138px;
+    width:60px;
+    height:23px;
+}
+
+.u146 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145 {
+    position:absolute;
+    left:128px;
+    top:138px;
+    width:60px;
+    height:23px
+}
+
+.u147_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u147_container {
+    position:absolute;
+    left:188px;
+    top:138px;
+    width:60px;
+    height:23px;
+}
+
+.u148 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147 {
+    position:absolute;
+    left:188px;
+    top:138px;
+    width:60px;
+    height:23px
+}
+
+.u149_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u149_container {
+    position:absolute;
+    left:249px;
+    top:138px;
+    width:50px;
+    height:23px;
+}
+
+.u150 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149 {
+    position:absolute;
+    left:249px;
+    top:138px;
+    width:50px;
+    height:23px
+}
+
+.u151_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u151_container {
+    position:absolute;
+    left:299px;
+    top:138px;
+    width:50px;
+    height:23px;
+}
+
+.u152 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151 {
+    position:absolute;
+    left:299px;
+    top:138px;
+    width:50px;
+    height:23px
+}
+
+.u153_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u153_container {
+    position:absolute;
+    left:349px;
+    top:138px;
+    width:134px;
+    height:23px;
+}
+
+.u154 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u153 {
+    position:absolute;
+    left:349px;
+    top:138px;
+    width:134px;
+    height:23px
+}
+
+.u155_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u155_container {
+    position:absolute;
+    left:483px;
+    top:138px;
+    width:89px;
+    height:23px;
+}
+
+.u156 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u155 {
+    position:absolute;
+    left:483px;
+    top:138px;
+    width:89px;
+    height:23px
+}
+
+.u157_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u157_container {
+    position:absolute;
+    left:572px;
+    top:138px;
+    width:61px;
+    height:23px;
+}
+
+.u158 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157 {
+    position:absolute;
+    left:572px;
+    top:138px;
+    width:61px;
+    height:23px
+}
+
+.u159_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:633px;
+    top:138px;
+    width:82px;
+    height:23px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159 {
+    position:absolute;
+    left:633px;
+    top:138px;
+    width:82px;
+    height:23px
+}
+
+.u161_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u161_container {
+    position:absolute;
+    left:715px;
+    top:138px;
+    width:58px;
+    height:23px;
+}
+
+.u162 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161 {
+    position:absolute;
+    left:715px;
+    top:138px;
+    width:58px;
+    height:23px
+}
+
+.u163_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:0px;
+    top:161px;
+    width:33px;
+    height:23px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163 {
+    position:absolute;
+    left:0px;
+    top:161px;
+    width:33px;
+    height:23px
+}
+
+.u165_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:33px;
+    top:161px;
+    width:95px;
+    height:23px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165 {
+    position:absolute;
+    left:33px;
+    top:161px;
+    width:95px;
+    height:23px
+}
+
+.u167_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:128px;
+    top:161px;
+    width:60px;
+    height:23px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167 {
+    position:absolute;
+    left:128px;
+    top:161px;
+    width:60px;
+    height:23px
+}
+
+.u169_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:188px;
+    top:161px;
+    width:60px;
+    height:23px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169 {
+    position:absolute;
+    left:188px;
+    top:161px;
+    width:60px;
+    height:23px
+}
+
+.u171_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:249px;
+    top:161px;
+    width:50px;
+    height:23px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171 {
+    position:absolute;
+    left:249px;
+    top:161px;
+    width:50px;
+    height:23px
+}
+
+.u173_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:299px;
+    top:161px;
+    width:50px;
+    height:23px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173 {
+    position:absolute;
+    left:299px;
+    top:161px;
+    width:50px;
+    height:23px
+}
+
+.u175_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:349px;
+    top:161px;
+    width:134px;
+    height:23px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175 {
+    position:absolute;
+    left:349px;
+    top:161px;
+    width:134px;
+    height:23px
+}
+
+.u177_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u177_container {
+    position:absolute;
+    left:483px;
+    top:161px;
+    width:89px;
+    height:23px;
+}
+
+.u178 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177 {
+    position:absolute;
+    left:483px;
+    top:161px;
+    width:89px;
+    height:23px
+}
+
+.u179_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u179_container {
+    position:absolute;
+    left:572px;
+    top:161px;
+    width:61px;
+    height:23px;
+}
+
+.u180 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u179 {
+    position:absolute;
+    left:572px;
+    top:161px;
+    width:61px;
+    height:23px
+}
+
+.u181_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u181_container {
+    position:absolute;
+    left:633px;
+    top:161px;
+    width:82px;
+    height:23px;
+}
+
+.u182 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181 {
+    position:absolute;
+    left:633px;
+    top:161px;
+    width:82px;
+    height:23px
+}
+
+.u183_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u183_container {
+    position:absolute;
+    left:715px;
+    top:161px;
+    width:58px;
+    height:23px;
+}
+
+.u184 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183 {
+    position:absolute;
+    left:715px;
+    top:161px;
+    width:58px;
+    height:23px
+}
+
+.u185_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u185_container {
+    position:absolute;
+    left:0px;
+    top:184px;
+    width:33px;
+    height:23px;
+}
+
+.u186 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u185 {
+    position:absolute;
+    left:0px;
+    top:184px;
+    width:33px;
+    height:23px
+}
+
+.u187_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u187_container {
+    position:absolute;
+    left:33px;
+    top:184px;
+    width:95px;
+    height:23px;
+}
+
+.u188 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u187 {
+    position:absolute;
+    left:33px;
+    top:184px;
+    width:95px;
+    height:23px
+}
+
+.u189_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u189_container {
+    position:absolute;
+    left:128px;
+    top:184px;
+    width:60px;
+    height:23px;
+}
+
+.u190 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u189 {
+    position:absolute;
+    left:128px;
+    top:184px;
+    width:60px;
+    height:23px
+}
+
+.u191_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u191_container {
+    position:absolute;
+    left:188px;
+    top:184px;
+    width:60px;
+    height:23px;
+}
+
+.u192 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u191 {
+    position:absolute;
+    left:188px;
+    top:184px;
+    width:60px;
+    height:23px
+}
+
+.u193_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u193_container {
+    position:absolute;
+    left:249px;
+    top:184px;
+    width:50px;
+    height:23px;
+}
+
+.u194 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u193 {
+    position:absolute;
+    left:249px;
+    top:184px;
+    width:50px;
+    height:23px
+}
+
+.u195_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u195_container {
+    position:absolute;
+    left:299px;
+    top:184px;
+    width:50px;
+    height:23px;
+}
+
+.u196 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u195 {
+    position:absolute;
+    left:299px;
+    top:184px;
+    width:50px;
+    height:23px
+}
+
+.u197_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u197_container {
+    position:absolute;
+    left:349px;
+    top:184px;
+    width:134px;
+    height:23px;
+}
+
+.u198 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u197 {
+    position:absolute;
+    left:349px;
+    top:184px;
+    width:134px;
+    height:23px
+}
+
+.u199_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u199_container {
+    position:absolute;
+    left:483px;
+    top:184px;
+    width:89px;
+    height:23px;
+}
+
+.u200 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u199 {
+    position:absolute;
+    left:483px;
+    top:184px;
+    width:89px;
+    height:23px
+}
+
+.u201_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u201_container {
+    position:absolute;
+    left:572px;
+    top:184px;
+    width:61px;
+    height:23px;
+}
+
+.u202 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u201 {
+    position:absolute;
+    left:572px;
+    top:184px;
+    width:61px;
+    height:23px
+}
+
+.u203_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u203_container {
+    position:absolute;
+    left:633px;
+    top:184px;
+    width:82px;
+    height:23px;
+}
+
+.u204 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u203 {
+    position:absolute;
+    left:633px;
+    top:184px;
+    width:82px;
+    height:23px
+}
+
+.u205_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u205_container {
+    position:absolute;
+    left:715px;
+    top:184px;
+    width:58px;
+    height:23px;
+}
+
+.u206 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u205 {
+    position:absolute;
+    left:715px;
+    top:184px;
+    width:58px;
+    height:23px
+}
+
+.u207_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u207_container {
+    position:absolute;
+    left:0px;
+    top:207px;
+    width:33px;
+    height:23px;
+}
+
+.u208 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u207 {
+    position:absolute;
+    left:0px;
+    top:207px;
+    width:33px;
+    height:23px
+}
+
+.u209_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u209_container {
+    position:absolute;
+    left:33px;
+    top:207px;
+    width:95px;
+    height:23px;
+}
+
+.u210 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u209 {
+    position:absolute;
+    left:33px;
+    top:207px;
+    width:95px;
+    height:23px
+}
+
+.u211_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u211_container {
+    position:absolute;
+    left:128px;
+    top:207px;
+    width:60px;
+    height:23px;
+}
+
+.u212 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u211 {
+    position:absolute;
+    left:128px;
+    top:207px;
+    width:60px;
+    height:23px
+}
+
+.u213_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u213_container {
+    position:absolute;
+    left:188px;
+    top:207px;
+    width:60px;
+    height:23px;
+}
+
+.u214 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u213 {
+    position:absolute;
+    left:188px;
+    top:207px;
+    width:60px;
+    height:23px
+}
+
+.u215_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u215_container {
+    position:absolute;
+    left:249px;
+    top:207px;
+    width:50px;
+    height:23px;
+}
+
+.u216 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u215 {
+    position:absolute;
+    left:249px;
+    top:207px;
+    width:50px;
+    height:23px
+}
+
+.u217_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u217_container {
+    position:absolute;
+    left:299px;
+    top:207px;
+    width:50px;
+    height:23px;
+}
+
+.u218 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u217 {
+    position:absolute;
+    left:299px;
+    top:207px;
+    width:50px;
+    height:23px
+}
+
+.u219_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u219_container {
+    position:absolute;
+    left:349px;
+    top:207px;
+    width:134px;
+    height:23px;
+}
+
+.u220 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u219 {
+    position:absolute;
+    left:349px;
+    top:207px;
+    width:134px;
+    height:23px
+}
+
+.u221_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u221_container {
+    position:absolute;
+    left:483px;
+    top:207px;
+    width:89px;
+    height:23px;
+}
+
+.u222 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u221 {
+    position:absolute;
+    left:483px;
+    top:207px;
+    width:89px;
+    height:23px
+}
+
+.u223_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u223_container {
+    position:absolute;
+    left:572px;
+    top:207px;
+    width:61px;
+    height:23px;
+}
+
+.u224 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u223 {
+    position:absolute;
+    left:572px;
+    top:207px;
+    width:61px;
+    height:23px
+}
+
+.u225_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u225_container {
+    position:absolute;
+    left:633px;
+    top:207px;
+    width:82px;
+    height:23px;
+}
+
+.u226 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u225 {
+    position:absolute;
+    left:633px;
+    top:207px;
+    width:82px;
+    height:23px
+}
+
+.u227_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u227_container {
+    position:absolute;
+    left:715px;
+    top:207px;
+    width:58px;
+    height:23px;
+}
+
+.u228 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u227 {
+    position:absolute;
+    left:715px;
+    top:207px;
+    width:58px;
+    height:23px
+}
+
+.u229_original {
+    background-image: url('../行程单管理_1_files/u9_original.png');
+}
+
+.u229_container {
+    position:absolute;
+    left:0px;
+    top:230px;
+    width:33px;
+    height:23px;
+}
+
+.u230 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u229 {
+    position:absolute;
+    left:0px;
+    top:230px;
+    width:33px;
+    height:23px
+}
+
+.u231_original {
+    background-image: url('../行程单管理_1_files/u11_original.png');
+}
+
+.u231_container {
+    position:absolute;
+    left:33px;
+    top:230px;
+    width:95px;
+    height:23px;
+}
+
+.u232 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:91px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u231 {
+    position:absolute;
+    left:33px;
+    top:230px;
+    width:95px;
+    height:23px
+}
+
+.u233_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u233_container {
+    position:absolute;
+    left:128px;
+    top:230px;
+    width:60px;
+    height:23px;
+}
+
+.u234 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u233 {
+    position:absolute;
+    left:128px;
+    top:230px;
+    width:60px;
+    height:23px
+}
+
+.u235_original {
+    background-image: url('../行程单管理_1_files/u13_original.png');
+}
+
+.u235_container {
+    position:absolute;
+    left:188px;
+    top:230px;
+    width:60px;
+    height:23px;
+}
+
+.u236 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u235 {
+    position:absolute;
+    left:188px;
+    top:230px;
+    width:60px;
+    height:23px
+}
+
+.u237_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u237_container {
+    position:absolute;
+    left:249px;
+    top:230px;
+    width:50px;
+    height:23px;
+}
+
+.u238 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u237 {
+    position:absolute;
+    left:249px;
+    top:230px;
+    width:50px;
+    height:23px
+}
+
+.u239_original {
+    background-image: url('../行程单管理_1_files/u17_original.png');
+}
+
+.u239_container {
+    position:absolute;
+    left:299px;
+    top:230px;
+    width:50px;
+    height:23px;
+}
+
+.u240 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:46px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u239 {
+    position:absolute;
+    left:299px;
+    top:230px;
+    width:50px;
+    height:23px
+}
+
+.u241_original {
+    background-image: url('../行程单管理_1_files/u21_original.png');
+}
+
+.u241_container {
+    position:absolute;
+    left:349px;
+    top:230px;
+    width:134px;
+    height:23px;
+}
+
+.u242 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:130px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u241 {
+    position:absolute;
+    left:349px;
+    top:230px;
+    width:134px;
+    height:23px
+}
+
+.u243_original {
+    background-image: url('../行程单管理_1_files/u23_original.png');
+}
+
+.u243_container {
+    position:absolute;
+    left:483px;
+    top:230px;
+    width:89px;
+    height:23px;
+}
+
+.u244 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:85px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u243 {
+    position:absolute;
+    left:483px;
+    top:230px;
+    width:89px;
+    height:23px
+}
+
+.u245_original {
+    background-image: url('../行程单管理_1_files/u25_original.png');
+}
+
+.u245_container {
+    position:absolute;
+    left:572px;
+    top:230px;
+    width:61px;
+    height:23px;
+}
+
+.u246 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u245 {
+    position:absolute;
+    left:572px;
+    top:230px;
+    width:61px;
+    height:23px
+}
+
+.u247_original {
+    background-image: url('../行程单管理_1_files/u27_original.png');
+}
+
+.u247_container {
+    position:absolute;
+    left:633px;
+    top:230px;
+    width:82px;
+    height:23px;
+}
+
+.u248 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:78px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u247 {
+    position:absolute;
+    left:633px;
+    top:230px;
+    width:82px;
+    height:23px
+}
+
+.u249_original {
+    background-image: url('../行程单管理_1_files/u29_original.png');
+}
+
+.u249_container {
+    position:absolute;
+    left:715px;
+    top:230px;
+    width:58px;
+    height:23px;
+}
+
+.u250 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:54px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u249 {
+    position:absolute;
+    left:715px;
+    top:230px;
+    width:58px;
+    height:23px
+}
+
+.u251_original {
+    background-image: url('../行程单_files/u206_original.png');
+}
+
+.u251_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:800px;
+    height:100px;
+}
+
+#u251_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:806px;
+    height:106px;
+}
+
+.u252 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u251 {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:800px;
+    height:100px
+}
+
+.u253 {
+    position:absolute;
+    left:20px;
+    top:20px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u254 {
+    position:absolute;
+    left:220px;
+    top:22px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u255 {
+    position:absolute;
+    left:420px;
+    top:20px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u256 {
+    position:absolute;
+    left:20px;
+    top:50px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u257 {
+    position:absolute;
+    left:220px;
+    top:52px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u258 {
+    position:absolute;
+    left:420px;
+    top:50px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u259 {
+    position:absolute;
+    left:218px;
+    top:82px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u260 {
+    position:absolute;
+    left:90px;
+    top:20px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u260_text_sketch {
+    font-family: '应用字体';
+}
+
+.u261 {
+    position:absolute;
+    left:90px;
+    top:48px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u261_text_sketch {
+    font-family: '应用字体';
+}
+
+.u262 {
+    position:absolute;
+    left:290px;
+    top:21px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u262_text_sketch {
+    font-family: '应用字体';
+}
+
+.u263 {
+    position:absolute;
+    left:290px;
+    top:49px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u263_text_sketch {
+    font-family: '应用字体';
+}
+
+.u264 {
+    position:absolute;
+    left:490px;
+    top:20px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u264_text_sketch {
+    font-family: '应用字体';
+}
+
+.u265 {
+    position:absolute;
+    left:490px;
+    top:48px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u265_text_sketch {
+    font-family: '应用字体';
+}
+
+.u266 {
+    position:absolute;
+    left:610px;
+    top:21px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u267 {
+    position:absolute;
+    left:676px;
+    top:20px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u267_text_sketch {
+    font-family: '应用字体';
+}
+
+.u268 {
+    position:absolute;
+    left:291px;
+    top:80px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u268_text_sketch {
+    font-family: '应用字体';
+}
+
+.u269 {
+    position:absolute;
+    left:20px;
+    top:78px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u270 {
+    position:absolute;
+    left:90px;
+    top:76px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u270_text_sketch {
+    font-family: '应用字体';
+}
+
+.u271 {
+    position:absolute;
+    left:685px;
+    top:75px;
+    width:100px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u271_text_sketch {
+    font-family: '应用字体';
+}
+
+.u272 {
+    position:absolute;
+    left:622px;
+    top:48px;
+    width:100px;
+    height:22px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u272_text_sketch {
+    font-family: '应用字体';
+}
+
+.u273 {
+    position:absolute;
+    left:601px;
+    top:49px;
+    width:29px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u274 {
+    position:absolute;
+    left:420px;
+    top:81px;
+    width:70px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u275 {
+    position:absolute;
+    left:500px;
+    top:78px;
+    width:110px;
+    height:22px;
+    ;
+    ;
+    ;
+    font-family:'微软雅黑';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u275_text_sketch {
+    font-family: '应用字体';
+}
+
+#u277 {
+    position:absolute;
+    left:40px;
+    top:424px;
+    width:784px;
+    height:411px
+}
+
+.u277_table {
+    background-image: url('../行程单管理_1_files/u277_table.png');
+}
+
+.u277_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:788px;
+    height:415px;
+}
+
+.u278_original {
+    background-image: url('../行程单管理_1_files/u278_original.png');
+}
+
+.u278_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:25px;
+}
+
+.u279 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u278 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:25px
+}
+
+.u280_original {
+    background-image: url('../行程单管理_1_files/u280_original.png');
+}
+
+.u280_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:200px;
+    height:25px;
+}
+
+.u281 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u280 {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:200px;
+    height:25px
+}
+
+.u282_original {
+    background-image: url('../行程单管理_1_files/u282_original.png');
+}
+
+.u282_container {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:284px;
+    height:25px;
+}
+
+.u283 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u282 {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:284px;
+    height:25px
+}
+
+.u284_original {
+    background-image: url('../行程单管理_1_files/u284_original.png');
+}
+
+.u284_container {
+    position:absolute;
+    left:584px;
+    top:0px;
+    width:195px;
+    height:25px;
+}
+
+.u285 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u284 {
+    position:absolute;
+    left:584px;
+    top:0px;
+    width:195px;
+    height:25px
+}
+
+.u286_original {
+    background-image: url('../行程单管理_1_files/u286_original.png');
+}
+
+.u286_container {
+    position:absolute;
+    left:0px;
+    top:25px;
+    width:100px;
+    height:137px;
+}
+
+.u287 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u286 {
+    position:absolute;
+    left:0px;
+    top:25px;
+    width:100px;
+    height:137px
+}
+
+.u288_original {
+    background-image: url('../行程单管理_1_files/u288_original.png');
+}
+
+.u288_container {
+    position:absolute;
+    left:100px;
+    top:25px;
+    width:200px;
+    height:137px;
+}
+
+.u289 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:95px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u288 {
+    position:absolute;
+    left:100px;
+    top:25px;
+    width:200px;
+    height:137px
+}
+
+.u290_original {
+    background-image: url('../行程单管理_1_files/u290_original.png');
+}
+
+.u290_container {
+    position:absolute;
+    left:300px;
+    top:25px;
+    width:284px;
+    height:137px;
+}
+
+.u291 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u290 {
+    position:absolute;
+    left:300px;
+    top:25px;
+    width:284px;
+    height:137px
+}
+
+.u292_original {
+    background-image: url('../行程单管理_1_files/u292_original.png');
+}
+
+.u292_container {
+    position:absolute;
+    left:584px;
+    top:25px;
+    width:195px;
+    height:137px;
+}
+
+.u293 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:133px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u292 {
+    position:absolute;
+    left:584px;
+    top:25px;
+    width:195px;
+    height:137px
+}
+
+.u294_original {
+    background-image: url('../行程单管理_1_files/u294_original.png');
+}
+
+.u294_container {
+    position:absolute;
+    left:0px;
+    top:162px;
+    width:100px;
+    height:61px;
+}
+
+.u295 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u294 {
+    position:absolute;
+    left:0px;
+    top:162px;
+    width:100px;
+    height:61px
+}
+
+.u296_original {
+    background-image: url('../行程单管理_1_files/u296_original.png');
+}
+
+.u296_container {
+    position:absolute;
+    left:100px;
+    top:162px;
+    width:200px;
+    height:61px;
+}
+
+.u297 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u296 {
+    position:absolute;
+    left:100px;
+    top:162px;
+    width:200px;
+    height:61px
+}
+
+.u298_original {
+    background-image: url('../行程单管理_1_files/u298_original.png');
+}
+
+.u298_container {
+    position:absolute;
+    left:300px;
+    top:162px;
+    width:284px;
+    height:61px;
+}
+
+.u299 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:57px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u298 {
+    position:absolute;
+    left:300px;
+    top:162px;
+    width:284px;
+    height:61px
+}
+
+.u300_original {
+    background-image: url('../行程单管理_1_files/u300_original.png');
+}
+
+.u300_container {
+    position:absolute;
+    left:584px;
+    top:162px;
+    width:195px;
+    height:61px;
+}
+
+.u301 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u300 {
+    position:absolute;
+    left:584px;
+    top:162px;
+    width:195px;
+    height:61px
+}
+
+.u302_original {
+    background-image: url('../行程单管理_1_files/u302_original.png');
+}
+
+.u302_container {
+    position:absolute;
+    left:0px;
+    top:223px;
+    width:100px;
+    height:80px;
+}
+
+.u303 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u302 {
+    position:absolute;
+    left:0px;
+    top:223px;
+    width:100px;
+    height:80px
+}
+
+.u304_original {
+    background-image: url('../行程单管理_1_files/u304_original.png');
+}
+
+.u304_container {
+    position:absolute;
+    left:100px;
+    top:223px;
+    width:200px;
+    height:80px;
+}
+
+.u305 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u304 {
+    position:absolute;
+    left:100px;
+    top:223px;
+    width:200px;
+    height:80px
+}
+
+.u306_original {
+    background-image: url('../行程单管理_1_files/u306_original.png');
+}
+
+.u306_container {
+    position:absolute;
+    left:300px;
+    top:223px;
+    width:284px;
+    height:80px;
+}
+
+.u307 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:76px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u306 {
+    position:absolute;
+    left:300px;
+    top:223px;
+    width:284px;
+    height:80px
+}
+
+.u308_original {
+    background-image: url('../行程单管理_1_files/u308_original.png');
+}
+
+.u308_container {
+    position:absolute;
+    left:584px;
+    top:223px;
+    width:195px;
+    height:80px;
+}
+
+.u309 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u308 {
+    position:absolute;
+    left:584px;
+    top:223px;
+    width:195px;
+    height:80px
+}
+
+.u310_original {
+    background-image: url('../行程单管理_1_files/u302_original.png');
+}
+
+.u310_container {
+    position:absolute;
+    left:0px;
+    top:303px;
+    width:100px;
+    height:80px;
+}
+
+.u311 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u310 {
+    position:absolute;
+    left:0px;
+    top:303px;
+    width:100px;
+    height:80px
+}
+
+.u312_original {
+    background-image: url('../行程单管理_1_files/u304_original.png');
+}
+
+.u312_container {
+    position:absolute;
+    left:100px;
+    top:303px;
+    width:200px;
+    height:80px;
+}
+
+.u313 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:38px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u312 {
+    position:absolute;
+    left:100px;
+    top:303px;
+    width:200px;
+    height:80px
+}
+
+.u314_original {
+    background-image: url('../行程单管理_1_files/u306_original.png');
+}
+
+.u314_container {
+    position:absolute;
+    left:300px;
+    top:303px;
+    width:284px;
+    height:80px;
+}
+
+.u315 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:76px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u314 {
+    position:absolute;
+    left:300px;
+    top:303px;
+    width:284px;
+    height:80px
+}
+
+.u316_original {
+    background-image: url('../行程单管理_1_files/u308_original.png');
+}
+
+.u316_container {
+    position:absolute;
+    left:584px;
+    top:303px;
+    width:195px;
+    height:80px;
+}
+
+.u317 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u316 {
+    position:absolute;
+    left:584px;
+    top:303px;
+    width:195px;
+    height:80px
+}
+
+.u318_original {
+    background-image: url('../行程单管理_1_files/u318_original.png');
+}
+
+.u318_container {
+    position:absolute;
+    left:0px;
+    top:383px;
+    width:100px;
+    height:23px;
+}
+
+.u319 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u318 {
+    position:absolute;
+    left:0px;
+    top:383px;
+    width:100px;
+    height:23px
+}
+
+.u320_original {
+    background-image: url('../行程单管理_1_files/u320_original.png');
+}
+
+.u320_container {
+    position:absolute;
+    left:100px;
+    top:383px;
+    width:200px;
+    height:23px;
+}
+
+.u321 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u320 {
+    position:absolute;
+    left:100px;
+    top:383px;
+    width:200px;
+    height:23px
+}
+
+.u322_original {
+    background-image: url('../行程单管理_1_files/u322_original.png');
+}
+
+.u322_container {
+    position:absolute;
+    left:300px;
+    top:383px;
+    width:284px;
+    height:23px;
+}
+
+.u323 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u322 {
+    position:absolute;
+    left:300px;
+    top:383px;
+    width:284px;
+    height:23px
+}
+
+.u324_original {
+    background-image: url('../行程单管理_1_files/u324_original.png');
+}
+
+.u324_container {
+    position:absolute;
+    left:584px;
+    top:383px;
+    width:195px;
+    height:23px;
+}
+
+.u325 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u324 {
+    position:absolute;
+    left:584px;
+    top:383px;
+    width:195px;
+    height:23px
+}
+

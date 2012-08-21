@@ -1,0 +1,3039 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../出票成功订单详情_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:296px;
+    top:11px;
+    width:445px;
+    height:50px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:445px;
+    height:50px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:441px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../出票成功订单详情_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:594px;
+    top:11px;
+    width:251px;
+    height:50px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:251px;
+    height:50px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:247px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../出票成功订单详情_files/u0_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:296px;
+    top:11px;
+    width:445px;
+    height:50px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:445px;
+    height:50px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:441px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../出票成功订单详情_files/u2_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:594px;
+    top:11px;
+    width:251px;
+    height:50px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:251px;
+    height:50px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:17px;
+    width:247px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../出票成功订单详情_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:508px;
+    top:16px;
+    width:52px;
+    height:14px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:20px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../出票成功订单详情_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:402px;
+    top:16px;
+    width:88px;
+    height:14px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:94px;
+    height:20px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:84px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../出票成功订单详情_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:8px;
+    top:1142px;
+    width:1069px;
+    height:98px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1069px;
+    height:98px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1065px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../出票成功订单详情_files/u14_normal.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:2px;
+    top:63px;
+    width:1119px;
+    height:195px;
+}
+
+#u14_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1119px;
+    height:195px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1115px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../出票成功订单详情_files/u16_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:8px;
+    top:668px;
+    width:1123px;
+    height:352px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1123px;
+    height:352px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:168px;
+    width:1119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../出票成功订单详情_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:710px;
+    top:899px;
+    width:6px;
+    height:78px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../出票成功订单详情_files/u18_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:816px;
+    top:899px;
+    width:6px;
+    height:78px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22_normal {
+    background-image: url('../出票成功订单详情_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:741px;
+    top:901px;
+    width:37px;
+    height:76px;
+}
+
+#u22_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:37px;
+    height:76px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:33px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:739px;
+    top:909px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25 {
+    position:absolute;
+    left:758px;
+    top:944px;
+    width:26px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_normal {
+    background-image: url('../出票成功订单详情_files/u18_normal.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:897px;
+    top:899px;
+    width:6px;
+    height:78px;
+}
+
+#u26_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28_normal {
+    background-image: url('../出票成功订单详情_files/u28_normal.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:928px;
+    top:901px;
+    width:167px;
+    height:76px;
+}
+
+#u28_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:167px;
+    height:76px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30_normal {
+    background-image: url('../出票成功订单详情_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:913px;
+    top:902px;
+    width:83px;
+    height:68px;
+}
+
+#u30_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:83px;
+    height:68px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32 {
+    position:absolute;
+    left:1046px;
+    top:909px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../出票成功订单详情_files/u18_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:1008px;
+    top:899px;
+    width:6px;
+    height:78px;
+}
+
+#u33_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../出票成功订单详情_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:785px;
+    top:33px;
+    width:29px;
+    height:32px;
+}
+
+#u35_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:29px;
+    height:32px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:25px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../出票成功订单详情_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:646px;
+    top:68px;
+    width:80px;
+    height:29px;
+}
+
+#u37_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:35px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../出票成功订单详情_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:244px;
+    top:709px;
+    width:137px;
+    height:29px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../出票成功订单详情_files/u39_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:416px;
+    top:709px;
+    width:137px;
+    height:29px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../出票成功订单详情_files/u8_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:508px;
+    top:16px;
+    width:52px;
+    height:14px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:58px;
+    height:20px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:48px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../出票成功订单详情_files/u10_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:402px;
+    top:16px;
+    width:88px;
+    height:14px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:94px;
+    height:20px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:84px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../出票成功订单详情_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:318px;
+    top:709px;
+    width:98px;
+    height:24px;
+}
+
+#u47_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:98px;
+    height:24px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../出票成功订单详情_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:1141px;
+    top:942px;
+    width:79px;
+    height:26px;
+}
+
+#u49_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:79px;
+    height:26px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:75px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../出票成功订单详情_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:1141px;
+    top:908px;
+    width:60px;
+    height:24px;
+}
+
+#u51_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:60px;
+    height:24px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:56px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../出票成功订单详情_files/u53_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:943px;
+    top:784px;
+    width:81px;
+    height:77px;
+}
+
+#u53_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:81px;
+    height:77px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:77px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../出票成功订单详情_files/u55_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:848px;
+    top:784px;
+    width:95px;
+    height:77px;
+}
+
+#u55_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:95px;
+    height:77px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:91px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../出票成功订单详情_files/u57_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:956px;
+    top:787px;
+    width:66px;
+    height:29px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../出票成功订单详情_files/u57_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:956px;
+    top:826px;
+    width:66px;
+    height:29px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../出票成功订单详情_files/u57_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:863px;
+    top:783px;
+    width:66px;
+    height:29px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../出票成功订单详情_files/u57_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:863px;
+    top:825px;
+    width:66px;
+    height:29px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../出票成功订单详情_files/u39_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:234px;
+    top:1176px;
+    width:137px;
+    height:29px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../出票成功订单详情_files/u67_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:416px;
+    top:709px;
+    width:100px;
+    height:29px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:35px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69 {
+    position:absolute;
+    left:422px;
+    top:1452px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u70_normal {
+    background-image: url('../出票成功订单详情_files/u70_normal.png');
+}
+
+.u70_container {
+    position:absolute;
+    left:225px;
+    top:1176px;
+    width:155px;
+    height:29px;
+}
+
+#u70_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:161px;
+    height:35px;
+}
+
+.u71 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:151px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u72_normal {
+    background-image: url('../出票成功订单详情_files/u57_normal.png');
+}
+
+.u72_container {
+    position:absolute;
+    left:1042px;
+    top:788px;
+    width:66px;
+    height:29px;
+}
+
+#u72_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u73 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74_normal {
+    background-image: url('../出票成功订单详情_files/u74_normal.png');
+}
+
+.u74_container {
+    position:absolute;
+    left:1029px;
+    top:828px;
+    width:98px;
+    height:29px;
+}
+
+#u74_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:35px;
+}
+
+.u75 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u76_normal {
+    background-image: url('../出票成功订单详情_files/u76_normal.png');
+}
+
+.u76_container {
+    position:absolute;
+    left:223px;
+    top:980px;
+    width:143px;
+    height:40px;
+}
+
+#u76_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:143px;
+    height:40px;
+}
+
+.u77 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:139px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u78_normal {
+    background-image: url('../出票成功订单详情_files/u78_normal.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:366px;
+    top:987px;
+    width:166px;
+    height:33px;
+}
+
+#u78_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:166px;
+    height:33px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_normal {
+    background-image: url('../出票成功订单详情_files/u80_normal.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:10px;
+    top:1240px;
+    width:1031px;
+    height:58px;
+}
+
+#u80_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1031px;
+    height:58px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:21px;
+    width:1027px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82 {
+    position:absolute;
+    left:546px;
+    top:1452px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u83_normal {
+    background-image: url('../出票成功订单详情_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:736px;
+    top:68px;
+    width:195px;
+    height:29px;
+}
+
+#u83_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:195px;
+    height:29px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../出票成功订单详情_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:10px;
+    top:1308px;
+    width:1129px;
+    height:62px;
+}
+
+#u85_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1129px;
+    height:62px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:1125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../出票成功订单详情_files/u87_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:24px;
+    top:1383px;
+    width:420px;
+    height:34px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:426px;
+    height:40px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:416px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89_normal {
+    background-image: url('../出票成功订单详情_files/u89_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:308px;
+    top:1349px;
+    width:342px;
+    height:34px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_normal {
+    background-image: url('../出票成功订单详情_files/u89_normal.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:308px;
+    top:1383px;
+    width:342px;
+    height:34px;
+}
+
+#u91_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93_normal {
+    background-image: url('../出票成功订单详情_files/u93_normal.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:650px;
+    top:1349px;
+    width:285px;
+    height:34px;
+}
+
+#u93_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:291px;
+    height:40px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:281px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95_normal {
+    background-image: url('../出票成功订单详情_files/u93_normal.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:650px;
+    top:1383px;
+    width:285px;
+    height:34px;
+}
+
+#u95_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:291px;
+    height:40px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:281px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97_normal {
+    background-image: url('../出票成功订单详情_files/u97_normal.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:14px;
+    top:1349px;
+    width:294px;
+    height:34px;
+}
+
+#u97_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:300px;
+    height:40px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:290px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:678px;
+    top:1452px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u100 {
+    position:absolute;
+    left:804px;
+    top:1452px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u101_normal {
+    background-image: url('../出票成功订单详情_files/u101_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:5px;
+    top:1065px;
+    width:1066px;
+    height:31px;
+}
+
+#u101_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1066px;
+    height:31px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:1062px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_normal {
+    background-image: url('../出票成功订单详情_files/u103_normal.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:4px;
+    top:1070px;
+    width:108px;
+    height:21px;
+}
+
+#u103_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:27px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u105_normal {
+    background-image: url('../出票成功订单详情_files/u105_normal.png');
+}
+
+.u105_container {
+    position:absolute;
+    left:10px;
+    top:1094px;
+    width:151px;
+    height:42px;
+}
+
+#u105_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u106 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u107_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u107_container {
+    position:absolute;
+    left:41px;
+    top:1101px;
+    width:110px;
+    height:31px;
+}
+
+#u107_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u108 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u109_normal {
+    background-image: url('../出票成功订单详情_files/u105_normal.png');
+}
+
+.u109_container {
+    position:absolute;
+    left:266px;
+    top:1094px;
+    width:151px;
+    height:42px;
+}
+
+#u109_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u110 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u111_container {
+    position:absolute;
+    left:297px;
+    top:1101px;
+    width:110px;
+    height:31px;
+}
+
+#u111_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u112 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u113 {
+    position:absolute;
+    left:193px;
+    top:1108px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../出票成功订单详情_files/u105_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:500px;
+    top:1096px;
+    width:151px;
+    height:42px;
+}
+
+#u114_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u116_container {
+    position:absolute;
+    left:531px;
+    top:1103px;
+    width:110px;
+    height:31px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:427px;
+    top:1113px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119 {
+    position:absolute;
+    left:673px;
+    top:1110px;
+    width:248px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../出票成功订单详情_files/u120_normal.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:-4px;
+    top:268px;
+    width:1125px;
+    height:197px;
+}
+
+#u120_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1125px;
+    height:197px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1121px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../出票成功订单详情_files/u122_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:16px;
+    top:465px;
+    width:814px;
+    height:25px;
+}
+
+#u122_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:820px;
+    height:31px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:810px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../出票成功订单详情_files/u124_normal.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:2px;
+    top:500px;
+    width:1114px;
+    height:43px;
+}
+
+#u124_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1114px;
+    height:43px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:1110px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:17px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:17px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130_normal {
+    background-image: url('../出票成功订单详情_files/u124_normal.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:2px;
+    top:540px;
+    width:1114px;
+    height:43px;
+}
+
+#u130_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1114px;
+    height:43px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:14px;
+    width:1110px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:17px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:17px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:42px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139 {
+    position:absolute;
+    left:16px;
+    top:0px;
+    width:42px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:484px;
+    top:615px;
+    width:76px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u141_normal {
+    background-image: url('../出票成功订单详情_files/u141_normal.png');
+}
+
+.u141_container {
+    position:absolute;
+    left:118px;
+    top:593px;
+    width:346px;
+    height:47px;
+}
+
+#u141_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:352px;
+    height:53px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:16px;
+    width:342px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143_normal {
+    background-image: url('../出票成功订单详情_files/u143_normal.png');
+}
+
+.u143_container {
+    position:absolute;
+    left:24px;
+    top:595px;
+    width:84px;
+    height:30px;
+}
+
+#u143_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:90px;
+    height:36px;
+}
+
+.u144 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:80px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145_normal {
+    background-image: url('../出票成功订单详情_files/u145_normal.png');
+}
+
+.u145_container {
+    position:absolute;
+    left:507px;
+    top:908px;
+    width:61px;
+    height:18px;
+}
+
+#u145_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:67px;
+    height:24px;
+}
+
+.u146 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147_normal {
+    background-image: url('../出票成功订单详情_files/u147_normal.png');
+}
+
+.u147_container {
+    position:absolute;
+    left:401px;
+    top:908px;
+    width:98px;
+    height:18px;
+}
+
+#u147_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:24px;
+}
+
+.u148 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u149_normal {
+    background-image: url('../出票成功订单详情_files/u149_normal.png');
+}
+
+.u149_container {
+    position:absolute;
+    left:517px;
+    top:947px;
+    width:41px;
+    height:18px;
+}
+
+#u149_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:47px;
+    height:24px;
+}
+
+.u150 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:37px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u151_normal {
+    background-image: url('../出票成功订单详情_files/u151_normal.png');
+}
+
+.u151_container {
+    position:absolute;
+    left:500px;
+    top:898px;
+    width:7px;
+    height:80px;
+}
+
+#u151_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:80px;
+}
+
+.u152 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u153_normal {
+    background-image: url('../出票成功订单详情_files/u153_normal.png');
+}
+
+.u153_container {
+    position:absolute;
+    left:263px;
+    top:1503px;
+    width:314px;
+    height:124px;
+}
+
+#u153_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:320px;
+    height:130px;
+}
+
+.u154 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:310px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u155_normal {
+    background-image: url('../出票成功订单详情_files/u155_normal.png');
+}
+
+.u155_container {
+    position:absolute;
+    left:281px;
+    top:1540px;
+    width:277px;
+    height:37px;
+}
+
+#u155_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:283px;
+    height:43px;
+}
+
+.u156 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:273px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157 {
+    position:absolute;
+    left:439px;
+    top:1587px;
+    width:57px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u158_line {
+    background-image: url('../出票成功订单详情_files/u158_line.png');
+}
+
+.u158_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:314px;
+    height:3px;
+}
+
+.u158 {
+    position:absolute;
+    left:263px;
+    top:1529px;
+    width:314px;
+    height:10px;
+    
+}
+
+.u159 {
+    position:absolute;
+    left:506px;
+    top:1587px;
+    width:57px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u160 {
+    position:absolute;
+    left:1024px;
+    top:947px;
+    width:100px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161_normal {
+    background-image: url('../出票成功订单详情_files/u161_normal.png');
+}
+
+.u161_container {
+    position:absolute;
+    left:1101px;
+    top:382px;
+    width:7px;
+    height:79px;
+}
+
+#u161_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u162 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163_normal {
+    background-image: url('../出票成功订单详情_files/u163_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:1108px;
+    top:394px;
+    width:66px;
+    height:14px;
+}
+
+#u163_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../出票成功订单详情_files/u163_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:1108px;
+    top:436px;
+    width:66px;
+    height:14px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_normal {
+    background-image: url('../出票成功订单详情_files/u161_normal.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:1008px;
+    top:382px;
+    width:7px;
+    height:79px;
+}
+
+#u167_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169_normal {
+    background-image: url('../出票成功订单详情_files/u161_normal.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:1170px;
+    top:382px;
+    width:7px;
+    height:79px;
+}
+
+#u169_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:79px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171_normal {
+    background-image: url('../出票成功订单详情_files/u163_normal.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:1191px;
+    top:393px;
+    width:66px;
+    height:14px;
+}
+
+#u171_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173_normal {
+    background-image: url('../出票成功订单详情_files/u163_normal.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:1191px;
+    top:435px;
+    width:66px;
+    height:14px;
+}
+
+#u173_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:20px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:-1px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175_normal {
+    background-image: url('../出票成功订单详情_files/u175_normal.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:8px;
+    top:871px;
+    width:1132px;
+    height:194px;
+}
+
+#u175_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1132px;
+    height:194px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:89px;
+    width:1128px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177_normal {
+    background-image: url('../出票成功订单详情_files/u78_normal.png');
+}
+
+.u177_container {
+    position:absolute;
+    left:755px;
+    top:1026px;
+    width:166px;
+    height:33px;
+}
+
+#u177_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:166px;
+    height:33px;
+}
+
+.u178 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u179_normal {
+    background-image: url('../出票成功订单详情_files/u179_normal.png');
+}
+
+.u179_container {
+    position:absolute;
+    left:827px;
+    top:907px;
+    width:65px;
+    height:31px;
+}
+
+#u179_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:71px;
+    height:37px;
+}
+
+.u180 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:61px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181_normal {
+    background-image: url('../出票成功订单详情_files/u181_normal.png');
+}
+
+.u181_container {
+    position:absolute;
+    left:8px;
+    top:868px;
+    width:1121px;
+    height:197px;
+}
+
+#u181_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1121px;
+    height:197px;
+}
+
+.u182 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1117px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183_normal {
+    background-image: url('../出票成功订单详情_files/u183_normal.png');
+}
+
+.u183_container {
+    position:absolute;
+    left:741px;
+    top:1026px;
+    width:180px;
+    height:27px;
+}
+
+#u183_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u184 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

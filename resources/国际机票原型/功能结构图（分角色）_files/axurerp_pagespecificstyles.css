@@ -1,0 +1,4688 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_line {
+    background-image: url('../功能结构图（分角色）_files/u0_line.png');
+}
+
+.u0_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:33px;
+}
+
+.u0 {
+    position:absolute;
+    left:1491px;
+    top:172px;
+    width:10px;
+    height:33px;
+    
+}
+
+.u1_normal {
+    background-image: url('../功能结构图（分角色）_files/u1_normal.png');
+}
+
+.u1_container {
+    position:absolute;
+    left:628px;
+    top:30px;
+    width:133px;
+    height:37px;
+}
+
+#u1_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:43px;
+}
+
+.u2 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u3_line {
+    background-image: url('../功能结构图（分角色）_files/u3_line.png');
+}
+
+.u3_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:51px;
+}
+
+.u3 {
+    position:absolute;
+    left:689px;
+    top:67px;
+    width:10px;
+    height:51px;
+    
+}
+
+.u4_line {
+    background-image: url('../功能结构图（分角色）_files/u4_line.png');
+}
+
+.u4_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:347px;
+    height:3px;
+}
+
+.u4 {
+    position:absolute;
+    left:199px;
+    top:113px;
+    width:347px;
+    height:10px;
+    
+}
+
+.u5_line {
+    background-image: url('../功能结构图（分角色）_files/u5_line.png');
+}
+
+.u5_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:955px;
+    height:3px;
+}
+
+.u5 {
+    position:absolute;
+    left:539px;
+    top:113px;
+    width:955px;
+    height:10px;
+    
+}
+
+.u6_line {
+    background-image: url('../功能结构图（分角色）_files/u6_line.png');
+}
+
+.u6_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:21px;
+}
+
+.u6 {
+    position:absolute;
+    left:193px;
+    top:118px;
+    width:10px;
+    height:21px;
+    
+}
+
+.u7_line {
+    background-image: url('../功能结构图（分角色）_files/u7_line.png');
+}
+
+.u7_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:21px;
+}
+
+.u7 {
+    position:absolute;
+    left:1491px;
+    top:119px;
+    width:10px;
+    height:21px;
+    
+}
+
+.u8_line {
+    background-image: url('../功能结构图（分角色）_files/u8_line.png');
+}
+
+.u8_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u8 {
+    position:absolute;
+    left:689px;
+    top:113px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u9_normal {
+    background-image: url('../功能结构图（分角色）_files/u1_normal.png');
+}
+
+.u9_container {
+    position:absolute;
+    left:131px;
+    top:138px;
+    width:133px;
+    height:37px;
+}
+
+#u9_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:43px;
+}
+
+.u10 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u11_line {
+    background-image: url('../功能结构图（分角色）_files/u11_line.png');
+}
+
+.u11_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u11 {
+    position:absolute;
+    left:193px;
+    top:175px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u12_normal {
+    background-image: url('../功能结构图（分角色）_files/u1_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:628px;
+    top:137px;
+    width:133px;
+    height:37px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:43px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_line {
+    background-image: url('../功能结构图（分角色）_files/u14_line.png');
+}
+
+.u14_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u14 {
+    position:absolute;
+    left:688px;
+    top:175px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u15_normal {
+    background-image: url('../功能结构图（分角色）_files/u1_normal.png');
+}
+
+.u15_container {
+    position:absolute;
+    left:1430px;
+    top:140px;
+    width:133px;
+    height:37px;
+}
+
+#u15_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:139px;
+    height:43px;
+}
+
+.u16 {
+    position:absolute;
+    left:2px;
+    top:10px;
+    width:129px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u17_line {
+    background-image: url('../功能结构图（分角色）_files/u17_line.png');
+}
+
+.u17_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:335px;
+    height:3px;
+}
+
+.u17 {
+    position:absolute;
+    left:64px;
+    top:198px;
+    width:335px;
+    height:10px;
+    
+}
+
+.u18_line {
+    background-image: url('../功能结构图（分角色）_files/u18_line.png');
+}
+
+.u18_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:469px;
+    height:3px;
+}
+
+.u18 {
+    position:absolute;
+    left:497px;
+    top:199px;
+    width:469px;
+    height:10px;
+    
+}
+
+.u19_line {
+    background-image: url('../功能结构图（分角色）_files/u19_line.png');
+}
+
+.u19_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:854px;
+    height:3px;
+}
+
+.u19 {
+    position:absolute;
+    left:1045px;
+    top:200px;
+    width:854px;
+    height:10px;
+    
+}
+
+.u20_line {
+    background-image: url('../功能结构图（分角色）_files/u20_line.png');
+}
+
+.u20_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u20 {
+    position:absolute;
+    left:64px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u21_line {
+    background-image: url('../功能结构图（分角色）_files/u21_line.png');
+}
+
+.u21_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u21 {
+    position:absolute;
+    left:315px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u22_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:56px;
+    top:232px;
+    width:26px;
+    height:137px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:30px;
+    top:423px;
+    width:26px;
+    height:146px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:22px;
+    height:144px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26_line {
+    background-image: url('../功能结构图（分角色）_files/u26_line.png');
+}
+
+.u26_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:36px;
+    height:3px;
+}
+
+.u26 {
+    position:absolute;
+    left:45px;
+    top:392px;
+    width:36px;
+    height:10px;
+    
+}
+
+.u27_line {
+    background-image: url('../功能结构图（分角色）_files/u27_line.png');
+}
+
+.u27_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u27 {
+    position:absolute;
+    left:64px;
+    top:369px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u28_line {
+    background-image: url('../功能结构图（分角色）_files/u28_line.png');
+}
+
+.u28_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u28 {
+    position:absolute;
+    left:38px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u29_line {
+    background-image: url('../功能结构图（分角色）_files/u29_line.png');
+}
+
+.u29_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u29 {
+    position:absolute;
+    left:75px;
+    top:399px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u30_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:67px;
+    top:425px;
+    width:26px;
+    height:144px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32_line {
+    background-image: url('../功能结构图（分角色）_files/u32_line.png');
+}
+
+.u32_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u32 {
+    position:absolute;
+    left:195px;
+    top:205px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u33_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:187px;
+    top:231px;
+    width:26px;
+    height:137px;
+}
+
+#u33_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:22px;
+    height:128px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:149px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u35_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_line {
+    background-image: url('../功能结构图（分角色）_files/u37_line.png');
+}
+
+.u37_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:162px;
+    height:3px;
+}
+
+.u37 {
+    position:absolute;
+    left:121px;
+    top:390px;
+    width:162px;
+    height:10px;
+    
+}
+
+.u38_line {
+    background-image: url('../功能结构图（分角色）_files/u38_line.png');
+}
+
+.u38_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u38 {
+    position:absolute;
+    left:195px;
+    top:368px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u39_line {
+    background-image: url('../功能结构图（分角色）_files/u39_line.png');
+}
+
+.u39_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u39 {
+    position:absolute;
+    left:157px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u40_line {
+    background-image: url('../功能结构图（分角色）_files/u40_line.png');
+}
+
+.u40_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u40 {
+    position:absolute;
+    left:195px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u41_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:187px;
+    top:423px;
+    width:26px;
+    height:144px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_line {
+    background-image: url('../功能结构图（分角色）_files/u43_line.png');
+}
+
+.u43_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u43 {
+    position:absolute;
+    left:238px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u44_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:230px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:271px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48_line {
+    background-image: url('../功能结构图（分角色）_files/u48_line.png');
+}
+
+.u48_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u48 {
+    position:absolute;
+    left:279px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u49_line {
+    background-image: url('../功能结构图（分角色）_files/u49_line.png');
+}
+
+.u49_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u49 {
+    position:absolute;
+    left:115px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u50_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u50_container {
+    position:absolute;
+    left:108px;
+    top:421px;
+    width:26px;
+    height:144px;
+}
+
+#u50_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u51 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u52_line {
+    background-image: url('../功能结构图（分角色）_files/u52_line.png');
+}
+
+.u52_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u52 {
+    position:absolute;
+    left:315px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u53_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:307px;
+    top:229px;
+    width:26px;
+    height:137px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:22px;
+    height:128px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_line {
+    background-image: url('../功能结构图（分角色）_files/u55_line.png');
+}
+
+.u55_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u55 {
+    position:absolute;
+    left:353px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u56_line {
+    background-image: url('../功能结构图（分角色）_files/u56_line.png');
+}
+
+.u56_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u56 {
+    position:absolute;
+    left:353px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u57_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:345px;
+    top:229px;
+    width:26px;
+    height:137px;
+}
+
+#u57_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:22px;
+    height:128px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_line {
+    background-image: url('../功能结构图（分角色）_files/u59_line.png');
+}
+
+.u59_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u59 {
+    position:absolute;
+    left:497px;
+    top:205px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u60_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u60_container {
+    position:absolute;
+    left:489px;
+    top:231px;
+    width:26px;
+    height:137px;
+}
+
+#u60_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u61 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u62_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u62_container {
+    position:absolute;
+    left:466px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u62_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u63 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u64_line {
+    background-image: url('../功能结构图（分角色）_files/u64_line.png');
+}
+
+.u64_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:27px;
+    height:3px;
+}
+
+.u64 {
+    position:absolute;
+    left:480px;
+    top:391px;
+    width:27px;
+    height:10px;
+    
+}
+
+.u65_line {
+    background-image: url('../功能结构图（分角色）_files/u65_line.png');
+}
+
+.u65_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u65 {
+    position:absolute;
+    left:497px;
+    top:368px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u66_line {
+    background-image: url('../功能结构图（分角色）_files/u66_line.png');
+}
+
+.u66_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u66 {
+    position:absolute;
+    left:474px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u67_line {
+    background-image: url('../功能结构图（分角色）_files/u67_line.png');
+}
+
+.u67_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u67 {
+    position:absolute;
+    left:504px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u68_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u68_container {
+    position:absolute;
+    left:496px;
+    top:423px;
+    width:26px;
+    height:144px;
+}
+
+#u68_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u69 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u70_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u70_container {
+    position:absolute;
+    left:550px;
+    top:230px;
+    width:26px;
+    height:137px;
+}
+
+#u70_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u71 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:22px;
+    height:112px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u72_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u72_container {
+    position:absolute;
+    left:532px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u72_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u73 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u74_line {
+    background-image: url('../功能结构图（分角色）_files/u74_line.png');
+}
+
+.u74_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:36px;
+    height:3px;
+}
+
+.u74 {
+    position:absolute;
+    left:545px;
+    top:390px;
+    width:36px;
+    height:10px;
+    
+}
+
+.u75_line {
+    background-image: url('../功能结构图（分角色）_files/u75_line.png');
+}
+
+.u75_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u75 {
+    position:absolute;
+    left:558px;
+    top:367px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u76_line {
+    background-image: url('../功能结构图（分角色）_files/u76_line.png');
+}
+
+.u76_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u76 {
+    position:absolute;
+    left:540px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u77_line {
+    background-image: url('../功能结构图（分角色）_files/u77_line.png');
+}
+
+.u77_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u77 {
+    position:absolute;
+    left:558px;
+    top:205px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u78_normal {
+    background-image: url('../功能结构图（分角色）_files/u78_normal.png');
+}
+
+.u78_container {
+    position:absolute;
+    left:694px;
+    top:229px;
+    width:26px;
+    height:140px;
+}
+
+#u78_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:146px;
+}
+
+.u79 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:22px;
+    height:128px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u80_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u80_container {
+    position:absolute;
+    left:604px;
+    top:419px;
+    width:26px;
+    height:146px;
+}
+
+#u80_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u81 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u82_line {
+    background-image: url('../功能结构图（分角色）_files/u82_line.png');
+}
+
+.u82_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:177px;
+    height:3px;
+}
+
+.u82 {
+    position:absolute;
+    left:618px;
+    top:389px;
+    width:177px;
+    height:10px;
+    
+}
+
+.u83_line {
+    background-image: url('../功能结构图（分角色）_files/u83_line.png');
+}
+
+.u83_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u83 {
+    position:absolute;
+    left:702px;
+    top:366px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u84_line {
+    background-image: url('../功能结构图（分角色）_files/u84_line.png');
+}
+
+.u84_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u84 {
+    position:absolute;
+    left:612px;
+    top:393px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u85_line {
+    background-image: url('../功能结构图（分角色）_files/u85_line.png');
+}
+
+.u85_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u85 {
+    position:absolute;
+    left:647px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u86_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u86_container {
+    position:absolute;
+    left:639px;
+    top:421px;
+    width:26px;
+    height:144px;
+}
+
+#u86_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u87 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u88_line {
+    background-image: url('../功能结构图（分角色）_files/u88_line.png');
+}
+
+.u88_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u88 {
+    position:absolute;
+    left:684px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u89_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:676px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u89_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91_line {
+    background-image: url('../功能结构图（分角色）_files/u91_line.png');
+}
+
+.u91_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u91 {
+    position:absolute;
+    left:722px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u92_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:714px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u92_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_line {
+    background-image: url('../功能结构图（分角色）_files/u94_line.png');
+}
+
+.u94_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u94 {
+    position:absolute;
+    left:702px;
+    top:204px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u95_line {
+    background-image: url('../功能结构图（分角色）_files/u95_line.png');
+}
+
+.u95_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u95 {
+    position:absolute;
+    left:755px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u96_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:747px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_line {
+    background-image: url('../功能结构图（分角色）_files/u98_line.png');
+}
+
+.u98_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u98 {
+    position:absolute;
+    left:793px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u99_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:785px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u99_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:568px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u101_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103_line {
+    background-image: url('../功能结构图（分角色）_files/u103_line.png');
+}
+
+.u103_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u103 {
+    position:absolute;
+    left:576px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u104_line {
+    background-image: url('../功能结构图（分角色）_files/u104_line.png');
+}
+
+.u104_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u104 {
+    position:absolute;
+    left:847px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u105_line {
+    background-image: url('../功能结构图（分角色）_files/u105_line.png');
+}
+
+.u105_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u105 {
+    position:absolute;
+    left:847px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u106_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:839px;
+    top:232px;
+    width:26px;
+    height:137px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:821px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u108_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110_line {
+    background-image: url('../功能结构图（分角色）_files/u110_line.png');
+}
+
+.u110_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:36px;
+    height:3px;
+}
+
+.u110 {
+    position:absolute;
+    left:834px;
+    top:389px;
+    width:36px;
+    height:10px;
+    
+}
+
+.u111_line {
+    background-image: url('../功能结构图（分角色）_files/u111_line.png');
+}
+
+.u111_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u111 {
+    position:absolute;
+    left:847px;
+    top:366px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u112_line {
+    background-image: url('../功能结构图（分角色）_files/u112_line.png');
+}
+
+.u112_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u112 {
+    position:absolute;
+    left:829px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u113_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u113_container {
+    position:absolute;
+    left:857px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u113_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u114 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u115_line {
+    background-image: url('../功能结构图（分角色）_files/u115_line.png');
+}
+
+.u115_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u115 {
+    position:absolute;
+    left:865px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u116_line {
+    background-image: url('../功能结构图（分角色）_files/u116_line.png');
+}
+
+.u116_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u116 {
+    position:absolute;
+    left:962px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u117_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u117_container {
+    position:absolute;
+    left:954px;
+    top:229px;
+    width:26px;
+    height:137px;
+}
+
+#u117_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u118 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u119_line {
+    background-image: url('../功能结构图（分角色）_files/u119_line.png');
+}
+
+.u119_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:37px;
+    height:3px;
+}
+
+.u119 {
+    position:absolute;
+    left:948px;
+    top:392px;
+    width:37px;
+    height:10px;
+    
+}
+
+.u120_line {
+    background-image: url('../功能结构图（分角色）_files/u120_line.png');
+}
+
+.u120_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u120 {
+    position:absolute;
+    left:959px;
+    top:366px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u121_line {
+    background-image: url('../功能结构图（分角色）_files/u121_line.png');
+}
+
+.u121_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u121 {
+    position:absolute;
+    left:942px;
+    top:399px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u122_line {
+    background-image: url('../功能结构图（分角色）_files/u122_line.png');
+}
+
+.u122_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u122 {
+    position:absolute;
+    left:979px;
+    top:398px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u123_normal {
+    background-image: url('../功能结构图（分角色）_files/u123_normal.png');
+}
+
+.u123_container {
+    position:absolute;
+    left:935px;
+    top:424px;
+    width:26px;
+    height:145px;
+}
+
+#u123_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:151px;
+}
+
+.u124 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u125_normal {
+    background-image: url('../功能结构图（分角色）_files/u123_normal.png');
+}
+
+.u125_container {
+    position:absolute;
+    left:971px;
+    top:424px;
+    width:26px;
+    height:145px;
+}
+
+#u125_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:151px;
+}
+
+.u126 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127_line {
+    background-image: url('../功能结构图（分角色）_files/u127_line.png');
+}
+
+.u127_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u127 {
+    position:absolute;
+    left:394px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u128_line {
+    background-image: url('../功能结构图（分角色）_files/u128_line.png');
+}
+
+.u128_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u128 {
+    position:absolute;
+    left:394px;
+    top:203px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u129_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u129_container {
+    position:absolute;
+    left:386px;
+    top:229px;
+    width:26px;
+    height:137px;
+}
+
+#u129_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u130 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131_line {
+    background-image: url('../功能结构图（分角色）_files/u131_line.png');
+}
+
+.u131_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u131 {
+    position:absolute;
+    left:1041px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u132_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u132_container {
+    position:absolute;
+    left:1033px;
+    top:232px;
+    width:26px;
+    height:137px;
+}
+
+#u132_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u133 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u134_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u134_container {
+    position:absolute;
+    left:1007px;
+    top:423px;
+    width:26px;
+    height:146px;
+}
+
+#u134_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u135 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:22px;
+    height:144px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136_line {
+    background-image: url('../功能结构图（分角色）_files/u136_line.png');
+}
+
+.u136_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:36px;
+    height:3px;
+}
+
+.u136 {
+    position:absolute;
+    left:1022px;
+    top:392px;
+    width:36px;
+    height:10px;
+    
+}
+
+.u137_line {
+    background-image: url('../功能结构图（分角色）_files/u137_line.png');
+}
+
+.u137_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u137 {
+    position:absolute;
+    left:1041px;
+    top:369px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u138_line {
+    background-image: url('../功能结构图（分角色）_files/u138_line.png');
+}
+
+.u138_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u138 {
+    position:absolute;
+    left:1015px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u139_line {
+    background-image: url('../功能结构图（分角色）_files/u139_line.png');
+}
+
+.u139_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u139 {
+    position:absolute;
+    left:1052px;
+    top:399px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u140_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u140_container {
+    position:absolute;
+    left:1044px;
+    top:425px;
+    width:26px;
+    height:144px;
+}
+
+#u140_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u141 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142_line {
+    background-image: url('../功能结构图（分角色）_files/u142_line.png');
+}
+
+.u142_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u142 {
+    position:absolute;
+    left:1172px;
+    top:205px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u143_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u143_container {
+    position:absolute;
+    left:1164px;
+    top:231px;
+    width:26px;
+    height:137px;
+}
+
+#u143_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u144 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:22px;
+    height:128px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u145_container {
+    position:absolute;
+    left:1126px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u145_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u146 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u147_line {
+    background-image: url('../功能结构图（分角色）_files/u147_line.png');
+}
+
+.u147_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:162px;
+    height:3px;
+}
+
+.u147 {
+    position:absolute;
+    left:1098px;
+    top:390px;
+    width:162px;
+    height:10px;
+    
+}
+
+.u148_line {
+    background-image: url('../功能结构图（分角色）_files/u148_line.png');
+}
+
+.u148_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u148 {
+    position:absolute;
+    left:1172px;
+    top:368px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u149_line {
+    background-image: url('../功能结构图（分角色）_files/u149_line.png');
+}
+
+.u149_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u149 {
+    position:absolute;
+    left:1134px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u150_line {
+    background-image: url('../功能结构图（分角色）_files/u150_line.png');
+}
+
+.u150_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u150 {
+    position:absolute;
+    left:1172px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u151_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u151_container {
+    position:absolute;
+    left:1164px;
+    top:423px;
+    width:26px;
+    height:144px;
+}
+
+#u151_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u152 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u153_line {
+    background-image: url('../功能结构图（分角色）_files/u153_line.png');
+}
+
+.u153_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u153 {
+    position:absolute;
+    left:1215px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u154_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u154_container {
+    position:absolute;
+    left:1207px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u154_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u155 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u156_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u156_container {
+    position:absolute;
+    left:1248px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u156_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u157 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u158_line {
+    background-image: url('../功能结构图（分角色）_files/u158_line.png');
+}
+
+.u158_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u158 {
+    position:absolute;
+    left:1256px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u159_line {
+    background-image: url('../功能结构图（分角色）_files/u159_line.png');
+}
+
+.u159_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u159 {
+    position:absolute;
+    left:1092px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u160_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u160_container {
+    position:absolute;
+    left:1085px;
+    top:421px;
+    width:26px;
+    height:144px;
+}
+
+#u160_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u161 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u162_line {
+    background-image: url('../功能结构图（分角色）_files/u162_line.png');
+}
+
+.u162_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u162 {
+    position:absolute;
+    left:1474px;
+    top:205px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u163_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:1466px;
+    top:231px;
+    width:26px;
+    height:137px;
+}
+
+#u163_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:1443px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u165_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167_line {
+    background-image: url('../功能结构图（分角色）_files/u167_line.png');
+}
+
+.u167_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:27px;
+    height:3px;
+}
+
+.u167 {
+    position:absolute;
+    left:1457px;
+    top:391px;
+    width:27px;
+    height:10px;
+    
+}
+
+.u168_line {
+    background-image: url('../功能结构图（分角色）_files/u168_line.png');
+}
+
+.u168_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u168 {
+    position:absolute;
+    left:1474px;
+    top:368px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u169_line {
+    background-image: url('../功能结构图（分角色）_files/u169_line.png');
+}
+
+.u169_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u169 {
+    position:absolute;
+    left:1451px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u170_line {
+    background-image: url('../功能结构图（分角色）_files/u170_line.png');
+}
+
+.u170_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u170 {
+    position:absolute;
+    left:1481px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u171_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:1473px;
+    top:423px;
+    width:26px;
+    height:144px;
+}
+
+#u171_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:1527px;
+    top:230px;
+    width:26px;
+    height:137px;
+}
+
+#u173_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:12px;
+    width:22px;
+    height:112px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:1509px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u175_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177_line {
+    background-image: url('../功能结构图（分角色）_files/u177_line.png');
+}
+
+.u177_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:36px;
+    height:3px;
+}
+
+.u177 {
+    position:absolute;
+    left:1522px;
+    top:390px;
+    width:36px;
+    height:10px;
+    
+}
+
+.u178_line {
+    background-image: url('../功能结构图（分角色）_files/u178_line.png');
+}
+
+.u178_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u178 {
+    position:absolute;
+    left:1535px;
+    top:367px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u179_line {
+    background-image: url('../功能结构图（分角色）_files/u179_line.png');
+}
+
+.u179_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u179 {
+    position:absolute;
+    left:1517px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u180_line {
+    background-image: url('../功能结构图（分角色）_files/u180_line.png');
+}
+
+.u180_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u180 {
+    position:absolute;
+    left:1535px;
+    top:205px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u181_normal {
+    background-image: url('../功能结构图（分角色）_files/u78_normal.png');
+}
+
+.u181_container {
+    position:absolute;
+    left:1671px;
+    top:229px;
+    width:26px;
+    height:140px;
+}
+
+#u181_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:146px;
+}
+
+.u182 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:22px;
+    height:128px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u183_container {
+    position:absolute;
+    left:1581px;
+    top:419px;
+    width:26px;
+    height:146px;
+}
+
+#u183_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u184 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u185_line {
+    background-image: url('../功能结构图（分角色）_files/u185_line.png');
+}
+
+.u185_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:177px;
+    height:3px;
+}
+
+.u185 {
+    position:absolute;
+    left:1595px;
+    top:389px;
+    width:177px;
+    height:10px;
+    
+}
+
+.u186_line {
+    background-image: url('../功能结构图（分角色）_files/u186_line.png');
+}
+
+.u186_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u186 {
+    position:absolute;
+    left:1679px;
+    top:366px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u187_line {
+    background-image: url('../功能结构图（分角色）_files/u187_line.png');
+}
+
+.u187_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u187 {
+    position:absolute;
+    left:1589px;
+    top:393px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u188_line {
+    background-image: url('../功能结构图（分角色）_files/u188_line.png');
+}
+
+.u188_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u188 {
+    position:absolute;
+    left:1624px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u189_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u189_container {
+    position:absolute;
+    left:1616px;
+    top:421px;
+    width:26px;
+    height:144px;
+}
+
+#u189_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u190 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u191_line {
+    background-image: url('../功能结构图（分角色）_files/u191_line.png');
+}
+
+.u191_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u191 {
+    position:absolute;
+    left:1661px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u192_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u192_container {
+    position:absolute;
+    left:1653px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u192_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u193 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u194_line {
+    background-image: url('../功能结构图（分角色）_files/u194_line.png');
+}
+
+.u194_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u194 {
+    position:absolute;
+    left:1699px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u195_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u195_container {
+    position:absolute;
+    left:1691px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u195_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u196 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u197_line {
+    background-image: url('../功能结构图（分角色）_files/u197_line.png');
+}
+
+.u197_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u197 {
+    position:absolute;
+    left:1679px;
+    top:204px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u198_line {
+    background-image: url('../功能结构图（分角色）_files/u198_line.png');
+}
+
+.u198_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u198 {
+    position:absolute;
+    left:1732px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u199_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u199_container {
+    position:absolute;
+    left:1724px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u199_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u200 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u201_line {
+    background-image: url('../功能结构图（分角色）_files/u201_line.png');
+}
+
+.u201_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u201 {
+    position:absolute;
+    left:1770px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u202_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u202_container {
+    position:absolute;
+    left:1762px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u202_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u203 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u204_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u204_container {
+    position:absolute;
+    left:1545px;
+    top:421px;
+    width:26px;
+    height:146px;
+}
+
+#u204_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u205 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u206_line {
+    background-image: url('../功能结构图（分角色）_files/u206_line.png');
+}
+
+.u206_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u206 {
+    position:absolute;
+    left:1553px;
+    top:395px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u207_line {
+    background-image: url('../功能结构图（分角色）_files/u207_line.png');
+}
+
+.u207_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u207 {
+    position:absolute;
+    left:1824px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u208_line {
+    background-image: url('../功能结构图（分角色）_files/u208_line.png');
+}
+
+.u208_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u208 {
+    position:absolute;
+    left:1824px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u209_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u209_container {
+    position:absolute;
+    left:1816px;
+    top:232px;
+    width:26px;
+    height:137px;
+}
+
+#u209_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u210 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u211_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u211_container {
+    position:absolute;
+    left:1798px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u211_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u212 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u213_line {
+    background-image: url('../功能结构图（分角色）_files/u213_line.png');
+}
+
+.u213_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:36px;
+    height:3px;
+}
+
+.u213 {
+    position:absolute;
+    left:1811px;
+    top:389px;
+    width:36px;
+    height:10px;
+    
+}
+
+.u214_line {
+    background-image: url('../功能结构图（分角色）_files/u214_line.png');
+}
+
+.u214_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u214 {
+    position:absolute;
+    left:1824px;
+    top:366px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u215_line {
+    background-image: url('../功能结构图（分角色）_files/u215_line.png');
+}
+
+.u215_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u215 {
+    position:absolute;
+    left:1806px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u216_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u216_container {
+    position:absolute;
+    left:1834px;
+    top:420px;
+    width:26px;
+    height:146px;
+}
+
+#u216_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u217 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u218_line {
+    background-image: url('../功能结构图（分角色）_files/u218_line.png');
+}
+
+.u218_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u218 {
+    position:absolute;
+    left:1842px;
+    top:394px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u219_line {
+    background-image: url('../功能结构图（分角色）_files/u219_line.png');
+}
+
+.u219_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:21px;
+}
+
+.u219 {
+    position:absolute;
+    left:1897px;
+    top:206px;
+    width:10px;
+    height:21px;
+    
+}
+
+.u220_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u220_container {
+    position:absolute;
+    left:1889px;
+    top:227px;
+    width:26px;
+    height:137px;
+}
+
+#u220_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u221 {
+    position:absolute;
+    left:2px;
+    top:20px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u222_line {
+    background-image: url('../功能结构图（分角色）_files/u222_line.png');
+}
+
+.u222_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:37px;
+    height:3px;
+}
+
+.u222 {
+    position:absolute;
+    left:1883px;
+    top:390px;
+    width:37px;
+    height:10px;
+    
+}
+
+.u223_line {
+    background-image: url('../功能结构图（分角色）_files/u223_line.png');
+}
+
+.u223_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u223 {
+    position:absolute;
+    left:1894px;
+    top:364px;
+    width:10px;
+    height:29px;
+    
+}
+
+.u224_line {
+    background-image: url('../功能结构图（分角色）_files/u224_line.png');
+}
+
+.u224_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u224 {
+    position:absolute;
+    left:1877px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u225_line {
+    background-image: url('../功能结构图（分角色）_files/u225_line.png');
+}
+
+.u225_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u225 {
+    position:absolute;
+    left:1914px;
+    top:396px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u226_normal {
+    background-image: url('../功能结构图（分角色）_files/u123_normal.png');
+}
+
+.u226_container {
+    position:absolute;
+    left:1870px;
+    top:422px;
+    width:26px;
+    height:145px;
+}
+
+#u226_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:151px;
+}
+
+.u227 {
+    position:absolute;
+    left:2px;
+    top:24px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u228_normal {
+    background-image: url('../功能结构图（分角色）_files/u123_normal.png');
+}
+
+.u228_container {
+    position:absolute;
+    left:1906px;
+    top:422px;
+    width:26px;
+    height:145px;
+}
+
+#u228_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:151px;
+}
+
+.u229 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u230_line {
+    background-image: url('../功能结构图（分角色）_files/u230_line.png');
+}
+
+.u230_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u230 {
+    position:absolute;
+    left:1352px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u231_line {
+    background-image: url('../功能结构图（分角色）_files/u231_line.png');
+}
+
+.u231_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u231 {
+    position:absolute;
+    left:1352px;
+    top:206px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u232_normal {
+    background-image: url('../功能结构图（分角色）_files/u22_normal.png');
+}
+
+.u232_container {
+    position:absolute;
+    left:1344px;
+    top:232px;
+    width:26px;
+    height:137px;
+}
+
+#u232_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:143px;
+}
+
+.u233 {
+    position:absolute;
+    left:2px;
+    top:36px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u234_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u234_container {
+    position:absolute;
+    left:1293px;
+    top:423px;
+    width:26px;
+    height:146px;
+}
+
+#u234_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u235 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u236_line {
+    background-image: url('../功能结构图（分角色）_files/u236_line.png');
+}
+
+.u236_line {
+    position:absolute;
+    left:0px;
+    top:4px;
+    width:106px;
+    height:3px;
+}
+
+.u236 {
+    position:absolute;
+    left:1307px;
+    top:393px;
+    width:106px;
+    height:10px;
+    
+}
+
+.u237_line {
+    background-image: url('../功能结构图（分角色）_files/u237_line.png');
+}
+
+.u237_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u237 {
+    position:absolute;
+    left:1301px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u238_line {
+    background-image: url('../功能结构图（分角色）_files/u238_line.png');
+}
+
+.u238_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u238 {
+    position:absolute;
+    left:1331px;
+    top:399px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u239_normal {
+    background-image: url('../功能结构图（分角色）_files/u30_normal.png');
+}
+
+.u239_container {
+    position:absolute;
+    left:1323px;
+    top:425px;
+    width:26px;
+    height:144px;
+}
+
+#u239_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:150px;
+}
+
+.u240 {
+    position:absolute;
+    left:2px;
+    top:40px;
+    width:22px;
+    height:64px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u241_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u241_container {
+    position:absolute;
+    left:1359px;
+    top:423px;
+    width:26px;
+    height:146px;
+}
+
+#u241_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u242 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u243_line {
+    background-image: url('../功能结构图（分角色）_files/u243_line.png');
+}
+
+.u243_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u243 {
+    position:absolute;
+    left:1367px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u244_normal {
+    background-image: url('../功能结构图（分角色）_files/u24_normal.png');
+}
+
+.u244_container {
+    position:absolute;
+    left:1395px;
+    top:423px;
+    width:26px;
+    height:146px;
+}
+
+#u244_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:32px;
+    height:152px;
+}
+
+.u245 {
+    position:absolute;
+    left:2px;
+    top:25px;
+    width:22px;
+    height:96px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u246_line {
+    background-image: url('../功能结构图（分角色）_files/u246_line.png');
+}
+
+.u246_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:26px;
+}
+
+.u246 {
+    position:absolute;
+    left:1403px;
+    top:397px;
+    width:10px;
+    height:26px;
+    
+}
+
+.u247_line {
+    background-image: url('../功能结构图（分角色）_files/u247_line.png');
+}
+
+.u247_line {
+    position:absolute;
+    left:4px;
+    top:0px;
+    width:3px;
+    height:29px;
+}
+
+.u247 {
+    position:absolute;
+    left:1357px;
+    top:369px;
+    width:10px;
+    height:29px;
+    
+}
+

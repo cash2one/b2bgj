@@ -575,3 +575,6 @@ li {
     color: white; }
   .cart i {
     padding: 5px 10px; }
+
+.hidden {
+  display: none; }

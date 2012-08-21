@@ -1,0 +1,4553 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>demoframework</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META NAME="Author" CONTENT="ty">
+<META NAME="Description" CONTENT="CodeSmith代码生成工具生成">
+<META content="MSHTML 6.00.2900.5659" name=GENERATOR>
+<style type="text/css">
+table{
+	                                    width:95%;
+	                                    margin:0px auto;
+	                                    font:Georgia 11px;
+	                                    color:#333333;
+	                                    text-align:center;
+	                                    border-collapse:collapse;
+                                    }
+                                    table td{
+	                                    border:1px solid #eee;
+	                                    width:100px;
+	                                    height:30px;
+										text-align:left;
+                                    }
+
+</style>
+<script type="text/javascript">
+function  Collapsing(tbodyId)
+{
+	var tbody=document.getElementById(tbodyId);
+	if(tbody.style.display=="none")
+	{
+		tbody.style.display="";
+		}else
+		{
+			tbody.style.display="none";
+			}
+	}
+</script>
+
+</HEAD>
+<BODY><A name=TOP></A><A name=A_Temp_Satistic></A>
+<!--数据中表的数据-->
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_DOCUMENT_TYPE');"
+      colSpan=10><h3>IAT_DOCUMENT_TYPE<span style="color:green;">(证件类型表)</span></h3></TD></TR>
+<TBODY id="IAT_DOCUMENT_TYPE">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>DOCUMENT_TYPE_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DOCUMENT_TYPE_CODE</b></TD>
+     <TD style="color:green;" >证件类型编码</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DOCUMENT_TYPE_DESCRIPTION</b></TD>
+     <TD style="color:green;" >证件类型描述</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER</b></TD>
+     <TD style="color:green;" >创建人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER_ID</b></TD>
+     <TD style="color:green;" >创建人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >创建时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_DOCUMENT_TYPE></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_FINANCIAL_REFUND');"
+      colSpan=10><h3>IAT_FINANCIAL_REFUND<span style="color:green;">(财务退款表)</span></h3></TD></TR>
+<TBODY id="IAT_FINANCIAL_REFUND">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>FINANCIAL_REFUND_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUPPLIER_ID</b></TD>
+     <TD style="color:green;" >供应商ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_TICKET_ID</b></TD>
+     <TD style="color:green;" >票号</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_AMOUNT</b></TD>
+     <TD style="color:green;" >退款金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_STATUS</b></TD>
+     <TD style="color:green;" >退款状态  退款审核中(50)、审核退回(51)、退款中(52)、退款完成(53)</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((50))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REQUEST_REFUND_ID</b></TD>
+     <TD style="color:green;" >提交退款人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REQUEST_REFUND_TIME</b></TD>
+     <TD style="color:green;" >提交退款时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAYMENT_SERIAL_NUMBER</b></TD>
+     <TD style="color:green;" >客户支付流水号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_BATCH_NO</b></TD>
+     <TD style="color:green;" >退款批次号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED</b></TD>
+     <TD style="color:green;" >是否被锁定</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR</b></TD>
+     <TD style="color:green;" >锁定者ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >锁定者姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_TIME</b></TD>
+     <TD style="color:green;" >锁定时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_TYPE</b></TD>
+     <TD style="color:green;" >退款类型（1：退票，2：废票 ，3：改签）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((1))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_REFUND_ID</b></TD>
+     <TD style="color:green;" >退票ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_ALTERATIONS_ID</b></TD>
+     <TD style="color:green;" >改签ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVALID_ID</b></TD>
+     <TD style="color:green;" >废票ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_OPERATOR_ID</b></TD>
+     <TD style="color:green;" >退款人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >退款人姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_TIME</b></TD>
+     <TD style="color:green;" >退款时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >生成时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_FINANCIAL_REFUND></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_FLIGHT_INFO');"
+      colSpan=10><h3>IAT_FLIGHT_INFO<span style="color:green;">(订单航班信息表)</span></h3></TD></TR>
+<TBODY id="IAT_FLIGHT_INFO">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>FLIGHT_INFO_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TAKEOFF_DATE</b></TD>
+     <TD style="color:green;" >起飞日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TAKEOFF_TIME</b></TD>
+     <TD style="color:green;" >起飞时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DEPARTURE_AIRPORT</b></TD>
+     <TD style="color:green;" >出发机场三字码</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_AIRPORT</b></TD>
+     <TD style="color:green;" >到达机场三字码</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>AIRLINE</b></TD>
+     <TD style="color:green;" >航空公司</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>FLIGHTS</b></TD>
+     <TD style="color:green;" >航班号(最长4位)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_DATE</b></TD>
+     <TD style="color:green;" >到达日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_TIME</b></TD>
+     <TD style="color:green;" >到达时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BERTH</b></TD>
+     <TD style="color:green;" >舱位(最长2位)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >2</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_FLIGHT_INFO></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_FLIGHT_ORDER');"
+      colSpan=10><h3>IAT_FLIGHT_ORDER<span style="color:green;">(机票订单表)</span></h3></TD></TR>
+<TBODY id="IAT_FLIGHT_ORDER">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUPLIER_POLICY_ID</b></TD>
+     <TD style="color:green;" >政策ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUPLIER_ID</b></TD>
+     <TD style="color:green;" >供应商ID(对应于SUPLIER_POLICY --供应商政策表的SUPLIER_ID 冗余字段)</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PURCHASE_ID</b></TD>
+     <TD style="color:green;" >采购商ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORIGINAL_ORDER_NO</b></TD>
+     <TD style="color:green;" >原来的订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PNR</b></TD>
+     <TD style="color:green;" >订座记录编号</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >6</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_STATUS</b></TD>
+     <TD style="color:green;" >订单状态 （预定审核中 (10) 、审核退回(11)、待支付(12)、出票中(13)、已出票(14)、取消预定(15)）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>UPDATE_STATUS_TIME</b></TD>
+     <TD style="color:green;" >更新订单状态时间(可以用作审核通过时间，或者退回时间等,具体每步操作时间可以查询订单日志)</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_DATE</b></TD>
+     <TD style="color:green;" >预定时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_REPLAY</b></TD>
+     <TD style="color:green;" >审核回复</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_REMARK</b></TD>
+     <TD style="color:green;" >订单备注</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED</b></TD>
+     <TD style="color:green;" >是否被锁定</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR</b></TD>
+     <TD style="color:green;" >锁定者ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >锁定者姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_TIME</b></TD>
+     <TD style="color:green;" >锁定时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_PAYMENT_ID</b></TD>
+     <TD style="color:green;" >订单支付ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>FREIGHT</b></TD>
+     <TD style="color:green;" >运价</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>AGENT_FEE_RATE</b></TD>
+     <TD style="color:green;" >代理费率</TD><!--描述信息-->
+     <TD style="color:blue;" >decimal</TD><!--数据类型-->
+     <TD  style="color:red;" >9</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REWARD_RATE</b></TD>
+     <TD style="color:green;" >奖励扣率</TD><!--描述信息-->
+     <TD style="color:blue;" >decimal</TD><!--数据类型-->
+     <TD  style="color:red;" >9</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REWARD_FEE</b></TD>
+     <TD style="color:green;" >奖励金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TAX</b></TD>
+     <TD style="color:green;" >税费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TRADING_FORMALITY_FEE</b></TD>
+     <TD style="color:green;" >交易手续费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SETTLEMENT_PRICE</b></TD>
+     <TD style="color:green;" >单张结算价</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OTHER_FEE</b></TD>
+     <TD style="color:green;" >其他费用</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OTHER_FEE_DESC</b></TD>
+     <TD style="color:green;" >其他费用说明(比如婴儿票 100)</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>FREIGHT_SOURCE</b></TD>
+     <TD style="color:green;" >运价来源</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_FEE</b></TD>
+     <TD style="color:green;" >供应商开票费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TOTAL_PRICE</b></TD>
+     <TD style="color:green;" >订单总价</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_RULE</b></TD>
+     <TD style="color:green;" >退改签规则</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >300</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_FLIGHT_ORDER></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_FREQUENT_FLYER');"
+      colSpan=10><h3>IAT_FREQUENT_FLYER<span style="color:green;">(常旅客)</span></h3></TD></TR>
+<TBODY id="IAT_FREQUENT_FLYER">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>FREQUENT_FLYER_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_ID</b></TD>
+     <TD style="color:green;" >合作方ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ENGLIGH_NAME</b></TD>
+     <TD style="color:green;" >英文姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PASSENGER_TYPE_ID</b></TD>
+     <TD style="color:green;" >乘客类型ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GENDER</b></TD>
+     <TD style="color:green;" >乘客性别(男，女)</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DOCUMENT_TYPE_ID</b></TD>
+     <TD style="color:green;" >证件类型ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>IDENTIFICATION_NUMBERS</b></TD>
+     <TD style="color:green;" >证件号码</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>VALIDITY_PERIOD</b></TD>
+     <TD style="color:green;" >证件有效期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BIRTHDATE</b></TD>
+     <TD style="color:green;" >出生日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>NATIONALITY</b></TD>
+     <TD style="color:green;" >国籍</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_FREQUENT_FLYER></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_INVOICE_INFO');"
+      colSpan=10><h3>IAT_INVOICE_INFO<span style="color:green;">(发票信息管理表)</span></h3></TD></TR>
+<TBODY id="IAT_INVOICE_INFO">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>INVOICE_INFO_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVOICE_BOOK_NUMBER</b></TD>
+     <TD style="color:green;" >发票册编号</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAGES_PER_BOOK</b></TD>
+     <TD style="color:green;" >每册张数</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>START_NUMBER</b></TD>
+     <TD style="color:green;" >初始票号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >15</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>END_NUMBER</b></TD>
+     <TD style="color:green;" >结束票号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >15</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ADD_TIME</b></TD>
+     <TD style="color:green;" >入库时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GRANT_TIME</b></TD>
+     <TD style="color:green;" >发放时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GRANT_SOURCE</b></TD>
+     <TD style="color:green;" >发放出处</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>STATUS</b></TD>
+     <TD style="color:green;" >发放状态 （0：未发放 1：已发放）</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATOR</b></TD>
+     <TD style="color:green;" >添加人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATOR_ID</b></TD>
+     <TD style="color:green;" >添加人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GRANT_OPERATOR_ID</b></TD>
+     <TD style="color:green;" >发放人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GRANT_OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >发放人姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_INVOICE_INFO></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_ALTERATIONS');"
+      colSpan=10><h3>IAT_ORDER_ALTERATIONS<span style="color:green;">(订单改签表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_ALTERATIONS">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_ALTERATIONS_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_TICKET_ID</b></TD>
+     <TD style="color:green;" >改签票号</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PNR</b></TD>
+     <TD style="color:green;" >改签后PNR</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >6</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TAKEOFF_DATE</b></TD>
+     <TD style="color:green;" >航班日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TAKEOFF_AIRPORT</b></TD>
+     <TD style="color:green;" >起飞机场</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_AIRPORT</b></TD>
+     <TD style="color:green;" >到达机场</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>AIRLINE</b></TD>
+     <TD style="color:green;" >航空公司</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>FLIGHT</b></TD>
+     <TD style="color:green;" >航班号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TAKEOFF_TIME</b></TD>
+     <TD style="color:green;" >起飞时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_TIME</b></TD>
+     <TD style="color:green;" >到达时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_DATE</b></TD>
+     <TD style="color:green;" >到达日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALTERATIONS_INFO</b></TD>
+     <TD style="color:green;" >改签信息</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REPLENISH</b></TD>
+     <TD style="color:green;" >改签补款</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REPLAY</b></TD>
+     <TD style="color:green;" >回复</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALTERATION_REMARK</b></TD>
+     <TD style="color:green;" >改签备注</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALTERATION_STATUS</b></TD>
+     <TD style="color:green;" >改签状态(改签审核中(20)、审核退回(21)、改签中(22)、待支付(23)、已改签(24)、已取消(25)(取消不必退款的，直接完成。需要退款的在退款表中新加一条记录，状态为待退款))</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED</b></TD>
+     <TD style="color:green;" >是否被锁定</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR</b></TD>
+     <TD style="color:green;" >锁定者ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >锁定者姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_TIME</b></TD>
+     <TD style="color:green;" >锁定时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >生成时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_ALTERATIONS></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_CONTACT');"
+      colSpan=10><h3>IAT_ORDER_CONTACT<span style="color:green;">(订单联系人表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_CONTACT">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_CONTACT_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CONTACT_NAME</b></TD>
+     <TD style="color:green;" >联系人姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>MOBILE</b></TD>
+     <TD style="color:green;" >联系人手机</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ADDRESS</b></TD>
+     <TD style="color:green;" >联系人地址</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >100</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TELEPHONE</b></TD>
+     <TD style="color:green;" >联系人电话</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>EMAIL</b></TD>
+     <TD style="color:green;" >联系人EMAIL</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>QQ</b></TD>
+     <TD style="color:green;" >联系人QQ</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >13</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>MSN</b></TD>
+     <TD style="color:green;" >联系人MSN</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_CONTACT></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_INSURANCE');"
+      colSpan=10><h3>IAT_ORDER_INSURANCE<span style="color:green;">(订单保险费表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_INSURANCE">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_INSURANCE_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_PASSENGER_ID</b></TD>
+     <TD style="color:green;" >乘机人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INS_UNIT_PRICE</b></TD>
+     <TD style="color:green;" >保险单价</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INS_NUMBER</b></TD>
+     <TD style="color:green;" >保险份数</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_INSURANCE></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_INVOICE');"
+      colSpan=10><h3>IAT_ORDER_INVOICE<span style="color:green;">(订单发票表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_INVOICE">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_INVOICE_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVOICE_AMOUNT</b></TD>
+     <TD style="color:green;" >金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVOICE_TITLE</b></TD>
+     <TD style="color:green;" >抬头</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVOICE_SEND_TYPE</b></TD>
+     <TD style="color:green;" >发票派送方式(自取，到付)</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GET_INVOICE_ADDRESS</b></TD>
+     <TD style="color:green;" >自取地址</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >100</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CONTACT</b></TD>
+     <TD style="color:green;" >联系人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CONTACT_PHONE</b></TD>
+     <TD style="color:green;" >联系电话</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SEND_ADDRESS</b></TD>
+     <TD style="color:green;" >派送地址</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >100</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>IS_INVALID</b></TD>
+     <TD style="color:green;" >是否作废(默认为0，表示有效)</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>EXPRESS_NO</b></TD>
+     <TD style="color:green;" >快递号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >25</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVOICE_STATUS</b></TD>
+     <TD style="color:green;" >发票状态(0:待开，1：已开)</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVOICE_NO</b></TD>
+     <TD style="color:green;" >发票号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >25</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_INVOICE_DATE</b></TD>
+     <TD style="color:green;" >开发票日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_INVOICE></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_LOG');"
+      colSpan=10><h3>IAT_ORDER_LOG<span style="color:green;">(订单日志表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_LOG">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_LOG_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOG_TYPE</b></TD>
+     <TD style="color:green;" >日志类型</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TITLE</b></TD>
+     <TD style="color:green;" >标题</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CONTENT</b></TD>
+     <TD style="color:green;" >内容</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATE_TIME</b></TD>
+     <TD style="color:green;" >操作时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >操作者</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATOR_ID</b></TD>
+     <TD style="color:green;" >操作者ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_NAME</b></TD>
+     <TD style="color:green;" >合作方</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_ID</b></TD>
+     <TD style="color:green;" >合作方ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_LOG></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_MESSAGE');"
+      colSpan=10><h3>IAT_ORDER_MESSAGE<span style="color:green;">(订单留言表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_MESSAGE">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_MESSAGE_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>MESSAGE_LEVEL</b></TD>
+     <TD style="color:green;" >消息紧急级别(0:普通 1:较急  2:紧急  3:特急)</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>MESSAGE_TITLE</b></TD>
+     <TD style="color:green;" >消息标题</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>MESSAGE_CONTENT</b></TD>
+     <TD style="color:green;" >消息内容</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LEAVE_WORD_TIME</b></TD>
+     <TD style="color:green;" >留言时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATOR_ID</b></TD>
+     <TD style="color:green;" >操作员ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >操作员名称</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_ID</b></TD>
+     <TD style="color:green;" >合作方ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_NAME</b></TD>
+     <TD style="color:green;" >合作方名称</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_MESSAGE></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_PASSENGER');"
+      colSpan=10><h3>IAT_ORDER_PASSENGER<span style="color:green;">(乘机人信息表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_PASSENGER">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_PASSENGER_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PASSENGER_EN_NAME</b></TD>
+     <TD style="color:green;" >乘客英文姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PASSENGER_TYPE_ID</b></TD>
+     <TD style="color:green;" >乘客类型(成人，儿童，婴儿 PASSENGER_TYPE表的主键ID）</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GENDER</b></TD>
+     <TD style="color:green;" >乘客性别(男，女)</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DOCUMENT_TYPE_ID</b></TD>
+     <TD style="color:green;" >证件类型ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>IDENTIFICATION_NUMBERS</b></TD>
+     <TD style="color:green;" >证件号码</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>VALIDITY_PERIOD</b></TD>
+     <TD style="color:green;" >证件有效期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BIRTHDATE</b></TD>
+     <TD style="color:green;" >出生日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>NATIONALITY</b></TD>
+     <TD style="color:green;" >国籍</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_PASSENGER></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_PAYMENT');"
+      colSpan=10><h3>IAT_ORDER_PAYMENT<span style="color:green;">(订单支付信息表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_PAYMENT">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_PAYMENT_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_TICKET_ID</b></TD>
+     <TD style="color:green;" >票号</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAYMENT_TYPE</b></TD>
+     <TD style="color:green;" >支付方式</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAYMENT_AMOUNT</b></TD>
+     <TD style="color:green;" >支付金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SERIAL_NUMBER</b></TD>
+     <TD style="color:green;" >支付流水号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAYMENT_ACCOUNT</b></TD>
+     <TD style="color:green;" >支付账号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PROCEEDS_ACCOUNT</b></TD>
+     <TD style="color:green;" >收款账号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>NET_BANK_CODE</b></TD>
+     <TD style="color:green;" >网银代码</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAYMENT_TIME</b></TD>
+     <TD style="color:green;" >支付时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PAYMENT_STATUS</b></TD>
+     <TD style="color:green;" >支付状态(0:支付失败，1：支付成功  2：未知)</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_PAYMENT></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_POLICY');"
+      colSpan=10><h3>IAT_ORDER_POLICY<span style="color:green;">(订单政策表(生成订单时匹配的政策，不允许修改))</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_POLICY">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_POLICY_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUPLIER_POLICY_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUPPLIER_ID</b></TD>
+     <TD style="color:green;" >供应商ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORIGINAL_POLICY_ID</b></TD>
+     <TD style="color:green;" >源政策ID（复制政策时用）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_TYPE</b></TD>
+     <TD style="color:green;" >政策类型（1：单程  2：往返  3：联程  4：缺口）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((1))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_START_DATE</b></TD>
+     <TD style="color:green;" >政策有效起始日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_END_DATE</b></TD>
+     <TD style="color:green;" >政策有效结束日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_CONTINUE_DATE</b></TD>
+     <TD style="color:green;" >回程奖励政策沿用至</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_START_DATE</b></TD>
+     <TD style="color:green;" >开票有效期开始日期，包含时分( 时间要不要分开)</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_END_DATE</b></TD>
+     <TD style="color:green;" >开票有效期结束日期，包含时分( 时间要不要分开)</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WEEKEND_OPEN_TICKET_START_TIME</b></TD>
+     <TD style="color:green;" >双休日开票开始时间（时分）</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WEEKEND_OPEN_TICKET_END_TIME</b></TD>
+     <TD style="color:green;" >双休日开票结束时间（时分）</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OFFICE_NO1</b></TD>
+     <TD style="color:green;" >授权号1</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OFFICE_NO2</b></TD>
+     <TD style="color:green;" >授权号2</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>AIRLINE</b></TD>
+     <TD style="color:green;" >航空公司二字码</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BASIC_AGENT_FEE_RATE</b></TD>
+     <TD style="color:green;" >基本代理费率</TD><!--描述信息-->
+     <TD style="color:blue;" >decimal</TD><!--数据类型-->
+     <TD  style="color:red;" >9</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REWARD_RATE</b></TD>
+     <TD style="color:green;" >奖励扣率</TD><!--描述信息-->
+     <TD style="color:blue;" >decimal</TD><!--数据类型-->
+     <TD  style="color:red;" >9</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REWARD_FEE</b></TD>
+     <TD style="color:green;" >奖励金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_FEE</b></TD>
+     <TD style="color:green;" >开票费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BERTH</b></TD>
+     <TD style="color:green;" >舱位（以/分隔）</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DEPARTURE_CITY</b></TD>
+     <TD style="color:green;" >出发城市三字码</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_CITY</b></TD>
+     <TD style="color:green;" >到达城市三字码</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GO_FLIGHT_INCLUDE</b></TD>
+     <TD style="color:green;" >去程航班包含(多个航班以/ 分隔)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >2000</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BACK_FLIGHT_INCLUDE</b></TD>
+     <TD style="color:green;" >返程航班包含(多个航班以/分隔)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >2000</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TICKET_TYPE</b></TD>
+     <TD style="color:green;" >机票类别（B2B,BSP,OET__境外电子票）</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALLOW_INVALID</b></TD>
+     <TD style="color:green;" >是否允许作废</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CHILD_EQUAL_ADULT</b></TD>
+     <TD style="color:green;" >儿童票是否与成人票返点一致</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALLOW_INFANT</b></TD>
+     <TD style="color:green;" >婴儿是否可开票</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PNR_LIMIT</b></TD>
+     <TD style="color:green;" >PNR限制（1：换编码出票 2:大编码出票(无需换编) 3：大编码出票(需换编) ）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>RETURN_RATE_LIMIT</b></TD>
+     <TD style="color:green;" >返点不适用(1:婴儿，2:儿童，3:整团，4:SOTO,5:代码共享)</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_SOURCE</b></TD>
+     <TD style="color:green;" >政策来源(确认政策来源是什么意思)</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INTERNAL_REMARK</b></TD>
+     <TD style="color:green;" >内部备注</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>EXTERNAL_REMARK</b></TD>
+     <TD style="color:green;" >外部备注</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER</b></TD>
+     <TD style="color:green;" >创建人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER_ID</b></TD>
+     <TD style="color:green;" >创建人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >创建时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_POLICY></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_REFUND');"
+      colSpan=10><h3>IAT_ORDER_REFUND<span style="color:green;">(订单退票表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_REFUND">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_REFUND_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号(作为冗余字段)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_TICKET_ID</b></TD>
+     <TD style="color:green;" >订单票号ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_TITLE</b></TD>
+     <TD style="color:green;" >退票标题</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">('退票')</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_REASON</b></TD>
+     <TD style="color:green;" >退票原因说明</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_TIME</b></TD>
+     <TD style="color:green;" >申请退票时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REAL_AMOUNT</b></TD>
+     <TD style="color:green;" >实付金额（应该等于订单表中对应订单号的单张结算价）</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DEDUCT_AMOUNT</b></TD>
+     <TD style="color:green;" >扣款金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_AMOUNT</b></TD>
+     <TD style="color:green;" >实退金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REFUND_STATUS</b></TD>
+     <TD style="color:green;" >退废票状态(退票审核中(30)、审核退回(31)、退票中(32)、已退票(33)(提交财务退款,需要退款的在退款表中新加一条记录，状态为待退款)、已取消(34) ,  废票审核中(40)、审核退回(41)、废票中(42)、取消废票(43)、废票完成(44))</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED</b></TD>
+     <TD style="color:green;" >是否被锁定</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR</b></TD>
+     <TD style="color:green;" >锁定者ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_OPERATOR_NAME</b></TD>
+     <TD style="color:green;" >锁定者姓名</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>LOCKED_TIME</b></TD>
+     <TD style="color:green;" >锁定时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>IS_INVALIDATE</b></TD>
+     <TD style="color:green;" >是否废票</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REPLY</b></TD>
+     <TD style="color:green;" >回复</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>RETURN_REASON</b></TD>
+     <TD style="color:green;" >退回原因</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_REFUND></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_ORDER_TICKET');"
+      colSpan=10><h3>IAT_ORDER_TICKET<span style="color:green;">(订单票号表)</span></h3></TD></TR>
+<TBODY id="IAT_ORDER_TICKET">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>ORDER_TICKET_ID</b></TD>
+     <TD style="color:green;" >主键ID,</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_NO</b></TD>
+     <TD style="color:green;" >订单号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORDER_PASSENGERS_ID</b></TD>
+     <TD style="color:green;" >乘机人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TICKET_NO</b></TD>
+     <TD style="color:green;" >票号</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >15</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TICKET_STATUS</b></TD>
+     <TD style="color:green;" >票号状态</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>FINANCIAL_REFUND_ID</b></TD>
+     <TD style="color:green;" >财务退款ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_ORDER_TICKET></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_PASSENGER_TYPE');"
+      colSpan=10><h3>IAT_PASSENGER_TYPE<span style="color:green;">(乘客类型表)</span></h3></TD></TR>
+<TBODY id="IAT_PASSENGER_TYPE">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>PASSENGER_TYPE_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PASSENGER_CODE</b></TD>
+     <TD style="color:green;" >乘客类型编码(ADT,CHD,)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DESCRIPTION</b></TD>
+     <TD style="color:green;" >乘客类型描述（ 普通旅客、新移民、留学生、 劳务人员、  海员、外交官、儿童、婴儿)</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER</b></TD>
+     <TD style="color:green;" >创建人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER_ID</b></TD>
+     <TD style="color:green;" >创建人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >创建时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_PASSENGER_TYPE></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_PLATFORM_CONFIG');"
+      colSpan=10><h3>IAT_PLATFORM_CONFIG<span style="color:green;">(平台配置表)</span></h3></TD></TR>
+<TBODY id="IAT_PLATFORM_CONFIG">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>PLATFORM_CONFIG_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_ID</b></TD>
+     <TD style="color:green;" >合作方ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WORKDAY_OPEN_TICKET_START_TIME</b></TD>
+     <TD style="color:green;" >工作日开票开始时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WORKDAY_OPEN_TICKET_END_TIME</b></TD>
+     <TD style="color:green;" >工作日开票结束时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WEEKEND_OPEN_TICKET_START_TIME</b></TD>
+     <TD style="color:green;" >周末开票开始时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WEEKEND_OPEN_TICKET_END_TIME</b></TD>
+     <TD style="color:green;" >周末开票结束时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REST_NO_TICKET</b></TD>
+     <TD style="color:green;" >公休是否开票（0：开票，1：不开票）</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVALID_TIME</b></TD>
+     <TD style="color:green;" >废票时间(比如 18:00以前)</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_FEE</b></TD>
+     <TD style="color:green;" >开票费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INVALID_TICKET_FEE</b></TD>
+     <TD style="color:green;" >废票费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER</b></TD>
+     <TD style="color:green;" >创建人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER_ID</b></TD>
+     <TD style="color:green;" >创建人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >创建时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_PLATFORM_CONFIG></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_PLATFORM_EXPRESS');"
+      colSpan=10><h3>IAT_PLATFORM_EXPRESS<span style="color:green;">(平台快递表)</span></h3></TD></TR>
+<TBODY id="IAT_PLATFORM_EXPRESS">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>PLATFORM_EXPRESS_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>EXPRESS_NAME</b></TD>
+     <TD style="color:green;" >快递名称</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PARTNER_ID</b></TD>
+     <TD style="color:green;" >合作方ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER</b></TD>
+     <TD style="color:green;" >创建人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER_ID</b></TD>
+     <TD style="color:green;" >创建人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >创建时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_PLATFORM_EXPRESS></A>
+<TABLE  cellSpacing=1 cellPadding=0>
+<TBODY>
+<TR>
+    <TD style="CURSOR: pointer;text-align:center;"  onclick="Collapsing('IAT_SUPLIER_POLICY');"
+      colSpan=10><h3>IAT_SUPLIER_POLICY<span style="color:green;">(供应商政策表)</span></h3></TD></TR>
+<TBODY id="IAT_SUPLIER_POLICY">
+<TR>
+    <TD style="background-color:#eee;">字段</TD>
+    <TD style="background-color:#eee;width:30%">注释</TD>
+    <TD style="background-color:#eee;">类型</TD>
+    <TD style="background-color:#eee;">长度</TD>
+    <TD style="background-color:#eee;">小数</TD>
+    <TD style="background-color:#eee;">默认值</TD>
+    <TD style="background-color:#eee;">标识</TD>
+    <TD style="background-color:#eee;">主键</TD>
+    <TD style="background-color:#eee;">空值</TD>
+<td style="background-color:#eee;">外键</td>
+</TR>
+<TR><!--以下为列自动生成-->
+<TR>
+     <TD  ><b>SUPLIER_POLICY_ID</b></TD>
+     <TD style="color:green;" >主键ID</TD><!--描述信息-->
+     <TD style="color:blue;" >uniqueidentifier</TD><!--数据类型-->
+     <TD  style="color:red;" >16</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD  style='color:blue;' > 是 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUPPLIER_ID</b></TD>
+     <TD style="color:green;" >供应商ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ORIGINAL_POLICY_ID</b></TD>
+     <TD style="color:green;" >源政策ID（复制政策时用）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_TYPE</b></TD>
+     <TD style="color:green;" >政策类型（1：单程  2：往返  3：联程  4：缺口）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((1))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_START_DATE</b></TD>
+     <TD style="color:green;" >政策有效起始日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_END_DATE</b></TD>
+     <TD style="color:green;" >政策有效结束日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_CONTINUE_DATE</b></TD>
+     <TD style="color:green;" >回程奖励政策沿用至</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_START_DATE</b></TD>
+     <TD style="color:green;" >开票有效期开始日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_START_TIME</b></TD>
+     <TD style="color:green;" >平时开票起始时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_END_DATE</b></TD>
+     <TD style="color:green;" >开票有效期结束日期</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_END_TIME</b></TD>
+     <TD style="color:green;" >平时开票结束时间</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WEEKEND_OPEN_TICKET_START_TIME</b></TD>
+     <TD style="color:green;" >双休日开票开始时间（时分）</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>WEEKEND_OPEN_TICKET_END_TIME</b></TD>
+     <TD style="color:green;" >双休日开票结束时间（时分）</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OFFICE_NO1</b></TD>
+     <TD style="color:green;" >授权号1</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OFFICE_NO2</b></TD>
+     <TD style="color:green;" >授权号2</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>AIRLINE</b></TD>
+     <TD style="color:green;" >航空公司二字码</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BASIC_AGENT_FEE_RATE</b></TD>
+     <TD style="color:green;" >基本代理费率</TD><!--描述信息-->
+     <TD style="color:blue;" >decimal</TD><!--数据类型-->
+     <TD  style="color:red;" >9</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REWARD_RATE</b></TD>
+     <TD style="color:green;" >奖励扣率</TD><!--描述信息-->
+     <TD style="color:blue;" >decimal</TD><!--数据类型-->
+     <TD  style="color:red;" >9</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>REWARD_FEE</b></TD>
+     <TD style="color:green;" >奖励金额</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>OPEN_TICKET_FEE</b></TD>
+     <TD style="color:green;" >开票费</TD><!--描述信息-->
+     <TD style="color:blue;" >money</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >4</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BERTH</b></TD>
+     <TD style="color:green;" >舱位（以/分隔,*代表所有舱位）</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >50</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>DEPARTURE_CITY</b></TD>
+     <TD style="color:green;" >出发城市三字码</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ARRIVE_CITY</b></TD>
+     <TD style="color:green;" >到达城市三字码</TD><!--描述信息-->
+     <TD style="color:blue;" >char</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>GO_FLIGHT_INCLUDE</b></TD>
+     <TD style="color:green;" >去程航班包含(多个航班以/ 分隔，不能和排除有冲突)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >2000</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>BACK_FLIGHT_INCLUDE</b></TD>
+     <TD style="color:green;" >返程航班包含(多个航班以/分隔，不能和排除有冲突)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >2000</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>TICKET_TYPE</b></TD>
+     <TD style="color:green;" >机票类别（B2B,BSP,OET__境外电子票）</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >3</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALLOW_INVALID</b></TD>
+     <TD style="color:green;" >是否允许作废</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CHILD_EQUAL_ADULT</b></TD>
+     <TD style="color:green;" >儿童票是否与成人票返点一致</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>ALLOW_INFANT</b></TD>
+     <TD style="color:green;" >婴儿是否可开票(0:不可开 1：可开)</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>PNR_LIMIT</b></TD>
+     <TD style="color:green;" >PNR限制（1：换编码出票 2:大编码出票(无需换编) 3：大编码出票(需换编) ）</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>RETURN_RATE_LIMIT</b></TD>
+     <TD style="color:green;" >返点不适用 编码方式为12345(1:婴儿，2:儿童，3:整团，4:SOTO,5:代码共享)</TD><!--描述信息-->
+     <TD style="color:blue;" >varchar</TD><!--数据类型-->
+     <TD  style="color:red;" >5</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>POLICY_SOURCE</b></TD>
+     <TD style="color:green;" >政策来源(确认政策来源是什么意思)</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >20</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>INTERNAL_REMARK</b></TD>
+     <TD style="color:green;" >内部备注</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>EXTERNAL_REMARK</b></TD>
+     <TD style="color:green;" >外部备注</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >200</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER</b></TD>
+     <TD style="color:green;" >创建人</TD><!--描述信息-->
+     <TD style="color:blue;" >nvarchar</TD><!--数据类型-->
+     <TD  style="color:red;" >10</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATER_ID</b></TD>
+     <TD style="color:green;" >创建人ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>CREATE_TIME</b></TD>
+     <TD style="color:green;" >创建时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUSPENDED</b></TD>
+     <TD style="color:green;" >政策是否挂起</TD><!--描述信息-->
+     <TD style="color:blue;" >bit</TD><!--数据类型-->
+     <TD  style="color:red;" >1</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;">((0))</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD   >否 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SET_SUSPENDED_OPERATOR</b></TD>
+     <TD style="color:green;" >设置挂起状态的操作者ID</TD><!--描述信息-->
+     <TD style="color:blue;" >int</TD><!--数据类型-->
+     <TD  style="color:red;" >4</TD>
+     <TD  >0</TD>
+     <TD  style="color:green;"></TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<TR>
+     <TD  ><b>SUSPENDED_TIME</b></TD>
+     <TD style="color:green;" >设置挂起的时间</TD><!--描述信息-->
+     <TD style="color:blue;" >datetime</TD><!--数据类型-->
+     <TD  style="color:red;" >8</TD>
+     <TD  >3</TD>
+     <TD  style="color:green;">(getdate())</TD>
+     <TD  >否 </TD>
+     <TD   > 否 </TD>
+     <TD  style='color:blue;' >是 </TD>
+<TD   >否 </TD>
+</TR>
+    
+<!--自动生成结束-->
+</TBODY></TABLE>
+<DIV class=TopClass id=TOPEnd 
+onclick="javascript:location.href='Table.htm#TOP';">TOP</DIV><A 
+name=IAT_SUPLIER_POLICY></A>
+<!---->
+<SCRIPT language=javascript>
+</SCRIPT>
+</BODY></HTML>

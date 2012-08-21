@@ -1,0 +1,3596 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+div.main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_original {
+    background-image: url('../退改签公告_files/u0_original.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:440px;
+}
+
+#u0_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:806px;
+    height:446px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:212px;
+    width:796px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u0 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:800px;
+    height:440px
+}
+
+.u2_original {
+    background-image: url('../退改签公告_files/u2_original.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:10px;
+    top:50px;
+    width:780px;
+    height:100px;
+}
+
+#u2_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:786px;
+    height:106px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:42px;
+    width:776px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2 {
+    position:absolute;
+    left:10px;
+    top:50px;
+    width:780px;
+    height:100px
+}
+
+.u4_original {
+    background-image: url('../退改签公告_files/u4_original.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:780px;
+    height:30px;
+}
+
+#u4_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:786px;
+    height:36px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:776px;
+    height:20px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4 {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:780px;
+    height:30px
+}
+
+.u6_original {
+    background-image: url('../退改签公告_files/u6_original.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:20px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u6_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6 {
+    position:absolute;
+    left:20px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u8_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:100px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8 {
+    position:absolute;
+    left:100px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u10_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:180px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u10_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10 {
+    position:absolute;
+    left:180px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u12_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:260px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12 {
+    position:absolute;
+    left:260px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u14_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u14_container {
+    position:absolute;
+    left:340px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:340px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u16_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:420px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u16_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16 {
+    position:absolute;
+    left:420px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u18_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:500px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u18_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18 {
+    position:absolute;
+    left:500px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u20_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:580px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u20_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20 {
+    position:absolute;
+    left:580px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u22_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u22_container {
+    position:absolute;
+    left:660px;
+    top:60px;
+    width:70px;
+    height:20px;
+}
+
+#u22_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u23 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:660px;
+    top:60px;
+    width:70px;
+    height:20px
+}
+
+.u24_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u24_container {
+    position:absolute;
+    left:20px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u24_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u25 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u24 {
+    position:absolute;
+    left:20px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u26_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u26_container {
+    position:absolute;
+    left:100px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u26_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u27 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u26 {
+    position:absolute;
+    left:100px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u28_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u28_container {
+    position:absolute;
+    left:180px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u28_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u29 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u28 {
+    position:absolute;
+    left:180px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u30_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u30_container {
+    position:absolute;
+    left:260px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u30_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u31 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u30 {
+    position:absolute;
+    left:260px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u32_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u32_container {
+    position:absolute;
+    left:340px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u32_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u33 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u32 {
+    position:absolute;
+    left:340px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u34_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u34_container {
+    position:absolute;
+    left:420px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u34_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u35 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u34 {
+    position:absolute;
+    left:420px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u36_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u36_container {
+    position:absolute;
+    left:500px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u36_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u37 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u36 {
+    position:absolute;
+    left:500px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u38_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u38_container {
+    position:absolute;
+    left:580px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u38_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u39 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u38 {
+    position:absolute;
+    left:580px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u40_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u40_container {
+    position:absolute;
+    left:660px;
+    top:90px;
+    width:70px;
+    height:20px;
+}
+
+#u40_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u41 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u40 {
+    position:absolute;
+    left:660px;
+    top:90px;
+    width:70px;
+    height:20px
+}
+
+.u42_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u42_container {
+    position:absolute;
+    left:20px;
+    top:120px;
+    width:70px;
+    height:20px;
+}
+
+#u42_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u43 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u42 {
+    position:absolute;
+    left:20px;
+    top:120px;
+    width:70px;
+    height:20px
+}
+
+.u44_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u44_container {
+    position:absolute;
+    left:100px;
+    top:120px;
+    width:70px;
+    height:20px;
+}
+
+#u44_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u45 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u44 {
+    position:absolute;
+    left:100px;
+    top:120px;
+    width:70px;
+    height:20px
+}
+
+.u46_original {
+    background-image: url('../退改签公告_files/u8_original.png');
+}
+
+.u46_container {
+    position:absolute;
+    left:180px;
+    top:120px;
+    width:70px;
+    height:20px;
+}
+
+#u46_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:26px;
+}
+
+.u47 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:66px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u46 {
+    position:absolute;
+    left:180px;
+    top:120px;
+    width:70px;
+    height:20px
+}
+
+.u48_original {
+    background-image: url('../退改签公告_files/u48_original.png');
+}
+
+.u48_container {
+    position:absolute;
+    left:10px;
+    top:160px;
+    width:780px;
+    height:270px;
+}
+
+#u48_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:786px;
+    height:276px;
+}
+
+.u49 {
+    position:absolute;
+    left:2px;
+    top:127px;
+    width:776px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u48 {
+    position:absolute;
+    left:10px;
+    top:160px;
+    width:780px;
+    height:270px
+}
+
+#u50 {
+    position:absolute;
+    left:18px;
+    top:170px;
+    width:767px;
+    height:242px
+}
+
+.u50_table {
+    background-image: url('../退改签公告_files/u50_table.png');
+}
+
+.u50_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:771px;
+    height:246px;
+}
+
+.u51_original {
+    background-image: url('../退改签公告_files/u51_original.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:23px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:59px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:63px;
+    height:23px
+}
+
+.u53_original {
+    background-image: url('../退改签公告_files/u53_original.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:63px;
+    top:0px;
+    width:36px;
+    height:23px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:32px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53 {
+    position:absolute;
+    left:63px;
+    top:0px;
+    width:36px;
+    height:23px
+}
+
+.u55_original {
+    background-image: url('../退改签公告_files/u55_original.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:99px;
+    top:0px;
+    width:32px;
+    height:23px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:28px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55 {
+    position:absolute;
+    left:99px;
+    top:0px;
+    width:32px;
+    height:23px
+}
+
+.u57_original {
+    background-image: url('../退改签公告_files/u57_original.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:131px;
+    top:0px;
+    width:66px;
+    height:23px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:62px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57 {
+    position:absolute;
+    left:131px;
+    top:0px;
+    width:66px;
+    height:23px
+}
+
+.u59_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:197px;
+    top:0px;
+    width:100px;
+    height:23px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59 {
+    position:absolute;
+    left:197px;
+    top:0px;
+    width:100px;
+    height:23px
+}
+
+.u61_original {
+    background-image: url('../退改签公告_files/u61_original.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:297px;
+    top:0px;
+    width:115px;
+    height:23px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:111px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61 {
+    position:absolute;
+    left:297px;
+    top:0px;
+    width:115px;
+    height:23px
+}
+
+.u63_original {
+    background-image: url('../退改签公告_files/u63_original.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:412px;
+    top:0px;
+    width:190px;
+    height:23px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:186px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63 {
+    position:absolute;
+    left:412px;
+    top:0px;
+    width:190px;
+    height:23px
+}
+
+.u65_original {
+    background-image: url('../退改签公告_files/u65_original.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:602px;
+    top:0px;
+    width:80px;
+    height:23px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65 {
+    position:absolute;
+    left:602px;
+    top:0px;
+    width:80px;
+    height:23px
+}
+
+.u67_original {
+    background-image: url('../退改签公告_files/u65_original.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:682px;
+    top:0px;
+    width:80px;
+    height:23px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67 {
+    position:absolute;
+    left:682px;
+    top:0px;
+    width:80px;
+    height:23px
+}
+
+.u69_original {
+    background-image: url('../退改签公告_files/u69_original.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:63px;
+    height:194px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:59px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69 {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:63px;
+    height:194px
+}
+
+.u71_original {
+    background-image: url('../退改签公告_files/u71_original.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:63px;
+    top:23px;
+    width:36px;
+    height:194px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:32px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71 {
+    position:absolute;
+    left:63px;
+    top:23px;
+    width:36px;
+    height:194px
+}
+
+.u73_original {
+    background-image: url('../退改签公告_files/u73_original.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:99px;
+    top:23px;
+    width:32px;
+    height:194px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:28px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73 {
+    position:absolute;
+    left:99px;
+    top:23px;
+    width:32px;
+    height:194px
+}
+
+.u75_original {
+    background-image: url('../退改签公告_files/u75_original.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:131px;
+    top:23px;
+    width:66px;
+    height:194px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75 {
+    position:absolute;
+    left:131px;
+    top:23px;
+    width:66px;
+    height:194px
+}
+
+.u77_original {
+    background-image: url('../退改签公告_files/u77_original.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:197px;
+    top:23px;
+    width:100px;
+    height:194px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:190px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77 {
+    position:absolute;
+    left:197px;
+    top:23px;
+    width:100px;
+    height:194px
+}
+
+.u79_original {
+    background-image: url('../退改签公告_files/u79_original.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:297px;
+    top:23px;
+    width:115px;
+    height:194px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:111px;
+    height:171px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79 {
+    position:absolute;
+    left:297px;
+    top:23px;
+    width:115px;
+    height:194px
+}
+
+.u81_original {
+    background-image: url('../退改签公告_files/u81_original.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:412px;
+    top:23px;
+    width:190px;
+    height:194px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:186px;
+    height:133px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81 {
+    position:absolute;
+    left:412px;
+    top:23px;
+    width:190px;
+    height:194px
+}
+
+.u83_original {
+    background-image: url('../退改签公告_files/u83_original.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:602px;
+    top:23px;
+    width:80px;
+    height:194px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83 {
+    position:absolute;
+    left:602px;
+    top:23px;
+    width:80px;
+    height:194px
+}
+
+.u85_original {
+    background-image: url('../退改签公告_files/u83_original.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:682px;
+    top:23px;
+    width:80px;
+    height:194px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85 {
+    position:absolute;
+    left:682px;
+    top:23px;
+    width:80px;
+    height:194px
+}
+
+.u87_original {
+    background-image: url('../退改签公告_files/u87_original.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:0px;
+    top:217px;
+    width:63px;
+    height:20px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:59px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87 {
+    position:absolute;
+    left:0px;
+    top:217px;
+    width:63px;
+    height:20px
+}
+
+.u89_original {
+    background-image: url('../退改签公告_files/u89_original.png');
+}
+
+.u89_container {
+    position:absolute;
+    left:63px;
+    top:217px;
+    width:36px;
+    height:20px;
+}
+
+.u90 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:32px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:63px;
+    top:217px;
+    width:36px;
+    height:20px
+}
+
+.u91_original {
+    background-image: url('../退改签公告_files/u91_original.png');
+}
+
+.u91_container {
+    position:absolute;
+    left:99px;
+    top:217px;
+    width:32px;
+    height:20px;
+}
+
+.u92 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:28px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u91 {
+    position:absolute;
+    left:99px;
+    top:217px;
+    width:32px;
+    height:20px
+}
+
+.u93_original {
+    background-image: url('../退改签公告_files/u93_original.png');
+}
+
+.u93_container {
+    position:absolute;
+    left:131px;
+    top:217px;
+    width:66px;
+    height:20px;
+}
+
+.u94 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u93 {
+    position:absolute;
+    left:131px;
+    top:217px;
+    width:66px;
+    height:20px
+}
+
+.u95_original {
+    background-image: url('../退改签公告_files/u95_original.png');
+}
+
+.u95_container {
+    position:absolute;
+    left:197px;
+    top:217px;
+    width:100px;
+    height:20px;
+}
+
+.u96 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u95 {
+    position:absolute;
+    left:197px;
+    top:217px;
+    width:100px;
+    height:20px
+}
+
+.u97_original {
+    background-image: url('../退改签公告_files/u97_original.png');
+}
+
+.u97_container {
+    position:absolute;
+    left:297px;
+    top:217px;
+    width:115px;
+    height:20px;
+}
+
+.u98 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:111px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u97 {
+    position:absolute;
+    left:297px;
+    top:217px;
+    width:115px;
+    height:20px
+}
+
+.u99_original {
+    background-image: url('../退改签公告_files/u99_original.png');
+}
+
+.u99_container {
+    position:absolute;
+    left:412px;
+    top:217px;
+    width:190px;
+    height:20px;
+}
+
+.u100 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:186px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u99 {
+    position:absolute;
+    left:412px;
+    top:217px;
+    width:190px;
+    height:20px
+}
+
+.u101_original {
+    background-image: url('../退改签公告_files/u101_original.png');
+}
+
+.u101_container {
+    position:absolute;
+    left:602px;
+    top:217px;
+    width:80px;
+    height:20px;
+}
+
+.u102 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u101 {
+    position:absolute;
+    left:602px;
+    top:217px;
+    width:80px;
+    height:20px
+}
+
+.u103_original {
+    background-image: url('../退改签公告_files/u101_original.png');
+}
+
+.u103_container {
+    position:absolute;
+    left:682px;
+    top:217px;
+    width:80px;
+    height:20px;
+}
+
+.u104 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u103 {
+    position:absolute;
+    left:682px;
+    top:217px;
+    width:80px;
+    height:20px
+}
+
+#u105 {
+    position:absolute;
+    left:10px;
+    top:450px;
+    width:784px;
+    height:218px
+}
+
+.u105_table {
+    background-image: url('../退改签公告_files/u105_table.png');
+}
+
+.u105_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:788px;
+    height:222px;
+}
+
+.u106_original {
+    background-image: url('../退改签公告_files/u106_original.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:25px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:25px
+}
+
+.u108_original {
+    background-image: url('../退改签公告_files/u108_original.png');
+}
+
+.u108_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:200px;
+    height:25px;
+}
+
+.u109 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:200px;
+    height:25px
+}
+
+.u110_original {
+    background-image: url('../退改签公告_files/u110_original.png');
+}
+
+.u110_container {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:284px;
+    height:25px;
+}
+
+.u111 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u110 {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:284px;
+    height:25px
+}
+
+.u112_original {
+    background-image: url('../退改签公告_files/u112_original.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:584px;
+    top:0px;
+    width:195px;
+    height:25px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:21px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u112 {
+    position:absolute;
+    left:584px;
+    top:0px;
+    width:195px;
+    height:25px
+}
+
+.u114_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:0px;
+    top:25px;
+    width:100px;
+    height:23px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114 {
+    position:absolute;
+    left:0px;
+    top:25px;
+    width:100px;
+    height:23px
+}
+
+.u116_original {
+    background-image: url('../退改签公告_files/u116_original.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:100px;
+    top:25px;
+    width:200px;
+    height:23px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116 {
+    position:absolute;
+    left:100px;
+    top:25px;
+    width:200px;
+    height:23px
+}
+
+.u118_original {
+    background-image: url('../退改签公告_files/u118_original.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:300px;
+    top:25px;
+    width:284px;
+    height:23px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118 {
+    position:absolute;
+    left:300px;
+    top:25px;
+    width:284px;
+    height:23px
+}
+
+.u120_original {
+    background-image: url('../退改签公告_files/u120_original.png');
+}
+
+.u120_container {
+    position:absolute;
+    left:584px;
+    top:25px;
+    width:195px;
+    height:23px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120 {
+    position:absolute;
+    left:584px;
+    top:25px;
+    width:195px;
+    height:23px
+}
+
+.u122_original {
+    background-image: url('../退改签公告_files/u122_original.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:0px;
+    top:48px;
+    width:100px;
+    height:99px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122 {
+    position:absolute;
+    left:0px;
+    top:48px;
+    width:100px;
+    height:99px
+}
+
+.u124_original {
+    background-image: url('../退改签公告_files/u124_original.png');
+}
+
+.u124_container {
+    position:absolute;
+    left:100px;
+    top:48px;
+    width:200px;
+    height:99px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:95px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124 {
+    position:absolute;
+    left:100px;
+    top:48px;
+    width:200px;
+    height:99px
+}
+
+.u126_original {
+    background-image: url('../退改签公告_files/u126_original.png');
+}
+
+.u126_container {
+    position:absolute;
+    left:300px;
+    top:48px;
+    width:284px;
+    height:99px;
+}
+
+.u127 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126 {
+    position:absolute;
+    left:300px;
+    top:48px;
+    width:284px;
+    height:99px
+}
+
+.u128_original {
+    background-image: url('../退改签公告_files/u128_original.png');
+}
+
+.u128_container {
+    position:absolute;
+    left:584px;
+    top:48px;
+    width:195px;
+    height:99px;
+}
+
+.u129 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:95px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u128 {
+    position:absolute;
+    left:584px;
+    top:48px;
+    width:195px;
+    height:99px
+}
+
+.u130_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u130_container {
+    position:absolute;
+    left:0px;
+    top:147px;
+    width:100px;
+    height:23px;
+}
+
+.u131 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u130 {
+    position:absolute;
+    left:0px;
+    top:147px;
+    width:100px;
+    height:23px
+}
+
+.u132_original {
+    background-image: url('../退改签公告_files/u116_original.png');
+}
+
+.u132_container {
+    position:absolute;
+    left:100px;
+    top:147px;
+    width:200px;
+    height:23px;
+}
+
+.u133 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132 {
+    position:absolute;
+    left:100px;
+    top:147px;
+    width:200px;
+    height:23px
+}
+
+.u134_original {
+    background-image: url('../退改签公告_files/u118_original.png');
+}
+
+.u134_container {
+    position:absolute;
+    left:300px;
+    top:147px;
+    width:284px;
+    height:23px;
+}
+
+.u135 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u134 {
+    position:absolute;
+    left:300px;
+    top:147px;
+    width:284px;
+    height:23px
+}
+
+.u136_original {
+    background-image: url('../退改签公告_files/u120_original.png');
+}
+
+.u136_container {
+    position:absolute;
+    left:584px;
+    top:147px;
+    width:195px;
+    height:23px;
+}
+
+.u137 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u136 {
+    position:absolute;
+    left:584px;
+    top:147px;
+    width:195px;
+    height:23px
+}
+
+.u138_original {
+    background-image: url('../退改签公告_files/u95_original.png');
+}
+
+.u138_container {
+    position:absolute;
+    left:0px;
+    top:170px;
+    width:100px;
+    height:20px;
+}
+
+.u139 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u138 {
+    position:absolute;
+    left:0px;
+    top:170px;
+    width:100px;
+    height:20px
+}
+
+.u140_original {
+    background-image: url('../退改签公告_files/u140_original.png');
+}
+
+.u140_container {
+    position:absolute;
+    left:100px;
+    top:170px;
+    width:200px;
+    height:20px;
+}
+
+.u141 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u140 {
+    position:absolute;
+    left:100px;
+    top:170px;
+    width:200px;
+    height:20px
+}
+
+.u142_original {
+    background-image: url('../退改签公告_files/u142_original.png');
+}
+
+.u142_container {
+    position:absolute;
+    left:300px;
+    top:170px;
+    width:284px;
+    height:20px;
+}
+
+.u143 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u142 {
+    position:absolute;
+    left:300px;
+    top:170px;
+    width:284px;
+    height:20px
+}
+
+.u144_original {
+    background-image: url('../退改签公告_files/u144_original.png');
+}
+
+.u144_container {
+    position:absolute;
+    left:584px;
+    top:170px;
+    width:195px;
+    height:20px;
+}
+
+.u145 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u144 {
+    position:absolute;
+    left:584px;
+    top:170px;
+    width:195px;
+    height:20px
+}
+
+.u146_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u146_container {
+    position:absolute;
+    left:0px;
+    top:190px;
+    width:100px;
+    height:23px;
+}
+
+.u147 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u146 {
+    position:absolute;
+    left:0px;
+    top:190px;
+    width:100px;
+    height:23px
+}
+
+.u148_original {
+    background-image: url('../退改签公告_files/u116_original.png');
+}
+
+.u148_container {
+    position:absolute;
+    left:100px;
+    top:190px;
+    width:200px;
+    height:23px;
+}
+
+.u149 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:196px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148 {
+    position:absolute;
+    left:100px;
+    top:190px;
+    width:200px;
+    height:23px
+}
+
+.u150_original {
+    background-image: url('../退改签公告_files/u118_original.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:300px;
+    top:190px;
+    width:284px;
+    height:23px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:280px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150 {
+    position:absolute;
+    left:300px;
+    top:190px;
+    width:284px;
+    height:23px
+}
+
+.u152_original {
+    background-image: url('../退改签公告_files/u120_original.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:584px;
+    top:190px;
+    width:195px;
+    height:23px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152 {
+    position:absolute;
+    left:584px;
+    top:190px;
+    width:195px;
+    height:23px
+}
+
+#u154 {
+    position:absolute;
+    left:835px;
+    top:160px;
+    width:770px;
+    height:223px
+}
+
+.u154_table {
+    background-image: url('../退改签公告_files/u154_table.png');
+}
+
+.u154_table {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:774px;
+    height:227px;
+}
+
+.u155_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u155_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:23px;
+}
+
+.u156 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u155 {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100px;
+    height:23px
+}
+
+.u157_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u157_container {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:100px;
+    height:23px;
+}
+
+.u158 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157 {
+    position:absolute;
+    left:100px;
+    top:0px;
+    width:100px;
+    height:23px
+}
+
+.u159_original {
+    background-image: url('../退改签公告_files/u59_original.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:200px;
+    top:0px;
+    width:100px;
+    height:23px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159 {
+    position:absolute;
+    left:200px;
+    top:0px;
+    width:100px;
+    height:23px
+}
+
+.u161_original {
+    background-image: url('../退改签公告_files/u61_original.png');
+}
+
+.u161_container {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:115px;
+    height:23px;
+}
+
+.u162 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:111px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u161 {
+    position:absolute;
+    left:300px;
+    top:0px;
+    width:115px;
+    height:23px
+}
+
+.u163_original {
+    background-image: url('../退改签公告_files/u63_original.png');
+}
+
+.u163_container {
+    position:absolute;
+    left:415px;
+    top:0px;
+    width:190px;
+    height:23px;
+}
+
+.u164 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:186px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u163 {
+    position:absolute;
+    left:415px;
+    top:0px;
+    width:190px;
+    height:23px
+}
+
+.u165_original {
+    background-image: url('../退改签公告_files/u65_original.png');
+}
+
+.u165_container {
+    position:absolute;
+    left:605px;
+    top:0px;
+    width:80px;
+    height:23px;
+}
+
+.u166 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u165 {
+    position:absolute;
+    left:605px;
+    top:0px;
+    width:80px;
+    height:23px
+}
+
+.u167_original {
+    background-image: url('../退改签公告_files/u65_original.png');
+}
+
+.u167_container {
+    position:absolute;
+    left:685px;
+    top:0px;
+    width:80px;
+    height:23px;
+}
+
+.u168 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u167 {
+    position:absolute;
+    left:685px;
+    top:0px;
+    width:80px;
+    height:23px
+}
+
+.u169_original {
+    background-image: url('../退改签公告_files/u169_original.png');
+}
+
+.u169_container {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:100px;
+    height:175px;
+}
+
+.u170 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u169 {
+    position:absolute;
+    left:0px;
+    top:23px;
+    width:100px;
+    height:175px
+}
+
+.u171_original {
+    background-image: url('../退改签公告_files/u169_original.png');
+}
+
+.u171_container {
+    position:absolute;
+    left:100px;
+    top:23px;
+    width:100px;
+    height:175px;
+}
+
+.u172 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:114px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u171 {
+    position:absolute;
+    left:100px;
+    top:23px;
+    width:100px;
+    height:175px
+}
+
+.u173_original {
+    background-image: url('../退改签公告_files/u169_original.png');
+}
+
+.u173_container {
+    position:absolute;
+    left:200px;
+    top:23px;
+    width:100px;
+    height:175px;
+}
+
+.u174 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:57px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u173 {
+    position:absolute;
+    left:200px;
+    top:23px;
+    width:100px;
+    height:175px
+}
+
+.u175_original {
+    background-image: url('../退改签公告_files/u175_original.png');
+}
+
+.u175_container {
+    position:absolute;
+    left:300px;
+    top:23px;
+    width:115px;
+    height:175px;
+}
+
+.u176 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:111px;
+    height:171px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u175 {
+    position:absolute;
+    left:300px;
+    top:23px;
+    width:115px;
+    height:175px
+}
+
+.u177_original {
+    background-image: url('../退改签公告_files/u177_original.png');
+}
+
+.u177_container {
+    position:absolute;
+    left:415px;
+    top:23px;
+    width:190px;
+    height:175px;
+}
+
+.u178 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:186px;
+    height:133px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u177 {
+    position:absolute;
+    left:415px;
+    top:23px;
+    width:190px;
+    height:175px
+}
+
+.u179_original {
+    background-image: url('../退改签公告_files/u179_original.png');
+}
+
+.u179_container {
+    position:absolute;
+    left:605px;
+    top:23px;
+    width:80px;
+    height:175px;
+}
+
+.u180 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u179 {
+    position:absolute;
+    left:605px;
+    top:23px;
+    width:80px;
+    height:175px
+}
+
+.u181_original {
+    background-image: url('../退改签公告_files/u179_original.png');
+}
+
+.u181_container {
+    position:absolute;
+    left:685px;
+    top:23px;
+    width:80px;
+    height:175px;
+}
+
+.u182 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u181 {
+    position:absolute;
+    left:685px;
+    top:23px;
+    width:80px;
+    height:175px
+}
+
+.u183_original {
+    background-image: url('../退改签公告_files/u95_original.png');
+}
+
+.u183_container {
+    position:absolute;
+    left:0px;
+    top:198px;
+    width:100px;
+    height:20px;
+}
+
+.u184 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u183 {
+    position:absolute;
+    left:0px;
+    top:198px;
+    width:100px;
+    height:20px
+}
+
+.u185_original {
+    background-image: url('../退改签公告_files/u95_original.png');
+}
+
+.u185_container {
+    position:absolute;
+    left:100px;
+    top:198px;
+    width:100px;
+    height:20px;
+}
+
+.u186 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u185 {
+    position:absolute;
+    left:100px;
+    top:198px;
+    width:100px;
+    height:20px
+}
+
+.u187_original {
+    background-image: url('../退改签公告_files/u95_original.png');
+}
+
+.u187_container {
+    position:absolute;
+    left:200px;
+    top:198px;
+    width:100px;
+    height:20px;
+}
+
+.u188 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u187 {
+    position:absolute;
+    left:200px;
+    top:198px;
+    width:100px;
+    height:20px
+}
+
+.u189_original {
+    background-image: url('../退改签公告_files/u97_original.png');
+}
+
+.u189_container {
+    position:absolute;
+    left:300px;
+    top:198px;
+    width:115px;
+    height:20px;
+}
+
+.u190 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:111px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u189 {
+    position:absolute;
+    left:300px;
+    top:198px;
+    width:115px;
+    height:20px
+}
+
+.u191_original {
+    background-image: url('../退改签公告_files/u99_original.png');
+}
+
+.u191_container {
+    position:absolute;
+    left:415px;
+    top:198px;
+    width:190px;
+    height:20px;
+}
+
+.u192 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:186px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u191 {
+    position:absolute;
+    left:415px;
+    top:198px;
+    width:190px;
+    height:20px
+}
+
+.u193_original {
+    background-image: url('../退改签公告_files/u101_original.png');
+}
+
+.u193_container {
+    position:absolute;
+    left:605px;
+    top:198px;
+    width:80px;
+    height:20px;
+}
+
+.u194 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u193 {
+    position:absolute;
+    left:605px;
+    top:198px;
+    width:80px;
+    height:20px
+}
+
+.u195_original {
+    background-image: url('../退改签公告_files/u101_original.png');
+}
+
+.u195_container {
+    position:absolute;
+    left:685px;
+    top:198px;
+    width:80px;
+    height:20px;
+}
+
+.u196 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u195 {
+    position:absolute;
+    left:685px;
+    top:198px;
+    width:80px;
+    height:20px
+}
+
+.u197 {
+    position:absolute;
+    left:830px;
+    top:130px;
+    width:150px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

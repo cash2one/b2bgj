@@ -47,7 +47,7 @@ YUI().use('gallery-formvalidator', 'io', 'node', 'jsonp', 'event', 'autocomplete
 					Y.all('.lightbox [rel=close]').on("click", function(e) {
 						if (buy && e.target.hasClass('submit')) {
 							var data = submitedData.replace(/__VIEWSTATE[^&]+&/, '');
-							location.href = buy + "?" + data + FlightNo + Price;
+							location.href = buy;
 						} else {
 							e.target.ancestor('.lightbox').hide();
 						}
@@ -63,12 +63,40 @@ YUI().use('gallery-formvalidator', 'io', 'node', 'jsonp', 'event', 'autocomplete
 						data: time,
 						on: {
 							success: function(i, res) {
-								var templ = Y.one('#TSXX-template').getContent();
-								var data = {
-									uid: uid,
-									response: res.responseText
-								}
-								var lightboxTemplate = Y.Mustache.to_html('{{={@ @}=}}' + templ, data)
+								//var templ = Y.one('#TSXX-template').getContent();
+								//var data = {
+								//	uid: uid,
+								//	response: res.responseText
+							//	}
+								
+							//	var lightboxTemplate = Y.Mustache.to_html('{{={@ @}=}}' + templ, data);
+var lightboxTemplate=''+
+'<div class="lightbox lightbox-1 lightbox'+uid+'" data-lightboxid="TSXX">'+
+'    <table cellspacing="0">'+
+ '       <tr>'+
+ '           <td>'+
+ '               <div class="lightbox-content">'+
+'                    <i class="close" rel="close">×</i> '+
+'    <div class="lightbox-head">'+
+'        <h3>提示信息</h3>'+
+ '   </div>'+
+'    <div class="lightbox-body">'+
+'<p>'+res.responseText+'</p>'+
+'        <p>&nbsp;</p>'+
+ '       <p class="gray">'+
+ '           以上退改签规定以航空公司为准，或致电退改热线咨询 '+
+  '      </p>'+
+    '    <p>&nbsp;</p>'+
+        '<p class="center">'+
+       '     <input type="button" class="button button1 submit" value="确定" name="" rel="close" />'+
+      '      <input type="button" class="button button1" value="取消" name="" rel="close" />'+
+     '   </p>'+
+    '</div>'+
+    '            </div>'+
+   '         </td>'+
+  '      </tr>'+
+ '   </table>'+
+'</div>'
 								Y.one('body').append(lightboxTemplate);
 								show();
 							}
@@ -143,6 +171,59 @@ YUI().use('gallery-formvalidator', 'io', 'node', 'jsonp', 'event', 'autocomplete
 			});
 		},
 		'.mo-jptj');
+
+        /*订单详情页面*/
+        Y.on('available', function(){
+           Y.one('.rp-fp-checkbox').on('click',function(e){
+                if(this.get('checked')){
+                    Y.one('.rq-fp').setStyle('display','block'); 
+                }else{
+                    Y.one('.rq-fp').setStyle('display','none');  
+                }
+           });
+
+           Y.one('.pszq').on('click',function(e){
+                if(this.get('checked')){
+                    Y.one('.psfs_box').setStyle('display','none'); 
+                }
+           });
+
+           Y.one('.psdf').on('click',function(e){
+                if(this.get('checked')){
+                    Y.one('.psfs_box').setStyle('display','block');  
+                }
+           });
+
+           Y.one('.select_pas_type').on('change',function(e){
+               if (this.get('value')==2){
+                   Y.one('.uploads-box').setStyle('display','block');
+               }else{
+                   Y.one('.uploads-box').setStyle('display','none');
+               }
+           
+           })
+
+           Y.one('.fp-one').on('click',function(e){
+                if(this.get('checked')){
+                    Y.one('.fpone-one').setStyle('display','block'); 
+                    Y.one('.fpone-mul').setStyle('display','none');  
+                }else{
+                    Y.one('.fpone-one').setStyle('display','none'); 
+                    Y.one('.fpone-mul').setStyle('display','block');  
+                }
+           });
+
+           Y.one('.fp-mul').on('click',function(e){
+                if(this.get('checked')){
+                    Y.one('.fpone-one').setStyle('display','none'); 
+                    Y.one('.fpone-mul').setStyle('display','block');  
+                }else{
+                    Y.one('.fpone-one').setStyle('display','block'); 
+                    Y.one('.fpone-mul').setStyle('display','none');  
+                }
+           });
+
+        },'.mo-tjdd');
 
 		/*航班查询页面*/
 		Y.on('available', function() {

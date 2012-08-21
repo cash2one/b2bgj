@@ -1,0 +1,389 @@
+$cbg:#e2e9ea;
+$chead:#3a6ea5;
+
+$center:no-repeat 50% 50%;
+
+//Black
+$c11:#333;
+$c12:#666;
+$c13:#999;
+
+//Blue
+$c21:#369;
+$c22:#36c;
+$c23:#38ace8;
+$c24:#cfe6fd;
+
+//Green
+$c31:#693;
+$c32:#9c6;
+$c33:#cf9;
+
+//grey
+$c41:#d9e4ea;
+$c42:#eee;
+$c43:#f3f3f3;
+
+$c0:#fff;
+
+$bc1:#bec6c7;
+
+body{
+    font-size:12px;
+    background-color:$cbg;
+}
+
+.head{
+    background-color:$chead;
+    height:95px;
+    min-width:960px;
+}
+
+.area{
+    border:1px solid $bc1;
+    background-color:$c0;
+}
+.logo{
+    padding-top:15px;
+    float:left;
+    margin:0;
+    width:170px;
+    text-align:center;
+    background:url(../img/logo-border.png) 100% 50% no-repeat;
+    span{
+        display:none;
+    }
+}
+.nav-top{
+    margin-left:180px;
+}
+.menu-quick{
+    color:$c0;
+    padding:25px 0 0 20px;
+    height:34px;
+    a{
+        color:$c0;
+    }
+}
+.menu-main{
+    height:36px;
+    ul{
+        padding:0;
+        list-style:none;
+        margin:0;
+
+    }
+    li{
+        margin:0;
+        width:97px;
+        height:36px;
+        float:left;
+    }
+    a{
+        line-height:40px;
+        text-align:center;
+        display:block;
+        color:$c0;
+        &:hover {text-decoration:none; }
+        font-size:14px;
+        background:url(../img/menu-main.png) no-repeat;
+    }
+    .current a{
+        color:$c22;
+        background:url(../img/menu-main-h.png) no-repeat;
+    }
+}
+
+a{
+    text-decoration:none;
+    &:hover{
+        text-decoration:underline;
+    }
+}
+.body{
+    padding:10px;
+}
+.sidebar{
+    height:100%;
+    float:left; 
+    width:158px;
+    .links{
+        margin:250px 15px 20px 30px;
+        span{
+            display:block;
+        }
+        a{
+            color:$c11;
+        }
+    }
+}
+.breadcrumb{
+    margin-left:180px;
+    height:24px;
+    a{
+        color:$c11;
+    }
+}
+.content{
+    margin-left:175px;
+}
+
+.menu-sidebar{
+    dl{
+        margin:10px 10px 30px 10px;
+    }
+    dt{
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        &.current{
+            color:$c21; 
+        } 
+        font-size:14px;
+        border-bottom:1px solid $c41;
+        position:relative;
+        .arrow1{
+            right:0;
+            position:absolute;
+            top:6px;
+        }
+    }
+    dd{
+        margin:5px 0;
+        .current{
+            color:$c21; 
+            background-color:$c24;
+            border-radius:5px;
+            &:hover{
+                text-decoration:none;    
+            }
+        }
+
+    }
+    a{
+        padding:4px 0 4px 18px;
+        display:block;
+        color:$c11;
+        &:hover{
+            color:$c21;
+        }
+    }
+}
+i.arrow1{
+    background:url(../img/arrow1.png) no-repeat;
+    display:block;
+    width:13px;
+    height:7px;
+}
+
+i.icon3{
+    padding:1px 10px;
+    background:url(../img/icon3.png) $center;
+}
+i.icon1{
+    padding:1px 10px;
+    background:url(../img/icon1.png) $center;
+}
+i.icon2{
+    padding:1px 10px;
+    background:url(../img/icon2.png) $center;
+}
+i{
+    zoom:1;
+    font-style:normal;
+}
+b,th{
+    font-weight:normal;
+}
+td,th{
+   word-wrap:break-word;
+   word-break:break-all;
+}
+th{
+    vertical-align:top;
+    text-align:left;
+}
+u,s{
+    text-decoration:none;
+}
+input.button{
+    padding:2px 8px;
+}
+input.text,textarea{
+    border:1px solid $bc1;
+    background:none;
+}
+input.checkbox,input.radio{
+    vertical-align:text-bottom;
+}
+h1.title{
+    font-size:14px;
+    color:$c11;
+    margin-bottom:10px;
+}
+
+h2.title{
+    font-size:12px;
+    color:$c11;
+    margin-bottom:10px;
+}
+
+.content{
+    padding:15px;
+}
+.title{
+    margin:0;
+}
+
+.table-b1{
+    width:100%;
+
+    tr{
+        border-top:1px solid $c42; 
+    }
+    td{
+        padding:5px 0;
+        vertical-align:baseline;
+    }
+    p{
+        margin-bottom:5px;
+    }
+    input.text{
+        width:120px; 
+        margin:0;
+        padding:3px 2px;
+    }
+    input.text-half{
+        width:60px; 
+    }
+    input.text-double{
+        width:240px; 
+    }
+    textarea{
+        line-height:18px;
+        padding:3px 2px;
+        width:300px;    
+        height:100px;
+    }
+
+}
+p{
+    margin:0;
+}
+.table-count{
+   background-color:$c42; 
+   margin:5px 0;
+   padding:10px;
+   border:1px solid $bc1;
+}
+.table-buttons{
+    margin-top:40px;
+    margin-bottom:10px;
+    .button{
+        background-color:$c24; 
+        border-radius:3px;
+        color:$c22;
+        border:none;
+    }
+}
+.table-b2{
+    border:1px solid $bc1; 
+    width:100%;
+    .thead{
+        background-color:$c43; 
+        td{
+            border:1px solid $bc1; 
+            white-space:nowrap;
+        }
+    }
+    td{
+        padding:5px; 
+        vertical-align:inherit;
+    }
+}
+
+/////////////////////////
+//添加预期后返
+.table1-tjyqhf{
+
+    .tcol1{
+        width:70px;
+    }
+}
+////////////////////////
+//预期后返
+.table1-yqhf{
+    .tcol1{
+        width:200px; 
+    }
+    .tcol2{
+        width:340px; 
+    }
+}
+
+.table2-yqhf{
+    .tcol1{
+        width:60px; 
+    }
+}
+////////////////////////
+//开关政策
+.table2-kgzc{
+    border-top:1px solid $c42;
+    width:100%; 
+    td,th{
+        padding:8px; 
+    }
+    .tcol1{
+        width:130px; 
+    }
+    .tcol2{
+        width:200px; 
+    }
+    .tcol3{
+        width:65px; 
+    }
+}
+.table1-kgzc .tcol1{
+    width:100px;
+}
+
+//////////////////////////
+//政策查看
+.table1-zcck{
+    .tcol1{
+        width:200px; 
+    } 
+    .tcol2{
+        width:360px; 
+    }
+}
+.table2-zcck{
+    .tcol1{
+        width:70px; 
+    } 
+}
+
+//////////////////////////
+//政策路由管理
+.mo-zclygl .block2{
+    width:800px;
+}
+.table1-zclygl{
+    .tcol1{
+        width:200px; 
+    }
+    .tcol2{
+        width:200px; 
+    }
+    .tcol3{
+        width:200px; 
+    }
+}
+
+//////////////////////////
+//退费维护
+.table1-tfwh{
+    .tcol1{
+        width:70px; 
+    }
+}

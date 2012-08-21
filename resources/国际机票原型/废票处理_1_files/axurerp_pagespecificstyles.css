@@ -1,0 +1,2742 @@
+body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../废票处理_1_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:14px;
+    top:735px;
+    width:1128px;
+    height:98px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1128px;
+    height:98px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1124px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../废票处理_1_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:14px;
+    top:847px;
+    width:1069px;
+    height:98px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1069px;
+    height:98px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:41px;
+    width:1065px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../废票处理_1_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:13px;
+    top:73px;
+    width:1119px;
+    height:195px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1119px;
+    height:195px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1115px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../废票处理_1_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:12px;
+    top:268px;
+    width:1123px;
+    height:352px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1123px;
+    height:352px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:168px;
+    width:1119px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../废票处理_1_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:714px;
+    top:499px;
+    width:6px;
+    height:78px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../废票处理_1_files/u8_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:820px;
+    top:499px;
+    width:6px;
+    height:78px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../废票处理_1_files/u12_normal.png');
+}
+
+.u12_container {
+    position:absolute;
+    left:745px;
+    top:501px;
+    width:37px;
+    height:76px;
+}
+
+#u12_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:37px;
+    height:76px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:33px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14 {
+    position:absolute;
+    left:743px;
+    top:509px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u15 {
+    position:absolute;
+    left:762px;
+    top:544px;
+    width:26px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u16_normal {
+    background-image: url('../废票处理_1_files/u8_normal.png');
+}
+
+.u16_container {
+    position:absolute;
+    left:901px;
+    top:499px;
+    width:6px;
+    height:78px;
+}
+
+#u16_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u17 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u18_normal {
+    background-image: url('../废票处理_1_files/u18_normal.png');
+}
+
+.u18_container {
+    position:absolute;
+    left:932px;
+    top:501px;
+    width:167px;
+    height:76px;
+}
+
+#u18_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:167px;
+    height:76px;
+}
+
+.u19 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:163px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u20_normal {
+    background-image: url('../废票处理_1_files/u20_normal.png');
+}
+
+.u20_container {
+    position:absolute;
+    left:917px;
+    top:502px;
+    width:83px;
+    height:68px;
+}
+
+#u20_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:83px;
+    height:68px;
+}
+
+.u21 {
+    position:absolute;
+    left:2px;
+    top:26px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u22 {
+    position:absolute;
+    left:1050px;
+    top:509px;
+    width:65px;
+    height:15px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u23_normal {
+    background-image: url('../废票处理_1_files/u8_normal.png');
+}
+
+.u23_container {
+    position:absolute;
+    left:1012px;
+    top:499px;
+    width:6px;
+    height:78px;
+}
+
+#u23_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:6px;
+    height:78px;
+}
+
+.u24 {
+    position:absolute;
+    left:2px;
+    top:31px;
+    width:2px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u25_normal {
+    background-image: url('../废票处理_1_files/u25_normal.png');
+}
+
+.u25_container {
+    position:absolute;
+    left:640px;
+    top:78px;
+    width:80px;
+    height:29px;
+}
+
+#u25_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:86px;
+    height:35px;
+}
+
+.u26 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u27_normal {
+    background-image: url('../废票处理_1_files/u27_normal.png');
+}
+
+.u27_container {
+    position:absolute;
+    left:248px;
+    top:309px;
+    width:137px;
+    height:29px;
+}
+
+#u27_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u28 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u29_normal {
+    background-image: url('../废票处理_1_files/u27_normal.png');
+}
+
+.u29_container {
+    position:absolute;
+    left:420px;
+    top:309px;
+    width:137px;
+    height:29px;
+}
+
+#u29_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:143px;
+    height:35px;
+}
+
+.u30 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:133px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u31_normal {
+    background-image: url('../废票处理_1_files/u31_normal.png');
+}
+
+.u31_container {
+    position:absolute;
+    left:322px;
+    top:309px;
+    width:98px;
+    height:24px;
+}
+
+#u31_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:98px;
+    height:24px;
+}
+
+.u32 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u33_normal {
+    background-image: url('../废票处理_1_files/u33_normal.png');
+}
+
+.u33_container {
+    position:absolute;
+    left:4px;
+    top:1087px;
+    width:1129px;
+    height:62px;
+}
+
+#u33_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1129px;
+    height:62px;
+}
+
+.u34 {
+    position:absolute;
+    left:2px;
+    top:23px;
+    width:1125px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u35_normal {
+    background-image: url('../废票处理_1_files/u35_normal.png');
+}
+
+.u35_container {
+    position:absolute;
+    left:947px;
+    top:384px;
+    width:81px;
+    height:77px;
+}
+
+#u35_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:81px;
+    height:77px;
+}
+
+.u36 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:77px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u37_normal {
+    background-image: url('../废票处理_1_files/u37_normal.png');
+}
+
+.u37_container {
+    position:absolute;
+    left:852px;
+    top:384px;
+    width:95px;
+    height:77px;
+}
+
+#u37_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:95px;
+    height:77px;
+}
+
+.u38 {
+    position:absolute;
+    left:2px;
+    top:30px;
+    width:91px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u39_normal {
+    background-image: url('../废票处理_1_files/u39_normal.png');
+}
+
+.u39_container {
+    position:absolute;
+    left:960px;
+    top:387px;
+    width:66px;
+    height:29px;
+}
+
+#u39_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u40 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u41_normal {
+    background-image: url('../废票处理_1_files/u39_normal.png');
+}
+
+.u41_container {
+    position:absolute;
+    left:960px;
+    top:426px;
+    width:66px;
+    height:29px;
+}
+
+#u41_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u42 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u43_normal {
+    background-image: url('../废票处理_1_files/u39_normal.png');
+}
+
+.u43_container {
+    position:absolute;
+    left:867px;
+    top:383px;
+    width:66px;
+    height:29px;
+}
+
+#u43_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u44 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u45_normal {
+    background-image: url('../废票处理_1_files/u39_normal.png');
+}
+
+.u45_container {
+    position:absolute;
+    left:867px;
+    top:425px;
+    width:66px;
+    height:29px;
+}
+
+#u45_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u46 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u47_normal {
+    background-image: url('../废票处理_1_files/u47_normal.png');
+}
+
+.u47_container {
+    position:absolute;
+    left:420px;
+    top:309px;
+    width:100px;
+    height:29px;
+}
+
+#u47_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:106px;
+    height:35px;
+}
+
+.u48 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:96px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u49_normal {
+    background-image: url('../废票处理_1_files/u49_normal.png');
+}
+
+.u49_container {
+    position:absolute;
+    left:4px;
+    top:1161px;
+    width:298px;
+    height:34px;
+}
+
+#u49_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u50 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u51_normal {
+    background-image: url('../废票处理_1_files/u51_normal.png');
+}
+
+.u51_container {
+    position:absolute;
+    left:234px;
+    top:887px;
+    width:136px;
+    height:23px;
+}
+
+#u51_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u52 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u53_normal {
+    background-image: url('../废票处理_1_files/u39_normal.png');
+}
+
+.u53_container {
+    position:absolute;
+    left:1046px;
+    top:388px;
+    width:66px;
+    height:29px;
+}
+
+#u53_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:35px;
+}
+
+.u54 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u55_normal {
+    background-image: url('../废票处理_1_files/u55_normal.png');
+}
+
+.u55_container {
+    position:absolute;
+    left:1033px;
+    top:428px;
+    width:98px;
+    height:29px;
+}
+
+#u55_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:35px;
+}
+
+.u56 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u57_normal {
+    background-image: url('../废票处理_1_files/u57_normal.png');
+}
+
+.u57_container {
+    position:absolute;
+    left:368px;
+    top:582px;
+    width:166px;
+    height:33px;
+}
+
+#u57_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:166px;
+    height:33px;
+}
+
+.u58 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:162px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u59_normal {
+    background-image: url('../废票处理_1_files/u59_normal.png');
+}
+
+.u59_container {
+    position:absolute;
+    left:302px;
+    top:1127px;
+    width:342px;
+    height:34px;
+}
+
+#u59_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u60 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u61_normal {
+    background-image: url('../废票处理_1_files/u59_normal.png');
+}
+
+.u61_container {
+    position:absolute;
+    left:302px;
+    top:1161px;
+    width:342px;
+    height:34px;
+}
+
+#u61_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:348px;
+    height:40px;
+}
+
+.u62 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:338px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u63_normal {
+    background-image: url('../废票处理_1_files/u63_normal.png');
+}
+
+.u63_container {
+    position:absolute;
+    left:644px;
+    top:1127px;
+    width:443px;
+    height:34px;
+}
+
+#u63_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u64 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u65_normal {
+    background-image: url('../废票处理_1_files/u63_normal.png');
+}
+
+.u65_container {
+    position:absolute;
+    left:644px;
+    top:1161px;
+    width:443px;
+    height:34px;
+}
+
+#u65_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:449px;
+    height:40px;
+}
+
+.u66 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:439px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u67_normal {
+    background-image: url('../废票处理_1_files/u49_normal.png');
+}
+
+.u67_container {
+    position:absolute;
+    left:4px;
+    top:1127px;
+    width:298px;
+    height:34px;
+}
+
+#u67_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:304px;
+    height:40px;
+}
+
+.u68 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:294px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u69_normal {
+    background-image: url('../废票处理_1_files/u69_normal.png');
+}
+
+.u69_container {
+    position:absolute;
+    left:68px;
+    top:1003px;
+    width:160px;
+    height:34px;
+}
+
+#u69_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:40px;
+}
+
+.u70 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u71_normal {
+    background-image: url('../废票处理_1_files/u71_normal.png');
+}
+
+.u71_container {
+    position:absolute;
+    left:228px;
+    top:1003px;
+    width:819px;
+    height:34px;
+}
+
+#u71_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u72 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u73_normal {
+    background-image: url('../废票处理_1_files/u73_normal.png');
+}
+
+.u73_container {
+    position:absolute;
+    left:764px;
+    top:78px;
+    width:195px;
+    height:29px;
+}
+
+#u73_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:195px;
+    height:29px;
+}
+
+.u74 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:191px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u75_normal {
+    background-image: url('../废票处理_1_files/u75_normal.png');
+}
+
+.u75_container {
+    position:absolute;
+    left:16px;
+    top:945px;
+    width:1031px;
+    height:58px;
+}
+
+#u75_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1031px;
+    height:58px;
+}
+
+.u76 {
+    position:absolute;
+    left:2px;
+    top:21px;
+    width:1027px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u77_normal {
+    background-image: url('../废票处理_1_files/u77_normal.png');
+}
+
+.u77_container {
+    position:absolute;
+    left:231px;
+    top:585px;
+    width:132px;
+    height:30px;
+}
+
+#u77_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:132px;
+    height:30px;
+}
+
+.u78 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:128px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u79_normal {
+    background-image: url('../废票处理_1_files/u79_normal.png');
+}
+
+.u79_container {
+    position:absolute;
+    left:477px;
+    top:36px;
+    width:91px;
+    height:27px;
+}
+
+#u79_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:27px;
+}
+
+.u80 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u81_normal {
+    background-image: url('../废票处理_1_files/u81_normal.png');
+}
+
+.u81_container {
+    position:absolute;
+    left:516px;
+    top:17px;
+    width:73px;
+    height:15px;
+}
+
+#u81_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:79px;
+    height:21px;
+}
+
+.u82 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u83_normal {
+    background-image: url('../废票处理_1_files/u83_normal.png');
+}
+
+.u83_container {
+    position:absolute;
+    left:717px;
+    top:13px;
+    width:91px;
+    height:15px;
+}
+
+#u83_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:97px;
+    height:21px;
+}
+
+.u84 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u85_normal {
+    background-image: url('../废票处理_1_files/u85_normal.png');
+}
+
+.u85_container {
+    position:absolute;
+    left:437px;
+    top:35px;
+    width:30px;
+    height:28px;
+}
+
+#u85_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:30px;
+    height:28px;
+}
+
+.u86 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:26px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u87_normal {
+    background-image: url('../废票处理_1_files/u81_normal.png');
+}
+
+.u87_container {
+    position:absolute;
+    left:423px;
+    top:17px;
+    width:73px;
+    height:15px;
+}
+
+#u87_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:79px;
+    height:21px;
+}
+
+.u88 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:69px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u89 {
+    position:absolute;
+    left:612px;
+    top:1360px;
+    width:87px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u90_normal {
+    background-image: url('../废票处理_1_files/u83_normal.png');
+}
+
+.u90_container {
+    position:absolute;
+    left:604px;
+    top:15px;
+    width:91px;
+    height:15px;
+}
+
+#u90_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:97px;
+    height:21px;
+}
+
+.u91 {
+    position:absolute;
+    left:2px;
+    top:0px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u92_normal {
+    background-image: url('../废票处理_1_files/u79_normal.png');
+}
+
+.u92_container {
+    position:absolute;
+    left:573px;
+    top:35px;
+    width:91px;
+    height:27px;
+}
+
+#u92_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:27px;
+}
+
+.u93 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u94_normal {
+    background-image: url('../废票处理_1_files/u51_normal.png');
+}
+
+.u94_container {
+    position:absolute;
+    left:22px;
+    top:802px;
+    width:136px;
+    height:23px;
+}
+
+#u94_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:142px;
+    height:29px;
+}
+
+.u95 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:132px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u96_normal {
+    background-image: url('../废票处理_1_files/u96_normal.png');
+}
+
+.u96_container {
+    position:absolute;
+    left:510px;
+    top:802px;
+    width:98px;
+    height:23px;
+}
+
+#u96_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:29px;
+}
+
+.u97 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u98_normal {
+    background-image: url('../废票处理_1_files/u98_normal.png');
+}
+
+.u98_container {
+    position:absolute;
+    left:626px;
+    top:35px;
+    width:29px;
+    height:32px;
+}
+
+#u98_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:29px;
+    height:32px;
+}
+
+.u99 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:25px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u100_normal {
+    background-image: url('../废票处理_1_files/u79_normal.png');
+}
+
+.u100_container {
+    position:absolute;
+    left:697px;
+    top:36px;
+    width:91px;
+    height:27px;
+}
+
+#u100_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:91px;
+    height:27px;
+}
+
+.u101 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:87px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u102_normal {
+    background-image: url('../废票处理_1_files/u69_normal.png');
+}
+
+.u102_container {
+    position:absolute;
+    left:68px;
+    top:1037px;
+    width:160px;
+    height:34px;
+}
+
+#u102_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:166px;
+    height:40px;
+}
+
+.u103 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:156px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u104_normal {
+    background-image: url('../废票处理_1_files/u71_normal.png');
+}
+
+.u104_container {
+    position:absolute;
+    left:228px;
+    top:1037px;
+    width:819px;
+    height:34px;
+}
+
+#u104_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:825px;
+    height:40px;
+}
+
+.u105 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:815px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u106_normal {
+    background-image: url('../废票处理_1_files/u106_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:44px;
+    top:1266px;
+    width:75px;
+    height:30px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:81px;
+    height:36px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:7px;
+    width:71px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u108 {
+    position:absolute;
+    left:154px;
+    top:1266px;
+    width:545px;
+    height:70px;
+    ;
+    ;
+    text-align: left;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u109 {
+    position:absolute;
+    left:498px;
+    top:1361px;
+    width:77px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u110 {
+    position:absolute;
+    left:118px;
+    top:1235px;
+    width:70px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u111 {
+    position:absolute;
+    left:220px;
+    top:1231px;
+    width:118px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u112_normal {
+    background-image: url('../废票处理_1_files/u112_normal.png');
+}
+
+.u112_container {
+    position:absolute;
+    left:32px;
+    top:1231px;
+    width:76px;
+    height:24px;
+}
+
+#u112_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:82px;
+    height:30px;
+}
+
+.u113 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:72px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u114_normal {
+    background-image: url('../废票处理_1_files/u114_normal.png');
+}
+
+.u114_container {
+    position:absolute;
+    left:14px;
+    top:662px;
+    width:1066px;
+    height:31px;
+}
+
+#u114_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1066px;
+    height:31px;
+}
+
+.u115 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:1062px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u116_normal {
+    background-image: url('../废票处理_1_files/u116_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:13px;
+    top:667px;
+    width:108px;
+    height:21px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:114px;
+    height:27px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:104px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u118_normal {
+    background-image: url('../废票处理_1_files/u118_normal.png');
+}
+
+.u118_container {
+    position:absolute;
+    left:19px;
+    top:691px;
+    width:151px;
+    height:42px;
+}
+
+#u118_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u119 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u120_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u120_container {
+    position:absolute;
+    left:50px;
+    top:698px;
+    width:110px;
+    height:31px;
+}
+
+#u120_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u121 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u122_normal {
+    background-image: url('../废票处理_1_files/u118_normal.png');
+}
+
+.u122_container {
+    position:absolute;
+    left:275px;
+    top:691px;
+    width:151px;
+    height:42px;
+}
+
+#u122_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u123 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u124_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u124_container {
+    position:absolute;
+    left:306px;
+    top:698px;
+    width:110px;
+    height:31px;
+}
+
+#u124_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u125 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u126 {
+    position:absolute;
+    left:202px;
+    top:705px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u127_normal {
+    background-image: url('../废票处理_1_files/u118_normal.png');
+}
+
+.u127_container {
+    position:absolute;
+    left:509px;
+    top:693px;
+    width:151px;
+    height:42px;
+}
+
+#u127_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:151px;
+    height:42px;
+}
+
+.u128 {
+    position:absolute;
+    left:2px;
+    top:13px;
+    width:147px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u129_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u129_container {
+    position:absolute;
+    left:540px;
+    top:700px;
+    width:110px;
+    height:31px;
+}
+
+#u129_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:116px;
+    height:37px;
+}
+
+.u130 {
+    position:absolute;
+    left:2px;
+    top:8px;
+    width:106px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u131 {
+    position:absolute;
+    left:436px;
+    top:710px;
+    width:89px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u132 {
+    position:absolute;
+    left:682px;
+    top:707px;
+    width:248px;
+    height:14px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u133_normal {
+    background-image: url('../废票处理_1_files/u133_normal.png');
+}
+
+.u133_container {
+    position:absolute;
+    left:944px;
+    top:769px;
+    width:66px;
+    height:34px;
+}
+
+#u133_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:40px;
+}
+
+.u134 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u135_normal {
+    background-image: url('../废票处理_1_files/u133_normal.png');
+}
+
+.u135_container {
+    position:absolute;
+    left:944px;
+    top:799px;
+    width:66px;
+    height:34px;
+}
+
+#u135_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:40px;
+}
+
+.u136 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u137_normal {
+    background-image: url('../废票处理_1_files/u133_normal.png');
+}
+
+.u137_container {
+    position:absolute;
+    left:1010px;
+    top:769px;
+    width:66px;
+    height:34px;
+}
+
+#u137_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:40px;
+}
+
+.u138 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u139_normal {
+    background-image: url('../废票处理_1_files/u133_normal.png');
+}
+
+.u139_container {
+    position:absolute;
+    left:1010px;
+    top:799px;
+    width:66px;
+    height:34px;
+}
+
+#u139_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:40px;
+}
+
+.u140 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u141_normal {
+    background-image: url('../废票处理_1_files/u133_normal.png');
+}
+
+.u141_container {
+    position:absolute;
+    left:1076px;
+    top:769px;
+    width:66px;
+    height:34px;
+}
+
+#u141_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:40px;
+}
+
+.u142 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u143_normal {
+    background-image: url('../废票处理_1_files/u133_normal.png');
+}
+
+.u143_container {
+    position:absolute;
+    left:1076px;
+    top:799px;
+    width:66px;
+    height:34px;
+}
+
+#u143_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:72px;
+    height:40px;
+}
+
+.u144 {
+    position:absolute;
+    left:2px;
+    top:9px;
+    width:62px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u145 {
+    position:absolute;
+    left:734px;
+    top:1360px;
+    width:92px;
+    height:25px;
+    ;
+    ;
+    text-align: center;;
+    font-family:'Arial';
+    font-size: 13px;
+    color:#000000;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    
+}
+
+.u146_normal {
+    background-image: url('../废票处理_1_files/u146_normal.png');
+}
+
+.u146_container {
+    position:absolute;
+    left:520px;
+    top:508px;
+    width:61px;
+    height:18px;
+}
+
+#u146_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:67px;
+    height:24px;
+}
+
+.u147 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u148_normal {
+    background-image: url('../废票处理_1_files/u148_normal.png');
+}
+
+.u148_container {
+    position:absolute;
+    left:414px;
+    top:508px;
+    width:98px;
+    height:18px;
+}
+
+#u148_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:104px;
+    height:24px;
+}
+
+.u149 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:94px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u150_normal {
+    background-image: url('../废票处理_1_files/u150_normal.png');
+}
+
+.u150_container {
+    position:absolute;
+    left:530px;
+    top:547px;
+    width:41px;
+    height:18px;
+}
+
+#u150_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:47px;
+    height:24px;
+}
+
+.u151 {
+    position:absolute;
+    left:2px;
+    top:1px;
+    width:37px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u152_normal {
+    background-image: url('../废票处理_1_files/u152_normal.png');
+}
+
+.u152_container {
+    position:absolute;
+    left:513px;
+    top:498px;
+    width:7px;
+    height:80px;
+}
+
+#u152_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:7px;
+    height:80px;
+}
+
+.u153 {
+    position:absolute;
+    left:2px;
+    top:32px;
+    width:3px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u154 {
+    position:absolute;
+    left:1025px;
+    top:546px;
+    width:100px;
+    height:19px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u155_normal {
+    background-image: url('../废票处理_1_files/u155_normal.png');
+}
+
+.u155_container {
+    position:absolute;
+    left:13px;
+    top:465px;
+    width:1121px;
+    height:197px;
+}
+
+#u155_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1121px;
+    height:197px;
+}
+
+.u156 {
+    position:absolute;
+    left:2px;
+    top:90px;
+    width:1117px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u157_normal {
+    background-image: url('../废票处理_1_files/u157_normal.png');
+}
+
+.u157_container {
+    position:absolute;
+    left:738px;
+    top:618px;
+    width:180px;
+    height:27px;
+}
+
+#u157_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u158 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u159_normal {
+    background-image: url('../废票处理_1_files/u157_normal.png');
+}
+
+.u159_container {
+    position:absolute;
+    left:748px;
+    top:628px;
+    width:180px;
+    height:27px;
+}
+
+#u159_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:186px;
+    height:33px;
+}
+
+.u160 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:176px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
