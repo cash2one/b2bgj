@@ -141,7 +141,7 @@ class GuojiHandler(tornado.web.RequestHandler):
                     [u'国际订单管理', [
                         u'出票订单',u'改签订单',u'退票订单',u'废票订单',u'退款订单']
                     ],
-                    [u'机票出票管理', [u'处理已支付订单',u'待审核订单',u'退票订单',u'废票订单']
+                    [u'机票出票管理', [u'已支付订单',u'待审核订单']
                     ],
                     [u'国际政策管理',
                         [u'国际返点查询',u'新增国际返点',u'国际政策导入'] 
@@ -153,6 +153,13 @@ class GuojiHandler(tornado.web.RequestHandler):
                     [u'基础数据维护',[
                         u'基础数据维护', ]
                     ],
+                    [u'线下订单管理',[
+                        u'PNR提交', 
+                        u'订单处理', 
+                        u'出票操作',
+                        u'改签出票',
+                        u'新建退废票单',
+                    ]]
                 ],
             }
 
@@ -193,7 +200,7 @@ class GuojiHandler(tornado.web.RequestHandler):
                     ]],
                     [u'发票信息管理',[
                         u'发票信息查询',
-                    ]],
+                    ]]
                 ],
             }
 

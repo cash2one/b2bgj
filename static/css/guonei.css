@@ -31,6 +31,8 @@ body {
 
 .gray-title, .table-b5 .thead, .table-b6 .thead {
   background: url(../img/gray-title.png) repeat-x; }
+  .gray-title .buttons, .table-b5 .thead .buttons, .table-b6 .thead .buttons {
+    font-weight: normal; }
   .gray-title ul, .table-b5 .thead ul, .table-b6 .thead ul {
     overflow: hidden;
     padding: 0;
@@ -50,6 +52,8 @@ body {
       border: 1px solid #cecece;
       border-bottom: 0;
       background-color: #fff; }
+    .gray-title ul a, .table-b5 .thead ul a, .table-b6 .thead ul a {
+      color: inherit; }
 
 .f12, h2.title, h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
   font-size: 12px; }
@@ -201,9 +205,10 @@ a {
     border-radius: 5px; }
     .menu-sidebar dd a.current:hover {
       text-decoration: none; }
+  .menu-sidebar dd a {
+    padding: 4px 0 4px 18px;
+    display: block; }
 .menu-sidebar a {
-  padding: 4px 0 4px 18px;
-  display: block;
   color: #333333; }
   .menu-sidebar a:hover {
     color: #333333; }
@@ -421,6 +426,18 @@ input.disabled {
     padding: 3px 2px;
     width: 300px;
     height: 100px; }
+
+input.text9 {
+  width: 90% !important; }
+
+input.text0 {
+  width: 30px !important; }
+
+input.text2 {
+  width: 240px !important; }
+
+input.text3 {
+  width: 360px !important; }
 
 input.text1 {
   width: 60px !important; }

@@ -1,0 +1,443 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-ddxq mo-khcx-ddxq">
+            <div class="xblock">
+                <p>
+                <span>
+                    <label>
+                        原订单号：
+                    </label>
+                    <input type="text" class="text" value="" name="" />
+                </span>
+                <span>
+                    <label>
+                        关联单号
+                    </label>
+
+                    <input type="text" class="text" value="" name="" />
+                </span>
+                <input type="button" class="button button1" value="绑定" name="" />
+                <span class="red">订单号：[120421412]</span>
+                </p>
+            </div>
+            <div class="xblock block">
+                <h3 class="gray-title">建单信息</h3>
+                <table cellspacing="0" class="table-b4" frame=void>
+                    <tr>
+                        <th>客户名称</th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            联系人                   
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            联系电话                   
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            结算方式
+                        </th>
+                        <td>
+                            <select name=""></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            建单营业点                   
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            出票营业点                   
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            操作员 
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            订单类型 
+                        </th>
+                        <td>
+                            <select name=""></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            外部订单号 
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            扩展字段 
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            特殊产品代码
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            特殊卡号 
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            客户订单号
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>旅行天数</th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                        <th>
+                            账户可用余额 
+                        </th>
+                        <td>
+                            <input type="text" class="text" value="" name="" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block block1">
+                <h3 class="gray-title">
+                    航班信息</h3>
+                <table frame=void cellspacing="0" class="table1-ddxq table-b2">
+                    <tr class="thead">
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                        <td>PNR</td>
+                        <td>出票地</td>
+                        <td>出发城市</td>
+                        <td>到达城市</td>
+                        <td>航班号</td>
+                        <td>舱位</td>
+                        <td>舱位等级</td>
+                        <td>折扣</td>
+                        <td>起飞时间</td>
+                        <td>到达时间</td>
+                        <td>经停</td>
+                        <td>订座情况</td>
+                        <td>票价级别</td>
+                        <td>预定OFFICE</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                        <td>PNR123</td>
+                        <td>不夜城</td>
+                        <td>PVG</td>
+                        <td>PVG</td>
+                        <td>CX777</td>
+                        <td>B1</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>2012-12-11 17:00</td>
+                        <td>2012-12-11 17:00</td>
+                        <td>xx</td>
+                        <td>R</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                    </tr>
+                </table>
+                <table cellspacing="0" class="table-b1">
+                    <colgroup>
+                        <col width=80></col>
+                        <col></col>
+                    </colgroup>
+                    <tr>
+                        <th>溢价原因：</th>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="block block2">
+                <h3 class="gray-title">费用明细</h3>
+                <table frame=void cellspacing="0" class="table2-ddxq table-b2">
+                    <tr class="thead">
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                        <td>报价类型</td>
+                        <td>人数</td>
+                        <td>单张结算价</td>
+                        <td>单张运价</td>
+                        <td>税费</td>
+                        <td>代理费用（%）</td>
+                        <td>奖励扣率（%）</td>
+                        <td>奖励金额</td>
+                        <td>开票费</td>
+                        <td>保险产品</td>
+                        <td>保险单价</td>
+                        <td>保险份数</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>222</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block block3">
+                <h3 class="gray-title clearfix">
+                    乘客信息
+                </h3>
+                <table frame=void cellspacing="0" class="table-b2">
+                    <tr class="thead">
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                        <td>PNR</td>
+                        <td>旅客姓名</td>
+                        <td>旅客类型</td>
+                        <td>性别</td>
+                        <td>票号</td>
+                        <td>票序号</td>
+                        <td>大客户编码</td>
+                        <td>行程单号</td>
+                        <td>证件类型</td>
+                        <td>证件号码</td>
+                        <td>证件有效期</td>
+                        <td>出生日期</td>
+                        <td>国籍</td>
+                        <td>上传签证</td>
+                        <td>上传护照</td>
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                            加为常旅客
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>xx</td>
+                        <td>
+                            <input type="checkbox" class="checkbox" value="" name="" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!-- <div class="block block4"> -->
+            <!--     <h3 class="gray-title">联系人信息</h3> -->
+            <!--     <table frame=void cellspacing="0"  class="table-b3"> -->
+            <!--         <tr> -->
+            <!--             <th>姓名</th> -->
+            <!--             <td>啊飞</td> -->
+            <!--             <th>联系电话</th> -->
+            <!--             <td>1231421421</td>  -->
+            <!--             <th>联系地址</th> -->
+            <!--             <td>上海</td> -->
+            <!--             </tr> -->
+            <!--     </table> -->
+            <!-- </div> -->
+
+            <!-- <div class="block10 block"> -->
+            <!--     <h3 class="gray-title">发票信息</h3> -->
+            <!--     <table frame=void cellspacing="0" class="table-b3"> -->
+            <!--         <tr> -->
+            <!--             <th>发票金额</th> -->
+            <!--             <td> -->
+            <!--                 111 -->
+            <!--                 元 -->
+            <!--             </td> -->
+            <!--             <th>发票抬头</th>  -->
+            <!--             <td> -->
+            <!--                 上海不也成 -->
+            <!--             </td> -->
+            <!--         </tr> -->
+            <!--         <tr> -->
+            <!--             <th>发票派送方式</th> -->
+            <!--             <td> -->
+            <!--                 自取 -->
+            <!--             </td> -->
+            <!--             <th>自取地址</th> -->
+            <!--             <td> -->
+            <!--                上海普陀区  -->
+            <!--             </td> -->
+            <!--             </tr> -->
+            <!--                 <tr> -->
+            <!--             <th>支付方式</th> -->
+            <!--             <td> -->
+            <!--                到付  -->
+            <!--             </td> -->
+            <!--             <th>联系人</th> -->
+            <!--             <td> -->
+            <!--                 啊飞 -->
+            <!--             </td> -->
+            <!--         </tr> -->
+            <!--             <tr> -->
+            <!--             <th>联系电话</th> -->
+            <!--             <td> -->
+            <!--                 21313213 -->
+            <!--             </td> -->
+            <!--             <th>派送地址</th> -->
+            <!--             <td> -->
+            <!--                 上海上海上海 -->
+            <!--             </td> -->
+            <!--         </tr> -->
+            <!--     </table> -->
+            <!-- </div> -->
+
+            <div class="block block5">
+                <h3 class="gray-title">支付信息</h3>
+                <table frame=void style="border-bottom:1px"  cellspacing="0" class="table-b2">
+                    <tr class="thead">
+                        <td>票款合计</td>
+                        <td>税费合计</td>
+                        <td>保险合计</td>
+                        <td>代理费合计</td>
+                        <td>奖励合计</td>
+                        <td>利润</td>
+                        <td>服务费</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <p>
+                合计 
+                <span class="redb">2173元</span>
+                </p>
+            </div>
+
+            <div class="block block6">
+                <h3 class="gray-title">退改签规则</h3>
+                <p>
+                退改签规则内容 
+                </p>
+            </div>
+
+            <div class="block clearfix block-12">
+                <div class="col">
+                    <h3 class="gray-title">外部备注</h3>
+                    <p>
+                    <textarea name="" rows=5 cols=60></textarea>
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="gray-title">内部备注</h3>
+                    <p>
+                    <textarea name="" rows=5 cols=60></textarea>
+                    </p>
+                </div>
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="价格计算" name="" />
+                <input type="button" class="button button2" value="保存" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="价格计算" name="" />
+                <input type="button" class="button button2" value="取消订单" name="" />
+                <input type="button" class="button button2" value="支付" name="" />
+                <input type="button" class="button button2" value="提交" name="" />
+                <input type="button" class="button button2" value="修改" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="价格计算" name="" />
+                <input type="button" class="button button2" value="提取票号" name="" />
+                <input type="button" class="button button2 show-lightbox" data-lightboxid="SQTFP" value="退回" name="" />
+                <input type="button" class="button button2" value="完成出票" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="lightbox lightbox1" data-lightboxid="SQTFP">
+    <table cellspacing="0">
+        <tr>
+            <td>
+                <div class="lightbox-content">
+                    <i class="close" rel="close">×</i>
+                    <div class="lightbox-head">
+                        <h3>退回原因</h3>
+                    </div>
+                    <div class="lightbox-body">
+                        <p>
+                        <textarea cols=50 rows=5 name=""></textarea>
+                        </p>
+                        <p>&nbsp;</p>
+                        <p class="center">
+                        <input type="button" class="button button1" value="确定" name="" />
+                        <input type="button" class="button button1" value="取消" name="" rel="close" />
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+{% include '../partial/footer.html' %}

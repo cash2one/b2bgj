@@ -352,7 +352,7 @@
 .mo-ddxq{
     .block7{
         .tcol1{
-        
+
         }
         .tcol2{
             width:200px; 
@@ -614,4 +614,21 @@
         white-space:nowrap;
     }
     width:100px !important;
+}
+.table-b1 td{
+    padding:5px;
+}
+.mo-khcx{
+    p{
+        padding:10px;
+    }
+    .table-b2{
+        border-top:1px solid $c42;
+        border-bottom:1px solid $c42;
+    }
+} 
+.mo-khcx-ddxq{
+    .block-12 .col{
+        width:50%; 
+    }
 }

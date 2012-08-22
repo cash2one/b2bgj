@@ -43,6 +43,9 @@ body{
 }
 
 .gray-title{
+    .buttons{
+        font-weight:normal; 
+    }
     background:url(#{$skin_folder}/gray-title.png) repeat-x;
     ul{
         overflow:hidden;
@@ -65,6 +68,9 @@ body{
             border:1px solid $c44;
             border-bottom:0;
             background-color:#fff;
+        }
+        a{
+            color:inherit; 
         }
     }  
 }
@@ -240,11 +246,12 @@ a{
                 text-decoration:none;    
             }
         }
-
+        a{
+            padding:4px 0 4px 18px;
+            display:block;
+        }
     }
     a{
-        padding:4px 0 4px 18px;
-        display:block;
         color:$c11;
         &:hover{
             color:$c11;
@@ -471,6 +478,18 @@ h2.title{
 
 }
 
+input.text9{
+    width:90% !important; 
+}
+input.text0{
+    width:30px !important; 
+}
+input.text2{
+    width:240px !important; 
+}
+input.text3{
+    width:360px !important; 
+}
 input.text1{
     width:60px !important; 
 }
