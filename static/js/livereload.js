@@ -316,7 +316,7 @@ Timer.start = function(timeout, func) {
 var Options;
 __options.Options = Options = (function() {
   function Options() {
-    this.host = null;
+    this.host = location.hostname;
     this.port = 35729;
     this.snipver = null;
     this.ext = null;

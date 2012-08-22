@@ -45,10 +45,11 @@ class MainHandler(tornado.web.RequestHandler):
         data = {
             'title':pagename,
         }
+        data.url='guooo'
         self.render('index.html')
 
 
-class GuoneiHandler(tornado.web.RequestHandler):
+class GuoneiHandler(MainHandler):
     def get(self, section, pagename = 'index'):
         usergroup = self.get_argument('usergroup',default='cgs')
         if(usergroup=='yys'):
@@ -128,7 +129,7 @@ class GuoneiAjaxHandler(GuoneiHandler):
 
 #GUOJI
 #######################
-class GuojiHandler(tornado.web.RequestHandler):
+class GuojiHandler(MainHandler):
     def get(self, section, pagename = 'index'):
         usergroup = self.get_argument('usergroup',default='cgs')
         if(usergroup=='yys'):

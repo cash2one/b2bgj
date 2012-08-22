@@ -10,64 +10,64 @@
                 </div>
                 <div class="block-body">
                     <form action="/" id="aspnetForm" name="aspnetForm" method="post">
-                    <table frame=void cellspacing="0" class="table-b4">
-                        <tr>
-                            <th>航班类型</th>
-                            <td>
-                                <label>
-                                    <input type="radio" class="radio radio_is_single is_single" value="1" checked name="IS_SINGLE" />
-                                    单程
-                                </label>
-                                <label>
-                                    <input type="radio" class="radio radio_is_single is_double" value="0" name="IS_SINGLE" />
-                                    往返
-                                </label>
-                            </td>
-                            <th>乘客类型</th>
-                            <td>
-                                <select name="">
-                                    <option value="">不限</option>
-                                </select>
-                            </td>
-                            <th>舱位等级</th>
-                            <td>
-                                <select name="">
-                                    <option value="">不限</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>出发城市</th>
-                            <td>
-                                <input type="text" id="depcity" class="text suggest depcity suggest-city yiv-required" value="" />
-                                <input type="hidden" class='depcity_hidden' value=""  name="DEPCITY" />
-                            </td>
-                            <th>到达城市</th>
-                            <td>
-                                <input type="text"  id="arrcity" class="text suggest arrcity suggest-city yiv-required" value="" />
-                                <input type="hidden" class='arrcity_hidden' value=""  name="ARRCITY" />
-                            </td>
-                            <th>航空公司</th>
-                            <td>
-                                <input type="text" class="text suggest airlines" value="" />
-                                <input type="hidden" class='airlines_hidden' value="" name="AIRLINES" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>出发日期</th>
-                            <td>
-                                <input type="text" class="text datepicker yiv-required" value="" id="DEPDATE" name="DEPDATE" />
-                            </td>
-                            <th>返程日期</th>
-                            <td colspan=3>
-                                <input type="text" class="text datepicker disabled" disabled value="" name="ARRDATE" />
-                            </td>
-                        </tr>
-                    </table>
-                    <p class="center">
+                        <table frame=void cellspacing="0" class="table-b4">
+                            <tr>
+                                <th>航班类型</th>
+                                <td>
+                                    <label>
+                                        <input type="radio" class="radio radio_is_single is_single" value="1" checked name="IS_SINGLE" />
+                                        单程
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="radio radio_is_single is_double" value="0" name="IS_SINGLE" />
+                                        往返
+                                    </label>
+                                </td>
+                                <th>乘客类型</th>
+                                <td>
+                                    <select name="">
+                                        <option value="">不限</option>
+                                    </select>
+                                </td>
+                                <th>舱位等级</th>
+                                <td>
+                                    <select name="">
+                                        <option value="">不限</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>出发城市</th>
+                                <td>
+                                    <input type="text" id="depcity" class="text suggest depcity suggest-city yiv-required" value="" />
+                                    <input type="hidden" class='depcity_hidden' value=""  name="DEPCITY" />
+                                </td>
+                                <th>到达城市</th>
+                                <td>
+                                    <input type="text"  id="arrcity" class="text suggest arrcity suggest-city yiv-required" value="" />
+                                    <input type="hidden" class='arrcity_hidden' value=""  name="ARRCITY" />
+                                </td>
+                                <th>航空公司</th>
+                                <td>
+                                    <input type="text" class="text suggest airlines" value="" />
+                                    <input type="hidden" class='airlines_hidden' value="" name="AIRLINES" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>出发日期</th>
+                                <td>
+                                    <input type="text" class="text datepicker yiv-required" value="" id="DEPDATE" name="DEPDATE" />
+                                </td>
+                                <th>返程日期</th>
+                                <td colspan=3>
+                                    <input type="text" class="text datepicker disabled" disabled value="" name="ARRDATE" />
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="center">
                         <input type="button" data-url='ajax/J_Hbcx_DataTable.html' class="button button2 J_Hbcx_Search" value="搜索" name="" />
-                    </p>
-                </form>
+                        </p>
+                    </form>
                 </div>
             </div>
 
@@ -75,16 +75,16 @@
                 <div class="block-body" id="J_Hbcx_DataTable">
 
                 </div>
-            
+
             </div>
 
-                    {% include 'partial/pagination.html' %}
+            {% include 'partial/pagination.html' %}
         </div>
 
     </div>
 </div>
 <script type="text/template" id="TSXX-template">
-<div class="lightbox lightbox-1 lightbox{@uid@}" data-lightboxid="TSXX">
+    <div class="lightbox lightbox-1 lightbox{@uid@}" data-lightboxid="TSXX">
     <table cellspacing="0">
         <tr>
             <td>
@@ -106,7 +106,7 @@
         </p>
     </div>
                 </div>
-            
+
             </td>
         </tr>
     </table>

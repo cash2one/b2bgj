@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta charset="UTF-8">
-<title>{{ data['title'] }}</title>
-<link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
-{% module Template(data['section']+'/partial/external-css.html') %}
-<link href="{{ static_url('css/b2b-modules.css') }}" rel="stylesheet" />
-<link href="{{ static_url('css/flights_logo.css') }}" rel="stylesheet" />
-<script type="text/javascript">
-    /*  YUI_config = { */
-    /*     filter:       "raw", */
-    /*     base:         "{{ static_url('js/yui3/build/')  }}" */
-    /* } */
-</script>
-<script type="text/javascript" src="{{ static_url('js/yui.min.js') }}"></script>
-<script type="text/javascript" src="{{ static_url('js/b2b_modules_debug.js') }}"></script>
-<script type="text/javascript" src="{{ static_url('js/b2b_common.js') }}"></script>
-<script src="/static/js/livereload.js?host=192.168.139.13"></script>
-{% module Template(data['section']+'/partial/external-js.html') %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <title>{{ data['title'] }}</title>
+    <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
+    {% module Template(data['section']+'/partial/external-css.html') %}
+    <link href="{{ static_url('css/b2b-modules.css') }}" rel="stylesheet" />
+    <link href="{{ static_url('css/flights_logo.css') }}" rel="stylesheet" />
+    <script type="text/javascript">
+        YUI_config = {
+            filter:       "raw",
+            base:         "{{ static_url('js/yui3/build/')  }}"
+        }
+    </script>
+    <script type="text/javascript" src="{{ static_url('js/yui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/b2b_modules_debug.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/b2b_common.js') }}"></script>
+    <script src="/static/js/livereload.js"></script>
+    {% module Template(data['section']+'/partial/external-js.html') %}
 </head>
 <body>
 <div class="head clearfix">
@@ -37,28 +37,28 @@
         <div class="menu-main clearfix">
             <ul>
                 <li>
-                    <a href="首页.html">国内机票</a>
+                <a href="首页.html">国内机票</a>
                 </li>
                 <li class="current">
-                    <a href="首页.html">国际机票</a>
+                <a href="首页.html">国际机票</a>
                 </li>
                 <li>
-                    <a href="首页.html">酒  店</a>
+                <a href="首页.html">酒  店</a>
                 </li>
                 <li>
-                    <a href="首页.html">保  险</a>
+                <a href="首页.html">保  险</a>
                 </li>
                 <li>
-                    <a href="首页.html">政策管理</a>
+                <a href="首页.html">政策管理</a>
                 </li>
                 <li>
-                    <a href="首页.html">财务管理</a>
+                <a href="首页.html">财务管理</a>
                 </li>
                 <li>
-                    <a href="首页.html">统计报表</a>
+                <a href="首页.html">统计报表</a>
                 </li>
                 <li>
-                    <a href="首页.html">系统管理</a>
+                <a href="首页.html">系统管理</a>
                 </li>
             </ul>
         </div>

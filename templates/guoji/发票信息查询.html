@@ -24,10 +24,10 @@
                         快递号 
                         <input type="text" class="text" value="" name="" />
                     </label>
-                        <input type="button" class="button button2" value="查询" name="" />
+                    <input type="button" class="button button2" value="查询" name="" />
                     </p>
                     <p>
-                        本公司合作快递为XXXX快递 
+                    本公司合作快递为XXXX快递 
                     </p>
                     <table frame="void" cellspacing="0" class="table2-fpxxcx table-b2">
                         <tr class="thead">
@@ -46,29 +46,29 @@
                         {% for x in range(10) %}
                         {% if x%2==0 %}
                         <tr class="odd">
-                        {% else  %}
-                        <tr class="even">
-                        {% end %}
-                            <td><a href="审核中的订单详情.html">32132132</a></td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xx</td>
-                            <td>xxxxxxxx</td>
-                        </tr>
-                        {% end %}
-                    </table>
+                            {% else  %}
+                            <tr class="even">
+                                {% end %}
+                                <td><a href="审核中的订单详情.html">32132132</a></td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xx</td>
+                                <td>xxxxxxxx</td>
+                            </tr>
+                            {% end %}
+                        </table>
+                    </div>
                 </div>
+
+                {% include 'partial/pagination.html' %}
             </div>
 
-                    {% include 'partial/pagination.html' %}
         </div>
-
     </div>
-</div>
-{% include '../partial/footer.html' %}
+    {% include '../partial/footer.html' %}
