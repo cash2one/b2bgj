@@ -10,9 +10,7 @@
         <td>剩余座位</td>
         <td>操作</td>
     </tr>
-    {% for x in range(6) %}
-    {% if x%2==0 %}
-    <tr>
+    <tr class="data-row">
         <td>
             <span class="pubFlights_fe">东方航空</span>
         </td>
@@ -24,13 +22,66 @@
         <td>经济</td>
         <td>2</td>
         <td style="position:relative;width:100px;text-align:center;">
-            <span class="more" data-url="ajax/搜索单程.html" data-flightno='123'>
+            <span class="more" data-url="ajax/J_Hbcx_s.html" data-flightno='123'>
                 更多舱位
             </span>
             <i class="arrow6"></i>
         </td>
     </tr>
-    {% else  %}
+    <tr class="data-row">
+        <td>
+            <span class="pubFlights_fe">东方航空</span>
+        </td>
+        <td>KA858</td>
+        <td>空客kj</td>
+        <td>上海-香港</td>
+        <td>07:00-09:20</td>
+        <td>2小时</td>
+        <td>经济</td>
+        <td>2</td>
+        <td style="position:relative;width:100px;text-align:center;">
+            <span class="more" data-url="ajax/J_Hbcx_m.html" data-flightno='123'>
+                更多舱位
+            </span>
+            <i class="arrow6"></i>
+        </td>
+    </tr>
+    <tr class="data-row">
+        <td>
+            <span class="pubFlights_fe">东方航空</span>
+        </td>
+        <td>KA858</td>
+        <td>空客kj</td>
+        <td>上海-香港</td>
+        <td>07:00-09:20</td>
+        <td>2小时</td>
+        <td>经济</td>
+        <td>2</td>
+        <td style="position:relative;width:100px;text-align:center;">
+            <span class="more" data-url="ajax/J_Hbcx_m.html" data-flightno='123'>
+                更多去程舱位
+            </span>
+            <i class="arrow6"></i>
+        </td>
+    </tr>
+    <tr class="data-row">
+        <td>
+            <span class="pubFlights_fe">东方航空</span>
+        </td>
+        <td>KA858</td>
+        <td>空客kj</td>
+        <td>上海-香港</td>
+        <td>07:00-09:20</td>
+        <td>2小时</td>
+        <td>经济</td>
+        <td>2</td>
+        <td style="position:relative;width:100px;text-align:center;">
+            <span class="more" data-url="ajax/J_Hbcx_s.html" data-flightno='123'>
+                更多回程舱位
+            </span>
+            <i class="arrow6"></i>
+        </td>
+    </tr>
     <tr class="info-row">
         <td colspan=9>
             <div class="info">
@@ -67,10 +118,7 @@
                 <span class="btn">
                     <input type="button" class="button button1 show-lightbox" data-url="ajax/lightbox_hbcx.html" data-lightboxid="TSXX" data-buy="#" data-flightno="123" data-price="444" value="预订" name="" />
                 </span>
-
             </div>
         </td>
     </tr>
-    {% end %}
-    {% end %}
 </table>

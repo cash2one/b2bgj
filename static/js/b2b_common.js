@@ -115,13 +115,22 @@ YUI().use('gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'au
 
         /*  绑定全局日历组件 */
         Y.on('available', function() {
-            Y.all('.datepicker').wrap('<span>').get('parentNode').each(function(i) {
-                new Y.TripCalendar({
-                    beginNode: i
-                })
-            });
+            Y.all('.datepicker').each(function(i){
+                if(i.get('parentNode').hasClass('datepicker-wrapper')){
+                   return console.log('vi');
+                }else{
+                    i = i.wrap('<u>').get('parentNode');
+                    new Y.TripCalendar({
+                        beginNode: i
+                    })
+                }
+            })
         },
         '.datepicker');
+
+        Y.on('available', function() {
+        },
+        '.mo-hbcx');
 
         /* 换肤 */
         function changeStyle(name, filepath) {
@@ -381,22 +390,47 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
 /* 提交航班查询表单 end */
             }
 
+            function init_calendar(){
+                new Y.TripCalendar({
+                    beginNode: '#depdate-td',
+                    endNode: '#arrdate-td',							
+                    limitBeginDate: new Date(),
+                    limitDays:28,
+                    isWeek: false,
+                    isFestival: false,
+                    titleTips: ""
+                });
+            }
+
+            init_calendar();
+
             function more_hbcx() {
+
+                var info_row = ''+
+                    '<tr class="info-row">'+
+                    '<td colspan=9>'+
+                    '</td>'+
+                    '</tr>'; 
+
+                Y.all(".data-row").insert(info_row,'after');
+
                 Y.all(".mo-hbcx .more").on('click', function(e) {
                     var that = e.target;
                     var url = that.getAttribute("data-url");
-                    var container = that.ancestor("tr").next().one("td");
+
+                    var container = that.ancestor("tr").next().one('td');
 
                     if (container.hasClass("loaded")) {
                         container.removeClass("loaded");
                         that.removeClass("more-h");
                         container.all(".dancheng-ajax-wrapper").remove();
+                        container.all(".wangfan-ajax-wrapper").remove();
                     } else {
                         var FlightNo = '&FlightNo=' + that.getAttribute('data-flightno');
                         var data = submitedData.replace(/(FlightAllBerth)=(\d+)/i, '$1=1');
                         var time = '&time=' + new Date().getTime();
 
-                        Y.io(url, {
+                        Y.io(url,{
                             data: data + FlightNo + time,
                             on: {
                                 success: function(i, res) {
