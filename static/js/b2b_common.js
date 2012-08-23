@@ -117,20 +117,15 @@ YUI().use('gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'au
         Y.on('available', function() {
             Y.all('.datepicker').each(function(i){
                 if(i.get('parentNode').hasClass('datepicker-wrapper')){
-                   return console.log('vi');
+                    return;
                 }else{
                     i = i.wrap('<u>').get('parentNode');
                     new Y.TripCalendar({
                         beginNode: i
-                    })
+                    });
                 }
-            })
-        },
-        '.datepicker');
-
-        Y.on('available', function() {
-        },
-        '.mo-hbcx');
+            });
+        },'.datepicker');
 
         /* 换肤 */
         function changeStyle(name, filepath) {
@@ -389,6 +384,7 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                 });
 /* 提交航班查询表单 end */
             }
+            form_hbcx();
 
             function init_calendar(){
                 new Y.TripCalendar({
@@ -426,12 +422,12 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                         container.all(".dancheng-ajax-wrapper").remove();
                         container.all(".wangfan-ajax-wrapper").remove();
                     } else {
-                        var FlightNo = '&FlightNo=' + that.getAttribute('data-flightno');
-                        var data = submitedData.replace(/(FlightAllBerth)=(\d+)/i, '$1=1');
-                        var time = '&time=' + new Date().getTime();
+                        // var FlightNo = '&FlightNo=' + that.getAttribute('data-flightno');
+                        // var data = submitedData.replace(/(FlightAllBerth)=(\d+)/i, '$1=1');
+                        // var time = '&time=' + new Date().getTime();
 
                         Y.io(url,{
-                            data: data + FlightNo + time,
+                            // data: data + FlightNo + time,
                             on: {
                                 success: function(i, res) {
                                     container.addClass("loaded");
@@ -464,10 +460,19 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                 });
             }
 
-            form_hbcx();
 
-        },
-        '.mo-hbcx')
+            function updateInforow(){
+                var buttons = Y.all(".mul-select"); 
+                buttons.on('click',function(){
+                    var data = this.get('data-price');
+                    //todo;
+                });
+            }
+
+            updateInforow();
+
+
+        }, '.mo-hbcx')
         //全局保存城市，关键字element
         // _toCity = Y.all('.endcity');
         // _searchKeyword = Y.one('#J_search_keyword');
