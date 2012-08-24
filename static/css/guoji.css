@@ -518,7 +518,7 @@ p {
     padding: 0 0 0 10px;
     border: 1px solid #cecece;
     font-weight: bold; }
-  .table-b5 .info-row td, .table-b6 .info-row td, .table-b5 .info-row th, .table-b6 .info-row th {
+  .table-b5 .meta-row td, .table-b6 .meta-row td, .table-b5 .meta-row th, .table-b6 .meta-row th, .table-b5 .info-row td, .table-b6 .info-row td, .table-b5 .info-row th, .table-b6 .info-row th {
     padding: 0; }
   .table-b5 .info, .table-b6 .info {
     padding: 0 20px;
@@ -865,12 +865,12 @@ li {
   background-color: #ebf8fe;
   display: block;
   right: 0;
-  top: 5px;
+  top: 0;
   border: 2px solid #377ac0;
   border-bottom: 0;
   text-align: center;
   width: 130px;
-  height: 28px;
+  height: 25px;
   line-height: 30px; }
 
 .mo-xxzc .table-b4 {
@@ -898,6 +898,8 @@ li {
   border-bottom: 3px solid #377ac0;
   margin-bottom: 20px; }
   .dancheng-ajax-wrapper span {
+    display: inline-block;
+    zoom: 1;
     padding-right: 20px; }
 
 .dancheng-ajax-info, .wangfan-ajax-info {
@@ -913,7 +915,9 @@ li {
   border-bottom: 3px solid #377ac0;
   margin-bottom: 20px; }
   .wangfan-ajax-wrapper span {
-    padding-right: 45px; }
+    display: inline-block;
+    zoom: 1;
+    padding-right: 20px; }
 
 .console-screen {
   width: 510px;

@@ -452,12 +452,12 @@
         background-color:$c25;
         display:block;
         right:0;
-        top:5px;
+        top:0;
         border:2px solid $c26;
         border-bottom:0;
         text-align:center;
         width: 130px;
-        height: 28px;
+        height: 25px;
         line-height: 30px;
     }
 }
@@ -498,6 +498,8 @@
     background-color:$c25;
     text-align:right;
     span{
+        display:inline-block;
+        zoom:1;
         padding-right:20px; 
     }
     line-height:40px;
@@ -519,7 +521,9 @@
     background-color:$c25;
     text-align:right;
     span{
-        padding-right:45px; 
+        display:inline-block;
+        zoom:1;
+        padding-right:20px; 
     }
     line-height:40px;
     border:2px solid $c26;

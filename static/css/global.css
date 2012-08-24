@@ -518,7 +518,7 @@ p {
     padding: 0 0 0 10px;
     border: 1px solid #cecece;
     font-weight: bold; }
-  .table-b5 .info-row td, .table-b6 .info-row td, .table-b5 .info-row th, .table-b6 .info-row th {
+  .table-b5 .meta-row td, .table-b6 .meta-row td, .table-b5 .meta-row th, .table-b6 .meta-row th, .table-b5 .info-row td, .table-b6 .info-row td, .table-b5 .info-row th, .table-b6 .info-row th {
     padding: 0; }
   .table-b5 .info, .table-b6 .info {
     padding: 0 20px;

@@ -10,7 +10,7 @@ YUI.Env.JSONP = {
  * @author: zining@taobao.com
  * @data: 2012/04/13
  */
-YUI().use('gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     /*iframe高度自定义,解决跨域问题*/
     /*
@@ -37,6 +37,8 @@ YUI().use('gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'au
                 var FlightNo = '&FlightNo=' + this.getAttribute('data-flightno');
                 var Price = '&Price=' + this.getAttribute('data-price');
 
+                submitedData = this.getAttribute('data-prams');
+
                 var show = function() {
                     Y.all(".lightbox").each(function(i) {
                         if (i.getAttribute("data-lightboxid") + uid == lightboxID) {
@@ -46,8 +48,7 @@ YUI().use('gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'au
                     })
                     Y.all('.lightbox [rel=close]').on("click", function(e) {
                         if (buy && e.target.hasClass('submit')) {
-                            var data = submitedData.replace(/__VIEWSTATE[^&]+&/, '');
-                            location.href = buy;
+                            location.href = buy + submitedData;
                         } else {
                             e.target.ancestor('.lightbox').hide();
                         }
@@ -241,6 +242,10 @@ YUI().use('gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'au
 
             form.prepareForm();
 
+            form_hbcx();
+            init_calendar();
+
+
             // // 参考api：http://murdog05.github.com/yui3-gallery/docs/validator.Validator.html
             // var form = new Y.Validator({
             // 	form: 'aspnetForm',
@@ -362,7 +367,7 @@ resultFields: [ 'name', 'value' ]
 
 submitedData = Y.DataSchema.Text.apply(schema, data).results;
 */
-                    submitedData = data;
+                    // submitedData = data;
 
                     if (url) {
                         Y.io(url, {
@@ -384,7 +389,6 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                 });
 /* 提交航班查询表单 end */
             }
-            form_hbcx();
 
             function init_calendar(){
                 new Y.TripCalendar({
@@ -398,10 +402,8 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                 });
             }
 
-            init_calendar();
 
             function more_hbcx() {
-
                 var info_row = ''+
                     '<tr class="info-row">'+
                     '<td colspan=9>'+
@@ -433,6 +435,7 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                                     container.addClass("loaded");
                                     container.prepend(res.responseText);
                                     that.addClass("more-h");
+                                    updateInfoRow();
                                 }
                             }
                         });
@@ -461,16 +464,36 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
             }
 
 
-            function updateInforow(){
-                var buttons = Y.all(".mul-select"); 
-                buttons.on('click',function(){
-                    var data = this.get('data-price');
-                    //todo;
-                });
+            function updateInfoRow(){
+                Y.all('.mul-select').on('click',function(e){
+                    var parentRow =  e.target.ancestor('.info-row');
+                    var previousRow = parentRow.previous('.data-row');
+
+                    var updatedNodes = parentRow.next('.meta-row').all('s');
+                    var infoRowData = e.target.getAttribute('data-updates')
+
+                    // var index = this.indexOf(e.target);
+
+                    var data = infoRowData.split(',');
+
+                    submitedData = submitedData || parentRow.next('.meta-row').one('input').getAttribute('data-prams');
+                    submitedData = submitedData.split('|');
+                    Y.log(submitedData);
+
+                    updatedNodes.each(function(i,index){
+                        i.set('text',data[index]);
+                    });
+                    
+                    submitedData.pop();
+                    submitedData = submitedData.push(infoRowData);
+
+
+                    previousRow.one('.sit-type').set('text',data[data.length-2]);
+                    previousRow.one('.sit-count').set('text',data[data.length-1]);
+
+                    previousRow.one('.more-h').simulate('click');
+                }); 
             }
-
-            updateInforow();
-
 
         }, '.mo-hbcx')
         //全局保存城市，关键字element
