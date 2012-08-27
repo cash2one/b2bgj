@@ -10,7 +10,7 @@ YUI.Env.JSONP = {
  * @author: zining@taobao.com
  * @data: 2012/04/13
  */
-YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     /*iframe高度自定义,解决跨域问题*/
     /*
@@ -28,25 +28,47 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
 
         /*弹出窗overlay*/
         function lightbox() {
-            Y.one("body").delegate("click", function(e) {
+            Y.one('body').delegate('click', function(e) {
                 var uid = '-' + this.get('id');
-                // var uid = e._event.uidStamp;
-                var lightboxID = this.getAttribute("data-lightboxid") + uid;
-                var url = this.getAttribute("data-url");
-                var buy = this.getAttribute("data-buy");
+                var lightboxid = this.getAttribute('data-lightboxid');
+                var lightboxID =  lightboxid + uid;
+
+                var url = this.getAttribute('data-url');
+                var buy = this.getAttribute('data-buy');
                 var FlightNo = '&FlightNo=' + this.getAttribute('data-flightno');
                 var Price = '&Price=' + this.getAttribute('data-price');
 
-                submitedData = this.getAttribute('data-prams');
+                submitedData = submitedData || this.getAttribute('data-params');
 
-                var show = function() {
-                    Y.all(".lightbox").each(function(i) {
-                        if (i.getAttribute("data-lightboxid") + uid == lightboxID) {
+                if(lightboxid =='CPQR'){
+                    //todo
+                    show(function(i){
+                        i.one('.submit').on('click',function(){
+                            Y.io('#',{
+                                method:'post',
+                                on:{
+                                    success:function(){
+                                        console.log(123);
+                                    },
+                                    error:function(){
+                                        console.log('error');
+                                    }
+                                }
+                            }); 
+                        });
+                    });
+                }
+
+                function show(fn){
+                    Y.all('.lightbox').each(function(i) {
+                        if (i.getAttribute('data-lightboxid') + uid == lightboxID) {
                             i.setStyle('display', 'block');
                             lightboxID = null;
+                            fn && fn.call(this,i);
                         }
-                    })
-                    Y.all('.lightbox [rel=close]').on("click", function(e) {
+                    });
+
+                    Y.all('.lightbox [rel=close]').on('click', function(e) {
                         if (buy && e.target.hasClass('submit')) {
                             location.href = buy + submitedData;
                         } else {
@@ -56,12 +78,12 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                 };
 
                 if (url) {
+                    // Make it cached
                     if (Y.one('.lightbox' + uid)) {
                         return show();
                     }
-                    var time = 'time=' + new Date().getTime();
                     Y.io(url, {
-                        data: time,
+                        data: 'time=' + new Date().getTime(),
                         on: {
                             success: function(i, res) {
                                 //var templ = Y.one('#TSXX-template').getContent();
@@ -97,7 +119,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                                     '         </td>'+
                                     '      </tr>'+
                                     '   </table>'+
-                                    '</div>'
+                                    '</div>';
                                 Y.one('body').append(lightboxTemplate);
                                 show();
                             }
@@ -106,6 +128,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                 } else {
                     show();
                 }
+
 
             },
             ".show-lightbox");
@@ -129,7 +152,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
         },'.datepicker');
 
         /* 换肤 */
-        function changeStyle(name, filepath) {
+        function changeSkin(name, filepath) {
             var href = filepath;
             if (name === "default") {
                 Y.one('#skins').remove();
@@ -149,7 +172,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
             // var color = that.getData('color');
             var path = that.getAttribute('data-filepath')
             var color = that.getAttribute('data-color')
-            changeStyle(color, path);
+            changeSkin(color, path);
         });
         /* 换肤 end */
 
@@ -206,7 +229,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                     Y.one('.uploads-box').setStyle('display','none');
                 }
 
-            })
+            });
 
             Y.one('.fp-one').on('click',function(e){
                 if(this.get('checked')){
@@ -245,46 +268,6 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
             form_hbcx();
             init_calendar();
 
-
-            // // 参考api：http://murdog05.github.com/yui3-gallery/docs/validator.Validator.html
-            // var form = new Y.Validator({
-            // 	form: 'aspnetForm',
-            // 	// defaultIndicatorDomType:'DIV',
-            // 	defaultIncorrectIndicatorCss: 'validator',
-            // 	defaultCorrectIndicatorCss: 'indicator',
-            // 	createCorrectIndicator: false,
-            // 	createIncorrectIndicator: true,
-            // 	checkOnSubmit: true,
-            // 	correctIndicatorText: '&#10004;',
-            // 	incorrectIndicatorText: '<b style="display:none">&#10005;</b>',
-            // 	fieldJSON: [{
-            // 		type: Y.TextBaseField,
-            // 		atts: {
-            // 			inputDOM: 'DEPDATE',
-            // 			regex: /(?:19|20)\d{2}-(?:0?[1-9]|1[0-2])-[0-2][1-9]|30|31/
-            // 		}
-            // 	},
-            // 	{
-            // 		type: Y.TextBaseField,
-            // 		atts: {
-            // 			inputDOM: 'arrcity',
-            // 			maxLength: 20
-            // 		}
-            // 	},
-            // 	{
-            // 		type: Y.TextBaseField,
-            // 		atts: {
-            // 			inputDOM: 'depcity',
-            // 			maxLength: 20
-            // 		}
-            // 	}]
-            // });
-
-            // setInterval(function() {
-            // 	form.checkFormValues();
-            // },
-            // 500);
-
             function form_hbcx() {
                 /*城市搜索建议*/
                 citySuggest();
@@ -310,14 +293,13 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                     if (e.target.get('value') == '') {
                         e.target.ac.sendRequest('');
                     }
-                })
+                });
 
                 airlineNode.on('keyup', function(e) {
                     if (e.target.get('value') == '') {
                         e.target.ac.sendRequest('');
                     }
-                })
-
+                });
                 /*航空公司自动补全 end*/
 
                 /* 切换显示返程输入框 */
@@ -338,13 +320,6 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                 Y.one(".J_Hbcx_Search").on('click', function(e) {
                     e.preventDefault();
 
-                    // Y.all(".validator b").setStyle('display', 'inline');
-                    // setTimeout(function() {
-                    //     // Y.all(".validator b").setStyle('display','none');
-                    // },
-                    // 1000);
-                    // if (!form.checkFormValues()) return;
-
                     Y.all('.yiv-required').each(function(i){
                         var id = i.get('id');
                         form.setErrorMessages(id,{
@@ -355,23 +330,22 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node', 'jsonp', 'event
                     if (!form.validateForm()) return;
 
                     var url = this.getAttribute('data-url');
-                    var time = new Date().getTime();
                     var data = Y.io._serialize(Y.one('#aspnetForm')._node);
 
-                    /* 需要加载datashema模块
-                       var schema = {
-resultDelimiter: "&",
-fieldDelimiter: "=",
-resultFields: [ 'name', 'value' ]
-};
+                    // 需要加载datashema模块
+                    //   var schema = {
+                    //    resultDelimiter: "&",
+                    //    fieldDelimiter: "=",
+                    //    resultFields: [ 'name', 'value' ]
+                    //    };
 
-submitedData = Y.DataSchema.Text.apply(schema, data).results;
-*/
+                    //    submitedData = Y.DataSchema.Text.apply(schema, data).results;
+
                     // submitedData = data;
 
                     if (url) {
                         Y.io(url, {
-                            data: data + '&time=' + time,
+                            data: data + '&time=' + new Date().getTime(),
                             on: {
                                 start: function() {
                                     spin_wrap.show();
@@ -387,7 +361,7 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
 
                     }
                 });
-/* 提交航班查询表单 end */
+                /* 提交航班查询表单 end */
             }
 
             function init_calendar(){
@@ -468,29 +442,53 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
                 Y.all('.mul-select').on('click',function(e){
                     var parentRow =  e.target.ancestor('.info-row');
                     var previousRow = parentRow.previous('.data-row');
+                    var rowIndexs = [];
 
                     var updatedNodes = parentRow.next('.meta-row').all('s');
                     var infoRowData = e.target.getAttribute('data-updates')
-
-                    // var index = this.indexOf(e.target);
-
                     var data = infoRowData.split(',');
 
-                    submitedData = submitedData || parentRow.next('.meta-row').one('input').getAttribute('data-prams');
-                    submitedData = submitedData.split('|');
-                    Y.log(submitedData);
+                    submitedData = submitedData || parentRow.next('.meta-row').one('input').getAttribute('data-params').split('|');
+
+                    var cIndex = parentRow.get('rowIndex');
+
+                    var previousMetaRow = parentRow.previous('.meta-row')
+                    var nextMetaRow = parentRow.next('.meta-row');
+
+                    var pMetaRowIndex = previousMetaRow &&  previousMetaRow.get('rowIndex') || -9999;
+                    var nMetaRowIndex = nextMetaRow && nextMetaRow.get('rowIndex');
+
+                    var group = parentRow.siblings(function(e){ 
+                        var rowIndex = e.get('rowIndex'); 
+                        if (e.hasClass("data-row") && rowIndex<nMetaRowIndex && rowIndex>pMetaRowIndex){
+                            rowIndexs.push(rowIndex);
+                            return true;
+                        }
+                    });
+
+                    var pIndex = group.indexOf(previousRow);
+
+                    // var group2 = parentRow.siblings(function(e){ 
+                    //     var rowIndex = e.get('rowIndex'); 
+                    //     if (e.hasClass("info-row") && rowIndex<nMetaRowIndex && rowIndex>pMetaRowIndex){
+                    //         rowIndexs.push(rowIndex);
+                    //         return true;
+                    //     }
+                    // });
+
+                    var newArr = submitedData[pIndex].split(',');
+                    newArr[newArr.length-2]=data[data.length-2];
+                    newArr[newArr.length-1]=data[data.length-1];
+                    newArr = newArr.join(',');
+
+                    submitedData.splice(pIndex,1,newArr).join('|');
 
                     updatedNodes.each(function(i,index){
                         i.set('text',data[index]);
                     });
-                    
-                    submitedData.pop();
-                    submitedData = submitedData.push(infoRowData);
-
 
                     previousRow.one('.sit-type').set('text',data[data.length-2]);
                     previousRow.one('.sit-count').set('text',data[data.length-1]);
-
                     previousRow.one('.more-h').simulate('click');
                 }); 
             }
@@ -527,167 +525,167 @@ submitedData = Y.DataSchema.Text.apply(schema, data).results;
         getUrl = Y.Mustache.to_html(configUrl, {productId: pdid,cityCode: Y.one('#J_changeNav li.selected a').getAttribute('data-code')});
         if(getUrl){
         Y.jsonp(getUrl, {					
-        on : {							
-        success : function(response){									
-        if(response.code == 200){																															
-        cityhotelnum.setContent('<em>' + response.data.hotelnum + '</em>'+ '家客栈,共<em>'+ response.data.peoplenum +'</em>人去过');
-        items = response.data.pdlist;																		
-        Y.each(items,function(pdcomment, pdid){
-        Y.one("#pd_" + pdid + " .J_commentNum").setContent(pdcomment);											
-        });										 																				
-        }else{																													
-        Y.all('#J_box .J_cnone').remove(); 
-        }
-        }															
-        }
-        });
-        }																																				
+on : {							
+success : function(response){									
+if(response.code == 200){																															
+cityhotelnum.setContent('<em>' + response.data.hotelnum + '</em>'+ '家客栈,共<em>'+ response.data.peoplenum +'</em>人去过');
+items = response.data.pdlist;																		
+Y.each(items,function(pdcomment, pdid){
+Y.one("#pd_" + pdid + " .J_commentNum").setContent(pdcomment);											
+});										 																				
+}else{																													
+Y.all('#J_box .J_cnone').remove(); 
+}
+}															
+}
+});
+}																																				
+};
+//showList(0);
+/* 列表 end*/
+
+/*屏幕滚动，延时加载
+  var sImg = function(index){
+  var ImageLazyloader, 
+  rendered = false;
+
+  function renderImageLazyloader(){
+  ImageLazyloader = new Y.ImgLoadGroup({
+name: 'insure-imageloader',
+foldDistance: 50
+});
+}
+
+function registerImages(len){
+var tabPannel = Y.all('.tab-pannel');               
+tabPannel.item(len).all('.J_imglist').each(function(node) {
+node.setAttribute('id', Y.stamp(node));
+ImageLazyloader.registerImage({ 
+domId: node.get('id'),
+srcUrl: node.getAttribute('image-lazyload') 
+});
+});
+}
+
+function render(len){
+renderImageLazyloader();
+registerImages(len);
+rendered = true;
+}
+
+render(index);
+
+};
+//sImg(0);	
+/*屏幕滚动 图片延迟 end*/
+
+/*tab切换
+  var TabClick = new Y.Slide('J_tablist',{
+autoSlide:false,
+eventype:'click'
+});
+// 点击tab获得索引值执行showList;
+TabClick.on('switch',function(data){		
+var index = parseInt(data.index);						
+
+setTimeout(function(){
+//延时加载
+showList(index);
+sImg(index);												
+},10);
+});				
+/*tab切换 end*/
+
+/*顶部图片hover效果
+  Y.one('.adImgBox table').delegate('hover', function(e){
+  var tar = e.currentTarget;		
+  var spanInMe = tar.one('.J_spanbox');		
+  spanInMe.removeClass('hide');
+  },function(e) {		
+  var tar = e.currentTarget;		
+  var spanInMe = tar.one('.J_spanbox');		
+  spanInMe.addClass('hide');		
+  }, '.J_hoverA');
+/*顶部图片hover效果 end*/
+
+/*分享收藏
+  Y.on('click',function(e){
+  e.halt();
+  if(!e.target.getAttribute('data-url')) return;
+//var tbToken = '&_tb_token_=' + Y.one('.J_tbToken')._node.value;
+var box = new Y.Box({
+head:'添加收藏<a class="close closebtn" style="cursor: pointer;"><img border="0" src="http://img01.taobaocdn.com/tps/i1/T1DeKaXcBxXXXXXXXX-10-10.png"></a>',
+body:'<iframe id="J_BoxIframe" src="'+e.target.getAttribute('data-url')+'" frameborder="0" width="445px" height="100%" scrolling="no"></iframe>',
+width:450,
+height:265
+});
+box.render();
+
+var inter;			
+Y.on('click',function(e){
+e.halt();
+box.close();
+clearInterval(inter);
+},'.close');
+
+var tmp = Y.one("#J_BoxIframe"),
+scIframe = tmp._node;
+setTimeout(function(){
+tmp.on("load", function(){
+setIHeight();
+inter = setInterval(setIHeight, 3000);
+if(Y.UA.ie){
+var closeNode = scIframe.contentWindow.document.getElementById("J_ClosePopup");
+} else {
+var closeNode = scIframe.contentDocument.getElementById('J_ClosePopup');					
+}	
+closeNode && (Y.one(closeNode).setStyle("display", "none"));				  
+});
+}, 100);
+
+function setIHeight(){
+if (!Y.Cookie.get('_nk_')) {
+var hh = 275;
+}
+else {
+var hh = document.getElementById('J_BoxIframe').contentWindow.document.body.scrollHeight;
+}				
+Y.one('#J_BoxIframe').setAttribute('height',hh+'px');
+Y.one('.yui3-widget').setStyle('height',(hh+35));
+Y.one('.yui3-widget .yui3-overlay-content').setStyle('height',(hh+35));
+Y.one('.yui3-widget .yui3-widget-bd').setStyle('height',hh);
+}					
+},'.J_favourite');
+/*分享收藏 end*/
+
+/*回到顶部*/
+function gotop() {
+    var ie6 = ! window.XMLHttpRequest;
+    var a = document.getElementById('J_goTop');
+    a.style.position = ie6 ? 'absolute': 'fixed';
+    a.style.right = 10 + 'px';
+    a.style.bottom = 10 + 'px';
+    if (ie6) {
+        window.onscroll = function() {
+            a.className = a.className;
         };
-        //showList(0);
-        /* 列表 end*/
+    }
+}
+//   gotop();
+/*回到顶部 end*/
 
-        /*屏幕滚动，延时加载
-          var sImg = function(index){
-          var ImageLazyloader, 
-          rendered = false;
+YY = Y;
 
-          function renderImageLazyloader(){
-          ImageLazyloader = new Y.ImgLoadGroup({
-          name: 'insure-imageloader',
-          foldDistance: 50
-          });
-          }
-
-          function registerImages(len){
-          var tabPannel = Y.all('.tab-pannel');               
-          tabPannel.item(len).all('.J_imglist').each(function(node) {
-          node.setAttribute('id', Y.stamp(node));
-          ImageLazyloader.registerImage({ 
-          domId: node.get('id'),
-          srcUrl: node.getAttribute('image-lazyload') 
-          });
-          });
-          }
-
-          function render(len){
-          renderImageLazyloader();
-          registerImages(len);
-          rendered = true;
-          }
-
-          render(index);
-
-          };
-        //sImg(0);	
-        /*屏幕滚动 图片延迟 end*/
-
-        /*tab切换
-          var TabClick = new Y.Slide('J_tablist',{
-          autoSlide:false,
-          eventype:'click'
-          });
-        // 点击tab获得索引值执行showList;
-        TabClick.on('switch',function(data){		
-        var index = parseInt(data.index);						
-
-        setTimeout(function(){
-        //延时加载
-        showList(index);
-        sImg(index);												
-        },10);
-        });				
-        /*tab切换 end*/
-
-        /*顶部图片hover效果
-          Y.one('.adImgBox table').delegate('hover', function(e){
-          var tar = e.currentTarget;		
-          var spanInMe = tar.one('.J_spanbox');		
-          spanInMe.removeClass('hide');
-          },function(e) {		
-          var tar = e.currentTarget;		
-          var spanInMe = tar.one('.J_spanbox');		
-          spanInMe.addClass('hide');		
-          }, '.J_hoverA');
-        /*顶部图片hover效果 end*/
-
-        /*分享收藏
-          Y.on('click',function(e){
-          e.halt();
-          if(!e.target.getAttribute('data-url')) return;
-        //var tbToken = '&_tb_token_=' + Y.one('.J_tbToken')._node.value;
-        var box = new Y.Box({
-        head:'添加收藏<a class="close closebtn" style="cursor: pointer;"><img border="0" src="http://img01.taobaocdn.com/tps/i1/T1DeKaXcBxXXXXXXXX-10-10.png"></a>',
-        body:'<iframe id="J_BoxIframe" src="'+e.target.getAttribute('data-url')+'" frameborder="0" width="445px" height="100%" scrolling="no"></iframe>',
-        width:450,
-        height:265
-        });
-        box.render();
-
-        var inter;			
-        Y.on('click',function(e){
-        e.halt();
-        box.close();
-        clearInterval(inter);
-        },'.close');
-
-        var tmp = Y.one("#J_BoxIframe"),
-        scIframe = tmp._node;
-        setTimeout(function(){
-        tmp.on("load", function(){
-        setIHeight();
-        inter = setInterval(setIHeight, 3000);
-        if(Y.UA.ie){
-        var closeNode = scIframe.contentWindow.document.getElementById("J_ClosePopup");
-        } else {
-        var closeNode = scIframe.contentDocument.getElementById('J_ClosePopup');					
-        }	
-        closeNode && (Y.one(closeNode).setStyle("display", "none"));				  
-        });
-        }, 100);
-
-        function setIHeight(){
-        if (!Y.Cookie.get('_nk_')) {
-        var hh = 275;
-        }
-        else {
-        var hh = document.getElementById('J_BoxIframe').contentWindow.document.body.scrollHeight;
-        }				
-        Y.one('#J_BoxIframe').setAttribute('height',hh+'px');
-        Y.one('.yui3-widget').setStyle('height',(hh+35));
-        Y.one('.yui3-widget .yui3-overlay-content').setStyle('height',(hh+35));
-        Y.one('.yui3-widget .yui3-widget-bd').setStyle('height',hh);
-        }					
-        },'.J_favourite');
-        /*分享收藏 end*/
-
-        /*回到顶部*/
-        function gotop() {
-            var ie6 = ! window.XMLHttpRequest;
-            var a = document.getElementById('J_goTop');
-            a.style.position = ie6 ? 'absolute': 'fixed';
-            a.style.right = 10 + 'px';
-            a.style.bottom = 10 + 'px';
-            if (ie6) {
-                window.onscroll = function() {
-                    a.className = a.className;
-                };
-            }
-        }
-        //   gotop();
-        /*回到顶部 end*/
-
-        YY = Y;
-
-        /*本地测试用*/
-        (function(){
-            var wo = location.search;
-            if(wo.indexOf('usergroup')!=-1){
-                Y.all('.menu-sidebar a').on('click',function(e){
-                    e.preventDefault();
-                    location.href = e.target.get('href')+wo;
-                }); 
-            }
-        })();
+/*本地测试用*/
+(function(){
+    var wo = location.search;
+    if(wo.indexOf('usergroup')!=-1){
+        Y.all('.menu-sidebar a').on('click',function(e){
+            e.preventDefault();
+            location.href = e.target.get('href')+wo;
+        }); 
+    }
+})();
 
     })
 
