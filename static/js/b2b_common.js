@@ -7,7 +7,6 @@ YUI.Env.JSONP = {
 /**
  *http://a.tbcdn.cn/??apps/et/trip-home/js/kezhan_v1.1.js
  * @path: apps/et/trip-home/js/kezhan_v1.1.js
- * @author: zining@taobao.com
  * @data: 2012/04/13
  */
 YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
@@ -43,20 +42,24 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                 if(lightboxid =='CPQR'){
                     //todo
                     show(function(i){
+                        Y.log(i.one('.submit'));
                         i.one('.submit').on('click',function(){
-                            Y.io('#',{
+                            Y.io(url,{
                                 method:'post',
+                                form:{
+                                    id:'aspnetForm'
+                                },
                                 on:{
                                     success:function(){
-                                        console.log(123);
                                     },
                                     error:function(){
-                                        console.log('error');
                                     }
                                 }
                             }); 
                         });
                     });
+
+                    return;
                 }
 
                 function show(fn){
@@ -128,7 +131,6 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                 } else {
                     show();
                 }
-
 
             },
             ".show-lightbox");
@@ -355,6 +357,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                                     spin_wrap.hide();
                                     Y.one('#J_Hbcx_DataTable').setContent(res.responseText);
                                     more_hbcx();
+
                                 }
                             }
                         });
@@ -367,7 +370,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
             function init_calendar(){
                 new Y.TripCalendar({
                     beginNode: '#depdate-td',
-                    endNode: '#arrdate-td',							
+                    endNode: '#arrdate-td',
                     limitBeginDate: new Date(),
                     limitDays:28,
                     isWeek: false,
@@ -398,18 +401,19 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                         container.all(".dancheng-ajax-wrapper").remove();
                         container.all(".wangfan-ajax-wrapper").remove();
                     } else {
-                        // var FlightNo = '&FlightNo=' + that.getAttribute('data-flightno');
-                        // var data = submitedData.replace(/(FlightAllBerth)=(\d+)/i, '$1=1');
-                        // var time = '&time=' + new Date().getTime();
-
                         Y.io(url,{
-                            // data: data + FlightNo + time,
                             on: {
                                 success: function(i, res) {
-                                    container.addClass("loaded");
-                                    container.prepend(res.responseText);
-                                    that.addClass("more-h");
-                                    updateInfoRow();
+                                    var nodes = Y.Node.create(res.responseText);
+                                    var scriptTag = nodes.one('script');
+                                    if(scriptTag){
+                                        eval(scriptTag.get('text'));
+                                    }else{
+                                        container.addClass("loaded");
+                                        container.prepend(res.responseText);
+                                        that.addClass("more-h");
+                                        updateInfoRow();
+                                    }
                                 }
                             }
                         });
@@ -437,7 +441,6 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                 });
             }
 
-
             function updateInfoRow(){
                 Y.all('.mul-select').on('click',function(e){
                     var parentRow =  e.target.ancestor('.info-row');
@@ -452,7 +455,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
 
                     var cIndex = parentRow.get('rowIndex');
 
-                    var previousMetaRow = parentRow.previous('.meta-row')
+                    var previousMetaRow = parentRow.previous('.meta-row');
                     var nextMetaRow = parentRow.next('.meta-row');
 
                     var pMetaRowIndex = previousMetaRow &&  previousMetaRow.get('rowIndex') || -9999;
@@ -467,21 +470,12 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                     });
 
                     var pIndex = group.indexOf(previousRow);
-
-                    // var group2 = parentRow.siblings(function(e){ 
-                    //     var rowIndex = e.get('rowIndex'); 
-                    //     if (e.hasClass("info-row") && rowIndex<nMetaRowIndex && rowIndex>pMetaRowIndex){
-                    //         rowIndexs.push(rowIndex);
-                    //         return true;
-                    //     }
-                    // });
-
                     var newArr = submitedData[pIndex].split(',');
-                    newArr[newArr.length-2]=data[data.length-2];
-                    newArr[newArr.length-1]=data[data.length-1];
+                    newArr[newArr.length-3]=data[data.length-2];
                     newArr = newArr.join(',');
 
-                    submitedData.splice(pIndex,1,newArr).join('|');
+                    submitedData.splice(pIndex,1,newArr)
+                    submitedData = submitedData.join('|');
 
                     updatedNodes.each(function(i,index){
                         i.set('text',data[index]);
@@ -493,7 +487,7 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
                 }); 
             }
 
-        }, '.mo-hbcx')
+        }, '.mo-hbcx');
         //全局保存城市，关键字element
         // _toCity = Y.all('.endcity');
         // _searchKeyword = Y.one('#J_search_keyword');

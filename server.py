@@ -130,6 +130,11 @@ class GuoneiAjaxHandler(GuoneiHandler):
 #GUOJI
 #######################
 class GuojiHandler(MainHandler):
+    def post(self, section, pagename = 'index'):
+        args = self.request.arguments
+        self.set_header("Content-Type", "text/plain")
+        self.write(dir(args))
+
     def get(self, section, pagename = 'index'):
         usergroup = self.get_argument('usergroup',default='cgs')
         if(usergroup=='yys'):

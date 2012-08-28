@@ -19,7 +19,10 @@
   font-weight: bold; }
 
 .blue, .gray-title ul .current, .table-b5 .thead ul .current, .table-b6 .thead ul .current {
-  color: #3366cc; }
+  color: #38ace8; }
+
+.green {
+  color: #00bb00; }
 
 .lightblue-bg {
   background-color: #ebf8fe; }
@@ -595,3 +598,6 @@ li {
 
 .hidden {
   display: none; }
+
+.price {
+  font-family: arial; }

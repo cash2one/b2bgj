@@ -4,6 +4,7 @@
     {% include 'partial/breadcrumb.html' %}
     <div class="content area">
         <div class="mo-tjdd">
+            <form action="bbb" method="post" id="aspnetForm" name="aspnetForm">
             <div class="xblock">
                 <p align="right">
                 <span>航班及舱位查询</span>
@@ -57,6 +58,7 @@
                         <td>单张运价</td>
                         <td>代理费（%）</td>
                         <td>奖励（%）</td>
+                        <td>奖励金额</td>
                         <td>供应商开票费</td>
                         <td>单张票结算价</td>
                         <td>税费</td>
@@ -64,9 +66,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="radio" class="radio" value="" name="" />
+                            <input type="radio" class="radio" value="" name="PICRADIO" />
                             111</td>
                         <td>2</td>
+                        <td>0</td>
                         <td>0</td>
                         <td>0</td>
                         <td class="redb">11421</td>
@@ -96,7 +99,7 @@
                             英文姓名：
                         </th>
                         <td>
-                            <input type="text" class="text" value="" name="" />
+                            <input type="text" class="text" value="123" name="OP" />
                         </td>
                         <th>乘客类型：</th>
                         <td>
@@ -328,10 +331,11 @@
             </div>
 
             <div class="center">
-                <input type="button" class="button button3 show-lightbox" value="确认无误，下订单" name="" data-lightboxid="CPQR" />
+                <input type="button" class="button button3 show-lightbox" data-url="#" value="确认无误，下订单" name="" data-lightboxid="CPQR" />
             </div>
 
 
+        </form>
         </div>
 
     </div>
