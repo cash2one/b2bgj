@@ -1904,3 +1904,37 @@ div {
     word-wrap:break-word;
 }
 
+.u116_normal {
+    background-image: url('../待审核订单_files/u116_normal.png');
+}
+
+.u116_container {
+    position:absolute;
+    left:767px;
+    top:181px;
+    width:70px;
+    height:169px;
+}
+
+#u116_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:175px;
+}
+
+.u117 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

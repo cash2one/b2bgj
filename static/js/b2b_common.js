@@ -9,7 +9,7 @@ YUI.Env.JSONP = {
  * @path: apps/et/trip-home/js/kezhan_v1.1.js
  * @data: 2012/04/13
  */
-YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+YUI().use('dataschema-text','node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     /*iframe高度自定义,解决跨域问题*/
     /*
@@ -41,14 +41,34 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
 
                 if(lightboxid =='CPQR'){
                     //todo
+                    //需要dataschema-text模块
+                    var schema = {
+                        resultDelimiter: "&",
+                        fieldDelimiter: "=",
+                        resultFields: [ 'name', 'value' ]
+                    };
+
+                    var output = {};
+
+                    Y.all('fieldset').each(function(i,index){
+                        if(i.get('name')!='' && i._node.elements.length>0){
+                            var obj = {};
+                            Y.all(i._node.elements).each(function(){
+                                obj[this.get('name')] = this.get('value');
+                            });
+                            output[i.get('name')] = obj;
+                        }
+                    });
+
+                    console.log(Y.JSON.stringify(output));
+
                     show(function(i){
-                        Y.log(i.one('.submit'));
                         i.one('.submit').on('click',function(){
                             Y.io(url,{
-                                method:'post',
-                                form:{
-                                    id:'aspnetForm'
+                                headers: {
+                                    'Content-Type': 'application/json',
                                 },
+                                // data: data,
                                 on:{
                                     success:function(){
                                     },
@@ -333,17 +353,6 @@ YUI().use('node-event-simulate','gallery-formmgr', 'io', 'node','json', 'jsonp',
 
                     var url = this.getAttribute('data-url');
                     var data = Y.io._serialize(Y.one('#aspnetForm')._node);
-
-                    // 需要加载datashema模块
-                    //   var schema = {
-                    //    resultDelimiter: "&",
-                    //    fieldDelimiter: "=",
-                    //    resultFields: [ 'name', 'value' ]
-                    //    };
-
-                    //    submitedData = Y.DataSchema.Text.apply(schema, data).results;
-
-                    // submitedData = data;
 
                     if (url) {
                         Y.io(url, {

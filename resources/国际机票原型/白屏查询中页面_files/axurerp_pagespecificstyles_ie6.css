@@ -18,3 +18,8 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="白屏查询中页面_files/u6_normal.png");
 }
 
+* html .u8_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="白屏查询中页面_files/u8_normal.png");
+}
+

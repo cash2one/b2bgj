@@ -602,6 +602,11 @@ li {
 .price {
   font-family: arial; }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
 .lightbox2 .lightblue-bg, .lightbox2 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .lightbox2 th, .lightbox2 .mo-jptj .box, .mo-jptj .lightbox2 .box {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;

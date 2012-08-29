@@ -253,3 +253,8 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="处理已支付订单_files/u104_normal.png");
 }
 
+* html .u106_normal {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="处理已支付订单_files/u106_normal.png");
+}
+

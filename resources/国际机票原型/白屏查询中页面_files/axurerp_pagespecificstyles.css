@@ -158,3 +158,37 @@ div {
     word-wrap:break-word;
 }
 
+.u8_normal {
+    background-image: url('../白屏查询中页面_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:118px;
+    top:137px;
+    width:72px;
+    height:52px;
+}
+
+#u8_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:78px;
+    height:58px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:18px;
+    width:68px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+

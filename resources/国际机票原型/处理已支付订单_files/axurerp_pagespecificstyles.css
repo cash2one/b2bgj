@@ -1812,3 +1812,37 @@ div {
     word-wrap:break-word;
 }
 
+.u106_normal {
+    background-image: url('../处理已支付订单_files/u106_normal.png');
+}
+
+.u106_container {
+    position:absolute;
+    left:767px;
+    top:181px;
+    width:70px;
+    height:169px;
+}
+
+#u106_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:76px;
+    height:175px;
+}
+
+.u107 {
+    position:absolute;
+    left:2px;
+    top:76px;
+    width:66px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
