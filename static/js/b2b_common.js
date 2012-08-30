@@ -41,34 +41,39 @@ YUI().use('dataschema-text','node-event-simulate','gallery-formmgr', 'io', 'node
 
                 if(lightboxid =='CPQR'){
                     //todo
-                    //需要dataschema-text模块
-                    var schema = {
-                        resultDelimiter: "&",
-                        fieldDelimiter: "=",
-                        resultFields: [ 'name', 'value' ]
-                    };
-
                     var output = {};
 
                     Y.all('fieldset').each(function(i,index){
                         if(i.get('name')!='' && i._node.elements.length>0){
                             var obj = {};
-                            Y.all(i._node.elements).each(function(){
-                                obj[this.get('name')] = this.get('value');
-                            });
-                            output[i.get('name')] = obj;
+                            var arr = [];
+                            if(this.all('.group-item').size()>0){
+                                this.all('.group-item').each(function(v){
+                                    var gobj = {};
+                                    v.all('input,select').each(function(){
+                                        gobj[this.get('name')] = this.get('value');
+                                    });
+                                    arr.push(gobj);
+                                });
+
+                                output[i.get('name')] = arr;
+                            }else{
+                                Y.all(i._node.elements).each(function(){
+                                    obj[this.get('name')] = this.get('value');
+                                });
+
+                                output[i.get('name')] = obj;
+                            }
                         }
                     });
 
-                    console.log(Y.JSON.stringify(output));
+                    data = 'info='+Y.JSON.stringify(output);
+                    Y.log(data);
 
                     show(function(i){
                         i.one('.submit').on('click',function(){
                             Y.io(url,{
-                                headers: {
-                                    'Content-Type': 'application/json',
-                                },
-                                // data: data,
+                                data: data,
                                 on:{
                                     success:function(){
                                     },
@@ -222,8 +227,31 @@ YUI().use('dataschema-text','node-event-simulate','gallery-formmgr', 'io', 'node
         },
         '.mo-jptj');
 
+        Y.Node.addMethod( 'resetForm',function(){
+            this.all('input').set('value','');
+            this.all('textarea').set('text','');
+        });
+
         /*订单详情页面*/
         Y.on('available', function(){
+            var CustomerCount = Y.one('#CustomerCount');
+            var Customer = {};
+
+            Y.one('body').delegate('click',function(i){
+                var that = i.target;
+                var container = that.ancestor('fieldset');
+                var cloned = container.one('.group-item').cloneNode(true);
+                container.append(cloned.resetForm());
+            },'.CustomerAdd');
+
+            Y.one('.rp-fp-checkbox').on('click',function(e){
+                if(this.get('checked')){
+                    Y.one('.rq-fp').setStyle('display','block'); 
+                }else{
+                    Y.one('.rq-fp').setStyle('display','none');  
+                }
+            });
+
             Y.one('.rp-fp-checkbox').on('click',function(e){
                 if(this.get('checked')){
                     Y.one('.rq-fp').setStyle('display','block'); 
