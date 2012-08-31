@@ -50,8 +50,12 @@ YUI().use('dataschema-text','node-event-simulate','gallery-formmgr', 'io', 'node
                             if(this.all('.group-item').size()>0){
                                 this.all('.group-item').each(function(v){
                                     var gobj = {};
-                                    v.all('input,select').each(function(){
-                                        gobj[this.get('name')] = this.get('value');
+                                    v.all('input,select,textarea').each(function(){
+                                        if(this.get('type')=='checkbox' || this.get('type')=='radio'){
+                                            gobj[this.get('name')] = this.get('checked');
+                                        }else{
+                                            gobj[this.get('name')] = this.get('value');
+                                        }
                                     });
                                     arr.push(gobj);
                                 });
@@ -75,7 +79,15 @@ YUI().use('dataschema-text','node-event-simulate','gallery-formmgr', 'io', 'node
                             Y.io(url,{
                                 data: data,
                                 on:{
-                                    success:function(){
+                                    success:function(v){
+                                        var arr = v.split(',');
+                                        if(arr[0]=='0'){
+                                            location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                                        }
+                                        
+                                        if(arr[0]=='1'){
+                                            alert(arr[1]); 
+                                        }
                                     },
                                     error:function(){
                                     }
