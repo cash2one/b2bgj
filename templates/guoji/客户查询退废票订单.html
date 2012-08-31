@@ -31,29 +31,30 @@
                                     订单编号
                                     <input type="text" class="text" value="" name="" />
                                 </label>
+                                <label>
+                                    订单状态 
+                                    <select>
+                                        <option value="全部" selected="">全部</option>
+                                        <option value="预订">预订</option>
+                                        <option value="出票中">出票中</option>
+                                        <option value="审核退回">审核退回</option>
+                                        <option value="已出票">已出票</option>
+                                        <option value="改签中">改签中</option>
+                                        <option value="已改签">已改签</option>
+                                        <option value="退废中">退废中</option>
+                                        <option value="已退废">已退废</option>
+                                    </select>
+                                </label>
                             </td>
                         </tr>
                     </table>
                     <p class="center">
-                        <input type="button" class="button button2" value="立即查询" name="" />
+                    <input type="button" class="button button2" value="立即查询" name="" />
                     </p>
                 </div>
             </div>
 
             <div class="block block2">
-                <div class="block-head">
-                    <ul>
-                        <li>
-                        <span><a href="客户查询预订单.html">退废中</a></span>
-                        </li>
-                        <li>
-                        <span><a href="客户查询改签订单.html">审核退回</a></span>
-                        </li>
-                        <li class="current">
-                            <span><a href="客户查询退废票订单.html">已退废</a></span>
-                        </li>
-                    </ul>
-                </div>
                 <div class="block-body">
                     <table frame="void" cellspacing="0" class="table2-cpdd table-b2">
                         <tr class="thead">
@@ -83,15 +84,15 @@
                             <td>xx</td>
                             <td>xx</td>
                             <td>xx</td>
-                            <td>xx</td>
                             <td>xxxxxxxx</td>
-                            </tr>
+                            <td>预定</td>
+                        </tr>
                     </table>
 
                 </div>
             </div>
 
-                    {% include 'partial/pagination.html' %}
+            {% include 'partial/pagination.html' %}
 
 
         </div>
