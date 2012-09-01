@@ -7,22 +7,13 @@
             <div class="xblock">
                 <p>
                 <span>
-                    <label>
-                        原订单号：
-                    </label>
+                    <label>票号</label>
                     <input type="text" class="text" value="" name="" />
                 </span>
-                <span>
-                    <label>
-                        关联单号
-                    </label>
-
-                    <input type="text" class="text" value="" name="" />
-                </span>
-                <input type="button" class="button button1" value="绑定" name="" />
-                <span class="red">订单号：[120421412]</span>
+                <input type="button" class="button button1" value="搜索" name="" />
                 </p>
             </div>
+            {% if usergroup=='yys' %}
             <div class="xblock block">
                 <h3 class="gray-title">建单信息</h3>
                 <table cellspacing="0" class="table-b4" frame=void>
@@ -121,260 +112,187 @@
                         </td>
                     </tr>
                 </table>
-                <table class="table-b1" cellspacing="0">
-                    <colgroup>
-                        <col width=60></col>
-                        <col></col>
-                        <col width=60></col>
-                        <col></col>
-                    </colgroup>
-                    <tr>
-                        <th>退款原因</th>
-                        <td>
-                            <select name=""></select>
-                        </td>
-                        <th>
-                            其他要求 
-                        </th>
-                        <td>
-                            <input type="text" class="text text3" value="" name="" />
-                        </td>
-                    </tr>
-                </table>
             </div>
-            <div class="block block1">
-                <div class="block-head">
+            {% end %}
 
-                </div>
-                <h3 class="gray-title">
-                    航班信息
-                    <span class="buttons">
-                        [
-                        <a href="#" class="">添加航程</a>
-                        |
-                        <a href="#" class="">复制航程</a>
-                        |
-                        <a href="#" class="">粘贴提取</a>
-                        ]&nbsp;&nbsp;&nbsp;&nbsp;[
-                        <a href="#" class="">删除所选</a>
-                        |
-                        <a href="#" class="">删除未选</a>
-                        ]
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        [
-                        <a href="#" class="">统一出票地</a>
-                        ]
-                </span></h3>
+            <div class="block block1">
+                <h3 class="gray-title">航班信息</h3>
                 <table frame=void cellspacing="0" class="table1-ddxq table-b2">
                     <tr class="thead">
-                        <td>
-                            <input type="checkbox" class="checkbox" value="" name="" />
-                        </td>
-                        <td>PNR</td>
-                        <td>出票地</td>
-                        <td>出发城市</td>
-                        <td>到达城市</td>
+                        <td>航班日期</td>
+                        <td>出发地</td>
+                        <td>到达地</td>
+                        <td>航空公司</td>
                         <td>航班号</td>
-                        <td>舱位</td>
-                        <td>舱位等级</td>
-                        <td>折扣</td>
                         <td>起飞时间</td>
                         <td>到达时间</td>
-                        <td>经停</td>
-                        <td>订座情况</td>
-                        <td>票价级别</td>
-                        <td>预定OFFICE</td>
+                        <td>舱位</td>
                     </tr>
                     <tr>
-                        <td>
-                            <input type="checkbox" class="checkbox" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <select name="">
-                                <option value="">不夜城</option>
-                            </select>
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
+                        <td>2012-12-11</td>
+                        <td>上海浦东</td>
+                        <td>香港</td>
+                        <td>东方航空</td>
+                        <td>MU555</td>
+                        <td>17:00</td>
+                        <td>19:22</td>
+                        <td>R</td>
                     </tr>
                 </table>
-                <table cellspacing="0" class="table-b1">
-                    <colgroup>
-                        <col width=80></col>
-                        <col></col>
-                    </colgroup>
-                    <tr>
-                        <th>溢价原因：</th>
-                        <td></td>
-                    </tr>
-                </table>
-
             </div>
 
             <div class="block block3">
                 <h3 class="gray-title clearfix">
-                    客票信息
-                    <span class="buttons">
-                        [ <a href="#">删除所选</a> | <a href="#">删除未选</a> ]
+                    乘客信息
+                    <span style="float:right;font-weight:normal">
+                        温馨提示：供票工作时间
+                        <b class="red">
+                            8:00 - 22:00 （废票请在21:30前提交） 
+                        </b>
                     </span>
                 </h3>
-                <table frame=void cellspacing="0" class="table-b2">
-                    <tr class="thead">
-                        <td>
-                            <input type="checkbox" class="checkbox" value="" name="" />
-                        </td>
-                        <td>客票状态</td>
-                        <td>旅客姓名</td>
-                        <td>票号</td>
-                        <td>出票OFFICE</td>
-                        <td>退费费率</td>
-                        <td>票款</td>
-                        <td>税费</td>
-                        <td>证件号码</td>
-                        <td>加收</td>
-                        <td>客户返点</td>
-                        <td>佣金</td>
-                        <td>退保费</td>
-                        <td>服务费</td>
-                        <td>收款金额</td>
-                        <td>航司实退</td>
+                <table frame=void cellspacing="0" class="table-b3">
+                    <tr>
+                        <th>PNR记录编号</th> 
+                        <td>WWWW01 大编：MSKJFK 改签中</td>
                     </tr>
                     <tr>
+                        <th>客票使用条件</th>
                         <td>
-                            <input type="checkbox" class="checkbox" value="" name="" />
+                            退票 不允许：
+                            改签去程不得该：
+                            特别说明：以上XXXXXXXXXXXXXXXX
+                        </td>
+                    </tr>
+                </table>
+                <table frame=void style="border-top:1px" cellspacing="0" class="table-b2">
+                    <tr class="thead">
+                        <th>英文姓名</th>
+                        <th>性别</th>
+                        <th>乘客类型</th>
+                        <th>证件类型</th>
+                        <th>证件号码</th>
+                        <th>证件有效期</th>
+                        <th>出生日期</th>
+                        <th>乘客类别</th>
+                        <th>国籍</th>
+                        <th>票号</th>
+                        <td>签证图片</td>
+                        <td>护照图片</td>
+                    </tr>
+                    <tr>
+                        <td>HEPING</td>
+                        <td>男</td>
+                        <td>成人</td>
+                        <td>护照</td>
+                        <td>123132</td>
+                        <td>2012-10-14</td>
+                        <td>1990-10-10</td>
+                        <td>留学生</td>
+                        <td>中国</td>
+                        <td>11111</td>
+                        <td>
+                        <a href="#">查看签证</a>
                         </td>
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
+                        <a href="#">查看护照</a>
                         </td>
                     </tr>
                 </table>
             </div>
-
-            <div class="block block5">
-                <h3 class="gray-title">支付信息
-                </h3>
-                <table frame=void style="border-bottom:1px"  cellspacing="0" class="table-b2">
+            <div class="block block2">
+                <h3 class="gray-title">费用明细</h3>
+                <table frame=void cellspacing="0" class="table2-ddxq table-b2">
                     <tr class="thead">
-                        <td>退票款合计</td>
-                        <td>税费合计</td>
-                        <td>附加费</td>
-                        <td>加收合计</td>
-                        <td>佣金合计</td>
-                        <td>保险合计</td>
-                        <td>服务费</td>
+                        <td>乘客姓名</td>
+                        <td>运价</td>
+                        <td>代理费用（%）</td>
+                        <td>奖励扣率（%）</td>
+                        <td>奖励金额</td>
+                        <td>税收金额</td>
+                        <td>保险金额</td>
+                        <td>单张结算价</td>
                     </tr>
                     <tr>
+                        <td>heping/fs</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>111</td>
+                        <td class="red">2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td class="redb">11421</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            其他费用
+                        </th>
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
+                            婴儿1111元
                         </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
-                        <td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td>
+                        <th>
+                            订单总金额 
+                        </th>
+                        <td colspan=7>11111111元</td>
                     </tr>
                 </table>
-                <p>
-                合计 
-                <span class="redb">
-                    <input type="text" class="text" value="" name="" />
-                    元</span>
-                </p>
+            </div>
+
+
+            <div class="block block4">
+                <h3 class="gray-title">联系人信息</h3>
+                <table frame=void cellspacing="0"  class="table-b3">
+                    <tr>
+                        <th>姓名</th>
+                        <td>啊飞</td>
+                        <th>联系电话</th>
+                        <td>1231421421</td> 
+                        <th>联系地址</th>
+                        <td>上海</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="block">
+                <h3 class="gray-title">退废票详细</h3>
+                <table frame=void cellspacing="0"  class="table-b2">
+                    <colgroup>
+                        <col width=100></col>
+                        <col width=100></col>
+                        <col width=100></col>
+                        <col width=100></col>
+                        <col></col>
+                    </colgroup>
+                    <tr class="thead">
+                        <td>票号</td>
+                        <td>实付金额</td>
+                        <td>扣款金额</td>
+                        <td>实退金额</td>
+                        <td>退废票原因</td>
+                    </tr>
+                    <td>
+                        <input type="text" class="text text9" value="" name="" />
+                    </td>
+                    <td>
+                        <input type="text" class="text text9" value="" name="" />
+                    </td>
+                    <td>
+                        <input type="text" class="text text9" value="" name="" />
+                    </td>
+                    <td>
+                        <input type="text" class="text text9" value="" name="" />
+                    </td>
+                    <td>
+                        <input type="text" class="text text9" value="" name="" />
+                    </td>
+                </table>
             </div>
 
             <div class="block clearfix block-12">
-                <div class="col">
-                    <h3 class="gray-title">外部备注</h3>
-                    <p>
-                    <textarea name="" rows=5 cols=60></textarea>
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="gray-title">内部备注</h3>
-                    <p>
-                    <textarea name="" rows=5 cols=60></textarea>
-                    </p>
-                </div>
+                <h3 class="gray-title">信息备注</h3>
+                <p>
+                <textarea name="" rows=5 cols=60></textarea>
+                </p>
             </div>
 
             <div class="block">
@@ -397,7 +315,7 @@
                     </tr>
                 </table>
             </div>
-            
+
             <div class="center">
                 <input type="button" class="button button2" value="保存" name="" onclick="location.href='客户查询订单详情退废票.html'" />
                 <input type="button" class="button button2" value="关闭" name="" />
@@ -417,6 +335,64 @@
                 <input type="button" class="button button2" value="完成退废票" name="" />
                 <input type="button" class="button button2" value="修改" name="" />
                 <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+            <div class="block block6">
+                <h3 class="gray-title">
+                    订单处理状态
+                </h3>
+                <table frame=void cellspacing="0" class="table-b3">
+                    <tr>
+                        <th>订单状态</th>
+                        <td>xxx</td>
+                    </tr>
+                    <tr>
+                        <th>预定时间</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>支付时间</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>出票时间</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>申请退票时间</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>退票完成时间</th>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block block7">
+                <h3 class="gray-title">
+                    订单备注 
+                </h3>
+                <table frame=void cellspacing="0">
+                    <colgroup>
+                        <col class="tcol1"></col>
+                        <col class="tcol2"></col>
+                        <col class="tcol3"></col>
+                    </colgroup>
+                    <tr>
+                        <th>备注信息</th>
+                        <th>时间</th>
+                        <th>操作员</th>
+                    </tr>
+                    <tr>
+                        <td>请尽快说法</td>
+                        <td>2012-09-09  19:11</td>
+                        <td>小名 </td>
+                    </tr>
+                    <tr>
+                        <td>请尽快说法</td>
+                        <td>2012-09-09  19:11</td>
+                        <td>小名 </td>
+                    </tr>
+                </table>
             </div>
 
         </div>

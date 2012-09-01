@@ -1,0 +1,83 @@
+" Press ? for help
+
+.. (up a dir)
+/media/sf_D_DRIVE/www/b2bGJ/
+|+resources/
+|~static/
+| |+css/
+| |+img/
+| |~js/
+| | |-b2b_common.js*
+| | |-b2b_modules_debug.js*
+| | |-jquery.min.js*
+| | |-livereload.js*
+| | |-yui.min.js*
+| | `-yui_loader.js*
+| `~sass/
+|   |-flights_logo.scss*
+|   |-global.scss*
+|   |-guoji.scss*
+|   |-guonei.scss*
+|   |-skin-green.scss*
+|   |-skin-lightblue.scss*
+|   |-skin-lightgreen.scss*
+|   `-vars.scss*
+|+taobao/
+|~templates/
+| |~guoji/
+| | |+ajax/
+| | |+partial/
+| | |-PNR提交.html*
+| | |-PNR预订.html*
+| | |-入库信息管理.html*
+| | |-出票处理.html*
+| | |-出票操作.html*
+| | |-出票订单.html*
+| | |-发票信息查询.html*
+| | |-国际政策导入.html*
+| | |-国际航班查询.html*
+| | |-国际返点查询.html*
+| | |-基础数据维护.html*
+| | |-客户查询出票订单.html*
+| | |-客户查询改签订单.html*
+| | |-客户查询订单详情.html*
+| | |-客户查询订单详情退废票.html*
+| | |-客户查询退废票订单.html*
+| | |-客户查询预订单.html*
+| | |-已支付订单.html*
+| | |-废票处理.html*
+| | |-废票订单.html*
+| | |-待审核订单.html*
+| | |-提交PNR订单.html*
+| | |-改签出票.html*
+| | |-改签处理.html*
+| | |-改签审核.html*
+| | |-改签订单.html*
+| | |-新增国际返点.html*
+| | |-新建退废票单.html*
+| | |-普通政策.html*
+| | |-机票统计.html*
+| | |-特价政策.html*
+| | |-白屏预订.html*
+| | |-订单处理.html*
+| | |-订单详情.html*
+| | |-退款订单.html*
+| | |-退票处理.html*
+| | |-退票审核.html*
+| | |-退票订单.html*
+| | |-预定审核.html*
+| | `-首页.html*
+| |+guonei/
+| |~partial/
+| | |-footer.html*
+| | `-header.html*
+| `-index.html*
+|+yui3/
+|-get_guoji.sh*
+|-get_guonei.sh*
+|-Guardfile*
+|-run.sh*
+|-server.py*
+|-简化版 数据提交模板.js*
+|-计算公式.txt*
+`-订单详情数据提交模板-分割版.js*
