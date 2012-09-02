@@ -94,7 +94,7 @@ apps/et/common/widgets/box/css/box.css
   overflow: hidden;
   height: 16px;
 }
-/*ÈÈÃÅ³ÇÊÐÑùÊ½*/
+/*脠脠脙脜鲁脟脢脨脩霉脢陆*/
 .yui3-acinput-hot-tit{color:#666;line-height: 20px;padding: 0 5px 5px ;}
 .yui3-hot-city{padding:5px 0; background:#fff;overflow: hidden;zoom:1;position: relative;
 	border: 1px solid #85bee5;
@@ -234,7 +234,7 @@ apps/et/common/widgets/box/css/box.css
 }
 .end-select .calendar-day a:hover,.end-select .calendar-day .select-date a:hover{
     color:#fff;
-    background-color:#E2AD44;/*ÑÕÉ«·½°¸ÐÞ¸Ä By angtian.fgm*/
+    background-color:#E2AD44;/*脩脮脡芦路陆掳赂脨脼赂脛 By angtian.fgm*/
 }
 .calendar-day a{
      display:block;
@@ -245,7 +245,7 @@ apps/et/common/widgets/box/css/box.css
 }
 .calendar-day a:hover,.calendar-day .select-date a:hover{
      color:#fff;
-     background-color:#5792DC;/*ÑÕÉ«·½°¸ÐÞ¸Ä By angtian.fgm*/
+     background-color:#5792DC;/*脩脮脡芦路陆掳赂脨脼赂脛 By angtian.fgm*/
      text-decoration:none;
 }
 .calendar-day .current,.calendar-day .current:visited,.calendar-day .current:hover{
@@ -257,16 +257,16 @@ apps/et/common/widgets/box/css/box.css
 .calendar-day .select-begin-date .disable,.calendar-day .select-begin-date a{
     display:block;
     color:#fff;
-    background-color:#5792DC;/*ÑÕÉ«·½°¸ÐÞ¸Ä By angtian.fgm*/
+    background-color:#5792DC;/*脩脮脡芦路陆掳赂脨脼赂脛 By angtian.fgm*/
 }
 .calendar-day .select-end-date .disable,.calendar-day .select-end-date a{
     display:block;
     color:#fff;
-    background-color:#E2AD44;/*ÑÕÉ«·½°¸ÐÞ¸Ä By angtian.fgm*/
+    background-color:#E2AD44;/*脩脮脡芦路陆掳赂脨脼赂脛 By angtian.fgm*/
 }
 .calendar-day .select-date .disable,.calendar-day .select-date a{
     display:block;
-    background-color:#D9F2FF;/*ÑÕÉ«·½°¸ÐÞ¸Ä By angtian.fgm*/
+    background-color:#D9F2FF;/*脩脮脡芦路陆掳赂脨脼赂脛 By angtian.fgm*/
 }
 
 .cal-close{
@@ -281,7 +281,7 @@ apps/et/common/widgets/box/css/box.css
     cursor:pointer;
 }
 
-/*×Ô¶¨ÒåinputµÈÑùÊ½*/
+/*脳脭露篓脪氓input碌脠脩霉脢陆*/
 .cal-input{
     position:relative;
     /*width:180px;
@@ -297,7 +297,7 @@ apps/et/common/widgets/box/css/box.css
     line-height:15px;
     overflow:hidden;
 	padding-right:25px;
-	color:#A1A1A1;/*ÑÕÉ«·½°¸ÐÞ¸Ä By angtian.fgm*/
+	color:#A1A1A1;/*脩脮脡芦路陆掳赂脨脼赂脛 By angtian.fgm*/
 	background:url(http://img04.taobaocdn.com/tps/i4/T1L4iKXdplXXXXXXXX-185-123.png) no-repeat #FFF -999px -999px;
 }
 .cal-input .b{
