@@ -54,9 +54,11 @@ YUI({
                     var output = Y.fieldsetFormat('get');
                     var data =  Y.JSON.stringify(output);
 
-                    Y.StorageLite.on('storage-lite:ready',function(){
-                        Y.StorageLite.setItem('CPQR_DATA',data);
-                    });
+                    // Y.StorageLite.on('storage-lite:ready',function(){
+                    //     Y.StorageLite.setItem('CPQR_DATA',data);
+                    // });
+
+                    Y.log(data);
 
                     show(function(i) {
                         i.one('.submit').on('click', function() {
@@ -212,7 +214,7 @@ YUI({
             Y.one('body').delegate('click', function(i) {
                 var that = i.target;
                 var container = that.ancestor('fieldset');
-                var cloned = container.one('.group-item').clone(true,true,true);
+                var cloned = container.one('.group-item').cloneNode(true);
                 container.append(cloned.resetForm());
             }, '.CustomerAdd');
             

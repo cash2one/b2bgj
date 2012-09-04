@@ -3664,21 +3664,26 @@ YUI.add('fieldsetFormat', function(Y) {
         var params={
             selector:'fieldset',
             item:'.group-item',
+            items:'.group-items',
             data:''
         };
 
         params = Y.merge(params,arguments[1]);
 
         var data = params.data;
-        var selector = Y.all(params.selector); 
+        var selector = Y.all(params.selector);
         var item = params.item;
+        var items = params.items;
         var loop = function(nodeList,parent,pindex){
             var gobj = {};
             nodeList.each(function() {
                 var name = this.get('name');
                 var eleType = this.get('type');
                 var eleAttr;
-                if (name == '') return;
+
+                if (name == '' ||  name=='__MYVIEWSTATE'){
+                    return false;
+                }
 
                 if ( eleType== 'checkbox' || eleType == 'radio') {
                     eleAttr = 'checked';
@@ -3710,12 +3715,40 @@ YUI.add('fieldsetFormat', function(Y) {
             }
             if (i.get('name') != '') {
                 if (this.all(item).size() > 0) {
-                    var arr = [];
-                    this.all(item).each(function(v,pindex) {
-                        var obj = loop(v.all('input,select,textarea'),i.get('name'),pindex);
-                        arr.push(obj);
-                    });
-                    output[i.get('name')] = arr;
+                    if(this.all(items).size()>0){
+
+                        var filterd = item+' input,'+item+' select,'+item+' textarea';
+
+                        var obj = loop(Y.all('input,select,textarea'));
+
+                        this.all(items).each(function(vp){
+                            var arr = [];
+                            vp.all(item).each(function(v,pindex) {
+                                var vpobj = loop(v.all('input,select,textarea'),vp.getAttribute('rel'),pindex);
+                                if(Y.Object.size(vpobj)){
+                                    arr.push(vpobj);
+                                }
+                               
+                            });
+                            
+                           
+
+                            obj[vp.getAttribute('rel')] = arr;
+                              Y.log(obj)
+                            
+                        });
+
+                        output[i.get('name')] = obj;   
+                    }else{
+                        var arr = [];
+                        this.all(item).each(function(v,pindex) {
+                            var obj = loop(v.all('input,select,textarea'),i.get('name'),pindex);
+                            arr.push(obj);
+                        });
+
+                        output[i.get('name')] = arr;
+                    }
+
                 } else {
                     var obj = loop(Y.all('input,select,textarea'),i.get('name'));
                     output[i.get('name')] = obj;
@@ -3765,7 +3798,7 @@ YUI.add('node-clone', function(Y) {
         DD=DOM;
 
         _Event._removeData = function (elem) {
-            Y.log(arguments);
+            // Y.log(arguments);
             var args = makeArray(arguments);
             args.splice(1, 0, EVENT_GUID);
             return DOM.removeData.apply(DOM, args);
@@ -3835,7 +3868,7 @@ YUI.add('node-clone', function(Y) {
         // 克隆除了事件的 data
         function cloneWithDataAndEvent(src, dest) {
             
-            Y.log(!DOM.hasData('body'));
+            // Y.log(!DOM.hasData('body'));
 
             if (dest.nodeType == NodeType.ELEMENT_NODE && DOM.hasData(src)) {
                 return;
