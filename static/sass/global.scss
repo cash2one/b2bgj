@@ -710,3 +710,13 @@ fieldset{
     padding:0;
     border:none;
 }
+.vhidden{
+    .logo{
+        visibility:hidden;
+    }
+    a{
+        background:none !important;
+    }
+    background:none;
+    // visibility:hidden;
+}

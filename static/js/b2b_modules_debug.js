@@ -3713,48 +3713,43 @@ YUI.add('fieldsetFormat', function(Y) {
                 Y.log('only support fieldset element'); 
                 return false;
             }
-            if (i.get('name') != '') {
-                if (this.all(item).size() > 0) {
-                    if(this.all(items).size()>0){
+            if (i.get('name') == '') {
+                return false;
+            }
+            if (this.all(item).size() > 0) {
+                if(this.all(items).size()>0){
+                    var obj = loop(this.all('input,select,textarea').filter(':not('+items+' input)').filter(':not('+items+' select)').filter(':not('+items+' textarea)'));
 
-                        var filterd = item+' input,'+item+' select,'+item+' textarea';
-
-                        var obj = loop(Y.all('input,select,textarea'));
-
-                        this.all(items).each(function(vp){
-                            var arr = [];
-                            vp.all(item).each(function(v,pindex) {
-                                var vpobj = loop(v.all('input,select,textarea'),vp.getAttribute('rel'),pindex);
-                                if(Y.Object.size(vpobj)){
-                                    arr.push(vpobj);
-                                }
-                               
-                            });
-                            
-                           
-
-                            obj[vp.getAttribute('rel')] = arr;
-                              Y.log(obj)
-                            
-                        });
-
-                        output[i.get('name')] = obj;   
-                    }else{
+                    this.all(items).each(function(vp){
                         var arr = [];
-                        this.all(item).each(function(v,pindex) {
-                            var obj = loop(v.all('input,select,textarea'),i.get('name'),pindex);
-                            arr.push(obj);
+                        vp.all(item).each(function(v,pindex) {
+                            var vpobj = loop(v.all('input,select,textarea'),vp.getAttribute('rel'),pindex);
+                            if(Y.Object.size(vpobj)){
+                                arr.push(vpobj);
+                            }
+
                         });
 
-                        output[i.get('name')] = arr;
-                    }
+                        obj[vp.getAttribute('rel')] = arr;
 
-                } else {
-                    var obj = loop(Y.all('input,select,textarea'),i.get('name'));
-                    output[i.get('name')] = obj;
+                    });
+
+                    output[i.get('name')] = obj;   
+                }else{
+                    var arr = [];
+                    this.all(item).each(function(v,pindex) {
+                        var obj = loop(v.all('input,select,textarea'),i.get('name'),pindex);
+                        arr.push(obj);
+                    });
+
+                    output[i.get('name')] = arr;
                 }
 
+            } else {
+                var obj = loop(Y.all('input,select,textarea'),i.get('name'));
+                output[i.get('name')] = obj;
             }
+
         });
         return output; 
     };
@@ -3766,197 +3761,194 @@ YUI.add('fieldsetFormat', function(Y) {
 
 
 YUI.add('node-clone', function(Y) {
+    
+    Y.Node.addMethod('clone',function(){
+        var node = this.cloneNode(true); 
+        return Y.mix(node,this);
+    });
+    /*
     //todo
-        
-       var  DOM = {};
-        DOM.query = function(){
-            return Y.all(arguments[0])._nodes;
-        };
-        DOM.get = function(){
-            return Y.one(arguments[0])._node;
+
+    var  DOM = {};
+    DOM.query = function(){
+        return Y.all(arguments[0])._nodes;
+    };
+    DOM.get = function(){
+        return Y.one(arguments[0])._node;
+    }
+    DOM.data = function(){
+        var alen = arguments.length; 
+        if(alen==1){
+            return Y.one(arguments[0]).getData(); 
         }
-        DOM.data = function(){
-            var alen = arguments.length; 
-            if(alen==1){
-                return Y.one(arguments[0]).getData(); 
-            }
 
-            if(alen==2){
-                return Y.one(arguments[0]).getData(arguments[1]); 
-            }
+        if(alen==2){
+            return Y.one(arguments[0]).getData(arguments[1]); 
+        }
 
-            if(alen==3){
-                Y.one(arguments[0]).setData(arguments[1],arguments[2]); 
-            }
-        };
-        DOM.hasData = function(){
-            return (Y.Object.size(Y.one(arguments[0]).getData())!=0);
-        };
+        if(alen==3){
+            Y.one(arguments[0]).setData(arguments[1],arguments[2]); 
+        }
+    };
+    DOM.hasData = function(){
+        return (Y.Object.size(Y.one(arguments[0]).getData())!=0);
+    };
 
-        var _Event= {};
+    var _Event= {};
 
-        DD=DOM;
+    DD=DOM;
 
-        _Event._removeData = function (elem) {
-            // Y.log(arguments);
-            var args = makeArray(arguments);
-            args.splice(1, 0, EVENT_GUID);
-            return DOM.removeData.apply(DOM, args);
-        };
+    _Event._removeData = function (elem) {
+        // Y.log(arguments);
+        var args = makeArray(arguments);
+        args.splice(1, 0, EVENT_GUID);
+        return DOM.removeData.apply(DOM, args);
+    };
 
-        _Event._clone = function (src, dest) {
-            if (dest.nodeType !== DOM.ELEMENT_NODE ||
-                !_data._hasData(src)) {
-                return;
-            }
-            var eventDesc = _data._data(src),
-            events = eventDesc.events;
-            S.each(events, function (handlers, type) {
-                S.each(handlers, function (handler) {
-                    // scope undefined 时不能写死在 handlers 中，否则不能保证 clone 时的 this
-                    Event.on(dest, type, {
-                        fn:handler.fn,
-                        scope:handler.scope,
-                        data:handler.data,
-                        originalType:handler.originalType,
-                        selector:handler.selector
-                    });
+    _Event._clone = function (src, dest) {
+        if (dest.nodeType !== DOM.ELEMENT_NODE ||
+            !_data._hasData(src)) {
+            return;
+        }
+        var eventDesc = _data._data(src),
+        events = eventDesc.events;
+        S.each(events, function (handlers, type) {
+            S.each(handlers, function (handler) {
+                // scope undefined 时不能写死在 handlers 中，否则不能保证 clone 时的 this
+                Event.on(dest, type, {
+                    fn:handler.fn,
+                    scope:handler.scope,
+                    data:handler.data,
+                    originalType:handler.originalType,
+                    selector:handler.selector
                 });
             });
-        } 
+        });
+    } 
 
-        var NodeType = {
-            ATTRIBUTE_NODE: 2,
-            CDATA_SECTION_NODE: 4,
-            COMMENT_NODE: 8,
-            DOCUMENT_FRAGMENT_NODE: 11,
-            DOCUMENT_NODE: 9,
-            DOCUMENT_TYPE_NODE: 10,
-            ELEMENT_NODE: 1,
-            ENTITY_NODE: 6,
-            ENTITY_REFERENCE_NODE: 5,
-            NOTATION_NODE: 12,
-            PROCESSING_INSTRUCTION_NODE: 7,
-            TEXT_NODE: 3
-        }
+    var NodeType = {
+        ATTRIBUTE_NODE: 2,
+        CDATA_SECTION_NODE: 4,
+        COMMENT_NODE: 8,
+        DOCUMENT_FRAGMENT_NODE: 11,
+        DOCUMENT_NODE: 9,
+        DOCUMENT_TYPE_NODE: 10,
+        ELEMENT_NODE: 1,
+        ENTITY_NODE: 6,
+        ENTITY_REFERENCE_NODE: 5,
+        NOTATION_NODE: 12,
+        PROCESSING_INSTRUCTION_NODE: 7,
+        TEXT_NODE: 3
+    }
 
-        function processAll(fn, elem, clone) {
-            if (elem.nodeType == NodeType.DOCUMENT_FRAGMENT_NODE) {
-                var eCs = elem.childNodes,
-                    cloneCs = clone.childNodes,
-                    fIndex = 0;
+    function processAll(fn, elem, clone) {
+        if (elem.nodeType == NodeType.DOCUMENT_FRAGMENT_NODE) {
+            var eCs = elem.childNodes,
+            cloneCs = clone.childNodes,
+            fIndex = 0;
 
-                while (eCs[fIndex]) {
-                    if (cloneCs[fIndex]) {
-                        processAll(fn, eCs[fIndex], cloneCs[fIndex]);
-                    }
-                    fIndex++;
+            while (eCs[fIndex]) {
+                if (cloneCs[fIndex]) {
+                    processAll(fn, eCs[fIndex], cloneCs[fIndex]);
                 }
-            } else if (elem.nodeType == NodeType.ELEMENT_NODE) {
-                var elemChildren = document.getElementsByTagName(elem),
-                    cloneChildren = document.getElementsByTagName(clone),
-                    cIndex = 0;
-                while (elemChildren[cIndex]) {
-                    if (cloneChildren[cIndex]) {
-                        fn(elemChildren[cIndex], cloneChildren[cIndex]);
-                    }
-                    cIndex++;
+                fIndex++;
+            }
+        } else if (elem.nodeType == NodeType.ELEMENT_NODE) {
+            var elemChildren = document.getElementsByTagName(elem),
+            cloneChildren = document.getElementsByTagName(clone),
+            cIndex = 0;
+            while (elemChildren[cIndex]) {
+                if (cloneChildren[cIndex]) {
+                    fn(elemChildren[cIndex], cloneChildren[cIndex]);
                 }
-            }
-        }
-
-        // 克隆除了事件的 data
-        function cloneWithDataAndEvent(src, dest) {
-            
-            // Y.log(!DOM.hasData('body'));
-
-            if (dest.nodeType == NodeType.ELEMENT_NODE && DOM.hasData(src)) {
-                return;
-            }
-
-            var srcData = DOM.data(src);
-
-            // 浅克隆，data 也放在克隆节点上
-            for (var d in srcData) {
-                DOM.data(dest, d, srcData[d]);
-            }
-
-            // 事件要特殊点
-            if (_Event) {
-                // remove event data (but without dom attached listener) which is copied from above DOM.data
-                _Event._removeData(dest);
-                // attach src's event data and dom attached listener to dest
-                _Event._clone(src, dest);
+                cIndex++;
             }
         }
+    }
 
-        // wierd ie cloneNode fix from jq
-        function fixAttributes(src, dest) {
+    // 克隆除了事件的 data
+    function cloneWithDataAndEvent(src, dest) {
 
-            // clearAttributes removes the attributes, which we don't want,
-            // but also removes the attachEvent events, which we *do* want
-            if (dest.clearAttributes) {
-                dest.clearAttributes();
-            }
+        // Y.log(!DOM.hasData('body'));
 
-            // mergeAttributes, in contrast, only merges back on the
-            // original attributes, not the events
-            if (dest.mergeAttributes) {
-                dest.mergeAttributes(src);
-            }
-
-            var nodeName = dest.nodeName.toLowerCase(),
-                srcChilds = src.childNodes;
-
-            // IE6-8 fail to clone children inside object elements that use
-            // the proprietary classid attribute value (rather than the type
-            // attribute) to identify the type of content to display
-            if (nodeName === 'object' && !dest.childNodes.length) {
-                for (var i = 0; i < srcChilds.length; i++) {
-                    dest.appendChild(srcChilds[i].cloneNode(true));
-                }
-                // dest.outerHTML = src.outerHTML;
-            } else if (nodeName === 'input' && (src.type === 'checkbox' || src.type === 'radio')) {
-                // IE6-8 fails to persist the checked state of a cloned checkbox
-                // or radio button. Worse, IE6-7 fail to give the cloned element
-                // a checked appearance if the defaultChecked value isn't also set
-                if (src.checked) {
-                    dest['defaultChecked'] = dest.checked = src.checked;
-                }
-
-                // IE6-7 get confused and end up setting the value of a cloned
-                // checkbox/radio button to an empty string instead of 'on'
-                if (dest.value !== src.value) {
-                    dest.value = src.value;
-                }
-
-                // IE6-8 fails to return the selected option to the default selected
-                // state when cloning options
-            } else if (nodeName === 'option') {
-                dest.selected = src.defaultSelected;
-                // IE6-8 fails to set the defaultValue to the correct value when
-                // cloning other types of input fields
-            } else if (nodeName === 'input' || nodeName === 'textarea') {
-                dest.defaultValue = src.defaultValue;
-            }
-
-            // Event data gets referenced instead of copied if the expando
-            // gets copied too
-            // 自定义 data 根据参数特殊处理，expando 只是个用于引用的属性
-            dest.removeAttribute(DOM.__EXPANDO);
+        if (dest.nodeType == NodeType.ELEMENT_NODE && DOM.hasData(src)) {
+            return;
         }
-        
+
+        var srcData = DOM.data(src);
+
+        // 浅克隆，data 也放在克隆节点上
+        for (var d in srcData) {
+            DOM.data(dest, d, srcData[d]);
+        }
+
+        // 事件要特殊点
+        if (_Event) {
+            // remove event data (but without dom attached listener) which is copied from above DOM.data
+            _Event._removeData(dest);
+            // attach src's event data and dom attached listener to dest
+            _Event._clone(src, dest);
+        }
+    }
+
+    // wierd ie cloneNode fix from jq
+    function fixAttributes(src, dest) {
+
+        // clearAttributes removes the attributes, which we don't want,
+        // but also removes the attachEvent events, which we *do* want
+        if (dest.clearAttributes) {
+            dest.clearAttributes();
+        }
+
+        // mergeAttributes, in contrast, only merges back on the
+        // original attributes, not the events
+        if (dest.mergeAttributes) {
+            dest.mergeAttributes(src);
+        }
+
+        var nodeName = dest.nodeName.toLowerCase(),
+        srcChilds = src.childNodes;
+
+        // IE6-8 fail to clone children inside object elements that use
+        // the proprietary classid attribute value (rather than the type
+        // attribute) to identify the type of content to display
+        if (nodeName === 'object' && !dest.childNodes.length) {
+            for (var i = 0; i < srcChilds.length; i++) {
+                dest.appendChild(srcChilds[i].cloneNode(true));
+            }
+            // dest.outerHTML = src.outerHTML;
+        } else if (nodeName === 'input' && (src.type === 'checkbox' || src.type === 'radio')) {
+            // IE6-8 fails to persist the checked state of a cloned checkbox
+            // or radio button. Worse, IE6-7 fail to give the cloned element
+            // a checked appearance if the defaultChecked value isn't also set
+            if (src.checked) {
+                dest['defaultChecked'] = dest.checked = src.checked;
+            }
+
+            // IE6-7 get confused and end up setting the value of a cloned
+            // checkbox/radio button to an empty string instead of 'on'
+            if (dest.value !== src.value) {
+                dest.value = src.value;
+            }
+
+            // IE6-8 fails to return the selected option to the default selected
+            // state when cloning options
+        } else if (nodeName === 'option') {
+            dest.selected = src.defaultSelected;
+            // IE6-8 fails to set the defaultValue to the correct value when
+            // cloning other types of input fields
+        } else if (nodeName === 'input' || nodeName === 'textarea') {
+            dest.defaultValue = src.defaultValue;
+        }
+
+        // Event data gets referenced instead of copied if the expando
+        // gets copied too
+        // 自定义 data 根据参数特殊处理，expando 只是个用于引用的属性
+        dest.removeAttribute(DOM.__EXPANDO);
+    }
+
     //source: https://github.com/aufula/kissy/blob/master/build/dom.js
-    /**
-    * clone node across browsers for the first node in selector
-    * @param {HTMLElement|String|HTMLElement[]} selector 节点元素结合
-    * @param {Boolean} deep 是否深 copy
-    * @param {Boolean} withDataAndEvent 复制节点是否包括和源节点同样的数据和事件
-    * @param {Boolean} deepWithDataAndEvent 复制节点的子孙节点是否包括和源节点子孙节点同样的数据和事件
-    * @see https://developer.mozilla.org/En/DOM/Node.cloneNode
-    * @returns {HTMLElement} 复制后的节点
-    */
-        // todo nodelist
+    // todo nodelist
     // Y.NodeList.addMethod('clone',cloneFun);
     Y.Node.addMethod('clone',cloneFun);
 
@@ -4005,6 +3997,7 @@ YUI.add('node-clone', function(Y) {
 
     }
 
+    */
 },
 '',{
     requires:['node-base']

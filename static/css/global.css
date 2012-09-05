@@ -606,3 +606,10 @@ fieldset {
   margin: 0;
   padding: 0;
   border: none; }
+
+.vhidden {
+  background: none; }
+  .vhidden .logo {
+    visibility: hidden; }
+  .vhidden a {
+    background: none !important; }

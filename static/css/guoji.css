@@ -607,6 +607,13 @@ fieldset {
   padding: 0;
   border: none; }
 
+.vhidden {
+  background: none; }
+  .vhidden .logo {
+    visibility: hidden; }
+  .vhidden a {
+    background: none !important; }
+
 .lightbox2 .lightblue-bg, .lightbox2 .lightbox-ckzc .lightbox-content .table2 th, .lightbox-ckzc .lightbox-content .table2 .lightbox2 th, .lightbox2 .mo-jptj .box, .mo-jptj .lightbox2 .box {
   border-left: 1px solid #cecece;
   border-right: 1px solid #cecece;
