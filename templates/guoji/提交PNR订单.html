@@ -69,7 +69,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" id="pop" class="radio" value="" name="PICRADIO" />
+                                    <input type="radio" id="pop" class="radio" value="" disabled name="PICRADIO" />
                                     111</td>
                                 <td>2</td>
                                 <td>0</td>
@@ -199,7 +199,7 @@
                         </label>
                         <label>
                             联系地址 
-                            <input type="text" class="text" value="" name="" />
+                            <input type="text" class="text text3" value="" name="vvv12" />
                         </label>
                         </p>
                         <p>
@@ -211,7 +211,7 @@
                         <div class="rq-fp">
                             <p>
                             <label>
-                                <input type="radio" class="radio fp-one fp-ismul" value="" name="FP-ISMUL" />
+                                <input type="radio" checked class="radio fp-one fp-ismul" value="" name="FP-ISMUL" />
                                 <u>一人一张发票</u>
                             </label>
                             <label>
@@ -219,67 +219,112 @@
                                 <u>多人一张发票</u>
                             </label>
                             </p>
+                            <div class="group-items" rel="Invoices">
+                                <div class="fpone-one">
+                                    <div class="group-item">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+                                    <div class="group-item">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+                                    <div class="group-item">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+                                </div>
 
 
- <div class="group-items" rel="vsifdasl">
-                            <div class="fpone-one hidden">
-                            <div class="group-item">
-                            <p class="fp-row">
-                        <span>
-                            旅客姓名：
-                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
-                        </span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span>
-                            <u>发票抬头</u> 
-                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
-                        </span>
-                        </p></div>
-                             </div>
 
+                                <div class="fpone-mul hidden">
 
+                                    <div class="group-item disabled">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
 
-                    <div class="fpone-mul hidden">
+                                </div>
+                            </div>
 
-                        
-
-                    </div>
-                    </div>
 
                             <p>
                             <u>发票派送方式</u>
                             <label>
-                                <input type="radio" class="radio psfs pszq" value="" name="PSFS" checked />
+                                <input type="radio" class="radio psfs pszq" value="自取" name="INVOICE_SEND_TYPE" checked />
                                 自取
                             </label>
                             <label>
-                                <input type="radio" class="radio psfs psdf" value="" name="PSFS" />
+                                <input type="radio" class="radio psfs psdf" value="到付" name="INVOICE_SEND_TYPE" />
                                 到付
                             </label>
                             </p>
-                            <div class="psfs_box hidden">
+
+                            <div class="psfs_box_zq">
+                                <p>
+                                自取地址：上海不夜城699号 
+                                </p>
+                                <input type="hidden" class="text" value="上海不夜城699号" name="GET_INVOICE_ADDRESS" />
+                            </div>
+                            <div class="psfs_box_df hidden">
                                 <p>
                                 <span>
                                     <u>联 系 人</u>
-                                    <input type="text" class="text" value="" name="" />
+                                    <input type="text" class="text" value="" name="CONTACT"/>
                                     &nbsp;&nbsp;
                                 </span>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <span>
                                     <u>联系方式</u>
-                                    <input type="text" class="text text2" value="" name="" />
+                                    <input type="text" class="text text2" value="" name="CONTACT_PHONE" />
                                 </span>
                                 </p>
                                 <p>
-                                <u>联系地址</u>
-                                <input type="text" class="text text3" value="" name="" />
+                                <u>到付地址</u>
+                                <input type="text" class="text text3" value="" name="SEND_ADDRESS" />
+                                </p>
+                                <p>
+                                <u>自取地址</u>
+                                <input type="text" class="text text3" value="" name="GET_INVOICE_ADDRESS" />
                                 </p>
                             </div>
                         </div>
                     </fieldset>
                 </div>
 
-                <div class="block block4">
+                <div class="block block5">
                     <fieldset>
                         <h3 class="gray-title">支付信息</h3>
                         <table frame=void cellspacing="0" class="table4-tjdd table-b3">
