@@ -93,6 +93,10 @@ YUI({
                     // });
                     Y.log(data);
 
+                    var templ = Y.one('#TOTAL-template').getContent();
+                    var lightboxTemplate = Y.Mustache.to_html('{{={@ @}=}}' + templ, output);
+                    Y.one('body').append(lightboxTemplate);
+
                     show(function(i) {
                         i.one('.submit').on('click', function() {
                             Y.io(url, {
