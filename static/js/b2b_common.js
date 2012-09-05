@@ -11,7 +11,7 @@ YUI.Env.JSONP = {
  */
 YUI({
 	// defaultSkin:'sam'
-}).use('cookie', 'node-clone', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+}).use('cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
 	var submitedData;
 	/*iframe高度自定义,解决跨域问题*/
 	/*
@@ -26,7 +26,7 @@ YUI({
     /* 从cookie里加载用户皮肤*/
     (function(){
         var skin_cookie = Y.Cookie.getSubs('b2b_prefs_skin'); 
-        if( skin_cookie.name && skin_cookie.name!='default'){
+        if( skin_cookie && skin_cookie.name && skin_cookie.name!='default'){
             changeSkin(skin_cookie.name,skin_cookie.filepath);
             Y.on('contentready',function(){
                 Y.one('.head').removeClass('vhidden');
@@ -96,10 +96,11 @@ YUI({
 					show(function(i) {
 						i.one('.submit').on('click', function() {
 							Y.io(url, {
+                                method:'post',
 								data: 'info=' + data,
 								on: {
-									success: function(v) {
-										var arr = v.split(',');
+									success: function(i,res) {
+										var arr = res.responseText.split(',');
 										if (arr[0] == '0') {
 											location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
 										}
@@ -195,19 +196,19 @@ YUI({
 		/*弹出窗overlay end*/
 
 		/*  绑定全局日历组件 */
-		Y.on('available', function() {
-			Y.all('.datepicker').each(function(i) {
-				if (i.get('parentNode').hasClass('datepicker-wrapper')) {
-					return;
-				} else {
-					i = i.wrap('<u>').get('parentNode');
-					new Y.TripCalendar({
-						beginNode: i
-					});
-				}
-			});
-		},
-		'.datepicker');
+		// Y.on('available', function() {
+		// 	Y.all('.datepicker').each(function(i) {
+		// 		if (i.get('parentNode').hasClass('datepicker-wrapper')) {
+		// 			return;
+		// 		} else {
+		// 			i = i.wrap('<u>').get('parentNode');
+		// 			new Y.TripCalendar({
+		// 				beginNode: i
+		// 			});
+		// 		}
+		// 	});
+		// },
+		// '.datepicker');
 
 
 		Y.all('.change-style').on('click', function(e) {
@@ -252,7 +253,6 @@ YUI({
 
 		/*订单详情页面*/
 		Y.on('available', function() {
-
 			// Y.StorageLite.on('storage-lite:ready',function(){
 			//     var LAST_CPQR_DATA = Y.StorageLite.getItem('CPQR_DATA');
 			//     if(LAST_CPQR_DATA){
@@ -265,10 +265,29 @@ YUI({
 			Y.one('body').delegate('click', function(i) {
 				var that = i.target;
 				var container = that.ancestor('fieldset');
-				var cloned = container.one('.group-item').clone(true);
+
+
+                var cloned = container.one('.group-item').cloneNode(true);
+                cloned.append('<span class="CustomerDel">删除</span>');
 				container.append(cloned.resetForm());
+                cloned.one('[type=text]').focus();
+
+                // var node = Y.Node.getDOMNode(container.one('.group-item'));
+				// var cloned = jQuery(node).clone(true);
+				// container.append(cloned);
+                // jQuery(Y.Node.getDOMNode(container)).append(cloned);
+
 			},
 			'.CustomerAdd');
+
+			Y.one('body').delegate('click', function(i) {
+				var that = i.target;
+				var container = that.ancestor('.group-item');
+
+                container.previous().one('[type=text]').focus();
+                container.remove();
+			},
+			'.CustomerDel');
 
 			Y.one('.rp-fp-checkbox').on('click', function(e) {
 				if (this.get('checked')) {
@@ -277,6 +296,64 @@ YUI({
 					Y.one('.rq-fp').setStyle('display', 'none');
 				}
 			});
+
+            (function(){
+                Y.mix(Y.Node.DOM_EVENTS, {
+                    DOMNodeInserted: true,
+                    DOMNodeRemoved: true,
+                    DOMSubtreeModified:true,
+                    DOMCharacterDataModified: true
+                });
+            
+                var nodeCustomerCount = Y.all('.CustomerCount'); 
+                var nodeCustomerInsuranceCount = Y.all('.CustomerInsuranceCount'); 
+                var nodeCustomerTotalInsurance = Y.all('.CustomerTotalInsurance');
+                var nodeSingleTickedPrice = Y.all('.SingleTicketPrice');
+                var nodeTotalPrice = Y.all('.TotalPrice');
+                var CustomerCount = 1;
+                var CustomerInsuranceCount = 1;
+                var SingleTicketPrice = parseInt(nodeSingleTickedPrice.get('text')); 
+
+                Y.one('.mo-tjdd .block2').on('change',function(e){
+                    SingleTicketPrice = e.target.ancestor('tr').one('td:nth-last-child(1)').get('text'); 
+                    swichChangeNodeValue(nodeSingleTickedPrice,SingleTicketPrice);
+                    Y.one('.mo-tjdd .block3').simulate('change');
+                });
+
+                Y.one('.mo-tjdd .block3').on('valueChange',formchangehandler);
+                Y.one('.mo-tjdd .block3').on('change',formchangehandler);
+                Y.one('.mo-tjdd .block3').on('DOMNodeInserted',formchangehandler);
+                Y.one('.mo-tjdd .block3').on('DOMNodeRemoved',formchangehandler);
+
+                function formchangehandler(){
+                    var tempCustomerCount = this.all('.group-item').size();
+                        var tempCustomerInsuranceCount = this.all('[name=Insurance]:checked').size();
+
+                        if (tempCustomerCount != CustomerCount){
+                            CustomerCount = tempCustomerCount;
+                            swichChangeNodeValue(nodeCustomerCount,CustomerCount);
+                        }
+
+                        if (tempCustomerInsuranceCount != CustomerInsuranceCount){
+                            CustomerInsuranceCount = tempCustomerInsuranceCount 
+                            swichChangeNodeValue(nodeCustomerInsuranceCount,CustomerInsuranceCount);
+                            swichChangeNodeValue(nodeCustomerTotalInsurance,CustomerInsuranceCount*8);
+                        }
+
+                        swichChangeNodeValue(nodeTotalPrice,SingleTicketPrice*CustomerCount + CustomerInsuranceCount*8);
+
+                }
+            })();
+
+            function swichChangeNodeValue(node,value){
+                var tagName = node.get('tagName');
+                if(tagName=='INPUT'){
+                    node.set('value',value); 
+                }else{
+                    node.set('text',value);
+                }
+            }
+
 
 			Y.one('.rp-fp-checkbox').on('click', function(e) {
 				if (this.get('checked')) {

@@ -3717,37 +3717,40 @@ YUI.add('fieldsetFormat', function(Y) {
                 return false;
             }
             if (this.all(item).size() > 0) {
-                if(this.all(items).size()>0){
-                    var obj = loop(this.all('input,select,textarea').filter(':not('+items+' input)').filter(':not('+items+' select)').filter(':not('+items+' textarea)'));
+                // if(this.all(items).size()>0){
+                //     var obj = loop(this.all('input,select,textarea').filter(':not('+items+' input)').filter(':not('+items+' select)').filter(':not('+items+' textarea)'));
 
-                    this.all(items).each(function(vp){
-                        var arr = [];
-                        vp.all(item).each(function(v,pindex) {
-                            var vpobj = loop(v.all('input,select,textarea'),vp.getAttribute('rel'),pindex);
-                            if(Y.Object.size(vpobj)){
-                                arr.push(vpobj);
-                            }
+                //     this.all(items).each(function(vp){
+                //         var arr = [];
+                //         vp.all(item).each(function(v,pindex) {
+                //             var vpobj = loop(v.all('input,select,textarea'),vp.getAttribute('rel'),pindex);
+                //             if(Y.Object.size(vpobj)){
+                //                 arr.push(vpobj);
+                //             }
 
-                        });
+                //         });
 
-                        obj[vp.getAttribute('rel')] = arr;
+                //         obj[vp.getAttribute('rel')] = arr;
 
-                    });
+                //     });
 
-                    output[i.get('name')] = obj;   
-                }else{
-                    var arr = [];
-                    this.all(item).each(function(v,pindex) {
-                        var obj = loop(v.all('input,select,textarea'),i.get('name'),pindex);
-                        arr.push(obj);
-                    });
+                //     // output[i.get('name')] = obj;   
+                // }else{
+                //     var arr = [];
+                //     this.all(item).each(function(v,pindex) {
+                //         var obj = loop(v.all('input,select,textarea'),i.get('name'),pindex);
+                //         arr.push(obj);
+                //     });
 
-                    output[i.get('name')] = arr;
-                }
+                //     output[i.get('name')] = arr;
+                // }
 
+                Y.log('isgroup-item-field'+i.get('name'))
             } else {
-                var obj = loop(Y.all('input,select,textarea'),i.get('name'));
-                output[i.get('name')] = obj;
+                // var obj = loop(Y.all('input,select,textarea'),i.get('name'));
+                // Y.log(obj)
+                // output[i.get('name')] = obj;
+                Y.log('isgroup-item-none-field'+i.get('name'))
             }
 
         });
@@ -3763,8 +3766,9 @@ YUI.add('fieldsetFormat', function(Y) {
 YUI.add('node-clone', function(Y) {
     
     Y.Node.addMethod('clone',function(){
-        var node = this.cloneNode(true); 
-        return Y.mix(node,this);
+        // var node = this.cloneNode(true); 
+        var node = Y.Node.getDOMNode(this);
+        return jQuery(node).clone(true);
     });
     /*
     //todo

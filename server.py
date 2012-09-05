@@ -133,7 +133,7 @@ class GuojiHandler(MainHandler):
     def post(self, section, pagename = 'index'):
         args = self.request.arguments
         self.set_header("Content-Type", "text/plain")
-        self.write(dir(args))
+        self.write('0,GJJP120905B1000061');
 
     def get(self, section, pagename = 'index'):
         usergroup = self.get_argument('usergroup',default='cgs')

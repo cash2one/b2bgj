@@ -91,7 +91,7 @@
                         <h3 class="gray-title">乘机人信息</h3>
                         <p>
                         <span class="red">人数</span>
-                        <span id="CustomerCount">1人</span>
+                        <span class="CustomerCount">1人</span>
                         <a href="javascript:;" class="CustomerAdd">增加乘客</a>
                         </p>
                         <div class="group-item">
@@ -120,11 +120,11 @@
                                     </td>
                                     <td rowspan=2>
                                         <label>
-                                            <input type="checkbox" class="checkbox" value="" name="pic" />
+                                            <input type="checkbox" class="checkbox" checked value="" name="pic" />
                                             加为常旅客
                                         </label><br>
                                         <label>
-                                            <input type="checkbox" class="checkbox" value="" name="kkk" />
+                                            <input type="checkbox" class="checkbox" checked value="" name="Insurance" />
                                             购买平安航空险（8元/份）
                                         </label><br>
                                         <span class="blue">
@@ -285,18 +285,18 @@
                         <table frame=void cellspacing="0" class="table4-tjdd table-b3">
                             <tr class="thead">
                                 <td>机票价格</td>
-                                <td>2173/张</td>
+                                <td><span class="SingleTicketPrice">1000</span>元/张</td>
                                 <td>乘机人数</td>
-                                <td>1人</td>
+                                <td><span class="CustomerCount">1</span>人</td>
                                 <td>保险费用</td>
-                                <td>8元/份</td>
+                                <td><span class="CustomerTotalInsurance">8</span>元  ( 8元/份 )</td>
                                 <td>购买保险人数</td>
-                                <td>0人</td>
+                                <td><span class="CustomerInsuranceCount">1</span>人</td>
                             </tr>
                         </table>
                         <p>
                         订单总金额
-                        <span class="red">2173元</span>
+                        <span class='red'><b class="TotalPrice">1231</b>元</span>
                         订单总金额计算方式：订单人数×单张机票价格+购买保险人数×保险费用
                         </p>
                         <p>

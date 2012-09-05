@@ -209,7 +209,29 @@
 
 
 //////////////////
+.simple-btn{
+    cursor:pointer;
+    background:#fff;
+    border:1px solid #666;
+    padding:2px;
+    text-decoration:none;
+    color:#333;
+    outline:none;
+    hlbr:expression(this.onFocus=this.blur());
+}
 .mo-tjdd{
+    .group-item{
+        position:relative; 
+    }
+    .CustomerAdd{
+        @extend .simple-btn;
+    }
+    .CustomerDel{
+        position:absolute;
+        top:10px;
+        left:4px;
+        @extend .simple-btn;
+    }
     .block{
         margin-bottom:15px; 
     }

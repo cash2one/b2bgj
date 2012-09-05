@@ -734,6 +734,22 @@ fieldset {
 .mo-ddgl .table-b3, .mo-ddgl .table-b4 {
   border-bottom: 1px solid #cecece; }
 
+.simple-btn, .mo-tjdd .CustomerAdd, .mo-tjdd .CustomerDel {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #666;
+  padding: 2px;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  hlbr: expression(this.onFocus=this.blur()); }
+
+.mo-tjdd .group-item {
+  position: relative; }
+.mo-tjdd .CustomerDel {
+  position: absolute;
+  top: 10px;
+  left: 4px; }
 .mo-tjdd .block {
   margin-bottom: 15px; }
 .mo-tjdd .gray-title, .mo-tjdd .table-b5 .thead, .table-b5 .mo-tjdd .thead, .mo-tjdd .table-b6 .thead, .table-b6 .mo-tjdd .thead, .mo-tjdd .mo-ddgl .block2 .block-head, .mo-ddgl .block2 .mo-tjdd .block-head {

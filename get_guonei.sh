@@ -4,17 +4,22 @@ module=guonei
 usergroup=$1
 
 dst=~/www/BYCWORK/$module-$usergroup
+projdst=~/www/BYCWORK/byc_supper/YeeSohoWeb4.0
 
-echo "save to ${dst}\n"
+echo "save to ${dst}"
 
 mkdir $dst
 mkdir $dst/static
 
-cp -r static/css/ $dst/static
-cp -r static/js/ $dst/static
-cp -r static/img/ $dst/static
-# cp -r static/kendoUI/ $dst/static
-cp -r templates/$module/ajax $dst/
+cp -rv static/css/ $dst/static
+cp -rv static/js/ $dst/static
+cp -rv static/img/ $dst/static
+# cp -p -r static/kendoUI/ $dst/static
+cp -rv templates/$module/ajax $dst/
+
+cp -rv static/css/* $projdst/static/css
+cp -rv static/js/* $projdst/static/js
+cp -rv static/img/* $projdst/static/img
 
 cd templates/$module/
 
