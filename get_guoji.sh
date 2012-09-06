@@ -3,8 +3,8 @@
 module=guoji
 usergroup=$1
 
-dst=~/www/BYCWORK/$module-$usergroup
-projdst=~/www/BYCWORK/byc_supper/InternationalFlights/InternationalFlights.WebUI
+dst=~/www/bycwork/$module-$usergroup
+projdst=~/www/bycwork/byc_supper/InternationalFlights/InternationalFlights.WebUI
 
 echo "save to ${dst}"
 

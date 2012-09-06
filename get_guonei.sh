@@ -3,8 +3,8 @@
 module=guonei
 usergroup=$1
 
-dst=~/www/BYCWORK/$module-$usergroup
-projdst=~/www/BYCWORK/byc_supper/YeeSohoWeb4.0
+dst=~/www/bycwork/$module-$usergroup
+projdst=~/www/bycwork/byc_supper/YeeSohoWeb4.0
 
 echo "save to ${dst}"
 

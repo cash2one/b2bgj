@@ -11,7 +11,7 @@ YUI.Env.JSONP = {
 */
 YUI({
     // defaultSkin:'sam'
-}).use('cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+}).use('gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     /*iframe高度自定义,解决跨域问题*/
     /*
@@ -80,8 +80,6 @@ YUI({
 
                 if (lightboxid == 'CPQR') {
 
-                    // var info={"VPI":{"PICRADIO":true},"AII":[{"OP":"ccccccccccccc","pic":false,"kkk":false,"data-ss":"","viaaa":"123"},{"OP":"4444444","pic":true,"kkk":false,"data-ss":"44444444","viaaa":""},{"OP":"fffff","pic":false,"kkk":false,"data-ss":"21321","viaaa":"2144444"}],"yii":{"RQ-FP":false,"FP-ISMUL":false,"PSFS":false}} 
-                    // 
                     //                     Y.fieldsetFormat('set',{
                     //                         data:info 
                     //                     });
@@ -93,6 +91,7 @@ YUI({
                     // });
                     Y.log(data);
 
+                    /* 显示确认信息
                     var templ = Y.one('#TOTAL-template').getContent();
                     var lightboxTemplate = Y.Mustache.to_html('{{={@ @}=}}' + templ, output);
                     Y.one('body').append(lightboxTemplate);
@@ -116,6 +115,27 @@ YUI({
                                 }
                             });
                         });
+                    });
+                   */
+                  /*
+                  *
+                  */
+
+                    Y.io(url, {
+                        data: 'info=' + data,
+                        on: {
+                            success: function(i,res) {
+                                var arr = res.responseText.split(',');
+                                if (arr[0] == '0') {
+                                    location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                                }
+
+                                if (arr[0] == '1') {
+                                    alert(arr[1]);
+                                }
+                            },
+                            error: function() {}
+                        }
                     });
 
                     return;
@@ -259,6 +279,20 @@ YUI({
             this.all('textarea').set('text', '');
         });
 
+        /*线下订单管理与订单*/
+        Y.on('available', function(){
+            Y.all('.manipulate a').on('click',function(e){
+                e.preventDefault();
+                var href=this.get('href');
+                Y.io(href,{
+                   data:'',
+                   on:{
+                        success:function(){} 
+                   }
+                });  
+            });
+        },'.mo-khcx-ddcx-yu');
+
         /*订单详情页面*/
         Y.on('available', function() {
             // Y.StorageLite.on('storage-lite:ready',function(){
@@ -267,38 +301,55 @@ YUI({
             //         Y.fieldsetFormat('set',{ data: Y.JSON.parse(LAST_CPQR_DATA)});
             //     }
             // });
-            var CustomerCount = Y.one('#CustomerCount');
-            var Customer = {};
+
+
+            //todo 待优化
+            var countCus = 1;
+
+            var fpone_item = '<div class="group-item">'+Y.one('.fpone-mul .group-item').getContent()+'</div>';
+
+            function set_fpone(){
+                var container =  Y.one('.fpone-one');
+                container.empty();
+
+                var values = Y.all('[name=SurName]').get('value');
+
+                for(var i=0;i<countCus;i++){
+                    var node =  Y.Node.create(fpone_item);
+                    node.one('input').set('value',values[i]);
+                    container.append(node);
+                }
+            }
 
             Y.one('body').delegate('click', function(i) {
+                i.preventDefault();
                 var that = i.target;
                 var container = that.ancestor('fieldset');
-
-
                 var cloned = container.one('.group-item').cloneNode(true);
                 cloned.append('<span class="CustomerDel">删除</span>');
                 container.append(cloned.resetForm());
                 cloned.one('[type=text]').focus();
-
-                // var node = Y.Node.getDOMNode(container.one('.group-item'));
-                // var cloned = jQuery(node).clone(true);
-                // container.append(cloned);
-                // jQuery(Y.Node.getDOMNode(container)).append(cloned);
-
+                countCus++;
+                set_fpone();
             },
             '.CustomerAdd');
 
             Y.one('body').delegate('click', function(i) {
                 var that = i.target;
                 var container = that.ancestor('.group-item');
+                var index = Y.all('.block3 .group-item').indexOf(container);
 
                 container.previous().one('[type=text]').focus();
                 container.remove();
+                countCus--;
+
+                Y.one('.fpone-one').all('.group-item').item(index).remove();
             },
             '.CustomerDel');
 
             Y.one('.rp-fp-checkbox').on('click', function(e) {
                 if (this.get('checked')) {
+                    set_fpone();
                     Y.one('.rq-fp').setStyle('display', 'block');
                 } else {
                     Y.one('.rq-fp').setStyle('display', 'none');
@@ -362,7 +413,6 @@ YUI({
                 }
             }
 
-
             Y.one('.rp-fp-checkbox').on('click', function(e) {
                 if (this.get('checked')) {
                     Y.one('.rq-fp').setStyle('display', 'block');
@@ -385,7 +435,7 @@ YUI({
                 }
             });
 
-            Y.one('.select_pas_type').on('change', function(e) {
+            Y.one('.select_pas_type')&&Y.one('.select_pas_type').on('change', function(e) {
                 if (this.get('value') == 2) {
                     Y.one('.uploads-box').setStyle('display', 'block');
                 } else {
@@ -402,7 +452,7 @@ YUI({
                     Y.one('.fpone-one').addClass('hidden').all('.group-item').addClass('disabled');
 
                     Y.one('.fpone-mul').removeClass('hidden').all('.group-item').removeClass('disabled');
-;
+                    ;
                 }
             });
 
@@ -414,12 +464,242 @@ YUI({
                     Y.one('.fpone-one').addClass('hidden').all('.group-item').addClass('disabled');
 
                     Y.one('.fpone-mul').removeClass('hidden').all('.group-item').removeClass('disabled');
-;
+                    ;
                 }
             });
 
         },
         '.mo-tjdd');
+
+        /*mo-khcx-cpcz*/
+        Y.on('available',function(){
+
+            // attaches behavior to all checkboxes with CSS class "my-at-least-one-checkbox-group"
+            //new Y.AtLeastOneCheckboxGroup('.my-at-least-one-checkbox-group');
+
+            // attaches behavior to all checkboxes with CSS class "my-at-most-one-checkbox-group"
+            //new Y.AtMostOneCheckboxGroup('.my-at-most-one-checkbox-group');
+
+            // attaches behavior to all checkboxes with CSS class "my-select-all-checkbox-group",
+            // controlled by the checkbox with id "my-select-all-checkbox"
+            new Y.SelectAllCheckboxGroup('.table1-ddxq .thead .checkbox', '.table1-ddxq .data-row .checkbox');
+
+            // attaches behavior to all checkboxes with CSS class "my-enable-if-any-checkbox-group",
+            // to enable/disable all nodes with CSS class "managed" (typically buttons)
+            //new Y.EnableIfAnyCheckboxGroup('.my-enable-if-any-checkbox-group', '.managed');
+
+            (function(){
+                Y.mix(Y.Node.DOM_EVENTS, {
+                    DOMNodeInserted: true,
+                    DOMNodeRemoved: true,
+                    DOMSubtreeModified:true,
+                    DOMCharacterDataModified: true
+                });
+
+                var nodePrice1 = Y.one('.aPrice1'); 
+                var nodePrice2 = Y.one('.aPrice2'); 
+                var nodePrice3 = Y.one('.aPrice3'); 
+                var nodePrice4 = Y.one('.aPrice4'); 
+                var nodePrice5 = Y.one('.aPrice5'); 
+                var nodePrice6 = Y.one('.aPrice6'); 
+                var nodePrice7 = Y.one('.aPrice7'); 
+                var nodePrice8 = Y.one('.aPrice8'); 
+
+                var nodePrice1_t = Y.one('.tPrice1'); 
+                var nodePrice2_t = Y.one('.tPrice2'); 
+                var nodePrice3_t = Y.one('.tPrice3'); 
+                var nodePrice4_t = Y.one('.tPrice4'); 
+                var nodePrice5_t = Y.one('.tPrice5'); 
+
+                Y.one('.mo-khcx-cpcz').on('change',formchangehandler);
+                Y.one('.mo-khcx-cpcz').on('valueChange',formchangehandler);
+
+                Y.one('input').focus();
+                var CustomerCount = Y.one('.block3').all('.group-item').size();
+                /*
+                * 单张机票净价= 单张运价*（1-代理费率）*（1-奖励扣率）- 奖励金额
+                * 1、票款合计=费用明细中的单张机票净价，按照人数累加
+                * 2、税费合计=费用明细中的税费，按照人数累加
+                * 3、保险合计=费用明细中的乘机人信息中的保险费用累加
+                * 4、佣金合计=（单张运价-单张机票净价），按照人数累加
+                * 5、订单总金额=票款合计+税费合计+保险合计
+                * 6、单张机票结算价=单张机票净价-开票费
+                * 7、单张机票小计=单张机票净价-开票费+税费
+                *
+                * */
+
+                function formchangehandler(){
+                    CustomerCount = Y.one('.block3').all('.group-item').size();
+                    var Price1 = parseFloat(nodePrice1.get('value'));
+                    var Price2 = parseFloat(nodePrice2.get('value'));
+                    var Price3 = parseFloat(nodePrice3.get('value'));
+                    var Price4 = parseFloat(nodePrice4.get('value'));
+                    var Price5 = parseFloat(nodePrice5.get('value'));
+                    var Price6 = parseFloat(nodePrice6.get('value'));
+                    var Price7 = parseFloat(nodePrice7.get('value'));
+
+                    var basePrice = Price1*(1-Price2/100)*(1-Price3/100)-Price4;
+
+                    nodePrice6.set('value',basePrice - Price5);
+                    nodePrice8.set('value',basePrice - Price5 + Price7);
+
+                    var t1 = basePrice*CustomerCount; //票款合计
+                    var t2 = Price7*CustomerCount; //税费合计
+                    var t3 = 8*CustomerCount; //保险合计
+                    var t4 = (Price1 - basePrice) * CustomerCount; //佣金合计
+                    var t5 = t1+t2+t3; //订单从金额
+
+                    nodePrice1_t.set('value',t1);
+                    nodePrice2_t.set('value',t2);
+                    nodePrice3_t.set('value',t3);
+                    nodePrice4_t.set('value',t4);
+                    nodePrice5_t.set('value',t5)
+                }
+
+                function valid(){
+
+                }
+
+            })();
+
+            function swichChangeNodeValue(node,value){
+                var tagName = node.get('tagName');
+                if(tagName=='INPUT'){
+                    node.set('value',value); 
+                }else{
+                    node.set('text',value);
+                }
+            }
+
+            var hbxx_add = Y.one('.hbxx_add');
+            var hbxx_copy = Y.one('.hbxx_copy');
+            var hbxx_del_sel  = Y.one('.hbxx_del_sel');
+            var hbxx_del_unsel  = Y.one('.hbxx_del_unsel');
+            var hbxx_combine  = Y.one('.hbxx_combine');
+
+            var container = Y.one('.table1-ddxq'); 
+
+            hbxx_add.on('click',function(e){
+                e.preventDefault();
+                var cloned = container.one('.data-row').cloneNode(true).resetForm();
+                container.one('tr:nth-last-child(1)').insert(cloned,'after');
+                new Y.SelectAllCheckboxGroup('.table1-ddxq .thead .checkbox', '.table1-ddxq .data-row .checkbox');
+            });
+
+            hbxx_del_unsel.on('click',function(e){
+                e.preventDefault();
+
+                //todo
+                var unchecked_row = container.all('.data-row .checkbox').filter('.data-row :checked');
+
+                if(unchecked_row.size()>0){
+                    unchecked_row = unchecked_row.get('parentElement').get('parentElement');
+                }
+
+                unchecked_row.remove();
+
+                new Y.SelectAllCheckboxGroup('.table1-ddxq .thead .checkbox', '.table1-ddxq .data-row .checkbox');
+            });
+
+            hbxx_del_sel.on('click',function(e){
+                e.preventDefault();
+
+                //todo
+                var leftcount = (container.all('.data-row .checkbox').size() - container.all('.data-row :checked').size());
+
+                if(leftcount<1){
+                    return alert('必须留一条'); 
+                }
+                
+                var checked_row = container.all('.data-row :checked');
+
+                if(checked_row.size()>0){
+                    checked_row = checked_row.get('parentElement').get('parentElement');
+                }
+
+                checked_row.remove();
+
+                new Y.SelectAllCheckboxGroup('.table1-ddxq .thead .checkbox', '.table1-ddxq .data-row .checkbox');
+            });
+
+            hbxx_copy.on('click',function(e){
+                e.preventDefault();
+                var arr = [];
+                var checked_row = container.all('.data-row :checked');
+
+                if(checked_row.size()>0){
+                    checked_row = checked_row.get('parentElement').get('parentElement');
+                }
+
+                checked_row.each(function(i,v){
+                   arr.push( i.cloneNode(true));
+                });
+
+                arr = arr.reverse();
+
+                Y.Array.each(arr,function(i){
+                    checked_row.insert(i,'after');
+                });
+
+                new Y.SelectAllCheckboxGroup('.table1-ddxq .thead .checkbox', '.table1-ddxq .data-row .checkbox');
+            });
+
+            Y.one('body').delegate('click',function(e){
+                var count_data_row = container.all('.data-row').size();
+                e.preventDefault();
+                if(count_data_row<=1){
+                    alert('必须留一条'); 
+                }else{
+                  this.ancestor('tr').remove(); 
+                }
+            },'.hbxx_del_row')
+
+        },'.mo-khcx-cpcz');
+
+        /*mo-khcx-ddxq-new*/
+        Y.on('available',function(){
+            (function(){
+                Y.mix(Y.Node.DOM_EVENTS, {
+                    DOMNodeInserted: true,
+                    DOMNodeRemoved: true,
+                    DOMSubtreeModified:true,
+                    DOMCharacterDataModified: true
+                });
+
+
+                var nodePrice1 = Y.one('.Price1'); 
+                var nodePrice2 = Y.one('.Price2'); 
+                var nodePrice3 = Y.one('.Price3'); 
+
+                Y.one('.manipulate').on('change',formchangehandler);
+                Y.one('.manipulate').on('valueChange',formchangehandler);
+
+                function formchangehandler(){
+                    var  Price1 = parseFloat(nodePrice1.get('value'));
+                    var  Price2 = parseFloat(nodePrice2.get('value'));
+                    if(Price2>Price1) {
+                        alert('Error'); 
+                        return;
+                    }
+                    nodePrice3.set('value',Price1-Price2);
+                }
+
+                function valid(){
+
+                }
+
+            })();
+
+            function swichChangeNodeValue(node,value){
+                var tagName = node.get('tagName');
+                if(tagName=='INPUT'){
+                    node.set('value',value); 
+                }else{
+                    node.set('text',value);
+                }
+            }
+
+        },'.mo-khcx-ddxq-new');
 
         /*航班查询页面*/
         Y.on('available', function() {

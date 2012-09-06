@@ -8,10 +8,10 @@
                 {% if len(x) > 1 %}
                 {% for x in x[1] %}
                 <dd>
-                <a {% if data['title']==x %}
+                <a {% if data['title']==x[0] %}
                         class="current" 
                     {% end %} 
-                    href="{{x}}.html">{{x}}</a>
+                    href="{{x[1]}}.html">{{x[0]}}</a>
                 </dd>
                 {% end %}
                 {% end %}

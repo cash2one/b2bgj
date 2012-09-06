@@ -3,7 +3,7 @@
     {% include 'partial/sidebar.html' %}
     {% include 'partial/breadcrumb.html' %}
     <div class="content area">
-        <div class="mo-ddxq mo-khcx-ddxq">
+        <div class="mo-ddxq mo-khcx-ddxq-new mo-khcx-ddxq">
             <div class="xblock">
                 <p>
                 <span>
@@ -154,7 +154,7 @@
                 <table frame=void cellspacing="0" class="table-b3">
                     <tr>
                         <th>PNR记录编号</th> 
-                        <td>WWWW01 大编：MSKJFK 改签中</td>
+                        <td><span>WWWW01</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>大编：MSKJFK</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>退票中</span></td>
                     </tr>
                     <tr>
                         <th>客票使用条件</th>
@@ -253,7 +253,7 @@
                 </table>
             </div>
 
-            <div class="block">
+            <div class="block manipulate">
                 <h3 class="gray-title">退废票详细</h3>
                 <table frame=void cellspacing="0"  class="table-b2">
                     <colgroup>
@@ -274,13 +274,13 @@
                         <input type="text" class="text text9" value="" name="" />
                     </td>
                     <td>
-                        <input type="text" class="text text9" value="" name="" />
+                        12313元
                     </td>
                     <td>
-                        <input type="text" class="text text9" value="" name="" />
+                        <input type="text" class="text text9 Price2" value="" name="" />
                     </td>
                     <td>
-                        <input type="text" class="text text9" value="" name="" />
+                        <input type="text" class="text text9 Price3" value="" name="" />
                     </td>
                     <td>
                         <input type="text" class="text text9" value="" name="" />
@@ -289,53 +289,12 @@
             </div>
 
             <div class="block clearfix block-12">
-                <h3 class="gray-title">信息备注</h3>
+                <h3 class="gray-title">备注信息</h3>
                 <p>
                 <textarea name="" rows=5 cols=60></textarea>
                 </p>
             </div>
 
-            <div class="block">
-                <table frame=void cellspacing="0" class="table-b3">
-                    <tr>
-                        <th>创建人</th>
-                        <td>abc</td>
-                        <th>创建时间</th>
-                        <td>2012-1-1 16:00</td>
-                        <th>审核人</th>
-                        <td></td>
-                        <th>审核时间</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>确认人</th>
-                        <td></td>
-                        <th>确认时间</th>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="center">
-                <input type="button" class="button button2" value="保存" name="" onclick="location.href='客户查询订单详情退废票.html'" />
-                <input type="button" class="button button2" value="关闭" name="" />
-            </div>
-
-            <div class="center">
-                <input type="button" class="button button2" value="价格计算" name="" />
-                <input type="button" class="button button2" value="取消退废票" name="" />
-                <input type="button" class="button button2" value="提交" name="" />
-                <input type="button" class="button button2" value="修改" name="" />
-                <input type="button" class="button button2" value="关闭" name="" />
-            </div>
-
-            <div class="center">
-                <input type="button" class="button button2" value="价格计算" name="" />
-                <input type="button" class="button button2" value="退回" name="" />
-                <input type="button" class="button button2" value="完成退废票" name="" />
-                <input type="button" class="button button2" value="修改" name="" />
-                <input type="button" class="button button2" value="关闭" name="" />
-            </div>
             <div class="block block6">
                 <h3 class="gray-title">
                     订单处理状态
@@ -393,6 +352,27 @@
                         <td>小名 </td>
                     </tr>
                 </table>
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="保存" name="" onclick="location.href='客户查询订单详情退废票.html'" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="价格计算" name="" />
+                <input type="button" class="button button2" value="取消退废票" name="" />
+                <input type="button" class="button button2" value="提交" name="" />
+                <input type="button" class="button button2" value="修改" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="价格计算" name="" />
+                <input type="button" class="button button2" value="退回" name="" />
+                <input type="button" class="button button2" value="完成退废票" name="" />
+                <input type="button" class="button button2" value="修改" name="" />
+                <input type="button" class="button button2" value="关闭" name="" />
             </div>
 
         </div>

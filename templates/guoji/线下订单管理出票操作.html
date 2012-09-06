@@ -3,7 +3,7 @@
     {% include 'partial/sidebar.html' %}
     {% include 'partial/breadcrumb.html' %}
     <div class="content area">
-        <div class="mo-ddxq mo-khcx-ddxq mo-tjdd">
+        <div class="mo-ddxq mo-khcx-cpcz mo-khcx-ddxq mo-tjdd">
             <div class="xblock block">
                 <h3 class="gray-title">填写订单</h3>
                 <table cellspacing="0" class="table-b4" frame=void>
@@ -33,19 +33,17 @@
                     </span>&nbsp;
                     <span class="buttons">
                         [
-                        <a href="#" class="">添加航程</a>
+                        <a href="#" class="action hbxx_add">添加航程</a>
                         |
-                        <a href="#" class="">复制航程</a>
-                        |
-                        <a href="#" class="">粘贴提取</a>
+                        <a href="#" class="action hbxx_copy">复制航程</a>
                         ]&nbsp;&nbsp;&nbsp;&nbsp;[
-                        <a href="#" class="">删除所选</a>
+                        <a href="#" class="action hbxx_del_sel">删除所选</a>
                         |
-                        <a href="#" class="">删除未选</a>
+                        <a href="#" class="action hbxx_del_unsel">删除未选</a>
                         ]
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         [
-                        <a href="#" class="">统一出票地</a>
+                        <a href="#" class="action hbxx_combine">统一出票地</a>
                         ]
                 </span></h3>
                 <table frame=void cellspacing="0" class="table1-ddxq table-b2">
@@ -63,7 +61,7 @@
                         <td>舱位</td>
                         <td></td>
                     </tr>
-                    <tr>
+                    <tr class="data-row">
                         <td>
                             <input type="checkbox" class="checkbox" value="" name="" />
                         </td>
@@ -85,7 +83,7 @@
                             <input type="text" class="text text9" value="" name="" />
                         </td>
                         <td>
-                            <a href="#">删除</a>
+                            <a class="hbxx_del_row" href="#">删除</a>
                         </td>
                     </tr>
                 </table>
@@ -105,45 +103,47 @@
                         <td>税费</td>
                         <td>单张机票小计</td>
                     </tr>
-                    <tr>
+                    <tr class="manipulate_a">
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice1" value="" name="" />
                         </td><td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice2" value="" name="" />
                         </td><td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice3" value="" name="" />
                         </td><td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice4" value="" name="" />
                         </td><td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice5" value="" name="" />
                         </td><td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice6" value="" name="" />
                         </td><td>
-                            <input type="text" class="text text9" value="" name="" />
-                        </td><td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 aPrice7" value="" name="" />
+                        </td>
+                        <td>
+                            <input type="text" class="text text9 aPrice8" value="" name="" />
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="block block3">
+                <fieldset name="kkkkk">
+                
                 <h3 class="gray-title clearfix">
                     乘机人信息
                     &nbsp; <span>
-                        <input type="text" class="text" value="1人" name="" />
+                        <input type="text" class="text CustomerCount" disabled style='width:10px' value="1" name="" />人
                     </span>
                     <span class="buttons">
-                        [ <a href="#">添加客票</a>  |  <a href="#">复制客票</a>] 
+                        [ <a class='CustomerAdd' href="javascript:;">添加客票</a> ] 
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        [ <a href="#">删除所选</a> | <a href="#">删除未选</a> ]
-                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <!-- [ <a href="#">删除所选</a> | <a href="#">删除未选</a> ] -->
+                        <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
                         [ <a href="#">提取行程单</a> ]
                     </span>
                 </h3>
-                <table frame=void cellspacing="0" class="table-b2">
+                <div class="group-item"><table frame=void cellspacing="0" class="table-b2">
                     <tr>
-                        <td rowspan=3>
-                            <input type="checkbox" class="checkbox" value="" name="" />
+                        <td rowspan=3 width=30>
                         </td>
                         <td>英文姓名</td>
                         <td>
@@ -198,169 +198,206 @@
                             <input type="text" class="text text9" value="" name="" />
                         </td>
                         <td rowspan=3>
-                            <input type="checkbox" class="checkbox" value="" name="" />
+                            <input type="checkbox" class="checkbox" checked value="" name="" />
                             加为常旅客
                             <br>
-                            <input type="checkbox" class="checkbox" value="" name="" />
+                            <input type="checkbox" class="checkbox" checked value="" name="" />
                             购买太平洋航空险（8元/份）
                         </td>
 
                     </tr>
-                </table>
-            </div>
-
-            <div class="block block4">
-                <fieldset name="yii">
-                    <h3 class="gray-title">
-                        联系人信息
-                    </h3>
-                    <p class="lightblue-bg">
-                    <label>
-                        姓名
-                        <input type="text" class="text" value="" name="" />
-                    </label>
-                    <label>
-                        联系电话
-                        <input type="text" class="text" value="" name="" />
-                    </label>
-                    <label>
-                        联系地址
-                        <input type="text" class="text" value="" name="" />
-                    </label>
-                    </p>
-                    <p>
-                    <label>
-                        <input type="checkbox" class="checkbox rp-fp-checkbox" value="" name="RQ-FP" />
-                        是否需要发票
-                    </label>
-                    </p>
-                    <div class="rq-fp">
-                        <p>
-                        <label>
-                            <input type="radio" class="radio fp-one fp-ismul" value="" name="FP-ISMUL" />
-                            <u>一人一张发票</u>
-                        </label>
-                        <label>
-                            <input type="radio" class="radio fp-mul fp-ismul" value="" name="FP-ISMUL" />
-                            <u>多人一张发票</u>
-                        </label>
-                        </p>
-                        <div class="fpone-one hidden">
-                            <p class="fp-row" data-rownum=0>
-                            <span>
-                                张三
-                            </span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>
-                                <u>发票抬头</u>
-                                <input type="text" class="text text2" value="" name="" />
-                            </span>
-                            </p>
-                            <p class="fp-row" data-rownum=2>
-                            <span>
-                                张三
-                            </span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>
-                                <u>发票抬头</u>
-                                <input type="text" class="text text2" value="" name="" />
-                            </span>
-                            </p>
-                            <p class="fp-row" data-rownum=1>
-                            <span>
-                                张三
-                            </span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>
-                                <u>发票抬头</u>
-                                <input type="text" class="text text2" value="" name="" />
-                            </span>
-                            </p>
-                        </div>
-                        <div class="fpone-mul hidden">
-                            <p class="fp-row" data-rownum=0>
-                            <span>
-                                旅客姓名：
-                                <input type="text" class="text" value="" name="" />
-                            </span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>
-                                <u>发票抬头</u>
-                                <input type="text" class="text text2" value="" name="" />
-                            </span>
-                            </p>
-                        </div>
-                        <p>
-                        <u>发票派送方式</u>
-                        <label>
-                            <input type="radio" class="radio psfs pszq" value="" name="PSFS" checked />
-                            自取
-                        </label>
-                        <label>
-                            <input type="radio" class="radio psfs psdf" value="" name="PSFS" />
-                            到付
-                        </label>
-                        </p>
-                        <div class="psfs_box hidden">
-                            <p>
-                            <span>
-                                <u>联 系 人</u>
-                                <input type="text" class="text" value="" name="" />
-                                &nbsp;&nbsp;
-                            </span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>
-                                <u>联系方式</u>
-                                <input type="text" class="text text2" value="" name="" />
-                            </span>
-                            </p>
-                            <p>
-                            <u>联系地址</u>
-                            <input type="text" class="text text3" value="" name="" />
-                            </p>
-                        </div>
-                    </div>
+                </table></div>
+                
                 </fieldset>
             </div>
 
-            <div class="block block5">
+            <div class="block block4">
+                    <fieldset name="yii">
+                        <h3 class="gray-title">
+                            联系人信息
+                        </h3>
+                        <p class="lightblue-bg">
+                        <label>
+                            姓名 
+                            <input type="text" class="text" value="" name="" />
+                        </label>
+                        <label>
+                            联系电话 
+                            <input type="text" class="text" value="" name="" />
+                        </label>
+                        <label>
+                            联系地址 
+                            <input type="text" class="text text3" value="" name="vvv12" />
+                        </label>
+                        </p>
+                        <p>
+                        <label>
+                            <input type="checkbox" class="checkbox rp-fp-checkbox" value="" name="RQ-FP" />
+                            是否需要发票
+                        </label>
+                        </p>
+                        <div class="rq-fp">
+                            <p>
+                            <label>
+                                <input type="radio" checked class="radio fp-one fp-ismul" value="" name="FP-ISMUL" />
+                                <u>一人一张发票</u>
+                            </label>
+                            <label>
+                                <input type="radio" class="radio fp-mul fp-ismul" value="" name="FP-ISMUL" />
+                                <u>多人一张发票</u>
+                            </label>
+                            </p>
+                            <div class="group-items" rel="Invoices">
+                                <div class="fpone-one">
+                                    <div class="group-item">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+                                    <div class="group-item">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+                                    <div class="group-item">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+                                </div>
+
+
+
+                                <div class="fpone-mul hidden">
+
+                                    <div class="group-item disabled">
+                                        <p class="fp-row">
+                                        <span>
+                                            旅客姓名：
+                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span>
+                                            <u>发票抬头</u> 
+                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
+                                        </span>
+                                    </p></div>
+
+                                </div>
+                            </div>
+
+
+                            <p>
+                            <u>发票派送方式</u>
+                            <label>
+                                <input type="radio" class="radio psfs pszq" value="自取" name="INVOICE_SEND_TYPE" checked />
+                                自取
+                            </label>
+                            <label>
+                                <input type="radio" class="radio psfs psdf" value="到付" name="INVOICE_SEND_TYPE" />
+                                到付
+                            </label>
+                            </p>
+
+                            <div class="psfs_box_zq">
+                                <p>
+                                自取地址：上海不夜城699号 
+                                </p>
+                                <input type="hidden" class="text" value="上海不夜城699号" name="GET_INVOICE_ADDRESS" />
+                            </div>
+                            <div class="psfs_box_df hidden">
+                                <p>
+                                <span>
+                                    <u>联 系 人</u>
+                                    <input type="text" class="text" value="" name="CONTACT"/>
+                                    &nbsp;&nbsp;
+                                </span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>
+                                    <u>联系方式</u>
+                                    <input type="text" class="text text2" value="" name="CONTACT_PHONE" />
+                                </span>
+                                </p>
+                                <p>
+                                <u>到付地址</u>
+                                <input type="text" class="text text3" value="" name="SEND_ADDRESS" />
+                                </p>
+                                <p>
+                                <u>自取地址</u>
+                                <input type="text" class="text text3" value="" name="GET_INVOICE_ADDRESS" />
+                                </p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>           
+
+            <div class="block block5 manipulate_t">
+                <fieldset name="bbbbb">
                 <h3 class="gray-title">支付信息</h3>
                 <table frame=void style="border-bottom:1px"  cellspacing="0" class="table-b3">
                     <tr class="thead">
                         <td>票款合计</td>
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 tPrice1" value="" name="" />
                         </td>
                         <td>税费合计</td>
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 tPrice2" value="" name="" />
                         </td>
                         <td>保险合计</td>
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 tPrice3" value="" name="" />
                         </td>
                         <td>佣金合计</td>
                         <td>
-                            <input type="text" class="text text9" value="" name="" />
+                            <input type="text" class="text text9 tPrice4" value="" name="" />
                         </td>
                     </tr>
                 </table>
                 <p>
                 订单总金额 
                 <span class="redb">
-                    <input type="text" class="text" value="" name="" />
-                    元</span> 计算公式：票款合计+税费合计+保险合计
+                    <input type="text" class="text tPrice5" value="" name="" />
+                    元</span>
                 </p>
+                </fieldset>
             </div>
 
             <div class="block block6">
                 <h3 class="gray-title">退改签规则</h3>
                 <p>
-                退改签规则内容 
+                    <textarea name="" rows=5 cols=60></textarea>
                 </p>
             </div>
 
             <div class="block clearfix block-12">
+                {% if usergroup=="cgs" %}
+                    <h3 class="gray-title">内部备注</h3>
+                    <p>
+                    <textarea name="" rows=5 cols=60></textarea>
+                    </p>
+                {% else %}
                 <div class="col">
                     <h3 class="gray-title">外部备注</h3>
                     <p>
@@ -373,6 +410,7 @@
                     <textarea name="" rows=5 cols=60></textarea>
                     </p>
                 </div>
+                {%  end %}
             </div>
 
             <div class="center">
