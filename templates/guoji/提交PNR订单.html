@@ -69,7 +69,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" id="pop" class="radio" value="" disabled name="PICRADIO" />
+                                    <input type="radio" id="pop" class="radio" value="" name="PolicyID" />
                                     111</td>
                                 <td>2</td>
                                 <td>0</td>
@@ -225,31 +225,7 @@
                                         <p class="fp-row">
                                         <span>
                                             旅客姓名：
-                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
-                                        </span>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>
-                                            <u>发票抬头</u> 
-                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
-                                        </span>
-                                    </p></div>
-                                    <div class="group-item">
-                                        <p class="fp-row">
-                                        <span>
-                                            旅客姓名：
-                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
-                                        </span>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span>
-                                            <u>发票抬头</u> 
-                                            <input type="text" class="text text2" value="" name="INVOICE_TITLE" />
-                                        </span>
-                                    </p></div>
-                                    <div class="group-item">
-                                        <p class="fp-row">
-                                        <span>
-                                            旅客姓名：
-                                            <input type="text" class="text" value="" name="PASSENGER_NAME" />
+                                            <input type="text" class="text" value="123" name="PASSENGER_NAME" />
                                         </span>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <span>
@@ -402,7 +378,7 @@
                             {% for x in range(10) %}
                             <tr>
                                 <td>
-                                    <input type="radio" class="radio" value="" name="" />
+                                    <input type="radio" class="radio" value="" name="PolicyID" />
                                 </td>
                                 <td>1200</td>
                                 <td>3</td>
@@ -430,7 +406,7 @@
 
 
 <script type="text/template" id="TOTAL-template">
-    <div class="lightbox lightbox-2" data-lightboxid="CPQR">
+    <div class="lightbox lightbox-2 lightbox{% raw '{{' %}uid}}" data-lightboxid="CPQR">
     <table cellspacing="0">
         <tr>
             <td>

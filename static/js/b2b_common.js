@@ -59,20 +59,21 @@ YUI({
         }
     }
 
-    /* 调用yui默认组件皮肤 */
+    /* 调用yui默认皮肤 */
     //Y.one('body').addClass('yui3-skin-sam');
+
     Y.on('domready', function() {
 
         /*弹出窗overlay*/
-
         function lightbox() {
             Y.one('body').delegate('click', function(e) {
                 var uid = '-' + this.get('id');
                 var lightboxid = this.getAttribute('data-lightboxid');
                 var lightboxID = lightboxid + uid;
-
+                var cached = this.getAttribute('data-cached')=='0'?false:true;
                 var url = this.getAttribute('data-url');
                 var buy = this.getAttribute('data-buy');
+                var callbackPrams = '';
                 var FlightNo = '&FlightNo=' + this.getAttribute('data-flightno');
                 var Price = '&Price=' + this.getAttribute('data-price');
 
@@ -80,9 +81,9 @@ YUI({
 
                 if (lightboxid == 'CPQR') {
 
-                    //                     Y.fieldsetFormat('set',{
-                    //                         data:info 
-                    //                     });
+                    // Y.fieldsetFormat('set',{
+                    //     data:info 
+                    // });
                     var output = Y.fieldsetFormat('get');
                     var data = Y.JSON.stringify(output);
 
@@ -92,34 +93,41 @@ YUI({
                     Y.log(data);
 
                     /* 显示确认信息
+                    output.uid = uid;
                     var templ = Y.one('#TOTAL-template').getContent();
-                    var lightboxTemplate = Y.Mustache.to_html('{{={@ @}=}}' + templ, output);
+                    var lightboxTemplate = Y.Mustache.to_html(templ, output);
+
+                    if (Y.one('.lightbox' + uid)) {
+                    if(cached){
+                    return show();
+                    }else{
+                    Y.one('.lightbox' + uid).remove();
+                    }
+                    }
+
                     Y.one('body').append(lightboxTemplate);
 
                     show(function(i) {
-                        i.one('.submit').on('click', function() {
-                            Y.io(url, {
-                                data: 'info=' + data,
-                                on: {
-                                    success: function(i,res) {
-                                        var arr = res.responseText.split(',');
-                                        if (arr[0] == '0') {
-                                            location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
-                                        }
+                    i.one('.submit').on('click', function() {
+                    Y.io(url, {
+                    data: 'info=' + data,
+                    on: {
+                    success: function(i,res) {
+                    var arr = res.responseText.split(',');
+                    if (arr[0] == '0') {
+                    location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                    }
 
-                                        if (arr[0] == '1') {
-                                            alert(arr[1]);
-                                        }
-                                    },
-                                    error: function() {}
-                                }
-                            });
-                        });
+                    if (arr[0] == '1') {
+                    alert(arr[1]);
+                    }
+                    },
+                    error: function() {}
+                    }
                     });
-                   */
-                  /*
-                  *
-                  */
+                    });
+                    });
+                    */
 
                     Y.io(url, {
                         data: 'info=' + data,
@@ -137,22 +145,29 @@ YUI({
                             error: function() {}
                         }
                     });
+                    /*end */
 
                     return;
                 }
 
-                function show(fn) {
-                    Y.all('.lightbox').each(function(i) {
-                        if (i.getAttribute('data-lightboxid') + uid == lightboxID) {
-                            i.setStyle('display', 'block');
-                            lightboxID = null;
-                            fn && fn.call(this, i);
-                        }
-                    });
+                function show(fn,ele) {
+                    if( ele ){
+                        var i = Y.one(ele).setStyle('display', 'block');
+                        lightboxID = null;
+                        fn && fn.call(this, i);
+                    }else{
+                        Y.all('.lightbox').each(function(i) {
+                            if (i.getAttribute('data-lightboxid') + uid == lightboxID) {
+                                i.setStyle('display', 'block');
+                                lightboxID = null;
+                                fn && fn.call(this, i);
+                            }
+                        });
+                    }
 
                     Y.all('.lightbox [rel=close]').on('click', function(e) {
                         if (buy && e.target.hasClass('submit')) {
-                            location.href = buy + submitedData;
+                            location.href = buy + submitedData + callbackPrams;
                         } else {
                             e.target.ancestor('.lightbox').hide();
                         }
@@ -164,51 +179,64 @@ YUI({
                         selector:this.get('parentNode').all('fieldset')
                     });
                     var data = Y.JSON.stringify(output);
-                    Y.log(data);
 
                     if (Y.one('.lightbox' + uid)) {
-                        return show();
+                        Y.log(cached);
+                        if(cached){
+                            return show();
+                        }else{
+                            Y.one('.lightbox' + uid).remove();
+                        }
                     }
+
                     Y.io(url, {
                         data: 'verify='+data+'&time=' + new Date().getTime(),
                         on: {
                             success: function(i, res) {
-                                //var templ = Y.one('#TSXX-template').getContent();
-                                //var data = {
-                                //  uid: uid,
-                                //  response: res.responseText
-                                //  }
-                                //  var lightboxTemplate = Y.Mustache.to_html('{{={@ @}=}}' + templ, data);
-                                var lightboxTemplate = '' +
-                                    '<div class="lightbox lightbox-1 lightbox' + uid +
-                                    '" data-lightboxid="TSXX">' +
-                                    '    <table cellspacing="0">' +
-                                    '       <tr>' +
-                                    '           <td>' +
-                                    '               <div class="lightbox-content">' +
-                                    '                    <i class="close" rel="close">×</i> ' +
-                                    '    <div class="lightbox-head">' +
-                                    '        <h3>提示信息</h3>' +
-                                    '   </div>' +
-                                    '    <div class="lightbox-body">' +
-                                    '<p>' + res.responseText + '</p>' +
-                                    '        <p>&nbsp;</p>' +
-                                    '       <p class="gray">' +
-                                    '           以上退改签规定以航空公司为准，或致电退改热线咨询 ' +
-                                    '      </p>' +
-                                    '    <p>&nbsp;</p>' +
-                                    '<p class="center">' +
-                                    '     <input type="button" class="button button1 submit" value="确定" name="" rel="close" />' +
-                                    '      <input type="button" class="button button1" value="取消" name="" rel="close" />' +
-                                    '   </p>' +
-                                    '</div>' +
-                                    '            </div>' +
-                                    '         </td>' +
-                                    '      </tr>' +
-                                    '   </table>' +
-                                    '</div>';
+                                /** ajax返回的格式{}
+                                * { html:{0},Status:{1},data_Price:{2},data_Tax:{3} }
+                                */
+
+                                var templ = Y.one('#TSXX-template').getContent();
+                                var data = Y.JSON.parse(res.responseText);
+                                data.uid = uid;
+
+                                var lightboxTemplate = Y.Mustache.to_html(templ, data);
+                                // callbackPrams = '&data_Price='+data['data_Price']+'&data_Tax='+data['data_Tax'];
+                                buy = buy.replace(/(data_Price=)[^&]+/g,'data_Price='+data['data_Price']);
+                                buy = buy.replace(/(data_Tax=)[^&]+/g,'data_Tax='+data['data_Tax']);
+
+                                // var lightboxTemplate = '' +
+                                //     '<div class="lightbox lightbox-1 lightbox' + uid +
+                                //     '" data-lightboxid="TSXX">' +
+                                //     '    <table cellspacing="0">' +
+                                //     '       <tr>' +
+                                //     '           <td>' +
+                                //     '               <div class="lightbox-content">' +
+                                //     '                    <i class="close" rel="close">×</i> ' +
+                                //     '    <div class="lightbox-head">' +
+                                //     '        <h3>提示信息</h3>' +
+                                //     '   </div>' +
+                                //     '    <div class="lightbox-body">' +
+                                //     '<p>' + res.responseText + '</p>' +
+                                //     '        <p>&nbsp;</p>' +
+                                //     '       <p class="gray">' +
+                                //     '           以上退改签规定以航空公司为准，或致电退改热线咨询 ' +
+                                //     '      </p>' +
+                                //     '    <p>&nbsp;</p>' +
+                                //     '<p class="center">' +
+                                //     '     <input type="button" class="button button1 submit" value="确定" name="" rel="close" />' +
+                                //     '      <input type="button" class="button button1" value="取消" name="" rel="close" />' +
+                                //     '   </p>' +
+                                //     '</div>' +
+                                //     '            </div>' +
+                                //     '         </td>' +
+                                //     '      </tr>' +
+                                //     '   </table>' +
+                                //     '</div>';
+
                                 Y.one('body').append(lightboxTemplate);
-                                show();
+                                show(null,'.lightbox'+uid);
                             }
                         }
                     });
@@ -285,10 +313,10 @@ YUI({
                 e.preventDefault();
                 var href=this.get('href');
                 Y.io(href,{
-                   data:'',
-                   on:{
+                    data:'',
+                    on:{
                         success:function(){} 
-                   }
+                    }
                 });  
             });
         },'.mo-khcx-ddcx-yu');
@@ -306,21 +334,23 @@ YUI({
             //todo 待优化
             var countCus = 1;
 
-            var fpone_item = '<div class="group-item">'+Y.one('.fpone-mul .group-item').getContent()+'</div>';
-
-            function set_fpone(){
+            function add_fpone_item(){
+                var fpone_item = '<div class="group-item">'+Y.one('.fpone-mul .group-item').getContent()+'</div>';
                 var container =  Y.one('.fpone-one');
-                container.empty();
-
-                var values = Y.all('[name=SurName]').get('value');
-
-                for(var i=0;i<countCus;i++){
-                    var node =  Y.Node.create(fpone_item);
-                    node.one('input').set('value',values[i]);
-                    container.append(node);
-                }
+                var node =  Y.Node.create(fpone_item);
+                container.append(node);
             }
 
+            /**同步乘客到联系人信息**/
+            Y.one('body').delegate('change',function(e){
+                var index = Y.all('.block3 [name=SurName]').indexOf(this);
+                var item = Y.all('.fpone-one [name=PASSENGER_NAME]').item(index);
+                if(item.get('value')==''){
+                    item.set('value',this.get('value')); 
+                }
+            },'.block3 [name=SurName]');
+
+            /**增加乘客*/
             Y.one('body').delegate('click', function(i) {
                 i.preventDefault();
                 var that = i.target;
@@ -330,10 +360,12 @@ YUI({
                 container.append(cloned.resetForm());
                 cloned.one('[type=text]').focus();
                 countCus++;
-                set_fpone();
+
+                add_fpone_item();
             },
             '.CustomerAdd');
 
+            /*删除乘客*/
             Y.one('body').delegate('click', function(i) {
                 var that = i.target;
                 var container = that.ancestor('.group-item');
@@ -349,7 +381,6 @@ YUI({
 
             Y.one('.rp-fp-checkbox').on('click', function(e) {
                 if (this.get('checked')) {
-                    set_fpone();
                     Y.one('.rq-fp').setStyle('display', 'block');
                 } else {
                     Y.one('.rq-fp').setStyle('display', 'none');
@@ -372,6 +403,9 @@ YUI({
                 var CustomerCount = 1;
                 var CustomerInsuranceCount = 1;
                 var SingleTicketPrice = parseInt(nodeSingleTickedPrice.get('text')); 
+
+                //**********change policy
+                //todo   SingleTicketPrice = new;
 
                 Y.one('.mo-tjdd .block2').on('change',function(e){
                     SingleTicketPrice = e.target.ancestor('tr').one('td:nth-last-child(1)').get('text'); 
@@ -610,7 +644,7 @@ YUI({
                 if(leftcount<1){
                     return alert('必须留一条'); 
                 }
-                
+
                 var checked_row = container.all('.data-row :checked');
 
                 if(checked_row.size()>0){
@@ -632,7 +666,7 @@ YUI({
                 }
 
                 checked_row.each(function(i,v){
-                   arr.push( i.cloneNode(true));
+                    arr.push( i.cloneNode(true));
                 });
 
                 arr = arr.reverse();
@@ -650,7 +684,7 @@ YUI({
                 if(count_data_row<=1){
                     alert('必须留一条'); 
                 }else{
-                  this.ancestor('tr').remove(); 
+                    this.ancestor('tr').remove(); 
                 }
             },'.hbxx_del_row')
 
@@ -779,6 +813,7 @@ YUI({
                         });
                     });
 
+                    // 测试时禁用
                     if (!form.validateForm()) return;
 
                     var url = this.getAttribute('data-url');
@@ -863,7 +898,7 @@ YUI({
                     source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=2&count=20&callback={callback}&q=',
                     // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
                     // source: 'ajax/citysearch.js?&callback={callback}&q=',
-                    hotSource: 'ajax/hotcity.js'
+                    hotSource: '/js/ajax/hotcity.js'
                 });
 
                 var toCity = new Y.TripAutoComplete({
@@ -871,7 +906,7 @@ YUI({
                     codeInputNode: '.arrcity_hidden',
                     // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
                     source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=4&count=20&callback={callback}&q=',
-                    hotSource: 'ajax/hotcity_international.js'
+                    hotSource: '/js/ajax/hotcity_international.js'
                 });
             }
 
