@@ -35,6 +35,12 @@ $bc1:#bec6c7;
 .green{
     color:$c34;
 }
+.brown{
+    color:$c62;
+}
+.orange{
+    color:$c63;
+}
 .lightblue-bg{
     background-color:$c25;
 }
@@ -50,6 +56,10 @@ body{
         font-weight:normal; 
     }
     background:url(#{$skin_folder}/gray-title.png) repeat-x;
+    span{
+        font-weight:normal; 
+        @extend .f12;
+    }
     ul{
         overflow:hidden;
         padding:0;
@@ -719,4 +729,22 @@ fieldset{
     }
     background:none;
     // visibility:hidden;
+}
+
+.vl-error-required{
+    border-color:$c62 !important;
+}
+.loading{
+    i{
+        padding:10px; 
+        background:url(#{$skin_folder}/loading.gif) no-repeat 50% 50%;
+    }
+    span{
+    
+    }
+    div{
+        width:200px;
+        border:5px solid #666;
+        padding:5px;
+    }
 }

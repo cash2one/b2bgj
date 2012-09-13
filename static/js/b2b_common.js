@@ -59,28 +59,72 @@ YUI({
         }
     }
 
+    function serialize_form(i){
+        //todo
+        var result = [];
+        Y.one(i).all('input,textarea,select').each(function(){
+                var name = this.get('name');
+                var eleType = this.get('type');
+                var isDisabled= this.get('disabled');
+                var eleAttr;
+
+                if (name == '' ||  name=='__MYVIEWSTATE' || isDisabled){
+                    return false;
+                }
+
+                if ( eleType== 'checkbox' || eleType == 'radio') {
+                    eleAttr = 'checked';
+                } else {
+                    eleAttr = 'value';
+                }
+
+                if(eleType == 'radio' && this.get(eleAttr)==false) {
+                    return false; 
+                }
+                result.push(name+'='+this.get(eleAttr));
+
+       }); 
+        return result.join('&'); 
+    }
+
+    //todo
+    function formvalid(){
+        var valid = true;
+        Y.all('.vl-required').each(function(i,index){
+            if(i.get('value').trim()==''){
+                i.addClass('vl-error-required');
+                i.focus();
+                valid = false; 
+                return false;
+            }else{
+                i.removeClass('vl-error-required');
+            }
+        }); 
+
+        return valid;
+    }
+
     /* 调用yui默认皮肤 */
     //Y.one('body').addClass('yui3-skin-sam');
 
+    /* 全局Domready */
     Y.on('domready', function() {
-
         /*弹出窗overlay*/
         function lightbox() {
             Y.one('body').delegate('click', function(e) {
                 var uid = '-' + this.get('id');
                 var lightboxid = this.getAttribute('data-lightboxid');
                 var lightboxID = lightboxid + uid;
+                //缓存ajax弹窗
                 var cached = this.getAttribute('data-cached')=='0'?false:true;
                 var url = this.getAttribute('data-url');
                 var buy = this.getAttribute('data-buy');
-                var callbackPrams = '';
                 var FlightNo = '&FlightNo=' + this.getAttribute('data-flightno');
                 var Price = '&Price=' + this.getAttribute('data-price');
 
                 submitedData = submitedData || this.getAttribute('data-params');
 
                 if (lightboxid == 'CPQR') {
-
                     // Y.fieldsetFormat('set',{
                     //     data:info 
                     // });
@@ -129,7 +173,11 @@ YUI({
                     });
                     */
 
+                    // todo
+                    // if(!formvalid()) return;
+
                     Y.io(url, {
+                        method: 'post',
                         data: 'info=' + data,
                         on: {
                             success: function(i,res) {
@@ -145,11 +193,12 @@ YUI({
                             error: function() {}
                         }
                     });
-                    /*end */
+                    // end ajax 确认提交支付
 
                     return;
                 }
 
+                //回调函数
                 function show(fn,ele) {
                     if( ele ){
                         var i = Y.one(ele).setStyle('display', 'block');
@@ -167,7 +216,7 @@ YUI({
 
                     Y.all('.lightbox [rel=close]').on('click', function(e) {
                         if (buy && e.target.hasClass('submit')) {
-                            location.href = buy + submitedData + callbackPrams;
+                            location.href = buy + submitedData;
                         } else {
                             e.target.ancestor('.lightbox').hide();
                         }
@@ -202,40 +251,12 @@ YUI({
                                 data.uid = uid;
 
                                 var lightboxTemplate = Y.Mustache.to_html(templ, data);
-                                // callbackPrams = '&data_Price='+data['data_Price']+'&data_Tax='+data['data_Tax'];
                                 buy = buy.replace(/(data_Price=)[^&]+/g,'data_Price='+data['data_Price']);
                                 buy = buy.replace(/(data_Tax=)[^&]+/g,'data_Tax='+data['data_Tax']);
 
-                                // var lightboxTemplate = '' +
-                                //     '<div class="lightbox lightbox-1 lightbox' + uid +
-                                //     '" data-lightboxid="TSXX">' +
-                                //     '    <table cellspacing="0">' +
-                                //     '       <tr>' +
-                                //     '           <td>' +
-                                //     '               <div class="lightbox-content">' +
-                                //     '                    <i class="close" rel="close">×</i> ' +
-                                //     '    <div class="lightbox-head">' +
-                                //     '        <h3>提示信息</h3>' +
-                                //     '   </div>' +
-                                //     '    <div class="lightbox-body">' +
-                                //     '<p>' + res.responseText + '</p>' +
-                                //     '        <p>&nbsp;</p>' +
-                                //     '       <p class="gray">' +
-                                //     '           以上退改签规定以航空公司为准，或致电退改热线咨询 ' +
-                                //     '      </p>' +
-                                //     '    <p>&nbsp;</p>' +
-                                //     '<p class="center">' +
-                                //     '     <input type="button" class="button button1 submit" value="确定" name="" rel="close" />' +
-                                //     '      <input type="button" class="button button1" value="取消" name="" rel="close" />' +
-                                //     '   </p>' +
-                                //     '</div>' +
-                                //     '            </div>' +
-                                //     '         </td>' +
-                                //     '      </tr>' +
-                                //     '   </table>' +
-                                //     '</div>';
-
+                                // 用Mustache模版
                                 Y.one('body').append(lightboxTemplate);
+
                                 show(null,'.lightbox'+uid);
                             }
                         }
@@ -505,9 +526,9 @@ YUI({
         },
         '.mo-tjdd');
 
+        
         /*mo-khcx-cpcz*/
         Y.on('available',function(){
-
             // attaches behavior to all checkboxes with CSS class "my-at-least-one-checkbox-group"
             //new Y.AtLeastOneCheckboxGroup('.my-at-least-one-checkbox-group');
 
@@ -690,6 +711,47 @@ YUI({
 
         },'.mo-khcx-cpcz');
 
+        /*mo-khcx-ddxq*/
+        Y.on('available',function(){
+            Y.one('#save_submit').on('click',function(){
+                var url = this.getAttribute('data-url');
+                    // Y.fieldsetFormat('set',{
+                    //     data:info 
+                    // });
+                    var output = Y.fieldsetFormat('get');
+                    var data = Y.JSON.stringify(output);
+
+                    // Y.StorageLite.on('storage-lite:ready',function(){
+                    //     Y.StorageLite.setItem('CPQR_DATA',data);
+                    // });
+                    Y.log(data);
+
+                    // todo
+                    // if(!formvalid()) return;
+
+                    Y.io(url, {
+                        method: 'post',
+                        data: 'info=' + data,
+                        on: {
+                            success: function(i,res) {
+                                var arr = res.responseText.split(',');
+                                if (arr[0] == '0') {
+                                    // location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                                }
+
+                                if (arr[0] == '1') {
+                                    alert(arr[1]);
+                                }
+                            },
+                            error: function() {}
+                        }
+                    });
+                    /*end */
+
+            });
+
+        },'.mo-khcx-ddxq');
+
         /*mo-khcx-ddxq-new*/
         Y.on('available',function(){
             (function(){
@@ -699,7 +761,6 @@ YUI({
                     DOMSubtreeModified:true,
                     DOMCharacterDataModified: true
                 });
-
 
                 var nodePrice1 = Y.one('.Price1'); 
                 var nodePrice2 = Y.one('.Price2'); 
@@ -737,6 +798,38 @@ YUI({
 
         /*航班查询页面*/
         Y.on('available', function() {
+            /* 统一ajax遮罩*/
+            var loading_tpl = '<div class="lightbox loading" style="display:none"><table cellspacing="0">\
+<tbody><tr><td>\
+<div class="lightbox-content">\
+<i>&nbsp;</i><span>数据加载中...</span>\
+</div>\
+</td></tr>\
+</tbody></table></div>';
+
+            var spin_wrap = Y.Node.create(loading_tpl);
+            var timeout;
+
+            Y.one("body").prepend(spin_wrap);
+
+            Y.on('io:start',function(){
+                spin_wrap.setStyle('display','block');
+                // timeout = setTimeout(function(){
+                //     alert('连接超时');
+                //     spin_wrap.hide();
+                // },20000);
+            });
+
+            Y.on('io:failure',function(t, r, a){
+                clearTimeout(timeout);
+                spin_wrap.one('span').setContent('请求失败:'+r);
+            });
+
+            Y.on('io:complete',function(){
+                clearTimeout(timeout);
+                spin_wrap.hide();
+            });
+
             /*表单验证*/
             var form = new Y.FormManager('aspnetForm', {
                 status_node: '#form-status'
@@ -800,36 +893,35 @@ YUI({
                 });
 
                 /* 提交航班查询表单 */
-                var spin_wrap = Y.Node.create('<div style="display:none" class="loading">');
-                spin_wrap.setContent('<span>数据加载中...<span>');
-                Y.one(".block2").prepend(spin_wrap);
+                // todo
+                Y.all('.yiv-required').each(function(i) {
+                    var id = i.get('id');
+                    form.setErrorMessages(id, {
+                        required: '&nbsp;<b class="red">×</b>'
+                    });
+                });
+
                 Y.one(".J_Hbcx_Search").on('click', function(e) {
                     e.preventDefault();
-
-                    Y.all('.yiv-required').each(function(i) {
-                        var id = i.get('id');
-                        form.setErrorMessages(id, {
-                            required: '&nbsp;<b class="red">×</b>'
-                        });
-                    });
+                    var container = Y.one('#J_Hbcx_DataTable');
 
                     // 测试时禁用
+                    // todo 可能要换掉模块
                     if (!form.validateForm()) return;
 
                     var url = this.getAttribute('data-url');
-                    var data = Y.io._serialize(Y.one('#aspnetForm')._node);
+                    // var data = Y.io._serialize(Y.one('#aspnetForm')._node);
+                    var data = serialize_form('.block1');
+                    Y.log(data);
+                    container.empty();
 
                     if (url) {
                         Y.io(url, {
                             data: data + '&time=' + new Date().getTime(),
                             on: {
-                                start: function() {
-                                    spin_wrap.show();
-                                },
                                 error: function() {},
                                 success: function(i, res) {
-                                    spin_wrap.hide();
-                                    Y.one('#J_Hbcx_DataTable').setContent(res.responseText);
+                                    container.setContent(res.responseText);
                                     more_hbcx();
 
                                 }
@@ -1153,7 +1245,7 @@ YUI({
             }
         })();
 
-    })
+    });
 
 })
 

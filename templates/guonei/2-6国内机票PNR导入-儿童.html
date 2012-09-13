@@ -1,0 +1,295 @@
+{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    {% include 'partial/breadcrumb.html' %}
+    <div class="content area">
+        <div class="mo-pnrdr mo-ddxq">
+            <div class="xblock xblock1">
+                <p>
+                <span>机票流程：</span>
+                <span class="green">创建订单</span>
+                <i class="icon4">&nbsp;</i> 
+                <span>核对支付</span>
+                <i class="icon4">&nbsp;</i> 
+                <span>等待出票</span>
+                <i class="icon4">&nbsp;</i> 
+                <span>出票完成</span>
+                </p>
+            </div>
+
+            <div class="xblock xblock2">
+                <h3>订单详情</h3>
+                <table cellspacing="0">
+                    <tr>
+                        <th>预定单号：</th>
+                        <td>
+                            <span class="blue">23103021030210</span>
+                        </td>
+                        <th>成人PNR：</th>
+                        <td>
+                            <span class="brown">
+                                HFDFD22
+                            </span>
+                        </td>
+                        <th>订单状态：</th>
+                        <td>
+                            <span class="brown">
+                                订座成功 
+                            </span>
+                        </td>
+                        <th>
+                            订单类型: 
+                        </th>
+                        <td>
+                            <span class="brown">
+                                国内 
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block block1">
+                <h3 class="gray-title">航班信息</h3>
+                <table cellspacing="0" class="table-b2">
+                    <tr class="thead">
+                        <td>航空公司</td>
+                        <td>航班号</td>
+                        <td>机型</td>
+                        <td>舱位</td>
+                        <td>出发城市</td>
+                        <td>到达城市</td>
+                        <td>起飞时间</td>
+                        <td>到达时间</td>
+                    </tr>
+                    <tr>
+                        <td>国际航空</td>
+                        <td>CA111</td>
+                        <td>213</td>
+                        <td>经济舱</td>
+                        <td>上海浦东PVG</td>
+                        <td>上海浦东PVG</td>
+                        <td>2012-01-01 12:00</td>
+                        <td>2012-01-01 12:00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block block2">
+                <h3 class="gray-title">
+                    票价信息 
+                    <span class="brown">（儿童票请订Y舱，系统会在名字后自动加CHD，只享受儿童票返点）</span>
+                </h3>
+                <table class="table-b2" cellspacing="0">
+                    <tr class="thead">
+                        <td>PNR</td>
+                        <td>乘客类型</td>	
+                        <td>人数</td>	
+                        <td>票面价</td>
+                        <td>机建费</td>	
+                        <td>燃油费</td>
+                    </tr>
+                    <tr>
+                        <td>DDDD2D</td>
+                        <td>儿童</td>
+                        <td>1</td>
+                        <td class="brown">850.00</td>
+                        <td>59.00</td>
+                        <td>100.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="block block3">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        选择政策 
+                    </h3>
+                    <div class="warn clearfix">
+                        <div class="tabs" style="float:left;">
+                            <ul>
+                                <li class="current">普通政策</li>
+                                <li>特殊高返政策</li>
+                            </ul>
+                        </div>
+                        <div class="float:right;">
+                            <i class="icon8">&nbsp;</i>
+                            <span class="orange"> 小提示：建议您选择"[空闲]"状态政策出票，能使您的出票速度更快！
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-body">
+                    <table cellspacing="0" class="table-b2">
+                        <tr class="thead">
+                            <td>选择</td>    
+                            <td>适用政策</td>      
+                            <td>返点</td>    
+                            <td>代理费</td>    
+                            <td>结算价</td>        
+                            <td>出票时间</td>     
+                            <td>退票时间</td>     
+                            <td>废票时间</td>       
+                            <td>出票效率</td>           
+                            <td>出票类型</td>
+                        </tr>
+                        <tr class="data-row">
+                            <td>
+                                <input type="radio" class="radio" value="" name="" />
+                            </td>
+                            <td>政策[001]</td>      
+                            <td class="brown">5%</td>       
+                            <td>52.5</td>      
+                            <td>997.5</td>        
+                            <td>8:25-20:30</td>   
+                            <td>20:25止</td>      
+                            <td>21:25止</td>      
+                            <td>4分46秒<span class="orange">[空闲]</span></td>      
+                            <td>B2B</td>
+                        </tr>
+                        <tr class="meta-row">
+                            <td colspan=10>
+                                <p>
+                                退改签规定：不得签转。出票日期、乘机日期3月1日起，航班起飞前2小时之前每次更改收20%改期费、退票扣50%，航班起飞前2小时之内及航班起飞后每次更改收20%改期费，退票扣50%。
+                                </p>
+                                <p>
+                                政策备注：跨月改期或春运期间改期需收回代理费。 
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p align=right>
+                    <span class="blue">
+                        <i class="arrow6">&nbsp;</i>
+                        查看更多政策
+                    </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="block block4">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        乘客信息 
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table cellspacing="0">
+                        <tr>
+                            <th>选择保险：</th>
+                            <td>
+                                <select name="">
+                                    <option value="">太平洋保险</option>
+                                </select>
+                            </td>
+                            <th>
+                                面价： 
+                            </th>
+                            <td>￥20/份</td>
+                            <th>应付：</th>
+                            <td class="red">￥20</td>
+                        </tr>
+                    </table>
+
+                    <table cellspacing="0" class="table-b2">
+                        <tr class="thead">
+                            <td>乘客姓名</td>  
+                            <td>性别</td>    
+                            <td>类型</td>   
+                            <td>证件类型</td>  
+                            <td>证件号码</td>              
+                            <td>证件有效期</td>     
+                            <td>出生日期</td>
+                            <td>常旅客卡号</td>  
+                            <td>手机号码</td> 
+                            <td>保险份数/批量
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>张三</td>      
+                            <td>男</td>     
+                            <td>成人</td>   
+                            <td>身份证</td>     
+                            <td>320151148745645584</td>    
+                            <td>2020/01/01</td>     
+                            <td>1988-08-08</td>     
+                            <td>12364567</td>   
+                            <td>13764845484</td>      
+                            <td>
+                                <select name="">
+                                    <option value="">0</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0">
+                        <tr>
+                            <th>订票人：</th>
+                            <td class="green">张三</td>
+                            <th>联系电话：</th>
+                            <td class="green">021-123456789</td>
+                            <th>手机或其他：</th>
+                            <td class="green">13457845648</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+
+            <div class="block block5">
+                <h3 class="gray-title">客户备注</h3>
+                <p>
+                <textarea name=""></textarea>
+                </p>
+            </div>
+
+            <div class="block block6">
+                <div class="block-head">
+                    <h3 class="gray-title">
+                        支付方式和金额
+                    </h3>
+                </div>
+                <div class="block-body">
+                    <table cellspacing="0" class="table-b2">
+                        <tr class="thead">
+                            <td>结算价</td>      	
+                            <td>=票款合计</td>     	
+                            <td>+税款合计</td>    	
+                            <td>+保险合计</td>    	
+                            <td>-佣金</td>     	
+                            <td>+服务费</td>
+                        </tr>
+                        <tr>
+                            <td class="f14 redb">
+                                5570
+                            </td>
+                            <td>3132</td>
+                            <td>31</td>
+                            <td>50</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <table cellspacing="0">
+                        <tr>
+                            <th>请选择支付方式：</th>
+                            <td><label><input type="radio" class="radio" name="" value="" />余额支付</label></td>
+                            <td><label><input type="radio" class="radio" name="" value="" />支付宝支付</label></td>		
+                            <td><label><input type="radio" class="radio" name="" value="" />财付通支付</label></td>
+                            <td><label><input type="radio" class="radio" name="" value="" />汇付天下支付</label></td>		
+                            <td><label><input type="radio" class="radio" name="" value="" />网银支付</label></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="center">
+                <input type="button" class="button button2" value="申请出票" name="" />
+                <input type="button" class="button button2" value="加入购物车" name="" />
+                <input type="button" class="button button2" value="返回" name="" />
+            </div>
+
+        </div>
+    </div>
+</div>

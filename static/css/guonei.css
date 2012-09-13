@@ -24,6 +24,12 @@
 .green {
   color: #00bb00; }
 
+.brown {
+  color: #cc3300; }
+
+.orange {
+  color: #ff9900; }
+
 .lightblue-bg {
   background-color: #ebf8fe; }
 
@@ -35,6 +41,8 @@ body {
 .gray-title, .table-b5 .thead, .table-b6 .thead {
   background: url(../img/gray-title.png) repeat-x; }
   .gray-title .buttons, .table-b5 .thead .buttons, .table-b6 .thead .buttons {
+    font-weight: normal; }
+  .gray-title span, .table-b5 .thead span, .table-b6 .thead span {
     font-weight: normal; }
   .gray-title ul, .table-b5 .thead ul, .table-b6 .thead ul {
     overflow: hidden;
@@ -58,7 +66,7 @@ body {
     .gray-title ul a, .table-b5 .thead ul a, .table-b6 .thead ul a {
       color: inherit; }
 
-.f12, h2.title, h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
+.f12, .gray-title span, .table-b5 .thead span, .table-b6 .thead span, h2.title, h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
   font-size: 12px; }
 
 .f14, .menu-sidebar dt, .lightbox-head h3, .button2, h1.title {
@@ -613,3 +621,14 @@ fieldset {
     visibility: hidden; }
   .vhidden a {
     background: none !important; }
+
+.vl-error-required {
+  border-color: #cc3300 !important; }
+
+.loading i {
+  padding: 10px;
+  background: url(../img/loading.gif) no-repeat 50% 50%; }
+.loading div {
+  width: 200px;
+  border: 5px solid #666;
+  padding: 5px; }
