@@ -736,7 +736,7 @@ YUI({
                             success: function(i,res) {
                                 var arr = res.responseText.split(',');
                                 if (arr[0] == '0') {
-                                    // location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                                    location.href = 'FlightOrderSubmit.aspx?ORDER_NO=' + arr[1];
                                 }
 
                                 if (arr[0] == '1') {
