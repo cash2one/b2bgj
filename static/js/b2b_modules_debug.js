@@ -3677,30 +3677,33 @@ YUI.add('fieldsetFormat', function(Y) {
         var loop = function(nodeList,parent,pindex){
             var gobj = {};
             nodeList.each(function() {
-                var name = this.get('name');
+                var name = this.getAttribute('name');
                 var eleType = this.get('type');
                 var isDisabled= this.get('disabled');
-                var eleAttr;
 
                 if (name == '' ||  name=='__MYVIEWSTATE' || isDisabled){
                     return false;
                 }
 
-                if ( eleType== 'checkbox' || eleType == 'radio') {
-                    eleAttr = 'checked';
-                } else {
-                    eleAttr = 'value';
+                var value = this.get('value');
+
+                if (isDisabled || name == '' ||  name=='__MYVIEWSTATE'){
+                    return false;
+                }
+
+                if ( (eleType == 'checkbox' || eleType == 'radio') && this.get('checked')==false ){
+                    return false; 
                 }
 
                 if(type=="get"){
-                    gobj[name] = this.get(eleAttr);
+                    gobj[name] = value;
                 }
 
                 if(type=="set"){
                     if(pindex!=undefined){
-                        this.set(eleAttr,data[parent][pindex][name]);
+                        this.set('value',data[parent][pindex][name]);
                     }else{
-                        this.set(eleAttr,data[parent][name]);
+                        this.set('value',data[parent][name]);
                     }
                 }
             });
@@ -3714,7 +3717,7 @@ YUI.add('fieldsetFormat', function(Y) {
                 Y.log('only support fieldset element'); 
                 return false;
             }
-            if (i.get('name') == '') {
+            if (i.getAttribute('name') == '') {
                 return false;
             }
             if (this.all(item).size()>0) {
@@ -3736,7 +3739,7 @@ YUI.add('fieldsetFormat', function(Y) {
 
                     });
 
-                    output[i.get('name')] = obj;   
+                    output[i.getAttribute('name')] = obj;   
                 }else{
                     var arr = [];
                     this.all(item).each(function(v,pindex) {
@@ -3744,12 +3747,12 @@ YUI.add('fieldsetFormat', function(Y) {
                         arr.push(obj);
                     });
 
-                    output[i.get('name')] = arr;
+                    output[i.getAttribute('name')] = arr;
                 }
 
             } else {
                 var obj = loop(i.all('input,select,textarea'),i.get('name'));
-                output[i.get('name')] = obj;
+                output[i.getAttribute('name')] = obj;
             }
 
         });
@@ -4005,3 +4008,4 @@ YUI.add('node-clone', function(Y) {
 '',{
     requires:['node-base']
 });
+

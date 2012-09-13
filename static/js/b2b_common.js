@@ -13,6 +13,7 @@ YUI({
     // defaultSkin:'sam'
 }).use('gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
+    var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
     /*
     var getDomain = function() {
@@ -59,33 +60,38 @@ YUI({
         }
     }
 
-    function serialize_form(i){
-        //todo
+    /* 重置表单 */
+    Y.Node.addMethod('resetForm', function() {
+        this.all('input').set('value', '');
+        this.all('textarea').set('text', '');
+    });
+
+    /* 将input组装成XMLHttpRequest的data 
+     * 简单模拟Y.io._serialize
+     */
+    Y.Node.addMethod('serialize_form', function() {
         var result = [];
-        Y.one(i).all('input,textarea,select').each(function(){
-                var name = this.get('name');
-                var eleType = this.get('type');
-                var isDisabled= this.get('disabled');
-                var eleAttr;
+        this.all('input,textarea,select').each(function(){
+            var name = this.get('name');
+            var eleType = this.get('type');
+            var isDisabled= this.get('disabled');
+            var value = this.get('value');
 
-                if (name == '' ||  name=='__MYVIEWSTATE' || isDisabled){
-                    return false;
-                }
+            if (isDisabled || name == '' ||  name=='__MYVIEWSTATE'){
+                return false;
+            }
 
-                if ( eleType== 'checkbox' || eleType == 'radio') {
-                    eleAttr = 'checked';
-                } else {
-                    eleAttr = 'value';
-                }
+            if ( (eleType == 'checkbox' || eleType == 'radio') && this.get('checked')==false ){
+                return false; 
+            }
 
-                if(eleType == 'radio' && this.get(eleAttr)==false) {
-                    return false; 
-                }
-                result.push(name+'='+this.get(eleAttr));
+            // result[name]=value;
+            result.push(name+'='+value);
 
-       }); 
+        }); 
+
         return result.join('&'); 
-    }
+    });
 
     //todo
     function formvalid(){
@@ -105,13 +111,14 @@ YUI({
     }
 
     /* 调用yui默认皮肤 */
-    //Y.one('body').addClass('yui3-skin-sam');
+    //bodyEle.addClass('yui3-skin-sam');
 
     /* 全局Domready */
     Y.on('domready', function() {
         /*弹出窗overlay*/
         function lightbox() {
-            Y.one('body').delegate('click', function(e) {
+            //todo 等待重构
+            bodyEle.delegate('click', function(e) {
                 var uid = '-' + this.get('id');
                 var lightboxid = this.getAttribute('data-lightboxid');
                 var lightboxID = lightboxid + uid;
@@ -124,16 +131,73 @@ YUI({
 
                 submitedData = submitedData || this.getAttribute('data-params');
 
+                //显示弹窗
+                function show(fn,ele) {
+                    if( ele ){
+                        var i = Y.one(ele).setStyle('display', 'block');
+                        lightboxID = null;
+                        fn && fn.call(this, i);
+                    }else{
+                        Y.all('.lightbox').each(function(i) {
+                            if (i.getAttribute('data-lightboxid') + uid == lightboxID) {
+                                i.setStyle('display', 'block');
+                                lightboxID = null;
+                                //设置回调函数
+                                fn && fn.call(this, i);
+                            }
+                        });
+                    }
+
+                    //关闭按钮
+                    Y.all('.lightbox [rel=close]').on('click', function(e) {
+                        if (buy && e.target.hasClass('submit')) {
+                            location.href = buy + submitedData;
+                        } else {
+                            e.target.ancestor('.lightbox').hide();
+                        }
+                    });
+                }
+
+
+                if(lightboxid == 'GDZC'){
+                    var container = Y.one('#gdzc_lightbox');
+
+                    container.one('.confirm').on('click',function(){
+                        var input,table,targetRow,cloned;
+                        var checked = container.one(':checked');
+                        if(checked==null) return;
+
+                        table = Y.one('.table2-tjdd');
+                        targetRow = checked.ancestor('tr');
+
+                        if( table.one('#'+targetRow.get('id') )==null ){
+                            cloned = targetRow.cloneNode(true);
+                            table.one('tr:nth-last-child(1)').insert(cloned,'after');
+                            cloned.one('input').simulate('change');
+                        }
+
+                        input = table.one('#'+targetRow.get('id')+' input');
+                        input.simulate('click');
+                    });
+
+                }
+
                 if (lightboxid == 'CPQR') {
+
+                    // 初始化数据
                     // Y.fieldsetFormat('set',{
                     //     data:info 
                     // });
+
+                    // 序列化所有fieldset标签
                     var output = Y.fieldsetFormat('get');
                     var data = Y.JSON.stringify(output);
 
+                    // 初始化数据
                     // Y.StorageLite.on('storage-lite:ready',function(){
                     //     Y.StorageLite.setItem('CPQR_DATA',data);
                     // });
+
                     Y.log(data);
 
                     /* 显示确认信息
@@ -149,7 +213,7 @@ YUI({
                     }
                     }
 
-                    Y.one('body').append(lightboxTemplate);
+                    bodyEle.append(lightboxTemplate);
 
                     show(function(i) {
                     i.one('.submit').on('click', function() {
@@ -189,8 +253,7 @@ YUI({
                                 if (arr[0] == '1') {
                                     alert(arr[1]);
                                 }
-                            },
-                            error: function() {}
+                            }
                         }
                     });
                     // end ajax 确认提交支付
@@ -198,37 +261,7 @@ YUI({
                     return;
                 }
 
-                //回调函数
-                function show(fn,ele) {
-                    if( ele ){
-                        var i = Y.one(ele).setStyle('display', 'block');
-                        lightboxID = null;
-                        fn && fn.call(this, i);
-                    }else{
-                        Y.all('.lightbox').each(function(i) {
-                            if (i.getAttribute('data-lightboxid') + uid == lightboxID) {
-                                i.setStyle('display', 'block');
-                                lightboxID = null;
-                                fn && fn.call(this, i);
-                            }
-                        });
-                    }
-
-                    Y.all('.lightbox [rel=close]').on('click', function(e) {
-                        if (buy && e.target.hasClass('submit')) {
-                            location.href = buy + submitedData;
-                        } else {
-                            e.target.ancestor('.lightbox').hide();
-                        }
-                    });
-                };
-
                 if (url) {
-                    var output = Y.fieldsetFormat('get',{
-                        selector:this.get('parentNode').all('fieldset')
-                    });
-                    var data = Y.JSON.stringify(output);
-
                     if (Y.one('.lightbox' + uid)) {
                         Y.log(cached);
                         if(cached){
@@ -238,11 +271,18 @@ YUI({
                         }
                     }
 
+                    //在每个lightbox按钮旁边增加可序列化的fieldset
+                    var output = Y.fieldsetFormat('get',{
+                        selector:this.get('parentNode').all('fieldset')
+                    });
+
+                    var data = Y.JSON.stringify(output);
+
                     Y.io(url, {
                         data: 'verify='+data+'&time=' + new Date().getTime(),
                         on: {
                             success: function(i, res) {
-                                /** ajax返回的格式{}
+                                /* 返回的格式
                                 * { html:{0},Status:{1},data_Price:{2},data_Tax:{3} }
                                 */
 
@@ -254,9 +294,7 @@ YUI({
                                 buy = buy.replace(/(data_Price=)[^&]+/g,'data_Price='+data['data_Price']);
                                 buy = buy.replace(/(data_Tax=)[^&]+/g,'data_Tax='+data['data_Tax']);
 
-                                // 用Mustache模版
-                                Y.one('body').append(lightboxTemplate);
-
+                                bodyEle.append(lightboxTemplate);
                                 show(null,'.lightbox'+uid);
                             }
                         }
@@ -265,9 +303,7 @@ YUI({
                     show();
                 }
 
-            },
-            ".show-lightbox");
-
+            }, ".show-lightbox");
         }
         lightbox();
         /*弹出窗overlay end*/
@@ -309,7 +345,7 @@ YUI({
         Y.one('.arrow4').on('click', function() {
             Y.one('.sidebar').toggleView();
             this.toggleClass('arrow4h');
-            Y.one('body').toggleClass('hide-sidebar');
+            bodyEle.toggleClass('hide-sidebar');
         });
 
         /*机票统计页面*/
@@ -323,17 +359,12 @@ YUI({
         },
         '.mo-jptj');
 
-        Y.Node.addMethod('resetForm', function() {
-            this.all('input').set('value', '');
-            this.all('textarea').set('text', '');
-        });
-
-        /*线下订单管理与订单*/
+        /*线下订单管理预订单*/
         Y.on('available', function(){
             Y.all('.manipulate a').on('click',function(e){
                 e.preventDefault();
-                var href=this.get('href');
-                Y.io(href,{
+                var url = this.get('href');
+                Y.io(url,{
                     data:'',
                     on:{
                         success:function(){} 
@@ -342,15 +373,15 @@ YUI({
             });
         },'.mo-khcx-ddcx-yu');
 
-        /*订单详情页面*/
+        /*提交pnr订单*/
         Y.on('available', function() {
+            //初始化数据
             // Y.StorageLite.on('storage-lite:ready',function(){
             //     var LAST_CPQR_DATA = Y.StorageLite.getItem('CPQR_DATA');
             //     if(LAST_CPQR_DATA){
             //         Y.fieldsetFormat('set',{ data: Y.JSON.parse(LAST_CPQR_DATA)});
             //     }
             // });
-
 
             //todo 待优化
             var countCus = 1;
@@ -363,7 +394,7 @@ YUI({
             }
 
             /**同步乘客到联系人信息**/
-            Y.one('body').delegate('change',function(e){
+            bodyEle.delegate('change',function(e){
                 var index = Y.all('.block3 [name=SurName]').indexOf(this);
                 var item = Y.all('.fpone-one [name=PASSENGER_NAME]').item(index);
                 if(item.get('value')==''){
@@ -372,7 +403,7 @@ YUI({
             },'.block3 [name=SurName]');
 
             /**增加乘客*/
-            Y.one('body').delegate('click', function(i) {
+            bodyEle.delegate('click', function(i) {
                 i.preventDefault();
                 var that = i.target;
                 var container = that.ancestor('fieldset');
@@ -387,7 +418,7 @@ YUI({
             '.CustomerAdd');
 
             /*删除乘客*/
-            Y.one('body').delegate('click', function(i) {
+            bodyEle.delegate('click', function(i) {
                 var that = i.target;
                 var container = that.ancestor('.group-item');
                 var index = Y.all('.block3 .group-item').indexOf(container);
@@ -430,6 +461,7 @@ YUI({
 
                 Y.one('.mo-tjdd .block2').on('change',function(e){
                     SingleTicketPrice = e.target.ancestor('tr').one('td:nth-last-child(1)').get('text'); 
+                    console.log(SingleTicketPrice);
                     swichChangeNodeValue(nodeSingleTickedPrice,SingleTicketPrice);
                     Y.one('.mo-tjdd .block3').simulate('change');
                 });
@@ -526,7 +558,7 @@ YUI({
         },
         '.mo-tjdd');
 
-        
+
         /*mo-khcx-cpcz*/
         Y.on('available',function(){
             // attaches behavior to all checkboxes with CSS class "my-at-least-one-checkbox-group"
@@ -699,7 +731,7 @@ YUI({
                 new Y.SelectAllCheckboxGroup('.table1-ddxq .thead .checkbox', '.table1-ddxq .data-row .checkbox');
             });
 
-            Y.one('body').delegate('click',function(e){
+            bodyEle.delegate('click',function(e){
                 var count_data_row = container.all('.data-row').size();
                 e.preventDefault();
                 if(count_data_row<=1){
@@ -714,39 +746,41 @@ YUI({
         /*mo-khcx-ddxq*/
         Y.on('available',function(){
             Y.one('#save_submit').on('click',function(){
+                // 保存出票数据
+                // Y.fieldsetFormat('set',{
+                //     data:info 
+                // });
+                
                 var url = this.getAttribute('data-url');
-                    // Y.fieldsetFormat('set',{
-                    //     data:info 
-                    // });
-                    var output = Y.fieldsetFormat('get');
-                    var data = Y.JSON.stringify(output);
+                var output = Y.fieldsetFormat('get');
+                var data = Y.JSON.stringify(output);
 
-                    // Y.StorageLite.on('storage-lite:ready',function(){
-                    //     Y.StorageLite.setItem('CPQR_DATA',data);
-                    // });
-                    Y.log(data);
+                // 保存出票数据
+                // Y.StorageLite.on('storage-lite:ready',function(){
+                //     Y.StorageLite.setItem('CPQR_DATA',data);
+                // });
+                Y.log(data);
 
-                    // todo
-                    // if(!formvalid()) return;
+                // todo
+                // if(!formvalid()) return;
 
-                    Y.io(url, {
-                        method: 'post',
-                        data: 'info=' + data,
-                        on: {
-                            success: function(i,res) {
-                                var arr = res.responseText.split(',');
-                                if (arr[0] == '0') {
-                                    location.href = 'FlightOrderSubmit.aspx?ORDER_NO=' + arr[1];
-                                }
+                Y.io(url, {
+                    method: 'post',
+                    data: 'info=' + data,
+                    on: {
+                        success: function(i,res) {
+                            var arr = res.responseText.split(',');
+                            if (arr[0] == '0') {
+                                location.href = 'FlightOrderSubmit.aspx?ORDER_NO=' + arr[1];
+                            }
 
-                                if (arr[0] == '1') {
-                                    alert(arr[1]);
-                                }
-                            },
-                            error: function() {}
+                            if (arr[0] == '1') {
+                                alert(arr[1]);
+                            }
                         }
-                    });
-                    /*end */
+                    }
+                });
+                /*end */
 
             });
 
@@ -800,17 +834,17 @@ YUI({
         Y.on('available', function() {
             /* 统一ajax遮罩*/
             var loading_tpl = '<div class="lightbox loading" style="display:none"><table cellspacing="0">\
-<tbody><tr><td>\
-<div class="lightbox-content">\
-<i>&nbsp;</i><span>数据加载中...</span>\
-</div>\
-</td></tr>\
-</tbody></table></div>';
+            <tbody><tr><td>\
+                <div class="lightbox-content">\
+                <i>&nbsp;</i><span>数据加载中...</span>\
+                </div>\
+                </td></tr>\
+                </tbody></table></div>';
 
             var spin_wrap = Y.Node.create(loading_tpl);
             var timeout;
 
-            Y.one("body").prepend(spin_wrap);
+            bodyEle.prepend(spin_wrap);
 
             Y.on('io:start',function(){
                 spin_wrap.setStyle('display','block');
@@ -910,8 +944,7 @@ YUI({
                     if (!form.validateForm()) return;
 
                     var url = this.getAttribute('data-url');
-                    // var data = Y.io._serialize(Y.one('#aspnetForm')._node);
-                    var data = serialize_form('.block1');
+                    var data = Y.one('.block1').serialize_form();
                     Y.log(data);
                     container.empty();
 
@@ -919,7 +952,6 @@ YUI({
                         Y.io(url, {
                             data: data + '&time=' + new Date().getTime(),
                             on: {
-                                error: function() {},
                                 success: function(i, res) {
                                     container.setContent(res.responseText);
                                     more_hbcx();
@@ -1215,8 +1247,7 @@ YUI({
         },'.J_favourite');
         /*分享收藏 end*/
 
-        /*回到顶部*/
-
+        /*回到顶部
         function gotop() {
             var ie6 = ! window.XMLHttpRequest;
             var a = document.getElementById('J_goTop');
@@ -1232,9 +1263,8 @@ YUI({
         //   gotop();
         /*回到顶部 end*/
 
+        /*本地测试用 切换用户类型*/
         YY = Y;
-
-        /*本地测试用*/
         (function() {
             var wo = location.search;
             if (wo.indexOf('usergroup') != - 1) {
@@ -1247,7 +1277,7 @@ YUI({
 
     });
 
-})
+});
 
 // YUI().use('node', 'array-extras', 'querystring-stringify', function (Y) {
 //     var form = Y.one('.mo-hbcx .block1'), query;

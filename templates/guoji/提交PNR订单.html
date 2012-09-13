@@ -57,6 +57,7 @@
                         <h3 class="gray-title">费用明细</h3>
                         <table frame=void cellspacing="0" style="border-bottom:1px;" class="table2-tjdd table-b2">
                             <tr class="thead">
+                                <td>&nbsp;</td>
                                 <td>单张运价</td>
                                 <td>代理费（%）</td>
                                 <td>奖励（%）</td>
@@ -68,19 +69,21 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="radio" id="pop" class="radio" value="" name="PolicyID" />
+                                    <input checked type="radio" id="pop" class="radio" value="" name="PolicyID" />
+                                </td>
+                                <td>
                                     111</td>
                                 <td>2</td>
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>
-                                <td class="redb">11421</td>
+                                <td>11421</td>
                                 <td>512</td>
                                 <td>21421</td>
                             </tr>
                         </table>
                         <p align=right>
-                        <a href="#" class="show-lightbox" data-lightboxid='GDZC'> >>查看更多政策 </a>
+                        <a href="javascript:;" class="show-lightbox" data-lightboxid='GDZC'> >>查看更多政策 </a>
                         </p>
                 </div>
 
@@ -378,7 +381,19 @@
                                 <td>税费</td>
                                 <td>单张票小计</td>
                             </tr>
-                            {% for x in range(10) %}
+                            <tr>
+                                <td>
+                                    <input type="radio" class="radio" value="" name="PolicyID" />
+                                </td>
+                                <td>1200</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>100</td>
+                                <td>0</td>
+                                <td>1500</td>
+                                <td>140</td>
+                                <td>3500</td>
+                            </tr>
                             <tr>
                                 <td>
                                     <input type="radio" class="radio" value="" name="PolicyID" />
@@ -392,11 +407,10 @@
                                 <td>140</td>
                                 <td>1600</td>
                             </tr>
-                            {% end %}
                         </table>
                         <p>&nbsp;</p>
                         <p class="center">
-                        <input type="button" class="button button1" value="确定" name="" />
+                        <input type="button" class="button button1 confirm" value="确定" name="" rel="close" />
                         <input type="button" class="button button1" value="取消" name="" rel="close" />
                         </p>
                     </div>
