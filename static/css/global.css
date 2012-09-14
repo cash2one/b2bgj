@@ -21,8 +21,11 @@
 .blue, .gray-title ul .current, .table-b5 .thead ul .current, .table-b6 .thead ul .current {
   color: #38ace8; }
 
-.green {
+.green, .greenb {
   color: #00bb00; }
+
+.greenb {
+  font-weight: bold; }
 
 .brown {
   color: #cc3300; }
@@ -387,6 +390,12 @@ u, s {
   height: 37px;
   line-height: 37px; }
 
+.button4 {
+  color: #333333 !important;
+  width: 103px;
+  height: 27px;
+  line-height: 27px; }
+
 .button1 {
   background-image: url(../img/button1.png); }
 
@@ -550,6 +559,11 @@ p {
   .table-b6 th {
     text-align: right;
     width: 70px; }
+
+.table-b7 td, .table-b7 th {
+  vertical-align: baseline;
+  padding: 5px;
+  padding-left: 0; }
 
 i.close {
   cursor: pointer;

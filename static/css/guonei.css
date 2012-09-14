@@ -18,11 +18,14 @@
 .redb {
   font-weight: bold; }
 
-.blue, .gray-title ul .current, .table-b5 .thead ul .current, .table-b6 .thead ul .current {
+.blue, .gray-title ul .current, .table-b5 .thead ul .current, .table-b6 .thead ul .current, .search-list .more, .search-list .tgq {
   color: #38ace8; }
 
-.green {
+.green, .greenb {
   color: #00bb00; }
+
+.greenb {
+  font-weight: bold; }
 
 .brown {
   color: #cc3300; }
@@ -69,7 +72,7 @@ body {
 .f12, .gray-title span, .table-b5 .thead span, .table-b6 .thead span, h2.title, h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
   font-size: 12px; }
 
-.f14, .menu-sidebar dt, .lightbox-head h3, .button2, h1.title {
+.f14, .menu-sidebar dt, .lightbox-head h3, .button2, h1.title, h3.gray-title, .table-b5 h3.thead, .table-b6 h3.thead {
   font-size: 14px; }
 
 .f16, .button3 {
@@ -387,6 +390,12 @@ u, s {
   height: 37px;
   line-height: 37px; }
 
+.button4 {
+  color: #333333 !important;
+  width: 103px;
+  height: 27px;
+  line-height: 27px; }
+
 .button1 {
   background-image: url(../img/button1.png); }
 
@@ -551,6 +560,11 @@ p {
     text-align: right;
     width: 70px; }
 
+.table-b7 td, .table-b7 th {
+  vertical-align: baseline;
+  padding: 5px;
+  padding-left: 0; }
+
 i.close {
   cursor: pointer;
   position: absolute;
@@ -632,3 +646,191 @@ fieldset {
   width: 200px;
   border: 5px solid #666;
   padding: 5px; }
+
+.mo-pnrdr .block1 .block-body {
+  padding-top: 0px; }
+.mo-pnrdr .block1 .block-i {
+  margin: 10px; }
+.mo-pnrdr .block1 .block-i1 {
+  border-bottom: 1px solid #cecece;
+  padding: 5px 0 5px 0px; }
+
+.warn {
+  border: 1px solid #FDD683;
+  background-color: #FFF7EC;
+  padding: 10px;
+  margin: 10px 0; }
+
+.warn-yellow {
+  background-color: #FEFDC5; }
+
+.warn-blue {
+  background-color: #E7F8FF;
+  border-color: #C3EDFA; }
+
+.gray-title, .table-b5 .thead, .table-b6 .thead {
+  border-bottom: 1px solid #cecece; }
+
+.console-screen textarea {
+  height: 203px;
+  margin-bottom: 10px;
+  color: #00bb00; }
+
+.notep {
+  margin-top: 20px;
+  line-height: 20px; }
+
+.mo-hbcx .block {
+  margin-bottom: 10px; }
+.mo-hbcx .block2 .block-body {
+  padding: 0 10px; }
+.mo-hbcx .block2 .description {
+  margin-bottom: 10px; }
+.mo-hbcx .xblock {
+  position: relative;
+  width: 100%;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #d9e4ea;
+  margin-bottom: 5px; }
+  .mo-hbcx .xblock p {
+    padding: 12px 20px;
+    background-color: #f6f6f6; }
+.mo-hbcx .table-b5, .mo-hbcx .table-b6 {
+  margin: 10px;
+  border: none; }
+  .mo-hbcx .table-b5 td, .mo-hbcx .table-b6 td, .mo-hbcx .table-b5 th, .mo-hbcx .table-b6 th {
+    vertical-align: baseline;
+    padding: 5px; }
+
+.search-list {
+  margin-bottom: 10px; }
+  .search-list .even {
+    background-color: #eee; }
+  .search-list tr {
+    border-color: #ddd; }
+  .search-list .block-i-head {
+    border-bottom: 2px solid #3598CD;
+    margin-bottom: 10px; }
+    .search-list .block-i-head li {
+      float: left;
+      width: 90px;
+      margin: 0 10px;
+      border: 2px solid #ECECEC;
+      border-bottom: 0;
+      padding: 3px 0;
+      height: 30px; }
+    .search-list .block-i-head .current {
+      position: relative;
+      border-color: #3598CD; }
+      .search-list .block-i-head .current a {
+        padding: 3px 0;
+        position: absolute;
+        top: 0;
+        display: block;
+        height: 35px;
+        width: 100%;
+        background: white url(../img/repeat1.png) repeat-x; }
+    .search-list .block-i-head a {
+      display: block;
+      text-decoration: none; }
+    .search-list .block-i-head span {
+      text-align: center;
+      display: block; }
+  .search-list .thead td, .search-list .thead th {
+    border: 1px solid #8DBEDE;
+    background-color: #E7F8FF; }
+  .search-list .table-b2 {
+    border-top: 1px solid #8DBEDE; }
+    .search-list .table-b2 table tr {
+      border: none; }
+
+.mo-tjdd .add-passenger {
+  margin: 10px; }
+.mo-tjdd .table-insurance {
+  background-color: #E6F4FF; }
+  .mo-tjdd .table-insurance td, .mo-tjdd .table-insurance th {
+    padding: 10px;
+    vertical-align: baseline; }
+.mo-tjdd .dpr {
+  background-color: #eee; }
+  .mo-tjdd .dpr td, .mo-tjdd .dpr th {
+    vertical-align: baseline;
+    padding: 10px; }
+
+.mo-ddxq .center {
+  margin: 20px 0; }
+.mo-ddxq .xblock1 {
+  position: relative;
+  width: 100%;
+  margin-top: -10px;
+  margin-left: -10px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #d9e4ea;
+  margin-bottom: 5px; }
+  .mo-ddxq .xblock1 p {
+    padding: 12px 20px;
+    background-color: #f6f6f6; }
+.mo-ddxq .xblock2 {
+  margin-bottom: 20px; }
+  .mo-ddxq .xblock2 h3 {
+    padding-bottom: 10px;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #cecece; }
+  .mo-ddxq .xblock2 td, .mo-ddxq .xblock2 th {
+    width: 200px; }
+  .mo-ddxq .xblock2 th {
+    width: 60px; }
+.mo-ddxq .block {
+  margin-bottom: 10px; }
+.mo-ddxq .block3 .meta-row {
+  background-color: #FFFCE9;
+  color: #999; }
+  .mo-ddxq .block3 .meta-row td, .mo-ddxq .block3 .meta-row th {
+    padding: 20px; }
+.mo-ddxq .gdzc {
+  padding: 10px; }
+.mo-ddxq .table1 td, .mo-ddxq .table1 th {
+  vertical-align: baseline;
+  padding: 10px; }
+.mo-ddxq .table3 td, .mo-ddxq .table3 th {
+  vertical-align: baseline;
+  padding: 10px; }
+.mo-ddxq .block5 textarea {
+  margin: 10px;
+  width: 400px;
+  height: 100px; }
+
+table.pay {
+  width: 100%;
+  background-color: #FEFDC5; }
+  table.pay td, table.pay th {
+    padding: 10px;
+    width: 100px; }
+  table.pay th {
+    width: 60px; }
+
+.yeelo {
+  position: relative;
+  background-color: #FEFDC5;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #cecece; }
+  .yeelo .tabs {
+    float: left;
+    color: #c30; }
+    .yeelo .tabs li {
+      float: left;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 10px;
+      text-align: center; }
+    .yeelo .tabs .current {
+      background-color: #fff;
+      border: 1px solid #cecece; }
+  .yeelo .text {
+    position: absolute;
+    top: 10px;
+    right: 10px; }

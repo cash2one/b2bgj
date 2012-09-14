@@ -129,7 +129,7 @@ YUI({
                 var FlightNo = '&FlightNo=' + this.getAttribute('data-flightno');
                 var Price = '&Price=' + this.getAttribute('data-price');
 
-                submitedData = submitedData || this.getAttribute('data-params');
+                submitedData = this.getAttribute('data-params');
 
                 //显示弹窗
                 function show(fn,ele) {
@@ -151,6 +151,7 @@ YUI({
                     //关闭按钮
                     Y.all('.lightbox [rel=close]').on('click', function(e) {
                         if (buy && e.target.hasClass('submit')) {
+                            Y.log(submitedData)
                             location.href = buy + submitedData;
                         } else {
                             e.target.ancestor('.lightbox').hide();
@@ -941,7 +942,7 @@ YUI({
 
                     // 测试时禁用
                     // todo 可能要换掉模块
-                    if (!form.validateForm()) return;
+                    //if (!form.validateForm()) return;
 
                     var url = this.getAttribute('data-url');
                     var data = Y.one('.block1').serialize_form();
@@ -1036,25 +1037,31 @@ YUI({
 
             function updateInfoRow() {
                 Y.all('.mul-select').on('click', function(e) {
-                    var parentRow = e.target.ancestor('.info-row');
-                    var previousRow = parentRow.previous('.data-row');
+                    /* .data-row 单条航空公司数据 显示 航空公司 航班 机型 机场 时间等信息
+                    *  .info-row 更多舱位数据行 默认隐藏 选择按钮 5600,3,1%+34.00,256,516,5860,Y,>9 点击选择后更新.meta-row和.data-row数据
+                    *  .meta-row 预定按钮数据行 显示 退改签 票面价 代理费 奖励 佣金 税金 结算价
+                    */
+                    var infoRow = e.target.ancestor('.info-row');
+                    var dataRow = infoRow.previous('.data-row');
                     var rowIndexs = [];
 
-                    var updatedNodes = parentRow.next('.meta-row').all('s');
-                    var infoRowData = e.target.getAttribute('data-updates')
-                    var data = infoRowData.split(',');
-
-                    submitedData = submitedData || parentRow.next('.meta-row').one('input').getAttribute('data-params').split('|');
-
-                    var cIndex = parentRow.get('rowIndex');
-
-                    var previousMetaRow = parentRow.previous('.meta-row');
-                    var nextMetaRow = parentRow.next('.meta-row');
+                    var previousMetaRow = infoRow.previous('.meta-row');
+                    var nextMetaRow = infoRow.next('.meta-row');
 
                     var pMetaRowIndex = previousMetaRow && previousMetaRow.get('rowIndex') || - 9999;
                     var nMetaRowIndex = nextMetaRow && nextMetaRow.get('rowIndex');
 
-                    var group = parentRow.siblings(function(e) {
+                    var data = e.target.getAttribute('data-updates').split(',');
+
+                    if (submitedData!='' && typeof submitedData != 'undefined'){
+                        submitedData = submitedData.split('|')
+                    }else{
+                        submitedData = nextMetaRow.one('.button').getAttribute('data-params').split('|');
+                    }
+
+                    var cIndex = infoRow.get('rowIndex');
+
+                    var group = infoRow.siblings(function(e) {
                         var rowIndex = e.get('rowIndex');
                         if (e.hasClass("data-row") && rowIndex < nMetaRowIndex && rowIndex > pMetaRowIndex) {
                             rowIndexs.push(rowIndex);
@@ -1062,21 +1069,24 @@ YUI({
                         }
                     });
 
-                    var pIndex = group.indexOf(previousRow);
+                    var pIndex = group.indexOf(dataRow);
                     var newArr = submitedData[pIndex].split(',');
-                    newArr[newArr.length - 3] = data[data.length - 2];
+                    newArr[newArr.length - 4] = data[data.length - 2];
                     newArr = newArr.join(',');
 
                     submitedData.splice(pIndex, 1, newArr)
                     submitedData = submitedData.join('|');
 
-                    updatedNodes.each(function(i, index) {
+                    //更新metarow数据
+                    nextMetaRow.all('s').each(function(i, index) {
                         i.set('text', data[index]);
                     });
+                    nextMetaRow.one('.button').setAttribute('data-params',submitedData);
 
-                    previousRow.one('.sit-type').set('text', data[data.length - 2]);
-                    previousRow.one('.sit-count').set('text', data[data.length - 1]);
-                    previousRow.one('.more-h').simulate('click');
+                    //更新datarow数据
+                    dataRow.one('.sit-type').set('text', data[data.length - 2]);
+                    dataRow.one('.sit-count').set('text', data[data.length - 1]);
+                    dataRow.one('.more-h').simulate('click');
                 });
             }
 

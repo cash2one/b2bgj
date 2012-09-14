@@ -35,6 +35,10 @@ $bc1:#bec6c7;
 .green{
     color:$c34;
 }
+.greenb{
+    @extend .green;
+    font-weight:bold;
+}
 .brown{
     color:$c62;
 }
@@ -425,6 +429,13 @@ u,s{
     line-height:37px;
 }
 
+.button4{
+    color:$c11 !important;
+    width:103px;
+    height:27px;
+    line-height:27px;
+}
+
 @for $i from 1 through 4{
     .button#{$i}{
         background-image:url(#{$skin_folder}/button#{$i}.png); 
@@ -639,6 +650,13 @@ p{
     }
     @extend .table-b5;
     border-top:none;
+}
+.table-b7{
+    td{
+        vertical-align:baseline; 
+        padding:5px;
+        padding-left:0;
+    }
 }
 
 i.close{

@@ -24,7 +24,14 @@
                     <h3 class="gray-title">国内航班查询</h3>
                 </div>
                 <div class="block-body">
-                <table frame=void cellspacing="0" class="table-b6">
+                <table frame=void cellspacing="0" class="table-b5">
+                    <colgroup>
+                        <col width="60"></col>
+                        <col width="174"></col>
+                        <col width="60"></col>
+                        <col width="184"></col>
+                        <col width="60"></col>
+                    </colgroup>
                         <tr>
                             <th>航班类型</th>
                             <td colspan=5>
@@ -64,8 +71,15 @@
                         </tr>
                         <tr>
                             <th>AVH</th>
-                            <td>
+                            <td colspan=3>
                                 <input type="text" class="text text3" value="指令查询框 格式：AVH/PEKSHA/+(23JUB)/CA(D)/(D)" name="" />
+                            </td>
+                            <td colspan=3>
+                                <input type="button" class="button button2" value="查询航班" name="" />
+                                <label>
+                                <input type="checkbox" class="checkbox" value="" name="" />
+                                只查询团队票
+                                </label>
                             </td>
                         </tr>
                     </table>

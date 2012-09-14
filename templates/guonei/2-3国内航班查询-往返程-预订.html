@@ -24,7 +24,14 @@
                     <h3 class="gray-title">国内航班查询</h3>
                 </div>
                 <div class="block-body">
-                    <table frame=void cellspacing="0" class="table-b6">
+                    <table frame=void cellspacing="0" class="table-b5">
+                    <colgroup>
+                        <col width="60"></col>
+                        <col width="174"></col>
+                        <col width="60"></col>
+                        <col width="184"></col>
+                        <col width="60"></col>
+                    </colgroup>
                         <tr>
                             <th>航班类型</th>
                             <td colspan=5>
@@ -41,11 +48,11 @@
                         <tr>
                             <th>出发城市</th>
                             <td>
-                                <input class="text suggest startcity suggest-city" data-type="startcity" class="text" value="" name="" />
+                                <input type="text" class="text" value="" name="" />
                             </td>
                             <th>到达城市</th>
                             <td>
-                                <input type="text" class="text suggest endcity suggest-city" data-type="endcity" value="" name="" />
+                                <input type="text" class="text" value="" name="" />
                             </td>
                             <th>航空公司</th>
                             <td>
@@ -64,13 +71,11 @@
                         </tr>
                         <tr>
                             <th>AVH</th>
-                            <td>
+                            <td colspan=3>
                                 <input type="text" class="text text3" value="指令查询框 格式：AVH/PEKSHA/+(23JUB)/CA(D)/(D)" name="" />
                             </td>
-                            <td>
+                            <td colspan=3>
                                 <input type="button" class="button button2" value="查询航班" name="" />
-                            </td>
-                            <td>
                                 <label>
                                 <input type="checkbox" class="checkbox" value="" name="" />
                                 只查询团队票
@@ -81,12 +86,12 @@
                 </div>
             </div>
 
-            <div class="block">
+            <div class="block block2">
                 <div class="block-head">
                     <h3 class="gray-title">选择航班</h3>
                 </div>
                 <div class="block-body">
-                    <div class="warn block-i block-i1">
+                    <div class="warn warn-blue block-i block-i1">
                         <p>
                         <strong class="f14">已选定去程：上海——北京</strong>
                         </p>
@@ -112,7 +117,7 @@
                             <span><s class="red f14 price">￥809</s></span>
                         </p>
                     </div>
-                    <div class="warn block-i block-i2">
+                    <div class="warn warn-yellow block-i block-i2">
                         <p>
                         <strong class="f14">上海——北京</strong>
                         <strong>（单程）</strong>
@@ -140,7 +145,7 @@
                     </div>
 
                     <div class="search-list block-i">
-                        <div class="block-i-head">
+                        <div class="block-i-head clearfix">
                             <ul>
                                 <li class="current">
                                 <a href="#">
@@ -195,11 +200,11 @@
                                     <col></col>
                                     <col></col>
                                     <col width=120></col>
-                                    <col width=50></col>
-                                    <col width=50></col>
-                                    <col width=50></col>
-                                    <col width=50></col>
-                                    <col width=80></col>
+                                    <col width=100></col>
+                                    <col width=100></col>
+                                    <col width=100></col>
+                                    <col width=100></col>
+                                    <col width=120></col>
                                 </colgroup>
                                 <tr class="thead">
                                     <td>航班号</td>
@@ -218,7 +223,7 @@
                                     <td>结算价</td>  
                                     <td></td>
                                 </tr>
-                                <tr>
+                                <tr class="data-row">
                                     <td>
                                         <span class="pubFlights_fe">1东方航空</span><br>
                                         大型机<u class="jx">333</u>
@@ -272,12 +277,12 @@
                                                 <col></col>
                                                 <col></col>
                                                 <col></col>
-                                                <col width=120></col>
-                                                <col width=50></col>
-                                                <col width=50></col>
-                                                <col width=50></col>
-                                                <col width=50></col>
-                                                <col width=80></col>
+                                    <col width=120></col>
+                                    <col width=100></col>
+                                    <col width=100></col>
+                                    <col width=100></col>
+                                    <col width=100></col>
+                                    <col width=120></col>
                                             </colgroup>
                                             <tr>
                                                 <td colspan=4></td>
@@ -343,7 +348,7 @@
                                         </table>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="even data-row">
                                     <td>
                                         <span class="pubFlights_fe">1东方航空</span><br>
                                         大型机<u class="jx">333</u>
