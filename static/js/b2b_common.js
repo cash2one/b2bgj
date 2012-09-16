@@ -11,7 +11,7 @@ YUI.Env.JSONP = {
 */
 YUI({
     // defaultSkin:'sam'
-}).use('gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+}).use('gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
@@ -92,23 +92,6 @@ YUI({
 
         return result.join('&');
     });
-
-    //todo
-    function formvalid(){
-        var valid = true;
-        Y.all('.vl-required').each(function(i,index){
-            if(i.get('value').trim()==''){
-                i.addClass('vl-error-required');
-                i.focus();
-                valid = false;
-                return false;
-            }else{
-                i.removeClass('vl-error-required');
-            }
-        });
-
-        return valid;
-    }
 
     /* 调用yui默认皮肤 */
     //bodyEle.addClass('yui3-skin-sam');
@@ -644,10 +627,6 @@ YUI({
                     nodePrice5_t.set('value',t5)
                 }
 
-                function valid(){
-
-                }
-
             })();
 
             function swichChangeNodeValue(node,value){
@@ -814,10 +793,6 @@ YUI({
                     nodePrice3.set('value',Price1-Price2);
                 }
 
-                function valid(){
-
-                }
-
             })();
 
             function swichChangeNodeValue(node,value){
@@ -866,14 +841,14 @@ YUI({
             });
 
             /*表单验证*/
-            var form = new Y.FormManager('aspnetForm', {
-                status_node: '#form-status'
-            });
+            // var form = new Y.FormManager('aspnetForm', {
+            //     status_node: '#form-status'
+            // });
 
-            Y.all('input').get('parentNode').addClass('formmgr-row')
-            Y.all('input').insert('<span class="formmgr-message-text"/>', 'after');
+            // Y.all('input').get('parentNode').addClass('formmgr-row')
+            // Y.all('input').insert('<span class="formmgr-message-text"/>', 'after');
 
-            form.prepareForm();
+            // form.prepareForm();
 
             form_hbcx();
             init_calendar();
@@ -929,12 +904,12 @@ YUI({
 
                 /* 提交航班查询表单 */
                 // todo
-                Y.all('.yiv-required').each(function(i) {
-                    var id = i.get('id');
-                    form.setErrorMessages(id, {
-                        required: '&nbsp;<b class="red">×</b>'
-                    });
-                });
+                // Y.all('.yiv-required').each(function(i) {
+                //     var id = i.get('id');
+                //     form.setErrorMessages(id, {
+                //         required: '&nbsp;<b class="red">×</b>'
+                //     });
+                // });
 
                 Y.one(".J_Hbcx_Search").on('click', function(e) {
                     e.preventDefault();
@@ -1302,4 +1277,3 @@ YUI({
 //     }));
 //     console.log(query);
 // });
-
