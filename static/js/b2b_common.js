@@ -26,7 +26,7 @@ YUI({
 
     /* 从cookie里加载用户皮肤*/
     (function(){
-        var skin_cookie = Y.Cookie.getSubs('b2b_prefs_skin'); 
+        var skin_cookie = Y.Cookie.getSubs('b2b_prefs_skin');
         if( skin_cookie && skin_cookie.name && skin_cookie.name!='default'){
             changeSkin(skin_cookie.name,skin_cookie.filepath);
             Y.on('contentready',function(){
@@ -62,11 +62,11 @@ YUI({
 
     /* 重置表单 */
     Y.Node.addMethod('resetForm', function() {
-        this.all('input').set('value', '');
+        this.all('input[type=text]').set('value', '');
         this.all('textarea').set('text', '');
     });
 
-    /* 将input组装成XMLHttpRequest的data 
+    /* 将input组装成XMLHttpRequest的data
      * 简单模拟Y.io._serialize
      */
     Y.Node.addMethod('serialize_form', function() {
@@ -82,15 +82,15 @@ YUI({
             }
 
             if ( (eleType == 'checkbox' || eleType == 'radio') && this.get('checked')==false ){
-                return false; 
+                return false;
             }
 
             // result[name]=value;
             result.push(name+'='+value);
 
-        }); 
+        });
 
-        return result.join('&'); 
+        return result.join('&');
     });
 
     //todo
@@ -100,12 +100,12 @@ YUI({
             if(i.get('value').trim()==''){
                 i.addClass('vl-error-required');
                 i.focus();
-                valid = false; 
+                valid = false;
                 return false;
             }else{
                 i.removeClass('vl-error-required');
             }
-        }); 
+        });
 
         return valid;
     }
@@ -187,7 +187,7 @@ YUI({
 
                     // 初始化数据
                     // Y.fieldsetFormat('set',{
-                    //     data:info 
+                    //     data:info
                     // });
 
                     // 序列化所有fieldset标签
@@ -248,7 +248,7 @@ YUI({
                             success: function(i,res) {
                                 var arr = res.responseText.split(',');
                                 if (arr[0] == '0') {
-                                    location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                                   location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
                                 }
 
                                 if (arr[0] == '1') {
@@ -368,9 +368,9 @@ YUI({
                 Y.io(url,{
                     data:'',
                     on:{
-                        success:function(){} 
+                        success:function(){}
                     }
-                });  
+                });
             });
         },'.mo-khcx-ddcx-yu');
 
@@ -399,7 +399,7 @@ YUI({
                 var index = Y.all('.block3 [name=SurName]').indexOf(this);
                 var item = Y.all('.fpone-one [name=PASSENGER_NAME]').item(index);
                 if(item.get('value')==''){
-                    item.set('value',this.get('value')); 
+                    item.set('value',this.get('value'));
                 }
             },'.block3 [name=SurName]');
 
@@ -448,20 +448,20 @@ YUI({
                     DOMCharacterDataModified: true
                 });
 
-                var nodeCustomerCount = Y.all('.CustomerCount'); 
-                var nodeCustomerInsuranceCount = Y.all('.CustomerInsuranceCount'); 
+                var nodeCustomerCount = Y.all('.CustomerCount');
+                var nodeCustomerInsuranceCount = Y.all('.CustomerInsuranceCount');
                 var nodeCustomerTotalInsurance = Y.all('.CustomerTotalInsurance');
                 var nodeSingleTickedPrice = Y.all('.SingleTicketPrice');
                 var nodeTotalPrice = Y.all('.TotalPrice');
                 var CustomerCount = 1;
                 var CustomerInsuranceCount = 1;
-                var SingleTicketPrice = parseInt(nodeSingleTickedPrice.get('text')); 
+                var SingleTicketPrice = parseInt(nodeSingleTickedPrice.get('text'));
 
                 //**********change policy
                 //todo   SingleTicketPrice = new;
 
                 Y.one('.mo-tjdd .block2').on('change',function(e){
-                    SingleTicketPrice = e.target.ancestor('tr').one('td:nth-last-child(1)').get('text'); 
+                    SingleTicketPrice = e.target.ancestor('tr').one('td:nth-last-child(1)').get('text');
                     console.log(SingleTicketPrice);
                     swichChangeNodeValue(nodeSingleTickedPrice,SingleTicketPrice);
                     Y.one('.mo-tjdd .block3').simulate('change');
@@ -482,7 +482,7 @@ YUI({
                     }
 
                     if (tempCustomerInsuranceCount != CustomerInsuranceCount){
-                        CustomerInsuranceCount = tempCustomerInsuranceCount 
+                        CustomerInsuranceCount = tempCustomerInsuranceCount
                         swichChangeNodeValue(nodeCustomerInsuranceCount,CustomerInsuranceCount);
                         swichChangeNodeValue(nodeCustomerTotalInsurance,CustomerInsuranceCount*8);
                     }
@@ -495,7 +495,7 @@ YUI({
             function swichChangeNodeValue(node,value){
                 var tagName = node.get('tagName');
                 if(tagName=='INPUT'){
-                    node.set('value',value); 
+                    node.set('value',value);
                 }else{
                     node.set('text',value);
                 }
@@ -584,20 +584,20 @@ YUI({
                     DOMCharacterDataModified: true
                 });
 
-                var nodePrice1 = Y.one('.aPrice1'); 
-                var nodePrice2 = Y.one('.aPrice2'); 
-                var nodePrice3 = Y.one('.aPrice3'); 
-                var nodePrice4 = Y.one('.aPrice4'); 
-                var nodePrice5 = Y.one('.aPrice5'); 
-                var nodePrice6 = Y.one('.aPrice6'); 
-                var nodePrice7 = Y.one('.aPrice7'); 
-                var nodePrice8 = Y.one('.aPrice8'); 
+                var nodePrice1 = Y.one('.aPrice1');
+                var nodePrice2 = Y.one('.aPrice2');
+                var nodePrice3 = Y.one('.aPrice3');
+                var nodePrice4 = Y.one('.aPrice4');
+                var nodePrice5 = Y.one('.aPrice5');
+                var nodePrice6 = Y.one('.aPrice6');
+                var nodePrice7 = Y.one('.aPrice7');
+                var nodePrice8 = Y.one('.aPrice8');
 
-                var nodePrice1_t = Y.one('.tPrice1'); 
-                var nodePrice2_t = Y.one('.tPrice2'); 
-                var nodePrice3_t = Y.one('.tPrice3'); 
-                var nodePrice4_t = Y.one('.tPrice4'); 
-                var nodePrice5_t = Y.one('.tPrice5'); 
+                var nodePrice1_t = Y.one('.tPrice1');
+                var nodePrice2_t = Y.one('.tPrice2');
+                var nodePrice3_t = Y.one('.tPrice3');
+                var nodePrice4_t = Y.one('.tPrice4');
+                var nodePrice5_t = Y.one('.tPrice5');
 
                 Y.one('.mo-khcx-cpcz').on('change',formchangehandler);
                 Y.one('.mo-khcx-cpcz').on('valueChange',formchangehandler);
@@ -653,7 +653,7 @@ YUI({
             function swichChangeNodeValue(node,value){
                 var tagName = node.get('tagName');
                 if(tagName=='INPUT'){
-                    node.set('value',value); 
+                    node.set('value',value);
                 }else{
                     node.set('text',value);
                 }
@@ -665,7 +665,7 @@ YUI({
             var hbxx_del_unsel  = Y.one('.hbxx_del_unsel');
             var hbxx_combine  = Y.one('.hbxx_combine');
 
-            var container = Y.one('.table1-ddxq'); 
+            var container = Y.one('.table1-ddxq');
 
             hbxx_add.on('click',function(e){
                 e.preventDefault();
@@ -696,7 +696,7 @@ YUI({
                 var leftcount = (container.all('.data-row .checkbox').size() - container.all('.data-row :checked').size());
 
                 if(leftcount<1){
-                    return alert('必须留一条'); 
+                    return alert('必须留一条');
                 }
 
                 var checked_row = container.all('.data-row :checked');
@@ -736,9 +736,9 @@ YUI({
                 var count_data_row = container.all('.data-row').size();
                 e.preventDefault();
                 if(count_data_row<=1){
-                    alert('必须留一条'); 
+                    alert('必须留一条');
                 }else{
-                    this.ancestor('tr').remove(); 
+                    this.ancestor('tr').remove();
                 }
             },'.hbxx_del_row')
 
@@ -749,9 +749,9 @@ YUI({
             Y.one('#save_submit').on('click',function(){
                 // 保存出票数据
                 // Y.fieldsetFormat('set',{
-                //     data:info 
+                //     data:info
                 // });
-                
+
                 var url = this.getAttribute('data-url');
                 var output = Y.fieldsetFormat('get');
                 var data = Y.JSON.stringify(output);
@@ -797,9 +797,9 @@ YUI({
                     DOMCharacterDataModified: true
                 });
 
-                var nodePrice1 = Y.one('.Price1'); 
-                var nodePrice2 = Y.one('.Price2'); 
-                var nodePrice3 = Y.one('.Price3'); 
+                var nodePrice1 = Y.one('.Price1');
+                var nodePrice2 = Y.one('.Price2');
+                var nodePrice3 = Y.one('.Price3');
 
                 Y.one('.manipulate').on('change',formchangehandler);
                 Y.one('.manipulate').on('valueChange',formchangehandler);
@@ -808,7 +808,7 @@ YUI({
                     var  Price1 = parseFloat(nodePrice1.get('value'));
                     var  Price2 = parseFloat(nodePrice2.get('value'));
                     if(Price2>Price1) {
-                        alert('Error'); 
+                        alert('Error');
                         return;
                     }
                     nodePrice3.set('value',Price1-Price2);
@@ -823,7 +823,7 @@ YUI({
             function swichChangeNodeValue(node,value){
                 var tagName = node.get('tagName');
                 if(tagName=='INPUT'){
-                    node.set('value',value); 
+                    node.set('value',value);
                 }else{
                     node.set('text',value);
                 }
@@ -954,9 +954,14 @@ YUI({
                             data: data + '&time=' + new Date().getTime(),
                             on: {
                                 success: function(i, res) {
-                                    container.setContent(res.responseText);
-                                    more_hbcx();
-
+									var nodes = Y.Node.create(res.responseText);
+									var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
+									if(scriptTag){
+										eval(scriptTag.get('text'));
+									}else{
+										container.setContent(res.responseText);
+										more_hbcx();
+									}
                                 }
                             }
                         });
@@ -999,7 +1004,7 @@ YUI({
                             on: {
                                 success: function(i, res) {
                                     var nodes = Y.Node.create(res.responseText);
-                                    var scriptTag = nodes.one('script');
+									var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
                                     if (scriptTag) {
                                         eval(scriptTag.get('text'));
                                     } else {
@@ -1097,9 +1102,9 @@ YUI({
         // _toCity = Y.all('.endcity');
         // _searchKeyword = Y.one('#J_search_keyword');
         // _searchForm = Y.one('#J_kezhan_form');
-        // 
+        //
         // Y.TripPlaceholder.init('#J_search_keyword');
-        // 
+        //
         // new Y.SearchForm({node:'#J_kezhan_form', 'storage':false, 'afterValidate':function(){
         //  _submitInnSearch();
         // }});
@@ -1109,43 +1114,43 @@ YUI({
         var tabPannel =Y.all('#J_box .tab-pannel'), //客栈相关产品容器
         cityhotelnum = tabPannel.item(k).one("span.J_cityhotelnum"), //tab下的客栈数量信息
         pdid = [], //数组
-        productId, //产品ID           
+        productId, //产品ID
         items, //callback客栈ID列表
         configUrl, //请求jsonp
         getUrl; //转化jsonp
 
-        productId = tabPannel.item(k).all('li').get('id');                                  
+        productId = tabPannel.item(k).all('li').get('id');
         for(var i=0; i<productId.length; i++){
         pdid.push(productId[i].replace('pd_',''));
-        }               
+        }
         pdid=pdid.join('|');
-        //var configUrl ="http://kezhan.trip.daily.taobao.net/getKezhanList.htm?depCity={{cityCode}}&productId={{productId}}&callback={callback}";  
-        configUrl ="http://kezhan.trip.taobao.com/getKezhanList.htm?depCity={{cityCode}}&productId={{productId}}&callback={callback}";                              
+        //var configUrl ="http://kezhan.trip.daily.taobao.net/getKezhanList.htm?depCity={{cityCode}}&productId={{productId}}&callback={callback}";
+        configUrl ="http://kezhan.trip.taobao.com/getKezhanList.htm?depCity={{cityCode}}&productId={{productId}}&callback={callback}";
         getUrl = Y.Mustache.to_html(configUrl, {productId: pdid,cityCode: Y.one('#J_changeNav li.selected a').getAttribute('data-code')});
         if(getUrl){
-        Y.jsonp(getUrl, {                   
-        on : {                          
-        success : function(response){                                   
-        if(response.code == 200){                                                                                                                           
+        Y.jsonp(getUrl, {
+        on : {
+        success : function(response){
+        if(response.code == 200){
         cityhotelnum.setContent('<em>' + response.data.hotelnum + '</em>'+ '家客栈,共<em>'+ response.data.peoplenum +'</em>人去过');
-        items = response.data.pdlist;                                                                       
+        items = response.data.pdlist;
         Y.each(items,function(pdcomment, pdid){
-        Y.one("#pd_" + pdid + " .J_commentNum").setContent(pdcomment);                                          
-        });                                                                                                                     
-        }else{                                                                                                                  
-        Y.all('#J_box .J_cnone').remove(); 
+        Y.one("#pd_" + pdid + " .J_commentNum").setContent(pdcomment);
+        });
+        }else{
+        Y.all('#J_box .J_cnone').remove();
         }
-        }                                                           
+        }
         }
         });
-        }                                                                                                                                               
+        }
         };
         //showList(0);
         /* 列表 end*/
 
         /*屏幕滚动，延时加载
         var sImg = function(index){
-        var ImageLazyloader, 
+        var ImageLazyloader,
         rendered = false;
 
         function renderImageLazyloader(){
@@ -1156,12 +1161,12 @@ YUI({
         }
 
         function registerImages(len){
-        var tabPannel = Y.all('.tab-pannel');               
+        var tabPannel = Y.all('.tab-pannel');
         tabPannel.item(len).all('.J_imglist').each(function(node) {
         node.setAttribute('id', Y.stamp(node));
-        ImageLazyloader.registerImage({ 
+        ImageLazyloader.registerImage({
         domId: node.get('id'),
-        srcUrl: node.getAttribute('image-lazyload') 
+        srcUrl: node.getAttribute('image-lazyload')
         });
         });
         }
@@ -1175,7 +1180,7 @@ YUI({
         render(index);
 
         };
-        //sImg(0);  
+        //sImg(0);
         /*屏幕滚动 图片延迟 end*/
 
         /*tab切换
@@ -1184,26 +1189,26 @@ YUI({
         eventype:'click'
         });
         // 点击tab获得索引值执行showList;
-        TabClick.on('switch',function(data){        
-        var index = parseInt(data.index);                       
+        TabClick.on('switch',function(data){
+        var index = parseInt(data.index);
 
         setTimeout(function(){
         //延时加载
         showList(index);
-        sImg(index);                                                
+        sImg(index);
         },10);
-        });             
+        });
         /*tab切换 end*/
 
         /*顶部图片hover效果
         Y.one('.adImgBox table').delegate('hover', function(e){
-        var tar = e.currentTarget;        
-        var spanInMe = tar.one('.J_spanbox');     
+        var tar = e.currentTarget;
+        var spanInMe = tar.one('.J_spanbox');
         spanInMe.removeClass('hide');
-        },function(e) {       
-        var tar = e.currentTarget;        
-        var spanInMe = tar.one('.J_spanbox');     
-        spanInMe.addClass('hide');        
+        },function(e) {
+        var tar = e.currentTarget;
+        var spanInMe = tar.one('.J_spanbox');
+        spanInMe.addClass('hide');
         }, '.J_hoverA');
         /*顶部图片hover效果 end*/
 
@@ -1220,7 +1225,7 @@ YUI({
         });
         box.render();
 
-        var inter;          
+        var inter;
         Y.on('click',function(e){
         e.halt();
         box.close();
@@ -1236,9 +1241,9 @@ YUI({
         if(Y.UA.ie){
         var closeNode = scIframe.contentWindow.document.getElementById("J_ClosePopup");
         } else {
-        var closeNode = scIframe.contentDocument.getElementById('J_ClosePopup');                    
-        }   
-        closeNode && (Y.one(closeNode).setStyle("display", "none"));                  
+        var closeNode = scIframe.contentDocument.getElementById('J_ClosePopup');
+        }
+        closeNode && (Y.one(closeNode).setStyle("display", "none"));
         });
         }, 100);
 
@@ -1248,12 +1253,12 @@ YUI({
         }
         else {
         var hh = document.getElementById('J_BoxIframe').contentWindow.document.body.scrollHeight;
-        }               
+        }
         Y.one('#J_BoxIframe').setAttribute('height',hh+'px');
         Y.one('.yui3-widget').setStyle('height',(hh+35));
         Y.one('.yui3-widget .yui3-overlay-content').setStyle('height',(hh+35));
         Y.one('.yui3-widget .yui3-widget-bd').setStyle('height',hh);
-        }                   
+        }
         },'.J_favourite');
         /*分享收藏 end*/
 
