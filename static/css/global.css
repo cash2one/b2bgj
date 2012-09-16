@@ -124,11 +124,11 @@ body {
   .logo span {
     display: none; }
   .logo a {
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/logo.png) 0 0 no-repeat;
     display: block;
     margin: 0 auto;
     width: 114px;
-    height: 69px; }
+    height: 65px; }
 
 .nav-top {
   margin-left: 180px; }

@@ -140,11 +140,11 @@ $i:12;
         display:none;
     }
     a{
-        background:url(#{$skin_folder}/logo.png) no-repeat;
+        background:url(#{$skin_folder}/logo.png) 0 0  no-repeat;
         display:block; 
         margin:0 auto;
         width:114px;
-        height:69px;
+        height:65px;
     }
 }
 
