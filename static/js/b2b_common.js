@@ -11,7 +11,7 @@ YUI.Env.JSONP = {
 */
 YUI({
     // defaultSkin:'sam'
-}).use('calendar','gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate','event-valuechange', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+}).use('calendar','gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
@@ -92,23 +92,6 @@ YUI({
 
         return result.join('&');
     });
-
-    //todo
-    function formvalid(){
-        var valid = true;
-        Y.all('.vl-required').each(function(i,index){
-            if(i.get('value').trim()==''){
-                i.addClass('vl-error-required');
-                i.focus();
-                valid = false;
-                return false;
-            }else{
-                i.removeClass('vl-error-required');
-            }
-        });
-
-        return valid;
-    }
 
     /* 调用yui默认皮肤 */
     //bodyEle.addClass('yui3-skin-sam');
@@ -1328,4 +1311,3 @@ YUI({
 //     }));
 //     console.log(query);
 // });
-
