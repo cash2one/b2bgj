@@ -83,140 +83,161 @@
         </div>
         <div class="block-i block-i2">
           <fieldset id="bind_city" name="bind_city">
-          <div class="add_city_header">
-            <b class="red">*</b>
-            航空公司
-            <input type="text" class="text" value="" name="" />
-          </div>
-          <div class="add_city_container">
+            <div class="add_city_header">
+              <b class="red">*</b>
+              航空公司
+              <input type="text" class="text" value="" name="" />
+            </div>
+            <div class="add_city_container">
 
-            <div class="add_city_block">
-              <div class="add_city_tab">
-                <label>始发城市</label>
-                <ul>
-                  <li>A-F</li>
-                  <li>K-N</li>
-                </ul>
-              </div>
-              <div class="add_city_tabcontent select_group">
-                <ul>
-                  <li>
-                  <label>
-                    <input type="checkbox" class="checkbox" value="PVG" name="PVG" />
-                    PVG-上海浦东
-                  </label>
-                  <label>
-                    <input type="checkbox" class="checkbox" value="PAG" name="PAG" />
-                    PAG-青岛
-                  </label>
-                  </li>
-                </ul>
-                <p>
-                <input type="button" class="button select_button" value="全选" name="" />
-                <input type="button" class="button unselect_button" value="反选" name="" />
-                <input type="button" class="button" value="添加城市" name="" />
-                </p>
-              </div>
+              <div class="add_city_block">
+                <div class="add_city_tab">
+                  <label>始发城市</label>
+                </div>
+
+                <div id="add_startcity_group">
+                  <ul class="tab-nav add_city_tab">
+                    <li class="selected">A-F</li>
+                    <li>K-N</li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pannel add_city_tabcontent select_group">
+                      <ul>
+                        <li>
+                        <label>
+                          <input type="checkbox" class="checkbox" value="2PVG" name="P2VG" />
+                          2PVG-上海浦东
+                        </label>
+                        <label>
+                          <input type="checkbox" class="checkbox" value="i2PAG" name="P2AG" />
+                          2PAG-青岛
+                        </label>
+                        </li>
+                      </ul>
+                      <p>
+                      <label>
+                        <input type="checkbox" style="visibility:hidden;margin-left:-20px;" class="select_button" value="" name="" />
+                        <input type="button" class="button" value="全选" name="" />
+                      </label>
+                      <label>
+                        <input type="button" class="button unselect_button" value="反选" name="" />
+                      </label>
+                      <label>
+                        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+                      </label>
+                      </p>
+                    </div>
+  
+                    <div class="tab-pannel add_city_tabcontent select_group">
+                      <ul>
+                        <li>
+                        <label>
+                          <input type="checkbox" class="checkbox" value="PVG" name="PVG" />
+                          PVG-上海浦东
+                        </label>
+                        <label>
+                          <input type="checkbox" class="checkbox" value="PAG" name="PAG" />
+                          PAG-青岛
+                        </label>
+                        </li>
+                      </ul>
+                      <p>
+                      <label>
+                        <input type="checkbox" style="visibility:hidden;margin-left:-20px;" class="select_button" value="" name="" />
+                        <input type="button" class="button" value="全选" name="" />
+                      </label>
+                      <label>
+                        <input type="button" class="button unselect_button" value="反选" name="" />
+                      </label>
+                      <label>
+                        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+                      </label>
+                      </p>
+                    </div>
+                  </div>
+
+                </div> 
+
                 <div class="add_city_preview">
                   <span class="title">已选城市</span>
                   <ul>
                     <li>PVG-上海浦东</li>
                   </ul>
                 </div>
-            </div>
-
-
-            <div class="add_city_xblock select_group">
-              <span class="title">舱位选择</span>
-              <p>
-              <label>
-                <input type="checkbox" class="checkbox" value="" name="" />
-                A
-              </label>
-
-              <label>
-                <input type="checkbox" class="checkbox" value="" name="" />
-                B 
-              </label>
-              </p>
-
-              <p>
-              <input type="button" class="button select_button" value="全选" name="" />
-              <input type="button" class="button unselect_button" value="反选" name="" />
-              <input type="button" class="button" value="添加城市" name="" />
-              </p>
-            </div>
-
-
-            <div class="add_city_block">
-              <div class="add_city_tab">
-                <label>目的城市</label>
-                <ul>
-                  <li>A-F</li>
-                  <li>K-N</li>
-                </ul>
               </div>
-              <div class="add_city_tabcontent select_group">
-                <ul>
-                  <li>
-                  <label>
-                    <input type="checkbox" class="checkbox" value="" name="" />
-                    2PVG-上海浦东
-                  </label>
-                  <label>
-                    <input type="checkbox" class="checkbox" value="" name="" />
-                    2PAG-青岛
-                  </label>
-                  </li>
-                </ul>
+
+
+              <div class="add_city_xblock select_group">
+                <span class="title">舱位选择</span>
                 <p>
-                <input type="button" class="button select_button" value="全选" name="" />
-                <input type="button" class="button unselect_button" value="反选" name="" />
-                <input type="button" class="button" value="添加城市" name="" />
+                <label>
+                  <input type="checkbox" class="checkbox" value="" name="" />
+                  A
+                </label>
+
+                <label>
+                  <input type="checkbox" class="checkbox" value="" name="" />
+                  B 
+                </label>
+                </p>
+
+                <p>
+                <label>
+                  <input type="checkbox" style="visibility:hidden;margin-left:-20px;" class="select_button" value="" name="" />
+                  <input type="button" class="button" value="全选" name="" />
+                </label>
+                <label>
+                  <input type="button" class="button unselect_button" value="反选" name="" />
+                </label>
                 </p>
               </div>
+
+
+              <div class="add_city_block">
+                <div class="add_city_tab">
+                  <label>目的城市</label>
+                  <ul>
+                    <li>A-F</li>
+                    <li>K-N</li>
+                  </ul>
+                </div>
+                <div class="add_city_tabcontent select_group">
+                  <ul>
+                    <li>
+                    <label>
+                      <input type="checkbox" class="checkbox" value="" name="" />
+                      2PVG-上海浦东
+                    </label>
+                    <label>
+                      <input type="checkbox" class="checkbox" value="" name="" />
+                      2PAG-青岛
+                    </label>
+                    </li>
+                  </ul>
+                  <p>
+                  <label>
+                    <input type="checkbox" style="visibility:hidden;margin-left:-20px;" class="select_button" value="" name="" />
+                    <input type="button" class="button" value="全选" name="" />
+                  </label>
+                  <label>
+                    <input type="button" class="button unselect_button" value="反选" name="" />
+                  </label>
+                  <label>
+                    <input type="button" class="button" value="添加城市" name="" />
+                  </label>
+                  </p>
+                </div>
                 <div class="add_city_preview">
                   <span class="title">已选城市</span>
                   <ul>
                     <li>PVG-上海浦东</li>
                   </ul>
                 </div>   
+              </div>
             </div>
-          </div>
           </fieldset>
-
           <table cellspacing="0" class="table2">
-            <tr>
-              <th>
-                <b class="red">*</b>
-                航空公司
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-              </td>
-              <th>
-                <b class="red">*</b>
-                舱位
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-              </td>
-
-              <th>
-                <b class="red">*</b>
-                始发城市
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-              </td>
-              <th>
-                <b class="red">*</b>
-                目的城市
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-              </td>
-            </tr>
             <tr>
 
               <th>
@@ -370,7 +391,7 @@
 
 
 <script type="text/template" id="quick_add_city_template">
-  <div class="lightbox lightbox-1 lightbox{%raw '{{'%}uid}}" data-lightboxid="TSXX">
+  <div class="lightbox lightbox-1 lightbox{%raw '{{'%}uid}}" data-lightboxid="QACT">
     <table cellspacing="0">
         <tr>
             <td>
@@ -398,4 +419,3 @@
     </table>
 </div>
 </script>
-<!-- <p>{%raw '{{{'%}html}}}</p> -->

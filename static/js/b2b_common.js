@@ -9,9 +9,8 @@ YUI.Env.JSONP = {
 * @path: apps/et/trip-home/js/kezhan_v1.1.js
 * @data: 2012/04/13
 */
-YUI({
-    // defaultSkin:'sam'
-}).use('calendar','gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+
+YUI().use('slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-calendar', 'trip-box','gallery-mustache', 'gallery-storage-lite','gallery-checkboxgroups',  function(Y) {
     var submitedData;
     var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
@@ -67,8 +66,8 @@ YUI({
     });
 
     /* 将input组装成XMLHttpRequest的data
-     * 简单模拟Y.io._serialize
-     */
+    * 简单模拟Y.io._serialize
+    */
     Y.Node.addMethod('serialize_form', function() {
         var result = [];
         this.all('input,textarea,select').each(function(){
@@ -166,6 +165,24 @@ YUI({
 
                 }
 
+                if (lightboxid == 'QACT'){
+                    if (Y.one('.lightbox' + uid)) {
+                        Y.log(cached);
+                        if(cached){
+                            return show();
+                        }else{
+                            Y.one('.lightbox' + uid).remove();
+                        }
+                    }
+                    var templ = Y.one('#quick_add_city_template').getContent();
+                    var data={}
+                    data.uid=uid;
+                    var lightboxTemplate = Y.mustache(templ, data);
+
+                    bodyEle.append(lightboxTemplate);
+                    show(null,'.lightbox'+uid);
+                }
+
                 if (lightboxid == 'CPQR') {
 
                     // 初始化数据
@@ -187,7 +204,7 @@ YUI({
                     /* 显示确认信息
                     output.uid = uid;
                     var templ = Y.one('#TOTAL-template').getContent();
-                    var lightboxTemplate = Y.Mustache.to_html(templ, output);
+                    var lightboxTemplate = Y.mustache.to_html(templ, output);
 
                     if (Y.one('.lightbox' + uid)) {
                     if(cached){
@@ -231,7 +248,7 @@ YUI({
                             success: function(i,res) {
                                 var arr = res.responseText.split(',');
                                 if (arr[0] == '0') {
-                                   location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
+                                    location.href = 'FlightOrderAuditDetail.aspx?ORDER_NO=' + arr[1];
                                 }
 
                                 if (arr[0] == '1') {
@@ -274,7 +291,7 @@ YUI({
                                 var data = Y.JSON.parse(res.responseText);
                                 data.uid = uid;
 
-                                var lightboxTemplate = Y.Mustache.to_html(templ, data);
+                                var lightboxTemplate = Y.mustache(templ, data);
                                 buy = buy.replace(/(data_Price=)[^&]+/g,'data_Price='+data['data_Price']);
                                 buy = buy.replace(/(data_Tax=)[^&]+/g,'data_Tax='+data['data_Tax']);
 
@@ -343,40 +360,30 @@ YUI({
         },
         '.mo-jptj');
 
-		/*政策添加*/
+        /*政策添加*/
         Y.on('available', function() {
-
-			function selectall(button,target,f){
-				bodyEle.delegate('click',function(){
-					var node = this.ancestor(target).all('[type=checkbox]');
-					if(f){
-						node.set('checked',false);
-					}else{
-						node.set('checked',true);
-					}
-                    render_select();
-				},button);
-                render_select();
-			}
-
-			selectall('.select_button','.select_group');
-			selectall('.unselect_button','.select_group',true);
-
-            function render_select(){
-                var tp = Y.Node.create('<li>');
-            }
-
-            function init_calendar() {
-                new Y.TripCalendar({
-                    beginNode: '#depdate-td',
-                    endNode: '#arrdate-td',
-                    limitBeginDate: new Date(),
-                    limitDays: 28,
-                    isWeek: false,
-                    isFestival: false,
-                    titleTips: ""
+            Y.all('.select_group').each(function(){
+                var that=this;
+                var container = that.ancestor().ancestor().ancestor().one('.add_city_preview ul')
+                new Y.Checkall({
+                    node:[that.one('.select_button')],
+                    nodelist:that.all('.checkbox'),
+                    inverse:that.one('.unselect_button')
+                }).on('check',function(o){
+                    var pp = that.ancestor().all(':checked').get('name');
+                    container.empty();
+                    Y.Array.each(pp,function(i){
+                        if(i!=''){
+                            container.append('<li>'+i+'</li>');
+                        }
+                    })
                 });
-            }
+            });
+
+            new Y.Slide('add_startcity_group',{
+                autoSlide:false,
+                eventype:'click'
+            });
 
         },
         '.mo-zctj');
@@ -398,7 +405,7 @@ YUI({
         /*提交pnr订单*/
         Y.on('available', function() {
 
-			loadingbar();
+            loadingbar();
             //初始化数据
             // Y.StorageLite.on('storage-lite:ready',function(){
             //     var LAST_CPQR_DATA = Y.StorageLite.getItem('CPQR_DATA');
@@ -585,7 +592,7 @@ YUI({
         /*mo-khcx-cpcz*/
         Y.on('available',function(){
 
-			loadingbar();
+            loadingbar();
             // attaches behavior to all checkboxes with CSS class "my-at-least-one-checkbox-group"
             //new Y.AtLeastOneCheckboxGroup('.my-at-least-one-checkbox-group');
 
@@ -848,7 +855,7 @@ YUI({
         },'.mo-khcx-ddxq-new');
 
 
-		function loadingbar(){
+        function loadingbar(){
             /* 统一ajax遮罩*/
             var loading_tpl = '<div class="lightbox loading" style="display:none"><table cellspacing="0">\
             <tbody><tr><td>\
@@ -881,12 +888,12 @@ YUI({
                 spin_wrap.hide();
             });
 
-		}
+        }
 
         /*航班查询页面*/
         Y.on('available', function() {
 
-			loadingbar();
+            loadingbar();
             form_hbcx();
             init_calendar();
 
@@ -919,11 +926,11 @@ YUI({
                     on: {
                         select: function(e) {
                             var arr = e.result.display.split('|');
-							var inputNode = this._inputNode;
+                            var inputNode = this._inputNode;
                             var codeNode = inputNode.next('.airlines_hidden');
-							setTimeout(function(){
-								inputNode.blur();
-							},50);
+                            setTimeout(function(){
+                                inputNode.blur();
+                            },50);
                             if (arr[1]) {
                                 e.result.text = arr[1];
                                 codeNode.set('value', arr[2]);
@@ -976,14 +983,14 @@ YUI({
                             data: data + '&time=' + new Date().getTime(),
                             on: {
                                 success: function(i, res) {
-									var nodes = Y.Node.create(res.responseText);
-									var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
-									if(scriptTag){
-										eval(scriptTag.get('text'));
-									}else{
-										container.setContent(res.responseText);
-										more_hbcx();
-									}
+                                    var nodes = Y.Node.create(res.responseText);
+                                    var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
+                                    if(scriptTag){
+                                        eval(scriptTag.get('text'));
+                                    }else{
+                                        container.setContent(res.responseText);
+                                        more_hbcx();
+                                    }
                                 }
                             }
                         });
@@ -1014,7 +1021,7 @@ YUI({
                             on: {
                                 success: function(i, res) {
                                     var nodes = Y.Node.create(res.responseText);
-									var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
+                                    var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
                                     if (scriptTag) {
                                         eval(scriptTag.get('text'));
                                     } else {
@@ -1135,7 +1142,7 @@ YUI({
         pdid=pdid.join('|');
         //var configUrl ="http://kezhan.trip.daily.taobao.net/getKezhanList.htm?depCity={{cityCode}}&productId={{productId}}&callback={callback}";
         configUrl ="http://kezhan.trip.taobao.com/getKezhanList.htm?depCity={{cityCode}}&productId={{productId}}&callback={callback}";
-        getUrl = Y.Mustache.to_html(configUrl, {productId: pdid,cityCode: Y.one('#J_changeNav li.selected a').getAttribute('data-code')});
+        getUrl = Y.mustache(configUrl, {productId: pdid,cityCode: Y.one('#J_changeNav li.selected a').getAttribute('data-code')});
         if(getUrl){
         Y.jsonp(getUrl, {
         on : {
@@ -1273,16 +1280,16 @@ YUI({
 
         /*回到顶部
         function gotop() {
-            var ie6 = ! window.XMLHttpRequest;
-            var a = document.getElementById('J_goTop');
-            a.style.position = ie6 ? 'absolute': 'fixed';
-            a.style.right = 10 + 'px';
-            a.style.bottom = 10 + 'px';
-            if (ie6) {
-                window.onscroll = function() {
-                    a.className = a.className;
-                };
-            }
+        var ie6 = ! window.XMLHttpRequest;
+        var a = document.getElementById('J_goTop');
+        a.style.position = ie6 ? 'absolute': 'fixed';
+        a.style.right = 10 + 'px';
+        a.style.bottom = 10 + 'px';
+        if (ie6) {
+        window.onscroll = function() {
+        a.className = a.className;
+        };
+        }
         }
         //   gotop();
         /*回到顶部 end*/

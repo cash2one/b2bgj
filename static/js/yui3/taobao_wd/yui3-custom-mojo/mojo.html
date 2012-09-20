@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>YUI 3.3.0 custom mojo demo : bachi@taobao.com</title>
+	<!--
+		这里的例子是在作代码规划的时候需要考虑的一些要点，基于此，很容易作进一步的性能优化（脚本加载顺序和执行时机）,请思考(参照淘宝首页)
+
+		<heade>中引入的css和js应当是全局的，是共用的全站级别的
+	-->
+	<!--全局样式的引用，这里不做参考-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset.css" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssfonts/fonts.css" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssgrids/grids.css" type="text/css">
+	<!--项目全局样式的引用，如可能，需要combo合并-->
+    <link rel="stylesheet" href="http://a.tbcdn.cn/app/dp/test/project/global.css" type="text/css">
+	<script src="http://a.tbcdn.cn/s/yui/3.3.0/build/yui/yui-min.js"></script><!--全局种子的引入-->
+	<script>
+	/**
+	 * YUI的全局config，主要定义模块依赖
+	 */
+	var config = {
+		combine:true,
+		comboBase:'http://a.tbcdn.cn/??',
+		root:'s/yui/3.3.0/build/',
+		filter:{
+			'searchExp': "&", 
+			'replaceStr': ","
+		},
+		//项目用到的基础控件，这些控件（包括皮肤）是直接使用的，做好模块的引用关系即可,比如弹层组件+样式，日历组件+样式
+		//如果组件样式不采用默认样式，需要自己定义，需要属于“项目独有的控件样式”，也可以作为项目的全局模块放进来,尽管在其他项目中并无共用这个皮肤，比如floatip.css
+		modules:{
+			box:{
+				path:'box/box.js',//项目文件相对路径
+				root:'app/dp/test/',
+				combine:true,
+				requires:['box-skin','node','overlay','dd-plugin','resize']
+			},
+			'box-skin':{
+				path:'box/skin/sea.css',
+				root:'app/dp/test/',//项目文件根路径
+				combine:true,
+				type:'css'
+			},
+			slide:{
+				path:'slide/slide.js',
+				root:'app/dp/test/',
+				combine:true,
+				requires:['node','anim']
+			},
+			calendar:{
+				path:'calendar/calendar.js',
+				root:'app/dp/test/',
+				combine:true,
+				requires:['calendar-skin','node']
+			},
+			'calendar-skin':{
+				path:'calendar/skin/default.css',
+				root:'app/dp/test/',
+				combine:true,
+				type:'css'
+			},
+			floatip:{
+				path:'floatip/floatip.js',
+				root:'app/dp/test/',
+				combine:true,
+				requires:['node','project-nav-tip-skin']
+			},
+			//项目中遇到的具有一定共用性的组件样式
+			'project-nav-tip-skin':{
+				path:'project/floatip.css',
+				root:'app/dp/test/',
+				type:'css',
+				combine:true
+			}
+
+		}
+	};
+	
+	//添加新的模块
+	var addModule = function(o){
+		YUI().mix(config.modules,o);
+		return config;
+	};
+
+	</script>
+
+
+</head>
+<body id="doc">
+    <div id="hd">
+        <h1>使用YUI3组织web开发</h1>
+    </div>
+
+    <div class="yui3-g">
+        <div class="yui3-u-1-5" id="nav">
+            <div class="content">
+				<!--功能区域,视野的开始-->
+                <ul class="temp-tips">
+                    <li><a href="#" rel="提示1">鼠标划过有提示</a></li>
+                    <li><a href="#" rel="提示2">鼠标划过有提示</a></li>
+                    <li><a href="#" rel="提示3">鼠标划过有提示</a></li>
+                    <li><a href="#" rel="提示4">鼠标划过有提示</a></li>
+                    <li><a href="#" rel="提示5">lorem ipsum dolor</a></li>
+                    <li><a href="#" rel="提示6">lorem ipsum dolor</a></li>
+                    <li><a href="#" rel="提示7">lorem ipsum dolor</a></li>
+                    <li><a href="#" rel="提示8">lorem ipsum dolor</a></li>
+                    <li><a href="#" rel="提示9">lorem ipsum dolor</a></li>
+                    <li><a href="#" rel="提示10">lorem ipsum dolor</a></li>
+                </ul>
+				<!--这是一个功能单元，一个人独立完成增量开发，牵扯到的文件只有nav-tip.js-->
+				<!--开发者原则上知晓<head>中的全局配置，并完全依赖这些配置进行此功能的开发-->
+				<script>
+				//左侧功能的引入,这种引入方式不会新增http请求
+				YUI(addModule({
+					'nav-tips':{
+						path:'project/nav-tips.js',
+						root:'app/dp/test/',
+						combine:true,
+						requires:['floatip']
+					}
+				})).use('nav-tips');
+				</script>
+				<!--功能区域,视野的结束-->
+            </div>
+        </div>
+
+        <div class="yui3-u-2-5" id="main">
+            <div class="content">
+                <p>文本文本...Nam quis hendrerit enim. Donec tincidunt libero a dolor hendrerit at tempus quam venenatis. In quis tempus ipsum. Vestibulum nulla enim, bibendum ut vestibulum at, laoreet a felis.</p>
+					<!--这是第二个个功能单元,牵扯到的文件只有side-mojo.js和tab.css-->
+					<!--代码片段开始-->
+					<!--基于想通的head，可以直接拷走复用-->
+					<div id="J_tab_2" class="t-slide my-hack mt20">
+					  <ul class="tab-nav clearfix">
+					  </ul>
+					  <div class="tab-content">
+						<div class="tab-pannel"><p><img src="http://img01.taobaocdn.com/tps/i1/T1t4J0XjXlXXXXXXXX-490-170.png" /></p></div>
+						<div class="tab-pannel"><p><img src="http://img.alimama.cn/bcrm/adboard/picture/2011-01-17/110117153135489.jpg" /></p></div>
+						<div class="tab-pannel"><p><img src="http://img.alimama.cn/bcrm/adboard/picture/2011-02-17/110217114213527.jpg" /></p></div>
+
+						<div class="tab-pannel"><p><img src="http://img.alimama.cn/bcrm/adboard/picture/2011-02-14/110214151738919.jpg" /></p></div>
+					  </div>
+					</div>
+					<script>
+						//这里至多只增加1个js请求和一个css请求
+						YUI(addModule({
+							'slide-mojo':{
+								path:'project/slide-mojo.js',
+								root:'app/dp/test/',
+								combine:true,
+								requires:['slide','slide-mojo-skin']
+							},
+							'slide-mojo-skin':{
+								path:'project/tab.css',
+								root:'app/dp/test/',
+								combine:true,
+								type:'css'
+							}
+						})).use('slide-mojo');
+					</script>
+					<!--代码片段结束-->
+
+                <div class="yui3-g thumb-captions">
+                    <div class="yui3-u-1-3">
+                        <a href="#"><img width="80" height="60" src="http://developer.yahoo.com/yui/docs/assets/examples/exampleimages/small/museum.jpg">
+                            Lorem ispum
+                        </a>
+                    </div>
+                    <div class="yui3-u-1-3">
+                        <a href="#"><img height="80" width="60" src="http://developer.yahoo.com/yui/docs/assets/examples/exampleimages/small/museum.jpg">
+                            Lorem ispum
+                        </a>
+                    </div>
+                    <div class="yui3-u-1-3">
+                        <a href="#"><img height="80" width="60" src="http://developer.yahoo.com/yui/docs/assets/examples/exampleimages/small/museum.jpg">
+                            Lorem ispum
+                        </a>
+                    </div>
+                </div>
+
+                <div class="yui3-g">
+                    <div class="yui3-u-1-2">
+                        <p>Cras porta venenatis egestas. Vestibulum pretium massa id turpis varius iaculis. Aliquam nec cursus lorem. Sed aliquet hendrerit sem, et consectetur dolor condimentum quis. Curabitur gravida magna ut diam pellentesque et luctus metus auctor. Nam quis hendrerit enim. </p>
+                    </div>
+                    <div class="yui3-u-1-2">
+                        <p>Suspendisse congue sapien a nibh venenatis sit amet aliquet elit suscipit.  Vestibulum nulla enim, bibendum ut vestibulum at, laoreet a felis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="yui3-u-2-5" id="extra">
+            <div class="content">
+                <div class="yui3-g">
+                    <div id="top-stories">
+					<!--页面右侧tab切换{{-->
+						<div id="J_tab_1" class="t-tabview my-hack">
+						  <ul class="tab-nav clearfix">
+							<li class="selected"><a href="#tab1"><em>Tab One</em></a></li>
+							<li><a href="#tab2"><em>Tab Two</em></a></li>
+							<li><a href="#tab3"><em>延时加载</em></a></li>
+						  </ul>
+
+						  <div class="tab-content">
+							<div class="tab-pannel"><p>Tab One ContentTab One ContentTab One ContentTab One Content</p></div>
+							<div class="tab-pannel hidden"><p>Tab Two ContentTab Two ContentTab Two ContentTab Two ContentTab Two Content</p></div>
+							<div class="tab-pannel hidden"><p>
+								<!--延时加载的内容，延时加载的内容包含在各一个css和js请求中-->
+								<textarea class="lazyload">
+									<div id="J_calendar"></div>
+									<div id="J_r">请选择日期</div>
+									<script>
+									//中部功能的引入,新增一个loader，会至多增加js和css各一个http请求
+									//这个部分的逻辑用到了日历和弹层
+									YUI(addModule({
+										'select-data':{
+											path:'project/select-data.js',
+											root:'app/dp/test/',
+											combine:true,
+											requires:['calendar','box']
+										}
+									})).use('select-data');
+									</script>
+								</textarea></p>
+							</div>
+						  </div>
+						</div>
+						<script>
+						//tab切换的逻辑
+						YUI(addModule({
+							'right-tab':{
+								path:'project/tab-check.js',
+								root:'app/dp/test/',
+								combine:true,
+								requires:['slide','tab-skin']
+							},
+							'tab-skin':{
+								path:'project/tab.css',
+								root:'app/dp/test/',
+								combine:true,
+								type:'css'
+							}
+						})).use('right-tab'/*加载文件*/).use('tab-check-logic'/*执行文件中的模块逻辑*/);
+						</script>
+
+
+					<!--页面右侧tab切换}}-->
+
+                    </div>
+                </div>
+                <div class="advertisement">
+                    <div class="yui3-g">
+                        <div class="yui3-u align-stub"></div>
+                        <p class="yui3-u-1-2">Nulla venenatis ante in enim ornare dapibus. Integer placerat ligula diam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="more">
+        <div class="yui3-g">
+            <ul class="yui3-u-1-4">
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">dolor</a></li>
+            </ul>
+
+            <ul class="yui3-u-1-4">
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">dolor</a></li>
+            </ul>
+
+            <ul class="yui3-u-1-4">
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="ft">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed arcu arcu, volutpat vel volutpat vel, varius ac odio.</p>
+    </div>
+</body>
+</html>
+
+<!-- SpaceID=0 robot -->
+
+<!-- VER-3.0.178857 -->
+<!-- p5.ydn.sp1.yahoo.com uncompressed Thu Feb 17 00:56:03 PST 2011 -->

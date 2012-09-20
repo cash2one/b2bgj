@@ -1,78 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="UTF-8">
-    <title>{{ data['title'] }}</title>
-    <script src="/static/js/livereload.js"></script>
-    <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
-    {% module Template(data['section']+'/partial/external-css.html') %}
-    <link href="{{ static_url('css/b2b-modules.css') }}" rel="stylesheet" />
-    <link href="{{ static_url('css/flights_logo.css') }}" rel="stylesheet" />
-    <script type="text/javascript">
-        YUI_config = {
-            filter:       "raw",
-            debug:true
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8">
+  <title>{{ data['title'] }}</title>
+  <script src="/static/js/livereload.js"></script>
+  <link href="{{ static_url('css/normalize.css') }}" rel="stylesheet" />
+  {% module Template(data['section']+'/partial/external-css.html') %}
+  <link href="{{ static_url('css/b2b-modules.css') }}" rel="stylesheet" />
+  <link href="{{ static_url('css/flights_logo.css') }}" rel="stylesheet" />
+  <script type="text/javascript">
+    YUI_config = {
+      combo:false,
+      base:'/static/js/yui3/build/',
+      filter:"raw",
+      /* debug:true, */
+      allowRollup: false,
+      groups: {
+        gallery: {
+          base:      '/static/js/yui3/gallery/',
+          comboBase: '/combo/lib/?',
+          patterns: { 'gallery-': {} },
+        },
+        taobao_wd:{
+          base: '/static/js/yui3/taobao_wd/',
+          modules:{
+            'box-skin-default':{//默认皮肤
+              path:'box/skin/default.css',
+              type:'css'
+            },
+            'box-skin-sea':{//另外一套皮肤
+              path:'box/skin/sea.css',
+              type:'css'
+            },
+            'box':{
+              path: 'box/box.js',
+              requires:['box-skin-sea','node','overlay','dd-plugin','resize']
+            },
+            //////////////////////////
+            'calendar-skin-default':{//默认皮肤
+              path:'calendar/skin/default.css',
+              type:'css'
+            },
+            'calendar':{
+              path:'calendar/calendar.js',
+              requires:['calendar-skin-default','node']
+            },
+            ///////////////////////////////
+            'checkall':{
+              path:'checkall/checkall.js',
+              requires:['node']
+            },
+            ///////////////////////////////
+            'slide':{
+              path:'slide/slide.js',
+              requires:['node','anim']
+            }
+          }
         }
-    </script>
-    <!-- <script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script> -->
-    <script type="text/javascript" src="{{ static_url('js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ static_url('js/yui.min.js') }}"></script>
-    <script type="text/javascript" src="{{ static_url('js/b2b_modules_debug.js') }}"></script>
-    <script type="text/javascript" src="{{ static_url('js/b2b_common.js') }}"></script>
-    {% module Template(data['section']+'/partial/external-js.html') %}
+
+      }
+    }
+  </script>
+  <script type="text/javascript" src="{{ static_url('js/yui.min.js') }}"></script>
+  <!-- <script src="http://yui.yahooapis.com/3.7.1/build/yui/yui-min.js"></script> -->
+  <script type="text/javascript" src="{{ static_url('js/jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ static_url('js/b2b_modules_debug.js') }}"></script>
+  <script type="text/javascript" src="{{ static_url('js/b2b_common.js') }}"></script>
+  {% module Template(data['section']+'/partial/external-js.html') %}
 </head>
 <body>
 <div class="head clearfix vhidden">
-    <h1 class="logo">
-        <a href="#"><span>天地行B2B交易平台</span></a>
-    </h1>
-    <div class="nav-top">
-        <div class="menu-quick">
-            欢迎您！Admin
-            [<a href="#">{{ data['usergroup'] }}</a>] | 
-            [<a href="#">退出</a>] | 
-            <a href="#">站点首页</a> |
-            <a href="#">个人设置</a> |
-            <a href="#">帮助中心</a>
-        </div>
-        <div class="menu-main clearfix">
-            <ul>
-                <li>
-                <a href="首页.html">国内机票</a>
-                </li>
-                <li class="current">
-                <a href="首页.html">国际机票</a>
-                </li>
-                <li>
-                <a href="首页.html">酒  店</a>
-                </li>
-                <li>
-                <a href="首页.html">保  险</a>
-                </li>
-                <li>
-                <a href="首页.html">政策管理</a>
-                </li>
-                <li>
-                <a href="首页.html">财务管理</a>
-                </li>
-                <li>
-                <a href="首页.html">统计报表</a>
-                </li>
-                <li>
-                <a href="首页.html">系统管理</a>
-                </li>
-            </ul>
-        </div>
+  <h1 class="logo">
+    <a href="#"><span>天地行B2B交易平台</span></a>
+  </h1>
+  <div class="nav-top">
+    <div class="menu-quick">
+      欢迎您！Admin
+      [<a href="#">{{ data['usergroup'] }}</a>] | 
+      [<a href="#">退出</a>] | 
+      <a href="#">站点首页</a> |
+      <a href="#">个人设置</a> |
+      <a href="#">帮助中心</a>
     </div>
-    <div class="clearfix skins">
-        <b data-color="default" class="change-style"></b>
-        <b data-color="lightblue" class="change-style" data-filepath="{{static_url('css/skin-lightblue.css')}}"></b>
-        <b data-color="green" class="change-style" data-filepath="{{static_url('css/skin-green.css')}}"></b>
-        <b data-color="lightgreen" class="change-style" data-filepath="{{static_url('css/skin-lightgreen.css')}}"></b>
+    <div class="menu-main clearfix">
+      <ul>
+        <li>
+        <a href="首页.html">国内机票</a>
+        </li>
+        <li class="current">
+        <a href="首页.html">国际机票</a>
+        </li>
+        <li>
+        <a href="首页.html">酒  店</a>
+        </li>
+        <li>
+        <a href="首页.html">保  险</a>
+        </li>
+        <li>
+        <a href="首页.html">政策管理</a>
+        </li>
+        <li>
+        <a href="首页.html">财务管理</a>
+        </li>
+        <li>
+        <a href="首页.html">统计报表</a>
+        </li>
+        <li>
+        <a href="首页.html">系统管理</a>
+        </li>
+      </ul>
     </div>
-    <div class="cart">
-        <i class="icon10">&nbsp;</i>
-        <a href="#">购物车</a>
-    </div>
+  </div>
+  <div class="clearfix skins">
+    <b data-color="default" class="change-style"></b>
+    <b data-color="lightblue" class="change-style" data-filepath="{{static_url('css/skin-lightblue.css')}}"></b>
+    <b data-color="green" class="change-style" data-filepath="{{static_url('css/skin-green.css')}}"></b>
+    <b data-color="lightgreen" class="change-style" data-filepath="{{static_url('css/skin-lightgreen.css')}}"></b>
+  </div>
+  <div class="cart">
+    <i class="icon10">&nbsp;</i>
+    <a href="#">购物车</a>
+  </div>
 </div>

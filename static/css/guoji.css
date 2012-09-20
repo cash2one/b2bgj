@@ -1081,7 +1081,7 @@ fieldset {
 .add_city_preview .title {
   color: #669933; }
 
-.add_city_tabcontent, .app {
+.add_city_tabcontent {
   border: 1px solid #d9e4ea;
   background-color: #fff;
   padding: 10px; }
