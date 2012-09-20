@@ -1,263 +1,401 @@
 {% include '../partial/header.html' %}
 <div class="body clearfix">
-    {% include 'partial/sidebar.html' %}
-    {% include 'partial/breadcrumb.html' %}
-    <div class="content area">
-        <div class="mo-zctj">
-            <div class="block">
-                <h3 class="gray-title">政策添加</h3>
-                <div class="block-i block-i1">
-                   <table cellspacing="0" class="table1">
-                       <tr>
-                           <th>政策类型</th>
-                           <td>
-                               <label>
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                单程
-                               </label>
-                               <label>
-                                    <input type="checkbox" class="checkbox" value="" name="" />
-                                    往返
-                               </label>
-                           </td>
-                       </tr>
-                       <tr>
-                           <th>
-                                政策有效期 
-                           </th>
-                           <td>
-                                    <input type="text" class="text datepicker" value="" name="" />
-                                    -
-                                    <input type="text" class="text datepicker" value="" name="" />
-                           </td>
-                       </tr>
-                       <tr>
-                           <th>
-                               开票有效期
-                           </th>
-                           <td>
-                                    <input type="text" class="text datepicker" value="" name="" />
-                                    -
-                                    <input type="text" class="text datepicker" value="" name="" />
-                           </td>
-                       </tr>
-                       <tr>
-                            <th>政策返点类型</th>
-                            <td>
-                                <select name="">
-                                    <option value=""></option>
-                                </select>
-                            </td>
-                       </tr>
-                       <tr>
-                            <th>平时开票时间</th>
-                            <td>
-                                <input type="text" class="text timepicker" value="" name="" />
-                                至
-                                <input type="text" class="text timepicker" value="" name="" />
-                            </td>
-                       </tr>
-                       <tr>
-                            <th>双休日开票时间</th>
-                            <td>
-                                <input type="text" class="text timepicker" value="" name="" />
-                                至
-                                <input type="text" class="text timepicker" value="" name="" />
-                            </td>
-                       </tr>
-                   </table>
-                   <p>
-                       <label>
-                            <strong>
-                                授权号1
-                            </strong>
-                            <input type="text" class="text text2" value="" name="" />
-                       </label>
-                       <label>
-                            <strong>
-                                授权号2 
-                            </strong>
-                            <input type="text" class="text text2" value="" name="" />
-                       </label>
-                   </p>
-                </div>
-                <div class="block-i block-i2">
-                    <table cellspacing="0" class="table2">
-                        <tr>
-                            <th>
-                            <b class="red">*</b>
-                            航空公司
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                            </td>
-                            <th>
-                            <b class="red">*</b>
-                            舱位
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                            </td>
+  {% include 'partial/sidebar.html' %}
+  {% include 'partial/breadcrumb.html' %}
+  <div class="content area">
+    <div class="mo-zctj">
+      <div class="block">
+        <h3 class="gray-title">政策添加</h3>
+        <div class="block-i block-i1">
+          <table cellspacing="0" class="table1">
+            <tr>
+              <th>政策类型</th>
+              <td>
+                <label>
+                  <input type="checkbox" class="checkbox" value="" name="" />
+                  单程
+                </label>
+                <label>
+                  <input type="checkbox" class="checkbox" value="" name="" />
+                  往返
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                政策有效期 
+              </th>
+              <td>
+                <input type="text" class="text datepicker" value="" name="" />
+                -
+                <input type="text" class="text datepicker" value="" name="" />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                开票有效期
+              </th>
+              <td>
+                <input type="text" class="text datepicker" value="" name="" />
+                -
+                <input type="text" class="text datepicker" value="" name="" />
+              </td>
+            </tr>
+            <tr>
+              <th>政策返点类型</th>
+              <td>
+                <select name="">
+                  <option value=""></option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>平时开票时间</th>
+              <td>
+                <input type="text" class="text timepicker" value="" name="" />
+                至
+                <input type="text" class="text timepicker" value="" name="" />
+              </td>
+            </tr>
+            <tr>
+              <th>双休日开票时间</th>
+              <td>
+                <input type="text" class="text timepicker" value="" name="" />
+                至
+                <input type="text" class="text timepicker" value="" name="" />
+              </td>
+            </tr>
+          </table>
+          <p>
+          <label>
+            <strong>
+              授权号1
+            </strong>
+            <input type="text" class="text text2" value="" name="" />
+          </label>
+          <label>
+            <strong>
+              授权号2 
+            </strong>
+            <input type="text" class="text text2" value="" name="" />
+          </label>
+          </p>
+        </div>
+        <div class="block-i block-i2">
+          <fieldset id="bind_city" name="bind_city">
+          <div class="add_city_header">
+            <b class="red">*</b>
+            航空公司
+            <input type="text" class="text" value="" name="" />
+          </div>
+          <div class="add_city_container">
 
-                            <th>
-                            <b class="red">*</b>
-                            始发城市
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                            </td>
-                            <th>
-                            <b class="red">*</b>
-                            目的城市
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                            </td>
-                        </tr>
-                        <tr>
-                        
-                            <th>
-                            <b class="red">*</b>
-                            基本代理费
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                                %
-                            </td>
-                            <th>
-                            <b class="red">*</b>
-                            奖励扣率
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                                %
-                            </td>
-                            <th>
-                            奖励金额
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                                元
-                            </td>
-                            <th>
-                                开票费
-                            </th>
-                            <td>
-                                <input type="text" class="text" value="" name="" />
-                                元
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>去程航班限制</th>
-                            <td colspan=2>
-                                <input type="text" class="text text2" value="" name="" />
-                            </td>
-                            <th>回程航班限制</th>
-                            <td colspan=2>
-                                <input type="text" class="text text2" value="" name="" />
-                            </td>
-                            <td colspan=2>
-                                <b class="red">
-                                    *多个航班以/分割 如MU81/MD11 
-                                </b>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="block-i block-i3">
-                    <table cellspacing="0" class="table3">
-                        <tr>
-                            <th>类别：</th>
-                            <td>
-                               <input type="radio" class="radio" value="" name="" />
-                               BSP
-                               <input type="radio" class="radio" value="" name="" />
-                               B2B
-                               <input type="radio" class="radio" value="" name="" />
-                               境外电子
-                            </td>
-                            <th>儿童票：</th>
-                            <td>
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                返点与成人一致
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>作废：</th>
-                            <td>
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                不允许作废
-                            </td>
-                            <th>婴儿</th>
-                            <td>
-                                <input type="radio" class="radio" value="" name="" />
-                                可开
-                                <input type="radio" class="radio" value="" name="" />
-                                不可开
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                PNR: 
-                            </th>
-                            <td colspan=3>
-                                <input type="radio" class="radio" value="" name="" />
-                                换编码出票
-                                <input type="radio" class="radio" value="" name="" />
-                                大编出票（无需换编）
-                                <input type="radio" class="radio" value="" name="" />
-                                大编出票（需换编）
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>返点不适用：</th>
-                            <td colspan=3>
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                婴儿
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                儿童
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                代码共享
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                整团
-                                <input type="checkbox" class="checkbox" value="" name="" />
-                                SOTO
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>政策来源</th>
-                            <td colspan=3>
-                               <textarea name=""></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>内部备注</th>
-                            <td colspan=3>
-                               <textarea name=""></textarea>
-                            <p class="gray">此备注的内容运营商内部可查看</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>外部备注</th>
-                            <td colspan=3>
-                               <textarea name=""></textarea>
-                               <p class="gray">
-                                    此备注的内容将在订单中显示，用于提醒采购商需注意的事项 
-                               </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="center">
-                        <input type="button" class="button button2" value="发布政策" name="" />
-                        <input type="button" class="button button2" value="发布并继续" name="" />
-                        <input type="button" class="button button2" value="重置" name="" />
-                    </div>
+            <div class="add_city_block">
+              <div class="add_city_tab">
+                <label>始发城市</label>
+                <ul>
+                  <li>A-F</li>
+                  <li>K-N</li>
+                </ul>
+              </div>
+              <div class="add_city_tabcontent select_group">
+                <ul>
+                  <li>
+                  <label>
+                    <input type="checkbox" class="checkbox" value="PVG" name="PVG" />
+                    PVG-上海浦东
+                  </label>
+                  <label>
+                    <input type="checkbox" class="checkbox" value="PAG" name="PAG" />
+                    PAG-青岛
+                  </label>
+                  </li>
+                </ul>
+                <p>
+                <input type="button" class="button select_button" value="全选" name="" />
+                <input type="button" class="button unselect_button" value="反选" name="" />
+                <input type="button" class="button" value="添加城市" name="" />
+                </p>
+              </div>
+                <div class="add_city_preview">
+                  <span class="title">已选城市</span>
+                  <ul>
+                    <li>PVG-上海浦东</li>
+                  </ul>
                 </div>
             </div>
-        
+
+
+            <div class="add_city_xblock select_group">
+              <span class="title">舱位选择</span>
+              <p>
+              <label>
+                <input type="checkbox" class="checkbox" value="" name="" />
+                A
+              </label>
+
+              <label>
+                <input type="checkbox" class="checkbox" value="" name="" />
+                B 
+              </label>
+              </p>
+
+              <p>
+              <input type="button" class="button select_button" value="全选" name="" />
+              <input type="button" class="button unselect_button" value="反选" name="" />
+              <input type="button" class="button" value="添加城市" name="" />
+              </p>
+            </div>
+
+
+            <div class="add_city_block">
+              <div class="add_city_tab">
+                <label>目的城市</label>
+                <ul>
+                  <li>A-F</li>
+                  <li>K-N</li>
+                </ul>
+              </div>
+              <div class="add_city_tabcontent select_group">
+                <ul>
+                  <li>
+                  <label>
+                    <input type="checkbox" class="checkbox" value="" name="" />
+                    2PVG-上海浦东
+                  </label>
+                  <label>
+                    <input type="checkbox" class="checkbox" value="" name="" />
+                    2PAG-青岛
+                  </label>
+                  </li>
+                </ul>
+                <p>
+                <input type="button" class="button select_button" value="全选" name="" />
+                <input type="button" class="button unselect_button" value="反选" name="" />
+                <input type="button" class="button" value="添加城市" name="" />
+                </p>
+              </div>
+                <div class="add_city_preview">
+                  <span class="title">已选城市</span>
+                  <ul>
+                    <li>PVG-上海浦东</li>
+                  </ul>
+                </div>   
+            </div>
+          </div>
+          </fieldset>
+
+          <table cellspacing="0" class="table2">
+            <tr>
+              <th>
+                <b class="red">*</b>
+                航空公司
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+              </td>
+              <th>
+                <b class="red">*</b>
+                舱位
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+              </td>
+
+              <th>
+                <b class="red">*</b>
+                始发城市
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+              </td>
+              <th>
+                <b class="red">*</b>
+                目的城市
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+              </td>
+            </tr>
+            <tr>
+
+              <th>
+                <b class="red">*</b>
+                基本代理费
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+                %
+              </td>
+              <th>
+                <b class="red">*</b>
+                奖励扣率
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+                %
+              </td>
+              <th>
+                奖励金额
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+                元
+              </td>
+              <th>
+                开票费
+              </th>
+              <td>
+                <input type="text" class="text" value="" name="" />
+                元
+              </td>
+            </tr>
+            <tr>
+              <th>去程航班限制</th>
+              <td colspan=2>
+                <input type="text" class="text text2" value="" name="" />
+              </td>
+              <th>回程航班限制</th>
+              <td colspan=2>
+                <input type="text" class="text text2" value="" name="" />
+              </td>
+              <td colspan=2>
+                <b class="red">
+                  *多个航班以/分割 如MU81/MD11 
+                </b>
+              </td>
+            </tr>
+          </table>
         </div>
+        <div class="block-i block-i3">
+          <table cellspacing="0" class="table3">
+            <tr>
+              <th>类别：</th>
+              <td>
+                <input type="radio" class="radio" value="" name="" />
+                BSP
+                <input type="radio" class="radio" value="" name="" />
+                B2B
+                <input type="radio" class="radio" value="" name="" />
+                境外电子
+              </td>
+              <th>儿童票：</th>
+              <td>
+                <input type="checkbox" class="checkbox" value="" name="" />
+                返点与成人一致
+              </td>
+            </tr>
+            <tr>
+              <th>作废：</th>
+              <td>
+                <input type="checkbox" class="checkbox" value="" name="" />
+                不允许作废
+              </td>
+              <th>婴儿</th>
+              <td>
+                <input type="radio" class="radio" value="" name="" />
+                可开
+                <input type="radio" class="radio" value="" name="" />
+                不可开
+              </td>
+            </tr>
+            <tr>
+              <th>
+                PNR: 
+              </th>
+              <td colspan=3>
+                <input type="radio" class="radio" value="" name="" />
+                换编码出票
+                <input type="radio" class="radio" value="" name="" />
+                大编出票（无需换编）
+                <input type="radio" class="radio" value="" name="" />
+                大编出票（需换编）
+              </td>
+            </tr>
+            <tr>
+              <th>返点不适用：</th>
+              <td colspan=3>
+                <input type="checkbox" class="checkbox" value="" name="" />
+                婴儿
+                <input type="checkbox" class="checkbox" value="" name="" />
+                儿童
+                <input type="checkbox" class="checkbox" value="" name="" />
+                代码共享
+                <input type="checkbox" class="checkbox" value="" name="" />
+                整团
+                <input type="checkbox" class="checkbox" value="" name="" />
+                SOTO
+              </td>
+            </tr>
+            <tr>
+              <th>政策来源</th>
+              <td colspan=3>
+                <textarea name=""></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th>内部备注</th>
+              <td colspan=3>
+                <textarea name=""></textarea>
+                <p class="gray">此备注的内容运营商内部可查看</p>
+              </td>
+            </tr>
+            <tr>
+              <th>外部备注</th>
+              <td colspan=3>
+                <textarea name=""></textarea>
+                <p class="gray">
+                此备注的内容将在订单中显示，用于提醒采购商需注意的事项 
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="center">
+            <input type="button" class="button button2" value="发布政策" name="" />
+            <input type="button" class="button button2" value="发布并继续" name="" />
+            <input type="button" class="button button2" value="重置" name="" />
+          </div>
+        </div>
+      </div>
 
     </div>
+
+  </div>
 </div>
 
 {% include '../partial/footer.html' %}
+
+<script type="text/javascript" id="add_city_template">
+</script>
+
+
+<script type="text/template" id="quick_add_city_template">
+  <div class="lightbox lightbox-1 lightbox{%raw '{{'%}uid}}" data-lightboxid="TSXX">
+    <table cellspacing="0">
+        <tr>
+            <td>
+                <div class="lightbox-content">
+                    <i class="close" rel="close">×</i> 
+    <div class="lightbox-head">
+        <h3>快速添加城市</h3>
+    </div>
+    <div class="lightbox-body">
+        <p class="red">
+        请输入你要添加机场的三字码。多个以‘/‘分隔，如：PVG/SHA/PEK
+        </p>
+        <p>
+          <textarea style="width:300px;height:100px" name=""> </textarea>
+        </p>
+        <p>&nbsp;</p>
+        <p class="right">
+            <input type="button" class="button button1 submit" value="确定" name="" rel="close" />
+        </p>
+    </div>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+</div>
+</script>
+<!-- <p>{%raw '{{{'%}html}}}</p> -->

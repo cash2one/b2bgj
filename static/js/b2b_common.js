@@ -11,7 +11,7 @@ YUI.Env.JSONP = {
 */
 YUI({
     // defaultSkin:'sam'
-}).use('gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'gallery-formmgr', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
+}).use('calendar','gallery-checkboxgroups', 'cookie', 'gallery-storage-lite', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate','event-valuechange', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-mustache', 'trip-autocomplete', 'trip-calendar', 'trip-box', function(Y) {
     var submitedData;
     var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
@@ -360,6 +360,44 @@ YUI({
         },
         '.mo-jptj');
 
+		/*政策添加*/
+        Y.on('available', function() {
+
+			function selectall(button,target,f){
+				bodyEle.delegate('click',function(){
+					var node = this.ancestor(target).all('[type=checkbox]');
+					if(f){
+						node.set('checked',false);
+					}else{
+						node.set('checked',true);
+					}
+                    render_select();
+				},button);
+                render_select();
+			}
+
+			selectall('.select_button','.select_group');
+			selectall('.unselect_button','.select_group',true);
+
+            function render_select(){
+                var tp = Y.Node.create('<li>');
+            }
+
+            function init_calendar() {
+                new Y.TripCalendar({
+                    beginNode: '#depdate-td',
+                    endNode: '#arrdate-td',
+                    limitBeginDate: new Date(),
+                    limitDays: 28,
+                    isWeek: false,
+                    isFestival: false,
+                    titleTips: ""
+                });
+            }
+
+        },
+        '.mo-zctj');
+
         /*线下订单管理预订单*/
         Y.on('available', function(){
             Y.all('.manipulate a').on('click',function(e){
@@ -376,6 +414,8 @@ YUI({
 
         /*提交pnr订单*/
         Y.on('available', function() {
+
+			loadingbar();
             //初始化数据
             // Y.StorageLite.on('storage-lite:ready',function(){
             //     var LAST_CPQR_DATA = Y.StorageLite.getItem('CPQR_DATA');
@@ -462,7 +502,6 @@ YUI({
 
                 Y.one('.mo-tjdd .block2').on('change',function(e){
                     SingleTicketPrice = e.target.ancestor('tr').one('td:nth-last-child(1)').get('text');
-                    console.log(SingleTicketPrice);
                     swichChangeNodeValue(nodeSingleTickedPrice,SingleTicketPrice);
                     Y.one('.mo-tjdd .block3').simulate('change');
                 });
@@ -562,6 +601,8 @@ YUI({
 
         /*mo-khcx-cpcz*/
         Y.on('available',function(){
+
+			loadingbar();
             // attaches behavior to all checkboxes with CSS class "my-at-least-one-checkbox-group"
             //new Y.AtLeastOneCheckboxGroup('.my-at-least-one-checkbox-group');
 
@@ -642,10 +683,6 @@ YUI({
                     nodePrice3_t.set('value',t3);
                     nodePrice4_t.set('value',t4);
                     nodePrice5_t.set('value',t5)
-                }
-
-                function valid(){
-
                 }
 
             })();
@@ -772,7 +809,7 @@ YUI({
                         success: function(i,res) {
                             var arr = res.responseText.split(',');
                             if (arr[0] == '0') {
-                                location.href = 'FlightOrderSubmit.aspx?ORDER_NO=' + arr[1];
+                                location.href = '../FlightOrderSubmit.aspx?ORDER_NO=' + arr[1];
                             }
 
                             if (arr[0] == '1') {
@@ -814,10 +851,6 @@ YUI({
                     nodePrice3.set('value',Price1-Price2);
                 }
 
-                function valid(){
-
-                }
-
             })();
 
             function swichChangeNodeValue(node,value){
@@ -831,8 +864,8 @@ YUI({
 
         },'.mo-khcx-ddxq-new');
 
-        /*航班查询页面*/
-        Y.on('available', function() {
+
+		function loadingbar(){
             /* 统一ajax遮罩*/
             var loading_tpl = '<div class="lightbox loading" style="display:none"><table cellspacing="0">\
             <tbody><tr><td>\
@@ -865,18 +898,26 @@ YUI({
                 spin_wrap.hide();
             });
 
-            /*表单验证*/
-            var form = new Y.FormManager('aspnetForm', {
-                status_node: '#form-status'
-            });
+		}
 
-            Y.all('input').get('parentNode').addClass('formmgr-row')
-            Y.all('input').insert('<span class="formmgr-message-text"/>', 'after');
+        /*航班查询页面*/
+        Y.on('available', function() {
 
-            form.prepareForm();
-
+			loadingbar();
             form_hbcx();
             init_calendar();
+
+            function init_calendar() {
+                new Y.TripCalendar({
+                    beginNode: '#depdate-td',
+                    endNode: '#arrdate-td',
+                    limitBeginDate: new Date(),
+                    limitDays: 28,
+                    isWeek: false,
+                    isFestival: false,
+                    titleTips: ""
+                });
+            }
 
             function form_hbcx() {
                 /*城市搜索建议*/
@@ -895,7 +936,11 @@ YUI({
                     on: {
                         select: function(e) {
                             var arr = e.result.display.split('|');
-                            var codeNode = this._inputNode.next('.airlines_hidden');
+							var inputNode = this._inputNode;
+                            var codeNode = inputNode.next('.airlines_hidden');
+							setTimeout(function(){
+								inputNode.blur();
+							},50);
                             if (arr[1]) {
                                 e.result.text = arr[1];
                                 codeNode.set('value', arr[2]);
@@ -929,12 +974,6 @@ YUI({
 
                 /* 提交航班查询表单 */
                 // todo
-                Y.all('.yiv-required').each(function(i) {
-                    var id = i.get('id');
-                    form.setErrorMessages(id, {
-                        required: '&nbsp;<b class="red">×</b>'
-                    });
-                });
 
                 Y.one(".J_Hbcx_Search").on('click', function(e) {
                     e.preventDefault();
@@ -969,18 +1008,6 @@ YUI({
                     }
                 });
                 /* 提交航班查询表单 end */
-            }
-
-            function init_calendar() {
-                new Y.TripCalendar({
-                    beginNode: '#depdate-td',
-                    endNode: '#arrdate-td',
-                    limitBeginDate: new Date(),
-                    limitDays: 28,
-                    isWeek: false,
-                    isFestival: false,
-                    titleTips: ""
-                });
             }
 
             function more_hbcx() {
@@ -1025,9 +1052,8 @@ YUI({
                 var depCity = new Y.TripAutoComplete({
                     inputNode: '.depcity',
                     codeInputNode: '.depcity_hidden',
-                    source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=2&count=20&callback={callback}&q=',
                     // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-                    // source: 'ajax/citysearch.js?&callback={callback}&q=',
+                    source: '/js/ajax/citysearch.js?&callback={callback}&q=',
                     hotSource: '/js/ajax/hotcity.js'
                 });
 
@@ -1035,7 +1061,7 @@ YUI({
                     inputNode: '.arrcity',
                     codeInputNode: '.arrcity_hidden',
                     // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-                    source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=4&count=20&callback={callback}&q=',
+                    source: '/js/ajax/citysearch.js?&callback={callback}&q=',
                     hotSource: '/js/ajax/hotcity_international.js'
                 });
             }

@@ -658,3 +658,58 @@
         width:50%; 
     }
 }
+
+.add_city_container{
+    background-color:$c51;    
+    border:1px solid $c13;
+    padding:10px;
+    margin:10px;
+    line-height:24px;
+    .title{
+        color:$c61; 
+    }
+    .button{
+        background-color:$c23; 
+        color:#fff;
+        padding:2px 5px;
+    }
+}
+
+.add_city_preview{
+    .title{
+        color:$c31; 
+    } 
+}
+
+.add_city_tabcontent,.app{
+    border:1px solid $c41;
+    background-color:#fff;
+    padding:10px;
+}
+
+.add_city_tab{
+    margin-bottom:5px;
+    label{
+        font-size:14px; 
+        margin-right:20px;
+        font-weight:bold;
+    }
+    overflow:hidden;
+    zoom:1;
+    label,ul,li{
+        float:left; 
+    }
+    li{
+        cursor:pointer;
+        background-color:$c22; 
+        color:#fff;
+        margin:0 5px;
+        padding:0 5px;
+    }
+}
+.add_city_block,.add_city_xblock{
+    padding:3px;
+}
+.add_city_xblock{
+    border-bottom:1px solid $c13;
+}

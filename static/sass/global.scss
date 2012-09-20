@@ -116,6 +116,8 @@ $i:12;
     height:9px;
     margin-right:4px;
     float:left;
+    cursor:pointer;
+    _display:inline;
 }
 
 .head{
@@ -163,6 +165,7 @@ $i:12;
 
 .menu-main{
     height:36px;
+    _margin-bottom:-5px;
     ul{
         padding:0;
         list-style:none;
@@ -229,7 +232,6 @@ a{
 .content{
     margin-left:175px;
     padding:10px;
-    overflow:hidden;
 }
 
 .menu-sidebar{
@@ -248,8 +250,10 @@ a{
         position:relative;
         .arrow1{
             right:0;
+            _right:12px;
             position:absolute;
             top:6px;
+            _top:3px;
         }
     }
     dd{
@@ -309,6 +313,10 @@ a{
         padding-left:20px;
         margin:0; 
     }
+}
+
+html,body{
+    _height:100%;
 }
 
 .lightbox{
@@ -634,8 +642,11 @@ p{
         background-color:$c43;
         line-height:40px;
         .btn{
+            cursor:pointer;
             float:right; 
             height:20px;
+            *margin-top:-40px;
+            _margin-top:-35px;
         }
     }
     .loaded .info{
@@ -683,6 +694,8 @@ tr.even{
 }
 
 .block{
+    overflow:hidden;
+    zoom:1;
     border:1px solid $c44; 
 }
 
@@ -749,12 +762,10 @@ fieldset{
     // visibility:hidden;
 }
 
-.vl-error-required{
-    border-color:$c62 !important;
-}
 .loading{
     i{
-        padding:10px; 
+        *zoom:1;
+        padding:0 10px; 
         background:url(#{$skin_folder}/loading.gif) no-repeat 50% 50%;
     }
     span{
