@@ -10,7 +10,7 @@ YUI.Env.JSONP = {
 * @data: 2012/04/13
 */
 
-YUI().use('get','slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-array','dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete','trip-autocomplete', 'autocomplete-filters', 'imageloader', 'trip-calendar', 'trip-box','gallery-mustache', 'gallery-storage-lite','gallery-checkboxgroups',  function(Y) {
+YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'dataschema-array','dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete','trip-autocomplete', 'autocomplete-filters', 'imageloader', 'trip-calendar', 'trip-box','gallery-mustache', 'gallery-storage-lite','gallery-checkboxgroups',  function(Y) {
     var submitedData;
     var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
@@ -362,13 +362,11 @@ YUI().use('get','slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema
 
         /*政策添加*/
         Y.on('available', function() {
-
             loadingbar();
 
             var tpl = Y.one('#add_city_template').getContent();
             var airline_container = Y.one('.add_city_container');
             var airline_temp="";
-
 
             function airline_change(){
 
@@ -380,7 +378,7 @@ YUI().use('get','slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema
                         nodelist:that.all('.checkbox'),
                         inverse:that.one('.unselect_button')
                     }).on('check',function(o){
-                        var pp = that.ancestor().all(':checked').get('name');
+                        var pp = that.ancestor().all(':checked').get('value');
                         container.empty();
                         Y.Array.each(pp,function(i){
                             if(i!=''){
@@ -408,16 +406,6 @@ YUI().use('get','slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema
                     Y.one('.agroup_arrcity').set('value',arrcity.join('/'));
 
                     airline_container.empty();
-                });
-
-                new Y.Slide('add_startcity_group',{
-                    autoSlide:false,
-                    eventype:'click'
-                });
-
-                new Y.Slide('add_depcity_group',{
-                    autoSlide:false,
-                    eventype:'click'
                 });
 
             }
@@ -461,19 +449,29 @@ YUI().use('get','slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema
                             success:function(i,res){
                                 var data = Y.JSON.parse(res.responseText);
                                 //全局变量 domestic_city;
-                                if(typeof G_domestic_city!='undefined'){
-                                    G_domestic_city = Y.DataSchema.Array.apply({
-                                        resultFields: [ 'AirportCode', 'CityName','PY','SPY' ]
-                                    }, G_domestic_city);
-
-                                    data.domestic = G_domestic_city.results;
-
-                                    Y.log(G_domestic_city);
-                                    Y.log(data);
+                                if(typeof G_domestic_city=='undefined'){
+                                    return Y.log('没找到国内航班数据');
                                 }
-                                var lightboxTemplate = Y.mustache(tpl, data);
-                                airline_container.empty().append(lightboxTemplate);
+
+                                G_domestic_city = Y.DataSchema.Array.apply({
+                                    resultFields: [ 'AirportCode', 'CityName' ]
+                                }, G_domestic_city);
+
+                                // data.domestic = G_domestic_city.results;
+
+                                Y.log(G_domestic_city);
+
+                                airline_container.empty().append(Y.mustache(tpl, data));
                                 airline_change();
+
+                                new Y.TabView({
+                                    srcNode: '#add_depcity_group'
+                                }).render();
+
+                                new Y.TabView({
+                                    srcNode: '#add_arrcity_group'
+                                }).render();
+
                             }
                         }
 

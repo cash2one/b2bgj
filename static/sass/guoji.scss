@@ -331,7 +331,7 @@
     }
 }
 
-////////////////////
+/////////////////
 .mo-fpxxcx{
     .gray-title{
         border-bottom:1px solid $c44; 
@@ -675,6 +675,9 @@
     .title{
         color:$c61; 
     }
+    .yui3-tab-label,.yui3-tabview{
+        position:static;
+    }
 }
 
 .add_city_preview{
@@ -715,13 +718,14 @@
         float:left; 
     }
     li{
-        cursor:pointer;
-        margin:0 5px;
-        padding:0 5px;
+        margin-right:5px; 
+    }
+    a{
         color:#333;
         background-color:$c41; 
+        text-decoration:none;
     }
-    .selected{
+    .yui3-tab-selected a{
         color:#fff;
         background-color:$c22; 
     }
@@ -745,5 +749,11 @@
     float:left;
     margin-right:5px;
     border:1px solid $c11;
-    padding:0 5px;
+    margin-bottom:5px;
+    width:40px;
+    text-align:center;
+}
+.add_city_confirm{
+    text-align:right;
+    @include sf;
 }

@@ -1073,6 +1073,8 @@ fieldset {
   line-height: 24px; }
   .add_city_container .title {
     color: red; }
+  .add_city_container .yui3-tab-label, .add_city_container .yui3-tabview {
+    position: static; }
 
 .add_city_preview {
   border: 1px solid #d9e4ea;
@@ -1112,12 +1114,12 @@ fieldset {
   .add_city_tab label, .add_city_tab ul, .add_city_tab li {
     float: left; }
   .add_city_tab li {
-    cursor: pointer;
-    margin: 0 5px;
-    padding: 0 5px;
+    margin-right: 5px; }
+  .add_city_tab a {
     color: #333;
-    background-color: #d9e4ea; }
-  .add_city_tab .selected {
+    background-color: #d9e4ea;
+    text-decoration: none; }
+  .add_city_tab .yui3-tab-selected a {
     color: #fff;
     background-color: #3366cc; }
 
@@ -1140,4 +1142,13 @@ fieldset {
   float: left;
   margin-right: 5px;
   border: 1px solid #333333;
-  padding: 0 5px; }
+  margin-bottom: 5px;
+  width: 40px;
+  text-align: center; }
+
+.add_city_confirm {
+  text-align: right;
+  border: 1px solid #d9e4ea;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px; }
