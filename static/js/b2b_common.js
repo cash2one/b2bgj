@@ -10,7 +10,7 @@ YUI.Env.JSONP = {
 * @data: 2012/04/13
 */
 
-YUI().use('slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete', 'autocomplete-filters', 'imageloader', 'trip-calendar', 'trip-box','gallery-mustache', 'gallery-storage-lite','gallery-checkboxgroups',  function(Y) {
+YUI().use('get','slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-array','dataschema-text', 'node-event-simulate', 'io', 'node', 'json', 'jsonp', 'event', 'autocomplete','trip-autocomplete', 'autocomplete-filters', 'imageloader', 'trip-calendar', 'trip-box','gallery-mustache', 'gallery-storage-lite','gallery-checkboxgroups',  function(Y) {
     var submitedData;
     var bodyEle = Y.one('body');
     /*iframe高度自定义,解决跨域问题*/
@@ -362,27 +362,128 @@ YUI().use('slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-text'
 
         /*政策添加*/
         Y.on('available', function() {
-            Y.all('.select_group').each(function(){
-                var that=this;
-                var container = that.ancestor().ancestor().ancestor().one('.add_city_preview ul')
-                new Y.Checkall({
-                    node:[that.one('.select_button')],
-                    nodelist:that.all('.checkbox'),
-                    inverse:that.one('.unselect_button')
-                }).on('check',function(o){
-                    var pp = that.ancestor().all(':checked').get('name');
-                    container.empty();
-                    Y.Array.each(pp,function(i){
-                        if(i!=''){
-                            container.append('<li>'+i+'</li>');
-                        }
-                    })
+
+            loadingbar();
+
+            var tpl = Y.one('#add_city_template').getContent();
+            var airline_container = Y.one('.add_city_container');
+            var airline_temp="";
+
+
+            function airline_change(){
+
+                Y.all('.add_city_block .select_group').each(function(){
+                    var that=this;
+                    var container = that.ancestor().ancestor().ancestor().one('.add_city_preview ul')
+                    new Y.Checkall({
+                        node:[that.one('.select_button')],
+                        nodelist:that.all('.checkbox'),
+                        inverse:that.one('.unselect_button')
+                    }).on('check',function(o){
+                        var pp = that.ancestor().all(':checked').get('name');
+                        container.empty();
+                        Y.Array.each(pp,function(i){
+                            if(i!=''){
+                                container.append('<li><input class="select_city" type="hidden" value="'+i+'" />'+i+'</li>');
+                            }
+                        });
+                    });
                 });
+
+                new Y.Checkall({
+                    node:[Y.one('.add_city_xblock .select_button')],
+                    nodelist:Y.all('.add_city_xblock .checkbox'),
+                    inverse:Y.one('.add_city_xblock .unselect_button')
+                });
+
+                Y.one('.add_city_container .confirm').on('click',function(){
+
+                    var berth = Y.all('.add_city_xblock .checkbox:checked').get('value');
+                    Y.one('.agroup_berth').set('value',berth.join('/'));
+
+                    var depcity= Y.all('.add_city_block_depcity .select_city').get('value');
+                    Y.one('.agroup_depcity').set('value',depcity.join('/'));
+
+                    var arrcity= Y.all('.add_city_block_arrcity .select_city').get('value');
+                    Y.one('.agroup_arrcity').set('value',arrcity.join('/'));
+
+                    airline_container.empty();
+                });
+
+                new Y.Slide('add_startcity_group',{
+                    autoSlide:false,
+                    eventype:'click'
+                });
+
+                new Y.Slide('add_depcity_group',{
+                    autoSlide:false,
+                    eventype:'click'
+                });
+
+            }
+
+            Y.one('.agroup_airline').on('change',function(){
+                var container = this.ancestor('table');
+                container.one('.agroup_berth').set('value','');
+                container.one('.agroup_depcity').set('value','');
+                container.one('.agroup_arrcity').set('value','');
             });
 
-            new Y.Slide('add_startcity_group',{
-                autoSlide:false,
-                eventype:'click'
+
+            airline_autocomplete(function(e){
+                var arr = e.result.display.split('|');
+                var inputNode = e.target._inputNode;
+                var codeNode = Y.one('#ctl00_BodyContent_AIRLINE');
+                setTimeout(function(){
+                    inputNode.blur();
+                },50);
+
+                if (arr[1]) {
+                    e.result.text = arr[1];
+                    codeNode.set('value', arr[2]);
+
+                    //如果航空公司没变，舱位城市值清空
+                    if(airline_temp != arr[1]){
+                        airline_temp = arr[1];
+                        Y.one('.agroup_airline').simulate('change');
+                    }
+
+                    var url='/js/ajax/airlinedata/'+arr[2]+'.js';
+
+                    Y.io(url,{
+                        // data:'',
+                        on:{
+                            start:function(){
+                                Y.Get.script('/js/ajax/domestic.js', function (err) {
+                                    G_domestic_city = G_domestic_city;
+                                });
+                            },
+                            success:function(i,res){
+                                var data = Y.JSON.parse(res.responseText);
+                                //全局变量 domestic_city;
+                                if(typeof G_domestic_city!='undefined'){
+                                    G_domestic_city = Y.DataSchema.Array.apply({
+                                        resultFields: [ 'AirportCode', 'CityName','PY','SPY' ]
+                                    }, G_domestic_city);
+
+                                    data.domestic = G_domestic_city.results;
+
+                                    Y.log(G_domestic_city);
+                                    Y.log(data);
+                                }
+                                var lightboxTemplate = Y.mustache(tpl, data);
+                                airline_container.empty().append(lightboxTemplate);
+                                airline_change();
+                            }
+                        }
+
+                    });
+
+                } else {
+                    e.result.text = '';
+                    codeNode.set('value', '');
+                }
+
             });
 
         },
@@ -890,6 +991,35 @@ YUI().use('slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-text'
 
         }
 
+        /*航空公司自动补全*/
+        function airline_autocomplete(select_callback){
+            //http://webresource.c-ctrip.com/code/cquery/resource/address/flightintl/airline_gb2312.js
+            var airlines = "不限@CA|中国国际航空|CA@MU|东方航空|MU@CZ|南方航空|CZ@FM|上海航空|FM@SQ|新加坡航空|SQ@CX|国泰航空|CX@UA|美联航|UA@HX|香港航空|HX@QR|卡塔尔航空|QR@MH|马来西亚航空|MH@BA|英国航空|BA@CI|中华航空|CI@AA|美国航空|AA@AF|法国航空|AF@KA|港龙航空|KA@LH|汉莎航空|LH@EK|阿联酋航空|EK@NX|澳门航空|NX@AC|加拿大航空|AC@DL|达美航空|DL@OZ|韩亚航空|OZ@BR|长荣航空|BR@QF|澳洲航空|QF@HU|海南航空|HU@GE|复兴航空|GE@KL|荷兰航空|KL@TG|泰国航空|TG@KE|大韩航空|KE@JL|日本航空|JL@VS|维珍航空|VS@AY|芬兰航空|AY@NH|全日空|NH@HO|吉祥航空|HO@UO|香港快运航空|UO@SK|北欧航空|SK@TK|土耳其航空|TK@EY|阿提哈德航空|EY@SU|俄罗斯航空|SU@LX|瑞士航空|LX@NZ|新西兰航空|NZ@AM|墨西哥航空|AM@SA|南非航空|SA@VN|越南航空|VN@BT|汶莱皇家航空|BI@PR|菲律宾航空|PR@AI|印度航空|AI@GA|印尼鹰航|GA@KQ|肯尼亚航空|KQ@ET|埃塞俄比亚航空|ET@MF|厦门航空|MF@ZH|深圳航空|ZH@UL|斯里兰卡航空|UL@AE|华信航空|AE@9W|印度捷特航空|9W@KC|阿斯塔纳航空|KC@SC|山东航空|SC@AZ|意大利航空|AZ@3U|四川航空|3U@S7|西伯利亚航空|S7@LO|波兰航空|LO@MD|马达加斯加航空|MD@MI|胜安航空|MI@OM|蒙古航空|OM@HY|乌兹别克斯坦航空|HY@AH|阿尔及利亚航空|AH@B7|立荣航空|B7@PG|曼谷航空|PG@XF|海参崴航空|XF@GS|天津航空|GS@VV|乌克兰航空|VV@UN|洲际航空|UN@MK|毛里求斯航空|MK@SN|布鲁塞尔航空|SN@MS|埃及航空|MS@OS|奥地利航空|OS@LY|以色列航空|LY@U6|乌拉尔航空|U6@SV|沙特航空|SV@".split('@');
+
+            // var airlines = ['不限', 'Z-中国国航-CA', 'N-南方航空-CZ', 'D-东方航空-MU', 'A-奥凯航空公司-BK', 'B-北京首都航空有限公司-JD', 'C-成都航空有限公司-EU', 'D-大新华航空公司-CN', 'H-河北航空公司-NS', 'H-海南航空公司-HU', 'H-河南航空有限公司-VD', 'H-华夏航空公司-G5', 'J-吉祥航空公司-HO', 'K-昆明航空有限公司-KY', 'S-四川航空公司-3U', 'S-山东航空公司-SC', 'S-深圳航空公司-ZH', 'S-上海航空公司-FM', 'T-天津航空有限责任公司-GS', 'X-西部航空公司-PN', 'X-幸福航空有限责任公司-JR', 'X-厦门航空有限公司-MF', 'X-祥鹏航空公司-8L', 'Z-中国联合航空公司-KN'];
+            var airlineNode = Y.one('.airlines');
+            airlineNode.plug(Y.Plugin.AutoComplete, {
+                resultFilters: ['charMatch'],
+                // source:'ajax/airlines.js?callback={callback}',
+                source: airlines,
+                maxResults: 10,
+                on: {
+                    select: function(e) {
+                        if(typeof select_callback=='function'){
+                            select_callback.call(null,e);
+                        }
+                    }
+                },
+                activateFirstItem: true
+            });
+
+            airlineNode.on('focus', function(e) {
+                if (e.currentTarget.get('value') == '') {
+                    e.target.ac.sendRequest('');
+                }
+            });
+        }
+
         /*航班查询页面*/
         Y.on('available', function() {
 
@@ -909,47 +1039,28 @@ YUI().use('slide','checkall','box','cookie', 'fieldsetFormat', 'dataschema-text'
                 });
             }
 
+
             function form_hbcx() {
                 /*城市搜索建议*/
                 citySuggest();
-                /*航空公司自动补全*/
-                //http://webresource.c-ctrip.com/code/cquery/resource/address/flightintl/airline_gb2312.js
-                var airlines = "不限@CA|中国国际航空|CA@MU|东方航空|MU@CZ|南方航空|CZ@FM|上海航空|FM@SQ|新加坡航空|SQ@CX|国泰航空|CX@UA|美联航|UA@HX|香港航空|HX@QR|卡塔尔航空|QR@MH|马来西亚航空|MH@BA|英国航空|BA@CI|中华航空|CI@AA|美国航空|AA@AF|法国航空|AF@KA|港龙航空|KA@LH|汉莎航空|LH@EK|阿联酋航空|EK@NX|澳门航空|NX@AC|加拿大航空|AC@DL|达美航空|DL@OZ|韩亚航空|OZ@BR|长荣航空|BR@QF|澳洲航空|QF@HU|海南航空|HU@GE|复兴航空|GE@KL|荷兰航空|KL@TG|泰国航空|TG@KE|大韩航空|KE@JL|日本航空|JL@VS|维珍航空|VS@AY|芬兰航空|AY@NH|全日空|NH@HO|吉祥航空|HO@UO|香港快运航空|UO@SK|北欧航空|SK@TK|土耳其航空|TK@EY|阿提哈德航空|EY@SU|俄罗斯航空|SU@LX|瑞士航空|LX@NZ|新西兰航空|NZ@AM|墨西哥航空|AM@SA|南非航空|SA@VN|越南航空|VN@BT|汶莱皇家航空|BI@PR|菲律宾航空|PR@AI|印度航空|AI@GA|印尼鹰航|GA@KQ|肯尼亚航空|KQ@ET|埃塞俄比亚航空|ET@MF|厦门航空|MF@ZH|深圳航空|ZH@UL|斯里兰卡航空|UL@AE|华信航空|AE@9W|印度捷特航空|9W@KC|阿斯塔纳航空|KC@SC|山东航空|SC@AZ|意大利航空|AZ@3U|四川航空|3U@S7|西伯利亚航空|S7@LO|波兰航空|LO@MD|马达加斯加航空|MD@MI|胜安航空|MI@OM|蒙古航空|OM@HY|乌兹别克斯坦航空|HY@AH|阿尔及利亚航空|AH@B7|立荣航空|B7@PG|曼谷航空|PG@XF|海参崴航空|XF@GS|天津航空|GS@VV|乌克兰航空|VV@UN|洲际航空|UN@MK|毛里求斯航空|MK@SN|布鲁塞尔航空|SN@MS|埃及航空|MS@OS|奥地利航空|OS@LY|以色列航空|LY@U6|乌拉尔航空|U6@SV|沙特航空|SV@".split('@');
 
-                // var airlines = ['不限', 'Z-中国国航-CA', 'N-南方航空-CZ', 'D-东方航空-MU', 'A-奥凯航空公司-BK', 'B-北京首都航空有限公司-JD', 'C-成都航空有限公司-EU', 'D-大新华航空公司-CN', 'H-河北航空公司-NS', 'H-海南航空公司-HU', 'H-河南航空有限公司-VD', 'H-华夏航空公司-G5', 'J-吉祥航空公司-HO', 'K-昆明航空有限公司-KY', 'S-四川航空公司-3U', 'S-山东航空公司-SC', 'S-深圳航空公司-ZH', 'S-上海航空公司-FM', 'T-天津航空有限责任公司-GS', 'X-西部航空公司-PN', 'X-幸福航空有限责任公司-JR', 'X-厦门航空有限公司-MF', 'X-祥鹏航空公司-8L', 'Z-中国联合航空公司-KN'];
-                var airlineNode = Y.one('.airlines');
-                airlineNode.plug(Y.Plugin.AutoComplete, {
-                    resultFilters: ['charMatch'],
-                    // source:'ajax/airlines.js?callback={callback}',
-                    source: airlines,
-                    maxResults: 10,
-                    on: {
-                        select: function(e) {
-                            var arr = e.result.display.split('|');
-                            var inputNode = this._inputNode;
-                            var codeNode = inputNode.next('.airlines_hidden');
-                            setTimeout(function(){
-                                inputNode.blur();
-                            },50);
-                            if (arr[1]) {
-                                e.result.text = arr[1];
-                                codeNode.set('value', arr[2]);
-                            } else {
-                                e.result.text = '';
-                                codeNode.set('value', '');
-                            }
-                        }
-                    },
-                    activateFirstItem: true
-                });
-
-                airlineNode.on('focus', function(e) {
-                    if (e.currentTarget.get('value') == '') {
-                        e.target.ac.sendRequest('');
+                /*航空公司补全*/
+                airline_autocomplete(function(e){
+                    var arr = e.result.display.split('|');
+                    var inputNode = e.target._inputNode;
+                    var codeNode = Y.one('.airlines_hidden');
+                    setTimeout(function(){
+                        inputNode.blur();
+                    },50);
+                    if (arr[1]) {
+                        e.result.text = arr[1];
+                        codeNode.set('value', arr[2]);
+                    } else {
+                        e.result.text = '';
+                        codeNode.set('value', '');
                     }
-                });
 
-                /*航空公司自动补全 end*/
+                });
 
                 /* 切换显示返程输入框 */
                 Y.all('.radio_is_single').on('click', function(e) {

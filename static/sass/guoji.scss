@@ -659,19 +659,21 @@
     }
 }
 
+@mixin sf {
+    border:1px solid $c41;
+    background-color:#fff;
+    padding:10px;
+    margin-bottom:5px;
+}
+
 .add_city_container{
-    background-color:$c51;    
-    border:1px solid $c13;
+    background-color:$c42;    
+    border:1px solid $c44;
     padding:10px;
     margin:10px;
     line-height:24px;
     .title{
         color:$c61; 
-    }
-    .button{
-        background-color:$c23; 
-        color:#fff;
-        padding:2px 5px;
     }
 }
 
@@ -679,20 +681,33 @@
     .title{
         color:$c31; 
     } 
+    @include sf;
 }
 
 .add_city_tabcontent{
-    border:1px solid $c41;
-    background-color:#fff;
-    padding:10px;
+    ul{
+    overflow:hidden;
+    zoom:1;
+    }
+    li{
+        margin-right:5px;
+        float:left; 
+        white-space:nowrap;
+        width:140px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        zoom:1;
+    }
+    @include sf;
 }
-
 .add_city_tab{
     margin-bottom:5px;
     label{
         font-size:14px; 
         margin-right:20px;
         font-weight:bold;
+        line-height:20px;
+        display:block;
     }
     overflow:hidden;
     zoom:1;
@@ -701,15 +716,34 @@
     }
     li{
         cursor:pointer;
-        background-color:$c22; 
-        color:#fff;
         margin:0 5px;
         padding:0 5px;
+        color:#333;
+        background-color:$c41; 
+    }
+    .selected{
+        color:#fff;
+        background-color:$c22; 
     }
 }
 .add_city_block,.add_city_xblock{
-    padding:3px;
+    .button{
+        background-color:$c23; 
+        color:#fff;
+        padding:2px 5px;
+    }
 }
 .add_city_xblock{
-    border-bottom:1px solid $c13;
+    @include sf;
+}
+.add_city_preview{
+    overflow:hidden;
+    zoom:1;
+    
+}
+.add_city_preview li{
+    float:left;
+    margin-right:5px;
+    border:1px solid $c11;
+    padding:0 5px;
 }

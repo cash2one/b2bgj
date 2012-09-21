@@ -1066,25 +1066,38 @@ fieldset {
   width: 50%; }
 
 .add_city_container {
-  background-color: #fffcc5;
-  border: 1px solid #999999;
+  background-color: #eeeeee;
+  border: 1px solid #cecece;
   padding: 10px;
   margin: 10px;
   line-height: 24px; }
   .add_city_container .title {
     color: red; }
-  .add_city_container .button {
-    background-color: #38ace8;
-    color: #fff;
-    padding: 2px 5px; }
 
-.add_city_preview .title {
-  color: #669933; }
+.add_city_preview {
+  border: 1px solid #d9e4ea;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px; }
+  .add_city_preview .title {
+    color: #669933; }
 
 .add_city_tabcontent {
   border: 1px solid #d9e4ea;
   background-color: #fff;
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 5px; }
+  .add_city_tabcontent ul {
+    overflow: hidden;
+    zoom: 1; }
+  .add_city_tabcontent li {
+    margin-right: 5px;
+    float: left;
+    white-space: nowrap;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    zoom: 1; }
 
 .add_city_tab {
   margin-bottom: 5px;
@@ -1093,18 +1106,38 @@ fieldset {
   .add_city_tab label {
     font-size: 14px;
     margin-right: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 20px;
+    display: block; }
   .add_city_tab label, .add_city_tab ul, .add_city_tab li {
     float: left; }
   .add_city_tab li {
     cursor: pointer;
-    background-color: #3366cc;
-    color: #fff;
     margin: 0 5px;
-    padding: 0 5px; }
+    padding: 0 5px;
+    color: #333;
+    background-color: #d9e4ea; }
+  .add_city_tab .selected {
+    color: #fff;
+    background-color: #3366cc; }
 
-.add_city_block, .add_city_xblock {
-  padding: 3px; }
+.add_city_block .button, .add_city_xblock .button {
+  background-color: #38ace8;
+  color: #fff;
+  padding: 2px 5px; }
 
 .add_city_xblock {
-  border-bottom: 1px solid #999999; }
+  border: 1px solid #d9e4ea;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px; }
+
+.add_city_preview {
+  overflow: hidden;
+  zoom: 1; }
+
+.add_city_preview li {
+  float: left;
+  margin-right: 5px;
+  border: 1px solid #333333;
+  padding: 0 5px; }
