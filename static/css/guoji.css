@@ -1066,6 +1066,7 @@ fieldset {
   width: 50%; }
 
 .add_city_container {
+  display: none;
   background-color: #eeeeee;
   border: 1px solid #cecece;
   padding: 10px;

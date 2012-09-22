@@ -396,16 +396,19 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
                 Y.one('.add_city_container .confirm').on('click',function(){
 
-                    var berth = Y.all('.add_city_xblock .checkbox:checked').get('value');
-                    Y.one('.agroup_berth').set('value',berth.join('/'));
-
                     var depcity= Y.all('.add_city_block_depcity .select_city').get('value');
-                    Y.one('.agroup_depcity').set('value',depcity.join('/'));
-
+                    var berth = Y.all('.add_city_xblock .checkbox:checked').get('value');
                     var arrcity= Y.all('.add_city_block_arrcity .select_city').get('value');
+
+                    if(depcity.length<1) return alert('请选择始发城市');
+                    if(berth.length<1) return alert('请选择舱位');
+                    if(arrcity.length<1) return alert('请选择到达城市');
+
+                    Y.one('.agroup_depcity').set('value',depcity.join('/'));
+                    Y.one('.agroup_berth').set('value',berth.join('/'));
                     Y.one('.agroup_arrcity').set('value',arrcity.join('/'));
 
-                    airline_container.empty();
+                    airline_container.setStyle('display','none').empty();
                 });
 
             }
@@ -459,9 +462,17 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
                                 // data.domestic = G_domestic_city.results;
 
-                                Y.log(G_domestic_city);
+                                data.domestic = process_py(G_domestic_city.results);
+                                data.ListS= process_py(data.ListS);
+                                data.berth = function(){
+                                    var html='';
+                                    for(var i=65;i<=90;i++){
+                                        html+='<label> <input type="checkbox" class="checkbox" value="'+String.fromCharCode(i)+'" name="" /> '+String.fromCharCode(i)+' </label>';
+                                    }
+                                    return html;
+                                }
 
-                                airline_container.empty().append(Y.mustache(tpl, data));
+                                airline_container.setStyle('display','block').empty().append(Y.mustache(tpl, data));
                                 airline_change();
 
                                 new Y.TabView({
@@ -486,6 +497,35 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
         },
         '.mo-zctj');
+
+        function process_py(arr){
+            var obj={
+                "AF":[],
+                "GL":[],
+                "MR":[],
+                "SZ":[]
+            };
+            Y.Array.each(arr,function(i,index){
+                var first_letter = i.AirportCode.charCodeAt(0);
+                if(first_letter>=65 && first_letter<=70){
+                    obj["AF"].push(i);
+                }
+
+                if(first_letter>=71 && first_letter<=76){
+                    obj["GL"].push(i);
+                }
+
+                if(first_letter>=77 && first_letter<=82){
+                    obj["MR"].push(i);
+                }
+
+                if(first_letter>=83 && first_letter<=90){
+                    obj["SZ"].push(i);
+                }
+            });
+
+            return obj;
+        }
 
         /*线下订单管理预订单*/
         Y.on('available', function(){

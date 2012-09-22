@@ -91,397 +91,485 @@
             <div class="add_city_container"></div>
           </fieldset>
           <table cellspacing="0" class="table2">
-              <tr class="">
-                <th>
-                  <b class="red">
-                    *
-                  </b>
-                  航空公司
-                </th>
-                <td>
-                  <input name="ctl00$BodyContent$AIRLINE" type="text" class="agroup_airline" maxlength="2" id="ctl00_BodyContent_AIRLINE">
-                </td>
-                <th>
-                  <b class="red">
-                    *
-                  </b>
-                  舱位
-                </th>
-                <td>
-                  <input name="ctl00$BodyContent$BERTH" type="text" class="agroup_berth" id="ctl00_BodyContent_BERTH">
-                </td>
-                <th>
-                  <b class="red">
-                    *
-                  </b>
-                  始发城市
-                </th>
-                <td>
-                  <input name="ctl00$BodyContent$DEPARTURE_CITY" type="text" class="agroup_depcity" id="ctl00_BodyContent_DEPARTURE_CITY">
-                </td>
-                <th>
-                  <b class="red">
-                    *
-                  </b>
-                  目的城市
-                </th>
-                <td>
-                  <input name="ctl00$BodyContent$ARRIVE_CITY" type="text" class="agroup_arrcity" id="ctl00_BodyContent_ARRIVE_CITY">
-                </td>
-              </tr>
+            <tr class="">
               <th>
-                <b class="red">*</b>
-                基本代理费
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-                %
-              </td>
-              <th>
-                <b class="red">*</b>
-                奖励扣率
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-                %
-              </td>
-              <th>
-                奖励金额
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-                元
-              </td>
-              <th>
-                开票费
-              </th>
-              <td>
-                <input type="text" class="text" value="" name="" />
-                元
-              </td>
-            </tr>
-            <tr>
-              <th>去程航班限制</th>
-              <td colspan=2>
-                <input type="text" class="text text2" value="" name="" />
-              </td>
-              <th>回程航班限制</th>
-              <td colspan=2>
-                <input type="text" class="text text2" value="" name="" />
-              </td>
-              <td colspan=2>
                 <b class="red">
-                  *多个航班以/分割 如MU81/MD11 
+                  *
                 </b>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="block-i block-i3">
-          <table cellspacing="0" class="table3">
-            <tr>
-              <th>类别：</th>
-              <td>
-                <input type="radio" class="radio" value="" name="" />
-                BSP
-                <input type="radio" class="radio" value="" name="" />
-                B2B
-                <input type="radio" class="radio" value="" name="" />
-                境外电子
-              </td>
-              <th>儿童票：</th>
-              <td>
-                <input type="checkbox" class="checkbox" value="" name="" />
-                返点与成人一致
-              </td>
-            </tr>
-            <tr>
-              <th>作废：</th>
-              <td>
-                <input type="checkbox" class="checkbox" value="" name="" />
-                不允许作废
-              </td>
-              <th>婴儿</th>
-              <td>
-                <input type="radio" class="radio" value="" name="" />
-                可开
-                <input type="radio" class="radio" value="" name="" />
-                不可开
-              </td>
-            </tr>
-            <tr>
-              <th>
-                PNR: 
+                航空公司
               </th>
-              <td colspan=3>
-                <input type="radio" class="radio" value="" name="" />
-                换编码出票
-                <input type="radio" class="radio" value="" name="" />
-                大编出票（无需换编）
-                <input type="radio" class="radio" value="" name="" />
-                大编出票（需换编）
+              <td>
+                <input name="ctl00$BodyContent$AIRLINE" type="text" class="agroup_airline" maxlength="2" id="ctl00_BodyContent_AIRLINE">
+              </td>
+              <th>
+                <b class="red">
+                  *
+                </b>
+                舱位
+              </th>
+              <td>
+                <input name="ctl00$BodyContent$BERTH" type="text" class="agroup_berth" id="ctl00_BodyContent_BERTH">
+              </td>
+              <th>
+                <b class="red">
+                  *
+                </b>
+                始发城市
+              </th>
+              <td>
+                <input name="ctl00$BodyContent$DEPARTURE_CITY" type="text" class="agroup_depcity" id="ctl00_BodyContent_DEPARTURE_CITY">
+              </td>
+              <th>
+                <b class="red">
+                  *
+                </b>
+                目的城市
+              </th>
+              <td>
+                <input name="ctl00$BodyContent$ARRIVE_CITY" type="text" class="agroup_arrcity" id="ctl00_BodyContent_ARRIVE_CITY">
               </td>
             </tr>
-            <tr>
-              <th>返点不适用：</th>
-              <td colspan=3>
-                <input type="checkbox" class="checkbox" value="" name="" />
-                婴儿
-                <input type="checkbox" class="checkbox" value="" name="" />
-                儿童
-                <input type="checkbox" class="checkbox" value="" name="" />
-                代码共享
-                <input type="checkbox" class="checkbox" value="" name="" />
-                整团
-                <input type="checkbox" class="checkbox" value="" name="" />
-                SOTO
-              </td>
-            </tr>
-            <tr>
-              <th>政策来源</th>
-              <td colspan=3>
-                <textarea name=""></textarea>
-              </td>
-            </tr>
-            <tr>
-              <th>内部备注</th>
-              <td colspan=3>
-                <textarea name=""></textarea>
-                <p class="gray">此备注的内容运营商内部可查看</p>
-              </td>
-            </tr>
-            <tr>
-              <th>外部备注</th>
-              <td colspan=3>
-                <textarea name=""></textarea>
-                <p class="gray">
-                此备注的内容将在订单中显示，用于提醒采购商需注意的事项 
-                </p>
-              </td>
-            </tr>
-          </table>
-          <div class="center">
-            <input type="button" class="button button2" value="发布政策" name="" />
-            <input type="button" class="button button2" value="发布并继续" name="" />
-            <input type="button" class="button button2" value="重置" name="" />
-          </div>
+            <th>
+              <b class="red">*</b>
+              基本代理费
+            </th>
+            <td>
+              <input type="text" class="text" value="" name="" />
+              %
+            </td>
+            <th>
+              <b class="red">*</b>
+              奖励扣率
+            </th>
+            <td>
+              <input type="text" class="text" value="" name="" />
+              %
+            </td>
+            <th>
+              奖励金额
+            </th>
+            <td>
+              <input type="text" class="text" value="" name="" />
+              元
+            </td>
+            <th>
+              开票费
+            </th>
+            <td>
+              <input type="text" class="text" value="" name="" />
+              元
+            </td>
+          </tr>
+          <tr>
+            <th>去程航班限制</th>
+            <td colspan=2>
+              <input type="text" class="text text2" value="" name="" />
+            </td>
+            <th>回程航班限制</th>
+            <td colspan=2>
+              <input type="text" class="text text2" value="" name="" />
+            </td>
+            <td colspan=2>
+              <b class="red">
+                *多个航班以/分割 如MU81/MD11 
+              </b>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="block-i block-i3">
+        <table cellspacing="0" class="table3">
+          <tr>
+            <th>类别：</th>
+            <td>
+              <input type="radio" class="radio" value="" name="" />
+              BSP
+              <input type="radio" class="radio" value="" name="" />
+              B2B
+              <input type="radio" class="radio" value="" name="" />
+              境外电子
+            </td>
+            <th>儿童票：</th>
+            <td>
+              <input type="checkbox" class="checkbox" value="" name="" />
+              返点与成人一致
+            </td>
+          </tr>
+          <tr>
+            <th>作废：</th>
+            <td>
+              <input type="checkbox" class="checkbox" value="" name="" />
+              不允许作废
+            </td>
+            <th>婴儿</th>
+            <td>
+              <input type="radio" class="radio" value="" name="" />
+              可开
+              <input type="radio" class="radio" value="" name="" />
+              不可开
+            </td>
+          </tr>
+          <tr>
+            <th>
+              PNR: 
+            </th>
+            <td colspan=3>
+              <input type="radio" class="radio" value="" name="" />
+              换编码出票
+              <input type="radio" class="radio" value="" name="" />
+              大编出票（无需换编）
+              <input type="radio" class="radio" value="" name="" />
+              大编出票（需换编）
+            </td>
+          </tr>
+          <tr>
+            <th>返点不适用：</th>
+            <td colspan=3>
+              <input type="checkbox" class="checkbox" value="" name="" />
+              婴儿
+              <input type="checkbox" class="checkbox" value="" name="" />
+              儿童
+              <input type="checkbox" class="checkbox" value="" name="" />
+              代码共享
+              <input type="checkbox" class="checkbox" value="" name="" />
+              整团
+              <input type="checkbox" class="checkbox" value="" name="" />
+              SOTO
+            </td>
+          </tr>
+          <tr>
+            <th>政策来源</th>
+            <td colspan=3>
+              <textarea name=""></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>内部备注</th>
+            <td colspan=3>
+              <textarea name=""></textarea>
+              <p class="gray">此备注的内容运营商内部可查看</p>
+            </td>
+          </tr>
+          <tr>
+            <th>外部备注</th>
+            <td colspan=3>
+              <textarea name=""></textarea>
+              <p class="gray">
+              此备注的内容将在订单中显示，用于提醒采购商需注意的事项 
+              </p>
+            </td>
+          </tr>
+        </table>
+        <div class="center">
+          <input type="button" class="button button2" value="发布政策" name="" />
+          <input type="button" class="button button2" value="发布并继续" name="" />
+          <input type="button" class="button button2" value="重置" name="" />
         </div>
       </div>
-
     </div>
 
   </div>
+
+</div>
 </div>
 
 {% include '../partial/footer.html' %}
 
 <script type="text/template" id="add_city_template">
-              <div class="add_city_block add_city_block_depcity">
-                <div class="add_city_tab">
-                  <label>始发城市</label>
-                </div>
+<div class="add_city_block add_city_block_depcity">
+<div class="add_city_tab">
+  <label>始发城市</label>
+</div>
 
-                <div id="add_depcity_group">
-                  <ul class="add_city_tab">
-                    <li class="selected"><a href="#dep_AF">A-F</a></li>
-                    <li><a href="#dep_KN">K-N</a></li>
-                  </ul>
+<div id="add_depcity_group">
+  <ul class="add_city_tab">
+    <li class="selected"><a href="#dep_AF">A-F</a></li>
+    <li><a href="#dep_GL">G-L</a></li>
+    <li><a href="#dep_MR">M-R</a></li>
+    <li><a href="#dep_SZ">S-Z</a></li>
+  </ul>
 
-                    <div>
-                      <div class="add_city_tabcontent select_group" id="dep_AF">
-                        <ul>
-                         {%raw '{{'%}#domestic}}
-                          <li>
-                          <label>
-  
-                            <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
-                            {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityName}}
-                          </label>
-                          </li>
-                         {%raw '{{'%}/domestic}}
-                        </ul>
-                        <p>
-                        <label>
-                          <input type="checkbox" style="" class="select_button" value="" name="" />
-                          <input type="button" class="button" value="全选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button unselect_button" value="反选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
-                        </label>
-                        </p>
-                      </div>
-  
-                      <div class="add_city_tabcontent select_group" id="dep_KN">
-                        <ul>
-                          <li>
-                          <label>
-                            <input type="checkbox" class="checkbox" value="PVG" name="PVG" />
-                            PVG-上海浦东
-                          </label>
-                          <label>
-                            <input type="checkbox" class="checkbox" value="PAG" name="PAG" />
-                            PAG-青岛
-                          </label>
-                          </li>
-                        </ul>
-                        <p>
-                        <label>
-                          <input type="checkbox" style="" class="select_button" value="" name="" />
-                          <input type="button" class="button" value="全选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button unselect_button" value="反选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
-                        </label>
-                        </p>
-                      </div>
-                    </div>
+  <div>
+    <div class="add_city_tabcontent select_group" id="dep_AF">
+      <ul>
+        {%raw '{{'%}#domestic.AF}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityName}}
+        </label>
+        </li>
+        {%raw '{{'%}/domestic.AF}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div>
+    <div class="add_city_tabcontent select_group" id="dep_GL">
+      <ul>
+        {%raw '{{'%}#domestic.GL}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityName}}
+        </label>
+        </li>
+        {%raw '{{'%}/domestic.GL}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div>
+    <div class="add_city_tabcontent select_group" id="dep_MR">
+      <ul>
+        {%raw '{{'%}#domestic.MR}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityName}}
+        </label>
+        </li>
+        {%raw '{{'%}/domestic.MR}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div> 
+    <div class="add_city_tabcontent select_group" id="dep_GL">
+      <ul>
+        {%raw '{{'%}#domestic.SZ}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityName}}
+        </label>
+        </li>
+        {%raw '{{'%}/domestic.SZ}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div>
+  </div>
 
-                </div> 
+</div> 
 
-                <div class="add_city_preview">
-                  <span class="title">已选城市</span>
-                  <ul>
-                  </ul>
-                </div>
+<div class="add_city_preview">
+  <span class="title">已选城市</span>
+  <ul>
+  </ul>
+</div>
               </div>
 
 
               <div class="add_city_xblock select_group">
-                <span class="title">舱位选择</span>
-                <p>
-                <label>
-                  <input type="checkbox" class="checkbox" value="A" name="" />
-                  A
-                </label>
+<span class="title">舱位选择</span>
+<p>
+{%  raw '{{{' %} berth   }}}
+</p>
 
-                <label>
-                  <input type="checkbox" class="checkbox" value="B" name="" />
-                  B 
-                </label>
-                </p>
-
-                <p>
-                <label>
-                  <input type="checkbox" style="" class="select_button" value="" name="" />
-                  <input type="button" class="button" value="全选" name="" />
-                </label>
-                <label>
-                  <input type="button" class="button unselect_button" value="反选" name="" />
-                </label>
-                </p>
+<p>
+<label>
+  <input type="checkbox" style="" class="select_button" value="" name="" />
+  <input type="button" class="button" value="全选" name="" />
+</label>
+<label>
+  <input type="button" class="button unselect_button" value="反选" name="" />
+</label>
+</p>
               </div>
 
 
-              <div class="add_city_block add_city_block_arrcity">
-                <div class="add_city_tab">
-                  <label>目的城市</label>
-                </div>
+<div class="add_city_block add_city_block_arrcity">
+<div class="add_city_tab">
+  <label>始发城市</label>
+</div>
 
-                <div id="add_arrcity_group">
-                  <ul class="add_city_tab">
-                    <li class="selected"><a href="#arr_AF">A-F</a></li>
-                    <li><a href="#arr_KN">K-N</a></li>
-                  </ul>
+<div id="add_arrcity_group">
+  <ul class="add_city_tab">
+    <li class="selected"><a href="#arr_AF">A-F</a></li>
+    <li><a href="#arr_GL">G-L</a></li>
+    <li><a href="#arr_MR">M-R</a></li>
+    <li><a href="#arr_SZ">S-Z</a></li>
+  </ul>
 
-                    <div>
-                      <div class="add_city_tabcontent select_group" id="arr_AF">
-                        <ul>
-                         {%raw '{{'%}#ListS}}
-                          <li>
-                          <label>
-                            <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
-                            {%raw '{{'%} AirportCode }}-{%raw '{{'%} CityNameCN }}
-                          </label>
-                          </li>
-                         {%raw '{{'%}/ListS}}
-                        </ul>
-                        <p>
-                        <label>
-                          <input type="checkbox" style="" class="select_button" value="" name="" />
-                          <input type="button" class="button" value="全选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button unselect_button" value="反选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
-                        </label>
-                        </p>
-                      </div>
-  
-                      <div id="arr_KN" class="add_city_tabcontent select_group">
-                        <ul>
-                         {%raw '{{'%}#ListS}}
-                          <li>
-                          <label>
-                            <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
-                            {%raw '{{'%} AirportCode }}-{%raw '{{'%} CityNameCN }}
-                          </label>
-                          </li>
-                         {%raw '{{'%}/ListS}}
-                        </ul>
-                        <p>
-                        <label>
-                          <input type="checkbox" style="" class="select_button" value="" name="" />
-                          <input type="button" class="button" value="全选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button unselect_button" value="反选" name="" />
-                        </label>
-                        <label>
-                          <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
-                        </label>
-                        </p>
-                      </div>
-                    </div>
+  <div>
+    <div class="add_city_tabcontent select_group" id="arr_AF">
+      <ul>
+        {%raw '{{'%}#ListS.AF}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityNameCN}}
+        </label>
+        </li>
+        {%raw '{{'%}/ListS.AF}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div>
+    <div class="add_city_tabcontent select_group" id="arr_GL">
+      <ul>
+        {%raw '{{'%}#ListS.GL}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityNameCN}}
+        </label>
+        </li>
+        {%raw '{{'%}/ListS.GL}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div>
+    <div class="add_city_tabcontent select_group" id="arr_MR">
+      <ul>
+        {%raw '{{'%}#ListS.MR}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityNameCN}}
+        </label>
+        </li>
+        {%raw '{{'%}/ListS.MR}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div> 
+    <div class="add_city_tabcontent select_group" id="arr_GL">
+      <ul>
+        {%raw '{{'%}#ListS.SZ}}
+        <li>
+        <label>
+          <input type="checkbox" class="checkbox" value="{%raw '{{' %} AirportCode }}" name="{%raw '{{' %} AirportCode }}" />
+          {%raw '{{'%} AirportCode}}-{%raw '{{'%} CityNameCN}}
+        </label>
+        </li>
+        {%raw '{{'%}/ListS.SZ}}
+      </ul>
+      <p>
+      <label>
+        <input type="checkbox" style="" class="select_button" value="" name="" />
+        <input type="button" class="button" value="全选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button unselect_button" value="反选" name="" />
+      </label>
+      <label>
+        <input type="button" class="button show-lightbox" value="添加城市" name="" data-lightboxid="QACT" />
+      </label>
+      </p>
+    </div>
+  </div>
+</div>
 
-                </div> 
 
-                <div class="add_city_preview">
-                  <span class="title">已选城市</span>
-                  <ul>
-                  </ul>
-                </div>
-              </div>
+<div class="add_city_preview">
+  <span class="title">已选城市</span>
+  <ul>
+  </ul>
+</div>
+</div>
+
               <div class="add_city_confirm">
-                <input type="button" class="button button2 confirm" value="确定" name="" />
+<input type="button" class="button button2 confirm" value="确定" name="" />
               </div>
-            
+
 </script>
 
 
 <script type="text/template" id="quick_add_city_template">
-  <div class="lightbox lightbox-1 lightbox{%raw '{{'%}uid}}" data-lightboxid="QACT">
-    <table cellspacing="0">
-        <tr>
-            <td>
-                <div class="lightbox-content">
-                    <i class="close" rel="close">×</i> 
-    <div class="lightbox-head">
-        <h3>快速添加城市</h3>
-    </div>
-    <div class="lightbox-body">
-        <p class="red">
-        请输入你要添加机场的三字码。多个以‘/‘分隔，如：PVG/SHA/PEK
-        </p>
-        <p>
+<div class="lightbox lightbox-1 lightbox{%raw '{{'%}uid}}" data-lightboxid="QACT">
+<table cellspacing="0">
+  <tr>
+    <td>
+      <div class="lightbox-content">
+        <i class="close" rel="close">×</i> 
+        <div class="lightbox-head">
+          <h3>快速添加城市</h3>
+        </div>
+        <div class="lightbox-body">
+          <p class="red">
+          请输入你要添加机场的三字码。多个以‘/‘分隔，如：PVG/SHA/PEK
+          </p>
+          <p>
           <textarea style="width:300px;height:100px" name=""> </textarea>
-        </p>
-        <p>&nbsp;</p>
-        <p class="right">
-            <input type="button" class="button button1 submit" value="确定" name="" rel="close" />
-        </p>
-    </div>
-                </div>
+          </p>
+          <p>&nbsp;</p>
+          <p class="right">
+          <input type="button" class="button button1 submit" value="确定" name="" rel="close" />
+          </p>
+        </div>
+      </div>
 
-            </td>
-        </tr>
-    </table>
+    </td>
+  </tr>
+</table>
 </div>
 </script>
