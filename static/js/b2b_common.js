@@ -177,6 +177,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     var templ = Y.one('#quick_add_city_template').getContent();
                     var data={}
                     data.uid=uid;
+                    data.apcode=this.ancestor('.add_city_block').get('id');
                     var lightboxTemplate = Y.mustache(templ, data);
 
                     bodyEle.append(lightboxTemplate);
@@ -395,23 +396,55 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 });
 
                 Y.one('.add_city_container .confirm').on('click',function(){
-
                     var depcity= Y.all('.add_city_block_depcity .select_city').get('value');
                     var berth = Y.all('.add_city_xblock .checkbox:checked').get('value');
                     var arrcity= Y.all('.add_city_block_arrcity .select_city').get('value');
 
                     if(depcity.length<1) return alert('请选择始发城市');
                     if(berth.length<1) return alert('请选择舱位');
-                    if(arrcity.length<1) return alert('请选择到达城市');
+                    if(arrcity.length<1) return alert('请选择目的城市');
 
                     Y.one('.agroup_depcity').set('value',depcity.join('/'));
                     Y.one('.agroup_berth').set('value',berth.join('/'));
                     Y.one('.agroup_arrcity').set('value',arrcity.join('/'));
 
                     airline_container.setStyle('display','none').empty();
+                    setTimeout(function(){
+                        location.href='#';
+                    },50);
                 });
 
             }
+
+            bodyEle.delegate('click',function(){
+                var that = this;
+                var textarea = this.ancestor('.lightbox-content').one('textarea')
+                var apcode_value = textarea.get('value');
+                var data_ap = this.getAttribute('data-apcode');
+                var arr = apcode_value && apcode_value.split('/')
+                var container = Y.one('#'+data_ap).one('.add_city_preview');
+                var valid = true;
+                if(arr!=''){
+                    Y.Array.each(arr,function(i,index){
+                        if (/^[a-zA-Z]{3}$/.test(i)==false){
+                            alert('三字码不正确');
+                            valid = false;
+                            return false;
+                        }else{
+                            var new_value = i.toUpperCase();
+                            if(container.get('text').indexOf(new_value)==-1){
+                                container.append('<ul><li class="blue"><input class="select_city" type="hidden" value="'+new_value+'" /> '+new_value+'  </li></ul>');
+                            }
+                        }
+                    });
+                }
+
+                textarea.set('value','');
+                if(valid){
+                    that.ancestor('.lightbox').setStyle('display','none');
+                }
+
+            },'.apcode_submit');
 
             Y.one('.agroup_airline').on('change',function(){
                 var container = this.ancestor('table');
@@ -1188,20 +1221,36 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
             }
 
             function citySuggest() {
-                var depCity = new Y.TripAutoComplete({
-                    inputNode: '.depcity',
-                    codeInputNode: '.depcity_hidden',
-                    // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-                    source: '/js/ajax/citysearch.js?&callback={callback}&q=',
-                    hotSource: '/js/ajax/hotcity.js'
-                });
+                Y.Get.script('/js/ajax/citysearch.js',{
+                    onSuccess:function(){
+                        var city = city_guonei + city_guoji;
+                        var schema = {
+                            resultDelimiter: "@",
+                            fieldDelimiter: "|",
+                            resultFields: ['py','cityName','aa','bb']
+                        }
 
-                var toCity = new Y.TripAutoComplete({
-                    inputNode: '.arrcity',
-                    codeInputNode: '.arrcity_hidden',
-                    // source: 'http://kezhan.trip.taobao.com/remote/citySearch.do?&callback={callback}&q=',
-                    source: '/js/ajax/citysearch.js?&callback={callback}&q=',
-                    hotSource: '/js/ajax/hotcity_international.js'
+                        // var result = {"userInput":"sb","code":200,"result":[{"cityName":"\u5723\u5df4\u5df4\u62c9","cityCode":"SBA","py":"shengbabala","spy":"s","en":"shengbabala","flag":4,"stateCode":1,"type":1,"ccode":"US"},{"cityName":"\u897f\u5e03(\u9a6c\u6765\u897f\u4e9a)","cityCode":"SBW","py":"xibu","spy":"x","en":"SIBU","flag":4,"stateCode":1,"type":1,"ccode":"MY"}],"cityFlag":4 };
+
+                        // result['result'] = Y.DataSchema.Text.apply(schema, city).results;
+                        // Y.log(result);
+
+                        var depCity = new Y.TripAutoComplete({
+                            inputNode: '.depcity',
+                            codeInputNode: '.depcity_hidden',
+                            source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=2&count=20&callback={callback}&q=',
+                            // source: result,
+                            hotSource: '/js/ajax/hotcity.js'
+                        });
+
+                        var toCity = new Y.TripAutoComplete({
+                            inputNode: '.arrcity',
+                            codeInputNode: '.arrcity_hidden',
+                            source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=2&count=20&callback={callback}&q=',
+                            // source: result,
+                            hotSource: '/js/ajax/hotcity_international.js'
+                        });
+                    }
                 });
             }
 

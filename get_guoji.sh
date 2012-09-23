@@ -11,15 +11,15 @@ echo "save to ${dst}"
 mkdir $dst
 mkdir $dst/static
 
-cp -rv static/css/ $dst/static
-cp -rv static/js/ $dst/static
-cp -rv static/img/ $dst/static
+cp -r static/css/ $dst/static
+cp -r static/js/ $dst/static
+cp -r static/img/ $dst/static
 # cp -p -r static/kendoUI/ $dst/static
-cp -rv templates/$module/ajax $dst/
+cp -r templates/$module/ajax $dst/
 
-cp -rv static/css/* $projdst/CSS
-cp -rv static/js/* $projdst/JS
-cp -rv static/img/* $projdst/IMG
+cp -r static/css/* $projdst/CSS
+cp -r static/js/*.js $projdst/JS
+cp -r static/img/* $projdst/IMG
 
 cd templates/$module/
 
