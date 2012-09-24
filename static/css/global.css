@@ -353,10 +353,9 @@ i.icon10 {
   background: url(../img/icon10.png) no-repeat 50% 50%; }
 
 i {
-  font-style: normal;
-  zoom: 1; }
+  font-style: normal; }
 
-b, i, th {
+b, th {
   font-weight: normal; }
 
 td, th {
@@ -576,6 +575,9 @@ p {
   padding-left: 0; }
 
 i.close {
+  font-size: 12px;
+  font-size: 18px \9;
+  _font-size: 12px;
   cursor: pointer;
   position: absolute;
   right: 10px;

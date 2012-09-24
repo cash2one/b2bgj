@@ -380,8 +380,6 @@ i.arrow4h{
 
 i{
     font-style:normal;
-    zoom:1;
-    @extend b;
 }
 
 b{
@@ -670,6 +668,9 @@ p{
 }
 
 i.close{
+    font-size:12px;
+    font-size:18px \9;
+    _font-size:12px;
     cursor:pointer;
     position:absolute;
     right:10px;

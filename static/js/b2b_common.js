@@ -131,7 +131,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     }
 
                     //关闭按钮
-                    Y.all('.lightbox [rel=close]').on('click', function(e) {
+                    Y.all('.lightbox .close').on('click', function(e) {
                         if (buy && e.target.hasClass('submit')) {
                             Y.log(submitedData)
                             location.href = buy + submitedData;
