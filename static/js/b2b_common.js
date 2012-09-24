@@ -352,6 +352,15 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
         /*机票统计页面*/
         Y.on('available', function() {
+             var calendar = new Y.TripCalendar({
+                isSelect:true,
+                count:1,
+                isDateInfo:false,
+                maxDate: showdate(365,new Date()),
+                triggerNode:'.start_date,.end_date'
+            });     
+
+
             Y.all(".dropdown").on("hover", function(i) {
                 Y.one(".box").setStyle("display", "block");
             },
@@ -360,6 +369,51 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
             });
         },
         '.mo-jptj');
+
+        /*出票订单 mo-cpdd*/
+        Y.on('available',function(){
+            var calendar = new Y.TripCalendar({
+                //isSelect:true,
+                count:1,
+                isDateInfo:false,
+                maxDate: new Date(),
+                triggerNode:'.start_date,.end_date'
+            });
+             
+             var current_start_date;
+
+            calendar.on('show',function(){
+                var cal = this;
+                var input = this.getCurrentNode();
+                if(input.hasClass('start_date')){                     
+                        cal.set('date',new Date()).render();
+                        cal.set('maxDate',new Date()).render();                        
+                        cal.set('minDate',null).render();          
+                }
+                if(input.hasClass('end_date')){
+                      var sub = parseInt(( new Date().getTime() - new Date(current_start_date).getTime() )/3600/1000/24);
+                      if( sub>30 ){
+                         cal.set('date',showdate(31-sub,new Date())).render();
+                         cal.set('maxDate',showdate(31-sub,new Date())).render();
+                         cal.set('minDate',new Date(current_start_date)).render(); 
+                      }else{
+                         cal.set('date',new Date()).render();
+                         cal.set('maxDate',new Date()).render();
+                         cal.set('minDate',new Date(current_start_date)).render(); 
+                      }
+
+                }
+            });
+
+            calendar.on('dateclick',function(e){
+                var cal = this;
+                var input = this.getCurrentNode();
+                if(input.hasClass('start_date')){
+                    current_start_date = this.getSelectedDate();
+                }
+            });
+
+        },'.mo-cpdd')
 
         /*政策添加*/
         Y.on('available', function() {
@@ -760,9 +814,29 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
         },
         '.mo-tjdd');
 
+         /*mo-ffpxq*/
+      Y.on('available',function(){
+             var calendar = new Y.TripCalendar({
+                isSelect:true,
+                count:1,
+                isDateInfo:false,
+                maxDate: showdate(365,new Date()),
+                minDate: new Date(),
+                triggerNode:'.tkoff_date'
+            });  
+         },'.mo-ffpxq');
+
 
         /*mo-khcx-cpcz*/
         Y.on('available',function(){
+             var calendar = new Y.TripCalendar({
+                isSelect:true,
+                count:1,
+                isDateInfo:false,
+                maxDate: showdate(365,new Date()),
+                minDate: new Date(),
+                triggerNode:'.zjyxq_date'
+            });     
 
             loadingbar();
             // attaches behavior to all checkboxes with CSS class "my-at-least-one-checkbox-group"
@@ -787,14 +861,18 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     DOMCharacterDataModified: true
                 });
 
+/*           nodeprice1        <td>单张运价</td>
+  *           nodeprice2       <td>代理费（%）</td>
+  *           nodeprice3          <td>奖励扣率（%）</td>
+  *           nodeprice4         <td>奖励金额</td>
+  *           nodeprice5        <td>税费</td>
+   */
                 var nodePrice1 = Y.one('.aPrice1');
                 var nodePrice2 = Y.one('.aPrice2');
                 var nodePrice3 = Y.one('.aPrice3');
                 var nodePrice4 = Y.one('.aPrice4');
                 var nodePrice5 = Y.one('.aPrice5');
-                var nodePrice6 = Y.one('.aPrice6');
-                var nodePrice7 = Y.one('.aPrice7');
-                var nodePrice8 = Y.one('.aPrice8');
+
 
                 var nodePrice1_t = Y.one('.tPrice1');
                 var nodePrice2_t = Y.one('.tPrice2');
@@ -803,48 +881,44 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 var nodePrice5_t = Y.one('.tPrice5');
 
                 Y.one('.mo-khcx-cpcz').on('change',formchangehandler);
+                Y.all('.mo-khcx-cpcz .table2-ddxq .text').on('keyup',formchangehandler);
                 Y.one('.mo-khcx-cpcz').on('valueChange',formchangehandler);
 
                 Y.one('input').focus();
                 var CustomerCount = Y.one('.block3').all('.group-item').size();
                 /*
-                * 单张机票净价= 单张运价*（1-代理费率）*（1-奖励扣率）- 奖励金额
-                * 1、票款合计=费用明细中的单张机票净价，按照人数累加
-                * 2、税费合计=费用明细中的税费，按照人数累加
-                * 3、保险合计=费用明细中的乘机人信息中的保险费用累加
-                * 4、佣金合计=（单张运价-单张机票净价），按照人数累加
-                * 5、订单总金额=票款合计+税费合计+保险合计
-                * 6、单张机票结算价=单张机票净价-开票费
-                * 7、单张机票小计=单张机票净价-开票费+税费
+                * 
+单张机票净价=单张运价*（1-代理费率）*（1-奖励扣率）- 奖励金额
+1、票款合计=费用明细中的单张机票净价，按照人数累加
+2、税费合计=费用明细中的税费，按照人数累加
+3、保险合计=费用明细中的乘机人信息中的保险费用累加
+4、佣金合计=（单张运价-单张机票净价），按照人数累加
+5、订单总金额=票款合计+税费合计+保险合计
                 *
                 * */
 
                 function formchangehandler(){
                     CustomerCount = Y.one('.block3').all('.group-item').size();
-                    var Price1 = parseFloat(nodePrice1.get('value'));
-                    var Price2 = parseFloat(nodePrice2.get('value'));
-                    var Price3 = parseFloat(nodePrice3.get('value'));
-                    var Price4 = parseFloat(nodePrice4.get('value'));
-                    var Price5 = parseFloat(nodePrice5.get('value'));
-                    var Price6 = parseFloat(nodePrice6.get('value'));
-                    var Price7 = parseFloat(nodePrice7.get('value'));
+                    var Price1 = parseInt(nodePrice1.get('value'))||0;
+                    var Price2 = parseInt(nodePrice2.get('value'))||0;
+                    var Price3 = parseInt(nodePrice3.get('value'))||0;
+                    var Price4 = parseInt(nodePrice4.get('value'))||0;
+                    var Price5 = parseInt(nodePrice5.get('value'))||0;
 
-                    var basePrice = Price1*(1-Price2/100)*(1-Price3/100)-Price4;
 
-                    nodePrice6.set('value',basePrice - Price5);
-                    nodePrice8.set('value',basePrice - Price5 + Price7);
+                    var basePrice = parseInt(Price1*(1-Price2/100)*(1-Price3/100)-Price4)||0;
 
                     var t1 = basePrice*CustomerCount; //票款合计
-                    var t2 = Price7*CustomerCount; //税费合计
+                    var t2 = Price5*CustomerCount; //税费合计
                     var t3 = 8*CustomerCount; //保险合计
                     var t4 = (Price1 - basePrice) * CustomerCount; //佣金合计
                     var t5 = t1+t2+t3; //订单从金额
 
-                    nodePrice1_t.set('value',t1);
-                    nodePrice2_t.set('value',t2);
-                    nodePrice3_t.set('value',t3);
-                    nodePrice4_t.set('value',t4);
-                    nodePrice5_t.set('value',t5)
+                    nodePrice1_t.set('value',t1||0);
+                    nodePrice2_t.set('value',t2||0);
+                    nodePrice3_t.set('value',t3||0);
+                    nodePrice4_t.set('value',t4||0);
+                    nodePrice5_t.set('value',t5||0)
                 }
 
             })();
@@ -1096,20 +1170,14 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
             loadingbar();
             form_hbcx();
-            init_calendar();
 
-            function init_calendar() {
-                new Y.TripCalendar({
-                    beginNode: '#depdate-td',
-                    endNode: '#arrdate-td',
-                    limitBeginDate: new Date(),
-                    limitDays: 28,
-                    isWeek: false,
-                    isFestival: false,
-                    titleTips: ""
-                });
-            }
-
+             var calendar = new Y.TripCalendar({
+                //isSelect:true,
+                count:2,
+                isDateInfo:false,
+                minDate: new Date(),
+                triggerNode:'.depdate,.arrdate'
+            });
 
             function form_hbcx() {
                 /*城市搜索建议*/
@@ -1221,21 +1289,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
             }
 
             function citySuggest() {
-                Y.Get.script('/js/ajax/citysearch.js',{
-                    onSuccess:function(){
-                        var city = city_guonei + city_guoji;
-                        var schema = {
-                            resultDelimiter: "@",
-                            fieldDelimiter: "|",
-                            resultFields: ['py','cityName','aa','bb']
-                        }
-
-                        // var result = {"userInput":"sb","code":200,"result":[{"cityName":"\u5723\u5df4\u5df4\u62c9","cityCode":"SBA","py":"shengbabala","spy":"s","en":"shengbabala","flag":4,"stateCode":1,"type":1,"ccode":"US"},{"cityName":"\u897f\u5e03(\u9a6c\u6765\u897f\u4e9a)","cityCode":"SBW","py":"xibu","spy":"x","en":"SIBU","flag":4,"stateCode":1,"type":1,"ccode":"MY"}],"cityFlag":4 };
-
-                        // result['result'] = Y.DataSchema.Text.apply(schema, city).results;
-                        // Y.log(result);
-
-                        var depCity = new Y.TripAutoComplete({
+                       var depCity = new Y.TripAutoComplete({
                             inputNode: '.depcity',
                             codeInputNode: '.depcity_hidden',
                             source: 'http://ijipiao.trip.taobao.com/ie/remote/auto_complete.do?flag=2&count=20&callback={callback}&q=',
@@ -1250,8 +1304,25 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                             // source: result,
                             hotSource: '/js/ajax/hotcity_international.js'
                         });
-                    }
-                });
+
+
+                // Y.Get.script('/js/ajax/citysearch.js',{
+                //     onSuccess:function(){
+                //         var city = city_guonei + city_guoji;
+                //         var schema = {
+                //             resultDelimiter: "@",
+                //             fieldDelimiter: "|",
+                //             resultFields: ['py','cityName','aa','bb']
+                //         }
+
+                //         // var result = {"userInput":"sb","code":200,"result":[{"cityName":"\u5723\u5df4\u5df4\u62c9","cityCode":"SBA","py":"shengbabala","spy":"s","en":"shengbabala","flag":4,"stateCode":1,"type":1,"ccode":"US"},{"cityName":"\u897f\u5e03(\u9a6c\u6765\u897f\u4e9a)","cityCode":"SBW","py":"xibu","spy":"x","en":"SIBU","flag":4,"stateCode":1,"type":1,"ccode":"MY"}],"cityFlag":4 };
+
+                //         // result['result'] = Y.DataSchema.Text.apply(schema, city).results;
+                //         // Y.log(result);
+
+
+                //     }
+                // });
             }
 
             function updateInfoRow() {
@@ -1507,6 +1578,20 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
     });
 
 });
+
+
+function showdate(n,d){
+               //计算d天的前几天或者后几天，返回date,注：chrome下不支持date构造时的天溢出
+                var uom = new Date(d-0+n*86400000);
+                uom = uom.getFullYear() + "/" + (uom.getMonth()+1) + "/" + uom.getDate();
+                return new Date(uom);
+            };
+
+          function dateToString(s, sep) {
+                //将日期对象转换为文本
+                    var sep = sep || '/'
+                    return [s.getFullYear(), (s.getMonth() < 9 ? "0" : "") + (s.getMonth() + 1), (s.getDate() < 10 ? "0" : "") + s.getDate()].join(sep);
+                };
 
 // YUI().use('node', 'array-extras', 'querystring-stringify', function (Y) {
 //     var form = Y.one('.mo-hbcx .block1'), query;

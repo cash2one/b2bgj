@@ -38,13 +38,22 @@
               requires:['box-skin-sea','node','overlay','dd-plugin','resize']
             },
             //////////////////////////
-            'calendar-skin-default':{//默认皮肤
-              path:'calendar/skin/default.css',
+            'trip-calendar-css':{//默认皮肤
+              path:'trip-calendar/trip-calendar.css',
               type:'css'
             },
-            'calendar':{
-              path:'calendar/calendar.js',
-              requires:['calendar-skin-default','node']
+            'trip-calendar':{
+              path:'trip-calendar/trip-calendar.js',
+              requires:['trip-calendar-css']
+            },
+            ///////////////////////////////
+            'trip-autocomplete-css':{//默认皮肤
+              path:'trip-autocomplete/trip-autocomplete.css',
+              type:'css'
+            },
+            'trip-autocomplete':{
+              path:'trip-autocomplete/trip-autocomplete.js',
+              requires:['trip-autocomplete-css']
             },
             ///////////////////////////////
             'checkall':{
