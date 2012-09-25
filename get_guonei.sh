@@ -12,13 +12,13 @@ mkdir $dst
 mkdir $dst/static
 
 cp -rv static/css/ $dst/static
-cp -rv static/js/ $dst/static
+cp -rv static/js/*.js $dst/static/js/
 cp -rv static/img/ $dst/static
 # cp -p -r static/kendoUI/ $dst/static
 cp -rv templates/$module/ajax $dst/
 
 cp -rv static/css/* $projdst/static/css
-cp -rv static/js/* $projdst/static/js
+cp -rv static/js/*.js $projdst/static/js/
 cp -rv static/img/* $projdst/static/img
 
 cd templates/$module/

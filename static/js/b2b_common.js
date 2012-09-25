@@ -279,6 +279,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     });
 
                     var data = Y.JSON.stringify(output);
+                    Y.log('换仓验证数据'+data);
 
                     Y.io(url, {
                         data: 'verify='+data+'&time=' + new Date().getTime(),
@@ -356,7 +357,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 isSelect:true,
                 count:1,
                 isDateInfo:false,
-                maxDate: showdate(365,new Date()),
+                // maxDate: showdate(365,new Date()),
                 triggerNode:'.start_date,.end_date'
             });     
 
@@ -462,11 +463,19 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     Y.one('.agroup_berth').set('value',berth.join('/'));
                     Y.one('.agroup_arrcity').set('value',arrcity.join('/'));
 
+                     cancel_input();
+                });
+
+                Y.one('.add_city_container .cancel').on('click',function(){
+                     cancel_input();
+                });  
+
+                function cancel_input(){
                     airline_container.setStyle('display','none').empty();
                     setTimeout(function(){
                         location.href='#';
                     },50);
-                });
+                }
 
             }
 
@@ -518,7 +527,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
                 if (arr[1]) {
                     e.result.text = arr[1];
-                    codeNode.set('value', arr[2]);
+                    codeNode.set('value', arr[0]);
 
                     //如果航空公司没变，舱位城市值清空
                     if(airline_temp != arr[1]){
@@ -526,7 +535,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                         Y.one('.agroup_airline').simulate('change');
                     }
 
-                    var url='/js/ajax/airlinedata/'+arr[2]+'.js';
+                    var url='/js/ajax/airlinedata/'+arr[0]+'.js';
 
                     Y.io(url,{
                         // data:'',
@@ -630,8 +639,41 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
         /*提交pnr订单*/
         Y.on('available', function() {
-
             loadingbar();
+
+            //日历控件  生日，证件有效期
+             var calendar = new Y.TripCalendar({
+                isSelect:true,
+                count:1,
+                isDateInfo:false,
+                isHolity:false,
+                triggerNode:'.datepicker'
+            });
+
+             function count_fp(){
+                  var vals = Y.all('[name=INVOICE_AMOUNT]').get('value');
+                  var count = 0;
+                  Y.Array.each(vals,function(i,index){
+                        var item = parseInt(i);
+                        if(!isNaN(item)) {
+                            count+=item;
+                        }
+                  });
+                  return count;
+             };
+
+              bodyEle.delegate('keyup',function(){
+                    var total =  count_fp();
+                    var all = parseInt(Y.one('.TotalPrice').get('text'));
+                    var val = this.get('value');
+
+                    if(total>all){
+                         val = val.replace(/.$/,'');
+                         this.set('value', val ); 
+                    }
+
+             },'[name=INVOICE_AMOUNT]');
+
             //初始化数据
             // Y.StorageLite.on('storage-lite:ready',function(){
             //     var LAST_CPQR_DATA = Y.StorageLite.getItem('CPQR_DATA');
@@ -688,14 +730,6 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
             },
             '.CustomerDel');
 
-            Y.one('.rp-fp-checkbox').on('click', function(e) {
-                if (this.get('checked')) {
-                    Y.one('.rq-fp').setStyle('display', 'block');
-                } else {
-                    Y.one('.rq-fp').setStyle('display', 'none');
-                }
-            });
-
             (function(){
                 Y.mix(Y.Node.DOM_EVENTS, {
                     DOMNodeInserted: true,
@@ -743,7 +777,6 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     }
 
                     swichChangeNodeValue(nodeTotalPrice,SingleTicketPrice*CustomerCount + CustomerInsuranceCount*8);
-
                 }
             })();
 
@@ -756,7 +789,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 }
             }
 
-            Y.one('.rp-fp-checkbox').on('click', function(e) {
+            Y.one('.rp-fp-checkbox')&&Y.one('.rp-fp-checkbox').on('click', function(e) {
                 if (this.get('checked')) {
                     Y.one('.rq-fp').setStyle('display', 'block');
                 } else {
@@ -764,14 +797,14 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 }
             });
 
-            Y.one('.pszq').on('click', function(e) {
+            Y.one('.pszq')&&Y.one('.pszq').on('click', function(e) {
                 if (this.get('checked')) {
                     Y.one('.psfs_box_zq').setStyle('display', 'block');
                     Y.one('.psfs_box_df').setStyle('display', 'none');
                 }
             });
 
-            Y.one('.psdf').on('click', function(e) {
+            Y.one('.psdf')&&Y.one('.psdf').on('click', function(e) {
                 if (this.get('checked')) {
                     Y.one('.psfs_box_df').setStyle('display', 'block');
                     Y.one('.psfs_box_zq').setStyle('display', 'none');
@@ -784,10 +817,9 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 } else {
                     Y.one('.uploads-box').setStyle('display', 'none');
                 }
-
             });
 
-            Y.one('.fp-one').on('click', function(e) {
+            Y.one('.fp-one')&&Y.one('.fp-one').on('click', function(e) {
                 if (this.get('checked')) {
                     Y.one('.fpone-one').removeClass('hidden').all('.group-item').removeClass('disabled');
                     Y.one('.fpone-mul').addClass('hidden').all('.group-item').addClass('disabled');
@@ -799,7 +831,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 }
             });
 
-            Y.one('.fp-mul').on('click', function(e) {
+            Y.one('.fp-mul')&&Y.one('.fp-mul').on('click', function(e) {
                 if (!this.get('checked')) {
                     Y.one('.fpone-one').removeClass('hidden').all('.group-item').removeClass('disabled');
                     Y.one('.fpone-mul').addClass('hidden').all('.group-item').addClass('disabled');
@@ -826,6 +858,18 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
             });  
          },'.mo-ffpxq');
 
+     /*添加政策 mo-zctj*/
+      Y.on('available',function(){
+             var calendar = new Y.TripCalendar({
+                isSelect:true,
+                count:1,
+                isDateInfo:false,
+                //maxDate: showdate(365,new Date()),
+               // minDate: new Date(),
+                triggerNode:'.datepicker'
+            });  
+         },'.mo-zctj');
+
 
         /*mo-khcx-cpcz*/
         Y.on('available',function(){
@@ -833,8 +877,8 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 isSelect:true,
                 count:1,
                 isDateInfo:false,
-                maxDate: showdate(365,new Date()),
-                minDate: new Date(),
+                // maxDate: showdate(365,new Date()),
+                // minDate: new Date(),
                 triggerNode:'.zjyxq_date'
             });     
 
@@ -1124,10 +1168,10 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                 // },20000);
             });
 
-            Y.on('io:failure',function(t, r, a){
-                clearTimeout(timeout);
-                spin_wrap.one('span').setContent('请求失败:'+r);
-            });
+            // Y.on('io:failure',function(t, r, a){
+            //     clearTimeout(timeout);
+            //     spin_wrap.one('span').setContent('请求失败:'+r);
+            // });
 
             Y.on('io:complete',function(){
                 clearTimeout(timeout);
@@ -1138,15 +1182,27 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
         /*航空公司自动补全*/
         function airline_autocomplete(select_callback){
-            //http://webresource.c-ctrip.com/code/cquery/resource/address/flightintl/airline_gb2312.js
-            var airlines = "不限@CA|中国国际航空|CA@MU|东方航空|MU@CZ|南方航空|CZ@FM|上海航空|FM@SQ|新加坡航空|SQ@CX|国泰航空|CX@UA|美联航|UA@HX|香港航空|HX@QR|卡塔尔航空|QR@MH|马来西亚航空|MH@BA|英国航空|BA@CI|中华航空|CI@AA|美国航空|AA@AF|法国航空|AF@KA|港龙航空|KA@LH|汉莎航空|LH@EK|阿联酋航空|EK@NX|澳门航空|NX@AC|加拿大航空|AC@DL|达美航空|DL@OZ|韩亚航空|OZ@BR|长荣航空|BR@QF|澳洲航空|QF@HU|海南航空|HU@GE|复兴航空|GE@KL|荷兰航空|KL@TG|泰国航空|TG@KE|大韩航空|KE@JL|日本航空|JL@VS|维珍航空|VS@AY|芬兰航空|AY@NH|全日空|NH@HO|吉祥航空|HO@UO|香港快运航空|UO@SK|北欧航空|SK@TK|土耳其航空|TK@EY|阿提哈德航空|EY@SU|俄罗斯航空|SU@LX|瑞士航空|LX@NZ|新西兰航空|NZ@AM|墨西哥航空|AM@SA|南非航空|SA@VN|越南航空|VN@BT|汶莱皇家航空|BI@PR|菲律宾航空|PR@AI|印度航空|AI@GA|印尼鹰航|GA@KQ|肯尼亚航空|KQ@ET|埃塞俄比亚航空|ET@MF|厦门航空|MF@ZH|深圳航空|ZH@UL|斯里兰卡航空|UL@AE|华信航空|AE@9W|印度捷特航空|9W@KC|阿斯塔纳航空|KC@SC|山东航空|SC@AZ|意大利航空|AZ@3U|四川航空|3U@S7|西伯利亚航空|S7@LO|波兰航空|LO@MD|马达加斯加航空|MD@MI|胜安航空|MI@OM|蒙古航空|OM@HY|乌兹别克斯坦航空|HY@AH|阿尔及利亚航空|AH@B7|立荣航空|B7@PG|曼谷航空|PG@XF|海参崴航空|XF@GS|天津航空|GS@VV|乌克兰航空|VV@UN|洲际航空|UN@MK|毛里求斯航空|MK@SN|布鲁塞尔航空|SN@MS|埃及航空|MS@OS|奥地利航空|OS@LY|以色列航空|LY@U6|乌拉尔航空|U6@SV|沙特航空|SV@".split('@');
-
-            // var airlines = ['不限', 'Z-中国国航-CA', 'N-南方航空-CZ', 'D-东方航空-MU', 'A-奥凯航空公司-BK', 'B-北京首都航空有限公司-JD', 'C-成都航空有限公司-EU', 'D-大新华航空公司-CN', 'H-河北航空公司-NS', 'H-海南航空公司-HU', 'H-河南航空有限公司-VD', 'H-华夏航空公司-G5', 'J-吉祥航空公司-HO', 'K-昆明航空有限公司-KY', 'S-四川航空公司-3U', 'S-山东航空公司-SC', 'S-深圳航空公司-ZH', 'S-上海航空公司-FM', 'T-天津航空有限责任公司-GS', 'X-西部航空公司-PN', 'X-幸福航空有限责任公司-JR', 'X-厦门航空有限公司-MF', 'X-祥鹏航空公司-8L', 'Z-中国联合航空公司-KN'];
+            //old source http://webresource.c-ctrip.com/code/cquery/resource/address/flightintl/airline_gb2312.js
+            // var airlines = [{
+            //     airline_name:'中国国际航空',
+            //     airline_code:'CA'
+            // },{
+            //     airline_name:'东方航空',
+            //     airline_code:'MU'
+            // },{
+            //     airline_name:'东方航空',
+            //     airline_code:'MC'
+            // }];
             var airlineNode = Y.one('.airlines');
+
             airlineNode.plug(Y.Plugin.AutoComplete, {
+                resultTextLocator: function(r){
+                       return r.airline_code+'|'+r.airline_name;
+                },
                 resultFilters: ['charMatch'],
                 // source:'ajax/airlines.js?callback={callback}',
-                source: airlines,
+               // source: airlines,
+                source: '/js/ajax/airlines.js',
                 maxResults: 10,
                 on: {
                     select: function(e) {
@@ -1154,8 +1210,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                             select_callback.call(null,e);
                         }
                     }
-                },
-                activateFirstItem: true
+                }
             });
 
             airlineNode.on('focus', function(e) {
@@ -1193,7 +1248,7 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     },50);
                     if (arr[1]) {
                         e.result.text = arr[1];
-                        codeNode.set('value', arr[2]);
+                        codeNode.set('value', arr[0]);
                     } else {
                         e.result.text = '';
                         codeNode.set('value', '');
@@ -1233,10 +1288,12 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                             data: data + '&time=' + new Date().getTime(),
                             on: {
                                 success: function(i, res) {
-                                    var nodes = Y.Node.create(res.responseText);
-                                    var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
+                                    //IE 8 bug 无法识别script
+                                    var nodes = Y.Node.create('<div>'+res.responseText.replace(/<script/,'_<script')+'</div>');
+                                    var scriptTag = nodes.one('script');
+
                                     if(scriptTag){
-                                        eval(scriptTag.get('text'));
+                                        eval(scriptTag.getContent());
                                     }else{
                                         container.setContent(res.responseText);
                                         more_hbcx();
@@ -1270,10 +1327,12 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                         Y.io(url, {
                             on: {
                                 success: function(i, res) {
-                                    var nodes = Y.Node.create(res.responseText);
-                                    var scriptTag = nodes.one('script') || ( nodes.get('nodeName') == 'SCRIPT' && nodes );
+                                    //IE 8 bug 无法识别script
+                                    var nodes = Y.Node.create('<div>'+res.responseText.replace(/<script/,'_<script')+'</div>');
+                                    var scriptTag = nodes.one('script');
+
                                     if (scriptTag) {
-                                        eval(scriptTag.get('text'));
+                                        eval(scriptTag.getContent());
                                     } else {
                                         container.addClass("loaded");
                                         container.prepend(res.responseText);
@@ -1327,10 +1386,13 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
 
             function updateInfoRow() {
                 Y.all('.mul-select').on('click', function(e) {
+
                     /* .data-row 单条航空公司数据 显示 航空公司 航班 机型 机场 时间等信息
                     *  .info-row 更多舱位数据行 默认隐藏 选择按钮 5600,3,1%+34.00,256,516,5860,Y,>9 点击选择后更新.meta-row和.data-row数据
                     *  .meta-row 预定按钮数据行 显示 退改签 票面价 代理费 奖励 佣金 税金 结算价
                     */
+                     Y.log('换舱前数据:'+submitedData);                     
+
                     var infoRow = e.target.ancestor('.info-row');
                     var dataRow = infoRow.previous('.data-row');
                     var rowIndexs = [];
@@ -1342,6 +1404,8 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     var nMetaRowIndex = nextMetaRow && nextMetaRow.get('rowIndex');
 
                     var data = e.target.getAttribute('data-updates').split(',');
+
+                    Y.log('换仓验证数据(源):'+data);
 
                     if (submitedData!='' && typeof submitedData != 'undefined'){
                         submitedData = submitedData.split('|')
@@ -1377,6 +1441,11 @@ YUI().use('get','tabview','checkall','box','cookie', 'fieldsetFormat', 'datasche
                     dataRow.one('.sit-type').set('text', data[data.length - 2]);
                     dataRow.one('.sit-count').set('text', data[data.length - 1]);
                     dataRow.one('.more-h').simulate('click');
+
+                    //更新预订验舱请求数据
+                    Y.log('换舱后数据:'+submitedData);
+                    nextMetaRow.all('[name=FlightInfo] [name=Class]').set('value',data[data.length - 2]);
+                    nextMetaRow.all('[name=PubInfo] [name=Price]').set('value',data[0]);
                 });
             }
 
