@@ -758,3 +758,22 @@
     text-align:right;
     @include sf;
 }
+.yui3-aclist{
+    position:relative;
+}
+.validate_berth{
+    .pass{
+        color:$c31; 
+    }
+    .error{
+        color:$c61; 
+    }
+    .msg{
+        font-weight:bold;
+        color:$c61; 
+    }
+}
+label.button{
+    line-height:14px;
+    cursor:pointer;
+}

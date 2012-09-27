@@ -1155,3 +1155,18 @@ fieldset {
   background-color: #fff;
   padding: 10px;
   margin-bottom: 5px; }
+
+.yui3-aclist {
+  position: relative; }
+
+.validate_berth .pass {
+  color: #669933; }
+.validate_berth .error {
+  color: red; }
+.validate_berth .msg {
+  font-weight: bold;
+  color: red; }
+
+label.button {
+  line-height: 14px;
+  cursor: pointer; }
