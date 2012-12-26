@@ -21,7 +21,7 @@ class Application(tornado.web.Application):
         ]
         settings = dict(
             debug='yes',
-            static_url_prefix='/static/',
+            static_url_prefix='http://testgjjp.10106266.com/',
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
             #cookie_secret="43oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
@@ -43,10 +43,10 @@ class jsonpHandler(tornado.web.RequestHandler):
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self, pagename = 'index'):
-        data = {
-            'title':pagename,
-        }
-        data.url='guooo'
+        #data = {
+        #    'title':pagename,
+        #}
+        #data.url='guooo'
         self.render('index.html')
 
 

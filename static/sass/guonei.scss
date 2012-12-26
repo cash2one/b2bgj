@@ -84,6 +84,13 @@ h3.gray-title{
 
 .search-list{
     margin-bottom:10px;
+    .sjx{
+        padding-left:26px; 
+    }
+    .jx{
+        color:$c23; 
+        border-bottom:1px dashed $c23;
+    }
     .even{
         background-color:#eee; 
     }
@@ -94,16 +101,20 @@ h3.gray-title{
         @extend .blue; 
     }
     .block-i-head{
+        .price{
+            font:bold 16px arial; 
+            color:$c62;
+        }
         border-bottom:2px solid #3598CD;
         margin-bottom:10px;
         li{
             float:left;
             width:90px;
-            margin:0 10px;
+            margin:0 5px;
             border:2px solid #ECECEC;
             border-bottom:0;
             padding:3px 0;
-            height:30px;
+            height:35px;
         } 
         .current{
             position:relative;
@@ -113,7 +124,7 @@ h3.gray-title{
                 position:absolute;
                 top:0;
                 display:block; 
-                height:35px;
+                height:40px;
                 width:100%;
                 background:#fff url(#{$skin_folder}/repeat1.png) repeat-x;
             }
@@ -123,13 +134,15 @@ h3.gray-title{
             text-decoration:none; 
         }
         span{
+            color:#000;
             text-align:center;
             display:block; 
         }
     }
     .thead td{
-        border:1px solid #8DBEDE;
-        background-color:#E7F8FF; 
+        border:1px solid #7aafe4;
+        background-color:#eff8ff; 
+        text-align:center;
     }
     .table-b2{
         border-top:1px solid #8DBEDE;

@@ -1,15 +1,55 @@
-body {
-  background-color: #f5f5f5; }
+/*
+Syntax error: File to import not found or unreadable: vars.
+              Load paths:
+                /media/sf_D_DRIVE/www/b2bGJ/static
+                /media/sf_D_DRIVE/www/b2bGJ/static/sass
+        on line 1 of sass/skin-lightgreen.scss
 
-.head {
-  background: #669933 url(../img/lg/head.jpg) 100% 100% no-repeat; }
+1: @import 'vars';
+2: $skin_folder:'#{$imgpath}/lg';
+3: $cbg:#f5f5f5;
+4: $chead:#693 url(#{$skin_folder}/head.jpg) 100% 100% no-repeat;
+5: 
+6: body{
 
-.logo {
-  background: url(../img/lg/logo-border.png) 100% 50% no-repeat; }
-  .logo a {
-    background-image: url(../img/lg/logo.png); }
-
-.menu-main a {
-  background: url(../img/lg/menu-main.png) no-repeat; }
-.menu-main .current a {
-  background: url(../img/lg/menu-main-h.png) no-repeat; }
+Backtrace:
+sass/skin-lightgreen.scss:1
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:42:in `import'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/import_node.rb:25:in `imported_file'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:300:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/engine.rb:247:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin/compiler.rb:234:in `watch'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/plugin.rb:107:in `method_missing'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:431:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:302:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:41:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/lib/sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.1.20/bin/sass:8:in `<top (required)>'
+/usr/local/bin/sass:19:in `load'
+/usr/local/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: vars.\A               Load paths:\A                 /media/sf_D_DRIVE/www/b2bGJ/static\A                 /media/sf_D_DRIVE/www/b2bGJ/static/sass\A         on line 1 of sass/skin-lightgreen.scss\A \A 1: @import 'vars';\A 2: $skin_folder:'#{$imgpath}/lg';\A 3: $cbg:#f5f5f5;\A 4: $chead:#693 url(#{$skin_folder}/head.jpg) 100% 100% no-repeat;\A 5: \A 6: body{"; }

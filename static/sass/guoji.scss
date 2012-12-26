@@ -4,79 +4,80 @@
     .lightblue-bg{
         border-left:1px solid $c44;
         border-right:1px solid $c44;
-        padding:10px 30px; 
+        padding:10px 30px;
     }
     th{
-        text-align:right; 
+        text-align:right;
     }
     td{
-        padding:5px; 
+        padding:5px;
     }
+}
+
+.xblock p{
+    padding-bottom:10px;
 }
 
 .lightbox-ckzc .lightbox-content{
     width:660px;
     .table1{
         td{
-            padding:5px 10px; 
+            padding:5px 10px;
         }
-        border:1px solid $c44; 
+        border:1px solid $c44;
         margin-bottom:10px;
     }
     .table2{
         margin-bottom:10px;
         th{
-            width:100px; 
+            width:100px;
             text-align:right;
             @extend .lightblue-bg;
         }
         td{
             width:200px;
-            padding:5px 10px; 
-            border:1px solid $c44; 
+            padding:5px 10px;
+            border:1px solid $c44;
         }
     }
 }
 
 /////////////////////////
-//添加预期后返
 .table1-tjyqhf{
     .tcol1{
         width:70px;
     }
 }
 ////////////////////////
-//预期后返
 .table1-yqhf{
     .tcol1{
-        width:200px; 
+        width:200px;
     }
     .tcol2{
-        width:340px; 
+        width:340px;
     }
 }
 
 .table2-yqhf{
     .tcol1{
-        width:60px; 
+        width:60px;
     }
 }
 ////////////////////////
-//开关政策
 .table2-kgzc{
     border-top:1px solid $c42;
-    width:100%; 
+    width:100%;
     td,th{
-        padding:8px; 
+        padding:8px;
     }
     .tcol1{
-        width:130px; 
+        width:130px;
     }
     .tcol2{
-        width:200px; 
+        width:200px;
     }
     .tcol3{
-        width:65px; 
+        width:65px;
     }
 }
 .table1-kgzc .tcol1{
@@ -84,45 +85,42 @@
 }
 
 //////////////////////////
-//政策查看
 .table1-zcck{
     .tcol1{
-        width:200px; 
-    } 
+        width:200px;
+    }
     .tcol2{
-        width:360px; 
+        width:360px;
     }
 }
 .table2-zcck{
     .tcol1{
-        width:70px; 
-    } 
+        width:70px;
+    }
 }
 
 
 //////////////////////////
-//政策路由管理
 .mo-zclygl .block2{
     width:800px;
 }
 .table1-zclygl{
     .tcol1{
-        width:200px; 
+        width:200px;
     }
     .tcol2{
-        width:200px; 
+        width:200px;
     }
     .tcol3{
-        width:200px; 
+        width:200px;
     }
 }
 
 
 //////////////////////////
-//退费维护
 .table1-tfwh{
     .tcol1{
-        width:70px; 
+        width:70px;
     }
 }
 
@@ -138,11 +136,11 @@
         width:130px;
     }
     td{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
         padding:10px;
     }
     a{
-        color:$c11; 
+        color:$c11;
     }
 }
 
@@ -150,7 +148,7 @@
 .mo-pnrmyd{
     .block1{
         center{
-            margin:30px 0; 
+            margin:30px 0;
         }
         margin-bottom:15px;
     }
@@ -159,7 +157,7 @@
         .block-head{
             position:relative;
             .time{
-                font-weight:bold; 
+                font-weight:bold;
                 position:absolute;
                 right:40px;
                 top:7px;
@@ -168,7 +166,7 @@
         }
     }
     .user-info{
-        padding:10px 20px; 
+        padding:10px 20px;
     }
 }
 
@@ -177,33 +175,33 @@
 /////////////////////
 .mo-tjzc{
     .gray-title{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
 }
 
 ////////////////////
 .mo-ddgl{
     .table-b2{
-        border-top:1px solid $c44; 
+        border-top:1px solid $c44;
     }
     .block1{
         margin-bottom:20px;
         .center{
             padding:10px;
-        } 
+        }
     }
     div.center{
-        margin:10px; 
+        margin:10px;
     }
     .block2{
         .block-head{
             @extend .gray-title;
             margin-bottom:10px;
-            border-bottom:1px solid $c44; 
+            border-bottom:1px solid $c44;
         }
     }
     .table-b3{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
 }
 
@@ -220,36 +218,33 @@
     hlbr:expression(this.onFocus=this.blur());
 }
 .mo-tjdd{
-    .group-item{
-        position:relative; 
-    }
     .CustomerAdd{
         @extend .simple-btn;
     }
     .CustomerDel{
-        position:absolute;
-        top:10px;
-        left:4px;
+        float:right;
+        margin-top:-50px;
+        margin-right:5px;
         @extend .simple-btn;
     }
     .block{
-        margin-bottom:15px; 
+        margin-bottom:15px;
     }
     .gray-title{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
 
     table {
-        width:100%; 
+        width:100%;
     }
 
     input.text{
-        width:115px; 
+        width:115px;
     }
 
     select{
-        background-color:$c0;
-        width:120px; 
+        background-color:#fff;
+        width:120px;
     }
 }
 
@@ -263,7 +258,7 @@
     .metas{
         padding:5px;
         .col2{
-            float:right; 
+            float:right;
         }
     }
     .block1{
@@ -274,26 +269,26 @@
             padding-right:20px;
             center{
                 @extend .f14;
-                margin:10px 0; 
+                margin:10px 0;
             }
             float:none;
             line-height:24px;
-        } 
+        }
     }
     .block2{
         .col1{
             center{
-                margin:25px 0; 
+                margin:25px 0;
             }
-            width:510px; 
-            border-right:1px solid $c44;
-            height:250px;
+            width:510px;
         }
         .col2{
+            min-height:200px;
+            border-left:1px solid $c44;
             line-height:24px;
             margin-left:510px;
             padding:5px 20px;
-            float:none; 
+            float:none;
         }
     }
 }
@@ -308,11 +303,11 @@
 }
 .mo-jptj{
     select{
-        width:130px; 
+        width:130px;
     }
 
     .dropdown{
-        float:right; 
+        float:right;
         position:relative;
         height:20px;
     }
@@ -334,13 +329,13 @@
 /////////////////
 .mo-fpxxcx{
     .gray-title{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
     p{
-        padding:10px; 
+        padding:10px;
     }
     .table-b2{
-        border-top:1px solid $c44; 
+        border-top:1px solid $c44;
     }
 }
 
@@ -358,7 +353,7 @@
 }
 .table3-tjdd{
     th{
-        text-align:right; 
+        text-align:right;
     }
     td{
         line-height:18px;
@@ -370,6 +365,15 @@
     border-bottom:1px solid $c44;
 }
 
+.table2-tjdd{
+    caption{
+        padding:10px;
+        font-weight: bold;
+        border-bottom:1px solid $c44;
+        text-align: left;
+    }
+}
+
 //////////////////
 .mo-ddxq{
     .block7{
@@ -377,10 +381,10 @@
 
         }
         .tcol2{
-            width:200px; 
+            width:200px;
         }
         .tcol3{
-            width:200px; 
+            width:200px;
         }
         table{
             width:100%;
@@ -389,26 +393,23 @@
                 border:1px solid $c44;
             }
             th{
-                font-weight:bold; 
+                font-weight:bold;
                 background-color:$c43;
             }
-        } 
+        }
     }
     .block9{
         table{
-            width:800px; 
-        } 
-    }
-    .xblock p{
-        padding-bottom:10px; 
+            width:800px;
+        }
     }
 
     .block{
-        margin-bottom:10px; 
+        margin-bottom:10px;
         p{
             line-height:20px;
             padding:5px 20px;
-        } 
+        }
     }
     .gray-title{
         border-bottom:1px solid $c44;
@@ -416,23 +417,23 @@
 
     .block3{
         .lightblue-bg{
-            border-top:1px solid $c44; 
-        } 
+            border-top:1px solid $c44;
+        }
     }
     .block4{
         .lightblue-bg{
             label{
-                padding-right:40px; 
+                padding-right:40px;
             }
-            border-bottom:1px solid $c44; 
-        } 
+            border-bottom:1px solid $c44;
+        }
     }
 
 }
 .table2-ddxq{
     th{
         background-color:$c43;
-        border-right:1px solid $c44; 
+        border-right:1px solid $c44;
     }
 }
 .table4-ddxq{
@@ -440,16 +441,16 @@
     margin-bottom:10px;
     width:500px;
     td{
-        padding:5px; 
-    } 
+        padding:5px;
+    }
 }
 .table3-ddxq{
     width:600px;
     th{
-        text-align:right; 
+        text-align:right;
     }
     th,td{
-        padding:10px; 
+        padding:10px;
     }
 }
 
@@ -457,16 +458,16 @@
 /////////////////
 .mo-hbcx{
     .block1{
-        margin-bottom:20px; 
+        margin-bottom:20px;
     }
     .block2{
-        border:none; 
+        border:none;
     }
     .table-b4{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
     .block1 .center{
-        padding:10px; 
+        padding:10px;
     }
 
     .more-h{
@@ -492,9 +493,9 @@
     }
     .block1{
         .center{
-            margin:10px 0; 
+            margin:10px 0;
         }
-        margin-bottom:20px; 
+        margin-bottom:20px;
     }
 
 
@@ -503,15 +504,15 @@
 /////////////////
 .mo-fdgl{
     .block2{
-        border-top:0; 
+        border-top:0;
     }
     .xblock{
         margin-bottom:10px;
         .button{
-            padding:2px 8px; 
+            padding:2px 8px;
             border:1px solid $c21;
             background-color:$c24;
-        } 
+        }
     }
 }
 
@@ -522,7 +523,7 @@
     span{
         display:inline-block;
         zoom:1;
-        padding-right:20px; 
+        padding-right:20px;
     }
     line-height:40px;
     border:2px solid $c26;
@@ -545,7 +546,7 @@
     span{
         display:inline-block;
         zoom:1;
-        padding-right:20px; 
+        padding-right:20px;
     }
     line-height:40px;
     border:2px solid $c26;
@@ -555,7 +556,7 @@
 
 .console-screen{
     center{
-        margin:15px 0; 
+        margin:15px 0;
     }
     width:510px;
     margin-right:20px;
@@ -564,7 +565,7 @@
         color:$c13;
         width:500px;
         height:240px;
-        background-color:$c1; 
+        background-color:#000;
         font-family:monospace;
     }
 }
@@ -572,51 +573,51 @@
 //////////////////////
 .mo-zcdr{
     .gray-title{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
     p{
-        padding:20px; 
+        padding:20px;
     }
 }
 
 //////////////////////
 .mo-zctj{
     .gray-title{
-        border-bottom:1px solid $c44; 
+        border-bottom:1px solid $c44;
     }
     .block-i{
-        padding:5px 10px; 
+        padding:5px 10px;
         padding-bottom:20px;
         border-bottom:1px dotted $c44;
     }
     table{
         th{
             white-space:nowrap;
-            text-align:right;  
-        } 
+            text-align:right;
+        }
         td{
             padding:5px;
-            vertical-align:baseline; 
+            vertical-align:baseline;
         }
     }
     .table1{
     }
     .block-i1{
         p{
-            padding-left:40px; 
+            padding-left:40px;
             padding-top:10px;
-        } 
+        }
     }
     .block-i2{
         .text{
-            width:100px; 
+            width:100px;
         }
         td{
-            white-space:nowrap; 
+            white-space:nowrap;
         }
     }
     .block-i3{
-        border:none; 
+        border:none;
     }
     textarea{
         width:400px;
@@ -625,7 +626,7 @@
     }
 
     .center{
-        margin:15px 0; 
+        margin:15px 0;
     }
 }
 
@@ -652,10 +653,10 @@
         border-top:1px solid $c42;
         border-bottom:1px solid $c42;
     }
-} 
+}
 .mo-khcx-ddxq{
     .block-12 .col{
-        width:50%; 
+        width:50%;
     }
 }
 
@@ -668,13 +669,13 @@
 
 .add_city_container{
     display:none;
-    background-color:$c42;    
+    background-color:$c42;
     border:1px solid $c44;
     padding:10px;
     margin:10px;
     line-height:24px;
     .title{
-        color:$c61; 
+        color:$c61;
     }
     .yui3-tab-label,.yui3-tabview{
         position:static;
@@ -683,8 +684,8 @@
 
 .add_city_preview{
     .title{
-        color:$c31; 
-    } 
+        color:$c31;
+    }
     @include sf;
 }
 
@@ -695,7 +696,7 @@
     }
     li{
         margin-right:5px;
-        float:left; 
+        float:left;
         white-space:nowrap;
         width:140px;
         overflow:hidden;
@@ -707,7 +708,7 @@
 .add_city_tab{
     margin-bottom:5px;
     label{
-        font-size:14px; 
+        font-size:14px;
         margin-right:20px;
         font-weight:bold;
         line-height:20px;
@@ -716,24 +717,24 @@
     overflow:hidden;
     zoom:1;
     label,ul,li{
-        float:left; 
+        float:left;
     }
     li{
-        margin-right:5px; 
+        margin-right:5px;
     }
     a{
         color:#333;
-        background-color:$c41; 
+        background-color:$c41;
         text-decoration:none;
     }
     .yui3-tab-selected a{
         color:#fff;
-        background-color:$c22; 
+        background-color:$c22;
     }
 }
 .add_city_block,.add_city_xblock{
     .button{
-        background-color:$c23; 
+        background-color:$c23;
         color:#fff;
         padding:2px 5px;
     }
@@ -744,7 +745,7 @@
 .add_city_preview{
     overflow:hidden;
     zoom:1;
-    
+
 }
 .add_city_preview li{
     float:left;
@@ -757,4 +758,27 @@
 .add_city_confirm{
     text-align:right;
     @include sf;
+}
+.yui3-aclist{
+    position:relative;
+}
+.validate_berth{
+    .pass{
+        color:$c31;
+    }
+    .error{
+        color:$c61;
+    }
+    .msg{
+        font-weight:bold;
+        color:$c61;
+    }
+}
+label.button{
+    line-height:14px;
+    cursor:pointer;
+}
+.yui3-aclist-item{
+    *display:block !important;
+    *margin-bottom:-3px;
 }

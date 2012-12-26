@@ -1,0 +1,392 @@
+﻿{% include '../partial/header.html' %}
+<div class="body clearfix">
+    {% include 'partial/sidebar.html' %}
+    <div class="content area">
+        <div class="mo-hbcx">
+            <div class="block" style="background-color:#f3f3f3">
+                    <table frame=void cellspacing="0" class="table-b5">
+                    <colgroup>
+                        <col width="60"></col>
+                        <col width="174"></col>
+                        <col width="60"></col>
+                        <col width="184"></col>
+                        <col width="60"></col>
+                    </colgroup>
+                        <tr>
+                            <th>航班类型</th>
+                            <td colspan=5>
+<label>
+                                    <input type="radio" class="radio radio_is_single is_single" value="1" checked name="IS_SINGLE" />
+                                    单程
+                                </label>
+                                <label>
+                                    <input type="radio" class="radio radio_is_single is_double" value="2" name="IS_SINGLE" />
+                                    往返
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>出发城市</th>
+                            <td>
+                                <input type="text" class="text suggest depcity suggest-city" value="" name="" />
+                            </td>
+                            <th>到达城市</th>
+                            <td>
+                                <input type="text" class="text suggest arrcity suggest-city" value="" name="" />
+                            </td>
+                            <th>航空公司</th>
+                            <td>
+<!-- <input type="text" class="sel_airlines" /> -->
+<select class="sel_airlines">
+	<option selected="selected" value="">全部</option>
+	<option value="3u">3U （川航）</option>
+	<option value="8L">8L （祥鹏）</option>
+	<option value="BK">BK （奥凯）</option>
+	<option value="CA">CA （国航）</option>
+	<option value="CN">CN （大新华）</option>
+	<option value="CZ">CZ （南航）</option>
+	<option value="EU">EU （成都）</option>
+	<option value="FM">FM （上航）</option>
+	<option value="G5">G5 （华夏）</option>
+	<option value="GS">GS （天津）</option>
+	<option value="HO">HO （吉祥）</option>
+	<option value="HU">HU （海航）</option>
+	<option value="JD">JD （首都）</option>
+	<option value="JR">JR （幸福）</option>
+	<option value="KN">KN （中联）</option>
+	<option value="KY">KY （昆明）</option>
+	<option value="MF">MF （厦航）</option>
+	<option value="MU">MU （东航）</option>
+	<option value="NS">NS （河北）</option>
+	<option value="OZ">OZ （韩亚华空）</option>
+	<option value="PN">PN （西部）</option>
+	<option value="SC">SC （山航）</option>
+	<option value="TV">TV （西藏）</option>
+	<option value="VD">VD （河南）</option>
+	<option value="ZH">ZH （深航）</option>
+</select>
+
+                                <!-- <input type="text" class="text airlines" value="" name="" /> -->
+                                <!-- <input type="hidden" class="text airlines_hidden" value="" name="" /> -->
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>出发日期</th>
+                            <td>
+                                <input type="text" class="text depdate datepicker" value="" name="" />
+                            </td>
+                            <th>返回日期</th>
+                            <td>
+                                <input type="text" class="text arrdate datepicker" value="" name="" />
+                            </td>
+                            <th>起飞时间</th>
+                            <td>
+                                <input type="text" class="text timepicker" id="time" value="" name="" />
+                                至
+                                <input type="text" class="text timepicker" value="" name="" />
+                            </td>
+                            <td>
+                              <input type="button" class="button button5" value="查询" /> 
+                            </td>
+                        </tr>
+                    </table>
+            </div>
+
+            <div class="block block2">
+                <div class="block-head">
+                    <h3 class="gray-title">选择航班</h3>
+                </div>
+                <div class="block-body">
+                    <div class="warn warn-blue block-i block-i1">
+                        <p>
+                        <strong class="f14">已选定去程：上海——北京</strong>
+                        </p>
+                        <p>
+                        <span>
+                        出发日期：2012-07-05  
+                        </span>
+                        <span>
+                            东方航空MU123
+                        </span>
+                        <span>
+                        机型333 
+                        </span>
+                        <span>
+                            经济舱/M
+                        </span>
+                            <span>
+                                起飞07:00 
+                            </span>
+                            <span>
+                                降落09:20 
+                            </span>
+                            <span><s class="red f14 price">￥809</s></span>
+                        </p>
+                    </div>
+                    <div class="warn warn-yellow block-i block-i2">
+                        <p>
+                        <strong class="f14">上海——北京</strong>
+                        <strong>（单程）</strong>
+                        出发日期：2012-07-05  当前共有
+                        <strong> 40 </strong>
+                        条航班，最低价
+                        <span class="red f14 price">
+                            ￥809</span>
+                        </p>
+                        <p>
+                        <i class="icon8">&nbsp;</i>
+                        <span class="orange">
+                            温馨提示：结算价以订座成功PAT数据支付页面为准（注：结算价均不含机建费、燃油费和保险费）
+                        </span>
+                        </p>
+                    </div>
+
+                    <div class="search-list block-i">
+                        <div class="block-i-head clearfix">
+                            <ul>
+                                <li class="current">
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#">
+                                    <span class="price">&#165;799</span>
+                                    <span class="date">07-08（周日）</span>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="block-i-body">
+                            <table frame=void class="table-b2" cellspacing="0">
+                                <tr class="thead">
+                                    <td width="15%">航班号</td>
+                                    <td width="8%">起降时间
+                                        <i class="icon9"></i>
+                                    </td>
+                                    <td width="8%">起降机场</td>
+                                    <td width="8%">经停</td>
+                                    <td width="8%">机建/燃油</td>
+                                    <td width="10%">舱位/票面价
+                                        <i class="icon9"></i>
+                                    </td>
+                                    <td width="10%">余位</td>
+                                    <td width="10%">退改签</td>
+                                    <td width="10%">返点</td>
+                                    <td width="10%">结算价</td>  
+                                    <td width="10%"></td>
+                                </tr>
+                                <tr class="data-row">
+                                    <td>
+                                        <span class="pubFlights_fe">1东方航空</span><br>
+                                        <span class="sjx">
+                                          大型机<u class="jx">333</u>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="deptime">07:00</span><br>
+                                        <span class="arrtime">09:20</span>
+                                    </td>
+                                    <td>
+                                      <span class="depcity">虹桥机场(t2)</span><br>
+                                        <span class="arrcity">首都机场(t2)</span>
+                                    </td>
+                                    <td>
+                                        否 
+                                    </td>
+                                    <td>
+                                        50/130 
+                                    </td>
+                                    <td>
+                                        Y/经济舱（100折）<br>
+                                        <span class="price">￥850</span><br>
+                                        <a href="javascript" class="more"><i class="arrow6">&nbsp;</i>查看更多舱位</a>
+                                    </td>
+                                    <td>
+                                        >9 
+                                    </td>
+                                    <td>
+                                        <u class="tgq">退改签</u>
+                                    </td>
+                                    <td>
+                                        <span class="price dred f14">
+                                            6.0% 
+                                        </span><br>
+                                        <span class="price dred f14">
+                                            ￥51
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="price dred f16">
+                                            ￥799 </span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="button button6">预订</a>
+                                    </td>
+                                </tr>
+                                <tr class="info-row">
+                                    <td colspan="11" style="padding:0;">
+                                        <table cellspacing="0" style="width:100%">
+                                          <colgroup>
+                                            <col width="50%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                          </colgroup>
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                                <td>
+                                                    Y/经济舱（100折）<br>
+                                                    <span class="price">￥850</span><br>
+                                                </td>
+                                                <td>5</td>
+                                                <td>
+                                                    <u class="tgq">退改签</u>
+                                                </td>
+                                                <td>
+                                                    <span class="price dred f14">
+                                                        6.0% 
+                                                    </span><br>
+                                                    <span class="price dred f14">
+                                                        ￥51
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="price dred f16">
+                                                        ￥799 </span>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="button button6">预订</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                              <td>&nbsp;</td>
+                                                <td>
+                                                    Y/经济舱（100折）<br>
+                                                    <span class="price">￥850</span><br>
+                                                </td>
+                                                <td>5</td>
+                                                <td>
+                                                    <u class="tgq">退改签</u>
+                                                </td>
+                                                <td>
+                                                    <span class="price dred f14">
+                                                        6.0% 
+                                                    </span>
+                                                    <span class="price dred f14">
+                                                        ￥51
+                                                    </span><br>
+                                                    <span class="price dred f14">
+                                                        6.0% 
+                                                    </span>
+                                                    <span class="price dred f14">
+                                                        ￥51
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="price dred f14">
+                                                        ￥512
+                                                    </span><br>
+                                                    <span class="price dred f16">
+                                                        ￥799 </span>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="button button6">预订</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="even data-row">
+                                    <td>
+                                        <span class="pubFlights_fe">1东方航空</span><br>
+                                        <span class="sjx">
+                                          大型机<u class="jx">333</u>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="deptime">07:00</span><br>
+                                        <span class="arrtime">09:20</span>
+                                    </td>
+                                    <td>
+                                        <span class="depcity">虹桥机场</span>
+                                        <span class="arrcity">首都机场</span>
+                                    </td>
+                                    <td>
+                                        否 
+                                    </td>
+                                    <td>
+                                        50/130 
+                                    </td>
+                                    <td>
+                                        Y/经济舱（100折）<br>
+                                        <span class="price">￥850</span><br>
+                                        <a href="javascript" class="more"><i class="arrow6">&nbsp;</i>查看更多舱位</a>
+                                    </td>
+                                    <td>
+                                        >9 
+                                    </td>
+                                    <td>
+                                        <u class="tgq">退改签</u>
+                                    </td>
+                                    <td>
+                                        <span class="price dred f14">
+                                            6.0% 
+                                        </span><br>
+                                        <span class="price dred f14">
+                                            ￥51
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="price f16">
+                                            ￥799 </span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="button button6">预订</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% include '../partial/footer.html' %}

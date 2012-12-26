@@ -1,0 +1,23 @@
+body{
+  meizz : expression(function(el){
+    var width = document.documentElement.clientWidth;
+
+    if(window.tempWidth == width) return;
+    window.tempWidth =  width;
+
+    if( width<1200){
+      el.style.width = "1200px";
+    }else{
+      el.style.width = "auto";
+    }
+  }(this));
+}
+
+.body{
+  _height:100%;
+}
+
+.menu-sidebar dl{
+  _zoom:1;
+  _margin-bottom:0px;
+}
