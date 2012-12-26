@@ -19,6 +19,7 @@ cp -r templates/$module/ajax $dst/
 
 cp -r static/css/* $projdst/CSS
 cp -r static/js/*.js $projdst/JS
+cp -r static/js/yui3/taobao_wd/ $projdst/JS/yui3
 cp -r static/img/* $projdst/IMG
 
 cd templates/$module/

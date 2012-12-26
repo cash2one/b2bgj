@@ -764,6 +764,7 @@
 }
 .validate_berth{
     .pass{
+<<<<<<< HEAD
         color:$c31;
     }
     .error{
@@ -772,13 +773,26 @@
     .msg{
         font-weight:bold;
         color:$c61;
+=======
+        color:$c31; 
+    }
+    .error{
+        color:$c61; 
+    }
+    .msg{
+        font-weight:bold;
+        color:$c61; 
+>>>>>>> 0b8d01ae8af7bf88c713eee8da5b3b1c7b7580ab
     }
 }
 label.button{
     line-height:14px;
     cursor:pointer;
 }
+<<<<<<< HEAD
 .yui3-aclist-item{
     *display:block !important;
     *margin-bottom:-3px;
 }
+=======
+>>>>>>> 0b8d01ae8af7bf88c713eee8da5b3b1c7b7580ab

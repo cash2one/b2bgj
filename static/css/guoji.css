@@ -1244,7 +1244,10 @@ fieldset {
 label.button {
   line-height: 14px;
   cursor: pointer; }
+<<<<<<< HEAD
 
 .yui3-aclist-item {
   *display: block !important;
   *margin-bottom: -3px; }
+=======
+>>>>>>> 0b8d01ae8af7bf88c713eee8da5b3b1c7b7580ab
