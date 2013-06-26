@@ -31,7 +31,7 @@
                     <li>&nbsp;</li>
                 </ul>
             <div style="margin-top:10px">
-                <table class="grid-table" data-role="grid">
+                <table class="grid-table">
                 <tr class="thead">
                 <th data-field="c1">客户简称</th>
                 <th data-field="c2">创建时间</th>
@@ -92,7 +92,7 @@
                     </li>
                 </ul>
             <div style="margin-top:10px">
-                <table class="grid-table" data-role="grid">
+                <table class="grid-table">
                 <tr class="thead">
                 <th data-field="c1">营业点名称</th>
                 <th data-field="c2">电话</th>
@@ -149,13 +149,14 @@ $(function(){
         }).init();
     });
 
-    var grid_table = $('.grid-table').kendoGrid({
-        scrollable:false,
-        pageable:true,
-        rowTemplate: kendo.template($("#grid-row-template").html())
-    }).data('kendoGrid');
 
-    console.dir(grid_table);
+    var grid_table = new GridTable('.block2 .grid-table',{
+        dataSource: [{c1:222}], 
+        rowTemplate: kendo.template($("#grid-row-template").html())
+    
+    }).init(); 
+
+    // console.dir(content_grid_table);
 
 });
 

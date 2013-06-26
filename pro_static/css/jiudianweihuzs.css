@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+img,input{ border:0px;}
+a{ text-decoration:none; color:#606060;}
+ul li{ list-style-type:none;}
+body{ width:100%; height:auto; font-family:Arial, Helvetica, sans-serif,微软雅黑; font-size:12px; color:#454545; background-color:#eaeef0;}
+
+
+.jdwfcontent{ width:983px; height:620px;}
+.jiudianweihu{ width:982px; height:36px; background:url(../images/jdwhcx_bgtiao_1.jpg) no-repeat; margin:10px auto;}
+.jiudianweihu h2{ width:170px; height:35px; line-height:35px; margin-left:15px; font-size:16px; float:left;}
+.jdwh-btn{ width:75px; height:35px; line-height:35px; float:right; margin-right:10px;}
+.jdwh-btn-a{ display:block; float:left; width:71px; height:25px; line-height:25px; text-align:center; background:url(../images/xzjd_btn.png) no-repeat; margin-top:5px; color:#FFF;}
+a.jdwh-btn-a:visited {background:url(../images/xzjd_btn_1.png) no-repeat; border:0px;}	/* 已访问的链接 */
+a.jdwh-btn-a:hover {background:url(../images/xzjd_btn_2.png) no-repeat; border:0px; }	/* 鼠标移动到链接上 */
+.jdcxtabdiv{ width:983px; height:101px; background:url(../images/jdfwcx_bgtiao.jpg) no-repeat; margin:7px auto; padding-top:7px;}
+.jdcxtable{ width:983px; height:85px; line-height:25px;}
+.jdcxtable input{ border:1px solid #d6d6d6; padding-left:5px; color:#9f9f9f; line-height:22px; height:22px; font-size:12px;}
+.jdcxtable select{ color:#9f9f9f; padding-left:2px; line-height:22px; height:22px; font-size:12px;}
+.jdmc{ width:57px; padding-left:20px; text-align:left;}
+.jdcx_td_1{ width:185px;}
+.jdcx_td_1 input{ width:152px;}
+.jdcx_td_1 select{ width:158px;}
+.jdcx_td_2{ width:60px;}
+.jdcx_td_3{ width:110px;}
+.jdcx_td_3 select{ width:73px;}
+.jdcx_td_4{ width:55px;}
+.jdcx_td_5{ width:145px;}
+.jdcx_td_5 select{ width:110px;}
+.jdcx_td_6{ width:90px;}
+.jdcx_td_7{ width:165px;}
+.jdcx_td_7 select{ width:90px;}
+.jdcx_td_8{ width:98px; text-align:center;}
+.jdcx_td_8_a{ display:block; width:82px; height:31px; line-height:31px; text-align:center; background:url(../images/chaxun_btn.png) no-repeat; border:0px; color:#FFF;}
+a.jdcx_td_8_a:visited {background:url(../images/chaxun_btn_2.png) no-repeat; border:0px;}	/* 已访问的链接 */
+a.jdcx_td_8_a:hover {background:url(../images/chaxun_btn_1.png) no-repeat; border:0px; }	/* 鼠标移动到链接上 */
+
+
+.tab_2{ width:983px; height:360px; border-collapse:collapse; background:#fff; line-height:27px;}
+.tab_2 th{ border-top:1px solid #c6c6c6; border-bottom:2px solid #ffa86e; border-right:1px solid #f6f6f6; padding-left:8px; background:#e4e4e4; font-weight:500;}
+.tab_2_th_1{ border-left:1px solid #e0e0e0 !important;}
+.tab_2_th_2{ border-right:1px solid #e0e0e0 !important;}
+.tab_2 td{ border:1px solid #e0e0e0; padding-left:8px;}
+.td{ vertical-align:bottom; padding-bottom:3px;}
+.yema{ width:400px; float:right; height:30px; line-height:30px; color:#676767;}
+.yema-left-img{ width:12px; height:30px; float:left; display:block; margin-left:10px;}
+.yemaul{ width:210px; float:left; margin-left:10px;}
+.yemaul li{ width:28px; text-align:center; float:left;}
+.yema-ul-li{ border:1px solid #e7e7e7; background:#f7f7f7; border-bottom:2px solid #ff6c00; color:#575757; font-weight:bold;}
+.yema_p{ width:100px; float:left;}
+.yema_p span{ color:#ff6c00; font-weight:bold;}
+
+
+
+.xieyi{ width:982px; height:36px; line-height:36px; background:url(../images/xyst_bgtiao.jpg) no-repeat; margin:10px auto;}
+.xieyi h2{ width:60px; padding-left:7px; text-align:center; font-size:16px; float:left; background:url(../images/fanhui_left_bg.png) no-repeat 7px center;}
+.xieyi_ul{ width:170px; float:left; margin-left:10px; color:#676767;}
+.xieyi_ul li{ width:77px; float:left; text-align:center;}
+.xieyi_ul_li{ background:#FFF; border-bottom:2px solid #ff6c00; color:#333;}
+.xyst_tab1_div{ width:983px; height:72px; background:url(../images/xyst_cxbtn.jpg) no-repeat; margin:7px auto; padding-top:5px;}
+.xyst_tab1{ width:970px; height:60px; line-height:22px; margin-left:15px;}
+.xyst_tab1 input{ border:1px solid #d6d6d6; padding-left:5px; color:#9f9f9f; line-height:22px; height:22px; font-size:12px;}
+.xyst_tab1 select{ color:#9f9f9f; padding-left:2px; line-height:22px; height:22px; font-size:12px;}
+.hkgs{ width:50px;}
+.hkgs_select{ width:160px;}
+.hkgs_select select{ width:150px;}
+.hkmc_input{ width:260px;}
+.hkmc_input input{ width:250px;}
+.hkmc_cx{ width:82px; text-align:right;}
+.hkmc_cx_a{ display:block; width:82px; height:31px; line-height:31px; text-align:center; background:url(../images/chaxun_btn.png) no-repeat; border:0px; color:#FFF; margin-left:150px;}
+a.hkmc_cx_a:visited {background:url(../images/chaxun_btn_2.png) no-repeat; border:0px;}	/* 已访问的链接 */
+a.hkmc_cx_a:hover {background:url(../images/chaxun_btn_1.png) no-repeat; border:0px; }	/* 鼠标移动到链接上 */
+.youxiao{ width:100px;}
+.youxiao select{ width:90px;}
+.xiugairiqi{ width:100px;}
+.jisuanqi{ background:url(../images/jisuanqi_1.png) no-repeat 76px; center;}
+.jisuanqi_1{ background:url(../images/jisuanqi_2.png) no-repeat 76px center;}
+.xgrq{ width:90px;}
+.xgrq_input{ width:90px;}
+.zhiriqi{ width:20px; text-align:left;}
+.bianma{ width:135px;}
+.th_2{ width:115px;}
+.th_3{ width:270px;}
+.th_4{ width:75px;}
+.th_5{ width:150px;}
+.th_6{ width:80px;}
+.th_7{ width:140px;}
+.td_3{ background:#ffffdb;}
+.caozuo_p{ width:140px;}
+.caozuo_p a{ width:45px; text-align:center; display:block; float:left; color:#0066cc;}
+
+
+
+.tianjiaxieyi{ width:615px; height:330px; margin:100px auto;}
+.xieyicontent{ width:540px; height:200px; margin-left:35px; margin-top:15px;}
+.xieyicontent input{ height:25px; border:1px solid #d8d8d8;}
+.xieyicontent select{ border:1px solid #d8d8d8;}
+.xymc_p,.xyfj{ width:540pxp; height:25px; line-height:25px; margin-bottom:10px;}
+.xymc_p span,.xyfj span{ width:80px; float:left; font-weight:bold; font-size:14px; display:block;}
+.xymc_p_input{ width:450px; float:left; display:block;}
+.xymc_p select{ width:225px; height:25px; float:left; color:#9f9f9f;}
+.xyfj input{ width:225px; float:left;}
+.xyfj a{ width:70px; height:25px; text-align:center; line-height:25px; background:url(../images/xieyibtn.png) no-repeat; display:block; float:left; margin-left:5px; margin-top:1px; color:#2c2c2c;}
+.xyfj textarea{ width:450px; height:85px; float:left; display:block; overflow-y:scroll; padding-left:5px; padding-top:5px; color:#9f9f9f; border:1px solid #d8d8d8;}

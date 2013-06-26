@@ -1,0 +1,91 @@
+﻿@charset "utf-8";
+/* CSS Document */
+a.aa:link{ background:url(../images/quedingcaozuo_btn.png) no-repeat;}
+a.aa:visited{ background:url(../images/quedingcaozuo_btn_2.png) no-repeat;}
+a.aa:hover{ background:url(../images/quedingcaozuo_btn_1.png) no-repeat;}
+a.aa:active{ background:url(../images/quedingcaozuo_btn.png) no-repeat;}
+
+
+a.bb:link{ background:url(../images/quxiaocaozuo_btn.png) no-repeat;}
+a.bb:visited{ background:url(../images/quxiaocaozuo_btn_2.png) no-repeat;}
+a.bb:hover{ background:url(../images/quxiaocaozuo_btn_1.png) no-repeat;}
+a.bb:active{ background:url(../images/quxiaocaozuo_btn.png) no-repeat;}
+
+.tianjiabumenye{ width:435px; height:145px; margin:20% auto; background:url(../images/caozuotishi_bg.png) repeat-x left top;}
+.tianjiacaozuo{ width:435px; height:40px;}
+.tjxy_biaoti{ width:615px; height:40px;}
+.tianjiacaozuo h3,.tianjiabumentishi h3,.tjxy_biaoti h3{ width:93px; line-height:40px; float:left; text-align:center;}
+.tianjiacaozuo a,.tianjiabumentishi a,.tjxy_biaoti a{ width:10px; height:9px; float:right; display:block; margin-right:15px; background:url(../images/guanbi.png) no-repeat; margin-top:15px;}
+.quedingma{ width:300px; height:30px; line-height:30px; font-size:15px; color:#333; margin-left:20px; padding-left:30px; margin-top:10px; background:url(../images/tishi_bg.png) no-repeat -1px center; margin-bottom:20px;}
+.buttontishi{ width:215px; height:35px; line-height:35px; text-align:center; margin-left:100px;}
+.queding_btn{ width:101px; height:35px; color:#FFF; display:block; float:left; margin-right:5px;}
+.quxiao_btn{ width:101px; height:35px; color:#606060; display:block; float:left;}
+
+
+
+.tianjiabumenneirong{ width:565px; height:420px; margin:100px auto; background:url(../images/tianjiabumen_bgimg.jpg) repeat-x left top; border:1px solid #d3d3d3;}
+.tianjiabumentishi{ width:565px; height:40px;}
+.bumenmingcheng{ width:488px; height:32px; margin-left:15px; margin-top:15px;}
+.bumenmingcheng span{ width:65px; text-align:left; height:32px; display:block; float:left; line-height:32px;}
+.bumenmingcheng input{ width:415px; height:30px; border:1px solid #d4d4d4; display:block; float:left;}
+.shangjibumenneirong{ width:565px; height:255px; margin-top:10px; margin-left:15px;}
+.shangjibumen{ width:65px; text-align:left; height:255px; vertical-align:top; float:left;}
+.shangjibumen_right{ width:415px; height:255px; float:left; border:1px solid #d4d4d4; overflow-y:scroll;}
+.shangjibumen_right_1{ height:270px;}
+
+.shangjibumen_ul{ width:170px; height:240px; margin-left:10px; margin-top:10px;}
+.k-minus{ background:url(../images/zankai_bg.png) no-repeat 0px center;}
+.k-plus{ background:url(../images/zedie_bg.png) no-repeat 0px center;}
+.shangjibumen_ul_li{ height:22px; background:url(../images/zankai_bg.png) no-repeat 0px center; padding-left:13px; line-height:22px;}
+.erjicaidan{ height:215px; line-height:22px; margin-left:5px;}
+.guolu_1{ height:163px; margin-top:2px;}
+.guolu_1_span,.guoneijibiao_1_span{ height:22px; line-height:22px; padding-left:13px; background:url(../images/zankai_bg.png) no-repeat 0px center; margin-top:2px;}
+.beijingtebo,.jiudianchaiwu{ height:22px; line-height:22px; padding-left:13px; background:url(../images/zedie_bg.png) no-repeat 0px center; margin-top:2px;}
+.fenbumen{ height:145px; margin-left:15px;}
+.guoneijibiao_1{ height:70px;}
+.tuipiaobumen{ height:50px;}
+.tuipiao_1{ height:22px; line-height:22px; padding-left:13px; background:url(../images/zedie_bg.png) no-repeat 0px center; margin-top:2px; margin-left:13px;}
+.tianjia_button{ width:220px; height:35px; line-height:35px; text-align:center; margin-left:330px; margin-top:20px;}
+.tianjiaxieyi_button{ width:615px; height:35px; line-height:35px; text-align:center; margin-left:365px; margin-top:20px;}
+.tianjiaqueding_btn{ width:101px; height:35px; color:#FFF; display:block; float:left; margin-right:5px; font-size:14px; font-weight:bold;}
+.tianjiaquxiao_btn{ width:101px; height:35px; color:#606060; display:block; float:left; font-size:14px; font-weight:bold;}
+
+.tianjiayuangongneirong{ width:560px; height:486px; margin:50px auto 0px auto;  background:url(../images/tianjiayuangong_bg.jpg) repeat-x left top;}
+.yuangongmiddle{ width:540px; height:365px; margin-left:10px;}
+.leftdiv{ width:265px; height:365px; border-right:1px dashed #cac9c9; margin-left:5px; margin-top:10px; float:left; padding-top:5px;}
+.gundongtiao{ height:280px; }
+.lefttable{ width:265px; height:125px;}
+.lefttable td{ line-height:30px;}
+.yuangongxingming_1{ width:60px;}
+.xingming_input,riqi{ width:168px;}
+.xingming_input input,.riqi input{ width:168px; border:1px solid #cac9c9; height:25px; color:#9f9f9f;}
+.zhengchang{ width:170px; padding-left:5px; height:25px; color:#9f9f9f; line-height:25px;}
+.suosubumen{ width:250px; height:225px;}
+.suosubumen p{ width:230px; height:30px; line-height:30px; margin-top:5px;}
+.suosubumen_content{ width:245px; height:205px; overflow-y:scroll; border:1px solid #cac9c9;}
+.juesexuanze{ width:245px; height:205px; border:1px solid #cac9c9;}
+.rightdiv{ width:250px; height:365px; margin-left:15px; margin-top:10px; float:left; padding-top:5px;}
+.yonghuming{ width:63px;}
+.yonghuming_input{ width:165px;}
+.yonghuming_input input{ width:165px; height:25px; border:1px solid #cac9c9;}
+.righttable{ width:250px; height:125px;}
+
+
+.bjdqbm{ width:470px; height:190px; background:#fff; margin:15% auto; color:#333; border:1px solid #a5a5a3;}
+.bjdqbm_top{ height:40px; line-height:40px; background:url(../images/bjdqbm_bg.jpg) repeat-x left center;}
+.bjdqbm_top span{ width:120px; float:left; display:block; font-weight:bold; margin-left:15px;}
+.bjdqbm_top a{ width:12px; font-size:18px; font-weight:bold; color:#a9a9a9; text-decoration:none; display:block; float:right; margin-right:10px;}
+.bumencontent{ height:80px; margin-top:5px;}
+.bumencontent p,.bmdiv{ width:440px; height:30px; line-height:30px; margin-left:15px; float:left; margin-bottom:10px;}
+.bumencontent p span,.bmdiv span,.plddyg_p span{ width:10px; display:block; float:left; color:#ff3101;}
+.bumencontent p label,.bmlabel_1,.plddyg_p label{ width:70px; float:left; font-size:12px; font-weight:bold;}
+.bumencontent p input{ width:330px; height:20px; border:1px solid #d3d3d3; display:block; float:left; margin-top:4px;}
+.bmlabel{ width:60px; float:left; display:block;}
+.buttonbianji{ width:215px; height:35px; line-height:35px; text-align:center; margin-left:220px;}
+
+.plddyg{ width:440px; height:260px; margin-left:15px; float:left;}
+.plddyg_p{line-height:20px; margin-top:10px; margin-left:15px; margin-bottom:35px;}
+.pldd{ width:470px; height:350px; background:#fff; margin:15% auto; color:#333; border:1px solid #a5a5a3;}
+.ddbm{ width:410px; height:190px; margin-left:15px; border:1px solid #d5d5d5;}
+
+
