@@ -1,0 +1,159 @@
+{% include 'partial/header.html' %}
+        <div id="window"></div>
+
+        <div class="actions block">
+            <div class="col col-l">
+                <a class="item highlight" href="#">资金汇总</a> 
+                <a class="item" href="#">充值管理</a> 
+                <a class="item" href="#">提现管理</a> 
+                <a class="item" href="#">授信管理</a> 
+                <a class="item" href="#">押金管理</a> 
+                <a class="item" href="#">冻结管理</a> 
+                <a class="item" href="#">收支明细</a> 
+                <a class="item" href="#">交易明细</a> 
+            </div>
+        </div>
+
+        <div class="block block1 clearfix">
+            <div class="col col-l">
+                <ul class="flat-list">
+                    <li>
+                    <label class="vertical-head">客户简称</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">帐号</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">账户类型</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    </li>
+                    <li>
+                        <input type="checkbox" /> 
+                        显示已删除客户
+                    </li>
+                    <li>
+                    <label class="vertical-head">截止时间</label>
+                    <input style="width:100px" data-role="datepicker">
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-r" style="padding-top:10px;">
+                <button class="btns btn-orange-s">查询</button> 
+            </div>
+        </div>
+
+        <div class="block block2">
+            <div class="block-header">
+                <ul class="flat-list">
+                    <li>
+                    <button class="btns btn-ac-blue">导出Excel</button> 
+                    </li> 
+                </ul>
+            </div> 
+            <table data-role="grid" class="grid-table">
+                <tr class="thead">
+                    <th data-filed="c1">客户简称</th>
+                    <th data-filed="c2">帐号</th>
+                    <th data-filed="c3">账户余额</th>
+                    <th data-filed="c4">可用余额</th>
+                    <th data-filed="c5">信用额度</th>
+                    <th data-filed="c6">佣金金额</th>
+                    <th data-filed="c7">押金金额</th>
+                    <th data-filed="c8">冻结金额</th>
+                </tr>
+                <tr>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000.00</td>
+                  <td>180,000.00</td>
+                  <td>180,000.00</td>
+                </tr>
+                <tr class="highlight">
+                    <td>xxx</td>
+                    <td>xxx</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000.00</td>
+                  <td>180,000.00</td>
+                  <td>180,000.00</td>
+                </tr>
+                <tr>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000.00</td>
+                  <td>180,000.00</td>
+                  <td>180,000.00</td>
+                </tr>
+            </table>
+            <div class="grid-table-pagination">
+                <span class="grid-table-count">
+                    共 <em>132</em> 条记录 
+                </span> 
+                <span>
+                    <a class="prev" href="#">&nbsp;</a> 
+                </span>
+                <span class="links">
+                    <a href="#">1</a> 
+                    <a href="#">2</a> 
+                    <a class="current" href="#">3</a> 
+                    <a href="#">4</a> 
+                    <a href="#">5</a> 
+                    <a href="javascript:;">...</a>
+                    <a href="#">50</a> 
+                </span>
+                <span>
+                    <a class="next" href="#">&nbsp;</a> 
+                </span>
+            </div>
+            <div style="height:0px;position:relative;" class="extra">
+                <div style="position:absolute;top:-30px;left:20px;">
+                    账户余额：
+               <span class="text1">42141</span>&nbsp;
+                    可用余额：
+               <span class="text1">42141</span>&nbsp;
+                    信用额度：
+               <span class="text1">42141</span>&nbsp;
+                    佣金金额：
+               <span class="text1">42141</span>&nbsp;
+                    冻结金额：
+               <span class="text1">42141</span>&nbsp;
+                </div>
+            </div>
+        </div>
+
+
+<script type="text/x-kendo-template" id="ac-pass-template">
+        pass
+</script>
+<script type="text/x-kendo-template" id="ac-return-template">
+    returnfdsa
+</script>
+<script type="text/javascript">
+    kendo.init($('body'));
+
+    var winPass = $('#window').kendoWindow({
+        visible:false,
+        animation:false,
+        modal:true,
+        content:{
+            template: kendo.template($("#ac-pass-template").html())
+        } 
+    }).data('kendoWindow'); 
+
+    $('.ac-pass').bind('click',function(){
+        winPass.open();
+        winPass.center();
+    });
+</script>
+
+{% include 'partial/footer.html' %}

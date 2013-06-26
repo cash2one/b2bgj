@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>平台建单</title>
+<meta charset="utf-8" />
+<script src="http://localhost:35729/livereload.js"></script>
+<link rel="stylesheet" href="http://static.b2b.com/css/kendo.common.min.css" />
+<link rel="stylesheet" href="http://static.b2b.com/css/kendo.gray.css" />
+<link href="http://static.b2b.com/css/common.css" rel="stylesheet" />
+<link href="http://static.b2b.com/css/b2b.css" rel="stylesheet" />
+<link rel="stylesheet" href="http://static.b2b.com/css/global.css" />
+<link rel="stylesheet" href="http://static.b2b.com/css/finance.css" />
+<link rel="stylesheet" href="http://static.b2b.com/css/hotel.css" />
+<script type="text/javascript" src="http://static.b2b.com/js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.b2b.com/js/kendo/kendo.web.js"></script>
+<script type="text/javascript" src="http://static.b2b.com/js/plugins/jquery.fixedBar.js"></script>
+<script type="text/javascript" src="http://static.b2b.com/js/finance.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.actions').fixedBar();
+    var lensf = function (){
+        $.each($('.instr'),function(){
+            var that = $(this);
+            if(that.find('.highlight-fl').size()>0){
+                var ele = that.find('.highlight');
+                var len = ele.size();
+                var wid = ele.width()*len + 15;
+                that.find('.line').prepend('<div style="background-color:#FF6608;height:2px;width:'+wid+'px" />')
+            }
+        });
+    }
+    lensf();
+});
+</script>
+
+</head><body>  <div id="extHeader">
+    <div></div>
+</div>
+
+<div id="container">
+    <div class="header">
+        <h1></h1>
+        <div>
+            <span>你好,${name}</span>
+            <a href="javascript:void(0);">退出</a>
+        </div>
+        <ul id="top_menu">
+            <li><a href="javascript:void(0);">国内机票</a></li>
+            <li><a href="javascript:void(0);">国际机票</a></li>
+            <li><a href="javascript:void(0);">酒店</a></li>
+            <li><a href="javascript:void(0);">票证中心</a></li>
+            <li><a href="javascript:void(0);">财务管理</a></li>
+            <li><a href="javascript:void(0);">客户管理</a></li>
+            <li class="current"><a href="javascript:void(0);">系统设置</a></li>
+        </ul>
+        <ol class="sub_menu">
+            <li class="current"><a href="javascript:void(0);">公告信息</a></li>
+            <li><a href="javascript:void(0);">公司信息</a></li>
+            <li><a href="javascript:void(0);">组织架构</a></li>
+            <li><a href="javascript:void(0);">角色维护</a></li>
+            <li><a href="javascript:void(0);">基础数据</a></li>
+        </ol>
+        <div id="message">
+            <a href="javascript:void(0);">消息</a>
+            <span>New</span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="sub_menu_bar"></div>
+    <div id="mainContent">

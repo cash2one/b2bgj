@@ -1,0 +1,155 @@
+{% include 'partial/header.html' %}
+        <div id="window"></div>
+
+        <div class="actions block">
+            <div class="col col-l">
+                <a class="item" href="#">资金汇总</a> 
+                <a class="item" href="#">充值管理</a> 
+                <a class="item" href="#">提现管理</a> 
+                <a class="item" href="#">授信管理</a> 
+                <a class="item" href="#">押金管理</a> 
+                <a class="item" href="#">冻结管理</a> 
+                <a class="item highlight" href="#">收支明细</a> 
+                <a class="item" href="#">交易明细</a> 
+            </div>
+        </div>
+
+        <div class="block block1 clearfix">
+            <div class="col col-l">
+                <ul class="flat-list">
+                    <li>
+                    <label class="vertical-head">客户简称</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head" style="width:40px;">帐号</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">订单号</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">资金流量</label>
+                    <input style="width:100px;" data-role="dropdownlist" data-source="['全部']">
+                    </li>
+                    <li style="width:500px;">
+                    <label class="vertical-head">收支分类</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">&nbsp;
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    </li>
+                    <li style="width:300px;">
+                    <label class="vertical-head">起止日期</label>
+                    <input data-role="datepicker" style="width:100px">&nbsp;
+                    <input data-role="datepicker" style="width:100px">
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-r" style="padding-top:10px;">
+                <button class="btns btn-orange-s">查询</button> 
+            </div>
+        </div>
+
+        <div class="block block2">
+            <div class="block-header">
+                <ul class="flat-list">
+                    <li>
+                    <button class="btns btn-ac-blue">导出Excel</button> 
+                    </li>
+                </ul>
+            </div> 
+            <table data-role="grid" class="grid-table">
+                <tr class="thead">
+                <th data-field="c1">客户简称</th> 
+                <th data-field="c2">交易日期</th> 
+                <th data-field="c3">收入</th>
+                <th data-field="c4">支出</th>
+                <th data-field="c5">账户余额</th>
+                <th data-field="c6">可用余额</th>
+                <th data-field="c7">收支类型/支付方式</th>
+                <th data-field="c8">摘要</th>
+                <th data-field="c9">操作人</th>
+                </tr>
+                <tr>
+                  <td>xxx</td>
+                  <td>2013-04-01 15:30</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>2012-04-23<br>张小黑</td>
+                </tr>
+                <tr class="highlight">
+                  <td>xxx</td>
+                  <td>2013-04-01 15:30</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>2012-04-23<br>张小黑</td>
+                </tr>
+                <tr>
+                  <td>xxx</td>
+                  <td>2013-04-01 15:30</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>2012-04-23<br>张小黑</td>
+                </tr>
+            </table>
+            <div class="grid-table-pagination">
+                <span class="grid-table-count">
+                    共 <em>132</em> 条记录 
+                </span> 
+                <span>
+                    <a class="prev" href="#">&nbsp;</a> 
+                </span>
+                <span class="links">
+                    <a href="#">1</a> 
+                    <a href="#">2</a> 
+                    <a class="current" href="#">3</a> 
+                    <a href="#">4</a> 
+                    <a href="#">5</a> 
+                    <a href="javascript:;">...</a>
+                    <a href="#">50</a> 
+                </span>
+                <span>
+                    <a class="next" href="#">&nbsp;</a> 
+                </span>
+            </div>
+        </div>
+
+<script type="text/x-kendo-template" id="ac-pass-template">
+        pass
+</script>
+<script type="text/x-kendo-template" id="ac-return-template">
+    returnfdsa
+</script>
+<script type="text/javascript">
+    kendo.init($('body'));
+
+    var winPass = $('#window').kendoWindow({
+        visible:false,
+        animation:false,
+        modal:true,
+        content:{
+            template: kendo.template($("#ac-pass-template").html())
+        } 
+    }).data('kendoWindow'); 
+
+    $('.ac-pass').bind('click',function(){
+        winPass.open();
+        winPass.center();
+    });
+</script>
+{% include 'partial/footer.html' %}

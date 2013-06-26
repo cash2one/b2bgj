@@ -1,0 +1,236 @@
+{% include 'partial/header.html' %}
+        <div id="window"></div>
+
+        <div class="actions block">
+            <div class="col col-l">
+                <a class="item" href="#">资金汇总</a> 
+                <a class="item" href="#">充值管理</a> 
+                <a class="item" href="#">提现管理</a> 
+                <a class="item" href="#">授信管理</a> 
+                <a class="item" href="#">押金管理</a> 
+                <a class="item highlight" href="#">冻结管理</a> 
+                <a class="item" href="#">收支明细</a> 
+                <a class="item" href="#">交易明细</a> 
+            </div>
+            <div class="col col-r sep-l">
+                <button class="btns btn-blue ac-new" data-template="#ac-new-template" data-options="{
+                    title:'新增冻结' 
+                    }">新增冻结</button>
+            </div>
+        </div>
+
+        <div class="block block1 clearfix">
+            <div class="col col-l">
+                <ul class="flat-list">
+                    <li>
+                    <label style="width:65px;" class="vertical-head">客户简称</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">帐号</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:65px;" class="vertical-head">账户类型</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    </li>
+                    <li>
+                    <label style="width:65px;" class="vertical-head">关联订单号</label>
+                    <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:65px;" class="vertical-head">冻结操作人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">冻结类型</label>
+                    <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:65px;" class="vertical-head">解冻操作人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
+                    </li>
+                    <li>
+                    <input type="checkbox" /> 
+                    显示已删除冻结
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-r" style="padding-top:10px;">
+                <button class="btns btn-orange-s">查询</button> 
+            </div>
+        </div>
+
+        <div class="block block2">
+            <div class="block-header">
+                <ul class="flat-list">
+                    <li>
+                    <button class="btns btn-ac-blue">支出</button> 
+                    </li> 
+                    <li>
+                    <button class="btns">解冻</button> 
+                    </li>
+                    <li>
+                    <span style="color:#aaa">&nbsp;|&nbsp;</span>
+                    </li>
+                    <li>
+                    <button class="btns">删除</button> 
+                    </li>
+                    <li>
+                    <span style="color:#aaa">&nbsp;|&nbsp;</span>
+                    </li>
+                    <li>
+                    <button class="btns">导出Excel</button> 
+                    </li>
+                </ul>
+            </div> 
+            <table data-source="[{c1:33,c2:44}]" class="grid-table">
+                <tr class="thead">
+                    <th data-field="c1"> <input type="checkbox"> </th>
+                    <th data-field="c2">冻结号</th>
+                    <th data-field="c3">客户简称</th>
+                    <th data-field="c4">冻结金额</th>
+                    <th data-field="c5">冻结类型</th>
+                    <th data-field="c6">摘要</th>
+                    <th data-field="c7">冻结时间</th>
+                    <th data-field="c8">解冻时间</th>
+                    <th data-field="c9">操作</th>
+                </tr>
+            </table>
+            <div class="grid-table-pagination">
+                <span class="grid-table-count">
+                    共 <em>132</em> 条记录 
+                </span> 
+                <span>
+                    <a class="prev" href="#">&nbsp;</a> 
+                </span>
+                <span class="links">
+                    <a href="#">1</a> 
+                    <a href="#">2</a> 
+                    <a class="current" href="#">3</a> 
+                    <a href="#">4</a> 
+                    <a href="#">5</a> 
+                    <a href="javascript:;">...</a>
+                    <a href="#">50</a> 
+                </span>
+                <span>
+                    <a class="next" href="#">&nbsp;</a> 
+                </span>
+            </div>
+        </div>
+
+
+<script type="text/x-kendo-template" id="ac-new-template">
+<div style="width:460px;">
+<div class="ac-new-window-container">
+<ul class="flat-list">
+                    <li>
+                    <label class="vertical-head">选择客户：</label>
+                    <input style="width:100px">
+                    <button class="btns btn-search">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">可用余额：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">冻结余额：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">冻结类型：</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['选择']">
+                    </li>
+                    <li>
+                    <label class="vertical-head">操作人：</label>
+                    <span>xxx</span>
+                    </li>
+                    <li>&nbsp;</li>
+                    <li style="width:400px;">
+                    <label style="vertical-align:top;" class="vertical-head">摘要：</label>
+                    <textarea></textarea>
+                    </li>
+                </ul>
+</div>
+        <div style="text-align:right;">
+            <button class="btns button_1_2">提 交</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+</div>
+</script>
+
+
+
+<script type="text/x-kendo-template" id="ac-unfreeze-template">
+
+<div class="ac-new-window-container">
+<ul class="flat-list">
+                    <li>
+                    <label class="vertical-head">操作人：</label>
+                    <span>fdsa</span>
+                    </li>
+                    <li>
+                    <label class="vertical-head">操作人：</label>
+                    <strong class="text1">12,313,213</strong>
+                    </li>
+                    <li>
+                    <label class="vertical-head">操作人：</label>
+                    <span>fdafds</span>
+                    </li>
+    </div>
+        <div style="text-align:right;">
+            <button class="btns button_1_2">确 认</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+</script>
+
+<script type="text/x-kendo-template" id="grid-row-template">
+                <tr>
+                    <td>
+                        <input type="checkbox"> 
+                    </td>
+                    # console.log(data) #
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>#= data.c1 #</td>
+                    <td>xxx</td>
+                    <td><span class="text1">180,000,000.00</span></td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>2012-04-23<br>张小黑</td>
+                    <td>2012-04-23<br>张小黑</td>
+                    <td>
+                        <span class="grid-row-ac">
+                            <button class="btns ac-purchase">支出</button> 
+                            <button class="btns ac-unfreeze">解冻</button> 
+                            <button class="btns ac-delete">删除</button> 
+                        </span>
+                    </td>
+                </tr>
+</script>
+
+
+
+<script type="text/javascript">
+
+$(function(){
+    var ac_new = new PopWindow('.ac-new').init();
+    var ac_unfreeze = new PopWindow('.ac-unfreeze', {
+        template:'#ac-unfreeze-template',
+        title:'确认解冻',
+        width:'500'
+    }).init();
+});
+
+</script>
+
+
+{% include 'partial/footer.html' %}

@@ -18,6 +18,7 @@ class Application(tornado.web.Application):
             (r"/js/(ajax)/(.+)", GuojiAjaxHandler),
             (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),
             (r"/(guonei)/ajax/(.+)", GuoneiAjaxHandler),
+            (r"/(finance)/(?<!ajax)([^/]+).html", FinanceHandler)
         ]
         settings = dict(
             debug='yes',
@@ -316,6 +317,27 @@ class GuojiAjaxHandler(GuojiHandler):
 #application = tornado.web.Application([
 #    (r"/", MainHandler),
 #])
+
+
+class FinanceHandler(MainHandler):
+    def post(self, section, pagename = 'index'):
+        args = self.request.arguments
+        self.set_header("Content-Type", "text/plain")
+        self.write('0,GJJP120905B1000061');
+
+    def get(self, section, pagename = 'index'):
+        usergroup = self.get_argument('usergroup',default='cgs')
+        data={}
+        data['parent_title']='国际机票'
+        data['title']=pagename
+        data['section']=section
+
+        template = 'finance/'+pagename.encode('utf-8')+'.html'
+        self.render(template, data = data, usergroup = usergroup)
+
+    #def post(self):
+        #    self.set_header("Content-Type", "text/plain")
+        #    self.write("You wrote " + self.get_argument("message"))
 
 if __name__ == "__main__":
     app = Application()

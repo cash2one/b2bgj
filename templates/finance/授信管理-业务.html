@@ -1,0 +1,242 @@
+{% include 'partial/header.html' %}
+        <div id="window"></div>
+
+        <div class="actions block">
+            <div class="col col-l">
+                <a class="item" href="#">资金汇总</a> 
+                <a class="item" href="#">充值管理</a> 
+                <a class="item" href="#">提现管理</a> 
+                <a class="item highlight" href="#">授信管理</a> 
+                <a class="item" href="#">押金管理</a> 
+                <a class="item" href="#">冻结管理</a> 
+                <a class="item" href="#">收支明细</a> 
+                <a class="item" href="#">交易明细</a> 
+            </div>
+            <div class="col col-r sep-l">
+                <button class="btns btn-blue ac-new" data-template="#ac-new-template" data-options="{
+                    title:'新增授信' 
+                    }">新增授信</button>
+            </div>
+        </div>
+
+        <div class="block block1 clearfix">
+            <div class="col col-l">
+                <ul class="flat-list">
+                    <li>
+                    <label class="vertical-head">客户简称</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">帐号</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">状态</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    </li>
+                    <li>
+                    <label class="vertical-head">授信类型</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    </li>
+                    <li>
+                    <label class="vertical-head">申请人</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">操作人</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">申请日期</label>
+                    <input data-role="datepicker" style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">审核日期</label>
+                    <input data-role="datepicker" style="width:100px">
+                    </li>
+                </ul>
+            </div>
+            <div class="col col-r" style="padding-top:10px;">
+                <button class="btns btn-orange-s">查询</button> 
+            </div>
+        </div>
+
+        <div class="block block2">
+            <div class="block-header">
+                <ul class="flat-list">
+                    <li>
+                    <button class="btns btn-ac-blue">删除</button> 
+                    </li>
+                </ul>
+            </div> 
+            <table class="grid-table" data-role="grid">
+                <tr class="thead">
+                    <th data-field="c1"> <input type="checkbox"> </th>
+                    <th data-field="c2">客户简称</th>
+                    <th data-field="c3">账户类型</th>
+                    <th data-field="c4">特殊客户</th>
+                    <th data-field="c5">类型</th>
+                    <th data-field="c6">授信金额</th>
+                    <th data-field="c7">当前信用额度</th>
+                    <th data-field="c8">授信类型</th>
+                    <th data-field="c9">账期</th>
+                    <th data-field="c10">领导审核</th>
+                    <th data-field="c11">财务审核</th>
+                    <th data-field="c12">摘要</th>
+                    <th data-field="c13">申请日期</th>
+                    <th data-field="c14">财务审核日期</th>
+                    <th data-field="c15">操作</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"> 
+                    </td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>xxx</td>
+                  <td>T+10</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>2012-04-23<br>张小黑</td>
+                  <td>2012-04-23<br>张小黑</td>
+                  <td class="grid-row-ac">
+                        <button class="btns ac-delete">删除</button> 
+                  </td>
+                </tr>
+                <tr class="highlight">
+                    <td>
+                        <input type="checkbox"> 
+                    </td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>xxx</td>
+                  <td>T+10</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>2012-04-23<br>张小黑</td>
+                  <td>2012-04-23<br>张小黑</td>
+                  <td class="grid-row-ac">
+                        <button class="btns ac-delete">删除</button> 
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox"> 
+                    </td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                    <td>xxx</td>
+                  <td class="text1">180,000,000.00</td>
+                  <td>180,000,000.00</td>
+                  <td>xxx</td>
+                  <td>T+10</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>xxx</td>
+                  <td>2012-04-23<br>张小黑</td>
+                  <td>2012-04-23<br>张小黑</td>
+                  <td class="grid-row-ac">
+                        <button class="btns ac-delete">删除</button> 
+                  </td>
+                </tr>
+            </table>
+            <div class="grid-table-pagination">
+                <span class="grid-table-count">
+                    共 <em>132</em> 条记录 
+                </span> 
+                <span>
+                    <a class="prev" href="#">&nbsp;</a> 
+                </span>
+                <span class="links">
+                    <a href="#">1</a> 
+                    <a href="#">2</a> 
+                    <a class="current" href="#">3</a> 
+                    <a href="#">4</a> 
+                    <a href="#">5</a> 
+                    <a href="javascript:;">...</a>
+                    <a href="#">50</a> 
+                </span>
+                <span>
+                    <a class="next" href="#">&nbsp;</a> 
+                </span>
+            </div>
+        </div>
+
+
+<script type="text/x-kendo-template" id="ac-new-template">
+<div style="width:460px;">
+<div class="ac-new-window-container">
+<ul class="flat-list">
+                    <li>
+                    <label class="vertical-head">选择客户：</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">账户余额：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">授信余额：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">授信类型：</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['选择']">
+                    </li>
+                    <li>
+                    <label class="vertical-head">帐期：</label>
+                    <input style="width:100px" data-role="dropdownlist" data-source="['选择']">
+                    </li>
+                    <li>&nbsp;</li>
+                    <li style="width:400px;">
+                    <label style="vertical-align:top;" class="vertical-head">摘要：</label>
+                    <textarea></textarea>
+                    </li>
+                </ul>
+</div>
+        <div style="text-align:right;">
+            <button class="btns button_1_2">提 交</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+</div>
+</script>
+
+<script type="text/x-kendo-template" id="ac-delete-template">
+
+<div class="ac-new-window-container">
+<ul class="flat-list">
+                    <li style="width:400px">
+                    <label style="width:400px" class="vertical-head">确认删除以下客户授权：</label>
+                    <p style="margin-top:5px;"> <span class="text1">fdas</span> </p>
+                    <p style="margin-top:5px;"> <span class="text1">fdas</span> </p>
+                    <p style="margin-top:5px;"> <span class="text1">fdas</span> </p>
+                    <p style="margin-top:5px;"> <span class="text1">fdas</span> </p>
+                    </li>
+    </div>
+        <div style="text-align:right;">
+            <button class="btns button_1_2">确 认</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+</script>
+
+
+<script type="text/javascript">
+$(function(){
+    var ac_new = new PopWindow('.ac-new').init();
+});
+</script>
+
+{% include 'partial/footer.html' %}
