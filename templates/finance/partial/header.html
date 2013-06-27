@@ -6,32 +6,15 @@
 <script src="http://localhost:35729/livereload.js"></script>
 <link rel="stylesheet" href="http://static.b2b.com/css/kendo.common.min.css" />
 <link rel="stylesheet" href="http://static.b2b.com/css/kendo.gray.css" />
+<link rel="stylesheet" href="http://static.b2b.com/css/global.css" />
 <link href="http://static.b2b.com/css/common.css" rel="stylesheet" />
 <link href="http://static.b2b.com/css/b2b.css" rel="stylesheet" />
-<link rel="stylesheet" href="http://static.b2b.com/css/global.css" />
 <link rel="stylesheet" href="http://static.b2b.com/css/finance.css" />
 <link rel="stylesheet" href="http://static.b2b.com/css/hotel.css" />
 <script type="text/javascript" src="http://static.b2b.com/js/vendor/jquery.min.js"></script>
 <script type="text/javascript" src="http://static.b2b.com/js/kendo/kendo.web.js"></script>
 <script type="text/javascript" src="http://static.b2b.com/js/plugins/jquery.fixedBar.js"></script>
 <script type="text/javascript" src="http://static.b2b.com/js/finance.js"></script>
-<script type="text/javascript">
-$(function(){
-    $('.actions').fixedBar();
-    var lensf = function (){
-        $.each($('.instr'),function(){
-            var that = $(this);
-            if(that.find('.highlight-fl').size()>0){
-                var ele = that.find('.highlight');
-                var len = ele.size();
-                var wid = ele.width()*len + 15;
-                that.find('.line').prepend('<div style="background-color:#FF6608;height:2px;width:'+wid+'px" />')
-            }
-        });
-    }
-    lensf();
-});
-</script>
 
 </head><body>  <div id="extHeader">
     <div></div>

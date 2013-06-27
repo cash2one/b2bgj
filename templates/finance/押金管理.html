@@ -23,37 +23,37 @@
                     <li>
                     <label class="vertical-head">客户简称</label>
                     <input style="width:80px">
-                    <button class="btns btn-search">查询</button>
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
-                    <label class="vertical-head">帐号</label>
+                    <label style="width:65px;" class="vertical-head">帐号</label>
                     <input style="width:100px">
                     </li>
                     <li>
-                    <label class="vertical-head">账户类型</label>
+                    <label style="width:65px;" class="vertical-head">账户类型</label>
                     <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
-                    </li>
-                    <li>
-                    <label style="width:65px;" class="vertical-head">收取操作人</label>
-                    <input style="width:100px">
-                    <button class="btns btn-search">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">押金状态</label>
-                    <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
                     </li>
                     <li>
                     <label class="vertical-head">押金类型</label>
                     <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
                     </li>
                     <li>
-                        <input type="checkbox" /> 
-                        显示已删除记录
+                    <label class="vertical-head">押金状态</label>
+                    <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:65px;" class="vertical-head">收取操作人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
                     <label style="width:65px;" class="vertical-head">退还操作人</label>
-                    <input style="width:100px">
-                    <button class="btns btn-search">查询</button>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
+                    </li>
+                    <li>
+                        <input type="checkbox" /> 
+                        显示已删除记录
                     </li>
                 </ul>
             </div>
@@ -140,49 +140,66 @@
                   </td>
                 </tr>
             </table>
-            <div class="grid-table-pagination">
-                <span class="grid-table-count">
-                    共 <em>132</em> 条记录 
-                </span> 
-                <span>
-                    <a class="prev" href="#">&nbsp;</a> 
-                </span>
-                <span class="links">
-                    <a href="#">1</a> 
-                    <a href="#">2</a> 
-                    <a class="current" href="#">3</a> 
-                    <a href="#">4</a> 
-                    <a href="#">5</a> 
-                    <a href="javascript:;">...</a>
-                    <a href="#">50</a> 
-                </span>
-                <span>
-                    <a class="next" href="#">&nbsp;</a> 
-                </span>
-            </div>
             <div style="height:0px;position:relative;" class="extra">
                 <div style="position:absolute;top:-30px;left:20px;">
-                    押金金额：
+                    押金总额：
                <span class="text1">42141</span>
                 </div>
             </div>
         </div>
 
+<script type="text/javascript">
+$(function(){
+    new GridTable('.block2 .grid-table',{
+         dataSource: [{
+            c1:222,
+            c2:333,
+            c3:"11,321,321.00",
+            c4:"xxx",
+            c5:"xxx",
+            c6:"2013-12-12",
+            c7:"张三",
+            c8:"2013-12-12",
+            c9:"张三"
+        }], 
+        rowTemplate: kendo.template($("#block2-grid-row-template").html())
+    }).init(); 
+});
+</script>
+<script type="text/x-kendo-template" id="block2-grid-row-template">
+    <tr>
+        <td>
+            <input type="checkbox"> 
+        </td>
+        # kendo.logToConsole(data) #
+        <td>#= data.c2 #</td>
+        <td><span class="text1">#= data.c3 #</span></td>
+        <td>#= data.c1 #</td>
+        <td>#= data.c4 #</td>
+        <td>#= data.c5 #</td>
+        <td>#= data.c6 #<br>#= data.c7 #</td>
+        <td>#= data.c8 #<br>#= data.c9 #</td>
+                <td class="grid-row-ac">
+        <button class="btns ac-undeposit">退押金</button>
+        <button class="btns ac-delete">删除</button>
+        </td>
+    </tr>
+</script>
 <script type="text/x-kendo-template" id="ac-new-template">
 <div style="width:460px;">
 <div class="ac-new-window-container">
 <ul class="flat-list">
                     <li>
-                    <label class="vertical-head">选择客户：</label>
+                    <label style="width:84px;" class="vertical-head">选择客户：</label>
                     <input style="width:80px">
-                    <button class="btns btn-search">查询</button>
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">押金金额：</label>
                     <input style="width:100px">
                     </li>
                     <li>
-                    <label class="vertical-head">确认押金金额：</label>
+                    <label class="vertical-head" style="width:84px">确认押金金额：</label>
                     <input style="width:100px">
                     </li>
                     <li>
@@ -190,7 +207,7 @@
                     <input style="width:100px" data-role="dropdownlist" data-source="['选择']">
                     </li>
                     <li style="width:400px;">
-                    <label style="vertical-align:top;" class="vertical-head">摘要：</label>
+                    <label style="vertical-align:top; width:84px;" class="vertical-head">摘要：</label>
                     <textarea></textarea>
                     </li>
                 </ul>

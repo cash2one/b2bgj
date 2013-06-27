@@ -20,7 +20,7 @@
                     <li>
                     <label class="vertical-head">客户简称</label>
                     <input style="width:80px">
-                    <button class="btns btn-search">查询</button>
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">帐号</label>
@@ -36,15 +36,18 @@
                     </li>
                     <li>
                     <label class="vertical-head">申请人</label>
-                    <input style="width:100px">
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">审核领导</label>
-                    <input style="width:100px">
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
                     <label style="width:65px;" class="vertical-head">财务审核人</label>
-                    <input style="width:100px">
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>&nbsp;</li>
                     <li>
@@ -151,49 +154,45 @@
                   <td>2012-04-23<br>张小黑</td>
                 </tr>
             </table>
-            <div class="grid-table-pagination">
-                <span class="grid-table-count">
-                    共 <em>132</em> 条记录 
-                </span> 
-                <span>
-                    <a class="prev" href="#">&nbsp;</a> 
-                </span>
-                <span class="links">
-                    <a href="#">1</a> 
-                    <a href="#">2</a> 
-                    <a class="current" href="#">3</a> 
-                    <a href="#">4</a> 
-                    <a href="#">5</a> 
-                    <a href="javascript:;">...</a>
-                    <a href="#">50</a> 
-                </span>
-                <span>
-                    <a class="next" href="#">&nbsp;</a> 
-                </span>
-            </div>
         </div>
 
-<script type="text/x-kendo-template" id="ac-pass-template">
-        pass
-</script>
-<script type="text/x-kendo-template" id="ac-return-template">
-    returnfdsa
-</script>
 <script type="text/javascript">
-    kendo.init($('body'));
-
-    var winPass = $('#window').kendoWindow({
-        visible:false,
-        animation:false,
-        modal:true,
-        content:{
-            template: kendo.template($("#ac-pass-template").html())
-        } 
-    }).data('kendoWindow'); 
-
-    $('.ac-pass').bind('click',function(){
-        winPass.open();
-        winPass.center();
-    });
+$(function(){
+    new GridTable('.block2 .grid-table',{
+         dataSource: [{
+            c1:222,
+            c2:333,
+            c3:"11,321,321.00",
+            c4:"xxx",
+            c5:"xxx",
+            c6:"2013-12-12",
+            c7:"张三",
+            c8:"2013-12-12",
+            c9:"张三"
+        }], 
+        rowTemplate: kendo.template($("#block2-grid-row-template").html())
+    }).init(); 
+});
+</script>
+<script type="text/x-kendo-template" id="block2-grid-row-template">
+    <tr>
+        <td>
+            <input type="checkbox"> 
+        </td>
+        # kendo.logToConsole(data) #
+        <td>#= data.c1 #</td>
+        <td>#= data.c2 #</td>
+        <td>#= data.c2 #</td>
+        <td>#= data.c2 #</td>
+        <td><span class="text1">#= data.c3 #</span></td>
+        <td>#= data.c4 #</td>
+        <td>#= data.c5 #</td>
+        <td>#= data.c5 #</td>
+        <td>#= data.c5 #</td>
+        <td>#= data.c5 #</td>
+        <td>#= data.c5 #</td>
+        <td>#= data.c6 #<br>#= data.c7 #</td>
+        <td>#= data.c8 #<br>#= data.c9 #</td>
+    </tr>
 </script>
 {% include 'partial/footer.html' %}
