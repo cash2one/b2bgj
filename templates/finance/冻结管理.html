@@ -12,9 +12,7 @@
                 <a class="item" href="#">交易明细</a> 
             </div>
             <div class="col col-r sep-l">
-                <button class="btns btn-blue ac-new" data-template="#ac-new-template" data-options="{
-                    title:'新增冻结' 
-                    }">新增冻结</button>
+                <button class="btns btn-blue ac-new">新增冻结</button>
             </div>
         </div>
 
@@ -22,7 +20,7 @@
             <div class="col col-l">
                 <ul class="flat-list">
                     <li>
-                    <label style="width:65px;" class="vertical-head">客户简称</label>
+                    <label style="width:65px;" class="vertical-head">客户名称</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
@@ -41,7 +39,7 @@
                     <li>
                     <label style="width:65px;" class="vertical-head">冻结操作人</label>
                     <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">冻结类型</label>
@@ -50,7 +48,7 @@
                     <li>
                     <label style="width:65px;" class="vertical-head">解冻操作人</label>
                     <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                     <input type="checkbox" /> 
@@ -90,7 +88,7 @@
                 <tr class="thead">
                     <th> <input type="checkbox"> </th>
                     <th>冻结号</th>
-                    <th>客户简称</th>
+                    <th>客户名称</th>
                     <th>冻结金额</th>
                     <th>冻结类型</th>
                     <th>摘要</th>
@@ -143,7 +141,6 @@ $(function(){
 </script>
 
 <script type="text/x-kendo-template" id="ac-new-template">
-<div style="width:460px;">
 <div class="ac-new-window-container">
 <ul class="flat-list">
 <li>
@@ -182,26 +179,29 @@ $(function(){
             <button class="btns button_1_2 ac-submit">提 交</button> 
             <button class="btns button_2_2">取 消</button> 
         </div>
-</div>
 </script>
 
 
 
 <script type="text/x-kendo-template" id="ac-submit-template">
-
-<div class="ac-new-window-container">
-<ul class="flat-list">
-                    <li>
-                    <label class="vertical-head">用户：</label>
+<div class="row">
+<ul style="font-size:14px;line-height:30px;">
+                    <li style="display:inline-block;width:190px">
+                    <strong>用户：</strong>
                     <span>fdsa</span>
                     </li>
-                    <li>&nbsp;</li>
-                    <li>
-                    <label class="vertical-head">授临时额度：</label>
+                    <li style="display:inline-block;width:190px">
+                    <strong>冻结金额：</strong>
                     <strong class="text1">12,313,213</strong>
                     </li>
-    </div>
-        <div style="text-align:right;">
+                    <li style="display:inline-block;width:190px">
+                    <strong>用于：</strong>
+                    <span>123132</span>
+                    </li>
+                    </ul>
+</div>
+
+        <div class="row" style="text-align:right;">
             <button class="btns button_1_2">确 认</button> 
             <button class="btns button_2_2">取 消</button> 
         </div>
@@ -211,11 +211,14 @@ $(function(){
 <script type="text/javascript">
 
 $(function(){
-    var ac_new = new PopWindow('.ac-new').init();
+    new PopWindow('.ac-new',{
+        template:"#ac-new-template",
+        title:'新增冻结' 
+    }).init();
 
     new PopWindow('.ac-submit', {
         template:'#ac-submit-template',
-        title:'确认解冻',
+        title:'确认冻结',
         width:'470'
     }).init();
 });

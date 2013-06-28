@@ -13,9 +13,7 @@
                 <a class="item" href="#">交易明细</a> 
             </div>
             <div class="col col-r sep-l">
-                <button class="btns btn-blue ac-new" data-template="#ac-new-template" data-options="{
-                    title:'新增授信' 
-                    }">新增授信</button>
+                <button class="btns btn-blue ac-new">新增授信</button>
             </div>
         </div>
 
@@ -23,7 +21,7 @@
             <div class="col col-l">
                 <ul class="flat-list">
                     <li>
-                    <label class="vertical-head">客户简称</label>
+                    <label class="vertical-head">客户名称</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
@@ -40,22 +38,22 @@
                     <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
                     </li>
                     <li>
-                    <label class="vertical-head">申请人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">操作人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
                     <label class="vertical-head">申请日期</label>
                     <input data-role="datepicker" style="width:100px">
                     </li>
                     <li>
                     <label class="vertical-head">审核日期</label>
                     <input data-role="datepicker" style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">申请人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-user">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">操作人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                 </ul>
             </div>
@@ -68,14 +66,14 @@
             <div class="block-header">
                 <ul class="flat-list">
                     <li>
-                    <button class="btns btn-ac-blue">删除</button> 
+                    <button class="btns btn-ac-blue ac-delete">删除</button> 
                     </li>
                 </ul>
             </div> 
             <table class="grid-table">
                 <tr class="thead">
                     <th> <input type="checkbox"> </th>
-                    <th>客户简称</th>
+                    <th>客户名称</th>
                     <th>账户类型</th>
                     <th>特殊客户</th>
                     <th>类型</th>
@@ -136,7 +134,7 @@ $(function(){
 </script>
 
 <script type="text/x-kendo-template" id="ac-new-template">
-<div style="width:460px;">
+
 <div class="ac-new-window-container">
 <ul class="flat-list">
 <li>
@@ -175,39 +173,60 @@ $(function(){
 <button class="btns button_1_2 ac-submit">提 交</button>
 <button class="btns button_2_2">取 消</button>
 </div>
-</div>
 </script>
 
 <script type="text/x-kendo-template" id="ac-submit-template">
-
-<div class="ac-new-window-container">
+<div class="row">
 <ul class="flat-list">
-                    <li>
-                    <label class="vertical-head">用户：</label>
-                    <span>fdsa</span>
-                    </li>
-                    <li>
-                    <label class="vertical-head">押金金额：</label>
-                    <strong class="text1">12,313,213</strong>
-                    </li>
-                    <li>
-                    <label class="vertical-head">用于：</label>
-                    <span>fdafds</span>
-                    </li>
-    </div>
-        <div style="text-align:right;">
-            <button class="btns button_1_2">确 认</button> 
-            <button class="btns button_2_2">取 消</button> 
-        </div>
-</script>
-<script type="text/javascript">
+    <li>
+    <label class="vertical-head">用户：</label>
+    <span>fdsa</span>
+    </li>
+    <li>
+    <label class="vertical-head">授临时额度：</label>
+    <strong class="text1">12,313,213</strong>
+    </li>
+    </ul>
+</div>
 
+<div class="row" style="text-align:right;">
+    <button class="btns button_1_2">确 认</button> 
+    <button class="btns button_2_2">取 消</button> 
+</div>
+</script>
+
+<script type="text/x-kendo-template" id="ac-delete-template">
+<div class="row">
+    <div style="font-size:14px;margin-bottom:10px;">确认删除以下客户授信：</div>
+    <ul class="text1">
+      <li>-苏宁1231</li>
+      <li>-苏宁1231</li>
+      <li>-苏宁1231</li>
+    </ul>
+</div>
+
+<div class="row" style="text-align:right;">
+    <button class="btns button_1_2">确 认</button> 
+    <button class="btns button_2_2">取 消</button> 
+</div>
+</script>
+
+<script type="text/javascript">
 $(function(){
-    var ac_new = new PopWindow('.ac-new').init();
+    new PopWindow('.ac-new',{
+        template:'#ac-new-template',
+        title:'新增授信' 
+    }).init();
+
+    new PopWindow('.ac-delete',{
+        template:'#ac-delete-template',
+        title:'确认删除',
+        width:'470'
+    }).init();
 
     new PopWindow('.ac-submit', {
         template:'#ac-submit-template',
-        title:'确认解冻',
+        title:'确认授信',
         width:'470'
     }).init();
 });

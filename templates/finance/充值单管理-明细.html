@@ -19,7 +19,7 @@
                 <button class="btns btn-blue ac-new2" data-template="#ac-new2-template" data-options="{
                     title:'新增扣款' 
                     }">新增扣款</button>
-                <button class="btns btn-blue">充值单管理</button>
+                <a href="充值单管理.html"><button class="btns btn-blue">充值单管理</button></a>
             </div>
         </div>
 
@@ -27,7 +27,7 @@
             <div class="col col-l">
                 <ul class="flat-list">
                     <li>
-                    <label class="vertical-head">客户简称</label>
+                    <label class="vertical-head">客户名称</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
@@ -43,7 +43,7 @@
                     <li>
                     <label class="vertical-head">操作人</label>
                     <input style="width:100px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">充值日期</label>
@@ -125,7 +125,6 @@ $(function(){
 
 <!-- 新增充值模板 -->
 <script type="text/x-kendo-template" id="ac-new-template">
-<div style="width:460px;">
 <div class="ac-new-window-container">
 <ul class="flat-list">
 <li>
@@ -164,12 +163,10 @@ $(function(){
             <button class="btns button_1_2 ac-submit">提 交</button> 
             <button class="btns button_2_2">取 消</button> 
         </div>
-</div>
 </script>
 
 <!-- 新增扣款模板 -->
 <script type="text/x-kendo-template" id="ac-new2-template">
-<div style="width:460px;">
 <div class="ac-new-window-container">
 <ul class="flat-list">
 <li>
@@ -199,12 +196,10 @@ $(function(){
             <button class="btns button_1_2 ac-submit2">提 交</button> 
             <button class="btns button_2_2">取 消</button> 
         </div>
-</div>
 </script>
 
 <!-- 新增充值确认模板 -->
 <script type="text/x-kendo-template" id="ac-submit-template">
-
 <div class="ac-new-window-container">
 <ul class="flat-list">
                     <li>
@@ -228,7 +223,6 @@ $(function(){
 
 <!-- 新增扣款 -->
 <script type="text/x-kendo-template" id="ac-submit2-template">
-
 <div class="ac-new-window-container">
 <ul class="flat-list">
                     <li>

@@ -1,108 +1,10 @@
-<script type="text/x-kendo-template" id="ac-search-customer-template">
+{% include 'user.html' %}
 
-<ul class="flat-list">
-                    <li>
-                    <label class="vertical-head">客户简称：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">拼音索引：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">联系人：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li style="width:186px;">
-                    <label class="vertical-head">银行账户：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li style="width:50px">
-                    <button style="margin-top:-5px;" class="btns btn-orange-s">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">归属营业点：</label>
-                    <input style="width:80px">
-                    <button data-options="{
-                        title:'选择营业点',
-                        template:'ac-select-outlet-template'
-                    }" class="btns btn-search ac-select-outlet">查询</button>
-                    </li>
-                    <li>&nbsp;</li>
-                </ul>
-            <div style="margin-top:10px">
-                <table class="grid-table" id="customer-grid-table">
-                <tr class="thead">
-                <th>客户简称</th>
-                <th>创建时间</th>
-                <th>可用余额</th>
-                <th>联系人</th>
-                </tr>
+{% include 'customer.html' %}
 
+{% include 'outlet.html' %}
 
-                </table> 
-            </div>
-        <div style="text-align:right;">
-            <button class="btns button_1_2">提 交</button> 
-            <button class="btns button_2_2">取 消</button> 
-        </div>
-</script>
-
-            <script type="text/x-kendo-template"  id="search-customer-row-template">
-                <tr>
-                    # kendo.logToConsole(data) #
-                    <td>#= data.c1 #</td>
-                    <td>#= data.c2 #</td>
-                    <td>#= data.c3 #</td>
-                    <td>#= data.c4 #</td>
-                </tr>
-</script>
-
-
-<script type="text/x-kendo-template" id="ac-select-outlet-template">
-<ul class="flat-list">
-                    <li>
-                    <label class="vertical-head">营业点名称：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">地址：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">电话：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>&nbsp;</li>
-                    <li style="width:50px">
-                    <button style="margin-top:-5px;" class="btns btn-orange-s">查询</button>
-                    </li>
-                </ul>
-            <div style="margin-top:10px">
-                <table class="grid-table" id="outlet-grid-table">
-                <tr class="thead">
-                <th>营业点名称</th>
-                <th>电话</th>
-                <th>地址</th>
-                <th>所属客户</th>
-                </tr>
- 
-                </table> 
-            </div>
-        <div style="text-align:right;">
-            <button class="btns button_1_2">提 交</button> 
-            <button class="btns button_2_2">取 消</button> 
-        </div>
-</script>
-            <script type="text/x-kendo-template" id="select-outlet-row-template">
-                <tr>
-                    # kendo.logToConsole(data) #
-                    <td>#= data.c1 #</td>
-                    <td>#= data.c2 #</td>
-                    <td>#= data.c3 #</td>
-                    <td>#= data.c4 #</td>
-                </tr>
-</script>
+{% include 'department.html' %}
 
 <script type="text/javascript">
 
@@ -113,7 +15,6 @@ $(function(){
     }).init();
 
     ac_search_customer_window.bind('open',function(){
-
     new GridTable('#customer-grid-table',{
          dataSource: [{
             c1:222,
@@ -123,7 +24,6 @@ $(function(){
         }], 
         rowTemplate: kendo.template($("#search-customer-row-template").html())
     }).init(); 
-
     });
 
     var ac_select_outlet_window = new PopWindow('.ac-select-outlet',{
@@ -142,6 +42,41 @@ $(function(){
         rowTemplate: kendo.template($("#select-outlet-row-template").html())
     }).init(); 
     });
+
+    var ac_search_user_window = new PopWindow('.ac-search-user',{
+        title:'选择用户',
+        template:'#ac-search-user-template'
+    }).init();
+
+    ac_search_user_window.bind('open',function(){
+    new GridTable('#user-grid-table',{
+         dataSource: [{
+            c1:222,
+            c2:333,
+            c3:"xxx",
+            c4:"xxx"
+        }], 
+        rowTemplate: kendo.template($("#search-user-row-template").html())
+    }).init(); 
+    });
+
+    var ac_select_department_window = new PopWindow('.ac-select-department',{
+        title:'选择部门',
+        template:'#ac-select-department-template'
+    }).init();
+
+    ac_select_department_window.bind('open',function(){
+    new GridTable('#department-grid-table',{
+         dataSource: [{
+            c1:222,
+            c2:333,
+            c3:"xxx",
+            c4:"xxx"
+        }], 
+        rowTemplate: kendo.template($("#select-department-row-template").html())
+    }).init(); 
+    });
+
 
 });
 

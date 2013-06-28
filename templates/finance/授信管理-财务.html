@@ -18,7 +18,7 @@
             <div class="col col-l">
                 <ul class="flat-list">
                     <li>
-                    <label class="vertical-head">客户简称</label>
+                    <label style="width:65px;" class="vertical-head">客户名称</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
@@ -27,7 +27,7 @@
                     <input style="width:100px">
                     </li>
                     <li>
-                    <label class="vertical-head" style="width:65px;">状态</label>
+                    <label class="vertical-head">状态</label>
                     <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
                     </li>
                     <li>
@@ -35,28 +35,27 @@
                     <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
                     </li>
                     <li>
-                    <label class="vertical-head">申请人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">审核领导</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
-                    <label style="width:65px;" class="vertical-head">财务审核人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>&nbsp;</li>
-                    <li>
-                    <label class="vertical-head">申请日期</label>
+                    <label style="width:65px;" class="vertical-head">申请日期</label>
                     <input data-role="datepicker" style="width:100px">
                     </li>
                     <li>
                     <label class="vertical-head">审核日期</label>
                     <input data-role="datepicker" style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">申请人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-user">查询</button>
+                    </li>
+                    <li>
+                    <label class="vertical-head">审核领导</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-user">查询</button>
+                    </li>
+                    <li>
+                    <label style="width:65px;" class="vertical-head">财务审核人</label>
+                    <input style="width:80px">
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                 </ul>
             </div>
@@ -82,76 +81,22 @@
                     </li>
                 </ul>
             </div> 
-            <table data-role="grid" class="grid-table">
+            <table class="grid-table">
                 <tr class="thead">
-                    <th data-field="c1"> <input type="checkbox"> </th>
-                    <th data-field="c2">客户简称</th>
-                    <th data-field="c3">账户类型</th>
-                    <th data-field="c4">特殊客户</th>
-                    <th data-field="c5" width="65">合同类型/支票号/欠款</th>
-                    <th data-field="c6">授信金额</th>
-                    <th data-field="c7">当前信用额度</th>
-                    <th data-field="c8">授信类型</th>
-                    <th data-field="c9">账期</th>
-                    <th data-field="c10">领导审核</th>
-                    <th data-field="c11">财务审核</th>
-                    <th data-field="c12">摘要</th>
-                    <th data-field="c13">申请日期</th>
-                    <th data-field="c14">财务审核日期</th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox"> 
-                    </td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                  <td class="text1">180,000,000.00</td>
-                  <td>180,000,000.00</td>
-                  <td>xxx</td>
-                  <td>T+10</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td>2012-04-23<br>张小黑</td>
-                </tr>
-                <tr class="highlight">
-                    <td>
-                        <input type="checkbox"> 
-                    </td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                  <td class="text1">180,000,000.00</td>
-                  <td>180,000,000.00</td>
-                  <td>xxx</td>
-                  <td>T+10</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td>2012-04-23<br>张小黑</td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox"> 
-                    </td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                    <td>xxx</td>
-                  <td class="text1">180,000,000.00</td>
-                  <td>180,000,000.00</td>
-                  <td>xxx</td>
-                  <td>T+10</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td>2012-04-23<br>张小黑</td>
+                    <th> <input type="checkbox"> </th>
+                    <th>客户名称</th>
+                    <th>账户类型</th>
+                    <th>特殊客户</th>
+                    <th width="65">合同类型/支票号/欠款</th>
+                    <th>授信金额</th>
+                    <th>当前信用额度</th>
+                    <th>授信类型</th>
+                    <th>账期</th>
+                    <th>领导审核</th>
+                    <th>财务审核</th>
+                    <th>摘要</th>
+                    <th>申请日期</th>
+                    <th>财务审核日期</th>
                 </tr>
             </table>
         </div>

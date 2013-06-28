@@ -14,7 +14,7 @@
             <div class="col col-l">
                 <ul class="flat-list">
                     <li>
-                    <label class="vertical-head">客户简称</label>
+                    <label class="vertical-head">客户名称</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
@@ -28,9 +28,9 @@
                     <input style="width:80px" data-role="dropdownlist" data-source="['中国银行','支付宝']">
                     </li>
                     <li>
-                    <label class="vertical-head">审核人</label>
+                    <label class="vertical-head">申请人</label>
                     <input style="width:100px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">申请日期</label>
@@ -45,9 +45,9 @@
                     <input data-role="dropdownlist" data-source="['等待审核','已审核']" style="width:100px">
                     </li>
                     <li>
-                    <label class="vertical-head">申请人</label>
+                    <label class="vertical-head">审核人</label>
                     <input style="width:100px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                 </ul>
             </div>
@@ -60,10 +60,10 @@
             <div class="block-header">
                 <ul class="flat-list">
                     <li>
-                    <button class="btns btn-ac-blue">审核通过</button> 
+                    <button class="btns btn-ac-blue ac-pass">审核通过</button> 
                     </li> 
                     <li>
-                    <button class="btns">审核退回</button> 
+                    <button class="btns ac-decline">审核退回</button> 
                     </li>
                     <li>
                     <span style="color:#aaa">&nbsp;|&nbsp;</span>
@@ -138,4 +138,54 @@ $(function(){
  
     </tr>
 </script>
+
+<script type="text/x-kendo-template" id="ac-decline-template">
+
+<div class="ac-new-window-container">
+<div style="font-size:14px;">
+进行该操作将驳回选中的<span class="text1">5</span>个账户充值请求，驳回的原因是？
+<textarea style="width:100%;margin-top:10px;"></textarea>
+</div>
+
+        <div style="text-align:right;margin-top:20px;">
+            <button class="btns button_1_2">确 认</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+        </div>
+</script>
+
+<script type="text/x-kendo-template" id="ac-pass-template">
+
+<div class="ac-new-window-container">
+<div style="font-size:14px;">
+该操作将给选中的<span class="text1">5</span>个账户进行充值，是否确认？
+</div>
+
+        <div style="text-align:right;margin-top:20px;">
+            <button class="btns button_1_2">确 认</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+        </div>
+</script>
+
+
+<script type="text/javascript">
+
+$(function(){
+    new PopWindow('.ac-pass', {
+        template:'#ac-pass-template',
+        title:'操作提示',
+        width:'470'
+    }).init();
+
+    new PopWindow('.ac-decline', {
+        template:'#ac-decline-template',
+        title:'操作提示',
+        width:'470'
+    }).init();
+});
+
+</script>
+
+
 {% include 'partial/footer.html' %}

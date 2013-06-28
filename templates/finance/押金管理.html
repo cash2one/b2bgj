@@ -21,7 +21,7 @@
             <div class="col col-l">
                 <ul class="flat-list">
                     <li>
-                    <label class="vertical-head">客户简称</label>
+                    <label class="vertical-head">客户名称</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
@@ -44,12 +44,12 @@
                     <li>
                     <label style="width:65px;" class="vertical-head">收取操作人</label>
                     <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                     <label style="width:65px;" class="vertical-head">退还操作人</label>
                     <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
+                    <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                         <input type="checkbox" /> 
@@ -79,65 +79,17 @@
                     </li>
                 </ul>
             </div> 
-            <table data-role="grid" class="grid-table">
+            <table class="grid-table">
                 <tr class="thead">
-                    <th data-field="c1"> <input type="checkbox"> </th>
-                    <th data-field="c2">客户简称</th>
-                    <th data-field="c3">提现金额</th>
-                    <th data-field="c4">押金类型</th>
-                    <th data-field="c5">押金状态</th>
-                    <th data-field="c6">摘要</th>
-                    <th data-field="c7">收取时间</th>
-                    <th data-field="c8">退还时间</th>
-                    <th data-field="c9">操作</th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox"> 
-                    </td>
-                    <td>xxx</td>
-                  <td class="text1">180,000,000.00</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td class="grid-row-ac">
-                        <button class="btns ac-undeposit">退押金</button> 
-                        <button class="btns ac-delete">删除</button> 
-                  </td>
-                </tr>
-                <tr class="highlight">
-                    <td>
-                        <input type="checkbox"> 
-                    </td>
-                    <td>xxx</td>
-                  <td class="text1">180,000,000.00</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td class="grid-row-ac">
-                        <button class="btns ac-undeposit">退押金</button> 
-                        <button class="btns ac-delete">删除</button> 
-                  </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox"> 
-                    </td>
-                    <td>xxx</td>
-                  <td class="text1">180,000,000.00</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>xxx</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td>2012-04-23<br>张小黑</td>
-                  <td class="grid-row-ac">
-                        <button class="btns ac-undeposit">退押金</button> 
-                        <button class="btns ac-delete">删除</button> 
-                  </td>
+                    <th> <input type="checkbox"> </th>
+                    <th>客户名称</th>
+                    <th>提现金额</th>
+                    <th>押金类型</th>
+                    <th>押金状态</th>
+                    <th>摘要</th>
+                    <th>收取时间</th>
+                    <th>退还时间</th>
+                    <th>操作</th>
                 </tr>
             </table>
             <div style="height:0px;position:relative;" class="extra">
@@ -213,17 +165,51 @@ $(function(){
                 </ul>
 </div>
         <div style="text-align:right;">
-            <button class="btns button_1_2">提 交</button> 
+            <button class="btns button_1_2 ac-submit">提 交</button> 
             <button class="btns button_2_2">取 消</button> 
         </div>
 </div>
 </script>
 
+<script type="text/x-kendo-template" id="ac-submit-template">
+<div class="row">
+<ul style="font-size:14px;line-height:30px;">
+                    <li style="display:inline-block;width:190px">
+                    <strong>用户：</strong>
+                    <span>fdsa</span>
+                    </li>
+                    <li style="display:inline-block;width:190px">
+                    <strong>押金金额：</strong>
+                    <strong class="text1">12,313,213</strong>
+                    </li>
+                    <li style="display:inline-block;width:190px">
+                    <strong>用于：</strong>
+                    <span>123132</span>
+                    </li>
+                    </ul>
+</div>
+
+        <div class="row" style="text-align:right;">
+            <button class="btns button_1_2">确 认</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+</script>
+
 <script type="text/javascript">
+$(function(){
+
 var ac_new = new PopWindow('.ac-new',{
     title:'新增押金',
     template:'#ac-new-template'
 }).init();
+
+    new PopWindow('.ac-submit', {
+        template:'#ac-submit-template',
+        title:'确认押金',
+        width:'470'
+    }).init();
+});
+
 </script>
 
 {% include 'partial/footer.html' %}
