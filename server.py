@@ -18,11 +18,13 @@ class Application(tornado.web.Application):
             (r"/js/(ajax)/(.+)", GuojiAjaxHandler),
             (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),
             (r"/(guonei)/ajax/(.+)", GuoneiAjaxHandler),
-            (r"/(finance)/(?<!ajax)([^/]+).html", FinanceHandler)
+            (r"/(finance)/(?<!ajax)([^/]+).html", FinanceHandler),
+            (r"/(gnjp)/(?<!ajax)([^/]+).html", GnjpHandler),
+            (r"/(gjjp)/(?<!ajax)([^/]+).html", GjjpHandler)
         ]
         settings = dict(
             debug='yes',
-            static_url_prefix='http://testgjjp.10106266.com/',
+            static_url_prefix='/static/',
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
             #cookie_secret="43oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
@@ -317,6 +319,39 @@ class GuojiAjaxHandler(GuojiHandler):
 #application = tornado.web.Application([
 #    (r"/", MainHandler),
 #])
+
+class GnjpHandler(MainHandler):
+    def post(self, section, pagename = 'index'):
+        args = self.request.arguments
+        self.set_header("Content-Type", "text/plain")
+        self.write('0,GJJP120905B1000061')
+
+    def get(self, section, pagename = 'index'):
+        usergroup = self.get_argument('usergroup',default='cgs')
+        data={}
+        data['parent_title']='国内机票'
+        data['title']=pagename
+        data['section']=section
+
+        template = 'gnjp/'+pagename.encode('utf-8')+'.html'
+        self.render(template, data = data, usergroup = usergroup)
+
+
+class GjjpHandler(MainHandler):
+    def post(self, section, pagename = 'index'):
+        args = self.request.arguments
+        self.set_header("Content-Type", "text/plain")
+        self.write('0,GJJP120905B1000061')
+
+    def get(self, section, pagename = 'index'):
+        usergroup = self.get_argument('usergroup',default='cgs')
+        data={}
+        data['parent_title']='国际机票'
+        data['title']=pagename
+        data['section']=section
+
+        template = 'gjjp/'+pagename.encode('utf-8')+'.html'
+        self.render(template, data = data, usergroup = usergroup)
 
 
 class FinanceHandler(MainHandler):

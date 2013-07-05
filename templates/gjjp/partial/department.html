@@ -1,0 +1,66 @@
+<script type="text/x-kendo-template" id="ac-select-department-template">
+<div class="row">
+<ul class="flat-list">
+                    <li>
+                    <label style="width:80px;" class="vertical-head">部门名称：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:80px;" class="vertical-head">负责人：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:80px;" class="vertical-head">所在城市：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:80px;" class="vertical-head">电话：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:80px;" class="vertical-head">邮编：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:80px;" class="vertical-head">地址：</label>
+                    <input style="width:100px">
+                    </li>
+                    <li>
+                    <label style="width:180px;" class="vertical-head"> <input type="checkbox"> 已删除部门</label>
+                    </li>
+                    <li style="text-align:right;width:100%;">
+                    <button style="margin-top:-5px;" class="btns btn-orange-s">查询</button>
+                    </li>
+                </ul>
+</div>
+
+<div class="row">
+                <table class="grid-table" id="department-grid-table">
+                <tr class="thead">
+                <th>部门名称</th>
+                <th>城市</th>
+                <th>地址</th>
+                <th>负责人</th>
+                <th>电话</th>
+                <th>创建日期</th>
+                </tr>
+ 
+                </table> 
+</div>
+        <div class="row" style="text-align:right;">
+            <button class="btns button_1_2">提 交</button> 
+            <button class="btns button_2_2">取 消</button> 
+        </div>
+</script>
+
+<script type="text/x-kendo-template" id="select-department-row-template">
+    <tr>
+        # kendo.logToConsole(data) #
+        <td>部门名称</td>
+        <td>#= data.c2 #</td>
+        <td>#= data.c3 #</td>
+        <td>#= data.c4 #</td>
+        <td>#= data.c4 #</td>
+        <td>#= data.c4 #</td>
+    </tr>
+</script>
