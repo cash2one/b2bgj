@@ -25,87 +25,116 @@
             </div>
             <div class="row">
                 <label>
-                    <input type="radio" class="radio radio_is_single is_double" value="2" checked name="IS_SINGLE" />
+                    <input type="radio" class="radio radio_is_single is_double" value="2" name="IS_SINGLE" />
                     往返
                 </label>
             </div>
             <div class="row">
                 <label style="width:100px;">
-                    <input type="radio" class="radio radio_is_single is_mutiple" value="3" name="IS_SINGLE" />
+                    <input type="radio" class="radio radio_is_single is_mutiple" checked value="3" name="IS_SINGLE" />
                     多程（缺口） 
                 </label>
             </div>
             </li>
-            <li style="width:220px;">
-            <div class="row">
-                <label class="vertical-head">出发城市</label>
-                <input type="text" id="id_startCity" style="width:150px" class="text suggest depcity suggest-city" value="" name="" />
-                <input name="" id="id_dep" type="hidden" />
+            <li style="width:700px;" class="ac-add-query-container">
+            <div class="row row1">
+                <div class="ac-add-query-row">
+                    <span class="row-item">
+                        <label class="vertical-head">出发城市</label>
+                        <input type="text" id="id_startCity" style="width:150px" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_dep" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">到达城市</label>
+                        <input type="text" id="id_endCity" style="width:150px;" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_arr" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">出发日期</label>
+                        <input style="width:100px" class="datepicker" data-role="datepicker">
+                    </span>
+                    <button class="btns ac-add-query btn-ac-blue">添加</button>
+                </div>
+                <div class="ac-add-query-row">
+                    <span class="row-item">
+                        <label class="vertical-head">出发城市</label>
+                        <input type="text" id="id_startCity" style="width:150px" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_dep" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">到达城市</label>
+                        <input type="text" id="id_endCity" style="width:150px;" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_arr" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">出发日期</label>
+                        <input style="width:100px" class="datepicker" data-role="datepicker">
+                    </span>
+                </div>
+                <div class="ac-add-query-row">
+                    <span class="row-item">
+                        <label class="vertical-head">出发城市</label>
+                        <input type="text" id="id_startCity" style="width:150px" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_dep" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">到达城市</label>
+                        <input type="text" id="id_endCity" style="width:150px;" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_arr" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">出发日期</label>
+                        <input style="width:100px" class="datepicker" data-role="datepicker">
+                    </span>
+                </div>
             </div>
-            <div class="row">
-                <label class="vertical-head">返程城市</label>
-                <input type="text" id="id_endCity" style="width:150px;" class="text suggest depcity suggest-city" value="" name="" />
-                <input name="" id="id_arr" type="hidden" />
-            </div>
-            </li>
-            <li style="width:180px;">
-            <div class="row">
-                <label class="vertical-head">出发日期</label>
-                <input type="text" id="depd" style="width:100px" class="text depdate datepicker" value="" name="" />
-            </div>
-            <div class="row">
-                <label class="vertical-head">返程日期</label>
-                <input type="text" id="arrd" style="width:100px" class="text arrdate datepicker" value="" name="" />
-            </div>
-            </li>
-            <li style="width:190px;">
-            <div class="row">
-                <label class="vertical-head">航空公司</label>
-                <!-- <input type="text" class="sel_airlines" /> -->
-                <select style="width:120px;" id="sel_airlines" class="sel_airlines">
-                    <option selected="selected" value="">全部</option>
-                    <option value="3u">3U （川航）</option>
-                    <option value="8L">8L （祥鹏）</option>
-                    <option value="BK">BK （奥凯）</option>
-                    <option value="CA">CA （国航）</option>
-                    <option value="CN">CN （大新华）</option>
-                    <option value="CZ">CZ （南航）</option>
-                    <option value="EU">EU （成都）</option>
-                    <option value="FM">FM （上航）</option>
-                    <option value="G5">G5 （华夏）</option>
-                    <option value="GS">GS （天津）</option>
-                    <option value="HO">HO （吉祥）</option>
-                    <option value="HU">HU （海航）</option>
-                    <option value="JD">JD （首都）</option>
-                    <option value="JR">JR （幸福）</option>
-                    <option value="KN">KN （中联）</option>
-                    <option value="KY">KY （昆明）</option>
-                    <option value="MF">MF （厦航）</option>
-                    <option value="MU">MU （东航）</option>
-                    <option value="NS">NS （河北）</option>
-                    <option value="OZ">OZ （韩亚华空）</option>
-                    <option value="PN">PN （西部）</option>
-                    <option value="SC">SC （山航）</option>
-                    <option value="TV">TV （西藏）</option>
-                    <option value="VD">VD （河南）</option>
-                    <option value="ZH">ZH （深航）</option>
-                </select>
-                <!-- <input type="text" class="text airlines" value="" name="" /> -->
-                <!-- <input type="hidden" class="text airlines_hidden" value="" name="" /> -->
-            </div>
-            <div class="row">
-                <label class="vertical-head">舱位等级</label>
-                <input data-role="dropdownlist" style="width:120px" data-source="['不限','经济舱','特级经济舱','商务舱','头等舱']"> 
-            </div>
-            </li>
-            <li style="width:130px;">
-            <div class="row">
-                <label class="vertical-head">航程类型</label>
-                <input style="width:60px;" data-role="dropdownlist" data-source="['不限','直飞','转机']"> 
-            </div> 
-            <div class="row">
-                <label class="vertical-head">乘客类型</label>
-                <input style="width:60px;" data-role="dropdownlist" data-source="['不限','成人','儿童','学生']"> 
+            <div class="row row2">
+                <span class="row-item">
+                    <label class="vertical-head">航空公司</label>
+                    <!-- <input type="text" class="sel_airlines" /> -->
+                    <select style="width:120px;" id="sel_airlines" class="sel_airlines">
+                        <option selected="selected" value="">全部</option>
+                        <option value="3u">3U （川航）</option>
+                        <option value="8L">8L （祥鹏）</option>
+                        <option value="BK">BK （奥凯）</option>
+                        <option value="CA">CA （国航）</option>
+                        <option value="CN">CN （大新华）</option>
+                        <option value="CZ">CZ （南航）</option>
+                        <option value="EU">EU （成都）</option>
+                        <option value="FM">FM （上航）</option>
+                        <option value="G5">G5 （华夏）</option>
+                        <option value="GS">GS （天津）</option>
+                        <option value="HO">HO （吉祥）</option>
+                        <option value="HU">HU （海航）</option>
+                        <option value="JD">JD （首都）</option>
+                        <option value="JR">JR （幸福）</option>
+                        <option value="KN">KN （中联）</option>
+                        <option value="KY">KY （昆明）</option>
+                        <option value="MF">MF （厦航）</option>
+                        <option value="MU">MU （东航）</option>
+                        <option value="NS">NS （河北）</option>
+                        <option value="OZ">OZ （韩亚华空）</option>
+                        <option value="PN">PN （西部）</option>
+                        <option value="SC">SC （山航）</option>
+                        <option value="TV">TV （西藏）</option>
+                        <option value="VD">VD （河南）</option>
+                        <option value="ZH">ZH （深航）</option>
+                    </select>
+                    <!-- <input type="text" class="text airlines" value="" name="" /> -->
+                    <!-- <input type="hidden" class="text airlines_hidden" value="" name="" /> -->
+                </span>
+                <span class="row-item">
+                    <label class="vertical-head">舱位等级</label>
+                    <input data-role="dropdownlist" style="width:120px" data-source="['不限','经济舱','特级经济舱','商务舱','头等舱']"> 
+                </span>
+                <span class="row-item">
+                    <label class="vertical-head">航程类型</label>
+                    <input style="width:60px;" data-role="dropdownlist" data-source="['不限','直飞','转机']"> 
+                </span>
+                <span class="row-item">
+                    <label class="vertical-head">乘客类型</label>
+                    <input style="width:60px;" data-role="dropdownlist" data-source="['不限','成人','儿童','学生']"> 
+                </span>
             </div>
             </li>
 
@@ -117,52 +146,6 @@
 </div>
 
 <div class="block block2">
-    <div class="row row1 clearfix">
-        <ul class="flat-list">
-            <li>
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-            <li class="current">
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-                <span class="date">07-08<b>周日</b></span>
-                <span class="price">&#165;799</span>
-            </a>
-            </li>
-        </ul>
-    </div>
     <div class="row row3">
         <div class="caption">
             温馨提示：此价格仅供参考，请以预订后价格为准。预订后价格可能更低！
@@ -228,6 +211,46 @@
                     <td>
                         <a href="#" class="btns btn-order ac-check">核价并预定</a>
                     </td>
+                </tr>
+                <tr class="data-row">
+                    <td>
+                        <span class="pubFlights_cx fico">&nbsp;</span>
+                        <span class="fname">
+                            <u class="flight-name">东方航空</u>
+                        </span>
+                    </td>
+                    <td>
+                        HX259
+                    </td>
+                    <td>
+                        <span class="sjx">
+                            大型机<u class="jx">333</u>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="deptime">2013/09/12 07:00</span><br>
+                        <span class="arrtime">2013/09/16 09:20</span>
+                    </td>
+                    <td>
+                        <span class="depcity">虹桥机场(t2)</span><br>
+                        <span class="arrcity">首都机场(t2)</span>
+                    </td>
+                    <td>
+                        2:30 
+                    </td>
+                    <td>
+                        直飞 
+                    </td>
+                    <td>
+                        Y
+                    </td>
+                    <td>
+                        >9
+                    </td>
+                    <td>
+                        <u class="tgq">退改签</u>
+                    </td>
+                    <td colspan='2' class="colspan"></td>
                 </tr>
                 <tr class="data-row data-row-last">
                     <td>
@@ -418,6 +441,86 @@
                 </td>
                 <td colspan="3"></td>
             </tr>
+            <tr class="data-row">
+                <td>
+                    <span class="pubFlights_cx fico">&nbsp;</span>
+                    <span class="fname">
+                        <u class="flight-name">东方航空</u>
+                    </span>
+                </td>
+                <td>
+                    HX259
+                </td>
+                <td>
+                    <span class="sjx">
+                        大型机<u class="jx">333</u>
+                    </span>
+                </td>
+                <td>
+                    <span class="deptime">2013/09/12 07:00</span><br>
+                    <span class="arrtime">2013/09/16 09:20</span>
+                </td>
+                <td>
+                    <span class="depcity">虹桥机场(t2)</span><br>
+                    <span class="arrcity">首都机场(t2)</span>
+                </td>
+                <td>
+                    2:30
+                </td>
+                <td>
+                    直飞
+                </td>
+                <td>
+                    Y
+                </td>
+                <td>
+                    &gt;9
+                </td>
+                <td>
+                    <u class="tgq">退改签</u>
+                </td>
+                <td colspan="2" class="colspan"></td>
+            </tr>
+            <tr class="data-row">
+                <td>
+                    <span class="pubFlights_cx fico">&nbsp;</span>
+                    <span class="fname">
+                        <u class="flight-name">东方航空</u>
+                    </span>
+                </td>
+                <td>
+                    HX259
+                </td>
+                <td>
+                    <span class="sjx">
+                        大型机<u class="jx">333</u>
+                    </span>
+                </td>
+                <td>
+                    <span class="deptime">2013/09/12 07:00</span><br>
+                    <span class="arrtime">2013/09/16 09:20</span>
+                </td>
+                <td>
+                    <span class="depcity">虹桥机场(t2)</span><br>
+                    <span class="arrcity">首都机场(t2)</span>
+                </td>
+                <td>
+                    2:30
+                </td>
+                <td>
+                    直飞
+                </td>
+                <td>
+                    Y
+                </td>
+                <td>
+                    &gt;9
+                </td>
+                <td>
+                    <u class="tgq">退改签</u>
+                </td>
+                <td colspan="2" class="colspan"></td>
+            </tr>
             <tr class="data-row data-row-last">
                 <td>
                     <span class="pubFlights_cx fico">&nbsp;</span>
@@ -460,26 +563,26 @@
             </tr>
         </table>
     </div>
-        <div class="grid-table-pagination">
-            <span class="grid-table-count">
-                共 <em>132</em> 条记录 
-            </span> 
-            <span>
-                <a class="prev" href="#">&nbsp;</a> 
-            </span>
-            <span class="links">
-                <a href="#">1</a> 
-                <a href="#">2</a> 
-                <a class="current" href="#">3</a> 
-                <a href="#">4</a> 
-                <a href="#">5</a> 
-                <a href="javascript:;">...</a>
-                <a href="#">50</a> 
-            </span>
-            <span>
-                <a class="next" href="#">&nbsp;</a> 
-            </span>
-        </div>
+    <div class="grid-table-pagination">
+        <span class="grid-table-count">
+            共 <em>132</em> 条记录 
+        </span> 
+        <span>
+            <a class="prev" href="#">&nbsp;</a> 
+        </span>
+        <span class="links">
+            <a href="#">1</a> 
+            <a href="#">2</a> 
+            <a class="current" href="#">3</a> 
+            <a href="#">4</a> 
+            <a href="#">5</a> 
+            <a href="javascript:;">...</a>
+            <a href="#">50</a> 
+        </span>
+        <span>
+            <a class="next" href="#">&nbsp;</a> 
+        </span>
+    </div>
 </div>
 </div>
 <script type="text/x-kendo-template" id="city_popup_tpl">
@@ -571,12 +674,68 @@
 <button class="btns button_2_2">取 消</button>
 </div>
 </script>
+<script type="text/x-kendo-template" id="ac-add-query-template">
+<div class="ac-add-query-row">
+                    <span class="row-item">
+                        <label class="vertical-head">出发城市</label>
+                        <input type="text" id="id_startCity" style="width:150px" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_dep" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">到达城市</label>
+                        <input type="text" id="id_endCity" style="width:150px;" class="text suggest depcity suggest-city" value="" name="" />
+                        <input name="" id="id_arr" type="hidden" />
+                    </span>
+                    <span class="row-item">
+                        <label class="vertical-head">出发日期</label>
+                        <input style="width:100px" class="datepicker" data-role="datepicker">
+                    </span>
+                    <button class="btns ac-remove-query btn-ac-blue">删除</button>
+                </div>
+</script>
 <script type="text/javascript">
-new PopWindow('.ac-check',{
-    width: '470',
-    title:'提示信息',
-    template:'#ac-check-template'
-}).init();
+$(function(){
+
+    var coll_ele = new Collpase({
+       limitHeight: 118,
+       container: '.block1',
+       trigger:'.content-collapse',
+    }).init();
+
+    new PopWindow('.ac-check',{
+        width: '470',
+        title:'提示信息',
+        template:'#ac-check-template'
+    }).init();
+
+
+
+    $('.ac-add-query').bind('click',function(){
+        var container = $('.ac-add-query-container .row1');
+        var html = kendo.template($('#ac-add-query-template').html())({});
+        container.append(html);
+        kendo.init(container);
+        var query_row = container.find('.ac-add-query-row');
+        var input = query_row.last().find('.suggest-city');
+        var added_city = CityAutocomplete.setOptions({
+            input: input,
+            url:'/static/js/data.txt',
+            group: ["ABCDEFG","HJ", "KLMN", "PQRSTW", "XYZ"]
+        });
+        added_city.init();
+        if(query_row.length>3){
+            coll_ele.resetHeight();             
+        }
+    });
+
+    $('body').delegate('.ac-remove-query','click',function(){
+        $(this).closest('.ac-add-query-row').remove();
+        var query_row = $('.ac-add-query-row');
+        if(query_row.length <= 3){
+            coll_ele.setHeight();             
+        }
+    });
+})
 </script>
 
 {% include 'partial/footer.html' %}

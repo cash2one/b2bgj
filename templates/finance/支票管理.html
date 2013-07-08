@@ -1,5 +1,4 @@
 {% include 'partial/header.html' %}
-        <div id="window"></div>
 
         <div class="actions block">
             <div class="col col-l">
@@ -7,13 +6,11 @@
                 <a class="item" href="#">充值管理</a> 
                 <a class="item" href="#">提现管理</a> 
                 <a class="item" href="#">授信管理</a> 
-                <a class="item highlight" href="#">押金管理</a> 
+                <a class="item" href="#">押金管理</a> 
                 <a class="item" href="#">冻结管理</a> 
+                <a class="item highlight" href="#">支票管理</a> 
                 <a class="item" href="#">收支明细</a> 
                 <a class="item" href="#">交易明细</a> 
-            </div>
-            <div class="col col-r sep-l">
-                <button class="btns btn-blue ac-new">新增押金</button>
             </div>
         </div>
 
@@ -26,34 +23,34 @@
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
-                    <label style="width:65px;" class="vertical-head">帐号</label>
+                    <label class="vertical-head">帐号</label>
                     <input style="width:100px">
                     </li>
                     <li>
-                    <label style="width:65px;" class="vertical-head">账户类型</label>
+                    <label class="vertical-head">充值状态</label>
                     <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
                     </li>
                     <li>
-                    <label class="vertical-head">押金类型</label>
+                    <label class="vertical-head">支票状态</label>
                     <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
                     </li>
                     <li>
-                    <label class="vertical-head">押金状态</label>
-                    <input data-role="dropdownlist" data-source="['全部']" style="width:100px">
-                    </li>
-                    <li>
-                    <label style="width:65px;" class="vertical-head">收取操作人</label>
+                    <label class="vertical-head">充值人</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
-                    <label style="width:65px;" class="vertical-head">退还操作人</label>
+                    <label class="vertical-head">审核人</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
-                        <input type="checkbox" /> 
-                        显示已删除记录
+                    <label class="vertical-head">充值日期</label>
+                    <input data-role="datepicker" style="width:100px">
+                    </li>
+                    <li>
+                    <label class="vertical-head">审核日期</label>
+                    <input data-role="datepicker" style="width:100px">
                     </li>
                 </ul>
             </div>
@@ -64,33 +61,31 @@
 
         <div class="block block2">
             <div class="block-header">
-                <button class="btns btn-ac-blue">退押金</button> 
-                <span style="color:#aaa">&nbsp;|&nbsp;</span>
-                <button class="btns btn-ac-blue">删除</button> 
-                <span style="color:#aaa">&nbsp;|&nbsp;</span>
-                <button class="btns btn-ac-blue">导出Excel</button> 
+                    <button class="btns btn-ac-blue">审核通过</button> 
+                    <span style="color:#aaa">&nbsp;|&nbsp;</span>
+                    <button class="btns btn-ac-blue">审核拒绝</button> 
+                    <span style="color:#aaa">&nbsp;|&nbsp;</span>
+                    <button class="btns btn-ac-blue">异常处理</button> 
+                    <span style="color:#aaa">&nbsp;|&nbsp;</span>
+                    <button class="btns btn-ac-blue">导出Excel</button> 
+                </ul>
             </div> 
             <table class="grid-table">
                 <tr class="thead">
                     <th> <input type="checkbox"> </th>
                     <th>客户名称</th>
-                    <th>提现金额</th>
-                    <th>押金类型</th>
-                    <th>押金状态</th>
-                    <th>摘要</th>
-                    <th>收取时间</th>
-                    <th>退还时间</th>
+                    <th>银行</th>
+                    <th>支票金额</th>
+                    <th>充值状态</th>
+                    <th>支票状态</th>
+                    <th>备注</th>
+                    <th>充值日期</th>
+                    <th>审核日期</th>
                     <th>操作</th>
                 </tr>
             </table>
-            <div style="height:0px;position:relative;" class="extra">
-                <div style="position:absolute;top:-30px;left:20px;">
-                    押金总额：
-               <span class="text1">42141</span>
-                </div>
-            </div>
-        </div>
 
+        </div>
 <script type="text/javascript">
 $(function(){
     new GridTable('.block2 .grid-table',{
@@ -114,53 +109,66 @@ $(function(){
         <td>
             <input type="checkbox"> 
         </td>
-        # kendo.logToConsole(data) #
+        <td>#= data.c1 #</td>
         <td>#= data.c2 #</td>
         <td><span class="text1">#= data.c3 #</span></td>
-        <td>#= data.c1 #</td>
         <td>#= data.c4 #</td>
+        <td>#= data.c5 #</td>
         <td>#= data.c5 #</td>
         <td>#= data.c6 #<br>#= data.c7 #</td>
         <td>#= data.c8 #<br>#= data.c9 #</td>
-                <td class="grid-row-ac">
-        <button class="btns ac-undeposit">退押金</button>
-        <button class="btns ac-delete">删除</button>
+        <td>
+            <span class="grid-row-ac">
+                <button class="btns">通过</button> 
+                <button class="btns">拒绝</button> 
+                <button class="btns">异常处理</button> 
+            </span>
         </td>
     </tr>
 </script>
+
 <script type="text/x-kendo-template" id="ac-new-template">
-<div style="width:460px;">
 <div class="ac-new-window-container">
 <ul class="flat-list">
-                    <li>
-                    <label style="width:84px;" class="vertical-head">选择客户：</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">押金金额：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head" style="width:84px">确认押金金额：</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">押金类型：</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['选择']">
-                    </li>
-                    <li style="width:400px;">
-                    <label style="vertical-align:top; width:84px;" class="vertical-head">摘要：</label>
-                    <textarea></textarea>
-                    </li>
-                </ul>
+<li>
+<label class="vertical-head">选择客户：</label>
+<input style="width:100px">
+<button class="btns btn-search ac-search-customer">查询</button>
+</li>
+<li>
+<label class="vertical-head">可用余额：</label>
+<input style="width:100px">
+</li>
+<li>
+<label class="vertical-head">冻结余额：</label>
+<input style="width:100px">
+</li>
+<li>
+<label class="vertical-head">确认金额：</label>
+<input style="width:100px">
+</li>
+<li>
+<label class="vertical-head">冻结类型：</label>
+<input style="width:100px" data-role="dropdownlist" data-source="['选择']">
+</li>
+<li>&nbsp;</li>
+<li>
+<label class="vertical-head">操作人：</label>
+<span>xxx</span>
+</li>
+<li style="width:400px;">
+<label style="vertical-align:top;" class="vertical-head">摘要：</label>
+<textarea></textarea>
+</li>
+</ul>
 </div>
         <div style="text-align:right;">
             <button class="btns button_1_2 ac-submit">提 交</button> 
             <button class="btns button_2_2">取 消</button> 
         </div>
-</div>
 </script>
+
+
 
 <script type="text/x-kendo-template" id="ac-submit-template">
 <div class="row">
@@ -170,7 +178,7 @@ $(function(){
                     <span>fdsa</span>
                     </li>
                     <li style="display:inline-block;width:190px">
-                    <strong>押金金额：</strong>
+                    <strong>冻结金额：</strong>
                     <strong class="text1">12,313,213</strong>
                     </li>
                     <li style="display:inline-block;width:190px">
@@ -186,17 +194,18 @@ $(function(){
         </div>
 </script>
 
-<script type="text/javascript">
-$(function(){
 
-var ac_new = new PopWindow('.ac-new',{
-    title:'新增押金',
-    template:'#ac-new-template'
-}).init();
+<script type="text/javascript">
+
+$(function(){
+    new PopWindow('.ac-new',{
+        template:"#ac-new-template",
+        title:'新增冻结' 
+    }).init();
 
     new PopWindow('.ac-submit', {
         template:'#ac-submit-template',
-        title:'确认押金',
+        title:'确认冻结',
         width:'470'
     }).init();
 });

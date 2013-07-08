@@ -15,6 +15,11 @@ class Application(tornado.web.Application):
             (r"/jsonp/[^/]+", jsonpHandler),
             (r"/(guoji)/(?<!ajax)([^/]+).html", GuojiHandler),
             (r"/(guoji)/ajax/(.+)", GuojiAjaxHandler),
+
+            (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/images"}),
+            (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/css"}),
+            (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/js"}),
+
             (r"/js/(ajax)/(.+)", GuojiAjaxHandler),
             (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),
             (r"/(guonei)/ajax/(.+)", GuoneiAjaxHandler),
@@ -24,7 +29,7 @@ class Application(tornado.web.Application):
         ]
         settings = dict(
             debug='yes',
-            static_url_prefix='/static/',
+            # static_url_prefix='//static.b2b.com/',
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
             #cookie_secret="43oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
