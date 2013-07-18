@@ -1,5 +1,4 @@
 {% include 'partial/header.html' %}
-        <div id="window"></div>
 
         <div class="actions block">
             <div class="col col-l sep-r">
@@ -19,16 +18,30 @@
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
-                    <label style="width:65px;" class="vertical-head">帐号</label>
+                    <label style="width:65px;" class="vertical-head">账号</label>
                     <input style="width:100px">
                     </li>
                     <li style="width:235px;">
-                    <label style="width:40px;" class="vertical-head">状态</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+                    <label style="width:60px;" class="vertical-head">还款状态</label>
+<select style="width:100px;" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="已还款">已还款</option>
+<option value="未还款">未还款</option>
+<option value="部分还款">部分还款</option>
+</select>
                     </li>
                     <li>
                     <label class="vertical-head">客户类型</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+<select style="width:100px" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="个人">个人</option>
+<option value="酒店 ">酒店 </option>
+<option value="旅行社">旅行社</option>
+<option value="冲量客户">冲量客户</option>
+<option value="B2G客户">B2G客户</option>
+</select>
+
+
                     </li>
                     <li>
                     <label style="width:65px;" class="vertical-head">还款操作人</label>
@@ -40,18 +53,27 @@
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-user">查询</button>
                     </li>
-                    <li style="width:230px;">
-                    <label style="width:40px;" class="vertical-head">账期日</label>
+                    <li style="width:300px">
+                    <label class="vertical-head" style="width:100px;">领导延时审核状态</label>
+<select style="width:140px;" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="无延时申请">无延时申请</option>
+<option value="领导延时审核通过">领导延时审核通过</option>
+<option value="领导延时审核拒绝">领导延时审核拒绝</option>
+<option value="领导延时待审核">领导延时待审核</option>
+<option value="财务延时审核通过">财务延时审核通过</option>
+<option value="财务延时审核拒绝">财务延时审核拒绝</option>
+<option value="财务延时待审核">财务延时待审核</option>
+</select>
+                    </li>
+                    <li style="width:260px;">
+                    <label style="width:65px;" class="vertical-head">账期日</label>
                     <input data-role="datepicker" style="width:80px">至
                     <input data-role="datepicker" style="width:80px">
                     </li>
                     <li>
                     <input style="width:100px" data-role="dropdownlist" data-source="['最后还款日','实际还款日']">
                     <input data-role="datepicker" style="width:80px">
-                    </li>
-                    <li>
-                    <label class="vertical-head" style="width:65px;">延长审核</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
                     </li>
                 </ul>
             </div>
@@ -74,7 +96,7 @@
             </div> 
             <table class="grid-table">
                 <tr class="thead">
-                    <th> <input type="checkbox"> </th>
+                    <th><input type="checkbox"></th>
                     <th>客户名称</th>
                     <th>授信类型</th>
                     <th>账期</th>
@@ -86,8 +108,12 @@
                     <th>当前可用额度</th>
                     <th>已使用信用金额</th>
                     <th>延迟原因</th>
+                    <th>领导延时审核</th>
+                    <th>财务延时审核</th>
                     <th>还款状态</th>
                     <th>还款日期</th>
+                    <th>领导延时日期</th>
+                    <th>财务延时日期</th>
                 </tr>
             </table>
         </div>
@@ -95,6 +121,28 @@
 <script type="text/javascript">
 $(function(){
     new GridTable('.block2 .grid-table',{
+        columns: [
+            { width:30 },
+            { width:80 },
+            { width:80 },
+            { width:80 },
+            { width:120 },
+            { width:80 },
+            { width:80 },
+            { width:120 },
+            { width:120 },
+            { width:120 },
+            { width:120 },
+            { width:120 },
+            { width:100 },
+            { width:100 },
+            { width:100 },
+            { width:120 },
+            { width:120 },
+            { width:120 },
+        ],
+        resizable:true,
+        scrollable:true,
          dataSource: [{
             c1:"2013-12-12 15:00",
             c2:"临时/欠款",
@@ -110,9 +158,7 @@ $(function(){
 </script>
 <script type="text/x-kendo-template" id="block2-grid-row-template">
     <tr>
-        <td>
-            <input type="checkbox"> 
-        </td>
+       <td><input type="checkbox"></td>
        <td>#=data.c4#</td> 
        <td>#=data.c2#</td> 
        <td>xxx</td>
@@ -125,6 +171,10 @@ $(function(){
        <td>#=data.c3#</td>
        <td></td>
        <td>xxx</td>
+       <td>xxx</td>
+       <td>xxx</td>
+       <td>#=data.c6#<br>#=data.c5#</td>
+       <td>#=data.c6#<br>#=data.c5#</td>
        <td>#=data.c6#<br>#=data.c5#</td>
     </tr>
 </script>

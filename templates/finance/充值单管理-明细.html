@@ -1,5 +1,4 @@
 {% include 'partial/header.html' %}
-        <div id="window"></div>
 
         <div class="actions block">
             <div class="col col-l">
@@ -10,6 +9,7 @@
                 <a class="item" href="#">押金管理</a> 
                 <a class="item" href="#">冻结管理</a> 
                 <a class="item" href="#">收支明细</a> 
+                <a class="item" href="#">支票管理</a> 
                 <a class="item" href="#">交易明细</a> 
             </div>
             <div class="col col-r sep-l">
@@ -130,24 +130,17 @@ $(function(){
 </li>
 <li>
 <label class="vertical-head">可用余额：</label>
-<input style="width:100px">
+<span>231321</span>
 </li>
-<li>
-<label class="vertical-head">充值金额：</label>
-<input style="width:100px">
-</li>
-<li>
-<label class="vertical-head">确认金额：</label>
-<input style="width:100px">
-</li>
-<li>
+<li style="width:510px;">
 <label class="vertical-head">充值方式</label>
-<input style="width:50px" data-role="dropdownlist" data-source="['刷卡','支付宝']">
-<input style="width:80px" data-role="dropdownlist" data-source="['中国银行','支付宝']">
-</li>
-<li>
-<label class="vertical-head"> 到账日期：</label>
-<input style="width:100px;" data-role="datepicker">
+<input data-role="dropdownlist" data-index="0" data-value-field="value" data-text-field="text" data-source="[{value:1,text:'现金'}, {value:2,text:'刷卡'}, {value:3,text:'支票'}, {value:4,text:'汇款'}, {value:5,text:'网上支付'}, {value:6,text:'电话支付'}, {value:6,text:'其它'}]" style="width:80px;">
+<input style="width:120px">
+添加：
+<button class="btns btn-ac-blue ac-add-row" data-index="0">现金</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="1">刷卡</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="2">支票</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="3">汇款</button>
 </li>
 <li style="width:400px;">
 <label style="vertical-align:top;" class="vertical-head">摘要：</label>
@@ -183,7 +176,7 @@ $(function(){
 <input style="width:100px">
 </li>
 <li style="width:400px;">
-<label style="vertical-align:top;" class="vertical-head">摘要：</label>
+<label style="vertical-align:top;" class="vertical-head">备注：</label>
 <textarea></textarea>
 </li>
 </ul>
@@ -202,12 +195,36 @@ $(function(){
                     <label class="vertical-head">用户：</label>
                     <span>fdsa</span>
                     </li>
-                    <li>
+                    <li style="width:300px">
                     <label class="vertical-head">充值方式：</label>
                     <span>fdafds</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label style="width:40px;" class="vertical-head">金额：</label>
+                    <strong class="text1">12,313,213</strong>
                     </li>
-                    <li>
-                    <label class="vertical-head">金额：</label>
+                    <li style="width:300px">
+                    <label class="vertical-head">充值方式：</label>
+                    <span>fdafds</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label style="width:40px;" class="vertical-head">金额：</label>
+                    <strong class="text1">12,313,213</strong>
+                    </li>
+                    <li style="width:300px">
+                    <label class="vertical-head">充值方式：</label>
+                    <span>fdafds</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label style="width:40px;" class="vertical-head">金额：</label>
+                    <strong class="text1">12,313,213</strong>
+                    </li>
+                    <li style="width:300px">
+                    <label class="vertical-head">充值方式：</label>
+                    <span>fdafds</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label style="width:40px;" class="vertical-head">金额：</label>
                     <strong class="text1">12,313,213</strong>
                     </li>
     </div>
@@ -236,6 +253,15 @@ $(function(){
         </div>
 </script>
 
+<script type="text/x-kendo-template" id="ac-add-row-template">
+<li style="width:400px;">
+<label class="vertical-head">&nbsp;</label>
+<input data-role="dropdownlist" data-index="#= data.index #" data-value-field="value" data-text-field="text" data-source="[{value:1,text:'现金'}, {value:2,text:'刷卡'}, {value:3,text:'支票'}, {value:4,text:'汇款'}, {value:5,text:'网上支付'}, {value:6,text:'电话支付'}, {value:6,text:'其它'}]" style="width:80px;">
+<input style="width:120px">
+<button class="btns btn-ac-blue ac-del-row">删除</button>
+</li>
+</script>
+
 <script type="text/javascript">
 
 $(function(){
@@ -254,7 +280,22 @@ $(function(){
         width:'470'
     }).init();
 
+    $('body').delegate('.ac-add-row', 'click', function(){
+        var that = $(this);
+        var html = kendo.template($('#ac-add-row-template').html())({index:that.data('index')}); 
+        that.closest('li').after(html);
+           kendo.init(that.closest('ul')); 
+    });
+
+    $('body').delegate('.ac-del-row', 'click', function(){
+        var that = $(this);
+        that.closest('li').remove();
+    });
+
 });
 
 </script>
+
+
+
 {% include 'partial/footer.html' %}

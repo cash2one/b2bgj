@@ -16,9 +16,9 @@ class Application(tornado.web.Application):
             (r"/(guoji)/(?<!ajax)([^/]+).html", GuojiHandler),
             (r"/(guoji)/ajax/(.+)", GuojiAjaxHandler),
 
-            (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/images"}),
-            (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/css"}),
-            (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/js"}),
+            # (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/images"}),
+            # (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/css"}),
+            # (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/js"}),
 
             (r"/js/(ajax)/(.+)", GuojiAjaxHandler),
             (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),

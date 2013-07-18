@@ -15,23 +15,10 @@
                     </li>
                     <li>
                     <label class="vertical-head">收银状态</label>
-                    <input style="width:108px" data-role="dropdownlist" data-source="['已收银','未收银']">
+                    <input style="width:108px" data-role="dropdownlist" data-source="['已收银','待收银']">
                     </li>
                     <li style="width:380px;">
                     <input style="width:100px" data-role="dropdownlist" data-source="['出票日期','乘机日期','创建订单日期']">
-                    <input data-role="datepicker" style="width:100px"> 至
-                    <input data-role="datepicker" style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">支付方式</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['全部','虚拟账户','支付宝','财付通','汇付天下']">
-                    </li>
-                    <li>
-                    <label class="vertical-head">支付日期</label>
-                    <input style="width:108px" data-role="datepicker">
-                    </li>
-                    <li style="width:380px;">
-                    <label class="vertical-head">收银日期</label>
                     <input data-role="datepicker" style="width:100px"> 至
                     <input data-role="datepicker" style="width:100px">
                     </li>
@@ -41,41 +28,88 @@
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
+                    <label class="vertical-head">支付方式</label>
+<select style="width:130px" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="虚拟账户">虚拟账户</option>
+<option value="虚拟账户-支付宝">虚拟账户-支付宝</option>
+<option value="虚拟账户-财付通">虚拟账户-财付通</option>
+<option value="虚拟账户-汇付天下">虚拟账户-汇付天下</option>
+<option value="虚拟账户-欠款">虚拟账户-欠款</option>
+<option value="虚拟账户-风险">虚拟账户-风险</option>
+<option value="虚拟账户-信用">虚拟账户-信用</option>
+</select>
+                    </li>
+                    <li style="width:380px;">
+                    <label class="vertical-head">收银日期</label>
+                    <input data-role="datepicker" style="width:100px"> 至
+                    <input data-role="datepicker" style="width:100px">
+                    </li>
+                    <li>
                     <label class="vertical-head">创建人</label>
                     <input style="width:80px">
                     <button class="btns btn-search ac-search-user">查询</button>
                     </li>
-                    <li style="width:155px;">
+                    <li>
                     <label class="vertical-head">收银人员</label>
-                    <input style="width:60px">
+                    <input style="width:80px">
                     <button class="btns btn-search ac-search-user">查询</button>
                     </li>
                     <li>
                     <label class="vertical-head">复核状态</label>
-                    <input style="width:60px;" data-role="dropdownlist" data-source="['已全部']">
+<select style="width:80px;" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="已复核">已复核</option>
+<option value="未复核">未复核</option>
+</select>
                     </li>
-                    <li style="width:402px;">
+                    <li>
+                    <label class="vertical-head">每页条数</label>
+                    <input style="width:60px;" data-role="dropdownlist" data-source="[10,20,40,60,100,200,300]">
+                    </li>
+                    <li style="width:800px;">
                     <label class="vertical-head">产品类型</label>
-                    <label><input type="checkbox" /> 国内机票</label>&nbsp;&nbsp;
-                    <label><input type="checkbox" /> 国际机票</label>&nbsp;&nbsp;
-                    <label><input type="checkbox" /> 酒店</label>&nbsp;&nbsp;
+                    <span style="margin-right:20px;">
+                    <label><input type="checkbox" /> 国内机票</label>
+<select style="width:80px;" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="正常票">正常票</option>
+<option value="退票">退票</option>
+<option value="废票">废票</option>
+<option value="改签票">改签票</option>
+<option value="调帐单">调帐单</option>
+<option value="其它">其它</option>
+</select>
+</span>
+                    <span style="margin-right:20px;">
+                    <label><input type="checkbox" /> 国际机票</label>
+<select style="width:80px;" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="正常票">正常票</option>
+<option value="退票">退票</option>
+<option value="废票">废票</option>
+<option value="改签票">改签票</option>
+<option value="调帐单">调帐单</option>
+<option value="其它">其它</option>
+</select>
+</span>
+                    <span style="margin-right:20px;">
+                    <label><input type="checkbox" /> 酒店</label>
+<select style="width:80px;" data-role="dropdownlist">
+<option selected="" value="全部">全部</option>
+<option value="正常">正常</option>
+<option value=" 变更">变更</option>
+<option value="取消">取消</option>
+</select>
+</span>
                     <label><input type="checkbox" /> 其他产品</label>
                     </li>
-                    <li style="width:402px;">
+                    <li style="width:800px;">
                     <label class="vertical-head">账户类型</label>
                     <label><input type="checkbox" /> 信用账户</label>&nbsp;&nbsp;
                     <label><input type="checkbox" /> 欠款客户</label>&nbsp;&nbsp;
                     <label><input type="checkbox" /> 风险客户</label>&nbsp;&nbsp;
                     <label><input type="checkbox" /> 其他</label>
-                    </li>
-                    <li style="width:240px;">
-                    <label class="vertical-head">订单状态</label>
-                    <input style="width:80px;" data-role="dropdownlist" data-source="['全部']">
-                    <input style="width:80px;" data-role="dropdownlist" data-source="['全部']">
-                    </li>
-                    <li>
-                    <label class="vertical-head">每页条数</label>
-                    <input style="width:60px;" data-role="dropdownlist" data-source="['10']">
                     </li>
                 </ul>
             </div>
@@ -101,13 +135,13 @@
                     <th>订单号</th>
                     <th>票号</th>
                     <th>数量</th>
+                    <th>名称</th>
                     <th>支付方式</th>
-                    <th>应退金额</th>
                     <th>实收金额</th>
+                    <th>应退金额</th>
                     <th>收银状态</th>
                     <th style="line-height:14px;padding:0 5px">产品类型<br>订单类型</th>
-                    <th>备注</th>
-                    <th>出票日期</th>
+                    <th>订单备注</th>
                     <th>创建日期</th>
                     <th>收银日期</th>
                 </tr>
@@ -159,9 +193,9 @@ $(function(){
             { width:80 },
             { width:80 },
             { width:80 },
-            { width:120 },
-            { width:120 },
             { width:80 },
+            { width:120 },
+            { width:120 },
             { width:80 },
             { width:80 },
             { width:80 },
@@ -193,6 +227,19 @@ $(function(){
         }], 
         rowTemplate: kendo.template($("#block2-grid-row-template").html())
     }).init(); 
+
+    $('body').delegate('.ac-add-row', 'click', function(){
+        var that = $(this);
+        var html = kendo.template($('#ac-add-row-template').html())({index:that.data('index')}); 
+        that.closest('li').after(html);
+           kendo.init(that.closest('ul')); 
+    });
+
+    $('body').delegate('.ac-del-row', 'click', function(){
+        var that = $(this);
+        that.closest('li').remove();
+    });
+
 });
 </script>
 <script type="text/x-kendo-template" id="block2-grid-row-template">
@@ -205,9 +252,9 @@ $(function(){
         <td>#= data.c2 #</td>
         <td>#= data.c2 #</td>
         <td>#= data.c2 #</td>
-        <td><span class="text1">#= data.c3 #</span></td>
-        <td><span class="text1">#= data.c3 #</span></td>
         <td>#= data.c5 #</td>
+        <td><span class="text1">#= data.c3 #</span></td>
+        <td><span class="text1">#= data.c3 #</span></td>
         <td>#= data.c5 #</td>
         <td>#= data.c5 #</td>
         <td>#= data.c8 #<br>#= data.c9 #</td>
@@ -228,14 +275,10 @@ $(function(){
 </li>
 <li>
 <label class="vertical-head">应收金额：</label>
-<input style="width:100px">
-</li>
-<li>
-<label class="vertical-head">确认金额：</label>
-<input style="width:100px">
+<span>214214214</span>
 </li>
 <li style="width:510px">
-<label class="vertical-head">备注：</label>
+<label class="vertical-head" style="vertical-align:top;">备注：</label>
 <textarea style="width:420px;"></textarea>
 </li>
 </ul>
@@ -268,14 +311,10 @@ $(function(){
 </li>
 <li>
 <label class="vertical-head">应收金额：</label>
-<input style="width:100px">
-</li>
-<li>
-<label class="vertical-head">确认金额：</label>
-<input style="width:100px">
+<span>54935894335</span>
 </li>
 <li style="width:510px">
-<label class="vertical-head">备注：</label>
+<label style="vertical-align:top" class="vertical-head">备注：</label>
 <textarea style="width:420px;"></textarea>
 </li>
 </ul>
@@ -298,20 +337,25 @@ $(function(){
 </li>
 <li style="width:510px;">
 <label class="vertical-head">类型：</label>
-<input data-role="dropdownlist" style="width:80px" data-source="['选择']">
-<input data-role="dropdownlist" style="width:100px" data-source="['中国银行']">
+<input data-role="dropdownlist" data-index="0" data-value-field="value" data-text-field="text" data-source="[{value:1,text:'现金'}, {value:2,text:'刷卡'}, {value:3,text:'支票'}, {value:4,text:'汇款'}, {value:5,text:'网上支付'}, {value:6,text:'电话支付'}, {value:6,text:'其它'}]" style="width:80px;">
+<input style="width:100px">
+添加：
+<button class="btns btn-ac-blue ac-add-row" data-index="0">现金</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="1">刷卡</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="2">支票</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="3">汇款</button>
 </li>
 <li>
 <label class="vertical-head">收款金额：</label>
-<input style="width:100px">
-</li>
-<li>
-<label class="vertical-head">确认金额：</label>
-<input style="width:100px">
+<span>12414213</span>
 </li>
 <li style="width:510px">
-<label class="vertical-head">备注：</label>
+<label style="vertical-align:top" class="vertical-head">备注：</label>
 <textarea style="width:420px;"></textarea>
+</li>
+<li style="width:510px">
+<label class="vertical-head">总计：</label>
+<span>3213l21321321</span>
 </li>
 </ul>
 </div>
@@ -344,20 +388,25 @@ $(function(){
 </li>
 <li style="width:510px;">
 <label class="vertical-head">类型：</label>
-<input data-role="dropdownlist" style="width:80px" data-source="['选择']">
-<input data-role="dropdownlist" style="width:100px" data-source="['中国银行']">
+<input data-role="dropdownlist" data-index="0" data-value-field="value" data-text-field="text" data-source="[{value:1,text:'现金'}, {value:2,text:'刷卡'}, {value:3,text:'支票'}, {value:4,text:'汇款'}, {value:5,text:'网上支付'}, {value:6,text:'电话支付'}, {value:6,text:'其它'}]" style="width:80px;">
+<input style="width:100px">
+添加：
+<button class="btns btn-ac-blue ac-add-row" data-index="0">现金</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="1">刷卡</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="2">支票</button>
+<button class="btns btn-ac-blue ac-add-row" data-index="3">汇款</button>
 </li>
 <li>
 <label class="vertical-head">收款金额：</label>
-<input style="width:100px">
-</li>
-<li>
-<label class="vertical-head">确认金额：</label>
-<input style="width:100px">
+<span>12414213</span>
 </li>
 <li style="width:510px">
-<label class="vertical-head">备注：</label>
+<label style="vertical-align:top" class="vertical-head">备注：</label>
 <textarea style="width:420px;"></textarea>
+</li>
+<li style="width:510px">
+<label class="vertical-head">总计：</label>
+<span>3213l21321321</span>
 </li>
 </ul>
 </div>
@@ -367,5 +416,14 @@ $(function(){
 </div>
 
 
+</script>
+
+<script type="text/x-kendo-template" id="ac-add-row-template">
+<li style="width:400px;" class="choice1">
+<label class="vertical-head">&nbsp;</label>
+<input data-role="dropdownlist" data-index="#= data.index #" data-value-field="value" data-text-field="text" data-source="[{value:1,text:'现金'}, {value:2,text:'刷卡'}, {value:3,text:'支票'}, {value:4,text:'汇款'}, {value:5,text:'网上支付'}, {value:6,text:'电话支付'}, {value:6,text:'其它'}]" style="width:80px;">
+<input style="width:100px">
+<button class="btns btn-ac-blue ac-del-row">删除</button>
+</li>
 </script>
 {% include 'partial/footer.html' %}
