@@ -1,0 +1,90 @@
+
+table{width:99%;border-collapse:collapse;}
+td{padding:5px}
+input[type=radio],input[type=checkbox]{margin-right:5px}
+input[type=text]{height:25px;border:1px solid #D3D3D3;padding:0 5px}
+.clearfix{clear:both}
+.important{color:red}
+.operation_records td{text-align: center}
+span.head{font-weight:bold;color:#505050}
+td.head{font-weight:bold;background:#E2F7FF;vertical-align:top;color:#505050}
+div.main{background:#ffffff;width:980px;margin:0 auto}
+div.panel{padding:20px;box-shadow:0 8px 5px -5px #999999;background:#ffffff;margin-bottom:10px;width:940px;margin:0 auto 10px;position:relative}
+.panelTitle{font-size:14px;font-weight:bold;border-right:2px solid #CFCFCF;float:left;padding-right:10px;margin:0 10px 10px 0}
+.placeholder{color:#9d9c9c}
+.tableMain,.tableMain td{border:1px solid #c7dce8;empty-cells: show}
+.panelContent{padding:15px 0}
+.operation_records,.operation_records td{border:1px solid #cfcfcf;empty-cells: show}
+.operation_records thead td{color:#009aa8;background:#ebeff1}
+.remind{padding:0 16px;background:url("../images/icoRemind.gif") no-repeat;color:#CC6A1A}
+.mail{padding:0 18px;background:url("../images/icoMail.gif") no-repeat;color:#0066CC}
+.topFixedToolsBar{background:#EDEDED;box-shadow:0 0 3px 0 #999999;width:980px;margin:0 auto;margin-bottom:10px;height:35px;z-index:100}
+.topFixedToolsBar a{color:#676767}
+.fixedMenu{margin-left:10px;width:730px;border-right:1px solid #cdcdcd;float:left;height:33px;color:#676767;line-height:33px;font-size:14px}
+.fixedMenu a{padding:0 10px;display:inline-block;line-height:30px;border-bottom:3px solid #ededed}
+.fixedMenu a:hover,.fixedMenu a.current{background:#ffffff;border-bottom:3px solid #FF7702;color:#000000}
+.fixedButton{float:left;margin-right:10px;border-left:1px solid #ffffff;padding-left:10px;height:33px}
+
+/*kendoUi style 修改*/
+iframe.k-content-frame{width:99%;height:99%;background:#ffffff}
+.k-window-title{padding-left:10px;font-weight:bold;top:13px}
+.k-window-titlebar .k-window-actions{top:6px}
+.k-window{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;}
+.k-window-titlebar{height:27px;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;}
+.k-window-content{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;}
+
+.tgrid .hightlight td {background-color:#ffffdb;}
+.tgrid td {padding:3px;}
+.tgrid td b {font-weight:normal;}
+.tgrid td input,.tgrid td select {display:none;width:90%;background-color:#ffffff;}
+.tgrid a {padding:3px 5px;}
+.tgrid div {display:none;}
+.df_page_btn{ height:37px; line-height:37px; position:relative;}
+.df_page_btn label{ width:60px; margin-left:30px; float:left;}
+.df_page_btn input{ width:150px; height:23px; padding-left:3px; margin-right:5px; float:left; margin-top:6px; background:url(../images/finance_r3_c2.png) no-repeat 133px center;}
+.df_page_btn p{ float:right;}
+.df_page_a_1{ width:95px; height:25px; line-height:25px; color:#454545; text-align:center; float:left; margin-left:3px; background:url(../images/button/button_1_3.png) no-repeat 0 0; margin-top:6px;}
+a.page_prev{position:relative ; width:71px; height:25px; line-height:25px; color:#fff; text-align:center; float:left; margin-left:3px; background:url(../images/button/button_4_3.png) no-repeat 0 0; margin-top:6px; padding-left:5px;}
+a.page_prev:hover {background-position:0 -40px;}
+a.page_prev:active {background-position:0 -82px;}
+a.page_next {position: relative; width:71px; height:25px; line-height:25px; color:#fff; float:left; text-align:center; margin-left:3px; background:url(../images/button/button_4_3.png) no-repeat 0 0; margin-top:6px;}
+a.page_next:hover {background-position:0 -40px;}
+a.page_next:active {background-position:0 -82px;}
+a.page_prev em,a.page_next em {display:inline-block;position:absolute; left:8px; top:9px;width:7px;height:7px;background:url(../images/button/icon_every.png) no-repeat 2px 0px;}
+a.page_next em {background:url(../images/button/icon_every.png) no-repeat -4px 0px; left:56px;} 
+.df_page_a{ width:70px; height:25px; line-height:25px; color:#454545; text-align:center; float:left; margin-left:3px; background:url(../images/button/button_3_3.png) no-repeat 0 0; margin-top:6px;}
+a.df_page_a:hover {background-position:0 -40px;}
+a.df_page_a:active {background-position:0 -82px;}
+a.df_page_a_1:hover {background-position:0 -40px;}
+a.df_page_a_1:active {background-position:0 -82px;}
+
+.room_matrix {border:1px solid #CFCFCF;border-top:2px solid #C4C4C4;text-align:center;vertical-align: middle;}
+.room_matrix thead th {padding:2px 0px;background-color:#E4E4E4;border-left:1px solid #FFFFFF;border-bottom:1px solid #ffffff;}
+.room_matrix .weekday_name {border-bottom:2px solid #72D6FF;}
+.room_matrix th,.room_matrix td {color:#333333;}
+.room_matrix .title,.room_matrix .title td {color:#818181;background-color:#dbf3ff;}
+.room_matrix .title_gray, .room_matrix .title_gray td, .room_matrix .title_gray .title {color:#777676;background-color:#ebeaea;}
+.room_matrix .even {background-color:#f2fbfe;}
+.room_matrix .odd {background-color:#ffffff;}
+.room_matrix .title_gray .even {background-color:#;}
+.room_matrix .title_gray .odd {background-color:#f8f6f6;}
+.room_matrix thead th.weekend {color:#cc0000;}
+.room_matrix tbody td {width:25px;padding:0 2px;}
+.room_matrix .title .room_name,.room_matrix .title_gray .room_name {width:125px;height:120px;color:#333333;background-color: #e7f5fb;}
+.room_matrix .title_gray .room_name {background-color:#ebeaea;}
+.room_matrix .room_name div {position:relative;top:40px;}
+.room_matrix tbody td input {width:20px;height:20px;display:none;border:1px solid #FF6600;background-color:#ffffff;}
+.room_matrix tbody td label {display:none;}
+.room_matrix tbody td label input {border:none;}
+.button_5{padding:3px 10px;background:none;color:#0066cc;border-radius:3px}
+.button_5:hover{background:#BEECF8;}
+
+.room_matrix tbody td b {font-weight:normal;}
+.room_matrix tbody td strong {cursor:pointer ;text-indent:-0.5em;display:none;line-height:20px;border: 1px solid #cacaca;width:width:20px;height:20px;background: url(../images/sprite/expand.png) no-repeat 90% center;}
+.room_matrix tbody td {border:1px solid #D7D7D7;}
+.checked,.unchecked {border:1px solid #b1b1b1;width:12px;height:12px;background: url(../images/sprite/checked.png) no-repeat center center;}
+.unchecked {background-image: none;}
+
+/*日历*/
+.datePicker{background:url(../images/jisuanqi_1.png) no-repeat right center}
+.datePicker.second{background:url(../images/jisuanqi_2.png) no-repeat right center}

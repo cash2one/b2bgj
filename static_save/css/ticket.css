@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.code{ height:35px; line-height:35px; border-top:1px solid #fff; border-left:1px solid #dee2e4; border-right:1px solid #dee2e4; border-bottom:2px solid #bbbebf; background:#ededed; margin-top:10px; padding-left:50px;}
+.code a{ width:70px; text-align:center; float:left; color:#666;}
+.code_a{ color:#333 !important;}
+.code_a_1{ background:#fff; border-bottom:2px solid #ff7702;}
+.query{ margin-top:10px; background:#fff; border-bottom:1px solid #cbcfd1; border-right:1px solid #dee2e4; margin-bottom:10px;}
+.query_tab{ width:970px; line-height:30px; margin-left:10px; margin-top:5px;}
+.query_tab input{ padding-left:3px; color:#9f9f9f; height:18px; line-height:18px; font-size:12px;}
+.query_tab select{ color:#666; height:20px; font-size:12px;}
+.query_a{ width:82px; height:31px; line-height:31px; text-align:center; color:#fff; background:url(../images/button/button_2_1.png) no-repeat 0 0; border:0px; float:left;}
+a.query_a:hover { background-position:0 -41px; border:0px; }
+a.query_a:active { background-position:0 -83px; border:0px;}
+.list_1,.list_5,.list_7{ width:65px;}
+.list_2{ width:145px;}
+.list_2 input{ width:120px;}
+.list_2_1 input{ width:97px; float:left; margin-right:3px; margin-top:7px;}
+.list_2_2 input{ width:108px; float:left; margin-right:3px; margin-top:7px;}
+.list_2_1 a,.list_2_2 a,.list_2_3 a{ width:19px; background:url(../images/xyzc_shuoshuo.jpg) no-repeat; float:left; margin-top:7px;}
+.list_2_3 input{ width:107px; float:left; margin-right:3px; margin-top:7px;}
+.list_3{ width:45px;}
+.list_4,.list_6{ width:155px;}
+.list_4 input,.list_6 input{ width:130px;}
+.list_6 select{ width:135px;}
+.list_8,.list_8_1{ width:210px;}
+.list_8 input{ width:87px; background:url(../images/jisuanqi_1.png) no-repeat 72px center;}
+.list_8_1 select{ width:195px;}
+.list_9{ width:88px; text-align:center;}
+.list_11{ width:210px;}
+.list_10 input,.list_11 input{ width:12px;}
+.list_10 label,.list_11 label{ margin-right:5px;}
+.shr{ width:60px;}
+.select_1{ width:87px; margin-right:5px;}
+.select_2{ width:83px;}
+.xyst_tab1_bottom{ width:983px; height:15px; background:url(../images/xyzc_tab_jiantou.jpg) no-repeat center bottom;}
+
+.discount_tab{ width:980px; background:#fff; border-left:1px solid #dfe3e5; border-right:1px solid #dfe3e5; border-bottom:2px solid #bfc3c5; border-collapse:collapse; margin-bottom:10px;}
+.discount_tab th{ font-weight:500; border-left:1px solid #fff; background:#e4e4e4; border-bottom:2px solid #ffa86e; height:30px; padding-left:7px; border-top:1px solid #c6c6c6;}
+.th_left{ border-left:1px solid #dfe3e5 !important;}
+.discount_tab td{ border:1px solid #e0e0e0; height:30px; padding-left:7px; overflow:hidden;}
+.fourth_bg{ background:#ffffdb;}
+.last_td{ color:#0066cc;}
+.last_td_1{ color:#0066cc; text-align:center;}
+.city_td_1{ width:85px;}
+.city_td_2{ width:105px; text-align:center;}
+.city_tab input{ border:0px;}
+.red{ color:red;}
+.black{ font-weight:bold;}
+
+.page_td{ height:38px !important; vertical-align:bottom; font-size:12px; color:#676767;}
+.page_div{ float:right; height:30px; line-height:25px; margin-right:20px;}
+.page_div p{ width:135px; float:left; text-align:left;}
+.page_div p span{ color:#ff6c00;}
+.page_a_left{ width:5px; float:left; display:block; background:url(../images/fanye.png) no-repeat left center; margin-right:10px;}
+.page_a_right{ width:5px; float:left; display:block; background:url(../images/fanye.png) no-repeat -21px center; margin-left:10px;}
+.page_div ul{ float:left;}
+.page_div ul li{ width:27px; height:27px; text-align:center; float:left;}
+.page_div_li{ border-bottom:2px solid #ff6c00; border-left:1px solid #e9e9e9; border-right:1px solid #e9e9e9; border-top:1px solid #e9e9e9; font-weight:bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

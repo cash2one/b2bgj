@@ -1,1 +1,0 @@
-{"AirCode":"OS","ListS":[{"AirNameCN":"奥地利航空","AirportCode":"TRD","CityCode":"TRD","CityNameCN":"特隆赫姆","CityNameEN":"TRONDHEIM","CountryNameCN":"挪威","CountryCode":"NO","RegionCode":""}]}

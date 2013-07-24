@@ -1,1 +1,0 @@
-{"AirCode":"LH","ListS":[{"AirNameCN":"汉莎航空","AirportCode":"BGO","CityCode":"BGO","CityNameCN":"卑尔根","CityNameEN":"BERGEN","CountryNameCN":"挪威","CountryCode":"NO","RegionCode":""}]}

@@ -1,3 +1,4 @@
 
 resources
 .*cache/
+node_modules/

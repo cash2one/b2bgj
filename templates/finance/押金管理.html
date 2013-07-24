@@ -1,5 +1,5 @@
-{% include 'partial/header.html' %}
-
+{% extends 'frame/layout.html' %}
+{% block main %}
         <div class="actions block">
             <div class="col col-l">
                 <a class="item" href="#">资金汇总</a> 
@@ -264,5 +264,4 @@ var ac_new = new PopWindow('.ac-new',{
     })
 
 </script>
-
-{% include 'partial/footer.html' %}
+{% endblock %}

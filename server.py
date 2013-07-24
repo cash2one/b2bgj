@@ -5,6 +5,23 @@ import tornado.web
 import tornado.escape
 import os.path
 import time
+import tornado.template
+
+import handler.base
+import handler.finance
+import handler.kh
+import handler.gjjp
+import handler.gnjp
+
+from tornado.options import define, options
+from lib.loader import Loader
+from lib.session import Session, SessionManager
+from jinja2 import Environment, FileSystemLoader
+
+
+tpl = tornado.template
+template_path=os.path.join(os.path.dirname(__file__), "templates")
+loader = tpl.Loader(template_path)
 
 url_escape = tornado.escape.url_escape
 
@@ -23,20 +40,37 @@ class Application(tornado.web.Application):
             (r"/js/(ajax)/(.+)", GuojiAjaxHandler),
             (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),
             (r"/(guonei)/ajax/(.+)", GuoneiAjaxHandler),
-            (r"/(finance)/(?<!ajax)([^/]+).html", FinanceHandler),
-            (r"/(gnjp)/(?<!ajax)([^/]+).html", GnjpHandler),
-            (r"/(gjjp)/(?<!ajax)([^/]+).html", GjjpHandler)
+
+            (r"/(finance)/(?<!ajax)([^/]+).html", handler.finance.FinanceHandler),
+            (r"/(kh)/(?<!ajax)([^/]+).html", handler.kh.KhHandler),
+            (r"/(gnjp)/(?<!ajax)([^/]+).html", handler.gnjp.GnjpHandler),
+            (r"/(gjjp)/(?<!ajax)([^/]+).html", handler.gjjp.GjjpHandler)
         ]
+
         settings = dict(
-            debug='yes',
-            # static_url_prefix='//static.b2b.com/',
-            static_path=os.path.join(os.path.dirname(__file__), "static"),
-            template_path=os.path.join(os.path.dirname(__file__), "templates"),
-            #cookie_secret="43oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
-            #login_url="/auth/login",
-            #xsrf_cookies=True,
-            #autoescape="xhtml_escape",
+            debug = 'yes',
+            blog_title = u"F2E Community",
+            template_path = os.path.join(os.path.dirname(__file__), "templates"),
+            static_path = os.path.join(os.path.dirname(__file__), "static"),
+            xsrf_cookies = True,
+            cookie_secret = "cookie_secret_code",
+            login_url = "/login",
+            autoescape = None,
+            jinja2 = Environment(loader = FileSystemLoader(os.path.join(os.path.dirname(__file__), "templates")), trim_blocks = True),
+            reserved = ["user", "topic", "home", "setting", "forgot", "login", "logout", "register", "admin"],
         )
+
+        # settings = dict(
+        #     debug='yes',
+        #     # static_url_prefix='//static.b2b.com/',
+        #     static_path=os.path.join(os.path.dirname(__file__), "static"),
+        #     template_path=template_path,
+        #     #cookie_secret="43oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
+        #     #login_url="/auth/login",
+        #     #xsrf_cookies=True,
+        #     autoescape=None,
+        #     compress_whitespace=None
+        # )
 
         tornado.web.Application.__init__(self, handlers, **settings)
 
@@ -51,10 +85,6 @@ class jsonpHandler(tornado.web.RequestHandler):
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self, pagename = 'index'):
-        #data = {
-        #    'title':pagename,
-        #}
-        #data.url='guooo'
         self.render('index.html')
 
 
@@ -359,7 +389,7 @@ class GjjpHandler(MainHandler):
         self.render(template, data = data, usergroup = usergroup)
 
 
-class FinanceHandler(MainHandler):
+class KhHandler(MainHandler):
     def post(self, section, pagename = 'index'):
         args = self.request.arguments
         self.set_header("Content-Type", "text/plain")
@@ -372,12 +402,15 @@ class FinanceHandler(MainHandler):
         data['title']=pagename
         data['section']=section
 
-        template = 'finance/'+pagename.encode('utf-8')+'.html'
+        template = 'kh/'+pagename.encode('utf-8')+'.html'
         self.render(template, data = data, usergroup = usergroup)
 
-    #def post(self):
-        #    self.set_header("Content-Type", "text/plain")
-        #    self.write("You wrote " + self.get_argument("message"))
+
+class FinanceHandler(MainHandler):
+    def get(self, section, pagename = 'index'):
+        template = 'finance/'+pagename.encode('utf-8')+'.html'
+        self.render(template)
+
 
 if __name__ == "__main__":
     app = Application()

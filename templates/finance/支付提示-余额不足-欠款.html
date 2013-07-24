@@ -1,0 +1,60 @@
+{% include 'partial/header.html' %}
+
+        <div class="actions block">
+            <div class="col col-l sep-r">
+                <button class="btns btn-return">返回</button>
+            </div>
+            <div class="col col-l" style="margin-left:10px;">
+                <span class="page-title">支付提示</span>
+            </div>
+        </div>
+
+        <div class="block block-redirect">
+            <div class="block-redirect-header">
+                <u>
+                <s><span class="icon icon-ban">&nbsp;</span> MMNNEIT888客户（欠款客户）</s> , 
+可用余额不足，无法完成订单支付。
+                </u> 
+            </div>
+            <div class="row">
+                您可以选择 <a href="javascript:;" class="ac-apply">申请临时额度</a> 或者 联系客户充值 完成订单支付。
+            </div>
+        <div class="row" style="margin-top:40px;">
+            <a href="javascript:;" class="button_secondary adaptiveButton medium">
+                <span class="left"></span>
+                <span class="center">订单详情页</span>
+                <span class="right"></span>
+            </a>
+
+            <a href="javascript:;" class="button_secondary adaptiveButton medium">
+                <span class="left"></span>
+                <span class="center">订单管理页</span>
+                <span class="right"></span>
+            </a>
+
+        </div>
+        </div>
+
+        <script type="x-kendo-template" id="ac-apply-template">
+<div class="row" style="font-size:14px;"> <s>MMNNEIT888客户（欠款客户）</s> ，可用余额不足，进行临时授信支付。 </div> 
+<div class="row"><b>订单号：</b><s>5340039140</s></div>
+<div class="row"><b>订单应付：</b><s>1111111</s></div>
+<div class="row"><b>账户可用余额：</b><s>534.00</s></div>
+<div class="row"><b>需临时授信金额：</b><s>3000.00</s></div>
+<div class="row"><b>账期：</b><input data-role="dropdownlist" data-source="['全部']"></div>
+<div class="row"><b style="vertical-align:top">摘要：</b>
+<textarea style="width:400px;height:84px;"></textarea>
+</div>
+<div class="row" style="text-align:right;">
+<button class="btns button_1_2">提 交</button>
+<button class="btns button_2_2">取 消</button>
+</div>
+        </script>
+        <script>
+            new PopWindow('.ac-apply',{
+                title: "新增授信",
+                template: "#ac-apply-template"
+            }).init();
+        </script>
+
+{% include 'partial/footer.html' %}
