@@ -45,7 +45,7 @@ class Application(tornado.web.Application):
             debug = 'yes',
             blog_title = u"F2E Community",
             template_path = os.path.join(os.path.dirname(__file__), "templates"),
-            # static_path = os.path.join(os.path.dirname(__file__), "static"),
+            static_path = os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies = True,
             cookie_secret = "cookie_secret_code",
             login_url = "/login",

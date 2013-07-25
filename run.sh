@@ -1,4 +1,6 @@
 #!/bin/bash
-./server.py &
-guard &
-sass --watch static/sass/:static/css -C &
+
+sh get_finance.sh
+sh get_gjjp.sh
+sh get_gnjp.sh
+sh get_kh.sh
