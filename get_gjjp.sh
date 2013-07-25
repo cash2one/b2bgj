@@ -7,7 +7,7 @@ dst=~/www/proto-b2b/运营商/国际机票白屏
 
 echo "save to ${dst}"
 
-mkdir $dst
+# mkdir $dst
 # mkdir $dst/static
 
 # cp -rv static/css/ $dst/static
@@ -24,9 +24,9 @@ cd templates/$module/
 
 for x in *.html
 do
-    wget --restrict-file-names=unix http://0.0.0.0:8888/$module/$x -O $dst/$x
     # wget --restrict-file-names=unix http://0.0.0.0:8888/$module/$x -O $dst/$x
-    # echo $x
+    # wget --restrict-file-names=unix http://0.0.0.0:8888/$module/$x -O $dst/$x
+    echo $x
 done
 
 # cd $dst

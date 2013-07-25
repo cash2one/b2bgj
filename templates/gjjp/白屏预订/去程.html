@@ -1,7 +1,16 @@
-{% include 'partial/header.html' %}
-<script type="text/javascript" src="/js/search_flight.js"></script>
-<link rel="stylesheet" href="/css/flight_logo.css" />
-<link rel="stylesheet" href="/css/search_flight.css" />
+{% extends 'frame/layout.html' %}
+{% block pagename%}{{title}}{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="/static/js/search_flight.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/flight_logo.css" />
+<link rel="stylesheet" href="/static/css/search_flight.css" />
+{% endblock %}
+
+{% block main %}
 <div class="actions block">
     <div class="col col-l">
         <span class="page-title">
@@ -510,4 +519,5 @@
     }).init();
 </script>
 
-{% include 'partial/footer.html' %}
+{% include 'gjjp/partial/footer.html'%}
+{% endblock %}

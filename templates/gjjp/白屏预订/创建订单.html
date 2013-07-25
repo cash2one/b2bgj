@@ -1,5 +1,15 @@
-{% include 'partial/header.html' %}
-<link rel="stylesheet" href="/css/order.css" />
+{% extends 'frame/layout.html' %}
+{% block pagename%}{{title}}{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="/static/js/flight.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/order.css" />
+{% endblock %}
+
+{% block main %}
 <div class="actions block">
     <div class="col col-l sep-r">
         <button class="btns btn-return">返回</button>
@@ -285,4 +295,5 @@
 </div>
 
 
-{% include 'partial/footer.html' %}
+{% include 'gjjp/partial/footer.html'%}
+{% endblock %}

@@ -19,7 +19,9 @@ from base import *
 from lib.variables import *
 
 class GnjpHandler(BaseHandler):
-    def get(self, section, pagename = 'index'):
-        template = 'gnjp/'+pagename+'.html'
-        self.render(template)
+    def get(self, path, template_variables = {}):
+        title = re.sub(r'^[^/]+/','',path)
+        title = u'国内机票 '+title.replace('/', ' ')
+        template_variables['title'] = title
+        self.render(path+'.html', **template_variables)
 

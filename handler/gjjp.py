@@ -19,7 +19,9 @@ from base import *
 from lib.variables import *
 
 class GjjpHandler(BaseHandler):
-    def get(self, section, pagename = 'index'):
-        template = 'gjjp/'+pagename+'.html'
-        self.render(template)
+    def get(self, path, template_variables = {}):
+        title = re.sub(r'^[^/]+/','',path)
+        title = u'国际机票 '+title.replace('/', ' ')
+        template_variables['title'] = title
+        self.render(path+'.html', **template_variables)
 

@@ -19,7 +19,9 @@ from base import *
 from lib.variables import *
 
 class KhHandler(BaseHandler):
-    def get(self, section, pagename = 'index'):
-        template = 'kh/'+pagename+'.html'
-        self.render(template)
+    def get(self, path, template_variables = {}):
+        title = re.sub(r'^[^/]+/','',path)
+        title = u'客户管理 '+title.replace('/', ' ')
+        template_variables['title'] = title
+        self.render(path+'.html', **template_variables)
 

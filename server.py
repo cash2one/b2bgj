@@ -30,28 +30,22 @@ class Application(tornado.web.Application):
         handlers = [
             (r"/", MainHandler),
             (r"/jsonp/[^/]+", jsonpHandler),
-            (r"/(guoji)/(?<!ajax)([^/]+).html", GuojiHandler),
-            (r"/(guoji)/ajax/(.+)", GuojiAjaxHandler),
 
             # (r"/images/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/images"}),
             # (r"/css/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/css"}),
             # (r"/js/(.*)", tornado.web.StaticFileHandler, {"path": "/home/sean/www/proto-b2b/static/js"}),
 
-            (r"/js/(ajax)/(.+)", GuojiAjaxHandler),
-            (r"/(guonei)/(?<!ajax)([^/]+).html", GuoneiHandler),
-            (r"/(guonei)/ajax/(.+)", GuoneiAjaxHandler),
-
-            (r"/(finance)/(?<!ajax)([^/]+).html", handler.finance.FinanceHandler),
-            (r"/(kh)/(?<!ajax)([^/]+).html", handler.kh.KhHandler),
-            (r"/(gnjp)/(?<!ajax)([^/]+).html", handler.gnjp.GnjpHandler),
-            (r"/(gjjp)/(?<!ajax)([^/]+).html", handler.gjjp.GjjpHandler)
+            (r"/(finance/.+[^/]+).html", handler.finance.FinanceHandler),
+            (r"/(kh/.+[^/]+).html", handler.kh.KhHandler),
+            (r"/(gnjp/.+[^/]+).html", handler.gnjp.GnjpHandler),
+            (r"/(gjjp/.+[^/]+).html", handler.gjjp.GjjpHandler)
         ]
 
         settings = dict(
             debug = 'yes',
             blog_title = u"F2E Community",
             template_path = os.path.join(os.path.dirname(__file__), "templates"),
-            static_path = os.path.join(os.path.dirname(__file__), "static"),
+            # static_path = os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies = True,
             cookie_secret = "cookie_secret_code",
             login_url = "/login",

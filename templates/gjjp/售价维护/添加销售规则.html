@@ -1,5 +1,7 @@
+{% extends 'frame/layout.html' %}
+{% block pagename%}{{title}}{% endblock %}
 
-{% include 'partial/header.html' %}
+{% block js %}
 <script>
 $(function(){
     $('.filter').bind('change',function(){
@@ -12,6 +14,57 @@ $(function(){
     });
 })
 </script>
+{% endblock %}
+
+{% block css %}
+<style>
+.table-wrapper{
+    border:1px solid #ddd;
+}
+.simple-table {
+    width:100%; 
+	border-style: hidden;
+	border-collapse:collapse;
+}
+.simple-table a{
+    padding:2px;
+    color:#06c;
+}
+.simple-table a:hover{
+    background-color:#D8F4FB;
+}
+.simple-table td{
+    word-wrap:break-word;
+    word-break:break-all;
+    white-space:normal;
+    padding:5px 0; 
+    border:1px solid #ddd;
+}
+.simple-table th{
+    border:1px solid #fff;
+    font-weight:normal;
+    padding:5px 0; 
+    background-color:#eee; 
+}
+.block-header .adaptiveButton{
+    vertical-align:middle; 
+}
+.block-header strong{
+    font-size:14px; 
+    margin-right:10px;
+}
+.block-header{
+    margin-bottom:20px; 
+}
+.vertical-head{
+    font-weight:bold;
+    display:inline-block;
+    width:65px; 
+}
+</style>
+{% endblock %}
+
+{% block main %}
 <div class="actions block">
     <div class="col col-l sep-r">
         <button class="btns btn-return">返回</button>
@@ -309,50 +362,6 @@ $(function(){
 
 </div>
 
-<style>
-.table-wrapper{
-    border:1px solid #ddd;
-}
-.simple-table {
-    width:100%; 
-	border-style: hidden;
-	border-collapse:collapse;
-}
-.simple-table a{
-    padding:2px;
-    color:#06c;
-}
-.simple-table a:hover{
-    background-color:#D8F4FB;
-}
-.simple-table td{
-    word-wrap:break-word;
-    word-break:break-all;
-    white-space:normal;
-    padding:5px 0; 
-    border:1px solid #ddd;
-}
-.simple-table th{
-    border:1px solid #fff;
-    font-weight:normal;
-    padding:5px 0; 
-    background-color:#eee; 
-}
-.block-header .adaptiveButton{
-    vertical-align:middle; 
-}
-.block-header strong{
-    font-size:14px; 
-    margin-right:10px;
-}
-.block-header{
-    margin-bottom:20px; 
-}
-.vertical-head{
-    font-weight:bold;
-    display:inline-block;
-    width:65px; 
-}
-</style>
-{% include 'partial/footer.html' %}
+{% include 'gjjp/partial/footer.html'%}
+{% endblock %}
 

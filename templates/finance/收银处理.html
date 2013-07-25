@@ -1,4 +1,15 @@
-{% include 'partial/header.html' %}
+{% extends 'frame/layout.html' %}
+{%block pagename %}{{title}}{%endblock%}
+
+{% block js %}
+<script type="text/javascript" src="/static/js/finance.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/finance.css" />
+{% endblock %}
+
+{% block main %}
         <div class="actions block">
             <div class="col col-l">
                 <a class="item highlight" href="#">收银处理</a> 
@@ -426,4 +437,5 @@ $(function(){
 <button class="btns btn-ac-blue ac-del-row">删除</button>
 </li>
 </script>
-{% include 'partial/footer.html' %}
+{% include 'finance/partial/footer.html'%}
+{% endblock %}

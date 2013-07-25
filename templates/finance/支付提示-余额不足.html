@@ -1,4 +1,15 @@
-{% include 'partial/header.html' %}
+{% extends 'frame/layout.html' %}
+{%block pagename %}{{title}}{%endblock%}
+
+{% block js %}
+<script type="text/javascript" src="/static/js/finance.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/finance.css" />
+{% endblock %}
+
+{% block main %}
 
         <div class="actions block">
             <div class="col col-l sep-r">
@@ -36,4 +47,5 @@
         </div>
 
 
-{% include 'partial/footer.html' %}
+{% include 'finance/partial/footer.html'%}
+{% endblock %}

@@ -1,5 +1,15 @@
-{% include 'partial/header.html' %}
-{% include 'partial/script.html' %}
+{% extends 'frame/layout.html' %}
+{% block pagename%}{{title}}{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="/static/js/khgl.js"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="/static/css/khgl.css" />
+{% endblock %}
+
+{% block main %}
         <div class="actions block">
             <div class="col col-l sep-r">
                 <button class="btns btn-return">返回</button>
@@ -347,4 +357,5 @@
                 </ul>
         </script>
 
-{% include 'partial/footer.html' %}
+{% include 'kh/partial/footer.html'%}
+{% endblock %}
