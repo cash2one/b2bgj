@@ -60,11 +60,11 @@
             <li style="width:180px;">
             <div class="row">
                 <label class="vertical-head">出发日期</label>
-                <input type="text" id="depd" style="width:100px" class="text depdate datepicker" value="" name="" />
+                <input type="text" id="depd" style="width:100px" class="text depdate" data-role="datepicker" value="" name="" />
             </div>
             <div class="row">
                 <label class="vertical-head">返程日期</label>
-                <input type="text" id="arrd" style="width:100px" disabled class="text arrdate datepicker" value="" name="" />
+                <input type="text" id="arrd" style="width:100px" disabled class="text arrdate" data-role="datepicker" value="" name="" />
             </div>
             </li>
             <li style="width:190px;">
@@ -510,13 +510,6 @@
 <button class="btns button_1_2">提 交</button>
 <button class="btns button_2_2">取 消</button>
 </div>
-</script>
-<script type="text/javascript">
-    new PopWindow('.ac-check',{
-        width: '470',
-        title:'提示信息',
-        template:'#ac-check-template'
-    }).init();
 </script>
 
 {% include 'gjjp/partial/footer.htm'%}
