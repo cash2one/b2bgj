@@ -2,3 +2,7 @@ resources
 .*cache/
 node_modules/
 kendoui/
+bin/
+include/
+lib/python2.7/
+local/
