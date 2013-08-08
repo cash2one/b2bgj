@@ -11,97 +11,94 @@
 
 {% block main %}
 
-        <div class="actions block">
-            <div class="col col-l">
-                <a class="item" href="#">资金汇总</a> 
-                <a class="item" href="#">充值管理</a> 
-                <a class="item highlight" href="#">提现管理</a> 
-                <a class="item" href="#">授信管理</a> 
-                <a class="item" href="#">押金管理</a> 
-                <a class="item" href="#">冻结管理</a> 
-                <a class="item" href="#">收支明细</a> 
-                <a class="item" href="#">支票管理</a> 
-                <a class="item" href="#">交易明细</a> 
-            </div>
-        </div>
+<div class="actions block">
+    <div class="col col-l">
+        <a class="item" href="#">资金汇总</a> 
+        <a class="item" href="#">充值管理</a> 
+        <a class="item highlight" href="#">提现管理</a> 
+        <a class="item" href="#">授信管理</a> 
+        <a class="item" href="#">押金管理</a> 
+        <a class="item" href="#">冻结管理</a> 
+        <a class="item" href="#">收支明细</a> 
+        <a class="item" href="#">支票管理</a> 
+        <a class="item" href="#">交易明细</a> 
+    </div>
+</div>
 
-        <div class="block block1 clearfix">
-            <div class="col col-l">
-                <ul class="flat-list">
-                    <li>
-                    <label class="vertical-head">客户名称</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">帐号</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head" style="width:40px;">状态</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
-                    </li>
-                    <li style="width:120px;">
-                    <label class="vertical-head" style="width:40px;">渠道</label>
-                    <input style="width:60px;" data-role="dropdownlist" data-source="['全部']">
-                    </li>
-                    <li style="width:110px;">
-                    <label class="vertical-head" style="width:40px;">类型</label>
-                    <input style="width:60px;" data-role="dropdownlist" data-source="['全部']">
-                    </li>
-                    <li>
-                    <label class="vertical-head">申请日期</label>
-                    <input style="width:100px;" data-role="datepicker"> 
-                    </li>
-                    <li>
-                    <label class="vertical-head">到帐日期</label>
-                    <input style="width:100px;" data-role="datepicker"> 
-                    </li>
-                    <li>
-                    <label class="vertical-head" style="width:40px;">申请人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-user">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head" style="width:40px;">审核人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-user">查询</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="col col-r" style="padding-top:10px;">
-                <button class="btns btn-orange-s">查询</button> 
-            </div>
-        </div>
+<div class="block block1 clearfix">
+    <div class="col col-l">
+        <ul class="flat-list">
+            <li>
+            <label class="vertical-head">客户名称</label>
+            <input style="width:80px">
+            <button class="btns btn-search ac-search-customer">查询</button>
+            </li>
+            <li>
+            <label class="vertical-head" style="width:40px;">状态</label>
+            <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
+            </li>
+            <li>
+            <label class="vertical-head" style="width:40px;">渠道</label>
+            <input style="width:100px;" data-role="dropdownlist" data-source="['全部']">
+            </li>
+            <li>
+            <label class="vertical-head" style="width:40px;">类型</label>
+            <input style="width:100px;" data-role="dropdownlist" data-source="['全部']">
+            </li>
+            <li style="width:402px;">
+            <select id="" name="" data-role="dropdownlist" style="width:100px;">
+                <option value="">申请日期</option>
+                <option value="">审核日期</option>
+            </select>
+            <input data-role="datepicker" style="width:100px">
+            至
+            <input data-role="datepicker" style="width:100px">
+            </li>
+            <li>
+            <label class="vertical-head" style="width:40px;">申请人</label>
+            <input style="width:80px">
+            <button class="btns btn-search ac-search-user">查询</button>
+            </li>
+            <li>
+            <label class="vertical-head" style="width:40px;">审核人</label>
+            <input style="width:80px">
+            <button class="btns btn-search ac-search-user">查询</button>
+            </li>
+        </ul>
+    </div>
+    <div class="col col-r" style="padding-top:10px;">
+        <button class="btns btn-orange-s">查询</button> 
+    </div>
+</div>
 
-        <div class="block block2">
-            <div class="block-header">
-                <button class="btns btn-ac-blue">确认提取</button> 
-                <span style="color:#aaa">&nbsp;|&nbsp;</span>
-                <button class="btns btns-ac-blue">拒绝提取</button> 
-                <span style="color:#aaa">&nbsp;|&nbsp;</span>
-                <button class="btns btns-ac-blue">导出Excel</button> 
-            </div> 
-            <table class="grid-table">
-                <tr class="thead">
-                    <th> <input type="checkbox"> </th>
-                    <th>客户名称</th>
-                    <th>提现金额</th>
-                    <th>渠道</th>
-                    <th>类型</th>
-                    <th>状态</th>
-                    <th>备注</th>
-                    <th>申请时间</th>
-                    <th>审核时间</th>
-                    <th>操作</th>
-                </tr>
-            </table>
-        </div>
+<div class="block block2">
+    <div class="block-header">
+        <button class="btns btn-ac-blue">确认提取</button> 
+        <span style="color:#aaa">&nbsp;|&nbsp;</span>
+        <button class="btns btns-ac-blue">拒绝提取</button> 
+        <span style="color:#aaa">&nbsp;|&nbsp;</span>
+        <button class="btns btns-ac-blue">导出Excel</button> 
+    </div> 
+    <table class="grid-table">
+        <tr class="thead">
+            <th> <input type="checkbox"> </th>
+            <th>客户名称</th>
+            <th>提现金额</th>
+            <th>渠道</th>
+            <th>类型</th>
+            <th>状态</th>
+            <th>备注</th>
+            <th>申请时间</th>
+            <th>审核时间</th>
+            <th>操作</th>
+        </tr>
+    </table>
+</div>
 
 <script type="text/javascript">
 $(function(){
     new GridTable('.block2 .grid-table',{
-         dataSource: [{
+        dataSource: [{
             c1:222,
             c2:333,
             c3:"11,321,321.00",
@@ -117,7 +114,7 @@ $(function(){
 });
 </script>
 <script type="text/x-kendo-template" id="block2-grid-row-template">
-    <tr>
+<tr>
         <td>
             <input type="checkbox"> 
         </td>

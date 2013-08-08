@@ -11,118 +11,115 @@
 
 {% block main %}
 
-        <div class="actions block">
-            <div class="col col-l sep-r">
-                <button class="btns btn-return">返回</button>
-            </div>
-            <div class="col col-l" style="margin-left:10px;">
-                <a class="item highlight" href="#">账期预警</a>
-            </div>
-        </div>
+<div class="actions block">
+    <div class="col col-l sep-r">
+        <button class="btns btn-return">返回</button>
+    </div>
+    <div class="col col-l" style="margin-left:10px;">
+        <a class="item highlight" href="#">账期预警</a>
+    </div>
+</div>
 
-        <div class="block block1 clearfix">
-            <div class="col col-l">
-                <ul class="flat-list">
-                    <li>
-                    <label style="width:65px;" class="vertical-head">客户名称</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-customer">查询</button>
-                    </li>
-                    <li>
-                    <label style="width:65px;" class="vertical-head">账号</label>
-                    <input style="width:100px">
-                    </li>
-                    <li style="width:235px;">
-                    <label style="width:40px;" class="vertical-head">状态</label>
-<select style="width:100px;" data-role="dropdownlist">
-<option selected="" value="全部">全部</option>
-<option value="已还款">已还款</option>
-<option value="未还款">未还款</option>
-<option value="延时还款">延时还款</option>
-<option value="冻结帐户">冻结帐户</option>
-</select>
-                    </li>
-                    <li>
-                    <label class="vertical-head">客户类型</label>
-<select style="width:100px" data-role="dropdownlist">
-<option selected="" value="全部">全部</option>
-<option value="个人">个人</option>
-<option value="酒店 ">酒店 </option>
-<option value="旅行社">旅行社</option>
-<option value="冲量客户">冲量客户</option>
-<option value="B2G客户">B2G客户</option>
-</select>
+<div class="block block1 clearfix">
+    <div class="col col-l">
+        <ul class="flat-list">
+            <li>
+            <label style="width:65px;" class="vertical-head">客户名称</label>
+            <input style="width:80px">
+            <button class="btns btn-search ac-search-customer">查询</button>
+            </li>
+            <li style="width:180px;">
+            <label style="width:40px;" class="vertical-head">状态</label>
+            <select style="width:100px;" data-role="dropdownlist">
+                <option selected="" value="全部">全部</option>
+                <option value="已还款">已还款</option>
+                <option value="未还款">未还款</option>
+                <option value="延时还款">延时还款</option>
+                <option value="冻结帐户">冻结帐户</option>
+            </select>
+            </li>
+            <li>
+            <label class="vertical-head">客户类型</label>
+            <select style="width:100px" data-role="dropdownlist">
+                <option selected="" value="全部">全部</option>
+                <option value="个人">个人</option>
+                <option value="酒店 ">酒店 </option>
+                <option value="旅行社">旅行社</option>
+                <option value="冲量客户">冲量客户</option>
+                <option value="B2G客户">B2G客户</option>
+            </select>
 
 
-                    </li>
-                    <li>
-                    <label style="width:65px;" class="vertical-head">授信人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-user">查询</button>
-                    </li>
-                    <li>
-                    <label style="width:65px;" class="vertical-head">延时操作人</label>
-                    <input style="width:80px">
-                    <button class="btns btn-search ac-search-user">查询</button>
-                    </li>
-                    <li style="width:300px">
-                    <label class="vertical-head" style="width:100px;">领导延时审核状态</label>
-<select style="width:140px;" data-role="dropdownlist">
-<option selected="" value="全部">全部</option>
-<option value="无延时申请">无延时申请</option>
-<option value="领导延时审核通过">领导延时审核通过</option>
-<option value="领导延时审核拒绝">领导延时审核拒绝</option>
-<option value="领导延时待审核">领导延时待审核</option>
-<option value="财务延时审核通过">财务延时审核通过</option>
-<option value="财务延时审核拒绝">财务延时审核拒绝</option>
-<option value="财务延时待审核">财务延时待审核</option>
-</select>
-                    </li>
-                    <li style="width:260px;">
-                    <label style="width:65px;" class="vertical-head">账期日</label>
-                    <input data-role="datepicker" style="width:80px">至
-                    <input data-role="datepicker" style="width:80px">
-                    </li>
-                    <li>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['最后还款日','实际还款日']">
-                    <input data-role="datepicker" style="width:80px">
-                    </li>
-                </ul>
-            </div>
-            <div class="col col-r" style="padding-top:10px;">
-                <button class="btns btn-orange-s">查询</button> 
-            </div>
-        </div>
+            </li>
+            <li>
+            <label style="width:65px;" class="vertical-head">授信人</label>
+            <input style="width:80px">
+            <button class="btns btn-search ac-search-user">查询</button>
+            </li>
+            <li>
+            <label style="width:65px;" class="vertical-head">延时操作人</label>
+            <input style="width:80px">
+            <button class="btns btn-search ac-search-user">查询</button>
+            </li>
+            <li style="width:280px">
+            <label class="vertical-head" style="width:100px;">领导延时审核状态</label>
+            <select style="width:140px;" data-role="dropdownlist">
+                <option selected="" value="全部">全部</option>
+                <option value="无延时申请">无延时申请</option>
+                <option value="领导延时审核通过">领导延时审核通过</option>
+                <option value="领导延时审核拒绝">领导延时审核拒绝</option>
+                <option value="领导延时待审核">领导延时待审核</option>
+                <option value="财务延时审核通过">财务延时审核通过</option>
+                <option value="财务延时审核拒绝">财务延时审核拒绝</option>
+                <option value="财务延时待审核">财务延时待审核</option>
+            </select>
+            </li>
+            <li style="width:300px;">
+            <select id="" name="" style="width:100px;" data-role="dropdownlist">
+                <option value="">最后还款日</option>
+                <option value="">实际还款日</option>
+                <option value="">账期日</option>
+            </select>
+            <input data-role="datepicker" style="width:80px">
+            至
+            <input data-role="datepicker" style="width:80px">
+            </li>
+        </ul>
+    </div>
+    <div class="col col-r" style="padding-top:10px;">
+        <button class="btns btn-orange-s">查询</button> 
+    </div>
+</div>
 
-        <div class="block block2">
-            <div class="block-header">
-                    <button class="btns btn-ac-blue">延长还款日</button> 
-                    <span style="color:#aaa">&nbsp;|&nbsp;</span>
-                    <button class="btns btn-ac-blue">导出Excel</button> 
-            </div> 
-            <table class="grid-table">
-                <tr class="thead">
-                    <th><input type="checkbox"></th>
-                    <th>客户名称</th>
-                    <th>授信类型</th>
-                    <th>账期</th>
-                    <th>授信日期</th>
-                    <th>账期日</th>
-                    <th>最后还款日</th>
-                    <th>授信金额</th>
-                    <th>当前信用额度</th>
-                    <th>当前可用额度</th>
-                    <th>已使用信用金额</th>
-                    <th>延迟原因</th>
-                    <th>领导延时审核</th>
-                    <th>财务延时审核</th>
-                    <th>还款状态</th>
-                    <th>还款日期</th>
-                    <th>领导延时日期</th>
-                    <th>财务延时日期</th>
-                </tr>
-            </table>
-        </div>
+<div class="block block2">
+    <div class="block-header">
+        <button class="btns btn-ac-blue">延长还款日</button> 
+        <span style="color:#aaa">&nbsp;|&nbsp;</span>
+        <button class="btns btn-ac-blue">导出Excel</button> 
+    </div> 
+    <table class="grid-table">
+        <tr class="thead">
+            <th><input type="checkbox"></th>
+            <th>客户名称</th>
+            <th>授信类型</th>
+            <th>账期</th>
+            <th>授信日期</th>
+            <th>账期日</th>
+            <th>最后还款日</th>
+            <th>授信金额</th>
+            <th>当前信用额度</th>
+            <th>当前可用额度</th>
+            <th>已使用信用金额</th>
+            <th>延迟原因</th>
+            <th>领导延时审核</th>
+            <th>财务延时审核</th>
+            <th>还款状态</th>
+            <th>还款日期</th>
+            <th>领导延时日期</th>
+            <th>财务延时日期</th>
+        </tr>
+    </table>
+</div>
 
 <script type="text/javascript">
 $(function(){
@@ -149,7 +146,7 @@ $(function(){
         ],
         resizable:true,
         scrollable:true,
-         dataSource: [{
+        dataSource: [{
             c1:"2013-12-12 15:00",
             c2:"临时/欠款",
             c3:"11,321,321.00",
@@ -163,7 +160,7 @@ $(function(){
 });
 </script>
 <script type="text/x-kendo-template" id="block2-grid-row-template">
-    <tr>
+<tr>
        <td><input type="checkbox"></td>
        <td>#=data.c4#</td> 
        <td>#=data.c2#</td> 

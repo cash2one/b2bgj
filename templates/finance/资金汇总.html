@@ -34,24 +34,25 @@
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
-                    <label class="vertical-head">帐号</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
                     <label class="vertical-head">账户类型</label>
-                    <input style="width:100px" data-role="dropdownlist" data-source="['全部']">
-                    </li>
-                    <li>
-                        <input type="checkbox" /> 
-                        显示已删除客户
+                        <select style="width:100px;" data-role="dropdownlist">
+                        <option selected="" value="全部">全部</option>
+                        <option value="预存客户">预存客户</option>
+                        <option value="信用客户">信用客户</option>
+                        <option value="单笔客户">单笔客户</option>
+                        </select>
                     </li>
                     <li>
                     <label class="vertical-head">截止时间</label>
                     <input style="width:100px" data-role="datepicker">
                     </li>
+                    <li>
+                        <input type="checkbox" /> 
+                        显示已删除客户
+                    </li>
                 </ul>
             </div>
-            <div class="col col-r" style="padding-top:10px;">
+            <div class="col col-r">
                 <button class="btns btn-orange-s">查询</button> 
             </div>
         </div>

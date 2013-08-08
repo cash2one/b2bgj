@@ -29,33 +29,32 @@
                     <button class="btns btn-search ac-search-customer">查询</button>
                     </li>
                     <li>
-                    <label class="vertical-head">帐号</label>
-                    <input style="width:100px">
-                    </li>
-                    <li>
                     <label class="vertical-head">充值方式</label>
                     <input style="width:50px" data-role="dropdownlist" data-source="['刷卡','支付宝']">
                     <input style="width:80px" data-role="dropdownlist" data-source="['中国银行','支付宝']">
                     </li>
+                    <li style="width:320px;">
+                    <select style="width:80px;" data-role="dropdownlist" id="" name="">
+                        <option value="">申请日期</option>
+                        <option value="">审核日期</option>
+                    </select>
+                    <input data-role="datepicker" style="width:100px">
+                    至
+                    <input data-role="datepicker" style="width:100px">
+                    </li>
                     <li>
-                    <label class="vertical-head">申请人</label>
+                    <label class="vertical-head">账号</label>
                     <input style="width:100px">
-                    <button class="btns btn-search ac-search-user">查询</button>
-                    </li>
-                    <li>
-                    <label class="vertical-head">申请日期</label>
-                    <input data-role="datepicker" style="width:100px">
-                    </li>
-                    <li>
-                    <label class="vertical-head">审核日期</label>
-                    <input data-role="datepicker" style="width:100px">
                     </li>
                     <li>
                     <label class="vertical-head">审核状态</label>
                     <input data-role="dropdownlist" data-source="['等待审核','已审核']" style="width:100px">
                     </li>
                     <li>
-                    <label class="vertical-head">审核人</label>
+                    <select style="width:70px;" data-role="dropdownlist" id="" name="">
+                        <option value="">申请人</option>
+                        <option value="">审核人</option>
+                    </select>
                     <input style="width:100px">
                     <button class="btns btn-search ac-search-user">查询</button>
                     </li>

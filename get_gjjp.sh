@@ -6,5 +6,5 @@ mkdir $dst
 cd templates/$module/
 for x in `find -name "*.html"`
 do
-     wget http://0.0.0.0:8888/$module/${x:2} -nH --cut-dirs=1 -P $dst -x --restrict-file-names=nocontrol 
+     wget http://0.0.0.0:8888/$module/$x -nH --cut-dirs=1 -P $dst -x --restrict-file-names=nocontrol 
 done
