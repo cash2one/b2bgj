@@ -1,77 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>{% block pagename %}{% endblock %}</title>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-<link rel="stylesheet" href="/static/css/kendo.common.min.css" />
-<link rel="stylesheet" href="/static/css/kendo.gray.css" />
-<link rel="stylesheet" href="/static/css/kendo.reset.css" />
-<link rel="stylesheet" href="/static/css/common.css" />
-<link rel="stylesheet" href="/static/css/b2b.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
 {% block css %}{% endblock %}
+<link rel="stylesheet" href="../static/css/store_reset.css" media="all" />
+<link rel="stylesheet" href="../static/css/store.css" media="screen" />
 
-<script type="text/javascript" src="/static/js/vendor/jquery.min.js"></script>
-<script type="text/javascript" src="/static/js/plugins/jquery.fixedBar.js"></script>
-<script type="text/javascript" src="/static/js/kendo.web.js"></script>
-<script type="text/javascript" src="/static/js/cultures/kendo.culture.zh-CN.min.js"></script>
-<script type="text/javascript" src="/static/js/global.js"></script>
 {% block js %}{% endblock %}
-<!--[if lt IE 8]>
-    <link rel="stylesheet" href="/static/css/ie.css" />
-    <script type="text/javascript" src="/static/js/vendor/IE7.min.js"></script>
-<![endif]-->
-<script type="text/javascript" src="/static/js/sync.js"></script>
-</head><body>  <div id="extHeader">
-    <div></div>
-</div>
-
-<div id="container">
-    <div class="header">
-        <h1></h1>
-        <div>
-            <span>你好,${name}</span>
-            <a href="javascript:void(0);">退出</a>
-        </div>
-        <ul id="top_menu">
-            <li><a href="javascript:void(0);">国内机票</a></li>
-            <li><a href="javascript:void(0);">国际机票</a></li>
-            <li><a href="javascript:void(0);">酒店</a></li>
-            <li><a href="javascript:void(0);">票证中心</a></li>
-            <li><a href="javascript:void(0);">财务管理</a></li>
-            <li><a href="javascript:void(0);">客户管理</a></li>
-            <li class="current"><a href="javascript:void(0);">系统设置</a></li>
-        </ul>
-        <ol class="sub_menu">
-            <li class="current"><a href="javascript:void(0);">公告信息</a></li>
-            <li><a href="javascript:void(0);">公司信息</a></li>
-            <li><a href="javascript:void(0);">组织架构</a></li>
-            <li><a href="javascript:void(0);">角色维护</a></li>
-            <li><a href="javascript:void(0);">基础数据</a></li>
-        </ol>
-        <div id="message">
-            <a href="javascript:void(0);">消息</a>
-            <span>New</span>
-        </div>
-    </div>
-    <div class="clear"></div>
-    <div id="sub_menu_bar"></div>
-    <div id="mainContent">
+<!--[if IE]>
+    <script src="../static/js/html5.js"></script>
+    <![endif]-->
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="../static/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="main-wrapper">
+    <header class="main-header">
+        <a class="logo" href="/"><h1>天地行</h1></a>
+        <nav class="main-nav">
+            <ul class="clearfix">
+                <li class="first active"><a herf="#">首页</a></li>
+                <li><a herf="#">国内机票</a></li>
+                <li><a herf="#">国际机票</a></li>
+                <li><a herf="#">酒店</a></li>
+            </ul> 
+        </nav>
+        <nav class="main-links">
+            <ul class="clearfix">
+                <li class="first"><a href="#">订单管理</a></li>
+                <li><a href="#">分销管理</a></li>
+                <li><a href="#">电子钱包</a></li>
+                <li><a href="#">统计报表</a></li>
+                <li><a href="#">客服服务</a></li>
+                <li><a class="link-user" href="#">laobao<i class="arrow-down"></i></a></li>
+                <li><a class="link-message" href="#"><i class="icon-message"></i>消息<i class="message-count">5</i></a></li>
+            </ul>
+        </nav>
+        <span class="phone">客服电话：400-720-6666</span>
+    </header>
+    <section class="main-body">
         {% block main %}{% endblock %}
         {% block template %}{% endblock %}
-    </div>
-</div>
-
-<div id="extFooter">
-    <div>
-        <p>
-        <a href="javascript:void(0);">关于我们</a>&nbsp;|
-        <a href="javascript:void(0);">微博</a>&nbsp;|
-        <a href="javascript:void(0);">服务条款</a>&nbsp;|
-        <a href="javascript:void(0);">隐私政策</a>&nbsp;|
-        </p>
-        <p>客户服务热线:400-720-6666</p>
-    </div>
+    </section>
+    <footer class="main-footer">
+        <center>
+            <a href="#">隐私问题</a>
+            <i class="bar">|</i>
+            <a href="#">常见问题</a>
+            <i class="bar">|</i>
+            <a href="#">关于我们</a>
+            <i class="bar">|</i>
+            <a href="#">媒体中心</a>
+            <i class="bar">|</i>
+            <a href="#">联系我们</a>
+        </center>
+        <center class="copyright">
+            Copyright &copy; 2012 天地行 All Rights Reserved.     沪ICP备08101503号 
+        </center>
+    </footer>
 </div>
 </body>
 </html>
